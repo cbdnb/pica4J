@@ -1,0 +1,2539 @@
+LEADER 00000nw  a2200000n  4500
+001 c90f800b-8c11-3e4a-aab3-2d67a0134dcd
+003 DE-101
+005 20120301152017.0
+008 000202aaaaaaaa
+035   $aocd00252655
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a0$jInformatik, Informationswissenschaft & allgemeine Werke$9ess=eh
+194   $hInformatik, Informationswissenschaft & allgemeine Werke$9ess=hdr
+
+LEADER 00000nw  a2200000n  4500
+001 2eef22dd-87d3-383c-a2cd-1fa3df4053dd
+003 DE-101
+005 20120301152203.0
+008 000202aaaaaaaa
+035   $aocd00252656
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a00$e0$jInformatik, Wissen & Systeme$9ess=eh
+194   $hInformatik, Informationswissenschaft & allgemeine Werke$9ess=hdr
+
+LEADER 00000nw  a2200000n  4500
+001 e9c4396b-29c1-32f2-b6f4-f480f327853e
+003 DE-101
+005 20120301151930.0
+008 000202aaaaaaaa
+035   $aocd00116588
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a000$e00$jInformatik, Informationswissenschaft, allgemeine Werke$9ess=en$9ess=eh
+194   $hInformatik, Informationswissenschaft, allgemeine Werke$9ess=hdr
+
+LEADER 00000nw  a2200000n  4500
+001 e957a697-9369-3496-85af-bd067229b32d
+003 DE-101
+005 20110728111208.0
+008 000202aaaabaaa
+035   $aocd00116591
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001$e00$jWissen$9ess=en$9ess=eh
+680 1 $iDarstellung und kritische Bewertung intellektueller, geistiger Aktivität im Allgemeinen$9ess=nsc
+680 0 $iEinschließlich:$tfächerübergreifende Werke über Berater$9ess=nin
+680 1 $iHier auch:$tDiskussion von Ideen aus vielen Gebieten, fächerübergreifender Ansatz zum Wissensbegriff$9ess=nch
+253 2 $iKlassifiziere$tEpistemologie$iin$a121$9ess=nce
+253 2 $iKlassifiziere$teine Zusammenstellung von Wissen in einer bestimmten Form$ibei der Form, z.B.$tEnzyklopädien$e030$9ess=ncw
+253 0 $iFür$tBerater oder für den Einsatz von Beratern in einem bestimmten Thema$isiehe das Thema, z.B.$tBibliotheksberater$e023.2$i, technische Berater$e620$i, Einsatz von Beratern im Management$e658.46$9ess=nsw
+684 2 $iSiehe Praxishilfe bei$a500$ivs.$a001$9ess=nsm
+750  7$aBerater$2ddcri$9ps=PE
+750  7$aGutachter$2ddcri$9ps=PE
+750  7$aExperten$2ddcri$9ps=PE
+750  7$aFächerübergreifender Ansatz zum Wissensbegriff$2ddcri$9ps=PE
+750  7$aWissen$2ddcri$9ps=PE
+750  7$aWissensbegriff$2ddcri$9ps=PE
+750  7$aWissenschaften (Wissensbegriff)$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 175d03be-9274-3efd-8d13-6a62ffbc84f2
+003 DE-101
+005 20050216131317.0
+008 000202aaaaaaaa
+035   $aocd00116628
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.01$e001$jWissenstheorie$9ess=en$9ess=eh
+253 1 $iNicht verwenden für$tErkenntnistheorie, philosophische Werke über Wissenstheorie$i; klassifiziere in$a121$9ess=nsx
+
+LEADER 00000nw  a2200000n  4500
+001 7f3e0975-fcd7-3d42-ae5c-1435c1276a62
+003 DE-101
+005 20140113155724.1
+008 000202aaaaaabb
+035   $aocd00116629
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.012$e001.01$jKlassifikation, . . .$9ess=ien$9ess=peh
+765 0 $b001$z1$s012$u001.012$9ess=hn
+673   $a001.01/2$9ess=seg
+750  7$aKlassifikation$0(OCoLC-D)b55a12da-55e4-4b80-a7c0-55688ea63fac$2ddcri$9ps=PE
+750  7$aKlassifikation$xWissen$0(OCoLC-D)3dc6d77d-4e93-4b6d-ba06-f728199fe93f$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 b09a57a5-6f68-32b6-97de-57ce191d5e39
+003 DE-101
+005 20051102111003.0
+008 000202aaaaaabb
+035   $aocd00116630
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.0601$e001$jUNESCO, . . .$9ess=ien$9ess=peh
+765 0 $b001$z1$s0601$u001.0601$9ess=hn
+673   $a001.06/01$9ess=seg
+750  7$aUNESCO$2ddcri$9ps=PE
+750  7$aUnited Nations Educational, Scientific, and Cultural Organization$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 d0adafc4-10e7-3b8b-ac07-b6d5e68bdc01
+003 DE-101
+005 20051102111003.0
+008 000202aaaaaabb
+035   $aocd00116631
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.089$e001$jWissen—Ethnologie$9ess=ien$9ess=peh
+765 0 $b001$z1$s089$u001.089$9ess=hn
+750  7$aWissen$xEthnologie$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 bfc7f52a-2bf0-366b-ae47-70a95c1ad8f9
+003 DE-101
+005 20051102111003.0
+008 000202aaaaaabb
+035   $aocd00116632
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.09$e001$jGeistesgeschichte$9ess=ien$9ess=peh
+765 0 $b001$z1$s09$u001.09$9ess=hn
+750  7$aGeistesgeschichte$2ddcri$9ps=PE
+750  7$aIdeengeschichte$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 61c1a8b7-d046-3caa-a502-3ac27a3bd643
+003 DE-101
+005 20051102111003.0
+008 000202aaaaaaaa
+035   $aocd00116633
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.1$e001$jGeistiges Leben$9ess=en$9ess=eh
+680 1 $iWesen und Wert$9ess=nsc
+253 0 $iFür$tWissenschaft und Gelehrsamkeit$isiehe$a001.2$9ess=nse
+353   $iSiehe auch$a900$ifür breitgefächerte Darstellung von geistiger Lebenssituation und Bedingungen für geistige Arbeit$9ess=nsa
+750  7$aGeistiges Leben$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 1db5dc13-5421-3385-809e-c674102626c0
+003 DE-101
+005 20140213105556.4
+008 000202aaaaaaaa
+035   $aocd00116634
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.2$e001$jWissenschaft und Gelehrsamkeit$9ess=en$9ess=eh
+680 1 $iGeistige Aktivität mit dem Ziel des Wissenszuwachses$9ess=ndf
+253 2 $iKlassifiziere$tLehr- und Lernmethoden$iin$a371.3$9ess=nce
+253 2 $iKlassifiziere$teine bestimmte Richtung von Wissenschaft und Gelehrsamkeit$ibei der Richtung, z.B.$tWissenschaft in den Geisteswissenschaften$e001.3$i,$tin der Geschichte$e900$9ess=ncw
+253 0 $iFür$tForschung$isiehe$a001.4$9ess=nse
+684 2 $iSiehe Praxishilfe bei$a500$ivs.$a001$9ess=nsm
+750  7$aGelehrtheit$0(OCoLC-D)07b6d21e-0a1d-40f1-aace-86bb4144e651$2ddcri$9ps=PE
+750  7$aGelehrsamkeit$0(OCoLC-D)e53ca10a-3323-46cc-8b42-c7081a45810d$2ddcri$9ps=PE
+750  7$aWissenschaft$0(OCoLC-D)c67a308d-34dc-49d1-af37-59c1327ad617$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 b0e7d0d3-f0ae-323f-98b2-fcd80465c758
+003 DE-101
+005 20110728112210.0
+008 070329aaaaaabb
+035   $aocd00116635
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.2092$e001.2$jWissenschaftler, . . .$9ess=ien$9ess=peh
+765 0 $b001.2$z1$s092$u001.2092$9ess=hn
+750  7$aGelehrte$2ddcri$9ps=EO
+750  7$aWissenschaftler$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 8aadf545-f542-3f95-b2fb-2e8526e1e8b2
+003 DE-101
+005 20130703125913.8
+008 000202aaaaaaaa
+035   $aocd00116636
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.3$e001$jGeisteswissenschaften$9ess=en$9ess=eh
+680 0 $iEinschließlich:$trelativer Wert von Naturwissenschaft versus Geisteswissenschaften$9ess=nin
+680 1 $iHier auch:$tRegierungspolitik zu geisteswissenschaftlichen Themen$9ess=nch
+750  7$aGeisteswissenschaften$0(OCoLC-D)b739d648-1762-4d33-9a04-ed4f1dc78110$2ddcri$9ps=PE
+750  7$aHumanwissenschaften$0(OCoLC-D)e88b47ab-64a2-47cf-b4b4-355e5cb42128$2ddcri$9ps=PE
+750  7$aGeisteswissenschaften (Regierungspolitisches Thema)$0(OCoLC-D)bb127b84-21bb-4400-b977-61b3040162c4$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 8f0f812d-7181-31af-b917-7abc06ad5ed5
+003 DE-101
+005 20050216131417.0
+008 000202aaaaaabb
+035   $aocd00116637
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.30973$e001.3$jNational Endowment for the Humanities$9ess=ien$9ess=peh
+765 0 $b001.309$z2$s73$u001.30973$9ess=hn
+765 0 $b001.3$z1$a093$c099$z1$s09$u001.309$9ess=hn
+750  7$aNational Endowment for the Humanities$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 84c998ec-0274-353b-a91d-b5088414edc7
+003 DE-101
+005 20140221155111.6
+008 000202aaaaaaaa
+035   $aocd00116638
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.4$e001$jForschung$9ess=en$9ess=eh
+680 1 $iHier auch:$tAktionsforschung, Evaluationsforschung, Werke über den Begriff der Forschung$9ess=nch
+253 2 $iKlassifiziere$tForschung in einem bestimmten Thema bei dem Thema,$iplus Notation$z1$a072$iaus Hilfstafel 1, z.B.$tForschung in der Linguistik$e410.72$9ess=ncw
+253 2 $iKlassifiziere$tForschungsergebnisse der Forschung in einem bestimmten Thema bei dem Thema,$iohne Notation$z1$a072$iaus Hilfstafel 1 anzuhängen, z.B.$tForschungsergebnisse in der Linguistik$e410$i(nicht$e410.72$i)$9ess=ncw
+684 2 $iSiehe Praxishilfe bei$a500$ivs.$a001$9ess=nsm
+750  7$aAktionsforschung$0(OCoLC-D)4488a1be-82cb-44bc-a120-633bec138902$2ddcri$9ps=PE
+750  7$aAnwendungsbezogene Forschung$0(OCoLC-D)fac1f905-517e-44bb-b856-cd6c98b0bb64$2ddcri$9ps=PE
+750  7$aPraxisnahe Forschung$0(OCoLC-D)58d9e2bb-41c2-4413-8059-93edb8a6226b$2ddcri$9ps=PE
+750  7$aHandlungsforschung$0(OCoLC-D)6b179a83-a1dd-46d4-8a79-4585375dbb37$2ddcri$9ps=PE
+750  7$aAction Research$0(OCoLC-D)f96ab57c-bec7-471f-8afe-5dec0aebf72f$2ddcri$9ps=PE
+750  7$aEvaluationsforschung$0(OCoLC-D)715d6c02-a7c8-4532-b851-990cfefc6ee7$2ddcri$9ps=PE
+750  7$aBegleitforschung$0(OCoLC-D)2df989c4-61ca-4c72-ad1c-faa380c1b402$2ddcri$9ps=PE
+750  7$aUntersuchung (Tatsachenfeststellung)$0(OCoLC-D)7df7e7fc-e63d-4a1c-beb9-9091ad98c836$2ddcri$9ps=PE
+750  7$aFaktenforschung$0(OCoLC-D)e6998b66-5e2c-4c18-ada8-9b40eabe0575$2ddcri$9ps=PE
+750  7$aRecherche (Forschung)$0(OCoLC-D)d5c2671e-73d2-4d5e-8e4b-f4afedfe3fa0$2ddcri$9ps=PE
+750  7$aLabors$0(OCoLC-D)b2e5e71d-e89c-474f-922b-c1dfa488a0a0$2ddcri$9ps=EO
+750  7$aForschung$0(OCoLC-D)791f29e1-09f7-45e2-89ac-b568690f8e6d$2ddcri$9ps=PE
+750  7$aLaboratorien$0(OCoLC-D)970c5d8a-29fd-4264-a225-b120d4f846c8$2ddcri$9ps=PE
+750  7$aForschungsgebäude$0(OCoLC-D)d7686f46-68d7-4548-af72-15fc92e11ea7$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 08013d34-009c-3f0d-a394-981b2db400d3
+003 DE-101
+005 20050216131423.0
+008 000202aaaaaabb
+035   $aocd00116639
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.40684$e001.4$jForschung—Management$9ess=ien$9ess=peh
+765 0 $b001.4$z1$s0684$u001.40684$9ess=hn
+673   $a001.4068/4$9ess=seg
+750  7$aForschung$xManagement$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 423d1e1e-6186-3fdc-b27b-df0124eb3b18
+003 DE-101
+005 20051102111003.0
+008 000202aaaaaabb
+035   $aocd00116640
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.4092$e001.4$jForscher$9ess=ien$9ess=peh
+765 0 $b001.4$z1$s092$u001.4092$9ess=hn
+750  7$aForscher$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 7f32abbb-58fa-3504-a3cc-80399d92d12c
+003 DE-101
+005 20121123150055.7
+008 000202aaaaaaaa
+035   $aocd00116641
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.42$e001.4$jForschungsmethoden$9ess=en$9ess=eh
+673   $a001.4/2$9ess=seg
+680 1 $iHier auch:$tqualitative Forschung, quantitative Forschung, wissenschaftliche Methodik$9ess=nch
+253 2 $iKlassifiziere$tOperations Research$iin$a003$9ess=nce
+253 2 $iKlassifiziere$tComputermodellierung und Computersimulation$iin$a003.3$9ess=nce
+253 0 $iFür$tdeskriptive und experimentelle Methoden$isiehe$a001.43$9ess=nse
+750  7$aQualitative Forschung$2ddcri$9ps=PE
+750  7$aQualitative Methoden$2ddcri$9ps=PE
+750  7$aQuantitative Forschung$2ddcri$9ps=PE
+750  7$aQuantitative Methoden$2ddcri$9ps=PE
+750  7$aForschungsmethoden$2ddcri$9ps=PE
+750  7$aWissenschaftsmethodik$2ddcri$9ps=PE
+750  7$aWissenschaftliche Methodik$2ddcri$9ps=PE
+750  7$aNaturwissenschaftliche Methodik$2ddcri$9ps=EO
+750  7$aWissenschaftliche Methoden$2ddcri$9ps=PE
+750  7$aNaturwissenschaftliche Methoden$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 fdc0f66b-9a83-3a80-adfe-e9e609bcc45c
+003 DE-101
+005 20110311133419.0
+008 000202aaaaaabb
+035   $aocd00116642
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.4202854678$e001.42$jForschung—Internet, . . .$9ess=ien$9ess=peh
+765 0 $b001.420285$r00$s4678$u001.4202854678$9ess=hn
+765 0 $b001.42$z1$s0285$u001.420285$9ess=hn
+673   $a001.4/202854678$9ess=seg
+750  7$aForschung$xInternet$2ddcri$9ps=EO
+750  7$aInternetrecherche als Forschungsmethode$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 0d516d3e-17f7-3d18-8b2d-5f5a13e0104f
+003 DE-101
+005 20121121175851.0
+008 000202aaaaaaaa
+035   $aocd00116643
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.422$e001.42$jStatistische Methoden$9ess=en$9ess=eh
+673   $a001.4/22$9ess=seg
+353   $iSiehe auch$a310$ifür Sammlungen allgemeiner statistischer Daten;$9ess=nsa
+353   $isiehe auch Notation$z1$a021$iaus Hilfstafel 1 für Statistiken zu einem bestimmten Thema$9ess=nsa
+684 2 $iSiehe Praxishilfe bei$a519.5$i,$z1$a015195$ivs.$a001.422$i,$z1$a0727$9ess=nsm
+750  7$aStatistische Methoden$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 3cb9fc11-f515-3181-9229-521a3f9b2a12
+003 DE-101
+005 20110815173715.0
+008 000202aaaaaaaa
+035   $aocd00116647
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.4226$e001.422$jDarstellung statistischer Daten$9ess=en$9ess=eh
+673   $a001.4/226$9ess=seg
+680 1 $iHier auch:$tgrafische Darstellung$9ess=nch
+750  7$aStatistische Schaubilder$xDarstellung statistischer Daten$2ddcri$9ps=PE
+750  7$aStatistische Diagramme$xDarstellung statistischer Daten$2ddcri$9ps=PE
+750  7$aStatistische Grafiken$xDarstellung statistischer Daten$2ddcri$9ps=PE
+750  7$aStatistiken$xDarstellung statistischer Daten$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 6bbb3b5f-ace1-337e-93d0-1cc4c2f66bf7
+003 DE-101
+005 20110815173830.0
+008 000202aaaaaabb
+035   $aocd00116648
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.4226028566$e001.4226$jStatistische Grafiken—Darstellung statistischer Daten—Computergrafiken, . . .$9ess=ien$9ess=peh
+765 0 $b001.42260285$r00$s66$u001.4226028566$9ess=hn
+765 0 $b001.4226$z1$s0285$u001.42260285$9ess=hn
+673   $a001.4/226028566$9ess=seg
+750  7$aStatistische Schaubilder$xDarstellung statistischer Daten$xComputergrafiken$2ddcri$9ps=PE
+750  7$aStatistische Diagramme$xDarstellung statistischer Daten$xComputergrafiken$2ddcri$9ps=PE
+750  7$aStatistische Grafiken$xDarstellung statistischer Daten$xComputergrafiken$2ddcri$9ps=PE
+750  7$aStatistiken$xDarstellung statistischer Daten$xComputergrafiken$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 2938e704-395b-327f-bf93-6c94a3d4ed32
+003 DE-101
+005 20110815165721.0
+008 000202aaaaaaaa
+035   $aocd00116649
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.43$e001.4$jDeskriptive und experimentelle Methoden$9ess=en$9ess=eh
+673   $a001.4/3$9ess=seg
+
+LEADER 00000nw  a2200000n  4500
+001 65739710-be0a-3ac5-a60e-1066b8db4e04
+003 DE-101
+005 20110815170611.0
+008 000202aaeaaaaa
+035   $aocd00116650
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.432$e001.43$jHistorische Forschung$9ess=en$9ess=eh
+685 20$iFallstudien verlegt nach$a001.433$9ess=nrp
+685 20$ifächerübergreifende Werke über historische Forschung verlegt nach$a907.2$9ess=nrp
+
+LEADER 00000nw  a2200000n  4500
+001 1c0f7aef-47bb-31a9-9fba-a00921587b17
+003 DE-101
+005 20140221095604.6
+008 000202aaaaaaaa
+035   $aocd00116651
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.433$e001.43$jDeskriptive Forschung$9ess=en$9ess=eh
+673   $a001.4/33$9ess=seg
+680 0 $iEinschließlich:$tFallstudien$i[früher$x001.432$i];$tStichprobenverfahren; Umfragen, Fragebögen, Feldforschung, Beobachtung, Interviews$9ess=nin$9ess=nrl
+680 1 $iHier auch:$tDatenerhebung, Datengewinnung$9ess=nch
+253 0 $iFür$tdie Analyse statistischer Daten$isiehe$a001.422$9ess=nse
+253 0 $iFür$tdie Darstellung statistischer Daten$isiehe$a001.4226$9ess=nse
+353   $iSiehe auch$a310.723$ifür$tMethoden zur Sammlung allgemeiner sozialstatistischer Daten$9ess=nsa
+685 21$tFallstudien$ifrüher in$b001.432$d200906$222$9ess=685
+750  7$aFallstudien$xdeskriptive Forschung$0(OCoLC-D)76a5ad48-55ae-441e-98a6-8a8b67ccf7db$2ddcri$9ps=PE
+750  7$aDatenerhebungen$0(OCoLC-D)e0736543-d5ec-4e39-a541-9042de369a59$2ddcri$9ps=PE
+750  7$aDatenerhebung$xdeskriptive Forschung$0(OCoLC-D)19b6bdf7-dae3-4c69-acd4-3e53bca0b5e5$2ddcri$9ps=PE
+750  7$aDatengewinnung$xdeskriptive Forschung$0(OCoLC-D)368fd226-0526-43bd-814a-bdb4b2d0aa34$2ddcri$9ps=PE
+750  7$aDatensammlung$xdeskriptive Forschung$0(OCoLC-D)f6f81c56-def7-4d0b-8102-c4d7c6a6b3d0$2ddcri$9ps=PE
+750  7$aEmpirie (Datenerhebung)$xdeskriptive Forschung$0(OCoLC-D)e37e3357-28cf-4230-ac85-a2fe7bfa811a$2ddcri$9ps=PE
+750  7$aDeskriptive Forschung$0(OCoLC-D)75e1af49-ea4f-497a-82d0-606018df6d62$2ddcri$9ps=PE
+750  7$aFeldforschung$xdeskriptive Forschung$0(OCoLC-D)220d482c-89cd-4f0d-bb9f-e7202b9f34d3$2ddcri$9ps=PE
+750  7$aInterviews$xdeskriptive Forschung$0(OCoLC-D)e281115f-39d5-4dba-9960-aab4ec9f3fea$2ddcri$9ps=PE
+750  7$aBeobachtung$xdeskriptive Forschung$0(OCoLC-D)93803e1e-e0ed-4c0c-b22c-bd3541be8ec0$2ddcri$9ps=PE
+750  7$aFragebögen$xdeskriptive Forschung$0(OCoLC-D)6db38e70-1f4f-4c20-a0cb-a7752b8c4406$2ddcri$9ps=PE
+750  7$aStichprobenverfahren$0(OCoLC-D)7af1a848-5856-4ebd-abed-380f874edae5$2ddcri$9ps=PE
+750  7$aMethoden der Datengewinnung$0(OCoLC-D)3f3b71d4-e3d6-4c80-8517-c6446c9a40c8$2ddcri$9ps=EO
+750  7$aErhebungsmethodik$0(OCoLC-D)94b5ab72-194d-4078-b283-3d987d901d27$2ddcri$9ps=PE
+750  7$aDatenerhebungsmethoden$0(OCoLC-D)76ad35b8-912d-4982-bbd7-7abf7a93ccaf$2ddcri$9ps=PE
+750  7$aUmfragen$xdeskriptive Forschung$0(OCoLC-D)972ebc11-180c-4dc9-855e-c195be8f8a91$2ddcri$9ps=PE
+750  7$aBefragungen$xdeskriptive Forschung$0(OCoLC-D)b49de8c6-e298-4bfb-a6f9-0173daf189d9$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 374e25ea-2b92-3a09-b205-20a29da9ba94
+003 DE-101
+005 20121123150506.5
+008 000202aaaaaaaa
+035   $aocd00116652
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.434$e001.43$jExperimentelle Methode$9ess=en$9ess=eh
+673   $a001.4/34$9ess=seg
+750  7$aExperimentelle Forschung$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 7bc44485-9705-3452-b594-11700c190470
+003 DE-101
+005 20120309085737.0
+008 000202aaaaaaaa
+035   $aocd00116653
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.44$e001.4$jForschungsunterstützung und Forschungsanreize$9ess=en$9ess=eh
+673   $a001.4/4$9ess=seg
+761  0$iStandardschlüssel werden angehängt für eines der oder beide Themen in der Klassenbenennung$9ess=nsf
+680 1 $iHier auch:$tAuszeichnungen, Stipendien, Forschungsstipendien, Zertifikate, Wettbewerbe, Preisausschreiben, finanzielle Unterstützung, Beihilfen, Ehrungen, Medaillen, Preise$9ess=nch
+253 2 $iKlassifiziere$tFinanzierung von Studenten im Hochschulwesen$iin$a378.3$9ess=nce
+253 2 $iKlassifiziere Forschungsunterstützung und Forschungsanreize in einem bestimmten Thema bei dem Thema, plus Notation$z1$a079$iaus Hilfstafel 1, z.B. Forschungsauszeichnungen in mechanischer Technik$e621.079$9ess=ncw
+353   $iSiehe auch$a929.81$ifür Orden und Ehrenzeichen$9ess=nsa
+750  7$aAuszeichnungen$xForschung$2ddcri$9ps=PE
+750  7$aZertifikate (Auszeichnungen)$xForschung$2ddcri$9ps=PE
+750  7$aWettbewerbe$xForschung$2ddcri$9ps=PE
+750  7$aForschungsstipendien$xForschung$2ddcri$9ps=PE
+750  7$aFinanzielle Schirmherrschaft$xForschung$2ddcri$9ps=PE
+750  7$aFinanzielle Unterstützung$xForschung$2ddcri$9ps=PE
+750  7$aBeihilfen$xForschung$2ddcri$9ps=PE
+750  7$aEhrungen$xForschung$2ddcri$9ps=PE
+750  7$aAnreize$xForschung$2ddcri$9ps=PE
+750  7$aMedaillen$xForschungsanreiz$2ddcri$9ps=PE
+750  7$aPreise (Auszeichnungen)$xForschung$2ddcri$9ps=PE
+750  7$aStipendien$xForschung$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 c289bad6-8d3e-370c-8b75-2f3bf41d18f2
+003 DE-101
+005 20121126183511.6
+008 000202aaaaaaaa
+035   $aocd00116654
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.9$e001$jGrenzwissen$9ess=en$9ess=eh
+680 0 $iEinschließlich:$teinschlägig bekannte Phänomene, deren Erklärung umstritten ist; Weltuntergang$9ess=nin
+680 1 $iHier auch:$tfächerübergreifende Werke über Grenzwissen, Parapsychologie, Okkultismus$9ess=nch
+253 0 $iFür$tParapsychologie und Okkultismus$isiehe$a130$9ess=nse
+253 0 $iFür$tGrenzwissen in Bezug auf ein bestimmtes Thema$isiehe das Thema, z.B.$tparanatürliche und legendäre Phänomene als Themen der Folklore$e398.4$i, Piltdownmensch-Schwindel$e569.9$i, umstrittene Heilmittel$e615.856$i, eine angebliche Verschwörung zum Attentat auf John F. Kennedy$e973.922$9ess=nsw
+684 2 $iSiehe Praxishilfe bei$a001.9$iand$a130$9ess=nsm
+750  7$aGrenzwissen$0(OCoLC-D)ffe2e9ce-e3e2-4070-8d0b-b41983d93bb2$2ddcri$9ps=PE
+750  7$aWeltuntergang$xGrenzwissen$0(OCoLC-D)fbb1c27c-e239-4151-8843-fc7479a49431$2ddcri$9ps=PE
+750  7$aStuss (Wissen)$0(OCoLC-D)81b35daa-73f8-46ff-803e-feb08daeaa44$2ddcri$9ps=PE
+750  7$aPseudowissenschaft$0(OCoLC-D)03c206ee-8566-4bc4-942f-db8ebf31e8d4$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 eb4a4b21-ba58-33bc-bc30-8efe7edf027b
+003 DE-101
+005 20051102111003.0
+008 000202aaaaaaaa
+035   $aocd00116655
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.94$e001.9$jMysterien$9ess=en$9ess=eh
+680 1 $iBerichtete Phänomene, die nicht erklärt oder vollständig bestätigt sind$9ess=ndf
+680 0 $iEinschließlich:$tAtlantis, Bermuda-Dreieck, Kraft der Pyramiden$9ess=nin
+680 1 $iHier auch:$tnichtastronomische außerirdische Einflüsse auf die Erde$9ess=nch
+353   $iSiehe auch$a900$ifür Atlantis als Thema der Archäologie$9ess=nsa
+750  7$aAtlantis$2ddcri$9ps=PE
+750  7$aBermuda-Dreieick$2ddcri$9ps=PE
+750  7$aErde (Planet)$xaußerirdische Einflüsse$2ddcri$9ps=PE
+750  7$aRätselhaftes$2ddcri$9ps=PE
+750  7$aLegendäre Orte$xMysterien$2ddcri$9ps=PE
+750  7$aMysterien$xunerklärte Phänomene$2ddcri$9ps=PE
+750  7$aKraft der Pyramiden$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 daeea1f7-60f6-3c3f-bbd2-d61dee83e177
+003 DE-101
+005 20051102111003.0
+008 000202aaaaaaaa
+035   $aocd00116656
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.942$e001.94$jUnbekannte Flugobjekte (UFOs)$9ess=en$9ess=eh
+680 1 $iSynonyme Bezeichnung: Fliegende Untertassen$9ess=nvn
+680 1 $iHier auch:$tBegegnungen zwischen Menschen und Außerirdischen$9ess=nch
+750  7$aEntführung durch Außerirdische$2ddcri$9ps=EO
+750  7$aFliegende Untertassen$2ddcri$9ps=PE
+750  7$aBegegnungen zwischen Menschen und Außerirdischen$2ddcri$9ps=PE
+750  7$aUFOs (Objekte)$2ddcri$9ps=PE
+750  7$aUnbekannte Flugobjekte$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 dd849755-77a1-3ce4-92b2-5dea9e4ae433
+003 DE-101
+005 20120411114421.0
+008 000202aaaaaabb
+035   $aocd00116657
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.9420978943$e001.942$jRoswell-Zwischenfall, Roswell, N.M., 1947$9ess=ien$9ess=peh
+765 0 $b001.94209$z2$s78943$u001.9420978943$9ess=hn
+765 0 $b001.942$z1$a093$c099$z1$s09$u001.94209$9ess=hn
+673   $a001.94209789/43$9ess=seg
+750  7$aRoswell-Zwischenfall, Roswell, N.M., 1947$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 3483bf18-d242-372c-980b-ee013246828c
+003 DE-101
+005 20051102111003.0
+008 000202aaaaaaaa
+035   $aocd00116658
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.944$e001.94$jUngeheuer und verwandte Phänomene$9ess=en$9ess=eh
+680 0 $iEinschließlich:$tSchneemensch, Ungeheuer von Loch Ness$9ess=nin
+353   $iSiehe auch$a590$ifür Tiere, deren Existenz anerkannt ist$9ess=nsa
+750  7$aSchneemensch$2ddcri$9ps=PE
+750  7$aBigfoot$2ddcri$9ps=EO
+750  7$aFabeltiere$xMysterien$2ddcri$9ps=PE
+750  7$aLoch-Ness-Monster$2ddcri$9ps=PE
+750  7$aUngeheuer von Loch Ness$2ddcri$9ps=PE
+750  7$aUngeheuer$xunerklärte Phänomene$2ddcri$9ps=PE
+750  7$aMonster$xunerklärte Phänomene$2ddcri$9ps=PE
+750  7$aSasquatch$2ddcri$9ps=EO
+750  7$aYeti$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 7ea1e886-dbbb-34fd-9700-b8a2a47908f1
+003 DE-101
+005 20120312155950.0
+008 000202aaaaaaaa
+035   $aocd00116659
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.95$e001.9$jTäuschungen und Schwindel$9ess=en$9ess=eh
+673   $a001.9/5$9ess=seg
+253 2 $iKlassifiziere$teinen Schwindel, der Einfluss auf die Geschichte hatte, bei dem Schwindel$iin$a900$i, z.B. Pseudodemetrius$e947.045$9ess=ncw
+685 20$tPiltdownmensch-Schwindel$iverlegt nach$a569.9$d19890306$220$9ess=685
+750  7$aTäuschung$0(OCoLC-D)3cc14e30-8eb1-4a3a-aa21-c5411a2d031a$2ddcri$9ps=PE
+750  7$aSchwindel$0(OCoLC-D)1109161a-c05c-4d91-bc23-853a15ff3f20$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 974bf1e1-6d83-373c-940a-869c7dfee48d
+003 DE-101
+005 20050111173911.0
+008 000202aaaaaaaa
+035   $aocd00116660
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a001.96$e001.9$jFehler, Irreführungen, Aberglaube$9ess=en$9ess=eh
+673   $a001.9/6$9ess=seg
+750  7$aIrreführungen$2ddcri$9ps=PE
+750  7$aFehler$2ddcri$9ps=PE
+750  7$aFehlschlüsse$2ddcri$9ps=PE
+750  7$aEinbildungen$2ddcri$9ps=PE
+750  7$aIllusionen$2ddcri$9ps=PE
+750  7$aAberglaube$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 1d2e595a-d42e-37cd-810c-8ff17a38bfe8
+003 DE-101
+005 20110721150438.0
+008 000202aaaaaaaa
+035   $aocd00116662
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a002$e00$jDas Buch$9ess=en$9ess=eh
+680 0 $iEinschließlich:$tfächerübergreifende Werke über Volksbücher$i[früher$a398.5$i]$9ess=nin
+680 1 $iHier auch:$thistorische Bibliografie, fächerübergreifende Werke über das Buch$9ess=nch
+253 2 $iKlassifiziere$tumfassende Werke über historische und analytische (deskriptive) Bibliografie$iin$a010.42$9ess=nce
+253 0 $iFür$tBuchverlagswesen$isiehe$a070.5$9ess=nse
+253 0 $iFür$tseltene Bücher (Rara)$isiehe$a090$9ess=nse
+253 0 $iFür$tdas Buch unter soziologischen Aspekten$isiehe$a302.232$9ess=nse
+253 0 $iFür$tBuchkunst$isiehe$a686$9ess=nse
+253 0 $iFür$tVolksbücher, die ein bestimmtes Thema schwerpunktmäßig behandeln,$isiehe das Thema, z.B.$tMord$e364.1523$i, mündlich überlieferte Witze ohne nachweisbaren Autor$e398.7$i, englische Erzählprosa des 18. Jahrhunderts$e823.5$9ess=nsw
+750  7$aBücher$2ddcri$9ps=PE
+750  7$aVolksbücher$2ddcri$9ps=PE
+750  7$aChapbooks$2ddcri$9ps=PE
+750  7$aHistorische Bibliografie$2ddcri$9ps=PE
+750  7$aMonografien$2ddcri$9ps=PE
+750  7$aTaschenbücher$2ddcri$9ps=PE
+750  7$aBroschierte Bücher$2ddcri$9ps=PE
+750  7$aBroschuren$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 a324841e-71ca-3d00-be62-f1bafc41faf5
+003 DE-101
+005 20050216132102.0
+008 000202aadaaaba
+035   $aocd00116663
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a002.0216$e002$jVerzeichnisse, Inventar- und Bestandsverzeichnisse, Kataloge$9ess=en$9ess=eh
+765 0 $b002$z1$s0216$u002.0216$9ess=hn
+253 1 $iNicht verwenden; klassifiziere in$a010$9ess=nsx
+
+LEADER 00000nw  a2200000n  4500
+001 480e5ae1-f715-3f90-99bc-45fb1464e8cf
+003 DE-101
+005 20090629104725.0
+008 981229aaaaaabb
+035   $aocd00116664
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a002.0277$e002$jDruckermarken, . . .$9ess=ien$9ess=peh
+765 0 $b002$z1$s0277$u002.0277$9ess=hn
+673   $a002.02/77$9ess=seg
+750  7$aDruckersiegel$2ddcri$9ps=EO
+750  7$aBesitzvermerke$2ddcri$9ps=EO
+750  7$aVerlagssiegel$2ddcri$9ps=EO
+750  7$aVerlegermarken$2ddcri$9ps=EO
+750  7$aDruckermarken$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 27ab6096-7e84-31f9-814a-38b5e6c6f592
+003 DE-101
+005 20050216132135.0
+008 000202aaaaaaba
+035   $aocd00116665
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a002.029$e002$jVerschiedenes zu Handel und Gewerbe$9ess=en$9ess=eh
+765 0 $b002$z1$s029$u002.029$9ess=hn
+253 1 $iNicht verwenden für$tBuchhandelskataloge und Buchhandelsverzeichnisse$i; klassifiziere in$a010$9ess=nsx
+
+LEADER 00000nw  a2200000n  4500
+001 18b44de1-f766-3a45-b896-b3383c68947a
+003 DE-101
+005 20050216132311.0
+008 000202aaaaaaba
+035   $aocd00116666
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a002.074$e002$jMuseen, Sammlungen, Ausstellungen$9ess=en$9ess=eh
+765 0 $b002$z1$s074$u002.074$9ess=hn
+253 2 $iKlassifiziere$tKataloge und Verzeichnisse$iin$a010$9ess=nce
+
+LEADER 00000nw  a2200000n  4500
+001 eb2ae00e-6b16-3439-994f-07080a2df3c7
+003 DE-101
+005 20051102111003.0
+008 000202aaaaaabb
+035   $aocd00116667
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a002.075$e002$jBibliophilie$9ess=ien$9ess=peh
+765 0 $b002$z1$s075$u002.075$9ess=hn
+750  7$aBibliophilie$2ddcri$9ps=PE
+750  7$aBüchersammeln$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 58b13922-42f4-31c7-b0f0-ca4517aee9eb
+003 DE-101
+005 20090602103148.0
+008 050824aaaaaabb
+035   $aocd00116668
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a002.083$e002$jKinderbücher$9ess=ien$9ess=peh
+765 0 $b002$z1$s083$u002.083$9ess=hn
+750  7$aKinderbücher$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 95d2c0b8-62ab-3606-8127-6a4757d97fe2
+003 DE-101
+005 20140113141950.5
+008 000202aaaaaaaa
+035   $aocd00116671
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003$e00$jSysteme$9ess=en$9ess=eh
+680 1 $iHier auch:$tOperations Research; Systemtheorie, Systemanalyse, Systementwurf, Systemoptimierung; Modelle (Simulationen) bezogen auf Systeme der realen Welt$9ess=nch
+768 0 $iSofern keine anderen Anweisungen vorliegen, klassifiziere ein Thema mit Aspekten in zwei oder mehr Unterklassen von$a003$ibei der letztgenannten Notation, z.B. Steuerung von zeitdiskreten linearen Systemen$e003.830115$i(nicht$n003.5$ioder$n003.74$i)$9ess=npn
+253 2 $iKlassifiziere$tSimulation als Unterrichtsmethode$iin$a371.397$9ess=nce
+253 2 $iKlassifiziere$tdie Anwendung von Systemanalyse und Operations Research im Management$iin$a658.4032$9ess=nce
+253 2 $iKlassifiziere Systeme in einem bestimmten Thema bei dem Thema, plus Notation$z1$a011$iaus Hilfstafel 1, z.B. Systemtheorie in den Sozialwissenschaften$e300.11$9ess=ncw
+353   $iSiehe auch$a004.21$ifür$tAnalyse und Entwurf von rechnergestützten Systemen$9ess=nsa
+353   $iSiehe auch$a511.8$ifür$tmathematische Modelle, die nicht auf Systeme der realen Welt bezogen sind$9ess=nsa
+353   $iSiehe auch$a519.7$ifür$tmathematische Programmierung, die nicht auf Systeme der realen Welt bezogen ist$9ess=nsa
+684 2 $iSiehe Praxishilfe bei$a510$i,$z1$a0151$ivs.$a003$i,$z1$a011$9ess=nsm
+685 21$tOperations Research$ifrüher in$b001.424$d19890306$220$9ess=685
+750  7$aMathematische Modelle$xSysteme$0(OCoLC-D)ad01e386-44a9-4dde-b0e1-fab10eb454de$2ddcri$9ps=PE
+750  7$aModellierung (Simulation)$0(OCoLC-D)317194f0-f78d-4ef2-a5f7-3bcbb927bbf2$2ddcri$9ps=PE
+750  7$aModelle (Simulationen)$0(OCoLC-D)4d4927fa-8d3b-435f-9b9e-ecbc13554301$2ddcri$9ps=PE
+750  7$aOperations Research$0(OCoLC-D)d674f245-adbf-4c84-9eb4-2a8ef0f12698$2ddcri$9ps=PE
+750  7$aOptimierung$xSysteme$0(OCoLC-D)e437773b-6222-4907-a439-d4bc72e14d8b$2ddcri$9ps=PE
+750  7$aSimulation$0(OCoLC-D)25599631-ade3-408e-a50e-b9c721a05c8b$2ddcri$9ps=PE
+750  7$aSysteme$0(OCoLC-D)1a21510e-8202-4c0a-8db5-f3326b6ea64b$2ddcri$9ps=PE
+750  7$aSystemoptimierung$0(OCoLC-D)880b5579-4287-4fd4-941a-737069be752e$2ddcri$9ps=PE
+750  7$aSystementwurf$0(OCoLC-D)a9491845-11dd-452c-ad2a-a0794e897a3b$2ddcri$9ps=PE
+750  7$aSystemanalyse$0(OCoLC-D)4556ccf3-3922-488a-8011-3ae705499698$2ddcri$9ps=PE
+750  7$aSystemdesign$0(OCoLC-D)fc961a48-14da-499f-a061-60b5cceb8af2$2ddcri$9ps=PE
+750  7$aSystemtheorie$0(OCoLC-D)a22a22d8-4d93-4a51-9ca2-a102cb010d05$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 01697344-8f44-3fd9-9492-06f4c549cd1e
+003 DE-101
+005 20140117141308.7
+008 000202aadaaaba
+035   $aocd00116672
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.0285$e003$jComputereinsatz$9ess=en$9ess=eh
+765 0 $b003$z1$s0285$u003.0285$9ess=hn
+253 1 $iNicht verwenden; klassifiziere in$a003.3$9ess=nsx
+
+LEADER 00000nw  a2200000n  4500
+001 a55fdbb8-a2a0-3ec2-a0e1-575c8d547493
+003 DE-101
+005 20140120153112.2
+008 000202aaaaaabb
+035   $aocd00116673
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.092$e003$jSystemanalytiker$9ess=ien$9ess=peh
+765 0 $b003$z1$s092$u003.092$9ess=hn
+750  7$aSystemanalytiker$0(OCoLC-D)9dfcadae-0af3-4b91-ad4a-c8225e457b15$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 55a8f7bb-a679-3648-a816-612ff76a6707
+003 DE-101
+005 20140120153129.5
+008 000202aaaaaaaa
+035   $aocd00116674
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.1$e003$jSystemidentifikation$9ess=en$9ess=eh
+673   $a003/.1$9ess=seg
+680 1 $iBestimmung eines mathematischen Modells für ein System durch Beobachtung der Beziehungen zwischen seinen Ein- und Ausgaben$9ess=ndf
+750  7$aSystemidentifikation$0(OCoLC-D)31ecbe76-bcbd-40b5-a456-1222e9ce5ab6$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 5ec4f89f-74f6-3deb-be61-4a5034d8e974
+003 DE-101
+005 20140120153159.0
+008 000202aaaaaaaa
+035   $aocd00116678
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.2$e003$jPrognostik und Prognosen$9ess=en$9ess=eh
+673   $a003/.2$9ess=seg
+680 1 $iHier auch:$tfächerübergreifende Werke über Prognostik$9ess=nch
+253 0 $iFür$tPrognostik mit parapsychologischen und okkulten Mitteln$isiehe$a133.3$9ess=nse
+253 0 $iFür$tsoziale Prognostik$isiehe$a303.49$9ess=nse
+253 0 $iFür Prognostik in einer bestimmten Art von System siehe das System bei$a003.7$c003.8$i, z.B. Prognostik in stochastischen Systemen$e003.760112$9ess=nsw
+750  7$aPrognostik$0(OCoLC-D)1883758e-af03-43c4-8750-eed63825b2bd$2ddcri$9ps=PE
+750  7$aPrognosen$0(OCoLC-D)98d66f0c-73d7-4ea4-9239-5e0df45e5dc2$2ddcri$9ps=PE
+750  7$aFuturologie$0(OCoLC-D)4d945453-9979-45ce-9799-98428d091a56$2ddcri$9ps=PE
+750  7$aVorhersage$0(OCoLC-D)2d224d95-1b80-44fe-834b-e377d0987001$2ddcri$9ps=PE
+750  7$aVorhersagen$0(OCoLC-D)ee78e735-42e1-479c-8975-7fc5a7a1126c$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 7d1bec0e-d8c5-3861-aa22-3249985d8332
+003 DE-101
+005 20121022163810.0
+008 000202aaaaaaba
+035   $aocd00116679
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.209$e003.2$jGeschichte, geografische Behandlung, Biografien der Prognostik als Fachgebiet$9ess=en$9ess=eh
+765 0 $b003.2$z1$s09$u003.209$9ess=hn
+673   $a003/.209$9ess=seg
+253 0 $iFür$tPrognostik und Prognosen für einzelne geografische Gebiete$isiehe$a303.491$c303.499$9ess=nse
+
+LEADER 00000nw  a2200000n  4500
+001 ce9eacab-86fd-31b0-9593-131a40444ffe
+003 DE-101
+005 20140120153442.9
+008 000202aaaaaaaa
+035   $aocd00116680
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.3$e003$jComputermodellierung und Computersimulation$9ess=en$9ess=eh
+673   $a003/.3$9ess=seg
+761  0$iStandardschlüssel werden angehängt für eines der oder beide Themen in der Klassenbenennung$9ess=nsf
+680 1 $iHier auch:$tInformatik angewendet auf Systeme, Computerimplementierung von mathematischen Systemmodellen, fächerübergreifende Werke über Computermodellierung und Computersimulation$9ess=nch
+761  0$iHänge an die Grundnotation$b003.3$idie Ziffern an, die$r00$iin$d004$c006$ifolgen, z.B.$tComputersimulationssprachen$e003.3513$9ess=na1
+253 0 $iFür$tComputermodellierung und Computersimulation bezogen auf ein bestimmtes Thema siehe das Thema,$iplus Notation$z1$a0113$iaus Hilfstafel 1, z.B.$tComputermodellierung in der Wirtschaft$e330.0113$9ess=nsw
+453 0 $iStandardschlüssel-nicht-verwenden-Anweisung in$a003.0285$jComputereinsatz$9ess=
+750  7$aComputermodellierung$0(OCoLC-D)1bf31cd6-cf25-43c2-a5a5-53c237078990$2ddcri$9ps=PE
+750  7$aRechnergestützte Modellierung$0(OCoLC-D)eaf8ce13-069d-403b-95e9-5431b8c9eed9$2ddcri$9ps=PE
+750  7$aComputersimulation$0(OCoLC-D)0680b9b7-197e-4b04-82e5-ca78323b7f02$2ddcri$9ps=PE
+750  7$aRechnergestützte Simulation$0(OCoLC-D)eae5e083-25a9-4f08-aefc-227121fd7a6d$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 bb606afe-336f-3fc9-a273-184d3b136c3d
+003 DE-101
+005 20140113143154.5
+008 000202aaaaaaaa
+035   $aocd00116682
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.5$e003$jTheorie der Regelung und Nachrichtenübermittlung$9ess=en$9ess=eh
+673   $a003/.5$9ess=seg
+680 1 $iIn belebten und unbelebten Systemen$9ess=nsc
+680 0 $iEinschließlich:$tBionik$9ess=nin
+680 1 $iHier auch:$tKybernetik, fächerübergreifende Werke über Regelung und Stabilität von Systemen$9ess=nch
+253 2 $iKlassifiziere$tsoziologische Aspekte von und fächerübergreifende Werke über Nachrichtenübertragung in Systemen$iin$a302.2$9ess=nce
+253 0 $iFür$tkünstliche Intelligenz$isiehe$a006.3$9ess=nse
+253 0 $iFür$tRegelungstheorie in der Automatisierungstechnik$isiehe$a629.8312$9ess=nse
+253 0 $iFür$tRegelung und Stabilität von Systemen eines bestimmten Themas siehe das Thema,$iplus Notation$z1$a0115$iaus Hilfstafel 1, z.B.$tRegelung und Stabilität von Systemen in den Ingenieurwissenschaften allgemein$e620.00115$9ess=nsw
+685 21$tKybernetik$ifrüher in$b001.53$d1989$220$9ess=685
+750  7$aSteuerungstheorie$0(OCoLC-D)41069970-dd56-42eb-8cf3-1474907dc69e$2ddcri$9ps=PE
+750  7$aKontrolltheorie$0(OCoLC-D)7217aa53-71d0-4d66-8250-8d3819839229$2ddcri$9ps=PE
+750  7$aKybernetik$0(OCoLC-D)fa9acc95-56a8-4df7-9ac2-36fb875caded$2ddcri$9ps=PE
+750  7$aProzesssteuerung$0(OCoLC-D)b66c066b-e6b6-4e76-ba2b-90304948be21$2ddcri$9ps=PE
+750  7$aBionik$0(OCoLC-D)b90246c3-87ef-443b-8eb7-f3dabd429974$2ddcri$9ps=PE
+750  7$aRegelungstheorie$0(OCoLC-D)2992b624-3720-4a0f-8f6c-2aa08beebc7a$2ddcri$9ps=PE
+750  7$aRegelungstheorie$xSysteme$0(OCoLC-D)21b02c18-ccc2-406b-882a-e3ce557e9c4a$2ddcri$9ps=PE
+750  7$aSystemsteuerung$0(OCoLC-D)37de5a98-c63f-4dfe-9102-52df7df7264e$2ddcri$9ps=PE
+750  7$aSystemstabilität$0(OCoLC-D)773ca01c-ed3a-4d7e-a71c-781b50188a0f$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 3f7a0a4d-556d-33e9-8341-7bb732cca85f
+003 DE-101
+005 20140113143318.4
+008 000202aaaaaaaa
+035   $aocd00116683
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.52$e003.5$jWahrnehmungstheorie$9ess=en$9ess=eh
+673   $a003/.52$9ess=seg
+253 2 $iKlassifiziere$tmaschinelles Sehen$iin$a006.37$9ess=nce
+253 2 $iKlassifiziere$tdie Psychologie der menschlichen Wahrnehmung$iin$a153.7$9ess=nce
+253 2 $iKlassifiziere$tWahrnehmung bei Tieren$iin$a573.87$9ess=nce
+353   $iSiehe auch$a006.4$ifür$tmaschinelle Mustererkennung$9ess=nsa
+685 01$iFrüher in$b001.534$d1996$221$9ess=685
+750  7$aWahrnehmungstheorie$0(OCoLC-D)a44a7ed0-264e-445c-a8c7-79925591b2ac$2ddcri$9ps=PE
+750  7$aPerzeptionstheorie$0(OCoLC-D)389fb5b7-091a-4f80-a255-6dcb7561c4da$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 4ea875f7-2752-3bf3-a659-fd96c5713760
+003 DE-101
+005 20140113143533.2
+008 000202aaaaaaaa
+035   $aocd00116684
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.54$e003.5$jInformationstheorie$9ess=en$9ess=eh
+673   $a003/.54$9ess=seg
+680 1 $iTheorie, die sich mit dem quantitativen Messen von Information, der fehlerfreien Übertragung von Nachrichten, die Rauschen (unerwünschten, meist stochastischen Signalen), Verzerrung und Übertragungsblockierung ausgesetzt sind, sowie Codierungsmethoden für effiziente, fehlerfreie Übertragung beschäftigt$9ess=ndf
+680 1 $iHier auch:$tCodierungstheorie$9ess=nch
+253 2 $iKlassifiziere$tInformationstheorie in der Nachrichtentechnik$iin$a621.3822$i, ohne Notation$z1$a01154$iaus Hilfstafel 1 zu verwenden;$9ess=nce
+253 2 $iKlassifiziere$tCodierung zur Einschränkung des Zugriffs auf Information (Kryptografie)$iin$a652.8$9ess=nce
+253 2 $iKlassifiziere Informationstheorie in der Nachrichtentechnik einer bestimmten Art von Nachrichtenübertragung bei der Art, ohne Notation$z1$a01154$iaus Hilfstafel 1 zu verwenden, z.B.$tRadio$e621.384$9ess=ncw
+253 2 $iKlassifiziere Informationstheorie in jedem anderen Thema bei dem Thema, plus Notation$z1$a01154$iaus Hilfstafel 1, z.B. Informationstheorie in der Wirtschaft$e330.01154$9ess=ncw
+685 01$tInformationstheorie$ifrüher in$b001.539$d19890306$220$9ess=685
+685 01$tCodierungstheorie$ifrüher in$b519.4$d19890306$220$9ess=685
+750  7$aCodierungstheorie$0(OCoLC-D)df6076e7-2d7f-426e-80f3-c1fd8eb125a6$2ddcri$9ps=PE
+750  7$aInformationstheorie$0(OCoLC-D)98fcc346-77d4-4304-b786-d4a10b0cf7d1$2ddcri$9ps=PE
+750  7$aSignaltheorie$0(OCoLC-D)3d2ef4f8-93b3-4bc9-80d4-3761cd66bf74$2ddcri$9ps=PE
+750  7$aSignaltheorie$xSysteme$0(OCoLC-D)ab6a1a12-ab60-46f1-aae5-ea8fbe11bd1c$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 6f9361d9-2315-3bea-92a1-ee213f6ff319
+003 DE-101
+005 20140113143634.1
+008 000202aaaaaaaa
+035   $aocd00116685
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.56$e003.5$jEntscheidungstheorie$9ess=en$9ess=eh
+673   $a003/.56$9ess=seg
+353   $iSiehe auch$a153.83$ifür$tEntscheidungstheorie in der Psychologie$9ess=nsa
+353   $iSiehe auch$a511.65$ifür$tEntscheidungstheorie in der kombinatorischen Analysis$9ess=nsa
+353   $iSiehe auch$a658.40301$ifür$tEntscheidungstheorie im Management$9ess=nsa
+750  7$aEntscheidungstheorie$0(OCoLC-D)664fd7b1-4850-4552-9724-44c93f0e4438$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 a7d6540a-3f4f-398d-9890-554175859c02
+003 DE-101
+005 20140120153750.3
+008 000202aaaaaaaa
+035   $aocd00116686
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.7$e003$jSystemarten$9ess=en$9ess=eh
+673   $a003/.7$9ess=seg
+680 1 $tSysteme unterschieden nach Typ oder nach Gleichungen, die zu ihrer Modellierung eingesetzt werden$9ess=nsc
+680 0 $iEinschließlich:$tdeterministische, hierarchische, selbstorganisierende Systeme, Kleinsysteme, Systeme mit konzentrierten Parametern$9ess=nin
+253 0 $iFür$tSysteme, die nach ihrem Verhältnis zu Zeit unterschieden werden,$isiehe$a003.8$9ess=nse
+685 21$tSelbstorganisierende Systeme$ifrüher in$b001.533$d19890306$220$9ess=685
+750  7$aDeterministische Systeme$0(OCoLC-D)944a33b9-6aae-4230-9b2a-2af56c90f3ab$2ddcri$9ps=PE
+750  7$aHierarchische Systeme$0(OCoLC-D)2ed40486-9b9c-42cc-99d1-b30c0487557c$2ddcri$9ps=PE
+750  7$aSysteme mit konzentrierten Parametern$0(OCoLC-D)701b17b2-df4e-4207-9f1a-6675d7c51d6e$2ddcri$9ps=PE
+750  7$aSelbstorganisierende Systeme$0(OCoLC-D)eaf7719b-549a-44fc-8639-93378225bc6f$2ddcri$9ps=PE
+750  7$aKleinsysteme$0(OCoLC-D)6db696f9-72e9-4f69-a984-8e8351b9af15$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 709aa185-4394-354c-adc3-3069956c5f56
+003 DE-101
+005 20140120153839.5
+008 000202aaaaaaaa
+035   $aocd00116688
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.71$e003.7$jGroßsysteme$9ess=en$9ess=eh
+673   $a003/.71$9ess=seg
+680 1 $iBegrenzt auf$tWerke mit Schwerpunkt darauf, dass es sich bei den erörterten Systemen um große Systeme handelt$9ess=nsc
+750  7$aGroßsysteme$0(OCoLC-D)694cb7b3-f30f-4c7b-b5df-9c5b49d83ab4$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 599d68f7-a525-3615-bc2b-317b34638393
+003 DE-101
+005 20140120153913.7
+008 061211aaaaaaaa
+035   $aocd00116689
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.72$e003.7$jNetzwerke$9ess=en$9ess=eh
+673   $a003/.72$9ess=seg
+680 1 $iHier auch:$tNetzwerktheorie$9ess=nch
+253 0 $iFür$tdie rein mathematische Behandlung von Netzwerken ohne Bezug auf Systeme der realen Welt$isiehe$a511.5$9ess=nse
+685 03$iErweitert aus$b003.7$d200611$222$9ess=685
+750  7$aNetzwerktheorie$0(OCoLC-D)2f997418-2c4d-485c-9a58-ed5d8c30fec0$2ddcri$9ps=PE
+750  7$aNetzwerke (Systeme)$0(OCoLC-D)4a3a610a-c612-4032-b6ea-444eba2230f5$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 f74c3b89-618e-3234-bb26-37bba10a341f
+003 DE-101
+005 20140120153926.0
+008 000202aaaaaaaa
+035   $aocd00116690
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.74$e003.7$jLineare Systeme$9ess=en$9ess=eh
+673   $a003/.74$9ess=seg
+750  7$aLineare Systeme$0(OCoLC-D)8be2d724-8c8f-4541-bbdf-60bb269dc09b$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 461a6ac3-f71a-31d2-bb69-032bd4263608
+003 DE-101
+005 20140120153937.9
+008 000202aaaaaaaa
+035   $aocd00116691
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.75$e003.7$jNichtlineare Systeme$9ess=en$9ess=eh
+673   $a003/.75$9ess=seg
+750  7$aNichtlineare Systeme$0(OCoLC-D)cce20cab-612c-4d88-9eaf-3a59bd092cf5$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 32ba5a6f-948e-305f-9654-064d3d27581f
+003 DE-101
+005 20140113143740.3
+008 000202aaaaaaaa
+035   $aocd00116692
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.76$e003.7$jStochastische Systeme$9ess=en$9ess=eh
+673   $a003/.76$9ess=seg
+750  7$aStochastische Systeme$0(OCoLC-D)900ba442-a56f-47c2-b05b-ec265613d1af$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 418e1ab5-97ee-3fdf-957d-e2e8e85b2129
+003 DE-101
+005 20140120153951.0
+008 000202aaaaaaaa
+035   $aocd00116694
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.78$e003.7$jSysteme mit verteilten Parametern$9ess=en$9ess=eh
+673   $a003/.78$9ess=seg
+750  7$aSysteme mit verteilten Parametern$0(OCoLC-D)8e7bee03-ef35-45cd-a3ed-804ae91aca12$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 e25a1b70-abcc-3ece-b747-5a674e2a578f
+003 DE-101
+005 20140120154131.6
+008 000202aaaaaaaa
+035   $aocd00116695
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.8$e003$jSysteme unterschieden nach ihrem Verhältnis zu Zeit$9ess=en$9ess=eh
+673   $a003/.8$9ess=seg
+680 0 $iEinschließlich:$tzeitkontinuierliche, statische (gedächtnislose), zeitinvariante, zeitvariable Systeme$9ess=nin
+750  7$aStatische Systeme$0(OCoLC-D)7206322f-946d-4355-bad2-434bcea1c755$2ddcri$9ps=PE
+750  7$aZeitvariable Systeme$0(OCoLC-D)1cdad3f6-a086-4733-b47d-eedc66e52f2c$2ddcri$9ps=PE
+750  7$aZeitkontinuierliche Systeme$0(OCoLC-D)884d5b04-0fc2-4000-9551-eb462ceda2e9$2ddcri$9ps=PE
+750  7$aZeitstetige Systeme$0(OCoLC-D)05c2c892-bf3d-466b-8f71-5f11f0b12a6a$2ddcri$9ps=PE
+750  7$aZeitinvariante Systeme$0(OCoLC-D)45f3dbca-2965-448a-b6b1-40d85db942d8$2ddcri$9ps=PE
+750  7$aZeitvariante Systeme$0(OCoLC-D)8fa64b51-a64a-4ad6-947a-fac6611a6b60$2ddcri$9ps=PE
+750  7$aGedächtnislose Systeme$0(OCoLC-D)771fb44e-a344-456e-894d-82438a7443e5$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 18852527-198b-3222-8d58-6502ff8c7414
+003 DE-101
+005 20140120154142.2
+008 000202aaaaaaaa
+035   $aocd00116696
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.83$e003.8$jZeitdiskrete Systeme$9ess=en$9ess=eh
+673   $a003/.83$9ess=seg
+750  7$aZeitdiskrete Systeme$0(OCoLC-D)e2a8e2b2-2ed8-4cc0-bfc5-2e5bcdd00e63$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 c8c92e35-a190-3e9b-8d87-e3f09e76d64f
+003 DE-101
+005 20140120154159.5
+008 000202aaaaaaaa
+035   $aocd00116698
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.85$e003.8$jDynamische Systeme$9ess=en$9ess=eh
+673   $a003/.85$9ess=seg
+680 1 $iSysteme, bei denen ein Ausgangswert sowohl von früheren Eingangswerten als auch vom augenblicklichen Eingangswert abhängt$9ess=ndf
+750  7$aDynamische Systeme (Informatik)$0(OCoLC-D)68cc17ad-3201-4e81-8437-e586a998fd99$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 679eda77-f978-3a6d-a511-d2e1fb652623
+003 DE-101
+005 20140120154217.7
+008 000202aaaaaaaa
+035   $aocd00116699
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a003.857$e003.85$jChaotische Systeme$9ess=en$9ess=eh
+673   $a003/.857$9ess=seg
+680 1 $iHier auch:$tchaotisches Systemverhalten$9ess=nch
+750  7$aChaotisches Systemverhalten$0(OCoLC-D)0277a90b-41e3-45ba-b937-aadf52c8c23a$2ddcri$9ps=PE
+750  7$aChaotische Systeme$0(OCoLC-D)bc9af008-65dd-4ac8-9352-753a28cedced$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 53aac7a5-535d-3b81-b66d-1202bf76434a
+003 DE-101
+005 20140213111130.8
+008 000202aaaaaaaa
+035   $aocd00116701
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004$e004$f006$jInformatik$9ess=en$9ess=eh
+680 1 $iHier auch:$tDatenverarbeitung; Auswahl und Einsatz von Hardware; elektronische Computer; elektronische Digitalcomputer; Computersysteme (Computer, ihre Peripheriegeräte, ihre Betriebssysteme); E-Science (Cyberinfrastructure), Zentraleinheiten; Adaptive Computing Systems;  Zuverlässigkeit von Computern; Dialog-, Dialogverarbeitung, Onlineverarbeitung; Mobile Computing; umfassende Werke über Hardware und Programme in der elektronischen Datenverarbeitung$9ess=nch
+253 2 $iKlassifiziere$tComputermodellierung und Computersimulation$iin$a003.3$9ess=nce
+253 2 $iKlassifiziere$tComputereinsatz in einem bestimmten Thema$ibei dem Thema, plus Notation$z1$a0285$iaus Hilfstafel 1, z.B.$tComputereinsatz im Kreditwesen$e332.10285$9ess=ncw
+253 0 $iFür$tComputerprogrammierung, Computerprogramme, Daten$isiehe$a005$9ess=nse
+253 0 $iFür$tspezielle Computerverfahren$isiehe$a006$9ess=nse
+253 0 $iFür$tComputertechnik, Herstellung und Reparatur von Computern$isiehe$a621.39$9ess=nse
+253 0 $iFür$teinen bestimmten Aspekt des Mobile Computing$isiehe den Aspekt, z.B.$tHandheld-Computergeräte$e004.167$i,$tdrahtlose Datenkommunikation$e004.6$i,$tBetriebssysteme für mobile Computerendgeräte$e005.446$9ess=nsw
+253 0 $iFür$teinen bestimmten Aspekt des Adaptive Computing$isiehe den Aspekt, z.B.$trekonfigurierbare Computerarchitekturen$e004.22$i,$tHardwarebeschreibungssprachen$e621.392$i,$tUniversalschaltkreise$e621.395$9ess=nsw
+353   $iSiehe auch$a025.04$ifür$tautomatische Informationsspeicherung und Information Retrieval$9ess=nsa
+353   $iSiehe auch$a303.4834$ifür$tComputer als Ursache sozialen Wandels$9ess=nsa
+353   $iSiehe auch$a343.0999$ifür$tComputerrecht$9ess=nsa
+353   $iSiehe auch$a364.168$ifür$tComputerkriminalität im Wirtschafts- und Finanzbereich$9ess=nsa
+353   $iSiehe auch$a371.334$ifür$tcomputerunterstütztes Lernen (CUL)$9ess=nsa
+353   $iSiehe auch$a658.05$tfür Datenverarbeitung im Management$9ess=nsa
+353   $iSiehe auch$a794.8$ifür$tComputerspiele$9ess=nsa
+684 2 $iSiehe Praxishilfe bei$a004$c006$ivs.$a621.39$9ess=nsm
+684 2 $iSiehe Praxishilfe bei$a004$ivs.$a005$9ess=nsm
+684 2 $iSiehe Praxishilfe bei$a510$i,$z1$a0151$ivs.$a004$c006$i,$z1$a0285$9ess=nsm
+685 01$iFrüher in$b001.6$d19850501$219$9ess=685
+685 88$iDiese Haupttafel wurde 1985 separat veröffentlicht$d19850501$219$9ess=685
+750  7$aADV (Datentechnik)$0(OCoLC-D)e10689a7-a347-4729-a2d5-65c783ab431f$2ddcri$9ps=PE
+750  7$aAutomatische Datenverarbeitung$0(OCoLC-D)49889c8a-df37-4c35-a91c-3baf8da52836$2ddcri$9ps=PE
+750  7$aZentraleinheiten$0(OCoLC-D)492e0f30-f83e-498b-b4ef-d069df99ce98$2ddcri$9ps=PE
+750  7$aKompatibilität$xInformatik$0(OCoLC-D)f0dcb808-c9b9-4b5f-8fa0-7c38972908cc$2ddcri$9ps=PE
+750  7$aKompatibilität$xInformatik$xHardware$0(OCoLC-D)cb472c08-1c73-48ca-b971-48018608d30f$2ddcri$9ps=PE
+750  7$aComputerkompetenz$0(OCoLC-D)42509438-bca1-4c41-a5ae-9a035ecc46ed$2ddcri$9ps=PE
+750  7$aComputerkenntnisse$0(OCoLC-D)2969c40d-4da2-4b78-a6fd-899a72c0a3b4$2ddcri$9ps=PE
+750  7$aComputerzuverlässigkeit$0(OCoLC-D)a9a25dcb-ba36-4a7f-83e2-5e3da653d426$2ddcri$9ps=PE
+750  7$aComputerzuverlässigkeit$xHardware$0(OCoLC-D)4a2b9573-a89e-460b-89b0-ef341e0e228d$2ddcri$9ps=PE
+750  7$aInformatik$0(OCoLC-D)f6e087db-cbd6-43f7-8ef3-86812d44f302$2ddcri$9ps=PE
+750  7$aComputersysteme$0(OCoLC-D)d58dcbdb-1faa-462b-a496-ff96b3a474c8$2ddcri$9ps=PE
+750  7$aComputer$0(OCoLC-D)26a754bf-761a-4c01-b6de-01daacc77384$2ddcri$9ps=PE
+750  7$aCPU (Zentraleinheit)$0(OCoLC-D)9a06212a-ba0c-4ba9-8cc4-835ab634f1a5$2ddcri$9ps=PE
+750  7$aDatenverarbeitung$0(OCoLC-D)ad56f879-176f-4888-aa57-67a0d93e2778$2ddcri$9ps=PE
+750  7$aDigitalcomputer$0(OCoLC-D)df49a83e-f138-4460-afe1-8efec48f974e$2ddcri$9ps=PE
+750  7$aDigitale Computer$0(OCoLC-D)333538f6-7d99-468c-a7a1-caf51bca9466$2ddcri$9ps=PE
+750  7$aDigitale Rechenanlagen$0(OCoLC-D)888a4b82-78b8-4982-90ef-427b35f3b82a$2ddcri$9ps=PE
+750  7$aDigitalrechner$0(OCoLC-D)f2897eae-3035-48fd-ba87-be1aca2fade9$2ddcri$9ps=PE
+750  7$aElektronische Rechenanlagen$0(OCoLC-D)d68ae9c9-5d50-442e-8d5a-efacfaa11654$2ddcri$9ps=PE
+750  7$aEDV (Datentechnik)$0(OCoLC-D)12be411d-25bb-440d-9821-9943469b1a0f$2ddcri$9ps=PE
+750  7$aElektronische Computer$0(OCoLC-D)4cc3c3e2-5ce5-4a58-81fb-df02241ec8e9$2ddcri$9ps=PE
+750  7$aElektronische Datenverarbeitung$0(OCoLC-D)796d2257-bb69-495f-9c55-7951d3888d6b$2ddcri$9ps=PE
+750  7$aElektronische Digitalcomputer$0(OCoLC-D)afba7db4-49f2-4149-8dd3-250ee501e818$2ddcri$9ps=PE
+750  7$aHardware$0(OCoLC-D)7b17004b-32c0-4431-ab42-deada1c93883$2ddcri$9ps=PE
+750  7$aProzessoren$xHardware$0(OCoLC-D)8372e444-96ff-4fe4-97e0-a78d19bf95af$2ddcri$9ps=PE
+750  7$aAdaptive Computing Systems$0(OCoLC-D)3639dc5c-c2ab-423f-8824-15e94732f26e$2ddcri$9ps=PE
+750  7$aE-Science$0(OCoLC-D)6e6d06ed-c6f7-4360-8a3d-4df88b10dae7$2ddcri$9ps=PE
+750  7$aEnhanced Science$0(OCoLC-D)7f6bf6a5-dc86-4e13-aaf5-effe5b99cb1b$2ddcri$9ps=PE
+750  7$aElectronic Science$0(OCoLC-D)cd04eabd-bd16-464c-9d05-17ccb249de26$2ddcri$9ps=PE
+750  7$aCyberinfrastructure$0(OCoLC-D)2db50b10-66b5-47b9-900e-7d90999fd7ab$2ddcri$9ps=PE
+750  7$aFirmware$xHardware$0(OCoLC-D)71b95aa4-09ee-4cf2-b79b-1977e8840e15$2ddcri$9ps=PE
+750  7$aInformationstechnik$xInformatik$0(OCoLC-D)5951a154-de7b-4f56-9ba5-6997fc0d55da$2ddcri$9ps=PE
+750  7$aMaschinentheorie$xInformatik$0(OCoLC-D)09d9f470-640c-4c00-9f00-b12104eed86b$2ddcri$9ps=PE
+750  7$aOnlineverarbeitung$0(OCoLC-D)5ce191c5-1547-42b7-a6ac-9702bb39cdcf$2ddcri$9ps=PE
+750  7$aInformatik$xInformatik$0(OCoLC-D)2229c8ed-beba-469d-ba0e-f5dcefeba26a$2ddcri$9ps=PE
+750  7$aDialogverarbeitung$0(OCoLC-D)d906d07f-4829-42ea-ac12-0a467f9b4c7b$2ddcri$9ps=PE
+750  7$aMobile Computing$0(OCoLC-D)919ee9e1-e940-481b-96ea-c22ece8ab20e$2ddcri$9ps=PE
+750  7$aMobiler Computereinsatz$0(OCoLC-D)4b149895-7d38-4d72-b759-6f9b501e268e$2ddcri$9ps=PE
+750  7$aMobile Informationsverarbeitung$0(OCoLC-D)a580b40d-6ea1-4c9c-9698-f1cc21096f23$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 99c5a173-de87-3dc1-b90a-dcf771de7ea5
+003 DE-101
+005 20140120155032.3
+008 080828acaaaaaa
+035   $aocd00116702
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004$c006$e00$jInformatik; Computerprogrammierung, Computerprogramme, Daten; spezielle Computerverfahren$9ess=cen$9ess=eh
+768 0 $iSofern keine anderen Anweisungen vorliegen, klassifiziere ein Thema mit Aspekten in zwei oder mehr Unterklassen von$a004$c006$ibei der letztgenannten Notation, z.B.$texterner Speicher für Personal Computer$e004.56$i(nicht$n004.16$i),$tDatensicherheit in der Client-Server-Datenverarbeitung$a005.8$i(nicht$n004.36$i),$tVerarbeitung natürlicher Sprache in Volltext-Datenbankverwaltungssystemen$a006.35$i(nicht$n005.759$i)$9ess=npn
+253 2 $iKlassifiziere$tumfassende Werke$iin$a004$9ess=nce
+
+LEADER 00000nw  a2200000n  4500
+001 2b126bbb-81b9-383e-a081-245f2af01ffc
+003 DE-101
+005 20140121111029.7
+008 000202aaaaaaba
+035   $aocd00116609
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.0151$e004$jMathematische Prinzipien$9ess=en$9ess=eh
+765 0 $b004.015$r5$s10$u004.0151$9ess=hn
+765 0 $b004$z1$s015$u004.015$9ess=hn
+673   $a004.01/51$9ess=seg
+680 1 $iHier auch:$tComputermathematik$9ess=nch
+684 2 $iSiehe Praxishilfe bei$a004.0151$ivs.$a511.1$i,$a511.35$9ess=nsm
+685 21$tComputermathematik$ifrüher in$b519.4$d19890306$220$9ess=685
+750  7$aComputermathematik$0(OCoLC-D)4e686b7d-a116-477e-bbaf-bcadee84e9b4$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 40fc822b-21a1-3af5-8819-a501e31ac827
+003 DE-101
+005 20140121111058.0
+008 000202aaaaaabb
+035   $aocd00116610
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.015113$e004.0151$jMathematische Logik--Informatik, . . .$9ess=ien$9ess=peh
+765 0 $b004.015$r5$s113$u004.015113$9ess=hn
+765 0 $b004$z1$s015$u004.015$9ess=hn
+673   $a004.01/5113$9ess=seg
+750  7$aMathematische Logik$xInformatik$0(OCoLC-D)d800024d-0825-42ca-a8c3-6248f9ed8340$2ddcri$9ps=EO
+750  7$aSymbolische Logik$xInformatik$0(OCoLC-D)d535c287-fae9-496e-ba9e-22670f40f899$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 7e344aff-4a0a-30f9-b1b7-6c6541d183da
+003 DE-101
+005 20140121111832.5
+008 000202aaaaaaba
+035   $aocd00116713
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.019$e004$jPsychologische Prinzipien$9ess=en$9ess=eh
+765 0 $b004$z1$s019$u004.019$9ess=hn
+673   $a004.01/9$9ess=seg
+680 1 $iHier auch:$tMensch-Maschine-Kommunikation, menschliche Faktoren, Usability$9ess=nch
+694   $iVerwende Notation$z1$a019$iaus Hilfstafel 1 in der hier veränderten Form im gesamten Bereich$a004$c006$i, z.B.$tmenschliche Faktoren bei Benutzerschnittstellen$e005.437019$9ess=nml
+750  7$aMensch-Maschine-Kommunikation$0(OCoLC-D)822d915a-33ba-49a3-8b64-938de0448008$2ddcri$9ps=PE
+750  7$aGebrauchstauglichkeit$xComputer$0(OCoLC-D)fe6533f8-e6e3-441e-ac07-1a04cea62552$2ddcri$9ps=PE
+750  7$aErgonomie$xComputer$0(OCoLC-D)76a0c96d-c816-4598-92b0-dc04804923d6$2ddcri$9ps=PE
+750  7$aHuman-Computer Interaction$0(OCoLC-D)abc15110-5482-4a09-9c8c-49f7de0f6bc6$2ddcri$9ps=PE
+750  7$aMensch-Computer-Interaktion$0(OCoLC-D)3af7d095-8021-4162-95f4-7cbe80c6f96d$2ddcri$9ps=PE
+750  7$aMensch-Maschine-Systeme$xErgonomie$xInformatik$0(OCoLC-D)af495ad8-8f98-448c-8104-a9f16affb924$2ddcri$9ps=PE
+750  7$aUsability$xComputer$0(OCoLC-D)d6d47d2e-ce8c-462f-9aa0-3ad342361c87$2ddcri$9ps=PE
+750  7$aComputer-Human Interaction$0(OCoLC-D)494c8c76-1f75-48b9-b869-6f4ccd0f08c2$2ddcri$9ps=PE
+750  7$aComputer-Mensch-Interaktion$0(OCoLC-D)042bbe69-64d0-4ae9-98d9-7da337549afb$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 9c4fec42-9397-3ca4-9ba7-22c2120d10c5
+003 DE-101
+005 20140121111852.5
+008 000202aaaaaabb
+035   $aocd00116714
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.023$e004$jInformatik--Berufsberatung$9ess=ien$9ess=peh
+765 0 $b004$z1$s023$u004.023$9ess=hn
+750  7$aInformatik$xBerufsberatung$0(OCoLC-D)969fbed4-1925-4ce2-9d06-a645ef19d8b0$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 54f975d3-a016-3cf0-8f16-b9bd8dc084fc
+003 DE-101
+005 20051102111003.0
+008 000202aaaaaaba
+035   $aocd00116715
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.028$e004$jUnterstützende Techniken und Verfahren; Geräte, Ausstattung, Materialien$9ess=en$9ess=eh
+765 0 $b004$z1$s028$u004.028$9ess=hn
+
+LEADER 00000nw  a2200000n  4500
+001 86a8842c-ffa3-3c28-99b7-b5ddc97c527b
+003 DE-101
+005 20051102111003.0
+008 000202aadaaaba
+035   $aocd00116716
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.0287$e004.028$jTesten und Messen$9ess=en$9ess=eh
+765 0 $b004$z1$s0287$u004.0287$9ess=hn
+253 1 $iNicht verwenden; klassifiziere in$a004.24$9ess=nsx
+
+LEADER 00000nw  a2200000n  4500
+001 ocd00188604
+003 OCoLC-D
+005 20140213111951.6
+008 100204aaaaaabb
+040   $aOCLCD$bger$cOCLCD
+084 0 $addc$c23de$eger
+153   $a004.0288$e004.028$jComputer--Instandhaltung, . . .$9ess=ien
+765 0 $b004$z1$s0288$u004.0288$9ess=hn
+673   $a004.028/8$9ess=
+750  7$aComputer$xInstandhaltung$0(OCoLC-D)5d7d3730-ceca-4ac0-95fb-4d4780039d7d$2ddcri$9ps=PE
+750  7$aComputer$xReparatur$0(OCoLC-D)591c23de-589f-4d02-9ac1-ba2e0e915475$2ddcri$9ps=PE
+750  7$aComputer$xWartung$0(OCoLC-D)a5f3f5f6-f712-4a5a-9b3e-e9b4b6a3f6e2$2ddcri$9ps=PE
+750  7$aComputerwartung$0(OCoLC-D)d22c7206-0f15-44bd-89fe-e7f445abe97b$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 c31cf085-099b-38a8-8336-8bd837ccaef8
+003 DE-101
+005 20140121112121.4
+008 000202aaaaaabb
+035   $aocd00116717
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.029$e004$jLeistungsbewertung--Informatik$9ess=ien$9ess=peh
+765 0 $b004$z1$s029$u004.029$9ess=hn
+750  7$aLeistungsbewertung$xInformatik$0(OCoLC-D)9273da01-fdac-402f-b56e-db8439fb1e59$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 2d3d7add-bbcc-3d10-9cde-100d15196e58
+003 DE-101
+005 20140121112148.7
+008 000202aaaaaabb
+035   $aocd00116718
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.03$e004$jInformatik--Wörterbücher, . . .$9ess=ien$9ess=peh
+765 0 $b004$z1$s03$u004.03$9ess=hn
+750  7$aInformatik$xWörterbücher$0(OCoLC-D)05fb0589-0cf2-4f09-a12d-5a90eb9cd2c9$2ddcri$9ps=EO
+750  7$aComputer$xWörterbücher$0(OCoLC-D)36dd859d-d43d-4844-baed-b2cfd433e42c$2ddcri$9ps=EO
+750  7$aElektronische Datenverarbeitung$xWörterbücher$0(OCoLC-D)c56dec4f-d5af-4af3-a954-d9fb6ebc33cb$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 b7571dde-e7d5-3ce7-914b-b32b84b69f3a
+003 DE-101
+005 20140121112204.3
+008 000202aaaaaabb
+035   $aocd00116722
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.0688$e004$jComputer--Marketingmanagement$9ess=ien$9ess=peh
+765 0 $b004$z1$s0688$u004.0688$9ess=hn
+673   $a004.068/8$9ess=seg
+750  7$aComputer$xMarketingmanagement$0(OCoLC-D)574365d1-6f7e-45b8-a1bf-011e543147ec$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 6bf838e8-41c4-3e01-9d45-e7b1d2c1e78a
+003 DE-101
+005 20140121112222.7
+008 000202aaaaaabb
+035   $aocd00116723
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.071$e004$jInformatik--Ausbildung$9ess=ien$9ess=peh
+765 0 $b004$z1$s071$u004.071$9ess=hn
+750  7$aInformatik$xAusbildung$0(OCoLC-D)4310d911-1395-4030-9ecc-44a1bc60917e$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 3b31a99d-8452-3933-9c31-92f2bf747f4d
+003 DE-101
+005 20140121112241.0
+008 000202aaaaaabb
+035   $aocd00116724
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.0711$e004.071$jInformatik--Hochschulbildung$9ess=ien$9ess=peh
+765 0 $b004$z1$s0711$u004.0711$9ess=hn
+673   $a004.071/1$9ess=seg
+750  7$aInformatik$xHochschulbildung$0(OCoLC-D)4e5a0e41-57dd-4314-a5e8-6727f45d5a2b$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 72e2281b-cbdf-3fb1-b8ba-5aa2d9d53849
+003 DE-101
+005 20140121112256.6
+008 000202aaaaaabb
+035   $aocd00116725
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.0712$e004.071$jInformatik--Sekundarbildung$9ess=ien$9ess=peh
+765 0 $b004$z1$s0712$u004.0712$9ess=hn
+673   $a004.071/2$9ess=seg
+750  7$aInformatik$xSekundarbildung$0(OCoLC-D)13d12a09-c20a-4c7c-8189-1595734dc157$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 9346f0de-3371-3798-a71e-5f66588d315b
+003 DE-101
+005 20140121112434.8
+008 000202aaaaaabb
+035   $aocd00116726
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.076$e004$jInformatik--Prüfungen, . . .$9ess=ien$9ess=peh
+765 0 $b004$z1$s076$u004.076$9ess=hn
+750  7$aInformatik$xPrüfungen$0(OCoLC-D)f8775979-18e8-46b3-9162-606c00d3fea8$2ddcri$9ps=EO
+750  7$aInformatik$xProblemstellungen$0(OCoLC-D)29eb0341-d69d-45cc-bae5-1e2f134d9129$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 a2202586-44c4-34ff-8246-8d06da2fd17c
+003 DE-101
+005 20120820164934.0
+008 000202aaaaaabb
+035   $aocd00116727
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.082$e004$jComputer und Frauen, . . .$9ess=ien$9ess=peh
+765 0 $b004$z1$s082$u004.082$9ess=hn
+750  7$aComputer und Frauen$0(OCoLC-D)1942d68f-bb7c-4feb-9758-0d4bb6705178$2ddcri$9ps=EO
+750  7$aFrauen in der Informatik$0(OCoLC-D)0b19cf62-f5b1-4318-b004-3458abcc11f3$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 3b6283ea-3398-323c-af40-c3f174c1cf83
+003 DE-101
+005 20140121112513.0
+008 000202aaaaaabb
+035   $aocd00116728
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.0846$e004$jComputer und ältere Personen$9ess=ien$9ess=peh
+765 0 $b004$z1$s0846$u004.0846$9ess=hn
+673   $a004.084/6$9ess=seg
+750  7$aComputer und ältere Personen$0(OCoLC-D)7520bc49-ebab-4a25-9b2c-88730315b260$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 8cb08258-833b-35a6-9ae0-0dac14dc4579
+003 DE-101
+005 20140121112619.4
+008 000202aaaaaabb
+035   $aocd00116729
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.0871$e004$jComputer und sehbehinderte Personen$9ess=ien$9ess=peh
+765 0 $b004$z1$s0871$u004.0871$9ess=hn
+673   $a004.087/1$9ess=seg
+750  7$aComputer und sehbehinderte Personen$0(OCoLC-D)2cd00eb4-2f93-452f-b12e-28be2bc3825e$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 408a9ae8-aed9-3f46-ad45-6cca71946441
+003 DE-101
+005 20140121112634.4
+008 000202aaaaaabb
+035   $aocd00116730
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.088378198$e004$jComputer und Studenten$9ess=ien$9ess=peh
+765 0 $b004.08837819$r371$s8$u004.088378198$9ess=hn
+765 0 $b004.088$s378.19$u004.08837819$9ess=hn
+765 0 $b004$z1$s088$u004.088$9ess=hn
+673   $a004.088/378198$9ess=seg
+750  7$aComputer und Studenten$0(OCoLC-D)0a28ffd9-30e5-44f7-9005-5af7b59282a7$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000o  4500
+001 ocd00285649
+003 OCoLC-D
+005 20140121112753.8
+008 100904aaaaaabb
+040   $aOCLCD$bger$cOCLCD
+084 0 $addc$c23de$eger
+153   $a004.09$e004$jComputer--Geschichte
+765 0 $b004$z1$s09$u004.09$9ess=
+750  7$aComputer$xGeschichte$0(OCoLC-D)e56a83f9-db7c-404b-a471-2d666527e361$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 bfd186ca-ea75-3724-a5bd-7e518c8a8842
+003 DE-101
+005 20140212141152.1
+008 000202aaaaaabb
+035   $aocd00116731
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.092$e004.09$jInformatik--Biografien, . . .$9ess=ien$9ess=peh
+765 0 $b004$z1$s092$u004.092$9ess=hn
+750  7$aInformatiker$0(OCoLC-D)e49292a0-18ee-4c38-b4d6-39ebe6189172$2ddcri$9ps=PE
+750  7$aInformatik$xBiografien$0(OCoLC-D)8e902a6f-6a55-4396-8b41-30c2f3d08090$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 e9147411-374c-3c5e-8268-90502cf8971c
+003 DE-101
+005 20140121112822.6
+008 000202aaaaaabb
+035   $aocd00116732
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.0922$e004.092$jInformatiker--Sammelbiografien$9ess=ien$9ess=peh
+765 0 $b004$z1$s0922$u004.0922$9ess=hn
+673   $a004.092/2$9ess=seg
+750  7$aInformatiker$xSammelbiografien$0(OCoLC-D)c18052af-b0c1-4be1-8c7f-8f1663f11f7b$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 001f6106-d53f-35d1-9ac8-13474aa5d109
+003 DE-101
+005 20140121113500.5
+008 000202aaaaaaaa
+035   $aocd00116733
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.1$e004$jAllgemeine Werke über einzelne Computerarten$9ess=en$9ess=eh
+680 1 $iHier auch:$teinzelne Prozessorarten, auf einzelnen Computerarten basierende Computersysteme$9ess=nch
+253 2 $iKlassifiziere$teinzelne Arten von Computern, Prozessoren, Computersystemen unterschieden nach ihren Verarbeitungsarten$iin$a004.3$9ess=nce
+253 2 $iKlassifiziere programmierbare Taschenrechner$a510.28541$9ess=nce
+684 2 $iSiehe Praxishilfe bei$a004.1$9ess=nsm
+684 2 $iSiehe Praxishilfe bei$a004.1$ivs.$a004.24$9ess=nsm
+684 2 $iSiehe Praxishilfe bei$a004.1$ivs.$a004.3$9ess=nsm
+685 20$tEingebettete Computersysteme$iverlegt nach$a006.22$d201104$223$9ess=
+
+LEADER 00000nw  a2200000n  4500
+001 d6f98d18-08bc-374c-8614-3a4a13b6efea
+003 DE-101
+005 20140121114053.2
+008 000202aaaaaaaa
+035   $aocd00116735
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.11$e004.11$f004.16$g*$jSupercomputer$9ess=en$9ess=eh
+673   $a004.1/1$9ess=seg
+253 2 $iKlassifiziere$tmassiv-parallele Supercomputer$iin$a004.35$9ess=nce
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aSupercomputer$0(OCoLC-D)6abc8a46-76b3-47ba-9912-a666dfb359b5$2ddcri$9ps=PE
+750  7$aDigitale Supercomputer$0(OCoLC-D)49beffe0-6693-493c-80ab-995e0b44ca4a$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 6a627934-0b64-354a-98eb-7f77605f6994
+003 DE-101
+005 20140210122757.9
+008 000202acaaaaba
+035   $aocd00116736
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.11$c004.16$e004.1$jDigitale Computer$9ess=cen$9ess=eh
+765 0 $b004.1$r004.1$s6$u004.16$9ess=hn
+253 2 $iKlassifiziere$tumfassende Werke$iin$a004$9ess=nce
+698   $d20140210122757$tAbgleich WebDewey US: Im EDS veraltete Daten.$u7$9ess=
+684 2 $iSiehe Praxishilfe bei$a004.11$c004.16$9ess=nsm
+
+LEADER 00000nw  a2200000n  4500
+001 a016d680-c81f-350f-b4f7-e1c64aaabba1
+003 DE-101
+005 20140121114131.8
+008 000202aaaaaabb
+035   $aocd00116739
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.11029$e004.11$jSupercomputer--Leistungsbewertung$9ess=ien$9ess=peh
+765 0 $b004.11$z1$s029$u004.11029$9ess=hn
+673   $a004.1/1029$9ess=seg
+750  7$aSupercomputer$xLeistungsbewertung$0(OCoLC-D)98275576-e2af-49ea-87f9-773b5f81cd8d$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 8be73c6d-57bd-39e1-9198-8af7e8d345ae
+003 DE-101
+005 20140121114307.5
+008 000202aaaaaaaa
+035   $aocd00116740
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.12$e004.11$f004.16$g*$jGroßrechner$9ess=en$9ess=eh
+673   $a004.1/2$9ess=seg
+680 1 $iHier auch:$tdigitale Großrechner$9ess=nch
+253 0 $iFür$tSupercomputer$isiehe$a004.11$9ess=nse
+253 0 $iFür$tMidrange-Computer$isiehe$a004.14$9ess=nse
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aGroßrechner$0(OCoLC-D)289f8f35-0913-42c4-ada9-ac5792167e31$2ddcri$9ps=PE
+750  7$aMainframes$0(OCoLC-D)af1e658a-e882-485b-b843-fb5a68ab5199$2ddcri$9ps=PE
+750  7$aHosts (Großrechner)$0(OCoLC-D)d2c0e9f3-97ac-4625-9e0a-9523d3115fb0$2ddcri$9ps=PE
+750  7$aDigitale Großrechner$0(OCoLC-D)956b0969-ef81-49d7-954c-0d54619a52a1$2ddcri$9ps=EO
+750  7$aGroße Digitalcomputer$0(OCoLC-D)4fa18007-5fe7-494d-8575-7a1f97ccf9cb$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 9b131d98-3cb2-3ba9-949e-6e18f5cf5ef3
+003 DE-101
+005 20140121114323.6
+008 000202aaaaaabb
+035   $aocd00116741
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.12029$e004.12$jGroßrechner--Leistungsbewertung$9ess=ien$9ess=peh
+765 0 $b004.12$z1$s029$u004.12029$9ess=hn
+673   $a004.1/2029$9ess=seg
+750  7$aGroßrechner$xLeistungsbewertung$0(OCoLC-D)a5833fc4-603f-4a32-95cc-07ad506359d3$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 f467b5b2-af56-3fd2-839b-fc597a229c2b
+003 DE-101
+005 20140121114351.8
+008 000202aaaaaaaa
+035   $aocd00116742
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.125$e004.12$jEinzelne Großrechner$9ess=en$9ess=eh
+673   $a004.1/25$9ess=seg
+683 1 $iGliedere alphabetisch nach Computer- oder Prozessorname, z.B.$tIBM System z9®$9ess=nal
+
+LEADER 00000nw  a2200000n  4500
+001 9b83bc09-6fba-3388-a423-49bdf20579cb
+003 DE-101
+005 20140121114449.6
+008 000202aaaaaaaa
+035   $aocd00116743
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.14$e004.11$f004.16$g*$jMidrange-Computer$9ess=en$9ess=eh
+673   $a004.1/4$9ess=seg
+680 1 $iHier auch:$tMinicomputer, Serverklasse-Computer$9ess=nch
+253 2 $iKlassifiziere$tumfassende Werke über Midrange- und Personal Computer$iin$a004.16$9ess=nce
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aMidrange-Computer$0(OCoLC-D)6f2a80b7-cc72-466e-be8d-55d181073d12$2ddcri$9ps=PE
+750  7$aMidrange-Rechner$0(OCoLC-D)76670205-1006-41f2-be6c-c733a8aee002$2ddcri$9ps=PE
+750  7$aMinicomputer$0(OCoLC-D)c565416d-a3e5-4ecc-8c37-1cb3964d0a4a$2ddcri$9ps=PE
+750  7$aDigitale Minicomputer$0(OCoLC-D)62a12423-be64-470a-a3d4-f084e1ef6909$2ddcri$9ps=EO
+750  7$aServerklasse-Computer$0(OCoLC-D)27faeac3-ccbc-407b-a720-5b2c364840ed$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 34352551-46da-3a8f-9c6c-889e7bda1138
+003 DE-101
+005 20140121114508.6
+008 000202aaaaaabb
+035   $aocd00116744
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.14029$e004.14$jMidrange-Computer--Leistungsbewertung$9ess=ien$9ess=peh
+765 0 $b004.14$z1$s029$u004.14029$9ess=hn
+673   $a004.1/4029$9ess=seg
+750  7$aMidrange-Computer$xLeistungsbewertung$0(OCoLC-D)95532cff-acd8-4ead-8f68-a6057c09c4ac$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 554537c4-35a0-3c16-9270-e267332b8152
+003 DE-101
+005 20140121114525.3
+008 000202aaaaaaaa
+035   $aocd00116745
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.145$e004.14$jEinzelne Midrange-Computer$9ess=en$9ess=eh
+673   $a004.1/45$9ess=seg
+683 1 $iGliedere alphabetisch nach Computer- oder Prozessorname, z.B.$tDell PowerEdge® 1955$9ess=nal
+
+LEADER 00000nw  a2200000n  4500
+001 e00fd4ba-e095-3e33-984e-fdadc939b6c3
+003 DE-101
+005 20140121115651.3
+008 000202aaaaaaaa
+035   $aocd00116746
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.16$e004.11$f004.16$g*$jPersonal Computer$9ess=en$9ess=eh
+680 1 $iFrühere Klassenbenennung:$tMikrocomputer$9ess=
+680 1 $iHier auch:$teinzelne Arten von Personal Computern; umfassende Werke über Midrange- und Personal Computer$9ess=nch
+253 0 $iFür$tMidrange-Computer$isiehe$a004.14$9ess=nse
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aDigitale Mikrocomputer$0(OCoLC-D)91c06996-0c27-46c6-a389-b81df4cbc004$2ddcri$9ps=EO
+750  7$aHeimcomputer$0(OCoLC-D)139f410e-2f60-4a1b-b1b3-4235c4937e62$2ddcri$9ps=PE
+750  7$aLaptop-Computer$0(OCoLC-D)1dc70438-618c-49d2-bad1-089118ed4060$2ddcri$9ps=PE
+750  7$aLaptops$0(OCoLC-D)97836f05-53ff-42b0-a4f6-5c43cc475d33$2ddcri$9ps=EO
+750  7$aMikrocomputer-Workstations$0(OCoLC-D)7a1bdbbe-bd07-4990-ad3a-d993b55edb84$2ddcri$9ps=PE
+750  7$aMikrocomputer$0(OCoLC-D)71c9d6c3-f49a-4d06-aba8-8947f8e7debc$2ddcri$9ps=PE
+750  7$aMikroprozessoren$0(OCoLC-D)87e5d98c-dc8d-44a9-9199-740b21a644e3$2ddcri$9ps=PE
+750  7$aNotebook-Computer$0(OCoLC-D)bade8339-d147-46f1-8133-d0eea035b8e1$2ddcri$9ps=PE
+750  7$aNetbook-Computer$0(OCoLC-D)1592c7f1-fe4a-4fc1-9c6b-52448d7a60a2$2ddcri$9ps=PE
+750  7$aNetbooks$0(OCoLC-D)3d4c32bf-05a6-4188-b318-ef487c5859ec$2ddcri$9ps=EO
+750  7$aNotebooks$0(OCoLC-D)abda72fd-260e-45a9-93c8-1241f52b097f$2ddcri$9ps=PE
+750  7$aPencomputer$0(OCoLC-D)3d03c086-5df4-4fb5-9e26-bc44c3d0a0ef$2ddcri$9ps=PE
+750  7$aStiftcomputer$0(OCoLC-D)a3831c06-5fb6-47da-9633-7f4b0d3ae469$2ddcri$9ps=PE
+750  7$aPersönlicher Computer$0(OCoLC-D)e17e1417-d0af-4332-87b1-39792c12708f$2ddcri$9ps=PE
+750  7$aPersonalcomputer$0(OCoLC-D)e03dd96b-f720-4718-967d-f0069f180461$2ddcri$9ps=PE
+750  7$aPCs (Personal Computer)$0(OCoLC-D)afb995cf-3df0-4976-962a-315b7a1ae3e8$2ddcri$9ps=PE
+750  7$aPersonal Computer$0(OCoLC-D)0f4ba389-b3b8-4fa6-a569-46faf376bbc6$2ddcri$9ps=PE
+750  7$aTablet-PCs$0(OCoLC-D)ae084166-b5a9-4f0f-94b4-dfb5762ac873$2ddcri$9ps=PE
+750  7$aTragbare Computer$0(OCoLC-D)ed5acb17-8ba5-4c23-98a4-dcfffd2301fd$2ddcri$9ps=PE
+750  7$aPortable PCs$0(OCoLC-D)8ba332b2-456a-4213-9b5f-d3878b802943$2ddcri$9ps=PE
+750  7$aWearable Computer$0(OCoLC-D)21222021-9757-4efa-aff3-94991d4d2bf8$2ddcri$9ps=PE
+750  7$aWearables (Computer)$0(OCoLC-D)f73ceb1d-36af-4f69-bbe6-6ab1c0f84c2a$2ddcri$9ps=EO
+750  7$aWorkstations (Mikrocomputer)$0(OCoLC-D)7e892a51-bc02-4fc7-a155-83638e34c8eb$2ddcri$9ps=PE
+750  7$aArbeitsplatzcomputer$0(OCoLC-D)ea82c279-b178-4db8-9836-9ebd3ca24a56$2ddcri$9ps=PE
+750  7$aArbeitsplatzrechner (Computer)$0(OCoLC-D)16b4612d-0ff8-43f5-9e1e-9b26d686293d$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 099a8f43-6424-36bb-b54c-14e7145739e7
+003 DE-101
+005 20140121115727.1
+008 000202aaaaaabb
+035   $aocd00116747
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.16029$e004.16$jPersonal Computer--Einkaufsratgeber, . . .$9ess=ien$9ess=peh
+765 0 $b004.16$z1$s029$u004.16029$9ess=hn
+750  7$aPersonal Computer$xEinkaufsratgeber$0(OCoLC-D)8a22743e-c0e0-4675-8a75-2c461b8d391c$2ddcri$9ps=PE
+750  7$aPersonal Computer$xLeistungsbewertung$0(OCoLC-D)11e68e20-7cb4-4943-b179-f6b70be1a9cf$2ddcri$9ps=PE
+750  7$aPersonal Computer$xBeschaffungshandbücher$0(OCoLC-D)51ba7d5a-4f31-42af-bc2f-3e9ee235eac4$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 c5c9b484-34fc-3d00-983f-4c0955f7f6ff
+003 DE-101
+005 20140121115741.9
+008 000202aaaaaabb
+035   $aocd00116748
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.1603$e004.16$jPersonal Computer--Wörterbücher$9ess=ien$9ess=peh
+765 0 $b004.16$z1$s03$u004.1603$9ess=hn
+750  7$aPersonal Computer$xWörterbücher$0(OCoLC-D)76030662-f719-4245-9fcd-3d10a09ebd3e$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 53248856-02ad-3722-ba8b-50a8a80c57e0
+003 DE-101
+005 20140210124249.2
+008 000202aaaaaaaa
+035   $aocd00116749
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.165$e004.16$jEinzelne Personal Computer$9ess=en$9ess=eh
+683 1 $iGliedere alphabetisch nach Computer- oder Prozessorname, z.B.$tApple iMac®$9ess=nal
+685 20$tEinzelne mobile Computerendgeräte$iverlegt nach$a004.1675$d200808$222$9ess=
+698   $d20140210122928$tAbgleich WebDewey US: Neu: Specific mobile computing devices relocated to 004.1675$u7$9ess=
+
+LEADER 00000nw  a2200000n  4500
+001 4755a191-fa0e-36ca-86fd-f302fde021f7
+003 DE-101
+005 20140212133807.3
+008 080828aaaaaaaa
+035   $aocd00116750
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.167$e004.16$g*$jMobile Computerendgeräte$9ess=en$9ess=eh
+680 1 $iHier auch:$teinzelne Arten mobiler Computerendgeräte$9ess=nch
+698   $d20140121130521$tIch bin mit der KB nicht glücklich, auch nicht mit der HA. Mir fehlt ein eindeutiger Hinweis, wie Smartphones im Bedeutungsumfang der Klasse angesiedelt sind.$u7$9ess=
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+685 03$iErweitert aus$b004.16$d200808$222$9ess=685
+750  7$aPocket-Computer$0(OCoLC-D)f40a138a-11df-4a10-9dbb-ad38c6c9c0e9$2ddcri$9ps=PE
+750  7$aNotepad-Computer$0(OCoLC-D)62e374e4-7980-4896-a778-cae80b299e10$2ddcri$9ps=PE
+750  7$aHandheld-Computergeräte$0(OCoLC-D)f899c32c-4ebf-488a-b61a-addc141477c8$2ddcri$9ps=PE
+750  7$aMobile Computerendgeräte$0(OCoLC-D)96f7488f-7faa-47bf-a01d-267f6061c250$2ddcri$9ps=PE
+750  7$aMobilgeräte (Computer)$0(OCoLC-D)cf6f9639-7b38-4a85-8c78-3e1d515e4402$2ddcri$9ps=PE
+750  7$aPDAs (Computer)$0(OCoLC-D)7786c373-17a6-45dc-8ed1-a57db453717f$2ddcri$9ps=PE
+750  7$aPalmtop-Computer$0(OCoLC-D)ceb678fc-3fc6-4d2c-97fe-1fb98f57ea1a$2ddcri$9ps=EO
+750  7$aPersonal Digital Assistants$0(OCoLC-D)787b3734-a86c-40f9-a4be-5b6c33120d4c$2ddcri$9ps=PE
+750  7$aTaschencomputer$0(OCoLC-D)07ed6697-9c62-4fcd-ae06-c33650659d5b$2ddcri$9ps=EO
+750  7$aSmartphones$0(OCoLC-D)921e4062-81e9-4186-861d-4554ab8dabe5$2ddcri$9ps=PE
+750  7$aScreenphones$0(OCoLC-D)2e98db83-1e72-4a8f-925f-3ee56f5e167f$2ddcri$9ps=PE
+750  7$aWebphones$0(OCoLC-D)e9a4a88c-fcc1-42f1-941d-5b121469d87e$2ddcri$9ps=PE
+750  7$aPDA-Phones$0(OCoLC-D)fc943fcf-35d2-4008-b4f6-89f754717709$2ddcri$9ps=PE
+750  7$aE-Reader$0(OCoLC-D)97cfbfc3-aa44-4d17-8b39-28e665662d63$2ddcri$9ps=PE
+750  7$aE-Book-Reader$0(OCoLC-D)cd42ea1b-3abd-4624-950c-d94e6316aaf5$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 e2d73400-9712-35d1-b62f-7845f40b5bac
+003 DE-101
+005 20140212132930.2
+008 080828aaaaaaaa
+035   $aocd00116751
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.1675$e004.167$jEinzelne mobile Computerendgeräte$i[früher$x004.165$i]$9ess=en$9ess=eh
+683 1 $iGliedere alphabetisch nach Computer- oder Prozessorname, z.B.$tApple iPad®$9ess=nal
+698   $d20140212132930$tAbgleich WebDewey US. EDS veralteter Datenstand.$u7$9ess=
+685 01$iFrüher in$b004.165$d200808$222$9ess=685
+
+LEADER 00000nw  a2200000n  4500
+001 9017de00-a53f-300f-b6c4-3bdbbedc1130
+003 DE-101
+005 20140121132314.9
+008 000202aaaaaaaa
+035   $aocd00116752
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.19$e004.1$g*$jHybrid- und Analogcomputer$9ess=en$9ess=eh
+673   $a004.1/9$9ess=seg
+761  0$iStandardschlüssel werden angehängt für eines der oder beide Themen in der Klassenbenennung$9ess=nsf
+253 0 $iFür$tnichtelektronische Analogcomputer$isiehe$a004.9$9ess=nse
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aAnalogcomputer$0(OCoLC-D)65ca94ae-77d0-48bd-bdfd-ddc9e588f169$2ddcri$9ps=PE
+750  7$aAnalogcomputer$xelektronische$0(OCoLC-D)785b97d7-5e82-4758-af04-1806a31890ed$2ddcri$9ps=PE
+750  7$aHybridcomputer$0(OCoLC-D)4f09c2aa-2596-4edf-8faa-89e055f30782$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 fc8d6764-6abb-3f99-a8fc-f6b04a736c10
+003 DE-101
+005 20140121132331.2
+008 000202aaaaaabb
+035   $aocd00116753
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.19029$e004.19$jHybridcomputer--Leistungsbewertung$9ess=ien$9ess=peh
+765 0 $b004.19$z1$s029$u004.19029$9ess=hn
+673   $a004.1/9029$9ess=seg
+750  7$aHybridcomputer$xLeistungsbewertung$0(OCoLC-D)bcb33a9d-59cc-43fb-86cb-a2471644851b$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 39c67a21-e288-32c5-98e0-c39e432915df
+003 DE-101
+005 20140121132356.2
+008 000202aaaaaaaa
+035   $aocd00116756
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.2$e004$g*$jSystemanalyse und Systementwurf, Computerarchitektur, Leistungsbewertung$9ess=en$9ess=eh
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aFehlertolerante Datenverarbeitung$0(OCoLC-D)5b647c29-6d3c-4808-a7aa-cd08620ec3ad$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 f6be1350-0c95-32e0-a2ce-a767f049ea0f
+003 DE-101
+005 20140121132441.2
+008 000202aaaaaaaa
+035   $aocd00116757
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.21$e004.2$g*$jSystemanalyse und Systementwurf$9ess=en$9ess=eh
+673   $a004.2/1$9ess=seg
+761  0$iStandardschlüssel werden angehängt für eines der oder beide Themen in der Klassenbenennung$9ess=nsf
+680 1 $iHier auch:$tAnalyse eines Benutzerproblems als Vorstufe zur Entwicklung eines Computersystems, das es lösen soll$9ess=nch
+253 2 $iKlassifiziere$tEntwurf und Architektur von Kommunikationsnetzwerken$iin$a004.65$9ess=nce
+253 0 $iFür$tAnalyse und Entwurf von Softwaresystemen$isiehe$a005.12$9ess=nse
+253 0 $iFür$tDatenbankentwurf und Datenbankarchitektur$isiehe$a005.74$9ess=nse
+353   $iSiehe auch$a003$ifür fächerübergreifende Werke über Systemanalyse und Systementwurf;$9ess=nsa
+353   $iSiehe auch$a658.4032$ifür$tdie Anwendung von Systemanalyse im Management$9ess=nsa
+684 2 $iSiehe Praxishilfe bei$a004.21$ivs.$a004.22$i,$a621.392$9ess=nsm
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aSystemanalyse$xInformatik$0(OCoLC-D)d1826ca2-279e-4090-b1a4-60e5e6363b69$2ddcri$9ps=PE
+750  7$aSystementwurf$xInformatik$0(OCoLC-D)c20e3e57-0cee-4018-81e9-3c40bcab6661$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 d257201c-4202-35b9-a75c-f805e61d2fa5
+003 DE-101
+005 20140121132622.2
+008 000202aaaaaaaa
+035   $aocd00116759
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.22$e004.2$g*$jComputerarchitektur$9ess=en$9ess=eh
+673   $a004.2/2$9ess=seg
+684 2 $iSiehe Praxishilfe bei$a004.21$ivs.$a004.22$i,$a621.392$9ess=nsm
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aComputerarchitektur$0(OCoLC-D)3b1c4af7-a888-4e42-bd2b-a781066dbfed$2ddcri$9ps=PE
+750  7$aComputeraufbau$0(OCoLC-D)937b4370-6a7f-4a6e-b7d9-f56d339701b8$2ddcri$9ps=PE
+750  7$aRechnerarchitektur$0(OCoLC-D)abc34655-76a2-41d3-ac04-91500f85ed3f$2ddcri$9ps=PE
+750  7$aComputerorganisation$0(OCoLC-D)439a997c-24bd-48e7-8dc6-b6a7acddf507$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 5b92560b-a01a-35ce-b037-ab501f729f0a
+003 DE-101
+005 20140121132919.2
+008 000202aaaaaaaa
+035   $aocd00116760
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.24$e004.2$g*$jLeistungsbewertung$9ess=en$9ess=eh
+673   $a004.2/4$9ess=seg
+680 1 $iHier auch:$tLeistungsmessung und Leistungsbewertung als Hilfsmittel zum Entwurf oder zur Leistungssteigerung eines Computersystems$9ess=nch
+253 2 $iKlassifiziere$tLeistungsbewertung als Gesichtpunkt der Kaufentscheidung für einen bestimmten Gegenstand bei dem Gegenstand$iin$a004$i, plus Notation$z1$a029$iaus Hilfstafel 1, z.B.$tLeistungsvergleich von Personal Computern vor dem Kauf$e004.16029$9ess=ncw
+353   $iSiehe auch$a004.0685$ifür$tManagementtechniken zur Sicherstellung von Qualitätskontrolle in der Datenverarbeitung$9ess=nsa
+684 2 $iSiehe Praxishilfe bei$a004.1$ivs.$a004.24$9ess=nsm
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+453 0 $iStandardschlüssel-nicht-verwenden-Anweisung in$a004.0287$jTesten und Messen$9ess=
+750  7$aComputertests$0(OCoLC-D)caea3bb8-e031-491b-bd16-76abc24248f4$2ddcri$9ps=PE
+750  7$aDebugging$0(OCoLC-D)9b37a698-8d47-43b3-a6d0-49aee52b997e$2ddcri$9ps=PE
+750  7$aLeistungsbewertung$xInformatik$xfür Entwurf und Verbesserung$0(OCoLC-D)4d7ef2df-651a-4762-9816-ca0172f37130$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 0227a42a-16ce-3f00-a148-6995c101c293
+003 DE-101
+005 20130531133140.8
+008 000202aaaaaaaa
+035   $aocd00116761
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.25$e004.2$g*$jSystemanalyse und Systementwurf, Computerarchitektur, Leistungsbewertung von einzelnen Arten elektronischer Computer$9ess=en$9ess=eh
+673   $a004.2/5$9ess=seg
+761  0$iHänge an die Grundnotation$b004.25$idie Ziffern an, die$r004.1$iin$d004.11$c004.19$ifolgen, z.B.$tArchitektur von Personal Computern$e004.256$9ess=na1
+253 0 $iFür$tSystemanalyse und Systementwurf, Computerarchitektur, Leistungsbewertung von einzelnen Arten elektronischer Computer unterschieden nach Verarbeitungsart$isiehe$a004.3$9ess=nse
+
+LEADER 00000nw  a2200000n  4500
+001 57227015-d621-371b-b329-96756f027903
+003 DE-101
+005 20140121133011.1
+008 000202aaaaaabb
+035   $aocd00116762
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.251$e004.25$jSupercomputer--Architektur, . . .$9ess=ien$9ess=peh
+765 0 $b004.25$r004.1$s1$u004.251$9ess=hn
+673   $a004.2/51$9ess=seg
+750  7$aSupercomputer$xArchitektur$0(OCoLC-D)60bee73f-d387-40eb-bc47-3cbd51cee2b7$2ddcri$9ps=PE
+750  7$aSupercomputer$xLeistungsbewertung$xfür Entwurf und Verbesserung$0(OCoLC-D)92bb8f3d-86c5-4220-97c6-785d8c482f2b$2ddcri$9ps=PE
+750  7$aSupercomputer$xSystemanalyse$0(OCoLC-D)e6d9edfc-305f-47f8-8eb8-bcf8db5ce3a3$2ddcri$9ps=PE
+750  7$aSupercomputer$xSystementwurf$0(OCoLC-D)f4505809-b1cc-4a2b-8581-91608342c003$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 22e7e088-c1a7-33e3-88b8-cfc8d247abc1
+003 DE-101
+005 20140121133036.9
+008 000202aaaaaabb
+035   $aocd00116763
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.252$e004.25$jGroßrechner--Architektur, . . .$9ess=ien$9ess=peh
+765 0 $b004.25$r004.1$s2$u004.252$9ess=hn
+673   $a004.2/52$9ess=seg
+750  7$aGroßrechner$xArchitektur$0(OCoLC-D)cd40a685-a258-408b-8dab-4fd8af492d4e$2ddcri$9ps=PE
+750  7$aGroßrechner$xLeistungsbewertung$xfür Entwurf und Verbesserung$0(OCoLC-D)1104b347-d5fb-4b57-b7cc-cf79f6b4b88a$2ddcri$9ps=PE
+750  7$aGroßrechner$xSystemanalyse$0(OCoLC-D)eeb5d004-a446-4384-a73b-c47b1c0d68d1$2ddcri$9ps=PE
+750  7$aGroßrechner$xSystementwurf$0(OCoLC-D)327b4ef1-adc5-42d8-a59d-eb408dc97ce9$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 e4571883-318d-30a9-8cf2-d5ae7e13a9f7
+003 DE-101
+005 20140121133108.0
+008 000202aaaaaabb
+035   $aocd00116764
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.254$e004.25$jMidrange-Computer--Architektur, . . .$9ess=ien$9ess=peh
+765 0 $b004.25$r004.1$s4$u004.254$9ess=hn
+673   $a004.2/54$9ess=seg
+750  7$aMidrange-Computer$xArchitektur$0(OCoLC-D)121d0bab-7e59-4972-8ade-cd3fd6a1dd82$2ddcri$9ps=PE
+750  7$aMidrange-Computer$xLeistungsbewertung$xfür Entwurf und Verbesserung$0(OCoLC-D)fdd50799-0b26-45ec-a7e1-333145a92570$2ddcri$9ps=PE
+750  7$aMidrange-Computer$xSystemanalyse$0(OCoLC-D)4af264b0-1930-4b04-a25b-cda3e1ed71a9$2ddcri$9ps=PE
+750  7$aMidrange-Computer$xSystementwurf$0(OCoLC-D)b5e64e47-3a35-4e2c-9352-e883b8e01086$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 c985fded-d2f5-3adc-a3fe-5e9cc2684cbb
+003 DE-101
+005 20140121133135.8
+008 000202aaaaaabb
+035   $aocd00116765
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.256$e004.25$jPersonal Computer--Architektur, . . .$9ess=ien$9ess=peh
+765 0 $b004.25$r004.1$s6$u004.256$9ess=hn
+765 0 $b004.25$r004.1$s6$u004.256$9ess=hn
+673   $a004.2/56$9ess=seg
+750  7$aPersonal Computer$xArchitektur$0(OCoLC-D)ccadad81-7380-454e-8045-130abb17a073$2ddcri$9ps=PE
+750  7$aPersonal Computer$xLeistungsbewertung$xfür Entwurf und Verbesserung$0(OCoLC-D)a44869a9-0955-4127-8d8a-1e830fa18bbf$2ddcri$9ps=PE
+750  7$aPersonal Computer$xSystemanalyse$0(OCoLC-D)e8e16547-2cf3-43df-8380-879be55388e7$2ddcri$9ps=PE
+750  7$aPersonal Computer$xSystementwurf$0(OCoLC-D)b783c02e-1011-4988-9186-7ec1a79a4334$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 66ce1d66-d6b2-37a3-853d-e5744a43187e
+003 DE-101
+005 20140121133201.4
+008 000202aaaaaabb
+035   $aocd00116766
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.259$e004.25$jHybridcomputer--Architektur, . . .$9ess=ien$9ess=peh
+765 0 $b004.25$r004.1$s9$u004.259$9ess=hn
+673   $a004.2/59$9ess=seg
+750  7$aHybridcomputer$xArchitektur$0(OCoLC-D)8e582aaf-b112-4d92-b54e-6a7245da63df$2ddcri$9ps=PE
+750  7$aHybridcomputer$xLeistungsbewertung$xfür Entwurf und Verbesserung$0(OCoLC-D)1d6f0ccf-1fd4-4c6b-bb91-55c7a08ca838$2ddcri$9ps=PE
+750  7$aHybridcomputer$xSystemanalyse$0(OCoLC-D)7b063323-0385-4be4-975b-7cc29d512368$2ddcri$9ps=PE
+750  7$aHybridcomputer$xSystementwurf$0(OCoLC-D)f34b1170-41d3-42fd-b6ef-d4cbb786204b$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 d4b74e42-e321-3d7e-b08a-6f03553b10ce
+003 DE-101
+005 20140121134806.6
+008 000202aaaaaaaa
+035   $aocd00116767
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.3$e004$g*$jVerarbeitungsarten$9ess=en$9ess=eh
+673   $a004/.3$9ess=seg
+680 0 $iEinschließlich:$tStapel-, Offline-, Pipeline-Verarbeitung; CISC (Complex Instruction Set Computing), RISC (Reduced Instruction Set Computing); Mehrprogramm-, Teilnehmerbetrieb$9ess=nin
+680 1 $iHier auch:$tComputer, Prozessoren, Computersysteme unterschieden nach ihren Verarbeitungsarten; zentrale Datenverarbeitung$9ess=nch
+253 2 $iKlassifiziere$tumfassende Werke über Mehrprogramm-, über Teilnehmerbetrieb$iin$a005.434$9ess=nce
+684 2 $iSiehe Praxishilfe bei$a004.1$ivs.$a004.3$9ess=nsm
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aStapelverarbeitung$0(OCoLC-D)cbfc4724-f917-435d-9b62-1910a1e471b5$2ddcri$9ps=PE
+750  7$aBatchverarbeitung$0(OCoLC-D)84f7ade1-1afc-4693-bf64-650f66fb9d19$2ddcri$9ps=PE
+750  7$aZentrale Datenverarbeitung$0(OCoLC-D)481f6252-ece3-4875-9906-b6c2a6428276$2ddcri$9ps=PE
+750  7$aCISC (Informatik)$0(OCoLC-D)2d0ac619-10b4-4826-aec0-51cf1a5b0695$2ddcri$9ps=PE
+750  7$aVerarbeitungsarten$xInformatik$0(OCoLC-D)0834947f-2571-4b99-91a7-9377705dab66$2ddcri$9ps=PE
+750  7$aComplex Instruction Set Computing$0(OCoLC-D)0302bd4d-5214-4933-a511-1608758e0b5d$2ddcri$9ps=PE
+750  7$aComputernetze$xVerarbeitungsarten$0(OCoLC-D)2fb051eb-ad48-43aa-956f-e1c22ef269c3$2ddcri$9ps=PE
+750  7$aComputersysteme$xNetzwerke$xVerarbeitungsarten$0(OCoLC-D)7767f1aa-8554-47f4-af84-55d34838ff7d$2ddcri$9ps=PE
+750  7$aMehrfachzugriffsysteme$xVerarbeitungsarten$0(OCoLC-D)905a900d-acbb-4766-ad82-b386e0005b25$2ddcri$9ps=PE
+750  7$aMehrprogrammbetrieb$xHardware$0(OCoLC-D)b804e982-78a9-4f51-b0fb-7bc4f291831a$2ddcri$9ps=PE
+750  7$aMultitasking$xHardware$0(OCoLC-D)b02b7696-2f77-4b39-8daf-1a117d45564b$2ddcri$9ps=PE
+750  7$aMehrbenutzerbetrieb (Informatik)$0(OCoLC-D)93f7e2a2-7d29-4fb3-9a0d-39b7f2739ccf$2ddcri$9ps=PE
+750  7$aOffline-Verarbeitung$0(OCoLC-D)604e02a5-48d8-413a-8830-708b96693065$2ddcri$9ps=PE
+750  7$aPipeline-Verarbeitung$0(OCoLC-D)0669b4c2-142f-4720-bdea-2cebc398bd95$2ddcri$9ps=PE
+750  7$aPipeline-Prozessoren$0(OCoLC-D)1c3abeb6-9137-4467-b4dd-8580c2db5ab0$2ddcri$9ps=PE
+750  7$aRISC (Informatik)$0(OCoLC-D)1bd03977-c7df-46a3-af54-78c87b6da2f2$2ddcri$9ps=PE
+750  7$aReduced Instruction Set Computing$0(OCoLC-D)e791e249-36c9-43e2-abd9-254b2856d2bb$2ddcri$9ps=PE
+750  7$aTeilnehmerbetrieb$xHardware$0(OCoLC-D)0e65ebcb-2fba-4b91-8911-e95f3c17cef3$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 c42e006d-5a7d-36f6-abc3-036a9131338f
+003 DE-101
+005 20140121135333.6
+008 000202aaaabaaa
+035   $aocd00116769
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.33$e004.3$g*$jEchtzeitverarbeitung$9ess=en$9ess=eh
+673   $a004/.33$9ess=seg
+680 1 $iBegrenzt auf$tVerarbeitung, die durch sichere Vorhersagbarkeit und unbedingte Zeitanforderungen definiert ist$9ess=nsc
+680 0 $iEinschließlich:$tSystemanalyse und Systementwurf, Computerarchitektur, Leistungsbewertung von Echtzeitcomputern$9ess=nin
+253 2 $iKlassifiziere$tDialog-, Online-, Echtzeitverarbeitung, die die unverzögerte Verarbeitung von Eingaben oder unmittelbare Antwort auf eine Benutzeraktion umfasst,$iin$a004$9ess=nce
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+685 22$iVerwendung dieser Notation für$tDialog-, Online-, Echtzeitverarbeitung, die die unverzögerte Verarbeitung von Eingaben oder unmittelbare Antwort auf eine Benutzeraktion umfasst,$istillgelegt; klassifiziere in$a004$d1996$221$9ess=685
+750  7$aEchtzeitverarbeitung$0(OCoLC-D)7438150a-2765-40b7-bb67-792249658977$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 e55f8351-660a-3808-987b-424895e9295a
+003 DE-101
+005 20140121135431.3
+008 000202aaeaaaah
+035   $aocd00116771
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.338$e004.33$jSystemanalyse und Systementwurf, Computerarchitektur, Leistungsbewertung von Echtzeitcomputern$9ess=en$9ess=eh
+685 12$iNotation stillgelegt; klassifiziere in$a004.33$9ess=ndn
+685 12$iNotation stillgelegt; klassifiziere in$a004.33$d2003$222$9ess=685
+
+LEADER 00000nw  a2200000n  4500
+001 1c87afc3-46de-3ff9-b069-bc927f03675f
+003 DE-101
+005 20140121140913.0
+008 000202aaaaaaaa
+035   $aocd00116772
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.35$e004.3$g*$jMehrprozessorverarbeitung$9ess=en$9ess=eh
+673   $a004/.35$9ess=seg
+680 0 $iEinschließlich:$tSystemanalyse und Systementwurf, Computerarchitektur, Leistungsbewertung; Vektorverarbeitung, Assoziativ-Verarbeitung, Datenflussrechner$9ess=nin
+680 1 $iHier auch:$tCluster Computing, massiv-parallele Supercomputer, Parallelverarbeitung$9ess=nch
+253 2 $iKlassifiziere$tumfassende Werke über Assoziativ-Verarbeitung und Assoziativspeicher$iin$a004.5$9ess=nce
+253 2 $iKlassifiziere$tProgrammierung für Mehrprozessorcomputer$iin$a005.275$9ess=nce
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aCluster Computing$0(OCoLC-D)17cb3e4d-fac7-4355-9c54-f70fb213d5b9$2ddcri$9ps=PE
+750  7$aClustercomputing$0(OCoLC-D)dc888094-03e5-432b-8ed4-3332b7b38952$2ddcri$9ps=EO
+750  7$aComputercluster$0(OCoLC-D)9356ea13-d800-4268-a62e-989c4f34709f$2ddcri$9ps=PE
+750  7$aCluster (Rechnernetze)$0(OCoLC-D)8bf54870-9df5-4973-8d17-fe82afa1813b$2ddcri$9ps=PE
+750  7$aRechnerbündel (Computercluster)$0(OCoLC-D)bd913307-9486-403a-bd91-180724544ce9$2ddcri$9ps=PE
+750  7$aParallelcomputer$0(OCoLC-D)202896d3-167e-4a14-b635-a09d3b0a5a30$2ddcri$9ps=EO
+750  7$aDatenflussrechner$0(OCoLC-D)fe632cd6-fa31-4c5a-b943-11cbf1b8440d$2ddcri$9ps=PE
+750  7$aMassiv-parallele Supercomputer$0(OCoLC-D)8c1b18c6-864a-41b7-8296-50d1f9644b63$2ddcri$9ps=PE
+750  7$aMehrprozessorverarbeitung$0(OCoLC-D)1062df8b-a7a6-46b1-b0e1-b28f61d080e8$2ddcri$9ps=PE
+750  7$aMultiprozessoren$0(OCoLC-D)70bec057-3a24-4e78-ac4b-f2c86c47d042$2ddcri$9ps=PE
+750  7$aParallelrechner (Computer)$0(OCoLC-D)1f34827a-7920-46c8-a86f-ee84695d7d8a$2ddcri$9ps=EO
+750  7$aParallelverarbeitung$0(OCoLC-D)640144e6-7b42-448f-81fe-6ff71851c3d3$2ddcri$9ps=PE
+750  7$aParallelprozessoren$0(OCoLC-D)9348274a-5855-4899-b44c-fb95605300df$2ddcri$9ps=PE
+750  7$aAssoziative Verarbeitung$0(OCoLC-D)88caf5b0-38c9-4d08-8d2f-e7d5e64c7d4e$2ddcri$9ps=PE
+750  7$aAssoziativprozessoren$0(OCoLC-D)642099ee-b041-4a1c-9526-aabe89db9400$2ddcri$9ps=PE
+750  7$aVektorverarbeitung$0(OCoLC-D)17bb7b3b-abe0-4d99-85f4-22cd327a38b3$2ddcri$9ps=PE
+750  7$aVektorprozessoren$0(OCoLC-D)e840983d-1077-4940-812e-2471b2a39529$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 8b551ba6-df41-3e14-83a6-4538151b13db
+003 DE-101
+005 20140121141016.9
+008 000202aaaaaaaa
+035   $aocd00116773
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.357$e004.35$jEinzelne Mehrprozessorcomputer$9ess=en$9ess=eh
+673   $a004/.357$9ess=seg
+680 0 $iEinschließlich:$tSystemanalyse und Systementwurf, Computerarchitektur, Leistungsbewertung von einzelnen Mehrprozessorcomputern$9ess=nin
+683 1 $iGliedere alphabetisch nach Computer- oder Prozessorname, z.B.$tInmos Transputer®$9ess=nal
+685 21$tSystemanalyse und Systementwurf, Computerarchitektur, Leistungsbewertung von einzelnen Mehrprozessorcomputern$ifrüher in$b004.3585$d2003$222$9ess=685
+
+LEADER 00000nw  a2200000n  4500
+001 580aa3f0-624e-3cde-9117-e16258c7ed5d
+003 DE-101
+005 20140121141100.0
+008 000202aaeaaaah
+035   $aocd00116774
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.358$e004.35$jSystemanalyse und Systementwurf, Computerarchitektur, Leistungsbewertung von Mehrprozessorcomputern$9ess=en$9ess=eh
+685 12$iNotation stillgelegt; klassifiziere in$a004.35$9ess=ndn
+685 12$iNotation stillgelegt; klassifiziere in$a004.35$i$a004.35$d2003$222$9ess=685
+
+LEADER 00000nw  a2200000n  4500
+001 a6452db0-0ea3-3b20-acf0-d8fa90967515
+003 DE-101
+005 20140121141155.9
+008 000202aaeaaaah
+035   $aocd00116775
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.3585$e004.35$jSystemanalyse und Systementwurf, Computerarchitektur, Leistungsbewertung von einzelnen Mehrprozessorrechnern$9ess=en$9ess=eh
+685 10$iVerlegt nach$a004.357$9ess=nrl
+685 10$iVerlegt nach$a004.357$d2003$222$9ess=685
+
+LEADER 00000nw  a2200000n  4500
+001 9bad8715-6047-3aa8-b348-5c924b69552c
+003 DE-101
+005 20130531145453.1
+008 000202aaaaaaaa
+035   $aocd00116776
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.36$e004.3$g*$jVerteilte Verarbeitung$9ess=en$9ess=eh
+673   $a004/.36$9ess=seg
+680 0 $iEinschließlich:$tSystemanalyse und Systementwurf, Computerarchitektur, Leistungsbewertung$9ess=nin
+680 1 $iHier auch:$tClient-Server-Datenverarbeitung, Webserver, Grid Computing$9ess=nch
+253 2 $iKlassifiziere$tWebservices$iin$a006.78$9ess=nce
+353   $iSiehe auch$a004.6$ifür$tRechnerkommunikationsnetze$9ess=nsa
+353   $iSiehe auch$a005.758$ifür$tverteilte Datenbanken$9ess=nsa
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aClient-Server-Betrieb$0(OCoLC-D)efc37d59-340f-44cf-b75d-a8ea4f17f3b5$2ddcri$9ps=EO
+750  7$aClient-Server-Konzept$0(OCoLC-D)a9ff0b8d-db1f-4df5-b65a-9960c6c3430d$2ddcri$9ps=PE
+750  7$aClient-Server-Prinzip$0(OCoLC-D)345d43d1-15ef-4663-9d05-c54280b931e0$2ddcri$9ps=EO
+750  7$aClient-Server-System$0(OCoLC-D)5a3fce1f-3ce7-4f3c-8e8e-c635c79a7482$2ddcri$9ps=EO
+750  7$aClient-Server-Modell$0(OCoLC-D)36f47005-e607-459d-9717-28f22cde5f45$2ddcri$9ps=EO
+750  7$aClient-Server-Architektur$0(OCoLC-D)e1eae921-6a7c-4b0e-9b55-c83ba60918f6$2ddcri$9ps=PE
+750  7$aGlobal Computing$0(OCoLC-D)7809c7b6-6591-4391-bf69-adc60803ae70$2ddcri$9ps=PE
+750  7$aClient/Server Computing$0(OCoLC-D)dc362bb1-60ea-438a-a02e-50d94d8f92da$2ddcri$9ps=PE
+750  7$aClient-Server-Datenverarbeitung$0(OCoLC-D)a66d3731-c6e1-46d8-a459-cd529a764327$2ddcri$9ps=PE
+750  7$aVerteilte Verarbeitung$0(OCoLC-D)34881aee-ee6e-4b02-9098-562949b1f554$2ddcri$9ps=PE
+750  7$aGrid Computing$0(OCoLC-D)a1d7c207-ade0-4638-be7c-7b7138054afd$2ddcri$9ps=PE
+750  7$aServer (Informatik)$0(OCoLC-D)53ba54ca-183b-40d6-861e-0661f8f12011$2ddcri$9ps=PE
+750  7$aWebserver$0(OCoLC-D)328d1b79-242b-44b2-abd2-6e38c5e2cba6$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 ocd00329401
+003 OCoLC-D
+005 20140121141408.9
+008 120716aaaaaabb
+040   $aOCLCD$bger$cOCLCD
+084 0 $addc$c23de$eger
+153   $a004.36019$e004.36$jVerteilte Verarbeitung--psychologische Prinzipien
+765 0 $b004.36$z1$s019$u004.36019$9ess=
+673   $a004/.36019$9ess=
+750  7$aVerteilte Verarbeitung$xpsychologische Prinzipien$0(OCoLC-D)2dbcb97b-2a01-4e32-8d97-4ffa4da06a1f$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 e980fbf4-9c88-3b89-b394-5b9383679d37
+003 DE-101
+005 20140121141444.8
+008 041221aaaaaabb
+035   $aocd00116777
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.360218$e004.36$jVerteilte Verarbeitung--Normen$9ess=ien$9ess=peh
+765 0 $b004.36$z1$s0218$u004.360218$9ess=hn
+673   $a004/.360218$9ess=seg
+750  7$aVerteilte Verarbeitung$xNormen$0(OCoLC-D)db718bc7-cd76-495c-88f3-4067079f5130$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 d6b50c5e-8929-3eb3-b793-85ca66a053b2
+003 DE-101
+005 20140121141510.2
+008 000202aaeaaaah
+035   $aocd00116778
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.368$e004.36$jSystemanalyse und Systementwurf, Computerarchitektur, Leistungsbewertung von verteilten Computersystemen$9ess=en$9ess=eh
+685 12$iNotation stillgelegt; klassifiziere in$a004.36$9ess=ndn
+685 12$iNotation stillgelegt; klassifiziere in$a004.36$d2003$222$9ess=685
+
+LEADER 00000nw  a2200000n  4500
+001 158cd998-bebb-3a49-b9de-b7fbf3869c0d
+003 DE-101
+005 20140121141710.6
+008 000202aaaaaaaa
+035   $aocd00116779
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.5$e004$g*$jSpeicherung$9ess=en$9ess=eh
+680 0 $iEinschließlich:$tHardware-Aspekte von virtuellen Speichern; umfassende Werke über Assoziativspeicher (inhaltsadressierten Speicher) und Assoziativ-Verarbeitung$9ess=nin
+253 2 $iKlassifiziere$tumfassende Werke über virtuelle Speicher$iin$a005.435$9ess=nce
+253 0 $iFür$tAssoziativ-Verarbeitung$isiehe$a004.35$9ess=nse
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aSpeicherung (Computer)$0(OCoLC-D)1773d720-ef7c-4a44-98ee-f9edaeebd1ca$2ddcri$9ps=PE
+750  7$aAssoziativspeicher$0(OCoLC-D)84bb9953-3477-464d-82f4-f2b40d137325$2ddcri$9ps=PE
+750  7$aComputerspeichergeräte$0(OCoLC-D)adc64c19-b972-4149-9612-ca87d3d6d8c0$2ddcri$9ps=PE
+750  7$aInhaltsadressierter Speicher$0(OCoLC-D)25cb669a-82b0-47cc-9291-3faa31dbf070$2ddcri$9ps=PE
+750  7$aSpeicher (Computer)$0(OCoLC-D)a561d6e6-53c3-439d-8a48-422450efea1f$2ddcri$9ps=PE
+750  7$aVirtueller Speicher$xHardware$0(OCoLC-D)5c33ff6a-777e-4b17-af17-6e8d81383dee$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 1c02605b-7223-3e33-aa90-bfbfe7adb313
+003 DE-101
+005 20140210115508.7
+008 000202aaaaaaaa
+035   $aocd00116780
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.53$e004.5$g*$jHauptspeicher (Interner Speicher)$9ess=en$9ess=eh
+673   $a004.5/3$9ess=seg
+680 0 $iEinschließlich:$tMetalloxidhalbleiter- (MOS-), Halbleiter-, Bipolar-, Dünnschichtspeicher; Direktzugriffsspeicher (RAM); Festwertspeicher (ROM)$9ess=nin
+253 2 $iKlassifiziere$tCD-ROM (Compactdisc-Festwertspeicher)$iin$a004.565$9ess=nce
+353   $iSiehe auch$a005.18$ifür$tMikroprogrammierung und Mikroprogramme$9ess=nsa
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aBipolarspeicher$0(OCoLC-D)86647b2d-ab22-47a5-bf09-13887bc6a4ec$2ddcri$9ps=PE
+750  7$aKernspeicher$0(OCoLC-D)a8f370be-d734-47ba-abc0-dae1c1ded202$2ddcri$9ps=PE
+750  7$aInterner Speicher (Computer)$0(OCoLC-D)c119b762-da4a-4b09-a586-b20831329de1$2ddcri$9ps=PE
+750  7$aMagnetkernspeicher$0(OCoLC-D)65968cec-bc64-4212-9225-6d6b30bbebfe$2ddcri$9ps=PE
+750  7$aPrimärspeicher (Computer)$0(OCoLC-D)0322ef6c-68a6-4a65-a71d-3f9797199217$2ddcri$9ps=PE
+750  7$aDirektzugriffsspeicher$0(OCoLC-D)a6168268-d653-4301-8837-dce64774381c$2ddcri$9ps=PE
+750  7$aFestwertspeicher$0(OCoLC-D)01c6dfb0-b6ec-44b1-8688-3c5ceed3f241$2ddcri$9ps=PE
+750  7$aROM (Computerspeicher)$0(OCoLC-D)ec8e3448-d67a-40d8-9df8-5c21572e7d14$2ddcri$9ps=PE
+750  7$aRead-Only Memory$0(OCoLC-D)d7650797-d3b7-4e9c-b253-079541b3fd04$2ddcri$9ps=PE
+750  7$aHalbleiterspeicher (Interner Speicher)$0(OCoLC-D)54d58e76-9757-4426-bcc2-4bee8ce90b99$2ddcri$9ps=PE
+750  7$aDünnschichtspeicher$0(OCoLC-D)c5061903-05d2-49ef-a940-174c9a2d1bc6$2ddcri$9ps=PE
+750  7$aHauptspeicher (Computer)$0(OCoLC-D)dfcf3fa6-df0d-40dc-9094-c71a98a96d6f$2ddcri$9ps=PE
+750  7$aMOS-Speicher$0(OCoLC-D)582fd04d-c95d-4ac4-bb4e-ed4a5b185b15$2ddcri$9ps=PE
+750  7$aMetalloxidhalbleiterspeicher$0(OCoLC-D)80928808-6744-4f5f-ab26-109a9718e85f$2ddcri$9ps=PE
+750  7$aRAM (Computerspeicher)$0(OCoLC-D)2cb99749-d120-4288-8555-876acf47b27b$2ddcri$9ps=PE
+750  7$aRandom Access Memory$0(OCoLC-D)7fff13ab-3103-4cda-84e1-4a6c667bbdeb$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 6d0281c6-0db4-3e06-b31b-7122c2f19df8
+003 DE-101
+005 20140204130445.8
+008 000202aaaaaaaa
+035   $aocd00116782
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.56$e004.5$g*$jExterner Speicher (Sekundärspeicher)$9ess=en$9ess=eh
+673   $a004.5/6$9ess=seg
+680 0 $iEinschließlich:$tLochkarten$9ess=nin
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aZusatzspeicher$xInformatik$0(OCoLC-D)6a61bfa7-1b35-474d-96cb-701662f5494e$2ddcri$9ps=PE
+750  7$aExterner Speicher$xInformatik$0(OCoLC-D)4844b59d-c021-4247-ac4b-bcfd1f3c53c1$2ddcri$9ps=PE
+750  7$aLochstreifenleser$0(OCoLC-D)24fc0347-8b44-47ab-bfb2-312aee5b48b8$2ddcri$9ps=EO
+750  7$aLochkarten$0(OCoLC-D)77346279-1860-4b35-8c4a-f2d17e93933c$2ddcri$9ps=PE
+750  7$aLochkarten$xelektronische Datenverarbeitung$0(OCoLC-D)4a590d2f-7b95-42e6-866d-242753c3a986$2ddcri$9ps=PE
+750  7$aSekundärspeicher (Computer)$0(OCoLC-D)4e90a5cc-c36f-4358-b12e-2373c4760a72$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 276c1772-07de-320e-9c9f-7144dbace364
+003 DE-101
+005 20140204131009.1
+008 000202aaaaaaaa
+035   $aocd00116783
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.563$e004.56$g*$jMagnetische Speicherung$9ess=en$9ess=eh
+673   $a004.5/63$9ess=seg
+680 0 $iEinschließlich:$tDisketten, Diskettenlaufwerke; Magnetbänder, z.B. Steckmodule, Kassetten, Magnettonbänder; Bandlaufwerke$9ess=nin
+680 1 $iHier auch:$tFestplatten, Festplattenlaufwerke; Magnetblasenspeicher$9ess=nch
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aDiskettenlaufwerke$0(OCoLC-D)0c8069dc-20a3-42aa-a908-75839ab10ad2$2ddcri$9ps=PE
+750  7$aZIP-Laufwerke$0(OCoLC-D)723dc6e8-5bbc-4481-bd29-6203bdfde587$2ddcri$9ps=EO
+750  7$aRAID-Systeme$0(OCoLC-D)70ddfb6a-cb68-4e88-9a37-7d047aa9d9d4$2ddcri$9ps=EO
+750  7$aBlasenspeicher$0(OCoLC-D)ef48ad3b-91d1-4801-8754-38cad8e854f8$2ddcri$9ps=PE
+750  7$aKassetten (Computer)$0(OCoLC-D)4ffceff5-6cc3-4772-8a57-fc36895a5c8b$2ddcri$9ps=PE
+750  7$aDatenzellen (Computerspeicher)$0(OCoLC-D)43a9226b-ef28-4afe-813e-40c3a84da581$2ddcri$9ps=PE
+750  7$aLaufwerke (Computergeräte)$0(OCoLC-D)05419d41-38d5-461d-9622-fa22086a7599$2ddcri$9ps=PE
+750  7$aTrommeln (Computergeräte)$0(OCoLC-D)a530ffd1-d060-4643-91b0-0f8678a23c3b$2ddcri$9ps=PE
+750  7$aMagnetblasenspeicher$0(OCoLC-D)1ef5b6d1-bd94-417a-b5f9-640169398b28$2ddcri$9ps=PE
+750  7$aMagnettrommeln$0(OCoLC-D)e5bbdd60-2636-48a6-890e-c755cc1293f2$2ddcri$9ps=PE
+750  7$aMagnetbandspulen (Computer)$0(OCoLC-D)15cfba3c-a296-4c41-a43f-e523757fc92c$2ddcri$9ps=PE
+750  7$aDatenbänder$0(OCoLC-D)4f0763ce-4663-443b-ad68-dfe0f251f750$2ddcri$9ps=PE
+750  7$aBandlaufwerke (Computer)$xInformatik$0(OCoLC-D)20ffd95c-8df4-401e-b165-e3275852a1c4$2ddcri$9ps=PE
+750  7$aBänder (Computer)$xInformatik$0(OCoLC-D)53882451-aaa2-46af-8037-963fcabde3b5$2ddcri$9ps=PE
+750  7$aMagnetplatten (Computer)$0(OCoLC-D)d626a768-247e-490a-a0d5-9c4d578fba98$2ddcri$9ps=PE
+750  7$aDisketten$0(OCoLC-D)b3d383ba-aabf-46c0-85a2-e7eff8da67ec$2ddcri$9ps=PE
+750  7$aFloppy Disks$0(OCoLC-D)09592d13-5f51-482b-a6b8-e4fe8a3bcb5c$2ddcri$9ps=PE
+750  7$aFestplattenverwaltung$0(OCoLC-D)9f03c7ce-e406-42a0-88a6-f2547f0e5f15$2ddcri$9ps=PE
+750  7$aFestplatten$0(OCoLC-D)288532e6-b6d6-43c4-9aa5-7d219132423a$2ddcri$9ps=PE
+750  7$aMagnetbänder$xComputerspeicher$0(OCoLC-D)1ad68372-b12a-409e-87ed-d7b660bef42e$2ddcri$9ps=PE
+750  7$aMagnettonbänder (Computer)$0(OCoLC-D)071987e3-599d-479b-942c-5bab5e6940eb$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 4732a40d-e084-325e-8cd5-3a42ab5c4576
+003 DE-101
+005 20140204140148.5
+008 000202aaaaaaaa
+035   $aocd00116784
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.565$e004.56$g*$jOptische Speicherung$9ess=en$9ess=eh
+673   $a004.5/65$9ess=seg
+680 0 $iEinschließlich:$tCD-ROM- (Compactdisc-Festwertspeicher-), DVD-, WORM- (Write once-read-many-)Datenträger und -Laufwerke$9ess=nin
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aCD-Rekorder$0(OCoLC-D)6cb66edb-3e02-474e-9057-a43c3a1bd932$2ddcri$9ps=PE
+750  7$aCD-Brenner$0(OCoLC-D)b6c3f731-b76a-47df-882e-3d08c3bee9b6$2ddcri$9ps=PE
+750  7$aCDs (Compact-Discs)$xComputerspeicher$0(OCoLC-D)93cdedc8-7f06-40c9-b0be-162f32cd3ee4$2ddcri$9ps=PE
+750  7$aCompactdisc-Festwertspeicher$0(OCoLC-D)cab9be3a-4f39-4dd6-921b-9082c6336c86$2ddcri$9ps=PE
+750  7$aCompact-Discs$xComputerspeicher$0(OCoLC-D)72999376-dc1c-4893-b67c-a1e65c9c1f2c$2ddcri$9ps=PE
+750  7$aDVDs$xComputerspeicher$0(OCoLC-D)0efba686-9a17-428e-b3bb-80967d2d8811$2ddcri$9ps=PE
+750  7$aOptische digitale Datenträger$0(OCoLC-D)28321161-ca55-4016-9b74-c55755eef1ff$2ddcri$9ps=PE
+750  7$aOptische Speichergeräte$0(OCoLC-D)8a40e75f-9b1f-40cf-b857-e3a35aab757f$2ddcri$9ps=PE
+750  7$aBildplatten$xComputerspeicher$0(OCoLC-D)520758d5-8d3c-46f5-b06e-d11d5ea4b049$2ddcri$9ps=PE
+750  7$aWORM-Datenträger$0(OCoLC-D)0cabf9ba-d541-4f85-a5e2-15a368187451$2ddcri$9ps=PE
+750  7$aWORM-Laufwerke$0(OCoLC-D)9fa96904-63fc-470b-b914-49c6746395bc$2ddcri$9ps=PE
+750  7$aCD-ROMs$0(OCoLC-D)cc1ffc6b-8b6e-4a86-8f6f-e5260ab4bc42$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 ocd00277800
+003 OCoLC-D
+005 20140203130717.6
+008 100503aaaabaaa
+040   $aOCLCD$bger$dOCLCD
+084 0 $addc$c23de$eger
+153   $a004.568$e004.56$g*$jHalbleiterspeicherung
+673   $a004.5/68$9ess=
+680 1 $iHier auch:$tSolid-State-Speicherung; Flash-Speicher, Speicherkarten$9ess=
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+685 03$iErweitert aus$b004.56$d201104$223$9ess=685
+750  7$aFlash-Speicher$0(OCoLC-D)01951839-518d-4df9-8e6f-55c8fd811a05$2ddcri$9ps=PE
+750  7$aSpeicherkarten$0(OCoLC-D)c450d35e-c8f5-4b45-9100-23839c23f2bc$2ddcri$9ps=PE
+750  7$aSolid-State-Drives (SSD)$0(OCoLC-D)92777117-df65-46a2-8356-e6e83dc596c3$2ddcri$9ps=PE
+750  7$aSSD (Solid-State-Drives)$0(OCoLC-D)983b8bfd-1d51-4be7-a900-67f137bf8622$2ddcri$9ps=PE
+750  7$aSolid-State-Speicherung$0(OCoLC-D)4752e6eb-7c27-45df-83f4-d2765c4c88ab$2ddcri$9ps=PE
+750  7$aHalbleiterspeicherung$0(OCoLC-D)16651bd7-0dbb-4847-ae2a-76eb1452907e$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 b8f97e59-0fa3-3150-8a0f-74c1f42c3ef8
+003 DE-101
+005 20140207195512.0
+008 000202aaaaaaaa
+035   $aocd00116785
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.6$e004$g*$jRechnerkopplung und Rechnerkommunikation$9ess=en$9ess=eh
+761  0$iStandardschlüssel werden angehängt für eines der oder beide Themen in der Klassenbenennung$9ess=nsf
+680 1 $iHier auch:$tDatenkommunikation; Rechnernetzkopplung (Internetworking), Interoperabilität; kabelgebundene Datenkommunikation, drahtlose Datenkommunikation; fächerübergreifende Werke über Rechnerkommunikation$9ess=nch
+253 2 $iKlassifiziere$tDaten, Programme, Programmierung für Rechnerkopplung und Datenkommunikation$iin$a005.7$9ess=nce
+253 2 $iKlassifiziere$tSicherheitsmaßnahmen für Rechnerkopplung und Datenkommunikation$iin$a005.8$9ess=nce
+253 0 $iFür$tfächerübergreifende Werke über Telekommunikation$isiehe$a384$9ess=nse
+253 0 $iFür$tsoziologische Aspekte von Rechnerkommunikation$isiehe$a302.231$9ess=nse
+253 0 $iFür$twirtschaftliche und verwandte Aspekte der Bereitstellung von Rechnerkommunikation für die Öffentlichkeit$isiehe$a384.3$9ess=nse
+353   $iSiehe auch$a004.36$ifür$tverteilte Verarbeitung$9ess=nsa
+684 2 $iSiehe Praxishilfe bei$a004.6$ivs.$a005.71$9ess=nsm
+684 2 $iSiehe Praxishilfe bei$a004.6$ivs.$a384.3$9ess=nsm
+684 2 $iSiehe Praxishilfe bei$a004.6$ivs.$a621.382$i,$a621.3981$9ess=nsm
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+685 20$tFächerübergreifende Werke über Telekommunikation$iverlegt nach$a384$d19900501$220$9ess=685
+750  7$aKommunikation$xInformatik$0(OCoLC-D)6b006bf0-d40f-4f4b-a9a0-f06a6f9035ea$2ddcri$9ps=PE
+750  7$aKommunikationsnetze$xInformatik$0(OCoLC-D)52337c81-0e6d-4ced-892b-fa7264475769$2ddcri$9ps=PE
+750  7$aRechnerkommunikation$0(OCoLC-D)606c622a-7605-402e-9d6f-64492a22dba3$2ddcri$9ps=PE
+750  7$aRechnerkopplung$0(OCoLC-D)f5fd1c57-f732-4e7b-9dd4-08ae03964e96$2ddcri$9ps=PE
+750  7$aSchnittstellen (Computer)$0(OCoLC-D)249465a4-06c4-4ec9-b529-db345350188a$2ddcri$9ps=PE
+750  7$aKopplung (Computer)$0(OCoLC-D)61ba1e51-55fd-48a8-8d65-bf9ee372d2ae$2ddcri$9ps=PE
+750  7$aInterfacing (Computer)$0(OCoLC-D)40cbfc0e-87b5-4bed-810d-b1e655cbb34e$2ddcri$9ps=PE
+750  7$aComputernetze$0(OCoLC-D)3603b441-441a-4601-91d9-18840e32ca94$2ddcri$9ps=PE
+750  7$aDatenübermittlung$0(OCoLC-D)1c3f69e7-e436-433d-84e8-27f0ec1d5fec$2ddcri$9ps=PE
+750  7$aDatenaustausch$0(OCoLC-D)b1185ab2-b4af-4eb2-aa14-f362ad632ebc$2ddcri$9ps=PE
+750  7$aDatenkommunikation$0(OCoLC-D)b7d07bf8-320a-401e-b3e7-978c5de7640a$2ddcri$9ps=PE
+750  7$aDatenübertragung$0(OCoLC-D)6abd4278-06a6-41a3-8ac3-8a155a5710e3$2ddcri$9ps=PE
+750  7$aDigitale Kommunikation$xInformatik$0(OCoLC-D)cc841fbb-85c8-41a0-9f50-94b1bec21cee$2ddcri$9ps=PE
+750  7$aDigitale Datenübertragung$xInformatik$0(OCoLC-D)525a3350-9953-459d-9be9-9b59c458c350$2ddcri$9ps=PE
+750  7$aDigitale Datenübermittlung$xInformatik$0(OCoLC-D)0b14a8ba-ee3e-44b6-b132-f3e050579489$2ddcri$9ps=PE
+750  7$aVernetzung (Computer)$0(OCoLC-D)640301a9-1c09-4549-9566-7a595a5b6f3e$2ddcri$9ps=PE
+750  7$aInternetworking (Computernetze)$0(OCoLC-D)64a02ef0-229b-490d-aad0-32f66feb39ea$2ddcri$9ps=PE
+750  7$aRechnernetzkopplung$0(OCoLC-D)9293dd58-d557-4e17-9994-e67008c2abae$2ddcri$9ps=PE
+750  7$aInteroperabilität (Computer)$0(OCoLC-D)62c3eaec-9440-44d3-86dc-d9e1475e9999$2ddcri$9ps=PE
+750  7$aVielfachzugriffsysteme$xRechnerkommunikation$0(OCoLC-D)8249f145-36e8-48e5-9dda-f51aa0e43e47$2ddcri$9ps=PE
+750  7$aRouter (Computernetze)$0(OCoLC-D)933defff-e072-49e5-a8b1-2ee137506f53$2ddcri$9ps=EO
+750  7$aRouting (Computernetze)$0(OCoLC-D)f55e9ad5-41a8-4d2b-9597-2db37ff5fb68$2ddcri$9ps=EO
+750  7$aKabelgebundene Datenübermittlung$0(OCoLC-D)f81460f9-4b56-4719-b1c7-82bd41a15f11$2ddcri$9ps=PE
+750  7$aKabelgebundene Datenkommunikation$0(OCoLC-D)c416c2ce-99b4-453a-86ab-a96a2e884261$2ddcri$9ps=PE
+750  7$aDrahtlose Datenkommunikation$0(OCoLC-D)cf5574aa-b99f-4c1a-a4e3-1ecc7c7f599e$2ddcri$9ps=PE
+750  7$aKabelgebundene Datenübertragung$0(OCoLC-D)22e219d1-8744-4841-b7eb-97f25f4bc13d$2ddcri$9ps=PE
+750  7$aDrahtlose Datenübermittlung$0(OCoLC-D)2c79fbcb-5c1f-456e-a514-36c1a8b22bfa$2ddcri$9ps=PE
+750  7$aDrahtlose Datenübertragung$0(OCoLC-D)0f7f75d4-8a63-4365-80bc-8217e587f50c$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 ocd00277890
+003 OCoLC-D
+005 20140122104936.4
+008 100503aaaaaabb
+040   $aOCLCD$bger$dOCLCD
+084 0 $addc$c23de$eger
+153   $a004.60148$e004.6$jEmoticons, . . .
+673   $a004.601/48$9ess=
+765 0 $b004.4$z1$s0148$u004.60148
+750  7$aEmoticons$0(OCoLC-D)5ed0f29d-09e4-4737-acc8-3169c1325fb5$2ddcri$9ps=PE
+750  7$aInternetakronyme$0(OCoLC-D)d17d291b-15c1-409d-9686-6d4b9969ee51$2ddcri$9ps=PE
+750  7$aAkronyme (Netzjargon)$0(OCoLC-D)f0d3a712-6eae-403c-92eb-2230e0dd1bda$2ddcri$9ps=PE
+750  7$aAbkürzungen (Netzjargon)$0(OCoLC-D)476d2ec9-6e51-4540-8883-863bfc5ea9d2$2ddcri$9ps=PE
+750  7$aSmileys (Netzjargon)$0(OCoLC-D)751ff331-7397-4357-ae42-ebc6675d977a$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 cc71dbdb-e264-3427-9af9-c82d6565d1d2
+003 DE-101
+005 20051102111003.0
+008 000202aadaaaba
+035   $aocd00116787
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.60218$e004.6$jNormen$9ess=en$9ess=eh
+765 0 $b004.6$z1$s0218$u004.60218$9ess=hn
+253 1 $iNicht verwenden; klassifiziere in$a004.62$9ess=nsx
+
+LEADER 00000nw  a2200000n  4500
+001 d546b03e-79f3-36e9-97a6-4a96a69573e5
+003 DE-101
+005 20140122105054.4
+008 000202aaaaaabb
+035   $aocd00116788
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.603$e004.6$jRechnerkommunikation--Wörterbücher$9ess=ien$9ess=peh
+765 0 $b004.6$z1$s03$u004.603$9ess=hn
+750  7$aRechnerkommunikation$xWörterbücher$0(OCoLC-D)3305f837-f1f1-42e1-a39f-31e4dca03a5e$2ddcri$9ps=EO
+
+LEADER 00000nw  a2200000n  4500
+001 fe97778c-fa83-3342-bc92-3110c6d5e3a5
+003 DE-101
+005 20140122105204.0
+008 000202aaaaaabb
+035   $aocd00116789
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.6076$e004.6$jRechnerkommunikation--Prüfungen, . . .$9ess=ien$9ess=peh
+765 0 $b004.6$z1$s076$u004.6076$9ess=hn
+750  7$aRechnerkommunikation$xPrüfungen$0(OCoLC-D)2c4367ad-914b-4efd-8baa-d48ecee95372$2ddcri$9ps=EO
+750  7$aComputernetze$xZertifikation$0(OCoLC-D)2fea5ba5-ff12-4f38-a13d-99db1d6ca94e$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 a051775a-4964-33e3-a8ac-f93ff47efd99
+003 DE-101
+005 20140207193421.6
+008 000202aaaaaaaa
+035   $aocd00116790
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.61$e004.6$jRechnerkopplung und Rechnerkommunikation für einzelne Arten elektronischer Computer$9ess=en$9ess=eh
+673   $a004.6/1$9ess=seg
+
+LEADER 00000nw  a2200000n  4500
+001 ea8913f1-d3c2-32db-adb0-df677cff361f
+003 DE-101
+005 20051102111003.0
+008 000202abdaaaba
+035   $aocd00116791
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.6101$c004.6109$e004.61$jStandardschlüssel$9ess=en$9ess=eh
+765 0 $b004.61$z1$s01$u004.6101$9ess=hn
+765 0 $b004.61$z1$s09$u004.6109$9ess=hn
+253 1 $iNicht verwenden; klassifiziere in$a004.601$c004.609$9ess=nsx
+
+LEADER 00000nw  a2200000n  4500
+001 9cc139be-384f-3038-93e0-2437eb5b0e36
+003 DE-101
+005 20140207193556.9
+008 000202aaaaaabb
+035   $aocd00116792
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.611$e004.611$f004.616$jSupercomputer--Rechnerkommunikation, . . .$9ess=ien$9ess=peh
+765 0 $b004.61$r004.1$s1$u004.611$9ess=hn
+673   $a004.6/11$9ess=seg
+750  7$aSupercomputer$xRechnerkommunikation$0(OCoLC-D)443bd114-1afc-4ee9-99c3-00327e3814e9$2ddcri$9ps=PE
+750  7$aSupercomputer$xRechnerkopplung$0(OCoLC-D)ae71b3b5-7fb7-4917-9add-e869f61bc4a8$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 f43797bd-be01-39c5-a175-1d86d1150b0e
+003 DE-101
+005 20140207193540.8
+008 000202abaaaaba
+035   $aocd00116793
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.611$c004.616$e004.61$g*$jDigitale Computer$9ess=en$9ess=eh
+765 0 $b004.61$r004.1$s1$u004.611$9ess=hn
+765 0 $b004$r004.1$s6$u004.6$9ess=hn
+765 0 $b004.61$r004.1$s6$u004.616$9ess=hn
+765 0 $b004.61$r004.1$s1$u004.611$9ess=hn
+673   $a004.6/11$c004.6/16$9ess=seg
+761  0$iHänge an die Grundnotation$b004.61$idie Ziffern an, die$r004.1$iin$d004.11$c004.16$ifolgen, z.B.$tRechnerkopplung und Rechnerkommunikation für Personal Computer$e004.616$9ess=na1
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+
+LEADER 00000nw  a2200000n  4500
+001 70278092-44e2-3576-94b9-3d4bb3032722
+003 DE-101
+005 20140207193615.8
+008 000202aaaaaabb
+035   $aocd00116794
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.612$e004.611$f004.616$jGroßrechner--Rechnerkommunikation, . . .$9ess=ien$9ess=peh
+765 0 $b004.61$r004.1$s2$u004.612$9ess=hn
+673   $a004.6/12$9ess=seg
+750  7$aGroßrechner$xRechnerkommunikation$0(OCoLC-D)2de96579-3cdb-4893-811f-5361aa364711$2ddcri$9ps=PE
+750  7$aGroßrechner$xRechnerkopplung$0(OCoLC-D)fba2e23c-31dd-4449-bdd9-f91fd5fe25bf$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 8b83cb8f-872c-3690-b65d-73b32732d9c9
+003 DE-101
+005 20140207193641.5
+008 000202aaaaaabb
+035   $aocd00116795
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.614$e004.611$f004.616$jMidrange-Computer--Rechnerkommunikation, . . .$9ess=ien$9ess=peh
+765 0 $b004.61$r004.1$s4$u004.614$9ess=hn
+673   $a004.6/14$9ess=seg
+750  7$aMidrange-Computer$xRechnerkommunikation$0(OCoLC-D)64c7a98c-a770-4971-91c3-44fd3867918c$2ddcri$9ps=PE
+750  7$aMidrange-Computer$xRechnerkopplung$0(OCoLC-D)35816e7d-b93a-489e-93b2-feb581e188d3$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 0d61f7a6-72fe-3949-9f95-6cb32ab6455b
+003 DE-101
+005 20140207193724.0
+008 000202aaaaaabb
+035   $aocd00116796
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.616$e004.611$f004.616$jPersonal Computer--Rechnerkommunikation, . . .$9ess=ien$9ess=peh
+765 0 $b004.61$r004.1$s6$u004.616$9ess=hn
+673   $a004.6/16$9ess=seg
+750  7$aPersonal Computer$xRechnerkommunikation$0(OCoLC-D)1db50a40-d5dd-4186-a9a3-36445d358f8e$2ddcri$9ps=PE
+750  7$aPersonal Computer$xRechnerkopplung$0(OCoLC-D)fe90e49c-300c-406f-ad35-5a195b1ff2ed$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 094a34a8-ec68-3ff5-a0bd-a5425f0f236a
+003 DE-101
+005 20140207193818.0
+008 000202aaaaaaaa
+035   $aocd00116797
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.618$e004.61$g*$jComputer unterschieden nach Verarbeitungsarten$9ess=en$9ess=eh
+673   $a004.6/18$9ess=seg
+761  0$iHänge an die Grundnotation$b004.618$idie Ziffern an, die$r004.3$iin$d004.33$c004.36$ifolgen, z.B.$tParallelrechner$e004.6185$9ess=na1
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aVerarbeitungsarten$xInformatik$xRechnerkommunikation$0(OCoLC-D)e413f84e-dcb9-4375-a484-97d9f6ff21a4$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 c8bfcf41-b9df-31ee-86f2-e5bce294afae
+003 DE-101
+005 20140207193906.7
+008 000202aaaaaabb
+035   $aocd00116798
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.6183$e004.618$jEchtzeitverarbeitung--Rechnerkommunikation$9ess=ien$9ess=peh
+765 0 $b004.618$r004.3$s3$u004.6183$9ess=hn
+673   $a004.6/183$9ess=seg
+750  7$aEchtzeitverarbeitung$xRechnerkommunikation$0(OCoLC-D)44d233df-8549-49a0-88c8-e969b1414e1a$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 5aa50e5f-faf4-3101-b8f1-ff1ff993f829
+003 DE-101
+005 20140207193920.6
+008 000202aaaaaabb
+035   $aocd00116799
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.6185$e004.618$jMehrprozessorverarbeitung--Rechnerkommunikation$9ess=ien$9ess=peh
+765 0 $b004.618$r004.3$s5$u004.6185$9ess=hn
+765 0 $b004.618$r004.3$s5$u004.6185$9ess=hn
+673   $a004.6/185$9ess=seg
+750  7$aMehrprozessorverarbeitung$xRechnerkommunikation$0(OCoLC-D)9b1787db-5bf8-4ec6-8c5b-19dab5359bdd$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 3892b8d0-22db-3d5f-9e9b-8deb3102c6b1
+003 DE-101
+005 20140207193950.2
+008 000202aaaaaabb
+035   $aocd00116800
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.6186$e004.618$jVerteilte Verarbeitung--Rechnerkommunikation$9ess=ien$9ess=peh
+765 0 $b004.618$r004.3$s6$u004.6186$9ess=hn
+673   $a004.6/186$9ess=seg
+750  7$aVerteilte Verarbeitung$xRechnerkommunikation$0(OCoLC-D)7e523928-b9a7-49f8-8de6-7bd3553073c2$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 4fbbe9da-cbba-3835-b3c4-e788983fbf80
+003 DE-101
+005 20140207194613.9
+008 000202aaaaaaaa
+035   $aocd00116801
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.619$e004.61$g*$jHybrid- und Analogcomputer$9ess=en$9ess=eh
+673   $a004.6/19$9ess=seg
+769   $a004.19$9ess=pn
+761  0$iStandardschlüssel werden angehängt für eines der oder beide Themen in der Klassenbenennung$9ess=nsf
+767   $g*$iVerwende Notation$z1$a019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aAnalogcomputer$xRechnerkommunikation$0(OCoLC-D)8dfa76f0-c347-4f78-82b2-d5fac471678a$2ddcri$9ps=PE
+750  7$aAnalogcomputer$xRechnerkopplung$0(OCoLC-D)e666a3d1-7951-4e78-a5cb-379e6aaf2014$2ddcri$9ps=PE
+750  7$aHybridcomputer$xRechnerkommunikation$0(OCoLC-D)1585127f-c96e-432b-9f95-2839d0f8084f$2ddcri$9ps=PE
+750  7$aHybridcomputer$xRechnerkopplung$0(OCoLC-D)b4eb391a-8726-48f2-9085-c9aeaaf44368$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 3f294ad6-6491-3f50-bf85-8c6317504f44
+003 DE-101
+005 20140207194758.4
+008 000202aaaaaaaa
+035   $aocd00116802
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.62$e004.6$g*$jKopplungs- und Kommunikationsprotokolle$9ess=en$9ess=eh
+673   $a004.6/2$9ess=seg
+761  0$iStandardschlüssel werden angehängt für eines der oder beide Themen in der Klassenbenennung$9ess=
+680 1 $iSynonyme Bezeichnungen für$tProtokolle$i:$tNormen, Standards$9ess=nvn
+253 2 $iKlassifiziere$tProtokolle für bestimmte Aspekte der Rechnerkopplung und Rechnerkommunikation$ibei dem Aspekt, z.B.$tProtokolle für fehlerkorrigierende Codes$e005.717$9ess=ncw
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+453 0 $iStandardschlüssel-nicht-verwenden-Anweisung in$a004.60218$jNormen$9ess=
+453 0 $iStandardschlüssel-nicht-verwenden-Anweisung in$a004.620218$jNormen$9ess=
+750  7$aTCP/IP (Rechnerkommunikation)$0(OCoLC-D)51eb8b89-0591-4b31-bc96-fe2c48308e6b$2ddcri$9ps=PE
+750  7$aKommunikationsprotokolle$xInformatik$0(OCoLC-D)8a5d1885-78b0-4ac2-9b32-eb404642bf8a$2ddcri$9ps=PE
+750  7$aKommunikationsstandards$xInformatik$0(OCoLC-D)60fcbeb2-0fda-4c8c-ba88-61a7b9d9322e$2ddcri$9ps=EO
+750  7$aKopplungsprotokolle$xInformatik$0(OCoLC-D)198c41e2-0dd1-4469-95ad-8cddbe0ebae9$2ddcri$9ps=PE
+750  7$aNetzprotokolle$xInformatik$0(OCoLC-D)11f0b9cc-98e4-4862-9605-c9b085df61fd$2ddcri$9ps=PE
+750  7$aOSI (Rechnerkommunikation)$0(OCoLC-D)cd87a719-96b3-4e6a-9c27-a4d29b813b13$2ddcri$9ps=PE
+750  7$aOpen Systems Interconnection$0(OCoLC-D)d9167a34-3822-4cb6-94db-4bbed9dee2e1$2ddcri$9ps=PE
+750  7$aProtokolle$xRechnerkommunikation$0(OCoLC-D)5d008275-6cab-4520-a83d-8fd61fab0465$2ddcri$9ps=PE
+750  7$aProtokolle$xRechnerkopplung$0(OCoLC-D)a226d7ea-e000-4989-928c-7d620ce06932$2ddcri$9ps=PE
+
+LEADER 00000nw  a2200000n  4500
+001 6742dff0-aa57-3ac0-9599-287aeaca8cb6
+003 DE-101
+005 20051102111003.0
+008 000202aadaaaba
+035   $aocd00116803
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.620218$e004.62$jNormen$9ess=en$9ess=eh
+765 0 $b004.62$z1$s0218$u004.620218$9ess=hn
+253 1 $iNicht verwenden; klassifiziere in$a004.62$9ess=nsx
+
+LEADER 00000nw  a2200000n  4500
+001 01d8499d-f5de-32bf-86d5-07a8df5a9d8e
+003 DE-101
+005 20140204144032.8
+008 000202aaaaaaaa
+035   $aocd00116804
+040   $aOCoLC-D$bger$cDE-101$dDE-101
+084 0 $addc$c23de$eger
+153   $a004.64$e004.6$g*$jHardware-Arten$9ess=en$9ess=eh
+673   $a004.6/4$9ess=seg
+680 0 $iEinschließlich:$tBasisband- und Breitbandgeräte, Modems, Lichtwellenleiterkabel, Peripheriesteuereinheiten$9ess=nin
+253 2 $iKlassifiziere$tPeripheriesteuereinheiten, die eine bestimmte Art von Peripheriegeräten steuern,$ibei dem Peripheriegerät, z.B.$tDruckercontroller$e004.77$9ess=ncw
+767   $g*$iVerwende Notation$z1$x019$iaus Hilfstafel 1 entsprechend den Änderungen bei$a004.019$9ess=nfu
+750  7$aAnalog-Digital-Umsetzer$xInformatik$0(OCoLC-D)85bee654-5ce0-4614-bb05-b6e08da64688$2ddcri$9ps=PE
+750  7$aBasisband-Computergeräte$0(OCoLC-D)1f43e63d-59de-4647-b640-3ceb0b363c0f$2ddcri$9ps=PE
+750  7$aBreitband-Computergeräte$0(OCoLC-D)427bbb67-e85f-49a2-9b6b-d5f21d2da801$2ddcri$9ps=PE
+750  7$aKabel (Elektrische Leiter)$xInformatik$0(OCoLC-D)310c8328-15e6-41a7-bf9a-a2fcb139bd64$2ddcri$9ps=PE
+750  7$aNachrichtenübermittlungsgeräte$xInformatik$0(OCoLC-D)31433f46-a953-420d-9999-9161f7ceccc7$2ddcri$9ps=PE
+750  7$aRechnerkopplungsgeräte$0(OCoLC-D)69c497ff-b202-4c6d-bace-e2669e653a8d$2ddcri$9ps=PE
+750  7$aController$xInformatik$0(OCoLC-D)622bb329-5ff8-434e-89e6-fea0f9f0a908$2ddcri$9ps=PE
+750  7$aDigital-Analog-Umsetzer$xInformatik$0(OCoLC-D)fd461bcb-785f-4d91-b869-b98c1b87b80c$2ddcri$9ps=PE
+750  7$aModems$0(OCoLC-D)165c78b4-5add-4ff1-a910-a88fbcc3afb0$2ddcri$9ps=PE
+750  7$aLichtwellenleiterkabel$xInformatik$0(OCoLC-D)ff0bd274-0751-47ad-aea5-d1b0d8c40505$2ddcri$9ps=PE
+750  7$aPeripheriesteuereinheiten$0(OCoLC-D)983c9177-89e3-4c4b-9b31-972ef191e2e2$2ddcri$9ps=PE
+750  7$aPeriphere Steuerungseinheiten$0(OCoLC-D)18ddebfd-9499-44ea-8f4e-c5f15efc967f$2ddcri$9ps=PE
+750  7$aÜbertragungsmedien$xRechnerkommunikation$0(OCoLC-D)2bb887b4-97ce-4d0c-937a-46f1a7c5b1c8$2ddcri$9ps=PE
+

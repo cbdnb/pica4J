@@ -1,0 +1,83 @@
+<?eclipse.ant.import?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction 
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="GND">
+	<property environment="env" />
+	<property name="ECLIPSE_HOME" value="D:/eclipse/" />
+	<property name="Analysen.location" value="../Analysen" />
+	<property name="SEUtils.location" value="../SEUtils" />
+	<property name="div.location" value="../div" />
+	<property name="musicExperim.location" value="../musicExperim" />
+	<property name="scrap.location" value="../scrap" />
+	<property name="junit.output.dir" value="junit" />
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.8" />
+	<property name="source" value="1.8" />
+	<import file="Mybuild.xml" />
+	<path id="JUnit 4.libraryclasspath">
+		<pathelement location="${ECLIPSE_HOME}plugins/org.junit_4.13.2.v20211018-1956.jar" />
+		<pathelement location="${ECLIPSE_HOME}plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar" />
+	</path>
+	<path id="GND.classpath">
+		<pathelement location="bin" />
+		<path refid="JUnit 4.libraryclasspath" />
+		<pathelement location="log4j-1.2.6.jar" />
+		<pathelement location="lib/marc4j-2.6.0.jar" />
+		<pathelement location="lib/commons-collections4-4.1.jar" />
+		<pathelement location="lib/poi-3.15.jar" />
+		<pathelement location="lib/poi-ooxml-3.15.jar" />
+		<pathelement location="lib/poi-ooxml-schemas-3.15.jar" />
+		<pathelement location="lib/poi-scratchpad-3.15.jar" />
+		<pathelement location="lib/xmlbeans-2.6.0.jar" />
+		<pathelement location="lib/json-20190722.jar" />
+	</path>
+	<target name="init">
+		<mkdir dir="bin" />
+		<copy includeemptydirs="false" todir="bin">
+			<fileset dir="src">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+		<copy includeemptydirs="false" todir="bin">
+			<fileset dir="test">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>
+	<target name="clean">
+		<delete dir="bin" />
+	</target>
+	<target depends="clean" name="cleanall" />
+	<target depends="build-subprojects,build-project" name="build" />
+	<target name="build-subprojects" />
+	<target depends="init" name="build-project">
+		<echo message="${ant.project.name}: ${ant.file}" />
+		<javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+			<src path="src" />
+			<src path="test" />
+			<classpath refid="GND.classpath" />
+		</javac>
+	</target>
+	<target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects">
+		<ant antfile="newbuild.xml" dir="${Analysen.location}" inheritAll="false" target="clean" />
+		<ant antfile="newbuild.xml" dir="${Analysen.location}" inheritAll="false" target="build" />
+		<ant antfile="newbuild.xml" dir="${SEUtils.location}" inheritAll="false" target="clean" />
+		<ant antfile="newbuild.xml" dir="${SEUtils.location}" inheritAll="false" target="build" />
+		<ant antfile="newbuild.xml" dir="${div.location}" inheritAll="false" target="clean" />
+		<ant antfile="newbuild.xml" dir="${div.location}" inheritAll="false" target="build" />
+		<ant antfile="newbuild.xml" dir="${musicExperim.location}" inheritAll="false" target="clean" />
+		<ant antfile="newbuild.xml" dir="${musicExperim.location}" inheritAll="false" target="build" />
+		<ant antfile="newbuild.xml" dir="${scrap.location}" inheritAll="false" target="clean" />
+		<ant antfile="newbuild.xml" dir="${scrap.location}" inheritAll="false" target="build" />
+	</target>	<target name="junitreport">
+		<junitreport todir="${junit.output.dir}">
+			<fileset dir="${junit.output.dir}">
+				<include name="TEST-*.xml" />
+			</fileset>
+			<report format="frames" todir="${junit.output.dir}" />
+		</junitreport>
+	</target>
+</project>

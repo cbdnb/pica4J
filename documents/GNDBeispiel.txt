@@ -1,0 +1,5617 @@
+SET: S9 [197] TTL: 1          PPN: 1026406420                           SEITE1 .
+
+Eingabe: 1250:29-09-12 Änderung: 1241:02-10-12 14:42:48 Status: 1250:29-09-12  
+
+005 Tu1
+006 http://d-nb.info/gnd/1026406420
+008 wis
+011 s
+035 gnd/1026406420
+043 XB-CN
+065 2.1;4.2;16.3
+130 Daodejing$gHunan Provincial Museum
+380 !040232875!Handschrift
+510 !961644214!Hunan Provincial Museum$4besi
+530 !041257367!Daodejing$4werk
+550 !043227066!Seidenhandschrift$4obin
+667 GNDBeispiel; BS-SD-02
+670 Kindler neu; Zhongguo-da-baike-quanshu (Gr. chines. Enz., Teilbd. Kulturgüter u. Museen).
+903 $eDE-101
+903 $rDE-101
+
+
+SET: S9 [197] TTL: 2          PPN: 1026362075                           SEITE1 .
+
+Eingabe: 1250:27-09-12 Änderung: 9999:03-10-12 00:53:48 Status: 1250:27-09-12  
+
+005 Tu1
+006 http://d-nb.info/gnd/1026362075$zhttp://d-nb.info/gnd/7725168-4
+008 wis
+011 s
+035 gnd/1026362075
+039 gnd/7725168-4
+039 swd/7725168-4$vzg
+043 XA-DE-BY;XA-CZ
+065 16.2;2.1
+130 Nekrologium$gSchlossbibliothek Königswart$nMs. 48
+380 !040232875!Handschrift
+410 Schlossbibliothek Königswart$nMs. 48
+510 !040284263!Kloster Ochsenhausen$4aut1
+510 !947944311!Schlossbibliothek Königswart$4besi
+548 $c1494$4dats
+550 !041307909!Nekrologium$4obin
+667 GNDBeispiel; BS-SD-01
+670 $uhttp://www.kynzvart.cz/de/libra.html#Top
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ic$aKönigswart / Schlossbibliothek / Ms. 48$07725168-4
+
+
+SET: S9 [197] TTL: 3          PPN: 1024348822                           SEITE1 .
+
+Eingabe: 1140:18-07-12 Änderung: 1241:18-09-12 11:02:42 Status: 1140:27-07-12  
+
+005 Tf1
+006 http://d-nb.info/gnd/1024348822$zhttp://d-nb.info/gnd/2078132-5
+008 vie
+011 f
+012 v
+035 gnd/1024348822
+039 gnd/2078132-5
+039 gkd/2078132-5$vzg
+043 XA-DE-SH
+111 Siedlungswasserwirtschaftliches Kolloquium$gTechnische Universität Hamburg$n1$d1982$cRatzeburg
+510 !007180586!Technische Universität Hamburg$4vera$X1
+548 $c1982$4datv
+551 !040485250!Ratzeburg$4ortv
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+667 GNDBeispiel; BS-03-IdentZ-Tb-Tf
+903 $eDE-101
+903 $rDE-101
+913 $Sgkd$ia$aSiedlungswasserwirtschaftliches Kolloquium <Technische Universität, Hamburg, 1, 1982, Ratzeburg>$02078132-5
+
+
+SET: S9 [197] TTL: 4          PPN: 1023137054                           SEITE1 .
+
+Eingabe: 1165:07-06-12 Änderung: 1241:02-11-12 12:21:39 Status: 1150:25-06-12  
+
+005 Tg1
+006 http://d-nb.info/gnd/1023137054
+008 giz
+011 s
+035 gnd/1023137054
+043 XA-DE-SN
+083 T2--432145$t2012-06-07
+151 Zittau$zRegion, Nord
+551 !947068910!Zittau$zRegion$4obpa
+667 GNDBeispiel; BS-06-z
+670 analog
+903 $eDE-101
+903 $rDE-101
+
+
+SET: S9 [197] TTL: 5          PPN: 1020640790                           SEITE1 .
+
+Eingabe: 0007:13-03-12 Änderung: 1250:11-07-12 14:51:20 Status: 0007:13-03-12  
+
+005 Tg1
+006 http://d-nb.info/gnd/7858719-0
+008 gio
+011 s
+035 gnd/7858719-0
+039 swd/7858719-0$vzg
+043 XA-DE-SH
+065 10.7b
+151 Stadtpark Norderstedt
+550 !041827538!Stadtpark$4obin
+551 !040425215!Norderstedt$4orta
+667 GNDBeispiel; BS-R02-gio
+670 Vorlage
+677 im Rahmen der Landesgartenschau Norderstedt 2011 entstandener Stadtpark in der Stadt Norderstedt
+903 $eDE-7
+903 $rDE-601
+913 $Sswd$ig$aNorderstedt / Stadtpark$07858719-0
+
+
+SET: S9 [197] TTL: 6          PPN: 1015685838                           SEITE1 .
+
+Eingabe: 9005:29-09-11 Änderung: 1241:18-09-12 10:48:41 Status: 9005:29-09-11  
+
+005 Tb1
+006 http://d-nb.info/gnd/16324484-4
+008 kiz
+011 f
+035 gnd/16324484-4
+039 gkd/16324484-4$vzg
+043 XA-CH-BE
+110 Institut für Parasitologie$gBern
+410 Universität Bern$bVeterinär-Medizinische Fakultät$bInstitut für Parasitologie
+410 Universität Bern$bInstitut für Parasitologie
+410 Institute of Parasitology$gBern
+410 Universität Bern$bVeterinär-Medizinische Fakultät$bInstitute of Parasitology
+410 Universität Bern$bInstitute of Parasitology
+510 !000825026!Universität Bern$bVeterinär-Medizinische Fakultät$4adue
+551 !040057623!Bern$4orta$X1
+667 GNDBeispiel; BS-03-IdentZ-Tb-Tf
+667 Die verknüpften Körperschaften entsprechen ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 Homepage$uhttp://www.ipa.vetsuisse.unibe.ch
+670 Homepage am 28.9.2011
+903 $eAT-OBV
+903 $rAT-OBV
+913 $Sgkd$ia$aInstitut für Parasitologie <Bern>$016324484-4
+
+
+SET: S9 [197] TTL: 7          PPN: 1014453054                           SEITE1 .
+
+Eingabe: 1250:19-08-11 Änderung: 1241:19-09-12 13:45:18 Status: 1250:19-08-11  
+
+005 Tu1
+006 http://d-nb.info/gnd/7755934-4
+008 wit
+011 s
+012 w
+035 gnd/7755934-4
+039 swd/7755934-4$vzg
+043 XA-DE
+065 31.1b
+130 DIN EN 1090
+550 !040605922!Tragwerk$4them
+550 !040388689!Metallbau$4them
+550 !042251184!Konformitätsprüfung$4them
+550 !94827171X!Norm$4obin
+551 !040118827!Deutschland$4geow
+667 GNDBeispiel; BS-W-07
+670 Vorlage,
+670 Beuth- Verl
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aDIN EN 1090$07755934-4
+
+
+SET: S9 [197] TTL: 8          PPN: 1013007433                           SEITE1 .
+
+Eingabe: 1600:22-06-11 Änderung: 1250:12-09-12 14:11:16 Status: 1600:22-06-11  
+
+005 Tg1
+006 http://d-nb.info/gnd/7749747-8
+008 gib
+011 s
+035 gnd/7749747-8
+039 swd/7749747-8$vzg
+043 XA-CH-BS
+065 31.3ab
+151 Novartis Campus$gBasel$xFabrikstrasse 22
+510 !94606542X!David Chipperfield Architects$4arch
+548 $c2010$4dats
+550 !041663322!Laborgebäude$4obin
+551 !040046176!Basel$4orta$X1
+551 !985578211!Novartis Campus$gBasel$4obpa
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+667 GNDBeispiel; BS-R02-gib
+670 homepage$uhttp://www.davidchipperfield.co.uk/ (21.6.2011)
+677 2006-2010 geplantes u. erb. Laborgebäude
+903 $eCH-000001-5
+903 $rCH-000001-5
+913 $Sswd$ig$aBasel / Novartis Campus / Fabrikstrasse 22$07749747-8
+999 $ar05$bFeld 065A: [basel] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 9          PPN: 1012935639                           SEITE1 .
+
+Eingabe: 1150:20-06-11 Änderung: 1250:12-09-12 14:12:26 Status: 1150:20-06-11  
+
+005 Tg1
+006 http://d-nb.info/gnd/7749403-9
+008 giw
+011 s
+035 gnd/7749403-9
+039 swd/7749403-9$vzg
+043 XA-DE-BE
+065 10.6a
+151 Untergrundbahnlinie 9$gBerlin
+451 U-Bahnlinie 9$gBerlin
+451 U 9$gBerlin
+550 !951347950!Untergrundbahnlinie$4obin
+551 !040057283!Berlin$4orta$X1
+667 GNDBeispiel; BS-R02-giw
+670 Vorlage;analog
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aBerlin / Untergrundbahnlinie 9$07749403-9
+999 $ar05$bFeld 065@: [berlin] im Index nicht gefunden
+999 $ar05$bFeld 065@: [berlin] im Index nicht gefunden
+999 $ar05$bFeld 065A: [berlin] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 10         PPN: 1012230872                           SEITE1 .
+
+Eingabe: 1250:28-05-11 Änderung: 1241:12-09-12 12:45:23 Status: 1250:28-05-11  
+
+005 Tu1
+006 http://d-nb.info/gnd/7747325-5
+008 wit
+011 s
+012 w
+035 gnd/7747325-5
+039 swd/7747325-5$vzg
+043 XA-IT;XA-DE-RP;XT
+065 13.2;16.3
+130 Ludovisischer Schlachtensarkophag
+430 Ludovisi-Sarkophag
+430 Ludovisisarkophag
+510 !000066508!Römisch-Germanisches Zentralmuseum$4besi
+510 !00515622X!Museo Nazionale Romano$4besi
+548 $c250$4dats
+550 !040516989!Sarkophag$4obin
+667 GNDBeispiel; BS-W-12
+667 Die verknüpften Körperschaften entsprechen ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 B 2006 (online) unter Sarkophag
+677 Der größte erhaltene und aufwendigste Sarkophag, höchstwahrscheinlich für ein Mitglied der kaiserlichen Familie. Deckel und Abguss des Kastens in Mainz, Kasten in Rom
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aLudovisischer Schlachtensarkophag$07747325-5
+
+
+SET: S9 [197] TTL: 11         PPN: 1012066576                           SEITE1 .
+
+Eingabe: 1250:24-05-11 Änderung: 1150:10-09-12 12:34:31 Status: 1250:24-05-11  
+
+005 Ts1
+006 http://d-nb.info/gnd/7746702-4
+008 sip
+011 s
+012 w
+035 gnd/7746702-4
+039 swd/7746702-4$vzg
+065 30m
+083 004.165$d2$t2011-05-24
+150 iPad 2
+450 Apple iPad 2
+550 !987793500!Tablet PC$4obin
+667 GNDBeispiel; BS-A02-sip
+670 $uwww.apple.com/de/ipad/
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$is$aiPad 2$07746702-4
+
+
+SET: S9 [197] TTL: 12         PPN: 1011972603                           SEITE1 .
+
+Eingabe: 1250:19-05-11 Änderung: 1250:09-08-12 12:12:46 Status: 1250:19-05-11  
+
+005 Tu1
+006 http://d-nb.info/gnd/7746394-8
+008 wit
+011 s
+012 w
+035 gnd/7746394-8
+039 swd/7746394-8$vzg
+043 XA-DE
+065 2.3;12.1b
+130 Fama$gZeitschrift
+430 Das @Magazin für alle$gZeitschrift, Berlin$f1925-1929$4nafr$v1925-1929
+430 Meine Zeitung$gChemnitz$vTitel 1924
+548 1924$b1929$4datj
+550 !040359492!Literarische Zeitschrift$4obin
+551 !040118827!Deutschland$4geoa
+667 GNDBeispiel; BS-W-03
+670 ZDB
+677 Literarische Zeitschrift, erschienen von 1924-1929
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aFama <Zeitschrift>$07746394-8
+
+
+SET: S9 [197] TTL: 13         PPN: 101158218X                           SEITE1 .
+
+Eingabe: 1400:06-05-11 Änderung: 1250:12-09-12 14:13:07 Status: 1400:12-08-11  
+
+005 Tg1
+006 http://d-nb.info/gnd/7744880-7
+008 giw
+011 s
+035 gnd/7744880-7
+039 swd/7744880-7$vzg
+043 XA-AT-7
+065 10.6a
+151 Patscherkofelbahn
+451 Patscherkofel-Bahn
+550 !041807502!Seilschwebebahn$4obin
+551 !041029038!Patscherkofel$4punk
+551 !040962946!Innsbruck-Igls$4punk
+667 GNDBeispiel; BS-R02-giw
+670 Österr.-Lex. (1995) unter Patscherkofel, Wikipedia, Internet$bStand: 26.04.2011$uhttp://www.patscherkofelbahnen.at/
+677 1928 errichtete Pendelbahn; heute Großkabinenbahn, die vom Innsbrucker Stadtteil Igls auf den Patscherkofel führt.
+903 $eAT-OeNB
+903 $rAT-OBV
+913 $Sswd$ig$aPatscherkofelbahn$07744880-7
+
+
+SET: S9 [197] TTL: 14         PPN: 1010953192                           SEITE1 .
+
+Eingabe: 1150:07-04-11 Änderung: 1241:19-10-12 09:50:11 Status: 1150:07-04-11  
+
+005 Tg1
+006 http://d-nb.info/gnd/7741699-5
+008 gio
+011 s
+012 w
+035 gnd/7741699-5
+039 swd/7741699-5$vzg
+043 XA-DE-BE
+065 6.1b
+151 Friedhof Bergstraße$gBerlin
+548 $c1875$4dats
+550 !040185370!Friedhof$4obin
+551 !040057283!Berlin$4orta$X1
+551 !041127218!Berlin-Steglitz$4orta
+667 GNDBeispiel; BS-R02-gio
+670 Internet
+678 $b1875 eröffnet
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aBerlin / Friedhof Bergstraße$07741699-5
+999 $ar05$bFeld 065@: [berlin-steglitz] im Index nicht gefunden
+999 $ar05$bFeld 065A: [berlin] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 15         PPN: 1010951947                           SEITE1 .
+
+Eingabe: 1150:07-04-11 Änderung: 1250:09-08-12 11:57:28 Status: 1150:07-04-11  
+
+005 Tu1
+006 http://d-nb.info/gnd/7741683-1
+008 wit
+011 s
+012 w
+035 gnd/7741683-1
+039 swd/7741683-1$vzg
+043 XA-GB
+065 12.2b
+083 821.2$t2011-04-07
+130 The @assembly of ladies
+377 enm
+500 !118520245!Chaucer, Geoffrey$4autg
+550 !041879910!Verserzählung$4obin
+550 !040396762!Mittelenglisch$4spra
+667 GNDBeispiel; BS-W-02
+670 Cambridge guide
+670 BLC (beigef. Werk)
+670 LCAuth
+677 Mittelengl. Gedicht, 15. Jh., fälschlicherweise Geoffrey Chaucer zugeschrieben
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aThe @assembly of ladies$07741683-1
+
+
+SET: S9 [197] TTL: 16         PPN: 1010147439                           SEITE1 .
+
+Eingabe: 1170:21-02-11 Änderung: 1241:07-11-12 11:27:32 Status: 1170:22-02-11  
+
+005 Ts1
+006 http://d-nb.info/gnd/7735837-5
+008 sip
+011 s
+035 gnd/7735837-5
+039 swd/7735837-5$vzg
+065 2.1
+083 686.2247$d2$t2007-01-01
+150 Mendelssohn-Type
+450 Mendelssohn-Schrift
+450 Mendelsohn-Type
+500 !139824413!Mendelssohn, Georg$4urhe
+510 !004689534!D. Stempel AG$gFrankfurt, Main$4urhe
+548 $c1921$4dats
+550 !040131203!Druckschrift$4obin
+550 !992744105!Hellerau-Type$4vbal
+667 Die verknüpften Körperschaften entsprechen ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+667 GNDBeispiel; BS-A02-sip
+670 $uhttp://www.klingspor-museum.de/KlingsporKuenstler/Schriftdesigner/Mendelssohn/GMendelssohn.pdf
+678 $bHersteller: D.-Stempel-AG <Frankfurt am Main>, Schriftguß AG <Dresden>; Gestalter: Mendelssohn, Georg <1921->
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$is$aMendelssohn-Type$07735837-5
+
+
+SET: S9 [197] TTL: 17         PPN: 1010079468                           SEITE1 .
+
+Eingabe: 1501:16-02-11 Änderung: 9999:05-12-12 00:55:19 Status: 1501:16-02-11  
+
+005 Tu1
+006 http://d-nb.info/gnd/7735240-3
+008 wis
+011 s
+035 gnd/7735240-3
+039 swd/7735240-3$vzg
+043 XA-DE-BY;XA-CZ
+065 2.1;14.1
+130 De quatuor virtutibus cardinalibus pro eruditione principium$gBayerische Staatsbibliothek, München$nClm 14347
+377 lat
+380 !040232875!Handschrift
+410 Kloster Sankt Emmeram Regensburg$nD 72
+410 München$xBayerische Staatsbibliothek$nClm 14347
+410 München$xBayerische Staatsbibliothek$nEm. D 72$vProvenienz-Signatur nach J. A. Schmeller (BSB)
+500 !100953980!Michael$lPragensis$4aut1
+510 !004876156!Bayerische Staatsbibliothek$4besi
+510 !04126343X!Kloster Sankt Emmeram Regensburg$4befr$Z1430-1803
+530 !1009874888!Michael$lPragensis$aDe quatuor virtutibus cardinalibus pro eruditione prinicipum$4werk
+548 1430$b1431$4dats
+667 Die verknüpften Körperschaften entsprechen ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+667 GNDBeispiel; BS-SD-01
+670 Hs.-Katalog BSB München: Halm 4,2, S. 160
+677 Prager Kartäuserhandschrift, im Benediktinerkloster St. Emmeram bei Regensburg kopiert 1430-1431
+903 $eDE-576
+903 $rDE-576
+913 $Sswd$ipt$aMichael <von Prag>: De quatuor virtutibus cardinalibus pro eruditione principium / Handschrift / München / Bayerische Staatsbibliothek / Clm 14347$07735240-3
+
+
+SET: S9 [197] TTL: 18         PPN: 1010053434                           SEITE1 .
+
+Eingabe: 1501:15-02-11 Änderung: 1241:12-09-12 12:45:38 Status: 1501:15-02-11  
+
+005 Tu1
+006 http://d-nb.info/gnd/7735035-2
+008 wit
+011 s
+035 gnd/7735035-2
+039 swd/7735035-2$vzg
+043 XA-DE-BY
+065 13.6
+130 Spieleteppich
+430 Ritterspielteppich$vWilckens, L.: Die textilen Künste (1991)
+510 !00036441X!Germanisches Nationalmuseum$gNürnberg$4besi
+548 $c1400$4dats
+550 !040066487!Bildteppich$4obin
+667 GNDBeispiel; BS-W-12
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 Wikipedia$bStand 09.02.11$uwww.gnm.de
+677 Bildteppich, entstanden um 1400 (evtl. Elsass 1385?), wahrscheinlich von dem Speyerer Bürger Hans Diehl in Auftrag gegeben, der Kontakte zum kurfürstl. Hof Heidelberg unterhielt; seit 1857 Besitz des Germanischen Nationalmuseums Nürnberg
+903 $eDE-576
+903 $rDE-576
+913 $Sswd$it$aSpieleteppich$07735035-2
+
+
+SET: S9 [197] TTL: 19         PPN: 1009712470                           SEITE1 .
+
+Eingabe: 1250:25-01-11 Änderung: 1241:02-10-12 14:25:29 Status: 1250:25-01-11  
+
+005 Ts1
+006 http://d-nb.info/gnd/7732076-1
+008 saz
+011 s
+035 gnd/7732076-1
+039 swd/7732076-1$vzg
+043 XD-US;XB-JP
+065 12.4;13.1c
+150 Atombombenabwurf auf Nagasaki$gMotiv
+550 !040403602!Motiv$4obin
+667 GNDBeispiel; BS-R04
+670 analog
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aNagasaki / Atombombenabwurf <Motiv>$07732076-1
+
+
+SET: S9 [197] TTL: 20         PPN: 1009672835                           SEITE1 .
+
+Eingabe: 1140:21-01-11 Änderung: 1140:13-09-12 08:37:06 Status: 1140:28-01-11  
+
+005 Tf1
+006 http://d-nb.info/gnd/16097932-8$zhttp://d-nb.info/gnd/7734238-0
+008 vie
+011 f;s
+012 v;w
+035 gnd/16097932-8
+039 gnd/7734238-0
+039 swd/7734238-0$vzg
+039 gkd/16097932-8$vzg
+043 XA-DE-BY
+065 10.8b;31.3b
+111 Bau$gVeranstaltung$d2011$cMünchen
+411 Weltleitmesse für Architektur, Materialien Systeme$d2011$cMünchen
+548 $c2011$4datv
+550 !040691772!Bauwirtschaft$4them
+550 !04074745X!Messe$gWirtschaft$4obin
+551 !041277937!München$4ortv
+551 !040050440!Bayern$4geow
+667 MMi
+667 GNDBeispiel; BS-03-IdentZ-Tb-Tf
+670 GKD
+903 $eDE-101
+903 $rDE-101
+913 $Sgkd$ia$aBau <2011, München>$016097932-8
+913 $Sswd$ic$aMünchen / Bau <Veranstaltung, 2011>$07734238-0
+
+
+SET: S9 [197] TTL: 21         PPN: 1009548077                           SEITE1 .
+
+Eingabe: 1150:14-01-11 Änderung: 1241:14-08-12 12:28:04 Status: 1150:14-01-11  
+
+005 Ts1
+006 http://d-nb.info/gnd/7730917-0
+008 sip
+011 s
+012 w
+035 gnd/7730917-0
+039 swd/7730917-0$vzg
+065 13.5
+083 771.33$d2$t2011-01-14
+150 Canon EOS 60D
+550 !040562123!Spiegelreflexkamera$4obin
+550 !954890604!Digitalkamera$4obin
+667 GNDBeispiel; BS-A02-sip
+670 Vorlage
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$is$aCanon EOS 60D$07730917-0
+
+
+SET: S9 [197] TTL: 22         PPN: 100856673X                           SEITE1 .
+
+Eingabe: 0600:24-11-10 Änderung: 1250:09-08-12 12:21:35 Status: 0600:24-11-10  
+
+005 Tu1
+006 http://d-nb.info/gnd/7725803-4
+008 wit
+011 s
+035 gnd/7725803-4
+039 swd/7725803-4$vzg
+065 15.3
+130 Qué he hecho yo para merecer esto?
+430 Womit habe ich das verdient?$vR:ÖB-Alternative
+500 !119278472!Almodóvar, Pedro$4regi
+548 $c1984$4datj
+667 GNDBeispiel; BS-W-06
+670 Movie Database
+677 Film, Spanien 1984
+903 $eDE-30
+903 $rDE-603
+913 $Sswd$it$aQué he hecho yo para merecer esto?$07725803-4
+
+
+SET: S9 [197] TTL: 23         PPN: 1008380695                           SEITE1 .
+
+Eingabe: 1150:18-11-10 Änderung: 7777:01-10-12 09:50:09 Status: 1150:18-11-10  
+
+005 Tu1
+006 http://d-nb.info/gnd/7724985-9
+008 wit
+011 s
+012 w
+035 gnd/7724985-9
+039 swd/7724985-9$vzg
+043 XA-AT
+065 7.8a
+130 Insolvenzordnung
+430 Bundesgesetz über das Insolvenzverfahren
+430 IO$4abku
+530 !042433312!Österreich$aKonkursordnung$4vorg
+530 !1004809859!Österreich$aInsolvenzrechtsänderungsgesetz 2010$4obpa
+548 $c2010$4datj
+550 !041140265!Insolvenzrecht$4obin
+551 !040432718!Österreich$4aut1
+667 GNDBeispiel; BS-W-05
+670 Österr. BGBl. I Nr. 29/2010
+677 Gesetz vom 23.4.2010; Artikel 1 des Insolvenzrechtsänderungsgesetz 2010
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$igt$aÖsterreich: Insolvenzordnung$07724985-9
+
+
+SET: S9 [197] TTL: 24         PPN: 100817288X                           SEITE1 .
+
+Eingabe: 4011:09-11-10 Änderung: 1241:01-11-12 15:15:06 Status: 9002:18-11-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/16089015-9$zhttp://d-nb.info/gnd/7729939-5
+008 kiz
+011 f;s
+035 gnd/16089015-9
+039 gnd/7729939-5
+039 swd/7729939-5$vzg
+039 gkd/16089015-9$vzg
+043 XA-BE
+065 31.12;13.6;10.12b
+110 Delvaux$gFirma
+548 1829$4datb
+550 !043059880!Lederwarenindustrie$4obin
+551 !040084604!Brüssel$4orta
+551 !040054063!Belgien$4geow
+667 GNDBeispiel; BS-03-IdentZ-Tb-Tf
+667 MMi
+670 Homepage$uhttp://www.delvaux.com
+677 Hersteller luxuriöser Lederwaren
+903 $eDE-B11
+903 $rDE-1
+913 $Sgkd$ia$aDelvaux <Bruxelles>$016089015-9
+913 $Sswd$ik$aDelvaux <Firma>$07729939-5
+
+
+SET: S9 [197] TTL: 25         PPN: 1007807628                           SEITE1 .
+
+Eingabe: 5000:22-10-10 Änderung: 1241:19-10-12 11:00:55 Status: 5000:25-10-10  
+
+005 Tu1
+006 http://d-nb.info/gnd/7721468-7
+008 wit
+011 s
+035 gnd/7721468-7
+039 swd/7721468-7$vzg
+043 XP
+065 7.14
+130 Internationales Übereinkommen über die zivilrechtliche Haftung für Ölverschmutzungsschäden
+430 International Convention on civil liability for oil pollution damage
+430 Internationales Übereinkommen von 1969 über die zivilrechtliche Haftung für Ölverschmutzungsschäden
+510 !002745100!International Maritime Organization$4auta
+548 $c1969$4datj
+550 !040274535!Internationales Umweltrecht$4obin
+550 !041164563!Seeschifffahrtsrecht$4obin
+667 GNDBeispiel; BS-W-05
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 BGBl. II 1975, S. 301
+678 $bAbkommen vom 29.11.1969; für Deutschland 1975 umgesetzt
+903 $eDE-385
+903 $rDE-605
+913 $Sswd$it$aInternationales Übereinkommen über die zivilrechtliche Haftung für Ölverschmutzungsschäden$07721468-7
+
+
+SET: S9 [197] TTL: 26         PPN: 1007430478                           SEITE1 .
+
+Eingabe: 1250:06-10-10 Änderung: 1241:12-09-12 12:44:47 Status: 1250:06-10-10  
+
+005 Tu1
+006 http://d-nb.info/gnd/7719222-9
+008 wit
+011 s
+012 w
+035 gnd/7719222-9
+039 swd/7719222-9$vzg
+043 XA-GB
+065 13.5p
+130 Jack Freak Pictures
+510 !007674457!Gilbert & George$4kue1
+548 $c2008$4dats
+667 GNDBeispiel; BS-W-11
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 Vorlage
+670 Internet
+677 Zyklus von 153 großformatigen, digital bearbeiteten Fotografien, entstanden 2008
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ikt$aGilbert and George: Jack Freak Pictures$07719222-9
+
+
+SET: S9 [197] TTL: 27         PPN: 1007182482                           SEITE1 .
+
+Eingabe: 1250:23-09-10 Änderung: 7777:01-10-12 09:52:02 Status: 1250:23-09-10  
+
+005 Tu1
+006 http://d-nb.info/gnd/7717578-5
+008 wit
+011 s
+012 w
+035 gnd/7717578-5
+039 swd/7717578-5$vzg
+043 XA-DE-MV
+065 7.5c
+130 Naturschutzausführungsgesetz
+430 Gesetz des Landes Mecklenburg-Vorpommern zur Ausführung des Bundesnaturschutzgesetzes
+430 NatSchAG M-V$4abku
+530 !960232451!Mecklenburg-Vorpommern$aLandesnaturschutzgesetz$4vorg
+548 $c2010$4datj
+550 !041207904!Naturschutzrecht$4obin
+551 !042428610!Mecklenburg-Vorpommern$4aut1
+667 GNDBeispiel; BS-W-05
+670 GVOBl. M-V 2010, S. 66
+677 Gesetz vom 23.2.2010; Reines Rechtsbereinigungsgesetz, das das am 1.3.2010 fortgeltende Landesrecht feststellt. In einem zweiten Schritt soll das Landesnaturschutzrecht novelliert werden.
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$igt$aMecklenburg-Vorpommern: Naturschutzausführungsgesetz$07717578-5
+
+
+SET: S9 [197] TTL: 28         PPN: 1006576940                           SEITE1 .
+
+Eingabe: 1250:06-09-10 Änderung: 1250:12-09-12 14:14:49 Status: 1250:06-09-10  
+
+005 Tg1
+006 http://d-nb.info/gnd/7715374-1
+008 gio
+011 s
+012 w
+035 gnd/7715374-1
+039 swd/7715374-1$vzg
+043 XA-DE-HE
+065 10.7b
+083 711.558$d2$t2010-09-06
+083 712.5$d2$t2010-09-06
+151 Wallanlagen Frankfurt$gFrankfurt am Main
+451 Wallanlage$gFrankfurt am Main
+451 Frankfurter Wallanlagen$gFrankfurt am Main
+550 !040222780!Grünanlage$4obin
+551 !040181189!Frankfurt am Main$4orta$X1
+667 GNDBeispiel; BS-R02-gio
+670 M Frankfurt unter Anlagenring
+670 Dehio
+670 Wikipedia
+677 ehem. Befestigungsanlagen, im ersten Viertel d. 19. Jh. Umwandlung in eine Grünanlage
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aFrankfurt am Main / Wallanlagen$07715374-1
+
+
+SET: S9 [197] TTL: 29         PPN: 1005492581                           SEITE1 .
+
+Eingabe: 0384:09-08-10 Änderung: 1250:01-10-12 10:36:39 Status: 0384:09-08-10  
+
+005 Tu1
+006 http://d-nb.info/gnd/7712212-4
+008 wis
+011 s
+035 gnd/7712212-4
+039 swd/7712212-4$vzg
+043 XA-GB
+065 19.1dp;2.1
+130 Les @voyages d'outre mer$gBritish Library$nMs. Egerton 1982
+377 enm
+380 !040232875!Handschrift
+410 British Library$nMs. Egerton 1982
+430 Travels of Sir John Mandeville$vÜbersetzung
+500 !118730606!John$lMandeville$4aut1
+510 !004140702!British Library$gLondon$4besi
+530 !041237080!John$lMandeville$aLes @voyages d'outre mer$4werk
+548 $c1400$4dats
+667 GNDBeispiel; BS-SD-01
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 Vorlage
+677 Handschrift, ca. 1400
+903 $eDE-384
+903 $rDE-384
+913 $Sswd$ipt$aMandeville, John: Les @voyages d'outre mer / Englisch / London / British Library / Ms. Egerton 1982$07712212-4
+
+
+SET: S9 [197] TTL: 30         PPN: 1002923387                           SEITE1 .
+
+Eingabe: 1250:26-05-10 Änderung: 1250:19-09-12 09:29:53 Status: 1250:26-05-10  
+
+005 Ts1
+006 http://d-nb.info/gnd/7703081-3
+008 sip
+011 s
+012 w;z
+035 gnd/7703081-3
+039 swd/7703081-3$vzg
+065 31.7
+083 625.19$d2$t2010-05-26
+083 688.728$d1$t2010-05-26
+150 Fleischmann$gMarke
+510 !043185738!Gebr. Fleischmann$4hers
+550 !041145135!Markenname$4obin
+667 Die verknüpften Körperschaften entsprechen ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+667 GNDBeispiel; BS-A02-sip
+670 Vorlage, analog
+677 Markenname
+680 Verknüpfe mit einer Produktgruppe, z.B. Modelleisenbahn
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$is$aFleischmann <Marke>$07703081-3
+
+
+SET: S9 [197] TTL: 31         PPN: 1000898687                           SEITE1 .
+
+Eingabe: 0007:17-03-10 Änderung: 1241:01-11-12 15:47:59 Status: 0007:17-03-10  
+
+005 Tg1
+006 http://d-nb.info/gnd/7695100-5
+008 giz
+011 s
+035 gnd/7695100-5
+039 swd/7695100-5$vzg
+043 XA-DE-TH
+065 18;10.7a
+151 Naturpark Südharz
+451 Harz$zSüd$xNaturpark
+548 2010$4datb
+550 !040752372!Naturpark$4obin
+551 !040599795!Thüringen$4geoa
+667 GNDBeispiel; BS-A02uR08-giz
+670 Homepage$bStand: 01.11.12$uhttp://www.naturpark-suedharz.de
+677 28 6000 ha, bestehend aus 2 Landschaftsschutz- u. 9 Naturschutzgebieten
+903 $eDE-7
+903 $rDE-601
+913 $Sswd$ig$aNaturpark Südharz$07695100-5
+
+
+SET: S9 [197] TTL: 32         PPN: 1000442527                           SEITE1 .
+
+Eingabe: 1150:25-02-10 Änderung: 1150:16-07-12 08:26:38 Status: 1150:25-02-10  
+
+005 Ts1
+006 http://d-nb.info/gnd/7692360-5
+008 siw
+011 s
+012 w
+035 gnd/7692360-5
+039 swd/7692360-5$vzg
+065 30m
+083 005.133$d2$t2010-02-25
+150 Python 3.x
+550 !041723112!Objektorientierte Programmiersprache$4obin
+667 GNDBeispiel; BS-A02uR08-siw
+670 $uwww.python.org
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$is$aPython 3.x$07692360-5
+
+
+SET: S9 [197] TTL: 33         PPN: 1000442152                           SEITE1 .
+
+Eingabe: 1250:25-02-10 Änderung: 7777:14-09-12 09:10:06 Status: 1250:25-02-10  
+
+005 Tu1
+006 http://d-nb.info/gnd/7692350-2
+008 wit
+011 s
+035 gnd/7692350-2
+039 swd/7692350-2$vzg
+043 XA-DE-NI
+065 7.6b
+130 Nichtraucherschutzgesetz
+430 Nds.NiRSG$4abku
+530 !1000442179!Niedersachsen$aGesetz zum Schutz vor den Gefahren des Passivrauchens$4obpa
+548 $c2007$4datj
+550 !040207668!Gesundheitsrecht$4obin
+551 !040422267!Niedersachsen$4aut1
+667 GNDBeispiel; BS-W-05
+670 GVBl. Nds. 2007, S. 337
+677 Gesetz vom 12.7.2007; Artikel 1 des Gesetzes zum Schutz vor Gefahren des Passivrauchens
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$igt$aNiedersachsen: Nichtraucherschutzgesetz$07692350-2
+
+
+SET: S9 [197] TTL: 34         PPN: 999802313                            SEITE1 .
+
+Eingabe: 1501:26-01-10 Änderung: 1241:02-10-12 16:12:13 Status: 1501:26-01-10  
+
+005 Tu1
+006 http://d-nb.info/gnd/7688636-0
+008 wil
+011 s
+035 gnd/7688636-0
+039 swd/7688636-0$vzg
+043 XA-DE-BW;XA-DE-BY
+065 2.1;3.5a
+130 Sammelhandschrift$gUniversitätsbibliothek, Heidelberg$nCod. Pal. germ. 602
+377 ger;lat
+380 !040232875!Handschrift
+410 Universitätsbibliothek$gHeidelberg$nCod. Pal. germ. 602
+510 !004631846!Universitätsbibliothek$gHeidelberg$4besi
+548 $c1388$4datj
+667 GNDBeispiel; BS-SD-04
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen..
+670 Bartsch, K.: Die altdeutschen Handschriften der Universitätsbibliothek in Heidelberg, 1887$b(Stand: 21.1.2010)$uhttp://diglit.ub.uni-heidelberg.de/diglit/cpg602
+677 Papier-Sammelhandschrift, enth. u.a. Dietrich von Apolda: Vita S. Elisabeth, dt.; Suffragia duo, Bayern, 1388; Schreibsprache: mittelbairisch
+903 $eDE-576
+903 $rDE-576
+913 $Sswd$ic$aHeidelberg / Universitätsbibliothek Heidelberg / Cod. Pal. germ. 602$07688636-0
+
+
+SET: S9 [197] TTL: 35         PPN: 998557374                            SEITE1 .
+
+Eingabe: 1150:24-11-09 Änderung: 7777:14-09-12 09:10:06 Status: 1150:24-11-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/7682731-8
+008 wit
+011 s
+012 w
+035 gnd/7682731-8
+039 swd/7682731-8$vzg
+043 XA-SE
+065 12.2b
+083 839.711$t2009-11-25
+130 Ivan Lejonriddaren$sBearbeitung
+377 swe
+430 Herr Ivan
+430 Hœrra Ivan$vVorlage
+430 Herr Ivan Lejonriddaren$vKindler neu (online) unter Eufemiavisorna
+530 !042164567!Chrétien$lde Troyes$aYvain$4werk
+530 !998557811!Eufemiavisorna$4obpa
+548 $c1303$4datj
+550 !041201329!Altschwedisch$4spra
+550 !041880307!Versroman$4obin
+550 !041209818!Bearbeitung$4obin
+667 GNDBeispiel; BS-W-02
+670 Anon. classics
+677 Anonymer Versroman, altschwed. Bearbeitung d. Yvain, 1303 entstanden; gehört zus. mit Hertig Fredrik av Normandie (1308) u. Flores och Blanzeflor (1312) zu d. Eufemiavisorna
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aIvan Lejonriddaren$07682731-8
+
+
+SET: S9 [197] TTL: 36         PPN: 998480290                            SEITE1 .
+
+Eingabe: 9013:17-11-09 Änderung: 1241:11-10-12 16:17:53 Status: 9999:23-04-10  
+
+005 Tf1
+006 http://d-nb.info/gnd/6528402-1
+008 vie
+011 f
+012 v
+035 gnd/6528402-1
+039 gkd/6528402-1$vzg
+043 XA-DE-BE
+111 Tagung Fahrzeugsicherheit$n7$d2009$cBerlin
+411 VDI-Tagung Fahrzeugsicherheit$n7$d2009$cBerlin
+411 7. VDI-Tagung Fahrzeugsicherheit$4nauv
+511 !987393766!Internationale Tagung Fahrzeugsicherheit$n6$d2007$cBerlin$4vorg
+548 $c2009$4datv
+551 !040057283!Berlin$4ortv
+667 GNDBeispiel; BS-C03u05u07
+667 Der verknüpfte Kongress entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 Homepage$uhttp://www.vdi.de
+903 $eDE-605
+903 $rDE-1
+913 $Sgkd$ia$aTagung Fahrzeugsicherheit <7, 2009, Berlin>$06528402-1
+
+
+SET: S9 [197] TTL: 37         PPN: 998425478                            SEITE1 .
+
+Eingabe: 1400:19-11-09 Änderung: 1250:28-09-12 16:36:35 Status: 1250:09-08-12  
+
+005 Tu1
+006 http://d-nb.info/gnd/7682104-3
+008 wit
+011 s
+035 gnd/7682104-3
+039 swd/7682104-3$vzg
+043 XA-DE-BY
+065 13.2
+130 Statuette des Ritters St. Georg
+430 Georgsstatuette
+510 !007436181!Schatzkammer der Residenz$gMünchen$4besi
+548 1586$b1597$4dats
+550 !041777506!Reliquiar$4obin
+667 GNDBeispiel; BS-W-12
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 Internet$bStand:19.11.2009$uhttp://www.residenz-muenchen.de/deutsch/skammer/bild08.htm
+677 Reliquiar
+903 $eAT-UBMS
+903 $rAT-OBV
+913 $Sswd$it$aStatuette des Ritters St. Georg$07682104-3
+
+
+SET: S9 [197] TTL: 38         PPN: 997932600                            SEITE1 .
+
+Eingabe: 1250:06-11-09 Änderung: 1250:09-10-12 11:30:59 Status: 1250:06-11-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/7680374-0
+008 wit
+011 s
+012 w
+035 gnd/7680374-0
+039 swd/7680374-0$vzg
+043 XS;XA-IT
+065 13.2p;16.3
+130 Der @tanzende Satyr
+500 !118793241!Praxiteles$4kueg
+510 !1026492742!Museo del Satiro Danzante$4besi
+548 $cv330$4dats
+550 !042792894!Bronzeplastik$4obin
+667 GNDBeispiel; BS-W-12
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 Vorlage
+677 Aufbewahrungsort Mazara del Vallo, Museo del Satiro. Wird von Bernard Andreae dem Praxiteles zugeschrieben (um 330 v. Chr.) oder als hellenistisch angesehen. 1998 vor Sizilien aus dem Meer geborgen.
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aDer @tanzende Satyr$07680374-0
+
+
+SET: S9 [197] TTL: 39         PPN: 997584017                            SEITE1 .
+
+Eingabe: 1250:21-10-09 Änderung: 1250:09-08-12 12:24:43 Status: 1250:21-10-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/7678151-3
+008 wit
+011 s
+012 w
+035 gnd/7678151-3
+039 swd/7678151-3$vzg
+065 15.4
+130 Neues aus Büttenwarder
+548 $c1997$4datj
+550 !041540727!Fernsehserie$4obin
+667 GNDBeispiel; BS-W-06
+670 Movie Database
+677 Fernsehserie, NDR, seit 1997
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aNeues aus Büttenwarder$07678151-3
+
+
+SET: S9 [197] TTL: 40         PPN: 997521473                            SEITE1 .
+
+Eingabe: 8999:19-10-09 Änderung: 1250:12-09-12 14:16:32 Status: 8999:30-10-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/7677810-1
+008 giw
+011 s
+035 gnd/7677810-1
+039 swd/7677810-1$vzg
+043 XA-DE-NW
+065 10.6a
+083 T2--43551$t2009-11-18
+151 Autobahn 555
+550 !040039366!Autobahn$4obin
+551 !040076660!Bonn$4punk
+551 !040314839!Köln$4punk
+667 GNDBeispiel; BS-R02-giw
+670 Wikipedia
+677 Älteste dt. Autobahn, eröffn. 1932
+903 $eDE-210
+903 $rDE-384
+913 $Sswd$ig$aAutobahn 555$07677810-1
+
+
+SET: S9 [197] TTL: 41         PPN: 997296100                            SEITE1 .
+
+Eingabe: 1400:07-10-09 Änderung: 7777:14-09-12 09:10:07 Status: 1400:19-07-10  
+
+005 Tu1
+006 http://d-nb.info/gnd/7676334-1
+008 wit
+011 s
+035 gnd/7676334-1
+039 swd/7676334-1$vzg
+043 XA-AT
+065 7.10a
+130 Bundesvergabegesetz 2002
+430 BVergG$4abku
+430 Bundesgesetz, mit dem das Bundes-Verfassungsgesetz sowie das Bundesgesetz über die Errichtung einer Bundesbeschaffung Gesellschaft mit beschränkter Haftung geändert und ein Bundesvergabegesetz 2002 erlassen wird
+530 !940423839!Österreich$aBundesvergabegesetz$4vorg
+530 !991739302!Österreich$aBundesvergabegesetz 2006$4nach
+548 2002$b2006$4datb
+550 !984855246!Vergaberecht$4obin
+551 !040432718!Österreich$4aut1
+667 GNDBeispiel; BS-W-05
+670 Österr. BGBl. I 99/2002
+677 Gesetz vom 28.6.2002
+903 $eAT-UBW
+903 $rAT-OBV
+913 $Sswd$igt$aÖsterreich: Bundesvergabegesetz 2002$07676334-1
+
+
+SET: S9 [197] TTL: 42         PPN: 995719594                            SEITE1 .
+
+Eingabe: 1030:31-07-09 Änderung: 9999:12-09-12 00:57:29 Status: 1030:31-07-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/7668077-0$zhttp://d-nb.info/gnd/7668078-2
+008 wit
+011 s
+012 w
+035 gnd/7668077-0
+039 gnd/7668078-2
+039 swd/7668078-2$vzg
+039 swd/7668077-0$vzg
+043 XA-DE
+065 14.1
+130 Composing for the films
+377 eng
+430 Komposition für den Film$vR:ÖB-Alternative
+500 !118500775!Adorno, Theodor W.$4aut1
+500 !118529692!Eisler, Hanns$4auta
+548 $c1947$4datj
+667 GNDBeispiel; BS-W-01
+667 MMi
+670 Oxford Music Online unter Eisler
+670 DNB (für ÖB-Tit.)
+677 London 1947
+903 $eDE-1
+903 $rDE-1
+913 $Sswd$ipt$aAdorno, Theodor W.: Composing for the films$07668077-0
+913 $Sswd$ipt$aEisler, Hanns: Composing for the films$07668078-2
+
+
+SET: S9 [197] TTL: 43         PPN: 99347702X                            SEITE1 .
+
+Eingabe: 0255:30-03-09 Änderung: 1250:01-10-12 10:22:15 Status: 0255:02-04-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/7653806-0
+008 wis
+011 s
+035 gnd/7653806-0
+039 swd/7653806-0$vzg
+043 XA-HR;XA-GB
+065 2.1;13.3;3.5a
+130 Stundenbuch$gBodleian Library$nMs. Canon. Lat. 61
+380 !040232875!Handschrift
+410 Bodleian Library$nMs. Canon. Lat.61
+510 !00038352X!Bodleian Library$4besi
+550 !04077984X!Stundenbuch$4obin
+667 GNDBeispiel; BS-SD-02
+670 Vorlage, RSWK § 718 b
+677 Handschrift aus dem 11.Jh.; aus dem Kloster Sveta Marija in Zadar
+901 $z2012-09-24$ba-DE-1-SE-rk e-DE-101-SE-F-bk$aLt. Erfassungsleitfaden müsste die Ansetzung "130 Stundenbuch$gBodleian Library$nMs. Canon. Lat. 61" sein. Dito in der Beispielsammlung. Ist hier technisch irgendetwas passiert? Gleiches Problem, wenn man mit Brevier sucht: auch dort viele Datensätze mit nur  noch Brevier + Signatur der Handschrift.
+901 $z2012-09-29$ba-DE-101-SE-F eDE-1-SE-rk$aLeider sind wg. der zögerlichen Umsetzung der Körperschaften die Handschriftensätze noch nicht in voller Schönheit. Sobald alle Puzzle-Bestandteile vorhanden sind, kann die korrekte Umsetzung vorgenommen werden.
+903 $eDE-Y3
+903 $rDE-255
+913 $Sswd$ic$aOxford / Bodleian Library / Stundenbuch / Ms. Canon. Lat. 61$07653806-0
+
+
+SET: S9 [197] TTL: 44         PPN: 991295595                            SEITE1 .
+
+Eingabe: 0384:17-11-08 Änderung: 1250:01-10-12 10:22:25 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/7634262-1
+008 wis
+011 s
+035 gnd/7634262-1
+039 swd/7634262-1$vzg
+043 XA-FR;XA-DE-BY;XA-IT
+065 2.1;13.3
+130 Münchner Boccaccio
+377 frm
+380 !040232875!Handschrift
+410 Bayerische Staatsbibliothek$gMünchen$nCod. gall. 6
+430 Münchener Boccaccio
+430 Des cas des Nobles Hommes et Femmes$vÜbersetzung
+500 !118534564!Fouquet, Jean$4kuen
+500 !11851217X!Boccaccio, Giovanni$4auta
+510 !004876156!Bayerische Staatsbibliothek$4besi
+530 !949167614!Boccaccio, Giovanni$aDe casibus virorum illustrium$4werk
+548 $c1458$4dats
+550 !040474976!Prosa$4obin
+550 !041202597!Mittelfranzösisch$4spra
+667 GNDBeispiel; BS-SD-03
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen..
+670 Lex. ges. Buchwesen
+670 $bStand 29. 09. 2012$uhttp://www.bsb-muenchen.de/Franzoesischsprachige_Handschr.1720.0.html
+677 Illumin. Handschrift e. franz. Übers. von Boccaccios De casibus virorum illustrium mit Miniaturen von Fouquet u. anderen Künstlern
+903 $eDE-384
+903 $rDE-384
+913 $Sswd$it$aMünchner Boccaccio$07634262-1
+
+
+SET: S9 [197] TTL: 45         PPN: 991238397                            SEITE1 .
+
+Eingabe: 1150:13-11-08 Änderung: 7777:14-09-12 09:10:09 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/7633771-6
+008 wit
+011 s
+012 w
+035 gnd/7633771-6
+039 swd/7633771-6$vzg
+043 XA-DE
+065 4.7p
+130 Platos dialektische Ethik$sKommentar
+377 ger
+430 Plato's dialektische Ethik$vVolpi
+500 !118537032!Gadamer, Hans-Georg$4aut1
+530 !042458153!Plato$aPhilebus$4werk
+548 $c1931$4datj
+550 !041367103!Kommentar$4obin
+667 GNDBeispiel; BS-W-01
+670 Enz. Wiss.theorie, DNB
+677 Interpretationen zu Platos "Philebus"; Habilitationsschrift, 1931
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ipt$aGadamer, Hans-Georg: Platos dialektische Ethik$07633771-6
+
+
+SET: S9 [197] TTL: 46         PPN: 991060474                            SEITE1 .
+
+Eingabe: 1250:31-10-08 Änderung: 1241:12-09-12 12:46:35 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/7632107-1
+008 wit
+011 s
+012 w
+035 gnd/7632107-1
+039 swd/7632107-1$vzg
+043 XA-DE-SN;XS;XT
+065 13.2;16.3
+130 Große Herkulanerin
+500 !118671421!Demeter$4them
+510 !004796721!Staatliche Kunstsammlungen$gDresden$bSkulpturensammlung$4besi
+548 40$b60$4dats
+550 !041252888!Weibliche Gewandstatue$4obin
+550 !041258223!Marmorplastik$4obin
+551 !040244644!Herculaneum$4ortf
+667 GNDBeispiel; BS-W-12
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 Internet$bStand: 09. 08. 2012$uhttp://www.thomasgransow.de/Neapel/Golf/Ercolano.html
+677 Römische Kopie des 1. Jahrhundert n. Chr. nach einem griechischen Original der Zeit um 300 v. Chr.
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aGroße Herkulanerin$07632107-1
+999 $ar01$bFeld 041R: [swdstaatliche kunstsammlungen dresden] im Index nicht gefunden
+999 $ar01$bFeld 041R: [swdskulpturensammlung] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 47         PPN: 990255670                            SEITE1 .
+
+Eingabe: 1501:02-09-08 Änderung: 1250:10-09-12 13:18:01 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/7624147-6
+008 wit
+011 s
+012 w
+035 gnd/7624147-6
+039 swd/7624147-6$vzg
+043 XA
+065 7.14;7.12b
+130 Verordnung über das auf außervertragliche Schuldverhältnisse anzuwendende Recht
+430 Verordnung Rom II
+430 Rom-II-Verordnung
+430 Verordnung (EG) Nr. 864/2007
+548 $c2007$4datj
+550 !041276019!Internationales Schuldrecht$4obin
+551 !04131753X!Europäische Union$4aut1
+667 GNDBeispiel; BS-W-05
+667 Die verknüpften Körperschaften entsprechen ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 ABl.EU 2007, L 199, S. 40
+677 Verordnung (EG) Nr. 864/2007 vom 11.7.2007; 20.8.2007 Inkrafttreten, 11.1.2009 Beginn der Anwendung; gilt nicht in Dänemark
+903 $eDE-576
+903 $rDE-576
+913 $Sswd$igt$aEuropäische Union: Verordnung über das auf außervertragliche Schuldverhältnisse anzuwendende Recht$07624147-6
+
+
+SET: S9 [197] TTL: 48         PPN: 989671208                            SEITE1 .
+
+Eingabe: 1250:18-07-08 Änderung: 1250:01-10-12 10:22:42 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/7619167-9
+008 wis
+011 s
+012 w
+035 gnd/7619167-9
+039 swd/7619167-9$vzg
+043 XA-DE;XA-DE-BE
+065 12.2b;2.1
+130 Wolfdietrich$xHandschrift H
+377 gmh
+380 !040232875!Handschrift
+410 Berlin$xStaatsbibliothek$xMs. germ. qu. 761
+510 !050361031!Staatsbibliothek zu Berlin$4besi
+530 !041901967!Wolfdietrich$4werk
+548 $c1460$4dats
+667 GNDBeispiel; BS-SD-02
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 Stammler-Langosch$uhttp://www.manuscripta-mediaevalia.de/db/apsisa.dll/init?sid={4dfb5101-fd8a-4b72-86ac-92a34e88d0f5}&cnt=20200&:i=1
+677 Papierhandschrift um 1460
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aWolfdietrich / Handschrift H$07619167-9
+
+
+SET: S9 [197] TTL: 49         PPN: 988066963                            SEITE1 .
+
+Eingabe: 1250:27-03-08 Änderung: 1250:09-08-12 12:20:40 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/7606200-4
+008 wit
+011 s
+012 w
+035 gnd/7606200-4
+039 swd/7606200-4$vzg
+043 XB-IN
+065 12.2b
+083 294.5923$t2007-01-01
+130 Mahābhārata$n6-11
+377 san
+530 !042118417!Mahābhārata$4obpa
+667 GNDBeispiel; BS-W-04
+670 PR zu §711.2 RSWK
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aMahābhārata 6-11$07606200-4
+
+
+SET: S9 [197] TTL: 50         PPN: 987014692                            SEITE1 .
+
+Eingabe: 1030:04-01-08 Änderung: 1250:10-09-12 12:39:56 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/7595545-3
+008 wit
+011 s
+035 gnd/7595545-3
+039 swd/7595545-3$vzg
+043 XB-VN
+065 7.10a
+130 Luật-doanh-nghiệp
+548 $c2006$4datj
+550 !040786110!Unternehmensrecht$4obin
+551 !040635147!Vietnam$4aut1
+667 GNDBeispiel; BS-W-05
+667 keine dt. gebräuchl. Übersetzung möglich
+670 Vorlage
+677 Gesetz vom 1.7.2006
+903 $eDE-1
+903 $rDE-1
+913 $Sswd$igt$aVietnam: Luật-doanh-nghiệp$07595545-3
+
+
+SET: S9 [197] TTL: 51         PPN: 986140058                            SEITE1 .
+
+Eingabe: 1030:24-10-07 Änderung: 1241:22-08-12 09:06:33 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/7586920-2
+008 sis
+011 s
+012 w
+035 gnd/7586920-2
+039 swd/7586920-2$vzg
+043 XA-SK;XA-DE
+065 11.1a
+083 437.943735$t2009-10-22
+150 Mundart Schlesisch$gZips
+377 ger
+550 !04040725X!Mundart$4obin
+550 !041203267!Schlesisch$4obpa
+550 !041126599!Bairisch$4obpa
+550 !040396800!Mittelfränkisch$4obpa
+551 !040678687!Zips$4geoa
+667 GNDBeispiel; BS-R07
+670 analog
+677 Dt. Sprachinsel in der Slowakei
+903 $eDE-1
+903 $rDE-1
+913 $Sswd$ig$aZips / Mundart / Deutsch$07586920-2
+
+
+SET: S9 [197] TTL: 52         PPN: 986100633                            SEITE1 .
+
+Eingabe: 0007:22-10-07 Änderung: 1250:09-08-12 11:58:09 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/7586214-1
+008 wit
+011 s
+035 gnd/7586214-1
+039 swd/7586214-1$vzg
+043 XA-ES
+065 12.2b
+130 Demanda del Santo Grial$sBearbeitung
+377 spa
+530 !042735084!Histoire du Saint Graal$4werk
+548 1469$b1470$4datj
+550 !041126033!Artusepik$4obin
+550 !041201345!Altspanisch$4spra
+550 !041209818!Bearbeitung$4obin
+667 GNDBeispiel; BS-W-02
+670 Dicc. lit. esp.
+677 Altspan. Version d. Histoire du Saint Graal, ca. 1469-1470 ersch.
+903 $eDE-7
+903 $rDE-601
+913 $Sswd$it$aDemanda del Santo Grial$07586214-1
+
+
+SET: S9 [197] TTL: 53         PPN: 985093870                            SEITE1 .
+
+Eingabe: 0188:23-07-07 Änderung: 1241:09-11-12 14:50:04 Status: 9999:17-01-09  
+
+005 Tf1
+006 http://d-nb.info/gnd/7576523-8
+008 vif
+011 s
+035 gnd/7576523-8
+039 swd/7576523-8$vzg
+043 XA-DE
+065 8.2b
+111 Sozialdemokratische Partei Deutschlands$bParteitag
+550 !040447669!Parteitag$4obin
+551 !040118827!Deutschland$4geow
+667 GNDBeispiel; BS-C08
+670 Vorlage
+680 Zusammenfassende Bezeichnung für die Veranstaltungsreihe; einzelne Veranstaltungen erhalten eigene Datensätze.
+680 Datensatz nicht für die Titelverknüpfungen in der Formalerschließung verwenden.
+903 $eDE-188
+903 $rDE-188
+913 $Sswd$ik$aSozialdemokratische Partei Deutschlands / Parteitag$07576523-8
+
+
+SET: S9 [197] TTL: 54         PPN: 984541799                            SEITE1 .
+
+Eingabe: 1030:07-06-07 Änderung: 1250:10-09-12 12:41:51 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/7571990-3
+008 wit
+011 s
+035 gnd/7571990-3
+039 swd/7571990-3$vzg
+043 XB-VN
+065 7.3
+130 Verfassung$f1959
+548 $c1959$4datj
+551 !040635147!Vietnam$4aut1
+667 GNDBeispiel; BS-W-05
+670 Vorlage
+677 Verfassung vom 31.12.1959
+903 $eDE-1
+903 $rDE-1
+913 $Sswd$igt$aVietnam: Verfassung <1959>$07571990-3
+
+
+SET: S9 [197] TTL: 55         PPN: 984534288                            SEITE1 .
+
+Eingabe: 1030:06-06-07 Änderung: 1241:29-10-12 11:18:53 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/7571878-9
+008 giz
+011 s
+035 gnd/7571878-9
+039 swd/7571878-9$vzg
+043 XC-KE
+065 18;10.7a
+151 Nairobi-Nationalpark
+451 Nairobi National Park
+548 1946$4datb
+550 !040752208!Nationalpark$4obin
+551 !040302369!Kenia$4geoa
+667 GNDBeispiel; BS-A02uR08-giz
+670 B 2006 (online) unter Nairobi
+903 $eDE-1
+903 $rDE-1
+913 $Sswd$ig$aNairobi-Nationalpark$07571878-9
+
+
+SET: S9 [197] TTL: 56         PPN: 983238766                            SEITE1 .
+
+Eingabe: 0012:22-02-07 Änderung: 7777:14-09-12 09:10:14 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/7560512-0
+008 wit
+011 s
+035 gnd/7560512-0
+039 swd/7560512-0$vzg
+043 XA-DE
+065 13.4p
+130 Magic mirror
+430 Zauberspiegel
+500 !118508210!Beckmann, Max$4kue1
+530 !983238715!Beckmann, Max$aDay and dream$4obpa
+548 $c1946$4dats
+667 GNDBeispiel; BS-W-11
+670 Vorlage
+677 Lithographie von 1946 aus der Mappe "Day and dream"
+903 $eDE-12
+903 $rDE-12
+913 $Sswd$ipt$aBeckmann, Max: Magic mirror$07560512-0
+
+
+SET: S9 [197] TTL: 57         PPN: 983224501                            SEITE1 .
+
+Eingabe: 9012:18-02-04 Änderung: 9999:19-09-12 00:57:13 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/6058306-X$zhttp://d-nb.info/gnd/7727441-6
+008 kiz
+011 f;s
+012 v;w
+035 gnd/6058306-X
+039 gnd/7727441-6
+039 swd/7727441-6$vzg
+039 gkd/6058306-X$vzg
+043 XA-DE-NI
+065 10.12b;10.8b;31.3a
+110 pbr Planungsbüro Rohling
+410 Planungsbüro Rohling
+410 Rohling, Planungsbüro
+410 pbr AG
+410 Rohling, Konrad$gFirma
+550 !040028496!Architektenbüro$4obin
+551 !040439747!Osnabrück$4orta
+551 !040422267!Niedersachsen$4geow
+667 GNDBeispiel; BS-K01-K04
+667 MMi
+670 Homepage$uhttp://www.pbr.de
+677 Architektenbüro mit Hauptsitz in Osnabrück, 1960 durch K. Rohling gegründet
+903 $eDE-601
+903 $rDE-1
+913 $Sgkd$ia$aPBR Planungsbüro Rohling <Osnabrück>$06058306-X
+913 $Sswd$ik$apbr Planungsbüro Rohling$07727441-6
+
+
+SET: S9 [197] TTL: 58         PPN: 982889399                            SEITE1 .
+
+Eingabe: 1030:26-01-07 Änderung: 7777:14-09-12 09:10:15 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/7557307-6
+008 wit
+011 s
+035 gnd/7557307-6
+039 swd/7557307-6$vzg
+043 XS
+065 11.2p
+130 De inventione
+377 grc
+430 Peri heureseōs
+500 !118703765!Hermogenes$lTarsensis$4aut1
+530 !984430768!Hermogenes$lTarsensis$aArs rhetorica$4obpa
+548 01$4datu
+667 TITAN
+667 GNDBeispiel; BS-W-10
+670 DOC
+903 $eDE-1
+903 $rDE-1
+913 $Sswd$ipt$aHermogenes <Tarsensis>: De inventione$07557307-6
+
+
+SET: S9 [197] TTL: 59         PPN: 981780350                            SEITE1 .
+
+Eingabe: 1150:03-11-06 Änderung: 7777:14-09-12 09:10:16 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/7548314-2
+008 wit
+011 s
+012 w
+035 gnd/7548314-2
+039 swd/7548314-2$vzg
+043 XA-AT
+065 7.9a
+130 Devisengesetz 2004
+430 Bundesgesetz über den Kapital- und Zahlungsverkehr mit Auslandsbezug
+430 DevG 2004$4abku
+530 !96767199X!Österreich$aDevisengesetz$4vorg
+548 $c2003$4datj
+550 !041420756!Devisenrecht$4obin
+551 !040432718!Österreich$4aut1
+667 GNDBeispiel; BS-W-05
+670 Österr. BGBl. I, Nr.123/2003
+677 Gesetz vom 16.12.2003
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$igt$aÖsterreich: Devisengesetz 2004$07548314-2
+
+
+SET: S9 [197] TTL: 60         PPN: 981290450                            SEITE1 .
+
+Eingabe: 9001:20-09-06 Änderung: 1241:29-10-12 13:47:08 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/10148395-8$zhttp://d-nb.info/gnd/7714399-1$zhttp://d-nb.info/gnd/7720994-1
+008 kiz
+011 f;s
+012 z;v
+035 gnd/10148395-8
+039 gnd/7720994-1
+039 swd/7720994-1$vzg
+039 gnd/7714399-1
+039 swd/7714399-1$vzg
+039 gkd/10148395-8$vzg
+043 XA-DE-HE
+065 27.20
+110 Universitätsklinikum Gießen und Marburg
+410 Universitätsklinikum Gießen und Marburg GmbH$4nauv
+410 UKGM$4abku
+410 University Hospital Gießen and Marburg
+510 !005007747!Universitätsklinikum Gießen$4vorg
+510 !005079713!Klinikum Marburg$4vorg
+548 1.7.2005$4datb
+550 !040327868!Krankenhaus$4obin
+551 !04020989X!Gießen$4orta
+551 !040247295!Hessen$4geow
+667 MMi
+667 GNDBeispiel; BS-K10-Nebensitz
+670 Homepage$bStand:17.09.2012$uhttp://www.ukgm.de
+678 $bEntstanden durch Fusion der Universitätskliniken Gießen und Marburg. Das UKGM ist das erste privatisierte Universitätsklinikum. Im Jahr 2006 wurde das Universitätsklinikum Gießen und Marburg mit 2262 Betten zu 95% von der Rhön-Klinikum AG übernommen, das Land Hessen hält weiterhin eine 5%-Beteiligung. Forschung und Lehre werden weiterhin von den Fachbereichen Medizin der Universitäten Gießen und Marburg wahrgenommen und verantwortet. Hauptsitz Gießen, Nebensitz Marburg.
+903 $eDE-600
+903 $rDE-1
+913 $Sgkd$ia$aUniversitätsklinikum <Gießen; Marburg>$010148395-8
+913 $Sswd$ic$aGießen / Universitätsklinikum Gießen und Marburg <Gießen>$07714399-1
+913 $Sswd$ic$aMarburg / Universitätsklinikum Gießen und Marburg <Marburg, Lahn>$07720994-1
+
+
+SET: S9 [197] TTL: 61         PPN: 981255434                            SEITE1 .
+
+Eingabe: 0384:18-09-06 Änderung: 1241:02-10-12 14:05:43 Status: 9999:17-01-09  
+
+005 Ts1e
+006 http://d-nb.info/gnd/7543172-5
+008 siz
+011 s
+035 gnd/7543172-5
+039 swd/7543172-5$vzg
+043 XA
+065 16.4b
+150 Karolingerzeit
+260 !040713326!Fränkisches Reich
+260 Geschichte 687-840$vx
+667 GNDBeispiel; BS-R01-R03
+670 M
+903 $eDE-384
+903 $rDE-384
+913 $Sswd$is$aKarolingerzeit$07543172-5
+
+
+SET: S9 [197] TTL: 62         PPN: 980979218                            SEITE1 .
+
+Eingabe: 0384:23-08-06 Änderung: 1241:21-08-12 15:42:10 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/7540219-1
+008 gix
+011 s
+035 gnd/7540219-1
+039 swd/7540219-1$vzg
+043 XN
+065 20
+083 T2--9922$d2$t2007-01-01
+083 523.42$d2$t2007-01-01
+151 Aino Planitia$gVenus, Planet
+551 !040625273!Venus$gPlanet$4obpa$X1
+667 GNDBeispiel; BS-R05
+670 Internet
+677 Ebene auf der Venus
+903 $eDE-384
+903 $rDE-384
+913 $Sswd$is$aAino Planitia <Venus, Planet>$07540219-1
+999 $ar05$bFeld 065A: [venus planet] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 63         PPN: 980688841                            SEITE1 .
+
+Eingabe: 1150:31-07-06 Änderung: 1150:16-07-12 08:25:30 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/7536751-8
+008 siw
+011 s
+012 w;z
+035 gnd/7536751-8
+039 swd/7536751-8$vzg
+065 30m
+083 005.446$d2$t2007-01-01
+150 Windows Vista
+450 Microsoft Windows Vista
+550 !040062163!Betriebssystem$4obin
+667 GNDBeispiel; BS-A02uR08-siw
+670 Wikipedia
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$is$aWindows Vista$07536751-8
+
+
+SET: S9 [197] TTL: 64         PPN: 97605860X                            SEITE1 .
+
+Eingabe: 0012:17-08-05 Änderung: 1241:24-08-12 13:37:05 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4838676-5
+008 wit
+011 s
+035 gnd/4838676-5
+039 swd/4838676-5$vzg
+043 XA-DE-BY
+065 7.2b;7.2c
+130 Dorfordnung$f1518
+548 $c1518$4datj
+551 !040987892!Kürnach$4aut1
+667 GNDBeispiel; BS-W-05
+670 Vorlage
+903 $eDE-12
+903 $rDE-12
+913 $Sswd$igt$aKürnach: Dorfordnung <1518>$04838676-5
+
+
+SET: S9 [197] TTL: 65         PPN: 974674206                            SEITE1 .
+
+Eingabe: 0012:03-05-05 Änderung: 1250:18-07-12 17:40:30 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4825989-5
+008 giz
+011 s
+012 w
+035 gnd/4825989-5
+039 swd/4825989-5$vzg
+043 XA-DE-BW
+065 18;10.7a
+151 Naturpark Obere Donau
+550 !040752372!Naturpark$4obin
+551 !04004176X!Baden-Württemberg$4geoa
+667 GNDBeispiel; BS-A02uR08-giz
+670 Internet
+677 Naturpark entlang der Donau u. deren Einzugsgebiet von Immendingen bis Ertingen
+903 $eDE-12
+903 $rDE-12
+913 $Sswd$ig$aNaturpark Obere Donau$04825989-5
+
+
+SET: S9 [197] TTL: 66         PPN: 971955212                            SEITE1 .
+
+Eingabe: 1501:05-08-04 Änderung: 1250:01-10-12 11:08:30 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4789651-6
+008 wis
+011 s
+035 gnd/4789651-6
+039 swd/4789651-6$vzg
+043 XA-GB
+065 2.1;13.6p;16.5p
+130 The @Anthony roll of Henry VIII's navy$n1 + 3$gPepys Library$nMs. Pepys 2991
+380 !040232875!Handschrift
+410 Pepys Library$nMs. Pepys 2991
+500 !129045314!Anthony, Anthony$4aut1
+500 !118592653!Pepys, Samuel$4befr$Z1703
+510 !006713335!The @Pepys Library$4besi
+530 !971955158!Anthony, Anthony$aThe @Anthony roll of Henry VIII's navy$n2$xLondon$xBritish Library$xAdd. Ms. 22047$4vbal
+530 !972228322!Anthony, Anthony$aThe @Anthony roll of Henry VIII's navy$4werk
+548 $c1546$4dats
+667 GNDBeispiel; BS-SD-01
+667 Die verknüpfte Körperschaft in 530 entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 Vorlage
+670 BL
+677 Verz. von 58 Schiffen der Flotte Heinrichs VIII. auf urspr. 3 Pergamentrollen, 1546 erstellt, später getrennt, Teile 1 und 3 des Verz. befinden sich in der Pepys Library Cambridge, Teil 2 in British Library
+903 $eDE-576
+903 $rDE-576
+913 $Sswd$ipt$aAnthony, Anthony: The @Anthony roll of Henry VIII's navy 1 + 3 / Cambridge / Pepys Library / Ms. Pepys 2991$04789651-6
+
+
+SET: S9 [197] TTL: 67         PPN: 969813864                            SEITE1 .
+
+Eingabe: 1150:09-01-04 Änderung: 1241:22-08-12 09:06:40 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/4762676-8
+008 sis
+011 s
+035 gnd/4762676-8
+039 swd/4762676-8$vzg
+043 XA-DE-NW
+065 11.1a
+083 437.55167$t2007-01-01
+083 439.47$t2010-01-29
+150 Mundart Ripuarisch$gOberbergischer Kreis
+377 nds
+550 !04040725X!Mundart$4obin
+550 !041203224!Ripuarisch$4obpa
+550 !041333659!Westfälisch$4obpa
+550 !040403262!Moselfränkisch$4obpa
+550 !040421872!Niederfränkisch$4obpa
+551 !040428869!Oberbergischer Kreis$4geoa
+667 GNDBeispiel; BS-R07
+670 analog, Internet
+680 Nach MX-Diskussion im August 2010 vier OBs eingetragen
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aOberbergischer Kreis / Mundart$04762676-8
+
+
+SET: S9 [197] TTL: 68         PPN: 967169674                            SEITE1 .
+
+Eingabe: 1250:22-03-03 Änderung: 1250:01-10-12 10:22:57 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4725176-1
+008 wis
+011 s
+012 w
+035 gnd/4725176-1
+039 swd/4725176-1$vzg
+043 XA-DE;XA-DE-BY;XA-DE-ST
+065 3.5a;13.6;2.1;13.3;2.1
+130 Hallesches Heiltumsbuch$gHofbibliothek Aschaffenburg$nMs. 14
+380 !040232875!Handschrift
+410 Hofbibliothek Aschaffenburg$nMs. 14
+500 !118647733!Albrecht$nII.$lMainz, Erzbischof$4befr
+510 !004969340!Hofbibliothek Aschaffenburg$4besi
+530 !967169666!Hallesches Heiltumsbuch$4werk
+548 $c1525$4dats
+667 GNDBeispiel; BS-SD-02
+670 Lex. MA unter Heiltumsbuch
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aHallesches Heiltumsbuch / Handschrift / Aschaffenburg / Hofbibliothek / Ms. 14$04725176-1
+
+
+SET: S9 [197] TTL: 69         PPN: 966105451                            SEITE1 .
+
+Eingabe: 1150:14-01-03 Änderung: 1241:01-11-12 10:18:48 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4714551-1
+008 gix
+011 s
+012 w
+035 gnd/4714551-1
+039 swd/4714551-1$vzg
+043 XN
+065 20
+083 T2--993$d2$t2007-01-01
+083 523.51$d2$t2012-06-11
+151 Leoniden
+550 !041696689!Meteorstrom$4obin
+667 GNDBeispiel; BS-R05
+670 B 1986
+670 Herder Lex. Astronomie
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$is$aLeoniden$04714551-1
+
+
+SET: S9 [197] TTL: 70         PPN: 962222232                            SEITE1 .
+
+Eingabe: 0500:13-08-01 Änderung: 1241:12-09-12 12:43:43 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4647544-8
+008 wit
+011 s
+035 gnd/4647544-8
+039 swd/4647544-8$vzg
+043 XA-DE
+065 2.3;16.1
+130 Mitteilungen des Vereins für die Geschichte von Ost- und Westpreußen
+510 !962222488!Verein für die Geschichte von Ost- und Westpreußen$4aut1
+548 1926$b1944$4datj
+550 !040205355!Geschichtswissenschaft$4them
+550 !040674886!Zeitschrift$4obin
+551 !040118827!Deutschland$4geoa
+667 GNDBeispiel; BS-W-03
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 ZDB
+677 Dt. historische Zeitschrift, Königsberg <Preußen> 1926-1944
+903 $eDE-605
+903 $rDE-605
+913 $Sswd$ikt$aVerein für die Geschichte von Ost- und Westpreußen: Mitteilungen des Vereins für die Geschichte von Ost- und Westpreußen$04647544-8
+
+
+SET: S9 [197] TTL: 71         PPN: 961944617                            SEITE1 .
+
+Eingabe: 1150:05-07-01 Änderung: 1241:18-09-12 15:12:07 Status: 9999:17-01-09  
+
+005 Tb1
+006 http://d-nb.info/gnd/4642625-5
+008 kio
+011 s
+012 w
+035 gnd/4642625-5
+039 swd/4642625-5$vzg
+043 XA-DE-SN
+065 8.2a
+110 Dresden$bOberbürgermeister
+550 !041722299!Oberbürgermeister$4obin
+551 !040129950!Dresden$4adue
+551 !040511766!Sachsen$4geow
+667 GNDBeispiel; BS-K13uK19uK26-TgTb
+670 GKD
+680 Datensatz nicht für Titelverknüpfungen in der Formalerschließung verwenden. Titelverknüpfungen in der Formalerschließung erfolgen stattdessen mit der übergeordneten Gebietskörperschaft.
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ic$aDresden / Oberbürgermeister$04642625-5
+
+
+SET: S9 [197] TTL: 72         PPN: 961303646                            SEITE1 .
+
+Eingabe: 9009:01-01-00 Änderung: 1241:29-10-12 13:53:05 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/5512656-X
+008 kiz
+011 f;s
+012 z;v
+035 gnd/5512656-X
+039 gkd/5512656-X$vzg
+043 XA-DE-BW
+065 6.7
+110 Bibliotheksservice-Zentrum Baden-Württemberg$bZentralkatalog
+410 ZKBW$4abku
+510 !000426334!Zentralkatalog Baden-Württemberg$gStuttgart$4vorg
+510 !948364505!Bibliotheksservice-Zentrum Baden-Württemberg$gKonstanz$4adue
+548 1996$4datb
+550 !041907175!Zentralkatalog$4obin
+551 !040582825!Stuttgart$4orta
+551 !04004176X!Baden-Württemberg$4geow
+667 GNDBeispiel; BS-K10-K12
+667 Die verknüpften Körperschaften entsprechen ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 Vorlage
+903 $eDE-576
+903 $rDE-576
+913 $Sgkd$ia$aBibliotheksservice-Zentrum Baden-Württemberg <Konstanz> / Zentralkatalog$05512656-X
+
+
+SET: S9 [197] TTL: 73         PPN: 96096195X                            SEITE1 .
+
+Eingabe: 1250:23-02-01 Änderung: 1250:12-09-12 14:17:34 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4626513-2
+008 giw
+011 s
+012 w
+035 gnd/4626513-2
+039 swd/4626513-2$vzg
+043 XA-DE-HE
+065 10.6a
+151 Rheinstraße$gDarmstadt
+551 !04011077X!Darmstadt$4orta$X1
+667 GNDBeispiel; BS-R02-giw
+670 Stadtplan Darmstadt
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aDarmstadt / Rheinstraße$04626513-2
+
+
+SET: S9 [197] TTL: 74         PPN: 960058249                            SEITE1 .
+
+Eingabe: 0384:24-10-00 Änderung: 1250:01-10-12 11:26:54 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4610777-0
+008 wis
+011 s
+012 w
+035 gnd/4610777-0
+039 swd/4610777-0$vzg
+043 XA-IT;XA-RO;XA-VA
+065 2.1;3.2b;13.3
+130 Lorscher Evangeliar
+377 lat
+380 !040232875!Handschrift
+410 Biblioteca Apostolica Vaticana$nCod. Pal. lat. 50
+430 Lorscher Codex$vLex. MA
+510 !004019687!Biblioteca Apostolica Vaticana$4besi
+510 !943920264!Erdély Egyházmegye Batthyány Könyvtár$4besi
+510 !008015767!Kloster Lorsch$4befr
+510 !041248368!Palatina Heidelberg$4befr
+530 !040064069!Bibel$4werk
+548 $c810$4dats
+550 !041231686!Evangeliar$4obin
+550 !040396916!Mittellatein$4spra
+667 GNDBeispiel; BS-SD-03
+670 Lex. ges. Buchwesen
+677 Um 810 in Aachen an d. Hofschule Karls d. Gr. entstanden; heute in 4 Teile getrennt, die 1. Hälfte in d. Batthyaneum-Bibliothek in Karlsburg (Signatur nicht zu ermitteln), d. 2. Hälfte in d. Vatikanischen Bibliothek in Rom, ein Elfenbeindeckel im Victoria and Albert Museum in London, ein Elfenbeindeckel im Museo Sacro in Rom
+903 $eDE-384
+903 $rDE-384
+913 $Sswd$it$aLorscher Evangeliar$04610777-0
+
+
+SET: S9 [197] TTL: 75         PPN: 960017755                            SEITE1 .
+
+Eingabe: 0384:17-10-00 Änderung: 1250:29-09-12 15:27:04 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4609971-2
+008 wis
+011 s
+035 gnd/4609971-2
+039 swd/4609971-2$vzg
+043 XD;XD-US
+065 2.1;13.3
+130 Drake manuscript
+380 !040232875!Handschrift
+430 Histoire Naturelle des Indes
+510 !982407920!The @Morgan Library & Museum$4besi
+548 1560$b1600$4dats
+550 !040413586!Natur$4them
+550 !041359526!Quelle$4obin
+551 !040792285!Westindien$4geoa
+667 Signatur nicht ermittelt
+667 GNDBeispiel; BS-SD-03
+670 LoC
+670 Vorlage
+677 Aquarellierte Handschrift über die karibische Welt Ende des 16.Jhs.
+903 $eDE-384
+903 $rDE-384
+913 $Sswd$it$aDrake manuscript$04609971-2
+999 $ar01$bFeld 041R: [swdgeschichte 1560-1600] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 76         PPN: 958987629                            SEITE1 .
+
+Eingabe: 0386:03-05-00 Änderung: 1250:10-09-12 12:43:52 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4589594-6
+008 wit
+011 s
+035 gnd/4589594-6
+039 swd/4589594-6$vzg
+043 XA-CH
+065 7.3
+130 Verfassung$gEntwurf$f1998
+548 $c1998$4datj
+551 !040538818!Schweiz$4aut1
+667 GNDBeispiel; BS-W-05
+670 Vorlage
+677 Entwurf vom 18.12.1998 zur Verfassung vom 18.4.1999
+903 $eDE-386
+903 $rDE-576
+913 $Sswd$igt$aSchweiz: Verfassung <Entwurf, 1998>$04589594-6
+
+
+SET: S9 [197] TTL: 77         PPN: 958594317                            SEITE1 .
+
+Eingabe: 0384:02-03-00 Änderung: 1241:02-10-12 14:25:52 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/4582551-8
+008 saz
+011 s
+035 gnd/4582551-8
+039 swd/4582551-8$vzg
+043 XA
+065 12.4;13.1c
+150 Europarat$gMotiv
+550 !040403602!Motiv$4obin
+667 GNDBeispiel; BS-R04
+670 analog
+903 $eDE-384
+903 $rDE-384
+913 $Sswd$ik$aEuroparat <Motiv>$04582551-8
+
+
+SET: S9 [197] TTL: 78         PPN: 95742213X                            SEITE1 .
+
+Eingabe: 9002:21-09-99 Änderung: 1241:18-09-12 11:02:53 Status: 9999:23-04-10  
+
+005 Tf1
+006 http://d-nb.info/gnd/2179259-8
+008 vie
+011 f
+012 v
+035 gnd/2179259-8
+039 gkd/2179259-8$vzg
+043 XA-DE-BW
+111 Siedlungswasserwirtschaftliches Kolloquium$gForschungs- und Entwicklungsinstitut für Industrie- und Siedlungswasserwirtschaft sowie Abfallwirtschaft$n74$d1999$cStuttgart
+510 !00401538X!Forschungs- und Entwicklungsinstitut für Industrie- und Siedlungswasserwirtschaft sowie Abfallwirtschaft$4vera$X1
+548 $c1999$4datv
+551 !040582825!Stuttgart$4ortv
+667 GNDBeispiel; BS-03-IdentZ-Tb-Tf
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+903 $eDE-101
+903 $rDE-101
+913 $Sgkd$ia$aSiedlungswasserwirtschaftliches Kolloquium <Forschungs- und Entwicklungsinstitut für Industrie- und Siedlungswasserwirtschaft sowie Abfallwirtschaft, Stuttgart, 74, 1999, Stuttgart>$02179259-8
+999 $ar03$bFeld 029R: Zuviele Treffer fuer [gkdforschungs- und entwicklungsinstitut fuer industrie- und siedlungswasserwirtschaft sowie abfallwirtschaft stuttgart]
+999 $ar05$bFeld 030A: [forschungs- und entwicklungsinstitut fuer industrie- und siedlungswasserwirtschaft sowie abfallwirtschaft stuttgart] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 79         PPN: 955951011                            SEITE1 .
+
+Eingabe: 0012:04-03-99 Änderung: 1241:20-08-12 15:02:53 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/4534103-5
+008 sih
+011 s
+012 w
+035 gnd/4534103-5
+039 swd/4534103-5$vzg
+043 XB-JP;XD-US
+065 8.4
+083 952.244044$d2$t2012-06-04
+150 Atombombenabwurf auf Nagasaki
+548 $c1945$4dats
+550 !04079167X!Weltkrieg$g1939-1945$4obpa
+550 !946660174!Atombombenabwurf$4obin
+551 !040411346!Nagasaki$4orta
+551 !040787044!USA$4bete
+551 !040284956!Japan$4bete
+667 GNDBeispiel; BS-R01-sih
+670 B 1996 unter Hiroshima
+680 Historisches Einzelereignis gem. RSWK §415a, 2 und PR zu § 415a,2.
+903 $eDE-12
+903 $rDE-12
+913 $Sswd$ig$aNagasaki / Atombombenabwurf$04534103-5
+
+
+SET: S9 [197] TTL: 80         PPN: 955645506                            SEITE1 .
+
+Eingabe: 1250:22-01-99 Änderung: 1241:02-10-12 15:24:41 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4529524-4
+008 wis
+011 s
+012 w
+035 gnd/4529524-4
+039 swd/4529524-4$vzg
+043 XA-DE;XA-DE-HE
+065 2.1;3.6p;14.4p
+130 Carmina$gHochschul- und Landesbibliothek RheinMain$nHs. 2
+377 lat
+380 !040408477!Musikhandschrift
+410 Hochschul- und Landesbibliothek RheinMain$nHs. 2
+500 !118550993!Hildegardis$lBingensis$4aut1
+510 !1018632743!Hochschul- und Landesbibliothek RheinMain$4besi
+530 !955645670!Großer Hildegard-Codex$4obal
+548 1180$b1190$4dats
+667 GNDBeispiel; BS-SD-01
+670 LTHK
+677 Im Skriptorium des Klosters Rupertsberg geschrieben
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ipt$aHildegard <von Bingen>: Carmina / Musikhandschrift / Wiesbaden / Hessische Landesbibliothek / Hs. 2$04529524-4
+
+
+SET: S9 [197] TTL: 81         PPN: 955530016                            SEITE1 .
+
+Eingabe: 1250:07-01-99 Änderung: 1250:09-08-12 11:47:35 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4528499-4
+008 wit
+011 s
+012 w
+035 gnd/4528499-4
+039 swd/4528499-4$vzg
+043 XA-CH
+065 3.6p;12.2p;6.4p
+130 Vita$gProsa
+377 lat
+500 !104045698!Fabricius Montanus, Johannes$4aut1
+548 $c1565$4datj
+550 !040474976!Prosa$4obin
+667 GNDBeispiel; BS-W-01
+670 Vorlage
+677 Autobiographie, März 1565
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ipt$aFabricius Montanus, Johannes: Vita <Prosa>$04528499-4
+
+
+SET: S9 [197] TTL: 82         PPN: 955530008                            SEITE1 .
+
+Eingabe: 1250:07-01-99 Änderung: 1250:09-08-12 11:34:20 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4528498-2
+008 wit
+011 s
+012 w
+035 gnd/4528498-2
+039 swd/4528498-2$vzg
+043 XA-CH
+065 3.6p;12.2p;6.4p
+130 Vita
+377 lat
+430 Biographia a se ipso carmine adorata
+500 !104045698!Fabricius Montanus, Johannes$4aut1
+548 $c1565$4datj
+667 GNDBeispiel; BS-W-01
+670 Vorlage
+677 Autobiographie in elegischen Distichen, Nov. 1565
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ipt$aFabricius Montanus, Johannes: Vita$04528498-2
+
+
+SET: S9 [197] TTL: 83         PPN: 951480278                            SEITE1 .
+
+Eingabe: 0384:10-09-97 Änderung: 1250:12-09-12 14:18:43 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4469604-8
+008 gib
+011 s
+035 gnd/4469604-8
+039 swd/4469604-8$vzg
+043 XA-DE-BY
+065 31.3ab;3.5a
+151 Neupfarrkirche$gRegensburg
+451 Zur Schönen Maria$gRegensburg
+550 !040734366!Kirchenbau$4obin
+551 !040489892!Regensburg$4orta$X1
+667 GNDBeispiel; BS-R02-gib
+670 B 1986
+670 Reclam
+670 Dehio
+677 Wallfahrtsstätte, 1542 in die 1. protestant. Kirche Regensburgs umgewandelt
+903 $eDE-384
+903 $rDE-384
+913 $Sswd$ig$aRegensburg / Neupfarrkirche$04469604-8
+999 $ar05$bFeld 065@: [regensburg] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 84         PPN: 950659533                            SEITE1 .
+
+Eingabe: 1150:16-06-97 Änderung: 1241:19-09-12 13:43:19 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4458132-4
+008 wit
+011 s
+012 w
+035 gnd/4458132-4
+039 swd/4458132-4$vzg
+043 XA
+065 31.3b
+130 Eurocode 6
+430 DIN V ENV 1996-1-1
+430 EC 6
+550 !040380319!Mauerwerk$4them
+550 !04278008X!EC-Norm$4obin
+667 GNDBeispiel; BS-W-07
+670 analog
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aEurocode 6$04458132-4
+
+
+SET: S9 [197] TTL: 85         PPN: 950477915                            SEITE1 .
+
+Eingabe: 1400:20-05-97 Änderung: 1241:21-08-12 15:42:19 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4454788-2
+008 gix
+011 s
+035 gnd/4454788-2
+039 swd/4454788-2$vzg
+043 XN
+065 20
+083 T2--99$d2$t2007-01-01
+083 523.4$d2$t2012-06-11
+151 Vulkan$gPlanet
+550 !040462129!Planet$4obin$X1
+667 GNDBeispiel; BS-R05
+670 Lex. Astronomie
+677 Hypothet. Planet, den man im 19. Jh. innerhalb d. Merkurbahn vermutete
+903 $eAT-OBV
+903 $rAT-OBV
+913 $Sswd$is$aVulkan <Planet>$04454788-2
+
+
+SET: S9 [197] TTL: 86         PPN: 950090700                            SEITE1 .
+
+Eingabe: 0386:25-03-97 Änderung: 1250:23-07-12 14:53:08 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4448229-2
+008 wit
+011 s
+012 w
+035 gnd/4448229-2
+039 swd/4448229-2$vzg
+065 3.2
+130 Elberfelder Bibel
+530 !040064069!Bibel$4werk
+550 !041132920!Deutsch$4spra
+550 !040614182!Übersetzung$4obin
+667 GNDBeispiel; BS-W-09
+670 B 1986 unter Bibel
+677 Versuch einer wortwörtlichen Eindeutschung aus den Grundtexten im Glauben an die Verbalinspiration. EA: NT 1855; Bibel: 1871
+903 $eDE-386
+903 $rDE-576
+913 $Sswd$it$aElberfelder Bibel$04448229-2
+
+
+SET: S9 [197] TTL: 87         PPN: 949364126                            SEITE1 .
+
+Eingabe: 9002:28-10-96 Änderung: 1241:12-09-12 12:04:45 Status: 9999:23-04-10  
+
+005 Tf1
+006 http://d-nb.info/gnd/5187899-9$zhttp://d-nb.info/gnd/4436997-9
+008 vie
+011 f;s
+012 v
+035 gnd/5187899-9
+039 gnd/4436997-9
+039 swd/4436997-9$vzg
+039 gkd/5187899-9$vzg
+043 XA-DE-HE
+065 2.2
+111 Frankfurter Buchmesse$n48$d1996$cFrankfurt am Main
+411 Buchmesse$n48$d1996$cFrankfurt am Main
+411 Frankfurt Book Fair$n48$d1996$cFrankfurt am Main
+411 Foire du Livre$n48$d1996$cFrankfurt am Main
+411 Book Fair$n48$d1996$cFrankfurt am Main
+511 !004639634!Frankfurter Buchmesse$4obpa
+548 $c1996$4datv
+550 !041468244!Buchmesse$4obin
+551 !040181189!Frankfurt am Main$4ortv
+551 !040247295!Hessen$4geow
+667 MMm
+667 GNDBeispiel; BS-C08
+667 Der verknüpfte Kongress entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 GKD
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aFrankfurter Buchmesse <48, 1996, Frankfurt, Main>$05187899-9
+913 $Sswd$ic$aFrankfurt am Main / Frankfurter Buchmesse <1996>$04436997-9
+999 $ar05$bFeld 030@: [1996] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 88         PPN: 949343501                            SEITE1 .
+
+Eingabe: 1250:12-12-96 Änderung: 1241:19-09-12 12:21:50 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4434843-5
+008 wit
+011 s
+012 w
+035 gnd/4434843-5
+039 swd/4434843-5$vzg
+043 XA
+065 7.14
+130 Richtlinie über den Verbraucherkredit
+430 Richtlinie 87/102/EWG
+530 !94030421X!Europäische Gemeinschaften$aRichtlinie über den Verbraucherkredit$4vorg$Zbis 1.11.1993
+530 !1014225264!Europäische Union$aRichtlinie über Verbraucherkreditverträge und zur Aufhebung der Richtlinie 87/102/EWG des Rates$4nach
+548 1993$b2008$4datb
+550 !042700655!Verbraucherkreditrecht$4obin
+551 !04131753X!Europäische Union$4aut1
+667 GNDBeispiel; BS-W-05
+667 Die verknüpften Körperschaften entsprechen ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 ABl.EG 1987, S. 48, L 042
+677 Richtlinie 87/102/EWG vom 22.12.1986; aufgehoben durch Richtlinie 2008/48/EG vom 23.4.2008
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$igt$aEuropäische Union: Richtlinie über den Verbraucherkredit$04434843-5
+
+
+SET: S9 [197] TTL: 89         PPN: 949274240                            SEITE1 .
+
+Eingabe: 9002:10-10-96 Änderung: 1241:29-10-12 13:54:38 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/5186479-4
+008 kiz
+011 f
+012 z
+035 gnd/5186479-4
+039 gkd/5186479-4$vzg
+043 XD-US
+110 The @Center for Portuguese Studies
+410 The Center for Portuguese Studies$4nauv
+410 University of California Berkeley$bSanta Barbara Campus$bCenter for Portuguese Studies
+510 !004487184!Jorge de Sena Center for Portuguese Studies$gSanta Barbara, Calif.$4vorg
+510 !004336690!University of California$gBerkeley, Calif.$bSanta Barbara Campus$4adue
+551 !041184009!Santa Barbara, Calif.$4orta
+667 GNDBeispiel; BS-K10-K12
+667 Die verknüpften Körperschaften entsprechen ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 Homepage$bStand:17.09.2012$uhttp://www.portcenter.ucsb.edu
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aCenter for Portuguese Studies <Santa Barbara, Calif.>$05186479-4
+
+
+SET: S9 [197] TTL: 90         PPN: 948691700                            SEITE1 .
+
+Eingabe: 0384:25-09-96 Änderung: 1241:02-10-12 15:41:29 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4425342-4
+008 wis
+011 s
+035 gnd/4425342-4
+039 swd/4425342-4$vzg
+043 XA-DE-BE;XC-EG
+065 2.1;16.3
+130 Papyrus$gStaatsbibliothek, Berlin$n13 639
+380 !040445712!Papyrus
+410 Staatsbibliothek$gBerlin$n13 639
+510 !050361031!Staatsbibliothek zu Berlin$4besi
+667 GNDBeispiel; BS-SD-02
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen..
+670 Vorlage
+903 $eDE-384
+903 $rDE-384
+913 $Sswd$ic$aBerlin / Staatsbibliothek Berlin / Papyrus / 13 639$04425342-4
+
+
+SET: S9 [197] TTL: 91         PPN: 947282750                            SEITE1 .
+
+Eingabe: 1250:04-04-96 Änderung: 1250:10-09-12 14:07:47 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4406933-9
+008 wit
+011 s
+012 w
+035 gnd/4406933-9
+039 swd/4406933-9$vzg
+065 15.3
+130 Fremdsein in Deutschland
+500 !119325527!Seemann, Horst$4regi
+550 !042441412!Fremdenfeindlichkeit$4them
+550 !040171027!Film$4obin
+551 !040118827!Deutschland$4geoa
+667 GNDBeispiel; BS-W-06
+670 Vorlage
+677 Dt. Dokumentarfilm, 1994 von Jugendlichen entworfen
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aFremdsein in Deutschland$04406933-9
+
+
+SET: S9 [197] TTL: 92         PPN: 945538537                            SEITE1 .
+
+Eingabe: 0012:13-09-95 Änderung: 1241:14-08-12 12:08:41 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4386654-2
+008 gin
+011 s
+012 w
+035 gnd/4386654-2
+039 swd/4386654-2$vzg
+043 XA-CH
+083 T2--4945$t2010-02-18
+151 Schweizer Mittelland$zWest
+451 Drei Seen$zRegion$vVorlage
+451 Trois Lacs$zRegion$vVorlage
+451 Dreiseenland$vVorlage
+451 Drei-Seen-Land$vVorlage
+551 !040538893!Schweizer Mittelland$4obpa
+667 GNDBeispiel; BS-06-z
+670 Geo-Du., analog
+677 Beeinhaltet Neuenburger, Murtener und Bieler See in den Kantonen Bern, Neuenburg, Waadt und Freiburg
+903 $eDE-12
+903 $rDE-12
+913 $Sswd$ig$aSchweizer Mittelland <West>$04386654-2
+
+
+SET: S9 [197] TTL: 93         PPN: 943567963                            SEITE1 .
+
+Eingabe: 0012:14-02-95 Änderung: 1250:28-09-12 16:34:48 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4366610-3
+008 wit
+011 s
+012 w
+035 gnd/4366610-3
+039 swd/4366610-3$vzg
+043 XA-DE;XA-DE-BW
+065 13.4p
+130 Graue Passion
+500 !118552945!Holbein, Hans$4kue1
+510 !00480189X!Staatsgalerie$gStuttgart$4ortb$Z2003
+510 !007156200!Fürstlich-Fürstenbergische Sammlungen$gDonaueschingen$4besi
+548 1495$b1500$4dats
+667 GNDBeispiel; BS-W-11
+667 Die verknüpften Körperschaften entsprechen ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 B 1986
+903 $eDE-12
+903 $rDE-12
+913 $Sswd$ipt$aHolbein, Hans <Künstler, 1460-1524>: Graue Passion$04366610-3
+999 $ar05$bFeld 065@: [kuenstler 1460-1524] im Index nicht gefunden
+999 $ar05$bFeld 065@: [kuenstler 1460-1524] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 94         PPN: 943241480                            SEITE1 .
+
+Eingabe: 1250:10-01-95 Änderung: 1250:23-07-12 15:08:35 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4361966-6
+008 wit
+011 s
+012 w
+035 gnd/4361966-6
+039 swd/4361966-6$vzg
+043 XT;XA-FR
+065 3.6p;16.1p
+130 Vita sancti Martini
+377 lat
+430 Leben des heiligen Martin$vR:ÖB-Alternative
+430 Vita Martini
+430 Vita Martini Turonensis
+430 De vita beati Martini
+430 Leben des heiligen Bekennerbischofs Martinus
+500 !118757806!Sulpicius$lSeverus$4aut1
+500 !118578308!Martin$lvon Tours$4them
+548 03$4datu
+550 !041271955!Heiligenvita$4obin
+667 TITAN
+667 GNDBeispiel; BS-W-10
+670 Thes. ling. Lat. (1990)
+670 LThK
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ipt$aSulpicius <Severus>: Vita sancti Martini$04361966-6
+
+
+SET: S9 [197] TTL: 95         PPN: 940383357                            SEITE1 .
+
+Eingabe: 9002:19-01-94 Änderung: 1241:18-09-12 12:14:57 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/5098102-X$zhttp://d-nb.info/gnd/4412712-1
+008 kiz
+011 f;s
+012 z;v
+035 gnd/5098102-X
+039 gnd/4412712-1
+039 swd/4412712-1$vzg
+039 gkd/5098102-X$vzg
+043 XA-FR
+065 6.6
+110 Université Lumière Lyon 2
+410 Université Lumière Lyon$n2
+410 Université Lumière Lyon
+410 Université$gLyon, Université Lumière Lyon 2
+410 Université Lumière Lyon$gUniversité Lumière Lyon 2
+510 !000258954!Université Lyon 2$4vorg
+548 1987$4datb$vabweichendes Anfangsjahr: 1991
+550 !040617785!Universität$4obin
+551 !040181456!Frankreich$4geow
+551 !040367703!Lyon$4orta
+667 GNDBeispiel; BS-K05
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+667 MMi
+670 Homepage$uhttp://www.univ-lyon2.fr
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aUniversité Lumière <Lyon>$05098102-X
+913 $Sswd$ic$aLyon / Université Lumière$04412712-1
+999 $ar01$bFeld 029@: [gkdlyon 2 universite lumiere] im Index nicht gefunden
+999 $ar05$bFeld 029@: [lyon 2 universite lumiere] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 96         PPN: 940349515                            SEITE1 .
+
+Eingabe: 1250:01-02-94 Änderung: 1250:01-10-12 10:25:58 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4331371-1
+008 wis
+011 s
+012 w
+035 gnd/4331371-1
+039 swd/4331371-1$vzg
+043 XA-IT;XA-DE-HE;XA-DE
+065 2.1;11.3d
+130 Lorscher Bienensegen
+377 goh
+380 !040232875!Handschrift
+510 !008015767!Kloster Lorsch$4befr
+530 !940349469!Sammelhandschrift$gBiblioteca Apostolica Vaticana$nCod. Pal. lat. 220$4obpa
+548 $d900$4dats
+550 !041905504!Zauberspruch$4obin
+550 !040015238!Althochdeutsch$4geoa
+667 GNDBeispiel; BS-SD-03
+670 Lex. MA, Stammler-Langosch
+677 Althochdeutsches Sprachdenkmal um 900
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aLorscher Bienensegen$04331371-1
+
+
+SET: S9 [197] TTL: 97         PPN: 133586855                            SEITE1 .
+
+Eingabe: 0500:07-11-07 Änderung: 8999:12-06-12 15:51:42 Status: 9999:06-04-08  
+
+005 Tp1
+006 http://d-nb.info/gnd/133586855
+008 pif
+011 s
+035 gnd/133586855
+039 pnd/133586855$vzg
+039 swd/7588871-3$vzg
+043 XA-DE
+065 31.16p;10.13p
+100 $PSchmidt$lFamilie, Oberstein, Idar-Oberstein
+550 !040163970!Familie$4obin
+551 !040264637!Idar-Oberstein$4ortc
+667 GNDBeispiel
+670 Vorlage
+678 $bDt. Edelsteinschleiferfamilie aus Oberstein <Idar-Oberstein> seit Anfang des 19. Jh.
+903 $eDE-605
+903 $rDE-605
+913 $Spnd$i5$aSchmidt <Familie, Oberstein, Idar-Oberstein>$0133586855
+
+
+SET: S9 [197] TTL: 98         PPN: 130747742                            SEITE1 .
+
+Eingabe: 1150:03-12-96 Änderung: 1241:02-10-12 14:06:36 Status: 9999:17-01-09  
+
+005 Ts1e
+006 http://d-nb.info/gnd/7507940-9
+008 sih
+011 s
+035 gnd/7507940-9
+039 swd/4433357-2
+039 swd/7507940-9$vzg
+043 XA-DE
+065 16.5
+150 Hottentottenwahl
+260 !040118827!Deutschland
+260 !041313356!Reichstagswahl
+260 Geschichte 1907$vx
+548 $c1907$4dats
+667 GNDBeispiel; BS-R01-R03
+667 Das verknüpfte Geografikum entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 B 1986
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$is$aHottentottenwahl$07507940-9
+
+
+SET: S9 [197] TTL: 99         PPN: 130742716                            SEITE1 .
+
+Eingabe: 1250:22-01-96 Änderung: 1241:02-10-12 14:06:48 Status: 9999:17-01-09  
+
+005 Ts1e
+006 http://d-nb.info/gnd/7507386-9
+011 s
+035 gnd/7507386-9
+039 swd/4399485-4
+039 swd/7507386-9$vzg
+065 24.2b
+150 Vegetationsgeschichte
+260 !041874587!Vegetation
+260 Geschichte$vx
+667 GNDBeispiel; BS-R01-R03
+680 Bei der Verwendung verknüpfe mit dem Zeitschlagwort (Indikator z). Für rezente Geschichte verwende Vegetationsentwicklung.
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$is$aVegetationsgeschichte$07507386-9
+
+
+SET: S9 [197] TTL: 100        PPN: 130741531                            SEITE1 .
+
+Eingabe: 0384:05-10-95 Änderung: 1241:02-10-12 14:05:51 Status: 9999:17-01-09  
+
+005 Ts1e
+006 http://d-nb.info/gnd/7507258-0
+011 s
+035 gnd/7507258-0
+039 swd/4388788-0
+039 swd/7507258-0$vzg
+065 31.1d;31.3b
+150 Betonkorrosion
+260 !040061116!Beton
+260 !040325180!Korrosion
+667 Beispiel in RSWK 3. Aufl.
+667 GNDBeispiel; BS-R01-R03
+670 Findex Bau
+903 $eDE-384
+903 $rDE-384
+913 $Sswd$is$aBetonkorrosion$07507258-0
+
+
+SET: S9 [197] TTL: 101        PPN: 129942235                            SEITE1 .
+
+Eingabe: 0255:18-04-05 Änderung: 1210:15-05-12 13:58:01 Status: 9999:06-04-08  
+
+005 Tp1
+006 http://d-nb.info/gnd/129942235
+008 piz
+011 s
+035 gnd/129942235
+039 pnd/129942235$vzg
+039 swd/4824105-2$vzg
+043 XA-IT
+065 16.5p;3.6p
+100 $PInnozenz$nIX.$lPapst
+400 Facchinetti, Giovanni Antonio
+400 $PInnocenz$nIX.$lPapst
+400 $PInnocentius$nIX.$lPapa
+548 1519$b1591$4datl
+548 20.07.1519$b30.12.1591$4datx
+550 !040445615!Papst$4berc
+551 !040076164!Bologna$4ortg
+551 !040504719!Rom$4orts
+667 GNDBeispiel
+670 M
+678 $bJurist, 1560-1575 Bischof von Nicastro, 1566 päpstlicher Nuntius in Venedig, 1583 Kadinal, vom 29.10.1591-30.12.1591 Papst
+903 $eDE-255
+903 $rDE-255
+913 $Spnd$i5$aInnocentius <Papa, IX.>$0129942235
+913 $Spnd$i5$aInnozenz <Papst, IX.>$0129942235
+
+
+SET: S9 [197] TTL: 102        PPN: 129034908                            SEITE1 .
+
+Eingabe: 1210:19-05-04 Änderung: 1250:27-06-12 10:19:57 Status: 9999:06-04-08  
+
+005 Tp1
+006 http://d-nb.info/gnd/129034908
+008 pxl;szz
+011 s
+035 gnd/129034908
+039 pnd/129034908$vzg
+039 swd/4780456-7$vzg
+043 XA-SE
+065 12.4p;13.1cp
+083 T3C--351$d2$t2010-04-03
+100 Långstrump, Efraim$lLiterarische Gestalt
+400 Langstrumpf, Efraim
+400 $PEfraim$lLångstrump
+400 $PEfraim$lLangstrumpf
+550 !041402200!Literarische Gestalt$4berc
+550 !043067468!Fiktive Gestalt$4berc
+550 !040403602!Motiv$4obin
+667 GNDBeispiel
+670 Vorlage
+678 $bLiterar. Gestalt in Werken von Astrid Lindgren, Vater von Pippi Långstrump
+903 $eDE-101
+903 $rDE-101
+913 $Spnd$ia$aLångstrump, Efraim <Literarische Gestalt>$0129034908
+
+
+SET: S9 [197] TTL: 103        PPN: 12304586X                            SEITE1 .
+
+Eingabe: 1250:06-07-01 Änderung: 1210:15-05-12 11:17:27 Status: 9999:06-04-08  
+
+005 Tp1
+006 http://d-nb.info/gnd/12304586X
+008 pip
+011 f
+035 gnd/12304586X
+039 pnd/12304586X$vzg
+100 Kauffmann, Gerda
+500 !107402742!Zwieblinger Zwillinge$4pseu
+667 GNDBeispiel
+903 $eDE-101
+903 $rDE-101
+913 $Spnd$ia$aKauffmann, Gerda$012304586X
+
+
+SET: S9 [197] TTL: 104        PPN: 123045851                            SEITE1 .
+
+Eingabe: 1250:06-07-01 Änderung: 1210:15-05-12 11:17:08 Status: 9999:06-04-08  
+
+005 Tp1
+006 http://d-nb.info/gnd/123045851
+008 pip
+011 f
+035 gnd/123045851
+039 pnd/123045851$vzg
+100 Kauffmann, Gudrun
+500 !107402742!Zwieblinger Zwillinge$4pseu
+667 GNDBeispiel
+903 $eDE-101
+903 $rDE-101
+913 $Spnd$ia$aKauffmann, Gudrun$0123045851
+
+
+SET: S9 [197] TTL: 105        PPN: 119346842                            SEITE1 .
+
+Eingabe: 0007:19-06-96 Änderung: 1250:09-11-12 17:46:51 Status: 9999:06-04-08  
+
+005 Tp1
+006 http://d-nb.info/gnd/119346842
+008 pxg
+011 s
+035 gnd/119346842
+039 pnd/119346842$vzg
+039 swd/4414224-9$vzg
+043 XS
+065 3.1p;12.4p;13.1cp
+100 $PMomos$lGott
+400 $PMomus$lGott
+550 !040216624!Gott$4berc
+667 GNDBeispiel
+670 B 1986
+678 $bGriech. Gott des Tadels und der Kritik
+903 $eDE-7
+903 $rDE-601
+913 $Spnd$i5$aMomos <Gott>$0119346842
+
+
+SET: S9 [197] TTL: 106        PPN: 118869159                            SEITE1 .
+
+Eingabe: 0012:03-08-89 Änderung: 1030:07-12-12 10:54:00 Status: 9999:06-04-08  
+
+005 Tp1
+006 http://d-nb.info/gnd/118869159
+008 piz
+011 s;f
+012 v;w
+035 gnd/118869159
+039 pnd/118869159$vzg
+039 swd/4215830-8$vzg
+043 XD-CL;XD-US
+065 12.2p
+100 Allende, Isabel
+375 f
+400 Allende, Isabell
+500 !133636364!Gordon, William C.$4bezf$vEhemann
+548 1942$4datw
+548 02.08.1942$4datx
+550 !040533115!Schriftstellerin$4berc
+550 !040287866!Journalistin$4beru
+551 !040357422!Lima$4ortg
+667 GNDBeispiel
+670 B 1986
+670 LCAuth
+678 $bChilenische Journalistin u. Schriftstellerin; lebt heute in Kalifornien
+903 $eDE-12
+903 $rDE-12
+913 $Spnd$ia$aAllende, Isabel$0118869159
+
+
+SET: S9 [197] TTL: 107        PPN: 118829688                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1340:29-11-12 10:50:26 Status: 1220:16-06-08  
+
+005 Tp1
+006 http://d-nb.info/gnd/118829688$zhttp://d-nb.info/gnd/174166443
+008 piz
+011 f;m;s
+012 v;w;m
+035 gnd/118829688
+039 gnd/174166443
+039 pnd/174166443$vzg
+039 pnd/118829688$vzg
+039 pnd/172021316
+039 pnd/134452216
+039 dma/310142210
+039 swd/4194867-1$vzg
+043 XD-US
+065 14.4p;15.3p
+100 $PMadonna
+375 f
+400 Ciccone, Madonna Louise Veronica$4nawi
+400 Ciccone Ritchie, Madonna Louise Veronica$4nasp
+400 Ciccone, Madonna Louise
+500 !132246635!Ritchie, Guy$4bezf$vEhemann 2001-2008
+510 !320701247!Madonna & Justin$4affi
+548 1958$4datl
+548 16.08.1958$4datx
+550 !040512460!Sängerin$4berc
+550 !042627435!Popmusikerin$4beru
+550 !041531795!Schauspielerin$4beru
+550 i$4funk
+550 voc$4istr
+551 !954148320!Bay City, Mich.$4ortg
+667 GNDBeispiel
+670 Homepage$uhttp://www.madonna.com
+670 LCAuth
+670 Wikipedia
+670 SWD
+678 $bAmerikan. Popsängerin und Schauspielerin
+700 Madonna$SDLC$0n 84156128$2naf$v1958-
+903 $eDE-101
+903 $rDE-101
+913 $Spnd$i5$aMadonna (Sängerin)$0118829688
+913 $Spnd$i5$aMadonna$0174166443
+
+
+SET: S9 [197] TTL: 108        PPN: 118799894                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 3004:10-12-12 18:46:42 Status: 1220:16-06-08  
+
+005 Tp1
+006 http://d-nb.info/gnd/118799894
+008 piz
+011 s;f;m
+012 v;w;m
+035 gnd/118799894
+039 pnd/118799894$vzg
+039 pnd/134368126
+039 dma/310058120
+039 swd/4113461-8$vzg
+043 XA-DE
+065 15.3p;15.2p;14.4p;12.2p
+100 Erhardt, Heinz
+375 m
+400 Erhard, Heinz
+500 !135356288!Erhardt, Marek$4bezf$vEnkel
+548 1909$b1979$4datl
+548 20.02.1909$b05.06.1979$4datx
+550 !040521540!Schauspieler$4berc
+550 !041234774!Kabarettist$4beru
+550 !04032009X!Komponist$4beru
+550 !040408418!Musiker$4beru
+550 !040533093!Schriftsteller$4beru
+550 k$4funk
+550 i$4funk
+550 Sprechst.$4istr
+550 voc$4istr
+550 Gsg.$4funk
+550 Text$4funk
+551 !04050042X!Riga$4ortg
+551 !040946606!Hamburg-Wellingsbüttel$4orts
+667 GNDBeispiel
+670 Homepage$uhttp://www.heinzerhardt.de
+670 LCAuth
+670 Wikipedia
+675 KdG;DKV KdG;MGG 2;NG 2;Diz. mus.
+678 $bDt. Schauspieler lett. Herkunft; Musiker; Kabarettist; Komiker; Entertainer; Dichter
+700 $SDLC$0n 86032746$2naf
+903 $eDE-101
+903 $rDE-101
+913 $Spnd$ia$aErhardt, Heinz$0118799894
+
+
+SET: S9 [197] TTL: 109        PPN: 11862444X                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1140:03-07-12 10:56:35 Status: 9999:06-04-08  
+
+005 Tp1
+006 http://d-nb.info/gnd/11862444X
+008 pip
+011 s;f;z
+012 v;w;k;m;z
+035 gnd/11862444X
+039 pnd/11862444X$vzg
+039 pnd/13458970X
+039 pnd/12711131X
+039 dma/310279704
+039 swd/4061142-5$vzg
+043 XA-DE;XA-FR;XA-SE
+065 12.2p;2.3p
+100 Tucholsky, Kurt
+375 m
+400 Grotius, Hugo$4pseu
+400 Hauser, Kaspar$4pseu
+400 Panter, Peter$4pseu
+400 Tiger, Theobald$4pseu
+400 Wrobel, Ignaz$4pseu
+400 Tucholsky, ...
+400 Tucholʹskij, Kurt$vRuss. Vorlageform, RAK-WB
+400 Tukholʹskiĭ, Kurt$vRuss. Vorlageform, AACR
+400 Tûkôlsqî, Qûrṭ
+400 Tukôlsqî, Qûrṭ
+400 Bünzly, Paulus$4pseu
+400 Körner, Theobald$4pseu
+400 $POld Shatterhand$4pseu
+500 !116841508!Matthias, Lisa$4beza$vGeliebte
+548 1890$b1935$4datl
+548 09.01.1890$b21.12.1935$4datx
+550 !040533093!Schriftsteller$4berc
+550 !040287815!Journalist$4beru
+550 !041657756!Kritiker$4beru
+550 Bühnenautor$4beru$v2. Beispiel für neue MAB-Umsetzung
+550 s$4funk
+550 Text$4funk
+550 Dr. jur.$4akad
+551 !040057283!Berlin$4ortg
+551 Hindås bei Göteborg$4orts$vBeispielfeld für neue MAB-Umsetzung$Z1935
+551 !04028557x!Jena$4ortw
+551 !040057283!Berlin$4ortw
+551 !040446603!Paris$4ortw
+667 GNDBeispiel
+670 M; B 2006; LCAuth; NUC pre 56; DBE; Kürschner Lit./Nekr. (1936-1970); Biogr. H Emigr.
+672 Fromme Gesänge. - 1919
+672 Das Kurt-Tucholsky-Chanson-Buch. - 1983
+672 Schloß Gripsholm. - 1931
+672 Träumereien an preussischen Kaminen. - 1920
+678 $bDt. Bühnenautor (Literatur- und Theaterkritiker); Emigration 1924 nach Frankreich, 1929 nach Schweden; Jurastudium mit Promotion in Jena 1914/1915
+700 Tucholsky, Kurt$SDLC$0n 50081889$2naf$v1890-1935.
+903 $eDE-101
+903 $rDE-101
+913 $Spnd$ia$aTucholsky, Kurt$011862444X
+
+
+SET: S9 [197] TTL: 110        PPN: 118598546                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1140:26-11-12 13:53:11 Status: 1220:16-06-08  
+
+005 Tp1
+006 http://d-nb.info/gnd/118598546
+008 piz
+011 s;f;m
+012 v;w;m;z
+035 gnd/118598546
+039 pnd/118598546$vzg
+039 pnd/1014538122
+039 pnd/1014538084
+039 pnd/134492374
+039 pnd/131233130
+039 pnd/128135654
+039 dma/310182379
+039 swd/4048527-4$vzg
+043 XA-DE;XA-VA
+065 3.6p
+100 $PBenedikt$nXVI.$lPapst
+375 m
+400 Rattsingā, Yōzefu
+400 Rattsingā, Yozefu
+400 Racinger, Josyf
+400 Ratcinger, Jozef
+400 Ratzinger, Joseph Alois
+400 Rātsinǧir, Ǧūzīf
+400 Ratc̕ingeri, Iozep̕
+400 $PBenedicto$nXVI.$lPapa
+400 $PBento$nXVI.$lPapa
+400 $PBenoît$nXVI.$lPape
+400 $PBenedetto$nXVI.$lPapa
+400 $PBenediktas$nXVI.$lPopiežius
+400 $PBenedykt$nXVI.$lPapież
+400 Ratzinger, Joseph$4nafr
+400 Ratzinger, Josef
+400 Ratzinger, Józef
+400 Ratzinguer, Joseph
+400 $PBenedetto$nXVI.
+400 $PBenedikt$nXVI.
+400 $PBenedict$nXVI.$lPope
+400 $PBenedikto$nXVI.$lPapo
+400 $PBenedictus$nXVI.$lPapa
+500 !119141582!Ratzinger, Georg$4bezf$vBruder
+548 1927$4datl
+548 16.04.1927$4datx
+550 Prof. Dr.$4akad
+550 !040445615!Papst$4berc
+550 !04030020X!Katholischer Theologe$4beru
+550 Theologieprofessor$4beru
+550 i$4funk
+550 Sprechst.$4istr
+551 !95305523X!Marktl$4ortg
+551 !040504719!Rom$4ortw
+551 !040624048!Vatikanstadt$4ortw
+667 GNDBeispiel
+670 M
+670 LCAuth
+670 Who's who D (1996)
+670 DMA: PND
+678 $bSohn von Joseph und Maria Ratzinger, Papst seit 19.04.2005
+700 $PBenedict$SDLC$0n 79106175$2naf$vXVI, ;Pope, ;1927-
+903 $eDE-101
+903 $rDE-101
+913 $Spnd$i5$aBenedictus <Papa, XVI.>$0118598546
+913 $Spnd$i5$aBenedikt <Papst, XVI.>$0118598546
+
+
+SET: S9 [197] TTL: 111        PPN: 118584618                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1210:15-05-12 14:01:20 Status: 9999:06-04-08  
+
+005 Tp1
+006 http://d-nb.info/gnd/118584618
+008 pif
+011 s
+012 w
+035 gnd/118584618
+039 pnd/118584618$vzg
+039 swd/4040426-2$vzg
+043 XA-AT
+065 14.4p;16.5p
+100 $PMozart$lFamilie
+550 !040163970!Familie$4obin
+667 GNDBeispiel
+670 Vorlage
+678 $bÖsterr. Musikerfamilie
+903 $eDE-101
+903 $rDE-101
+913 $Spnd$i5$aMozart <Familie>$0118584618
+
+
+SET: S9 [197] TTL: 112        PPN: 118550993                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1210:16-05-12 12:19:13 Status: 9999:06-04-08  
+
+005 Tp1
+006 http://d-nb.info/gnd/118550993
+008 piz
+011 s;f;n;m
+012 v;w;m;z
+035 gnd/118550993
+039 pnd/118550993$vzg
+039 pnd/119709864
+039 pnd/12712814X
+039 pnd/134406001
+039 dma/310096006
+039 swd/4024875-6$vzg
+043 XA-DE
+065 3.6p;27.20p
+100 $PHildegardis$lBingensis
+375 f
+400 $PHildegard$lHeilige, 1098-1179$vSWB-AK
+400 $PHildegard$lSankt
+400 $PHildegardis$lSancta
+400 $PHildegardis$lAbbatissa
+400 $PHildegarde$lSainte
+400 $PIldegarda$lde Bingen
+400 $PHildegardis$lde Monte Sancti Ruperti
+400 $PHildegard$ldie Heilige
+400 $PHildegardis$lde Bingen
+400 $PHildegardt
+400 $PHildegardis
+400 Bingen, Hildegard$cvon
+400 $PHildegard$lof Bingen
+400 $PHildegardis$lSancta Abatissa
+400 $PIldegarda$lSanta
+400 $PIldegarda$lSant'
+400 $PHildegardis$lAbbess
+400 $PHildegard$lHeilige
+400 $PHildegarde$lde Bingen
+400 $PIldegarda$ldi Bingen
+400 $PHildegardis$lAbatissa
+400 $PHildegarda$ldi Bingen
+400 $PHildegarda$lde Bingen
+400 $PHildegard$lBingeniläinen
+400 $PChildegard$lot Bingen
+400 Bingen, Childegard$cot
+400 Bingen, Hildegarde$cde
+400 $PHildegard$lvon Bingen
+400 $PHildegardis von Bingen$v(VD-16)
+400 $PHildegard$lSainte
+400 $PHildegardis$lde Alemannia
+500 !119601699!Aesculapius$4beza$vVD-16 Mitverf.
+500 Gebweiler, Hieronymus$4beza$vVD-16 Mitverf.
+500 !118590375!Osiander, Andreas$4beza$vVD-16 Mitverf.
+500 !124577008!Schott, Johann$4beza$vVD-16 Mitverf.
+500 !118642960!Trithemius, Johannes$4beza$vVD-16 Mitverf.
+548 1098$b1179$4datl
+550 !042046866!Mystikerin$4berc
+550 !040320103!Komponistin$4beru
+550 k$4funk
+550 s$4funk
+550 Text$4funk
+667 GNDBeispiel
+667 12-PMA
+667 12
+667 7
+667 VD-17
+667 VD-16
+670 Tusculum-Lexikon
+670 LThK
+670 CSGL
+670 LMA,V,13/15
+670 M
+672 Sanctae Hildegardis ... Epistolarum liber. - 1566
+672 De praesenti Clericorum tribulatione, futurumque. - 1529
+672 Sant Hildegardten Weissagung uber die Papisten und genanten Ge*. - [1527]
+672 Revelationes SS. virginum Hildegardis et Elisabethae Schonaugie*. - 1628
+672 Revelationum libri sex. - 1628
+672 Joachim <de Flore>: Namhaffter Offenbarungen zwo. - [1518]
+672 Causae et curae. - 1903
+672 Ursachen und Behandlung der Krankheiten. - 1933
+672 Sant Hildegarten Weissagungen uber die Papisten und genanten g*. - [1527]
+672 De morborum, infirmitatum ... 1533. (VD16 H 3626)
+672 DE PRAESENTI CLERICORVM tribulatione,futurorũq
+672 Temporũ euentu,Diuae Hildegardis ... 1529. (VD16 H 3628)
+672 SANCTAE HILDEGARDIS ABBATISSAE IN MONTE S. ROBERTI APVD NAAM FLVVIVM, PROPE BINGAM, ... 1566. (VD16 ZV 7955)
+672 Sant Hildegardten weissagung vber die Papisten vnd genanten geistlichen wilcher erfullung ... 1527. (VD16 H 3632)
+672 Sant Hildegardten Weissagung vber die Papisten vnd genanten Geystlichen Welcher erfullung ... 1527. (VD16 H 3631)
+672 Sant Hildegarten weissagung vber die Papisten vnd genanten geistlichen welcher erfuellung zu ... 1527. (VD16 H 3633)
+678 $bLiber vitae meritorum; Mystikerin
+700 $PHildegard$lSaint$SDLC$0n 80118409$2naf$v1098-1179
+903 $eDE-101
+903 $rDE-101
+913 $Spnd$i5$aHildegardis <Bingensis>$0118550993
+913 $Spnd$i5$aHildegard <von Bingen>$0118550993
+999 $ar02$bFeld 028R: Treffer fuer [pndgebweiler, hieronymus] erfuellt nicht alle Bedingungen
+
+
+SET: S9 [197] TTL: 113        PPN: 118529870                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1210:18-05-12 10:49:46 Status: 9999:06-04-08  
+
+005 Tp1
+006 http://d-nb.info/gnd/118529870
+008 pik
+011 s;a;f;z;t
+012 v;w;k
+035 gnd/118529870
+039 pnd/118529870$vzg
+039 pnd/11966237X
+039 pnd/125976720
+039 swd/4014442-2$vzg
+043 XA-GB
+065 16.5p
+100 $PElisabeth$nI.$lEngland, Königin
+375 f
+400 $PElisabeth$nI.$lEngland, Queen
+400 $PElizabeth$nI.$lEngland, Königin
+400 $PElizabetha$nI.$lAnglia, Regina
+400 $PElisabeth$nI.$lAngleterre, Reine
+400 $PElizabeth$lKönigin von England
+400 $PElizabeth, Königin von England$v(VD-16)
+400 $PElizabeth$nI.$lEngland, Queen
+500 !118652125!Bale, John$4beza$vVD-16 Mitverf.
+500 !118577719!Margarete$lNavarra, Königin, 1492-1549$4beza$vVD-16 Mitverf.
+548 1533$b1603$4datl
+548 07.09.1533$b24.03.1603$4datx
+551 !040939278!Greenwich$4ortg
+551 !945477414!Richmond$gSurrey$4orts
+667 GNDBeispiel
+667 12
+667 7
+667 384
+667 VD-16
+670 M
+672 Elizabeth <England, Queen, I.>: The last speech ... of queen England to her last Parlia*. - 1679
+672 Elizabeth <England, Queen, I.>: Injunctions given by Queen Elizabeth .... - 1559
+672 Elizabeth <England, Queen, I.>: The true copie of a letter from the Queens Maiesty to t*. - 1586
+672 Elizabeth <England, Queen, I.>: The true copie of a letter from the Queenes Maiestie .... - 1969
+672 Elizabeth <England, Queen, I.>: Injunctions given by the Queen Majestie. - 1641
+672 Elizabeth <England, Queen, I.>: A most excellent and remarkabl speech. - 1643
+672 Elizabeth <England, Queen, I.>: Queene Elizabeths speech to her last parliament. - [1601]
+672 Elizabeth <England, Queen, I.>: Proclamation .... - 1971
+672 Die geheime Geschichte von der ... Königin Elisabeth. - 1742
+672 Merkwürdige Geschichte ... Elisabeth der Ersten. - 1759
+672 Die Briefe der Königin Elisabeth von England 1533-1603. - 1938
+672 Marguerite <von Navarra>: A Godly Medytacyon of the christen sowle, concerninge a loue towardes God and hys Christe, ...  1548.  (VD16 M 983)
+678 $bauch bekannt unter The Virgin Queen oder The Maiden Queen, Gloriana oder Good Queen Bess
+903 $eDE-101
+903 $rDE-101
+913 $Spnd$i5$aElizabeth <England, Queen, I.>$0118529870
+913 $Spnd$i5$aElisabeth <England, Königin, I.>$0118529870
+
+
+SET: S9 [197] TTL: 114        PPN: 11851928X                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1210:15-05-12 08:47:28 Status: 9999:06-04-08  
+
+005 Tp1
+006 http://d-nb.info/gnd/11851928X
+008 pip
+011 s;f
+012 v;w;m
+035 gnd/11851928X
+039 pnd/11851928X$vzg
+039 pnd/127588434
+039 pnd/126311129
+039 pnd/135123976
+039 dma/310813972
+039 swd/4009522-8$vzg
+043 XA-GB
+065 12.2p;28p;13.5p
+100 Carroll, Lewis
+375 m
+400 Dodgson, Charles L.$4nawi
+400 Kyaroru, Ruisu
+400 Dodgson, Charles
+400 Carroll, Levis
+400 Carroll, L.
+400 Carrol, Lewis
+400 Caroll, Lewis
+400 Karol, Luis
+400 Karol, L.
+400 Kerol, Luis
+400 Dodgson, Charles Lutwidge$4nawi
+400 Qārôl, Lû'îs
+400 Dodgson, Charles$4nawi
+400 Kėrroll, L'juis
+400 Kerrol, L'juis
+548 1832$b1898$4datl
+548 27.01.1832$b14.01.1898$4datx
+550 !040533093!Schriftsteller$4berc
+550 !040379450!Mathematiker$4beru
+550 !040458938!Photograph$4beru
+550 s$4funk
+550 Text$4funk
+551 !950633860!Daresbury$4ortg
+551 !041281470!Guildford$4orts
+667 Eppelsheimer
+667 GNDBeispiel
+670 LCAuth; M; B 1986; DMA: DB
+672 Dodgson, Charles L.: Sylvie and Bruno. - 1890
+672 Dodgson, Charles L.: Alice's adventures in Wonderland. - 1890
+672 Dodgson, Charles L.: Alice in wonderland, Through the looking-glass and other comic pieces. - 1929
+672 Dodgson, Charles L.: Die alte Fahne. - 1883
+672 Dodgson, Charles L.: Through the looking-glass and what Alice found there. - 1890
+672 Dodgson, Charles L.: The life and letters of Lewis Carroll (Rev. C. L. Dodgson). - 1899
+672 Collingwood, Stuart D.: The life and letters of Lewis Carroll (Rev. C. L. Dodgson). - 1912
+903 $eDE-101
+903 $rDE-101
+913 $Spnd$ia$aCarroll, Lewis$011851928X
+
+
+SET: S9 [197] TTL: 115        PPN: 108872564                            SEITE1 .
+
+Eingabe: 1200:11-11-94 Änderung: 1210:14-05-12 15:26:33 Status: 9999:06-04-08  
+
+005 Tn3
+006 http://d-nb.info/gnd/108872564
+011 f
+012 v
+035 gnd/108872564
+039 pnd/108872564$vzg
+100 Maier, Thomas
+667 GNDBeispiel
+903 $eDE-101
+903 $rDE-101
+913 $Spnd$ia$aMaier, Thomas$0108872564
+
+
+SET: S9 [197] TTL: 116        PPN: 107402742                            SEITE1 .
+
+Eingabe: 1200:15-11-94 Änderung: 9999:07-09-12 09:44:13 Status: 9999:06-04-08  
+
+005 Tp1
+006 http://d-nb.info/gnd/107402742
+008 pis
+011 f
+012 v
+035 gnd/107402742
+039 pnd/107402742$vzg
+100 $PZwieblinger Zwillinge
+500 !123045851!Kauffmann, Gudrun$4nawi
+500 !12304586X!Kauffmann, Gerda$4nawi
+667 Sammelpseud.
+667 GNDBeispiel
+903 $eDE-101
+903 $rDE-101
+913 $Spnd$i5$aZwieblinger Zwillinge$0107402742
+
+
+SET: S9 [197] TTL: 117        PPN: 043072763                            SEITE1 .
+
+Eingabe: 1250:05-03-93 Änderung: 1150:24-07-12 14:56:44 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/4307276-8
+008 siw
+011 s
+012 w;z
+035 gnd/4307276-8
+039 swd/4307276-8$vzg
+065 30m
+083 006.686$d2$t2007-01-01
+150 Adobe Photoshop
+450 Photoshop$vrororo-PC-Lex.
+550 !040066843!Bildverarbeitung$4them
+550 !040473945!Programm$4obin
+667 GNDBeispiel; BS-A02uR08-siw
+670 Beck/dtv Comp. Lex. unter Adobe
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$is$aAdobe Photoshop$04307276-8
+
+
+SET: S9 [197] TTL: 118        PPN: 043053823                            SEITE1 .
+
+Eingabe: 0500:08-02-93 Änderung: 1241:24-08-12 13:37:56 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4305382-8
+008 wit
+011 s
+012 w;z
+035 gnd/4305382-8
+039 swd/4305382-8$vzg
+043 XA-FR
+065 7.10a
+130 Handelsgesetzbuch
+430 Code de commerce
+548 $c1807$4datj
+550 !040232492!Handelsrecht$4obin
+551 !040181456!Frankreich$4aut1
+667 GNDBeispiel; BS-W-05
+670 Vorlage
+677 1807 in Kraft getreten
+903 $eDE-605
+903 $rDE-605
+913 $Sswd$igt$aFrankreich: Handelsgesetzbuch$04305382-8
+
+
+SET: S9 [197] TTL: 119        PPN: 04302128X                            SEITE1 .
+
+Eingabe: 1250:23-12-92 Änderung: 1241:18-09-12 16:01:08 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4302128-1
+008 gib
+011 s
+012 w
+035 gnd/4302128-1
+039 swd/4302128-1$vzg
+043 XA-DE-HE
+065 31.3ab
+151 Messeturm Frankfurt$gFrankfurt am Main
+500 !118815660!Jahn, Helmut$4arch
+550 !041210689!Bürohaus$4obin
+550 !040252108!Hochhaus$4obin
+551 !040181189!Frankfurt am Main$4orta$X1
+667 GNDBeispiel; BS-R02-gib
+670 Vorlage
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aFrankfurt am Main / Messeturm$04302128-1
+
+
+SET: S9 [197] TTL: 120        PPN: 043020356                            SEITE1 .
+
+Eingabe: 0500:22-12-92 Änderung: 1250:09-08-12 12:00:50 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4302035-5
+008 wit
+011 s
+012 w
+035 gnd/4302035-5
+039 swd/4302035-5$vzg
+043 XU
+065 12.2b
+130 Alexander Magnus$gMittelgriechisch
+377 grc
+430 Alexanderroman$gMittelgriechisch
+550 !041418190!Alexanderdichtung$4obin
+550 !041202600!Mittelgriechisch$4spra
+667 GNDBeispiel; BS-W-02
+670 Kindler neu unter Alexanderroman
+677 BF Mittelgriech. Fassungen des Alexanderromans
+903 $eDE-605
+903 $rDE-605
+913 $Sswd$it$aAlexander Magnus <Mittelgriechisch>$04302035-5
+
+
+SET: S9 [197] TTL: 121        PPN: 042903688                            SEITE1 .
+
+Eingabe: 0384:04-08-92 Änderung: 1250:23-07-12 15:08:07 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4290368-3
+008 wit
+011 s
+012 w
+035 gnd/4290368-3
+039 swd/4290368-3$vzg
+043 XS
+065 12.2b;19.1d
+130 Ad Nicomedem regem
+377 grc
+430 An König Nikomedes$vR:ÖB-Alternative
+430 Periegesis ad Nicomedem regem$vPauly unter Skymnos 2.
+430 Periodos tēs en kōmikōi metrōi eis Nikomēdēn basilea
+430 Welt-Rundreise im Versmaß der Komödie an König Nikomedes
+500 !100271693!Scymnus$lChius$4autg
+500 !118592246!Pausanias$lPeriegeta$4autg
+548 v00$4datu
+550 !041137914!Griechisch$4spra
+550 !04132658X!Lehrdichtung$4obin
+667 TITAN
+667 GNDBeispiel; BS-W-10
+670 Thes. ling. Graec. unter Pseudo-Scymnus
+677 Anonyme geograph. Schrift, als deren Verfasser Pseudo-Scymnus, evtl. identisch mit Pausanias <Damascenus>, oder Pausanias <Periegeta> gelten
+903 $eDE-384
+903 $rDE-384
+913 $Sswd$it$aAd Nicomedem regem$04290368-3
+
+
+SET: S9 [197] TTL: 122        PPN: 042827825                            SEITE1 .
+
+Eingabe: 1250:30-04-92 Änderung: 1250:09-08-12 11:31:56 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4282782-6
+008 wit
+011 s
+012 w
+035 gnd/4282782-6
+039 swd/4282782-6$vzg
+043 XA-DE
+065 4.7p
+130 Kritik der reinen Vernunft$f1781
+500 !118559796!Kant, Immanuel$4aut1
+548 $c1781$4datj
+667 GNDBeispiel; BS-W-01
+670 Lex. philos. Werke
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ipt$aKant, Immanuel: Kritik der reinen Vernunft <1781>$04282782-6
+
+
+SET: S9 [197] TTL: 123        PPN: 042613868                            SEITE1 .
+
+Eingabe: 1250:24-06-91 Änderung: 1241:11-10-12 16:05:03 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/4261386-3
+008 sip
+011 s
+012 w;z
+035 gnd/4261386-3
+039 swd/4261386-3$vzg
+065 31.7
+083 338.7629222$d2$t2007-01-01
+083 629.2222$d2$t2007-01-01
+083 629.28722$d1$t2007-01-01
+150 Opel
+510 !004640055!Adam Opel Aktiengesellschaft$4hers
+550 !041145135!Markenname$4obin
+667 Beispiel in RSWK 3.Aufl.
+667 Die verknüpften Körperschaften entsprechen ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+667 GNDBeispiel; BS-A02-sip
+670 Warenzeichen-Lex.
+677 Markenname
+680 Verknüpfe mit einer Produktgruppe; z.B. Personenkraftwagen
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$is$aOpel$04261386-3
+
+
+SET: S9 [197] TTL: 124        PPN: 042471567                            SEITE1 .
+
+Eingabe: 1250:04-01-91 Änderung: 1250:23-07-12 14:59:35 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4247156-4
+008 wit
+011 s
+012 w
+035 gnd/4247156-4
+039 swd/4247156-4$vzg
+043 XT
+065 12.2p
+130 Metamorphoses$n8,183-235
+377 lat
+430 Metamorphosen$n8,183-235$vR:ÖB-Alternative
+500 !118590995!Ovidius Naso, Publius$4aut1
+548 v00$4datu
+548 00$4datu
+667 TITAN
+667 GNDBeispiel; BS-W-10
+670 analog
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ipt$aOvidius Naso, Publius: Metamorphoses 8,183-235$04247156-4
+
+
+SET: S9 [197] TTL: 125        PPN: 042350344                            SEITE1 .
+
+Eingabe: 1250:18-06-90 Änderung: 1241:20-08-12 15:01:02 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/4235034-7
+008 sih
+011 s
+012 w;z
+035 gnd/4235034-7
+039 swd/4235034-7$vzg
+043 XA-DE
+065 16.5
+083 943.0878$d2$t2010-02-15
+150 Wiedervereinigung$gDeutschland
+450 Deutschland$xVereinigung
+450 Vereinigung Deutschlands
+450 Deutschland$gBundesrepublik$xVereinigung$xDeutschland$gDDR
+450 Deutschland$xWiedervereinigung$xGeschichte 1989-1990
+450 Deutsche Einheit$gVereinigung$vB 1996
+548 1989$b1990$4datb
+550 !040703428!Deutsche Frage$4obpa
+550 !041389573!Wiedervereinigung$4obin
+551 !040118827!Deutschland$4geoa
+551 !040118894!Deutschland$gBundesrepublik$4bete
+551 !040118908!Deutschland$gDDR$4bete
+667 GNDBeispiel; BS-R01-sih
+670 B 2006 (online)
+677 In der Öffentlichkeit übliche Terminologie. Historisches Einzelereignis. BF den Vereinigungsprozess der beiden deutschen Staaten seit 1989
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aDeutschland / Vereinigung$04235034-7
+
+
+SET: S9 [197] TTL: 126        PPN: 042313686                            SEITE1 .
+
+Eingabe: 1250:19-04-90 Änderung: 7777:14-09-12 09:05:04 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4231368-5
+008 wit
+011 s
+012 w
+035 gnd/4231368-5
+039 swd/4231368-5$vzg
+043 XA-FR
+065 12.2p
+130 À la recherche du temps perdu$pDu côté de chez Swann
+377 fre
+430 Auf der Suche nach der verlorenen Zeit$pIn Swanns Welt$vR:ÖB-Alternative
+430 Auf der Suche nach der verlorenen Zeit$pDer Weg zu Swann
+500 !118596799!Proust, Marcel$4aut1
+530 !04006834X!Proust, Marcel$aÀ la recherche du temps perdu$4obpa
+667 GNDBeispiel; BS-W-04
+670 Kindler
+670 TA
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ipt$aProust, Marcel: À la recherche du temps perdu / Du côté de chez Swann$04231368-5
+
+
+SET: S9 [197] TTL: 127        PPN: 042255503                            SEITE1 .
+
+Eingabe: 0384:22-01-90 Änderung: 1241:29-10-12 12:03:09 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4225550-8$zhttp://d-nb.info/gnd/5016045-X
+008 gik
+011 s;f
+012 z
+028 5016045-X
+035 gnd/4225550-8
+039 gnd/5016045-X
+039 gkd/5016045-X$vzg
+039 swd/4225550-8$vzg
+043 XA-DE-HE;XA-DXDE
+083 T2--434164$t2007-01-01
+151 Bockenheim$gFrankfurt am Main
+548 $b31.03.1895$4datb
+551 !040931528!Frankfurt-Bockenheim$4nach
+667 GNDBeispiel; BS-G05
+667 MMi
+670 Ritter Geogr.
+670 B
+678 $b1895 nach Frankfurt am Main eingemeindet
+903 $eDE-384
+903 $rDE-384
+913 $Sswd$ig$aBockenheim <Frankfurt am Main>$04225550-8
+913 $Sgkd$ia$aBockenheim <Frankfurt, Main>$05016045-X
+999 $ar05$bFeld 065A: [frankfurt am main] im Index nicht gefunden
+999 $ar02$bFeld 065A: Treffer fuer [swdfrankfurt am main] erfuellt nicht alle Bedingungen
+
+
+SET: S9 [197] TTL: 128        PPN: 042055105                            SEITE1 .
+
+Eingabe: 1250:25-01-89 Änderung: 1250:09-08-12 11:52:50 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4205510-6
+008 wit
+011 s
+012 w
+035 gnd/4205510-6
+039 swd/4205510-6$vzg
+043 XA-DE
+065 12.2p
+130 Nachtwachen
+377 ger
+430 Nachtwachen des Bonaventura
+500 !118563300!Klingemann, Ernst August Friedrich$4aut1
+500 !118767542!Wetzel, Friedrich Gottlob$4autg
+500 !118607057!Schelling, Friedrich Wilhelm Joseph$cvon$4autg
+667 GNDBeispiel; BS-W-01
+670 Kindler neu unter Nachtwachen, B 1986 unter Klingemann
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ipt$aKlingemann, Ernst August Friedrich: Nachtwachen$04205510-6
+
+
+SET: S9 [197] TTL: 129        PPN: 042037239                            SEITE1 .
+
+Eingabe: 1250:25-11-88 Änderung: 1250:20-09-12 10:52:11 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4203723-2
+008 gxz;szz
+011 s
+012 w;z
+035 gnd/4203723-2
+039 swd/4203723-2$vzg
+043 XZ
+065 12.4y;13.1cy
+083 T3C--372$d2$t2012-06-26
+083 704.947$d2$t2010-02-22
+151 Entenhausen
+550 !041612922!Imaginärer Schauplatz$4obin
+550 !040403602!Motiv$4obin
+667 GNDBeispiel; BS-G01-gxz
+670 - analog Atlantis, RSWK § 201,e
+677 Wohnsitz der Familie Duck
+680 Ohne HZ Motiv
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aEntenhausen$04203723-2
+
+
+SET: S9 [197] TTL: 130        PPN: 042033829                            SEITE1 .
+
+Eingabe: 0384:10-11-88 Änderung: 1250:09-08-12 11:55:27 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4203382-2
+008 wit
+011 s
+012 w
+035 gnd/4203382-2
+039 swd/4203382-2$vzg
+043 XA-DE
+065 12.2b
+130 Kaiserchronik
+377 gmh
+430 Deutsche Kaiserchronik
+430 Der @Kaiser und der Könige Buch
+430 Der @keiser und der kunige buoch
+500 !118565060!Konrad$lder Pfaffe$4autg
+550 !042216052!Reimchronik$4obin
+550 !040396878!Mittelhochdeutsch$4spra
+667 GNDBeispiel; BS-W-02
+670 Anon. classics
+670 Stammler Langosch
+677 Mitte des 12. Jh. entstandene Reimchronik
+903 $eDE-384
+903 $rDE-384
+913 $Sswd$it$aKaiserchronik$04203382-2
+
+
+SET: S9 [197] TTL: 131        PPN: 041999142                            SEITE1 .
+
+Eingabe: 1250:22-07-88 Änderung: 1241:02-10-12 14:24:46 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/4199914-9
+008 saz
+011 s
+012 w;z
+035 gnd/4199914-9
+039 swd/4199914-9$vzg
+043 XA-IT
+065 12.4y;13.1cy
+150 Rom$gMotiv
+550 !040403602!Motiv$4obin
+667 GNDBeispiel; BS-R04
+670 analog
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aRom <Motiv>$04199914-9
+
+
+SET: S9 [197] TTL: 132        PPN: 041986938                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 7777:14-09-12 09:05:05 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4198693-3
+008 wit
+011 s
+012 w
+035 gnd/4198693-3
+039 swd/4198693-3$vzg
+043 XA-DE
+065 12.2p
+130 Der @Sandmann
+377 ger
+500 !118552465!Hoffmann, E. T. A.$4aut1
+530 !041139496!Hoffmann, E. T. A.$aNachtstücke$4obpa
+548 $c1817$4datj
+667 GNDBeispiel; BS-W-04
+670 Kindler
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ipt$aHoffmann, Ernst T. A.: Der @Sandmann$04198693-3
+
+
+SET: S9 [197] TTL: 133        PPN: 041956508                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:14-08-12 12:11:09 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4195650-3
+008 giz
+011 s
+012 w
+035 gnd/4195650-3
+039 swd/4195650-3$vzg
+043 XL
+083 T2--1824$t2007-01-01
+151 Indischer Ozean$zRegion
+451 Indik-Staaten
+451 Indik$zRegion
+451 Indik-Länder
+667 GNDBeispiel; BS-05-z
+670 analog
+677 Anrainer u. Meer
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aIndischer Ozean <Region>$04195650-3
+
+
+SET: S9 [197] TTL: 134        PPN: 041887700                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1250:23-07-12 14:53:41 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4188770-0
+008 wit
+011 s
+012 w
+035 gnd/4188770-0
+039 swd/4188770-0$vzg
+043 XT
+065 3.2
+130 Vulgata
+377 lat
+500 !118550853!Hieronymus, Sophronius Eusebius$4uebe
+530 !041816099!Sixtina$4vbal
+530 !040064069!Bibel$4werk
+548 03$4datu
+548 04$4datu
+550 !041143647!Latein$4spra
+550 !040614182!Übersetzung$4obin
+667 TITAN
+667 GNDBeispiel; BS-W-09
+670 M
+670 B 1986
+670 LThK
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aVulgata$04188770-0
+
+
+SET: S9 [197] TTL: 135        PPN: 041784596                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:24-08-12 15:34:26 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4178459-5
+008 wit
+011 s
+012 w;z
+035 gnd/4178459-5
+039 swd/4178459-5$vzg
+065 5.1b
+130 Rorschach-Test
+500 !11874965X!Rorschach, Hermann$4auta
+550 !041494067!Deutungstest$4obin
+667 GNDBeispiel; BS-W-08
+670 Dorsch
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aRorschach-Test$04178459-5
+
+
+SET: S9 [197] TTL: 136        PPN: 041678060                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:09-10-12 10:18:32 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/4167806-0
+008 saz
+011 s
+012 w
+035 gnd/4167806-0
+039 swd/4167806-0$vzg
+065 27.2
+083 573.355$d3$t2007-01-01
+083 591.44$d2$t2007-01-01
+083 611.317$d3$t2007-01-01
+083 612.31$d2$t2007-01-01
+083 612.78$d2$t2007-01-01
+150 Lippe
+450 Lippen
+667 GNDBeispiel; BS-04-IdentZ-Tg
+670 M
+680 ohne HZ für die Anatomie
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$is$aLippe$04167806-0
+
+
+SET: S9 [197] TTL: 137        PPN: 041579135                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 7777:14-09-12 09:05:06 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4157913-6
+008 wit
+011 s
+012 w
+035 gnd/4157913-6
+039 swd/4157913-6$vzg
+065 15.3
+130 Gone with the wind
+430 Vom Winde verweht$vR:ÖB-Alternative
+500 !118845691!Fleming, Victor$4regi
+530 !042059518!Mitchell, Margaret$aGone with the wind$4vorl
+548 $c1939$4datj
+550 !041360559!Sezessionskrieg$g1861-1865$4them
+550 !040171027!Film$4obin
+667 GNDBeispiel; BS-W-06
+670 Buchers Enz. Film
+677 Film USA 1939
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aGone with the wind$04157913-6
+
+
+SET: S9 [197] TTL: 138        PPN: 04148195X                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:12-09-12 12:42:31 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4148195-1
+008 wis
+011 s
+012 w
+035 gnd/4148195-1
+039 swd/4148195-1$vzg
+043 XR
+065 2.1;7.2a;16.3
+130 Codex Hammurapi
+377 akk
+430 Kodex Hammurapi
+430 Codex Hammurabi
+430 Kodex Hammurabi
+451 Paris$xLouvre$xCodex Hammurapi
+500 !118545485!Hammurapi$lBabylonien, König$4auta
+510 !004038266!Musée National du Louvre$gParis$4besi
+548 $cv2000$4dats
+550 !041830792!Stele$4obin
+550 !040271072!Inschrift$4obin
+550 !042116775!Altbabylonisch$4spra
+667 GNDBeispiel; BS-W-05
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 B 1986 unter Hammurapi
+677 Gesetzessamml. auf Stele 1.H.18.Jdt.v.Chr.
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aCodex Hammurapi$04148195-1
+
+
+SET: S9 [197] TTL: 139        PPN: 041462017                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1250:23-07-12 14:52:40 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4146201-4
+008 wit
+011 s
+012 w
+035 gnd/4146201-4
+039 swd/4146201-4$vzg
+065 3.2b
+130 Böse Winzer
+430 Gleichnis von den bösen Winzern
+430 Gleichnis von den Weingärtnern
+430 Matthäusevangelium$n21,33-46
+430 Markusevangelium$n12,1-12
+430 Lukasevangelium$n20,9-19
+430 Die @bösen Winzer
+667 GNDBeispiel; BS-W-09
+667 Beispiel in 3. Aufl. RSWK; gem. Mehrheitsentscheid der SWD-Verbundpartner vom Juni 2000 keine Änderung von § 713,3 RSWK
+670 Bibel Einheitsübers.
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aBöse Winzer$04146201-4
+
+
+SET: S9 [197] TTL: 140        PPN: 04136368X                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1250:28-09-12 16:20:36 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4136368-1
+008 wit
+011 s
+035 gnd/4136368-1
+039 swd/4136368-1$vzg
+043 XS
+065 13.2p;16.3
+130 Borghesischer Fechter
+430 Borghese Gladiator
+500 !118822217!Agasias$lSohn des Dositheos$4kue1
+548 $dv100$4dats
+548 $c1611$4datf
+667 GNDBeispiel; BS-W-11
+670 M
+677 Die Statue wurde um 1611 in den Überresten einer Villa des Nero in Nettuno bei Anzio gefunden. Es handelt sich um eine ca. 100 vor Chr. geschaffene Kopie eines Originals aus dem 3. Jahrhundert vor Chr. Aufbewahrungsort: Musée du Louvre
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ipt$aAgasias <Sohn des Dositheos>: Borghesischer Fechter$04136368-1
+
+
+SET: S9 [197] TTL: 141        PPN: 041350820                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:12-09-12 12:05:17 Status: 9999:17-01-09  
+
+005 Tf1
+006 http://d-nb.info/gnd/4135082-0
+008 vie
+011 s
+035 gnd/4135082-0
+039 swd/4135082-0$vzg
+043 XA-DE;XA-DE-BY
+065 8.2b
+111 Sozialdemokratische Partei Deutschlands$bParteitag$d1982$cMünchen
+511 !985093870!Sozialdemokratische Partei Deutschlands$bParteitag$4obpa
+548 $c1982$4datv
+550 !040447669!Parteitag$4obin
+551 !041277937!München$4ortv
+551 !040118827!Deutschland$4geow
+667 GNDBeispiel; BS-C08
+667 Der verknüpfte Kongress entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 Homepage$uhttp://www.spd.de/Partei/Organisation/1650/parteitag.html
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ik$aSozialdemokratische Partei Deutschlands / Parteitag <1982>$04135082-0
+
+
+SET: S9 [197] TTL: 142        PPN: 041350804                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1250:10-09-12 14:21:22 Status: 9999:17-01-09  
+
+005 Tf1
+006 http://d-nb.info/gnd/4135080-7
+008 vie
+011 s
+035 gnd/4135080-7
+039 swd/4135080-7$vzg
+043 XA-FR
+065 34.2;34.3
+111 Tour de France$d1980
+548 $c1980$4datv
+550 !041530748!Etappenrennen$4obin
+551 !040181456!Frankreich$4geow
+667 GNDBeispiel; BS-C07
+670 Sport-B
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ik$aTour de France <1980>$04135080-7
+
+
+SET: S9 [197] TTL: 143        PPN: 041330528                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:12-09-12 12:44:28 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4133052-3$zhttp://d-nb.info/gnd/4443558-7
+008 wit
+011 s
+012 w
+035 gnd/4133052-3
+039 gnd/4443558-7
+039 swd/4443558-7$vzg
+039 swd/4133052-3$vzg
+043 XA-DE;XA-FR
+065 13.4p;13.2p
+130 Isenheimer Altar
+500 !118542907!Grünewald, Matthias$4kue1
+500 !118869183!Niclas$lHagnower$4bilh
+510 !004413733!Musée d'Unterlinden$gColmar$4besi
+548 1506$b1515$4dats
+667 GNDBeispiel; BS-W-11
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 M
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ipt$aGrünewald, Matthias: Isenheimer Altar$04133052-3
+913 $Sswd$ipt$aNiclas <Hagnower>: Isenheimer Altar$04443558-7
+
+
+SET: S9 [197] TTL: 144        PPN: 041288718                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1250:28-09-12 16:27:02 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4128871-3
+008 wit
+011 s
+012 w
+035 gnd/4128871-3
+039 swd/4128871-3$vzg
+043 XA-IT
+065 13.4p
+130 Das @Jüngste Gericht
+500 !118582143!Michelangelo$lBuonarroti$4kue1
+548 1534$b1541$4dats
+551 !041049705!Sixtinische Kapelle$gRom$4besi
+667 GNDBeispiel; BS-W-11
+670 RSWK § 728
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ipt$aMichelangelo <Buonarroti>: Das @Jüngste Gericht$04128871-3
+
+
+SET: S9 [197] TTL: 145        PPN: 041270495                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:20-08-12 15:01:14 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/4127049-6
+008 sih
+011 s
+012 w;z
+035 gnd/4127049-6
+039 swd/4127049-6$vzg
+043 XA-HU
+065 16.5
+083 943.9052$d2$t2012-06-04
+150 Ungarn$xAufstand$g1956
+450 Ungarn$xRevolution$g1956
+450 Ungarischer Volksaufstand$g1956
+450 Ungarnaufstand$g1956
+450 Ungarn: Aufstand$vB2006 (online)
+548 $c1956$4dats
+550 !040035549!Aufstand$4obin
+551 !040785416!Ungarn$4geoa
+667 GNDBeispiel; BS-R01-sih; 150 muss später angepasst werden: Aufstand in Ungarn
+670 SWL gegen M
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aUngarn / Aufstand <1956>$04127049-6
+
+
+SET: S9 [197] TTL: 146        PPN: 041253957                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:02-10-12 14:18:21 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4125395-4
+008 gib
+011 s
+012 w;z
+035 gnd/4125395-4
+039 swd/4125395-4$vzg
+043 XA-DE-HH
+065 10.6a
+151 Hafen Hamburg
+451 Hamburger Hafen$gHamburg
+550 !041164555!Seehafen$4obin
+550 !04155308X!Freihafen$4obin
+551 !040231186!Hamburg$4orta
+667 GNDBeispiel; BS-R02-gib
+670 analog
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aHamburg / Hafen$04125395-4
+
+
+SET: S9 [197] TTL: 147        PPN: 041224795                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1250:09-08-12 11:32:26 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4122479-6
+008 wit
+011 s
+012 w
+035 gnd/4122479-6
+039 swd/4122479-6$vzg
+043 XA-DE
+065 4.7p
+130 Kritik der reinen Vernunft$f1787
+377 ger
+500 !118559796!Kant, Immanuel$4aut1
+548 $c1787$4datj
+667 GNDBeispiel; BS-W-01
+667 Beispiel in RSWK 3. Aufl.
+670 Kindler
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ipt$aKant, Immanuel: Kritik der reinen Vernunft <1787>$04122479-6
+
+
+SET: S9 [197] TTL: 148        PPN: 041140672                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:18-09-12 16:22:06 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4114067-9
+008 giw
+011 s
+012 w;z
+035 gnd/4114067-9
+039 swd/4114067-9$vzg
+043 XA-FR;XA-ES
+065 19.1d;10.6b
+083 T2--461$t2011-10-11
+151 Jakobsweg
+451 Chemin de Saint Jacques
+451 Camino de Santiago
+451 Jakobusweg
+451 Sternenweg$vVorlage, Wikipedia
+550 !041890205!Wallfahrtsweg$4obin
+551 !04051658X!Santiago de Compostela$4punk
+667 GNDBeispiel; BS-R02-giw
+670 B unter Santiago de Compostela, B 1986
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aJakobsweg$04114067-9
+
+
+SET: S9 [197] TTL: 149        PPN: 041132920                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:21-08-12 15:47:03 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/4113292-0
+008 sis
+011 s
+012 w;z;o
+035 gnd/4113292-0
+039 swd/4113292-0$vzg
+043 XA-DE
+065 11.1a
+083 430$t2007-01-01
+083 T6--31$t2007-01-01
+150 Deutsch
+377 ger
+450 Neuhochdeutsch
+450 Deutsche Sprache
+450 Hochdeutsch$vQuasisynonym
+550 !041839560!Südgermanische Sprachen$4obpa
+667 Beispiel in RSWK 3. Aufl.
+667 GNDBeispiel; BS-R06-sis
+670 M
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aDeutsch$04113292-0
+
+
+SET: S9 [197] TTL: 150        PPN: 041128478                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 7777:14-09-12 09:05:11 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4112847-3
+008 wit
+011 s
+012 w
+035 gnd/4112847-3
+039 swd/4112847-3$vzg
+043 XA-DE
+065 7.12a
+130 Bürgerliches Gesetzbuch$pAllgemeiner Teil
+530 !040697193!Deutschland$aBürgerliches Gesetzbuch$4obpa
+548 $c1900$4datj
+550 !040697207!Bürgerliches Recht$4obin
+551 !040118827!Deutschland$4aut1
+667 GNDBeispiel; BS-W-05
+670 M
+680 Für Lehrgebiet benutze Bürgerliches Recht ; Allg. Teil
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$igt$aDeutschland: Bürgerliches Gesetzbuch / Allgemeiner Teil$04112847-3
+
+
+SET: S9 [197] TTL: 151        PPN: 041082052                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:27-08-12 11:11:11 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4108205-9
+008 wit
+011 s
+012 w
+035 gnd/4108205-9
+039 swd/4108205-9$vzg
+043 XA-NL
+065 13.4p
+130 Maler in seinem Atelier
+430 De @Schilderconst$vVorlage
+430 Der @Künstler in seiner Werkstatt malend$vVorlage
+430 Allegorie der Malerei$vLex. Kunst, Kunst B
+430 Die @Malkunst$vB 1986
+430 Atelier des Künstlers$vLex. Kunst
+430 Das @Atelier des Malers$vHerder Lex. Kunst
+500 !118626590!Vermeer van Delft, Jan$4kue1
+548 1660$b1670$4dats
+667 GNDBeispiel; BS-W-11
+670 M
+677 Gemälde, Wien / Kunsthistorisches Museum
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ipt$aVermeer van Delft, Jan: Maler in seinem Atelier$04108205-9
+
+
+SET: S9 [197] TTL: 152        PPN: 041016548                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:18-09-12 15:12:17 Status: 9999:17-01-09  
+
+005 Tb1
+006 http://d-nb.info/gnd/4101654-3
+008 kio
+011 s
+012 w;z
+035 gnd/4101654-3
+039 swd/4101654-3$vzg
+043 XA-DE-BY
+065 8.2a
+110 München$bStadtrat
+550 !041827597!Stadtrat$4obin
+551 !041277937!München$4adue
+551 !040050440!Bayern$4geow
+667 GNDBeispiel; BS-K13uK19uK26-TgTb
+670 GKD
+680 Datensatz nicht für Titelverknüpfungen in der Formalerschließung verwenden. Titelverknüpfungen in der Formalerschließung erfolgen stattdessen mit der übergeordneten Gebietskörperschaft.
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ic$aMünchen / Stadtrat$04101654-3
+
+
+SET: S9 [197] TTL: 153        PPN: 040992993                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:28-08-12 09:43:15 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4099299-8
+008 wit
+011 s
+012 w
+035 gnd/4099299-8
+039 swd/4099299-8$vzg
+043 XA-DE
+065 12.2p
+083 833.912$t2007-01-01
+130 Buddenbrooks
+377 ger
+500 !118577166!Mann, Thomas$4aut1
+548 $c1901$4datj
+667 GNDBeispiel; BS-W-01
+670 Kindler neu
+677 Roman, 1901
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ipt$aMann, Thomas: Buddenbrooks$04099299-8
+
+
+SET: S9 [197] TTL: 154        PPN: 040991687                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:28-08-12 09:45:16 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4099168-4
+008 wit
+011 s
+012 w
+035 gnd/4099168-4
+039 swd/4099168-4$vzg
+043 XA-RU
+065 12.2p
+083 891.733$t2007-01-01
+130 Prestuplenie i nakazanie
+377 rus
+430 Schuld und Sühne$vR:ÖB-Alternative
+430 Rodion Raskolnikoff
+430 Verbrechen und Strafe
+500 !118527053!Dostoevskij, Fedor M.$4aut1
+667 GNDBeispiel; BS-W-01
+670 Kindler
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ipt$aDostoevskij, Fedor M.: Prestuplenie i nakazanie$04099168-4
+
+
+SET: S9 [197] TTL: 155        PPN: 040931528                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:29-10-12 11:58:48 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4093152-3$zhttp://d-nb.info/gnd/514754-2
+008 gik
+011 s;f
+012 w;z
+035 gnd/4093152-3
+039 gnd/514754-2
+039 gkd/514754-2$vzg
+039 swd/4093152-3$vzg
+043 XA-DE-HE
+083 T2--434164$t2007-01-01
+151 Frankfurt-Bockenheim
+451 Frankfurt am Main- Bockenheim
+548 1.4.1895$4datb
+551 !042255503!Bockenheim$gFrankfurt am Main$4vorg
+551 !040181189!Frankfurt am Main$4adue
+667 GNDBeispiel; BS-G05
+667 MMi
+670 Orts-Mü., B, GKD
+678 $bSeit 1895 Stadtteil von Frankfurt am Main
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aFrankfurt-Bockenheim$04093152-3
+913 $Sgkd$ia$aFrankfurt-Bockenheim$0514754-2
+
+
+SET: S9 [197] TTL: 156        PPN: 040768228                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 0384:27-11-12 11:48:10 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4076822-3
+008 gib
+011 s
+012 w
+035 gnd/4076822-3
+039 swd/4076822-3$vzg
+043 XA-VA;XA-IT
+065 31.3ab;3.5a
+151 Peterskirche$gRom
+451 Peterskirche$gVatikanstadt
+451 San Pietro in Vaticano$gRom
+451 Sankt Peter$gRom
+451 Petersdom$gRom
+548 1506$b1626$4dats
+550 !04004629X!Basilika$4obin
+551 !040504719!Rom$4orta$X1
+551 !040624048!Vatikanstadt$4geow
+667 GNDBeispiel; BS-R02-gib
+670 B 2006
+677 Grundsteinlegung des Neubaus: 18.4.1506, Schlußweihe: 18.11.1626
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aRom / Peterskirche$04076822-3
+999 $ar05$bFeld 065@: [rom] im Index nicht gefunden
+999 $ar05$bFeld 065@: [rom] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 157        PPN: 040760227                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1250:23-07-12 15:01:01 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4076022-4
+008 wit
+011 s
+012 w
+035 gnd/4076022-4
+039 swd/4076022-4$vzg
+065 3.2ba
+083 227.92$t2010-07-26
+130 Petrusbrief$nI.
+500 !118593323!Petrus$lApostel$4autg
+530 !041239350!Petrusbrief$nI. II.$4obpa
+667 GNDBeispiel; BS-W-09
+670 RSWK, Anl. 7
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aPetrusbrief <I.>$04076022-4
+
+
+SET: S9 [197] TTL: 158        PPN: 040755614                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:29-10-12 11:15:51 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4075561-7
+008 gin
+011 s
+012 w;z
+035 gnd/4075561-7
+039 swd/4075561-7$vzg
+043 XA-CH;XA-FR;XA-DE
+065 19.1b
+083 T2--434$t2007-01-01
+151 Oberrheinisches Tiefland
+451 Oberrheinebene
+451 Oberrheinlande
+451 Oberrhein-Gebiet
+451 Oberrheinische Tiefebene
+451 Oberrhein$zRegion
+550 !041854330!Tiefland$4obin
+667 GNDBeispiel; BS-A02-gin
+670 B 2006
+670 Geo-Du.
+677 Talsenke des Oberrheins, von Basel bis Mainz, ca. 300 km lang
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aOberrheinisches Tiefland$04075561-7
+
+
+SET: S9 [197] TTL: 159        PPN: 040754863                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1250:18-07-12 17:33:41 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4075486-8
+008 gin
+011 s
+012 w;z
+035 gnd/4075486-8
+039 swd/4075486-8$vzg
+043 XA-DE
+065 19.1b
+083 T2--435$t2007-01-01
+151 Nordwestdeutschland
+451 Deutschland$zNordwest
+451 Deutschland$gWestliche Länder$xNordwestdeutschland
+451 Norddeutschland$zWest
+451 Norddeutsches Tiefland$zWest
+451 Deutschland$zNordwest$xKüstenländer
+550 !041854330!Tiefland$4obin
+551 !040754545!Norddeutschland$4obpa
+667 GNDBeispiel; BS-A02-gin
+670 KfS
+677 BF Westteil des Norddeutschen Tieflandes
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aNordwestdeutschland$04075486-8
+999 $ar05$bFeld 065@: [westliche laender] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 160        PPN: 040721337                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:24-08-12 13:39:23 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4072133-4
+008 wit
+011 s
+012 w;z
+035 gnd/4072133-4
+039 swd/4072133-4$vzg
+043 XA-DE
+065 7.3
+083 342.4302$d3$t2007-01-01
+130 Grundgesetz
+430 Verfassung$f1949
+548 $c1949$4datj
+550 !040628019!Verfassungsrecht$4obin
+551 !040118827!Deutschland$4aut1
+551 !040118894!Deutschland$gBundesrepublik$4auta$Zbis 1990
+667 GNDBeispiel; BS-W-05
+667 Die Korrektur dieses SWD-Satzes gemäß § 715.2 der 3. Aufl. RSWK zum ersten Heft des DNB-Jahrgangs 1999 führte zu einer automatischen Korrektur der Titeldatensätze 1986-1998. Daher entspricht die Kettenstruktur dieser Sätze nicht immer § 15 RSWK.
+670 RSWK
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$igt$aDeutschland: Grundgesetz$04072133-4
+999 $ar05$bFeld 065@: [bundesrepublik] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 161        PPN: 040657922                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1250:23-07-12 15:23:47 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/4065792-9
+008 sie
+011 s
+012 w
+035 gnd/4065792-9
+039 swd/4065792-9$vzg
+043 XA
+065 17.1
+083 T5--39$t2011-03-25
+150 Westgoten
+450 Visigothae
+450 Terwingen
+450 Visigoten
+450 Wisigoten
+550 !040216500!Goten$4obpa
+551 !040792250!Westgotenreich$4vbal
+667 GNDBeispiel; BS-R06-sie
+670 B 2006 (online)
+670 M
+677 Einer der beiden großen Stämme der Goten
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aWestgoten$04065792-9
+
+
+SET: S9 [197] TTL: 162        PPN: 040637263                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1250:12-09-12 14:38:04 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4063726-8
+008 giw
+011 s
+012 w
+035 gnd/4063726-8
+039 swd/4063726-8$vzg
+043 XA-DE-SH;XA-DK
+065 10.6a
+151 Vogelfluglinie
+550 !041878442!Verkehrsweg$4obin
+667 GNDBeispiel; BS-R02-giw
+670 M
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aVogelfluglinie$04063726-8
+
+
+SET: S9 [197] TTL: 163        PPN: 040598519                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 7777:14-09-12 08:58:15 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4059851-2
+008 wit
+011 s
+012 w
+035 gnd/4059851-2
+039 swd/4059851-2$vzg
+065 3.2ba
+083 227.81$t2007-01-01
+130 Thessalonicherbrief$nI.
+500 !118641549!Paulus$lApostel$4aut1
+530 !040759415!Paulus$lApostel$aThessalonicherbrief$nI. II.$4obpa
+667 GNDBeispiel; BS-W-09
+670 RSWK
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ipt$aPaulus <Apostel>: Thessalonicherbrief <I.>$04059851-2
+
+
+SET: S9 [197] TTL: 164        PPN: 040582868                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:14-08-12 12:11:19 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4058286-3
+008 giz
+011 s
+012 w;z
+035 gnd/4058286-3
+039 swd/4058286-3$vzg
+043 XA-DE-BW
+083 T2--43471$t2007-01-01
+151 Stuttgart$zRegion
+667 GNDBeispiel; BS-05-z
+670 analog
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aStuttgart <Region>$04058286-3
+
+
+SET: S9 [197] TTL: 165        PPN: 040542998                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1250:12-09-12 14:38:25 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4054299-3
+008 giw
+011 s
+012 w
+035 gnd/4054299-3
+039 swd/4054299-3$vzg
+043 XB
+065 10.6a
+083 T2--5$t2007-01-01
+151 Seidenstraße
+550 !040232573!Handelsstraße$4obin
+667 GNDBeispiel; BS-R02-giw
+670 M
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aSeidenstraße$04054299-3
+
+
+SET: S9 [197] TTL: 166        PPN: 04052678X                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:11-10-12 16:11:12 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4052678-1
+008 gik
+011 s
+012 w;z
+028 24372-3
+035 gnd/4052678-1
+039 swd/4052678-1$vzg
+043 XA-PL;XA-CZ;XA-DE-SN
+083 T2--4385$t2007-01-01
+151 Schlesien
+451 Herzogtum Schlesien
+451 Provinz Schlesien
+451 Śla̜sk
+451 Slezsko
+550 !040526798!Schlesier$4vbal
+551 !944178944!Polen$zSüdwest$4vbal
+667 Maschinelle Ergänzung der GKD-Nummer
+667 GNDBeispiel; BS-A02-Tg-vbal
+667 Der Datensatz ist noch nicht mit dem GKD-Datensatz zusammengeführt. Hier soll nur die Möglichkeit illustriert werden, dass man in der Sacherschließung verwandte Begriffe bei Geografika ergänzen kann.
+670 B 2006 2.
+670 Geo-Du.
+670 M
+677 Historische Landschaft in Mitteleuropa, in Polen, der kleinere Südwestteil im Freistaat Sachsen, ein kleiner Südteil in der Tschechischen Republik
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aSchlesien$04052678-1
+
+
+SET: S9 [197] TTL: 167        PPN: 040396878                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:21-08-12 15:46:56 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/4039687-3
+008 sis
+011 s
+012 w;z
+035 gnd/4039687-3
+039 swd/4039687-3$vzg
+043 XA-DE
+065 11.1a
+083 437.02$d3$t2007-01-01
+150 Mittelhochdeutsch
+377 gmh
+450 Mittelhochdeutsche Sprache
+548 1050$b1350$4datb
+550 !041132920!Deutsch$4obpa
+667 Beispiel in RSWK 3. Aufl.
+667 GNDBeispiel; BS-R06-sis
+670 B 1986
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aMittelhochdeutsch$04039687-3
+
+
+SET: S9 [197] TTL: 168        PPN: 040358909                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:11-10-12 15:54:18 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4035890-2
+008 gin
+011 s
+012 w
+035 gnd/4035890-2
+039 swd/4035890-2$vzg
+043 XA-DE-NW
+065 19.3
+083 T2--4355$t2011-01-17
+151 Lippe$gFluss
+550 !041319729!Fluss$4obin$X1
+667 GNDBeispiel; BS-04-IdentZ-Tg
+670 B 2006 2.
+670 M
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aLippe <Fluss>$04035890-2
+
+
+SET: S9 [197] TTL: 169        PPN: 040348563                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:22-08-12 09:06:23 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/4034856-8
+008 sis
+011 s
+012 w
+035 gnd/4034856-8
+039 swd/4034856-8$vzg
+043 XA-DE-HE
+065 11.1a
+150 Hessisch
+377 ger
+550 !04040725X!Mundart$4obin
+550 !040497550!Rheinfränkisch$4obpa
+551 !040247295!Hessen$4geoa
+667 GNDBeispiel; BS-R07
+670 M unter Deutsche Mundarten
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aHessisch$04034856-8
+
+
+SET: S9 [197] TTL: 170        PPN: 040287726                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1250:23-07-12 14:52:15 Status: 9999:17-01-09  
+
+005 Tu1
+006 http://d-nb.info/gnd/4028772-5
+008 wit
+011 s
+012 w
+035 gnd/4028772-5
+039 swd/4028772-5$vzg
+065 3.2aa
+083 222.2$t2007-01-01
+130 Josua$gBuch
+430 Buch Josua
+530 !040247988!Hexateuch$4obpa
+530 !041975588!Deuteronomistisches Geschichtswerk$4obpa
+667 GNDBeispiel; BS-W-09
+670 RSWK, Anl. 7
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$it$aJosua <Buch>$04028772-5
+
+
+SET: S9 [197] TTL: 171        PPN: 040281132                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:07-11-12 13:45:13 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/4028113-9
+008 saz
+011 s
+012 w
+035 gnd/4028113-9
+039 swd/4028113-9$vzg
+043 XD-MX;XP
+065 12.4;13.1c
+150 Fußball-Weltmeisterschaft$g13, 1986, Motiv
+550 !040403602!Motiv$4obin
+667 GNDBeispiel; BS-R04
+670 Vorlage
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ik$aFußballweltmeisterschaft <1986, Motiv>$04028113-9
+
+
+SET: S9 [197] TTL: 172        PPN: 040278352                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1250:23-07-12 15:23:31 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/4027835-9
+008 sie
+011 s
+012 w;z
+035 gnd/4027835-9
+039 swd/4027835-9$vzg
+043 XA-IT
+065 17.1
+083 T5--51$t2007-01-01
+083 305.851$d3$t2010-06-10
+150 Italiener
+550 !041324706!Italienerin$4vbal
+551 !040278336!Italien$4vbal
+667 GNDBeispiel; BS-R06-sie
+670 analog
+670 3. Aufl. RSWK § 212b.2b
+680 Benutzt, soweit außerhalb Italiens lebend, für die Italiener in Italien verwende Italien
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aItaliener$04027835-9
+
+
+SET: S9 [197] TTL: 173        PPN: 040275337                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:21-08-12 15:46:46 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/4027533-4
+008 sis
+011 s
+035 gnd/4027533-4
+039 swd/4027533-4$vzg
+043 XD;XA-DK
+065 11.1a
+083 497.12$t2012-02-06
+083 T6--9712$t2012-02-06
+150 Inupik
+377 ipk
+450 Iñupiat$vKlose
+450 Iñupiaq$vLoC subjects
+550 !944341950!Inuit-Sprache$4obpa
+667 GNDBeispiel; BS-R06-sis
+670 M unter Eskimoisch
+677 Dialekt
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aInupik$04027533-4
+
+
+SET: S9 [197] TTL: 174        PPN: 040188612                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:11-10-12 15:53:20 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4018861-9
+008 gin
+011 s
+012 w
+035 gnd/4018861-9
+039 swd/4018861-9$vzg
+043 XA-DE-HE;XA-DE-NI
+065 19.3
+083 T2--4341$t2007-01-01
+151 Fulda$gFluss
+550 !041319729!Fluss$4obin$X1
+667 GNDBeispiel; BS-04-IdentZ-Tg
+670 B 2006 1.
+677 Quellfluß der Weser bei Hann. Münden, entspringt an d. Wasserkuppe
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aFulda <Fluss>$04018861-9
+
+
+SET: S9 [197] TTL: 175        PPN: 040181995                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1250:23-07-12 15:23:15 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/4018199-6
+008 sie
+011 s
+012 w;z
+035 gnd/4018199-6
+039 swd/4018199-6$vzg
+043 XA-FR
+065 17.1
+083 T5--41$t2007-01-01
+083 305.841$d3$t2010-06-10
+150 Franzosen
+550 !043233848!Französin$4vbal
+551 !040181456!Frankreich$4vbal
+667 GNDBeispiel; BS-R06-sie
+670 M
+670 3. Aufl. RSWK § 212b.2b
+680 Benutzt, soweit im Ausland lebend, für die Franzosen in Frankreich verwende Frankreich
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aFranzosen$04018199-6
+
+
+SET: S9 [197] TTL: 176        PPN: 040158330                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1241:29-10-12 14:40:51 Status: 9999:17-01-09  
+
+005 Ts1
+006 http://d-nb.info/gnd/4015833-0
+008 saz
+011 s
+012 w;z
+035 gnd/4015833-0
+039 swd/4015833-0$vzg
+065 3.6b
+083 284$d3$t2012-03-23
+150 Evangelische Kirche
+550 !040475387!Protestantismus$4vbal
+667 GNDBeispiel; BS-K22
+670 Au=DB
+670 Beispiel in RSWK 3. Aufl.
+680 Bis März 2010: nicht permutierend, wenn nur zur Unterscheidung bzw. Präzisierung der konfessionellen Richtung benutzt, d. h. wenn Konfession bzw. Religionsgemeinschaft nicht Hauptgegenstand der Darstellung ist; ist die Evangelische Kirche Hauptgegenstand der Darstellung, permutiert das SW (seit April 2010 permutiert "Evangelische Kirche" immer)
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$is$aEvangelische Kirche$04015833-0
+
+
+SET: S9 [197] TTL: 177        PPN: 040033856                            SEITE1 .
+
+Eingabe: 1250:01-07-88 Änderung: 1250:20-09-12 10:52:16 Status: 9999:17-01-09  
+
+005 Tg1
+006 http://d-nb.info/gnd/4003385-5
+008 gxz;szz
+011 s
+012 w
+035 gnd/4003385-5
+039 swd/4003385-5$vzg
+043 XZ
+065 12.4y;13.1cy
+083 T3C--372$d2$t2012-06-26
+083 704.947$d2$t2010-02-22
+151 Atlantis
+451 Atlantis$gMotiv
+550 !041612922!Imaginärer Schauplatz$4obin
+550 !040403602!Motiv$4obin
+667 GNDBeispiel; BS-G01-gxz
+670 M, B 1986 1.
+680 Ohne HZ Motiv
+903 $eDE-101
+903 $rDE-101
+913 $Sswd$ig$aAtlantis$04003385-5
+999 $ar05$bFeld 065@: [motiv] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 178        PPN: 007781563                            SEITE1 .
+
+Eingabe: 9002:09-08-93 Änderung: 1241:18-09-12 12:01:40 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/2131513-9$zhttp://d-nb.info/gnd/4321897-0
+008 kio
+011 f;s
+012 w
+035 gnd/2131513-9
+039 gnd/4321897-0
+039 swd/4321897-0$vzg
+039 gkd/2131513-9$vzg
+043 XD-US
+065 8.4
+110 USA$b51st Engineer Combat Battalion
+410 USA$bEngineer Combat Battalion$n51
+410 USA$bArmy$b51st Engineer Combat Battalion
+410 USA$bArmy$bEngineer Combat Battalion$n51
+410 51st Engineer Combat Battalion
+410 Engineer Combat Battalion$n51
+510 !000021881!United States$bArmy$4adue
+550 !041320344!Heer$4obin
+551 !040787044!USA$4geow
+667 GNDBeispiel; BS-K05
+667 Die verknüpften Körperschaften entsprechen ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen
+667 MMi
+670 Vorlage
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aUnited States / Engineer Combat Battalion <51>$02131513-9
+913 $Sswd$ic$aUSA / Engineer Combat Battalion <51>$04321897-0
+999 $ar05$bFeld 029@: [united states 51] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 179        PPN: 007652879                            SEITE1 .
+
+Eingabe: 9002:03-07-91 Änderung: 9999:14-11-12 02:39:10 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/2117905-0$zhttp://d-nb.info/gnd/4253624-8
+008 kio
+011 f;s
+012 v;z;w
+035 gnd/2117905-0
+039 gnd/4253624-8
+039 swd/4253624-8$vzg
+039 gkd/5516967-3
+039 gkd/2117905-0$vzg
+043 XA-DE;XA-DE-BW
+065 7.8a
+110 Deutschland$bBundesverfassungsgericht
+410 Bundesverfassungsgericht$gDeutschland
+410 Deutschland$bConstitutional Court
+410 Federal Constitutional Court$gDeutschland
+410 Constitutional Court$gDeutschland
+410 Deutschland$bBundesverfassungsgericht$bPressestelle$4spio
+410 Pressestelle$gDeutschland, Bundesverfassungsgericht$4spio
+410 Deutschland$bBundesverfassungsgericht$bDezernat Kirchhof$4spio
+410 Deutschland$bBundesverfassungsgericht$bPressereferat$4spio
+410 Pressereferat$gDeutschland, Bundesverfassungsgericht$4spio
+410 Press Office$gDeutschland, Bundesverfassungsgericht$4spio
+410 Deutschland$bBundesverfassungsgericht$bPress Office$4spio
+410 Deutschland$bCour Constitutionnelle Fédérale
+410 Cour Constitutionnelle Fédérale$gDeutschland
+410 Deutschland$bSavezni Ustavni Sud
+410 Savezni Ustavni Sud$gDeutschland
+410 Savezni Ustavni Sud Nemačke
+410 BVerfG$4abku
+410 BVerfGK$4abku
+510 !000351946!Deutschland$gBundesrepublik$bBundesverfassungsgericht$4vorg
+548 1990$4datb
+551 !040118827!Deutschland$4adue
+551 !040297136!Karlsruhe$4orta
+667 GNDBeispiel; BS-K13uK19uK26
+667 MMi
+670 Homepage$uhttp://www.bundesverfassungsgericht.de/
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aDeutschland / Bundesverfassungsgericht$02117905-0
+913 $Sswd$ic$aDeutschland / Bundesverfassungsgericht$04253624-8
+999 $ar05$bFeld 029@: [deutschland] im Index nicht gefunden
+999 $ar05$bFeld 029@: [deutschland] im Index nicht gefunden
+999 $ar05$bFeld 029@: [deutschland] im Index nicht gefunden
+999 $ar05$bFeld 029@: [deutschland bundesverfassungsgericht] im Index nicht gefunden
+999 $ar05$bFeld 029@: [deutschland bundesverfassungsgericht] im Index nicht gefunden
+999 $ar05$bFeld 029@: [deutschland bundesverfassungsgericht] im Index nicht gefunden
+999 $ar05$bFeld 029@: [deutschland] im Index nicht gefunden
+999 $ar05$bFeld 029@: [deutschland] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 180        PPN: 007611587                            SEITE1 .
+
+Eingabe: 9002:25-09-90 Änderung: 1241:16-10-12 11:35:20 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/2113553-8$zhttp://d-nb.info/gnd/4586770-7
+008 kio
+011 f;s
+012 z;v
+035 gnd/2113553-8
+039 gnd/4586770-7
+039 swd/4586770-7$vzg
+039 gkd/2113553-8$vzg
+043 XA-DE-NI
+065 8.1;8.2a
+110 Niedersachsen$bNiedersächsisches Ministerium für Bundes- und Europaangelegenheiten
+410 Niedersächsisches Ministerium für Bundes- und Europaangelegenheiten
+410 Ministerium für Bundes- und Europaangelegenheiten$gNiedersachsen
+410 Niedersachsen$bMinister für Bundes- und Europaangelegenheiten
+410 Niedersächsischer Minister für Bundes- und Europaangelegenheiten
+410 Minister für Bundes- und Europaangelegenheiten$gNiedersachsen
+410 Niedersachsen$bMinisteriet for Forbunds- og Europaanliggender
+410 Ministeriet for Forbunds- og Europaanliggender$gNiedersachsen
+410 Niedersachsen$bMinistry for Federal and European Affairs
+410 Ministry for Federal and European Affairs$gNiedersachsen
+410 Niedersachsen$bMinisterstwo do Spraw Federalnych i Europejskich
+410 Ministerstwo do Spraw Federalnych i Europejskich$gNiedersachsen
+410 Niedersachsen$bMinisterstvo Federal'nych i Evropejskich Del
+410 Ministerstvo Federal'nych i Evropejskich Del$gNiedersachsen
+410 Niedersachsen$bNiedersächsisches Ministerium für Bundes- und Europaangelegenheiten$bReferat für Presse- und Öffentlichkeitsarbeit$4spio
+510 !004257944!Niedersachsen$bMinister für Bundesangelegenheiten$4vorg
+510 !954572939!Niedersachsen$bMinisterium der Justiz und für Europaangelegenheiten$4nach
+550 !041700678!Ministerium$4obin
+551 !040422267!Niedersachsen$4adue
+667 MMi
+667 GNDBeispiel; BS-K20
+667 Die verknüpften Körperschaften entsprechen ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 BRD, Niedersachsen
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aNiedersachsen / Ministerium für Bundes- und Europaangelegenheiten$02113553-8
+913 $Sswd$ic$aNiedersachsen / Minister für Bundes- und Europaangelegenheiten$04586770-7
+999 $ar05$bFeld 029@: [niedersachsen] im Index nicht gefunden
+999 $ar05$bFeld 029@: [niedersachsen] im Index nicht gefunden
+999 $ar05$bFeld 029@: [niedersachsen] im Index nicht gefunden
+999 $ar05$bFeld 029@: [niedersachsen] im Index nicht gefunden
+999 $ar05$bFeld 029@: [niedersachsen] im Index nicht gefunden
+999 $ar05$bFeld 029@: [niedersachsen] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 181        PPN: 007219008                            SEITE1 .
+
+Eingabe: 9002:18-04-89 Änderung: 1250:30-07-12 10:31:41 Status: 9999:23-04-10  
+
+005 Tf1
+006 http://d-nb.info/gnd/2072051-8
+008 vie
+011 f
+012 v
+035 gnd/2072051-8
+039 gkd/2072051-8$vzg
+043 XD-US
+111 San Francisco Cancer Symposium$n17$d1982$cSan Francisco, Calif.
+411 Annual San Francisco Cancer Symposium$n17$d1982$cSan Francisco, Calif.
+411 17. Annual San Francisco Cancer Symposium, San Francisco, Calif., Febr. 27 - 28, 1982$4nauv
+411 Cancer Symposium$n17$d1982$cSan Francisco, Calif.
+548 $c1982$4datv
+551 !040515206!San Francisco, Calif.$4ortv
+667 GNDBeispiel; BS-C03uC05uC07
+670 $uhttp://openlibrary.org
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aSan Francisco Cancer Symposium <17, 1982, San Francisco, Calif.>$02072051-8
+
+
+SET: S9 [197] TTL: 182        PPN: 005014549                            SEITE1 .
+
+Eingabe: 9002:18-04-89 Änderung: 9999:14-11-12 02:36:41 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/501454-2$zhttp://d-nb.info/gnd/4207948-2
+008 kiz
+011 f;s
+012 v;z
+035 gnd/501454-2
+039 gnd/4207948-2
+039 swd/4207948-2$vzg
+039 gkd/501454-2$vzg
+043 XA-AT-9
+065 15.4
+110 Österreichischer Rundfunk$bHörfunk
+410 Hörfunk$gWien
+410 ORF-Radio Österreich
+510 !004787560!Österreichischer Rundfunk$4adue
+550 !041294297!Rundfunkanstalt$4obin
+551 !040660095!Wien$4orta
+551 !040432718!Österreich$4geow
+667 GNDBeispiel; BS-K11-K12
+667 MMi
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 Wikipedia$bStand: 07.11.2012$uhttp://de.wikipedia.org/wiki/%C3%96sterreichischer_Rundfunk#H.C3.B6rfunk
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aÖsterreichischer Rundfunk <Wien> / Hörfunk$0501454-2
+913 $Sswd$ik$aÖsterreichischer Rundfunk / Hörfunk$04207948-2
+
+
+SET: S9 [197] TTL: 183        PPN: 004795954                            SEITE1 .
+
+Eingabe: 9002:18-04-89 Änderung: 1241:18-09-12 11:02:34 Status: 9999:23-04-10  
+
+005 Tf1
+006 http://d-nb.info/gnd/2021867-9
+008 vie
+011 f
+012 v
+035 gnd/2021867-9
+039 gkd/2021867-9$vzg
+043 XA-DE-BW
+111 Siedlungswasserwirtschaftliches Kolloquium$gForschungs- und Entwicklungsinstitut für Industrie- und Siedlungswasserwirtschaft sowie Abfallwirtschaft$n37$d1963$cStuttgart
+510 !00401538X!Forschungs- und Entwicklungsinstitut für Industrie- und Siedlungswasserwirtschaft sowie Abfallwirtschaft$4vera$X1
+548 $c1963$4datv
+551 !040582825!Stuttgart$4ortv
+667 GNDBeispiel; BS-03-IdentZ-Tb-Tf
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aSiedlungswasserwirtschaftliches Kolloquium <Forschungs- und Entwicklungsinstitut für Industrie- und Siedlungswasserwirtschaft sowie Abfallwirtschaft, Stuttgart, 37, 1963, Stuttgart>$02021867-9
+999 $ar03$bFeld 029R: Zuviele Treffer fuer [gkdforschungs- und entwicklungsinstitut fuer industrie- und siedlungswasserwirtschaft sowie abfallwirtschaft stuttgart]
+999 $ar05$bFeld 030A: [forschungs- und entwicklungsinstitut fuer industrie- und siedlungswasserwirtschaft sowie abfallwirtschaft stuttgart] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 184        PPN: 004760468                            SEITE1 .
+
+Eingabe: 9002:18-04-89 Änderung: 1241:12-09-12 11:56:55 Status: 9999:23-04-10  
+
+005 Tf1
+006 http://d-nb.info/gnd/2017616-8
+008 vif
+011 f
+012 v;z
+035 gnd/2017616-8
+039 gkd/6112791-7
+039 gkd/2017616-8$vzg
+043 XA-DDDE;XA-DE-SN
+111 Landwirtschaftsausstellung der DDR
+411 Agra DDR
+411 Landwirtschaftsausstellung der Deutschen Demokratischen Republik
+411 Landwirtschaftsausstellung DDR
+411 Agra$4abku
+511 !946080097!Landwirtschaftsausstellung und Blumenschau der DDR$4vorg
+551 !040376044!Markkleeberg$4ortv
+551 !040352064!Leipzig$4ortv
+667 Ansetzung für Kongreßfolge und veranstaltende Körperschaft
+667 GNDBeispiel; BS-C03-C05; noch nicht vollständig abschließend geklärt: Unterscheidung zwischen Tb und Tf-Satz
+667 Der verknüpfte Kongress entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aLandwirtschaftsausstellung der DDR$02017616-8
+
+
+SET: S9 [197] TTL: 185        PPN: 004758609                            SEITE1 .
+
+Eingabe: 9002:18-04-89 Änderung: 1241:12-09-12 11:39:56 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/2017385-4$zhttp://d-nb.info/gnd/4135257-9
+008 kiz
+011 f;s
+012 v
+023 4135257-9
+035 gnd/2017385-4
+039 gnd/4135257-9
+039 swd/4135257-9$vzg
+039 gkd/2017385-4$vzg
+043 XA-DE-HE
+065 6.2a
+110 Pädagogische Arbeitsstelle$gHessischer Landesverband für Erwachsenenbildung
+410 Hessischer Landesverband für Erwachsenenbildung$bPädagogische Arbeitsstelle
+510 !004712250!Hessischer Landesverband für Erwachsenenbildung$4adue$X1
+548 1959$b1969$4datb
+550 !041361504!Erwachsenenbildungseinrichtung$4obin
+551 !040181189!Frankfurt am Main$4orta
+551 !040247295!Hessen$4geow
+667 GNDBeispiel; BS-03-IdentZ-TB-Tf
+667 Die verknüpften Körperschaften entsprechen ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+667 MMi
+670 Vorlage
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aPädagogische Arbeitsstelle <Frankfurt, Main, Hessischer Landesverband für Erwachsenenbildung>$02017385-4
+913 $Sswd$ic$aFrankfurt am Main / Pädagogische Arbeitsstelle <Hessischer Landesverband für Erwachsenenbildung>$04135257-9
+999 $ar01$bFeld 029A: [gkdfrankfurt main hessischer landesverband fuer erwachsenenbildung] im Index nicht gefunden
+999 $ar05$bFeld 029A: [frankfurt main hessischer landesverband fuer erwachsenenbildung] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 186        PPN: 004639634                            SEITE1 .
+
+Eingabe: 9002:18-04-89 Änderung: 1241:29-10-12 11:54:19 Status: 9999:23-04-10  
+
+005 Tf1
+006 http://d-nb.info/gnd/2003377-1$zhttp://d-nb.info/gnd/4050605-8
+008 vif
+011 f;s
+012 z;v;w
+035 gnd/2003377-1
+039 gnd/4050605-8
+039 swd/4050605-8$vzg
+039 gkd/2003377-1$vzg
+043 XA-DE-HE;XA-DE;XP
+065 2.2
+111 Frankfurter Buchmesse
+411 Frankfurt Book Fair
+411 Foire du Livre$cFrankfurt am Main
+411 Fiera del Libro$cFrankfurt am Main
+411 Book Fair$cFrankfurt am Main
+550 !041468244!Buchmesse$4obin
+551 !040181189!Frankfurt am Main$4ortv
+551 !040247295!Hessen$4geow
+667 GNDBeispiel; BS-C08
+667 MMi
+670 Homepage$uhttp://www.buchmesse.de
+680 Zusammenfassende Bezeichnung für die Veranstaltungsreihe; einzelne Veranstaltungen erhalten eigene Datensätze.
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aFrankfurter Buchmesse$02003377-1
+913 $Sswd$ic$aFrankfurt am Main / Frankfurter Buchmesse$04050605-8
+
+
+SET: S9 [197] TTL: 187        PPN: 004020820                            SEITE1 .
+
+Eingabe: 9002:18-04-89 Änderung: 1141:05-11-12 13:51:55 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/1003492-4
+008 kiz
+011 f
+012 z;v
+035 gnd/1003492-4
+039 gkd/1003492-4$vzg
+043 XA-FR
+110 École Pratique des Hautes Études$bSection 4, Sciences Historiques et Philologiques
+410 École Pratique des Hautes Études$bSection$n4
+410 École Pratique des Hautes Études$bSection Sciences Historiques et Philologiques
+410 École Pratique des Hautes Études$bSection des Sciences Historiques et Philologiques
+410 École Pratique des Hautes Études$bSection Historiques et Philologiques
+410 École Pratique des Hautes Études$bSciences Philologiques et Historiques
+410 Section 4, Sciences Philologiques et Historiques
+410 Section Sciences Historiques et Philosophiques
+410 École Pratique des Hautes Études$bSciences Historiques et Philologiques
+410 SHP$4abku
+510 !004020812!École Pratique des Hautes Études$gParis$4adue
+551 !040446603!Paris$4orta
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen
+667 GNDBeispiel; BS-K05
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aÉcole Pratique des Hautes Études <Paris> / Section Sciences Historiques et Philologiques$01003492-4
+
+
+SET: S9 [197] TTL: 188        PPN: 004019482                            SEITE1 .
+
+Eingabe: 9002:18-04-89 Änderung: 1250:30-07-12 10:25:38 Status: 9999:23-04-10  
+
+005 Tf1
+006 http://d-nb.info/gnd/1003276-9
+008 vie
+011 f
+035 gnd/1003276-9
+039 gkd/1003276-9$vzg
+043 XD-US
+111 Conference on Physical Principles of Biological Membranes$d1968$cCoral Gables, Fla.
+411 Coral Gables Conference on Physical Principles of Biological Membranes$d1968$cCoral Gables, Fla.
+548 $c1968$4datv
+551 !004174194!Coral Gables, Fla.$4ortv
+667 GNDBeispiel; BS-C03uC05uC07
+670 LCAuth
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aConference on Physical Principles of Biological Membranes <1968, Coral Gables, Fla.>$01003276-9
+
+
+SET: S9 [197] TTL: 189        PPN: 002355876                            SEITE1 .
+
+Eingabe: 9002:18-04-89 Änderung: 1241:18-09-12 10:49:12 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/235587-5
+008 kiz
+011 f
+012 z
+035 gnd/235587-5
+039 gkd/235587-5$vzg
+043 XA-CH-ZH
+110 Institut für Parasitologie$gZürich
+410 Universität Zürich$bInstitut für Parasitologie
+510 !000361909!Universität Zürich$4adue
+551 !04068038X!Zürich$4orta$X1
+667 GNDBeispiel; BS-03-IdentZ-Tb-TF
+667 Die verknüpften Körperschaften entsprechen ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aInstitut für Parasitologie <Zürich>$0235587-5
+
+
+SET: S9 [197] TTL: 190        PPN: 002172283                            SEITE1 .
+
+Eingabe: 9002:18-04-89 Änderung: 1241:18-09-12 10:49:20 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/217228-8
+008 kiz
+011 f
+012 z
+035 gnd/217228-8
+039 gkd/217228-8$vzg
+043 XA-IE
+110 Labour Party$gIrland
+510 !002172291!Irish Trades Union Congress and Labour Party$4vorg
+548 1930$4datb
+551 !040276678!Irland$4geow$X1
+667 GNDBeispiel; BS-03-Identz-Tb-Tf
+667 Die verknüpften Körperschaften entsprechen ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 Lexikon zur Geschichte d. Parteien in Europa
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aLabour Party <Ireland>$0217228-8
+
+
+SET: S9 [197] TTL: 191        PPN: 000800880                            SEITE1 .
+
+Eingabe: 9002:18-04-89 Änderung: 9999:19-09-12 00:57:15 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/80088-0$zhttp://d-nb.info/gnd/7744497-8
+008 kiz
+011 f;s
+012 v;z;w
+035 gnd/80088-0
+039 gnd/7744497-8
+039 swd/7744497-8$vzg
+039 gkd/80088-0$vzg
+043 XA-DE-SH
+065 6.6;27.1a
+110 Universität Kiel$bMedizinische Fakultät
+410 Medizinische Fakultät Kiel
+410 Medizinische Fakultät der Universität zu Kiel$4nauv
+410 Medizinische Fakultät der Christian-Albrechts-Universität zu Kiel
+510 !004815270!Universität Kiel$4adue
+548 1665$4datb
+550 !042513472!Medizinische Fakultät$4obin
+551 !040304817!Kiel$4orta
+551 !040526925!Schleswig-Holstein$4geow
+667 MMi
+667 GNDBeispiel; BS-K10-K12
+670 Homepage$bStand:17.09.2012$uhttp://www.medizin.uni-kiel.de
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aUniversität <Kiel> / Medizinische Fakultät$080088-0
+913 $Sswd$ic$aKiel / Universität Kiel / Medizinische Fakultät$07744497-8
+
+
+SET: S9 [197] TTL: 192        PPN: 000394211                            SEITE1 .
+
+Eingabe: 9002:18-04-89 Änderung: 1240:12-10-12 17:07:05 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/39421-X
+008 kio
+011 f
+012 z
+035 gnd/39421-X
+039 gkd/39421-X$vzg
+043 XA-DE-BY
+065 8.1;7.1a
+110 Bayern$bJustizministerium
+410 Justizministerium$gBayern
+510 !000358509!Bayern$bBayerisches Staatsministerium der Justiz$4nach
+550 !041700678!Ministerium$4obin
+551 !040050440!Bayern$4adue
+667 GNDBeispiel; BS-K20
+667 Die verknüpfte Körperschaft entspricht ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aBayern / Justizministerium$039421-X
+999 $ar05$bFeld 029@: [bayern] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 193        PPN: 000358509                            SEITE1 .
+
+Eingabe: 9002:18-04-89 Änderung: 1241:16-10-12 11:56:25 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/35850-2$zhttp://d-nb.info/gnd/4267035-4
+008 kio
+011 f;s
+012 v;z
+035 gnd/35850-2
+039 gnd/4267035-4
+039 swd/4267035-4$vzg
+039 gkd/35850-2$vzg
+043 XA-DE-BY
+065 8.1;7.1a
+110 Bayern$bBayerisches Staatsministerium der Justiz
+410 Bayerisches Staatsministerium der Justiz
+410 Bayerisches Staatsministerium für Justiz
+410 Bayern$bStaatsministerium für Justiz
+410 Staatsministerium für Justiz$gBayern
+410 Staatsministerium der Justiz$gBayern
+410 Bayern$bBayerisches Staatsministerium der Justiz$bJustizpressestelle$4spio
+410 Bayern$bBayerisches Staatsministerium der Justiz$bPressereferat$4spio
+410 Bayern$bStaatsminister der Justiz
+410 Staatsminister der Justiz$gBayern
+410 Bayern$bJustizministerium$gBayerisches Staatsministerium der Justiz
+410 Justizministerium$gBayern, Bayerisches Staatsministerium der Justiz
+410 Königliches Staatsministerium der Justiz$gBayern
+510 !000394211!Bayern$bJustizministerium$4vorg
+510 !992245737!Bayern$bBayerisches Staatsministerium der Justiz und für Verbraucherschutz$4nach
+548 $b29.10.2008$4datb
+550 !041700678!Ministerium$4obin
+551 !040050440!Bayern$4adue
+551 !041277937!München$4orta
+667 MMi
+667 GNDBeispiel; BS-K20
+667 Die verknüpften Körperschaften entsprechen ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+670 BRD, Bayern
+677 Gründungsdatum nicht zu ermitteln; 2008 umbenannt in "Staatsministerium der Justiz und für Verbraucherschutz"
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aBayern / Staatsministerium der Justiz$035850-2
+913 $Sswd$ic$aBayern / Justizministerium$04267035-4
+999 $ar05$bFeld 029@: [bayern] im Index nicht gefunden
+999 $ar05$bFeld 029@: [bayern] im Index nicht gefunden
+999 $ar05$bFeld 029@: [bayern] im Index nicht gefunden
+999 $ar05$bFeld 029@: [bayern staatsministerium der justiz] im Index nicht gefunden
+999 $ar05$bFeld 029@: [bayern] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 194        PPN: 000258954                            SEITE1 .
+
+Eingabe: 9002:18-04-89 Änderung: 1241:17-10-12 10:28:59 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/25895-7
+008 kiz
+011 f
+012 z;v
+035 gnd/25895-7
+039 gkd/25895-7$vzg
+043 XA-FR
+110 Université Lyon 2
+410 Université Lyon$n2
+410 Université Lumière$gLyon, Université, 2
+510 !000360686!Université$gLyon$4vorg
+510 !940383357!Université Lumière Lyon 2$4nach
+667 GNDBeispiel; BS-K05
+667 Die verknüpften Körperschaften entsprechen ggf. noch nicht den Übergangsregeln; da sich die Aufarbeitung durch Match-und-Merge verzögert, ist dies ein Zwischenstand gemäß dem jetzigen Namen.
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aUniversité <Lyon, 2>$025895-7
+999 $ar01$bFeld 029@: [gkdlyon universite 2] im Index nicht gefunden
+999 $ar05$bFeld 029@: [lyon universite 2] im Index nicht gefunden
+999 $ar01$bFeld 029A: [gkdlyon 2] im Index nicht gefunden
+999 $ar05$bFeld 029A: [lyon 2] im Index nicht gefunden
+
+
+SET: S9 [197] TTL: 195        PPN: 000102598                            SEITE1 .
+
+Eingabe: 9002:18-04-89 Änderung: 9999:19-09-12 00:31:15 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/10259-3$zhttp://d-nb.info/gnd/4023316-9
+008 kiz
+011 f;s
+012 v;z;w
+023 4023316-9
+035 gnd/10259-3
+039 gnd/4023316-9
+039 swd/4023316-9$vzg
+039 gkd/10259-3$vzg
+043 XA-DE-HB
+065 10.12
+110 Handwerkskammer Bremen
+550 !041590694!Handwerkskammer$4obin
+551 !040081354!Bremen$4orta
+551 !040081354!Bremen$4geow
+667 MMi
+667 GNDBeispiel; BS-K10
+670 Paulini
+670 Homepage$bStand:17.09.2012$uhttp://www.hwk-bremen.de
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aHandwerkskammer <Bremen>$010259-3
+913 $Sswd$ik$aHandwerkskammer Bremen$04023316-9
+
+
+SET: S9 [197] TTL: 196        PPN: 000021245                            SEITE1 .
+
+Eingabe: 9002:18-04-89 Änderung: 9999:08-08-12 00:33:39 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/2124-6$zhttp://d-nb.info/gnd/4033936-1
+008 kiz
+011 f;s
+012 z;w
+035 gnd/2124-6
+039 gnd/4033936-1
+039 swd/4033936-1$vzg
+039 gkd/2124-6$vzg
+043 XA-GB
+065 8.2b
+110 Labour Party$gGroßbritannien
+410 Labour$gGroßbritannien
+550 !040447375!Partei$4obin
+551 !040221539!Großbritannien$4geow$X1
+667 MMi
+667 GNDBeispiel; BS-03-IdentZ-Tb-Tf
+670 B
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aLabour Party <Great Britain>$02124-6
+913 $Sswd$ik$aLabour Party$04033936-1
+
+
+SET: S9 [197] TTL: 197        PPN: 000012610                            SEITE1 .
+
+Eingabe: 9002:18-04-89 Änderung: 1241:29-10-12 13:34:48 Status: 9999:23-04-10  
+
+005 Tb1
+006 http://d-nb.info/gnd/1261-0
+008 kiz
+011 f
+012 z;v
+035 gnd/1261-0
+039 gkd/6032148-9
+039 gkd/1261-0$vzg
+043 XA
+110 European Society for Rural Sociology
+410 Europese Vereniging voor Agrarische Sociologie
+410 Société Européenne de Sociologie Rurale
+410 Europäische Gesellschaft für Land- und Agrarsoziologie
+410 Sociedad Europea de Sociologia Rural
+410 Europäische Gesellschaft für Ländliche Soziologie
+410 Society for Rural Sociology
+410 Gesellschaft für Land- und Agrarsoziologie
+410 ESRS$4abku
+410 SESR$4abku
+548 1957$4datb
+551 !041189450!Wageningen$4orta
+667 GNDBeispiel; BS-K01-K04
+670 Homepage$uhttp://www.ruralsociology.eu/
+670 Yearb (online)
+903 $eDE-1
+903 $rDE-1
+913 $Sgkd$ia$aEuropean Society for Rural Sociology$01261-0
+
+

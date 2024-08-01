@@ -1,0 +1,183 @@
+0. Beobachtungen, Besonderheiten
+	A. GND
+	1. Die GND geht grundsätzlich davon aus, dass ein Unterfeld von
+		$<Indikator> eingeleitet wird - auch im pica3-Format. In einigen
+		seltenen Fällen können Deskriptionszeichen verwendet werden.
+		"-ohne-" zeigt den Wegfall am Anfang an.
+		Die Unterfelder können z.T (X30-Felder) in beliebiger Reihenfolge
+		eingegeben werden. (Wie sieht es mit den anderen Feldern aus?)
+	2. viele Felder sind nicht wiederholbar (GND: 008, 011 ..), es kann 
+		aber Information durch Wiederholung des einzig erlaubten Unterfeldes $a 
+		angefügt werden. Das Deskriptionszeichen ist in diesem Falle ";". 
+		$a ist hier auch das "ohne"-Feld. Wiederholungen (wim;wim) sind
+		zugelassen, sollten aber durch die verwendete Datenstruktur vermieden
+		werden (?).
+	3.	Personennamen
+			a. ", "-> $d darf nur nach $a erfolgen
+			b. In Personennamen gilt 
+				- in pica3 die Standardreihenfolge $a $d $c
+				- in pica+ die Standardreihenfolge $d $c $a
+	B. Titeldaten
+	 	Titeldaten sind anders beschrieben. Hier werden keine $-Zeichen 
+		verwendet. Daher müssen Unterfelder durch Deskriptionszeichen 
+		eingeleitet, ausgeleitet oder eingerahmt werden. Der Inhalt des
+		Unterfeldes wird im Dokument durch ".." beschrieben. Die
+		Reihenfolge der Unterfelder ist (?) starr vorgegeben. Der "ohne"-Indikator
+		kann auch mitten in der Zeile stehen.
+		
+		Beispiele:
+		Feld 2000
+		- $0  ...*
+		- $c (...)
+		- $f "-ohne-"
+		($ steht unter Feldinhaltsbeginn!)
+		3-7723-9445-0*: EUR 19.95 (freier Pr.)
+		$0			  $f		
+		978-3-03735-177-2*(Zürich ...) kart. : EUR 34.90, sfr 54.90 (freier Pr.)
+		$0				   $c		  $f
+		geh. : EUR 15.00, EUR 12.00 (bei Abonnement des Gesamtw.)
+		$f
+		978-3-644-43801-9*
+		$0
+		(Zürich ...)
+		$c
+		(Zürich ...) kart. : EUR 34.90
+		$c			$f
+		978-3-03735-177-2*(Zürich ...)
+		$0				   $c
+		
+		Feld 5101
+		- $d "-ohne-", eines aus "-", "*"
+		- $9 !...!
+		- $8 
+		- $c "-ohne-" z.B. " ;", " ,+", " #", 
+					aber jede Zeichenfolge akzeptiert, 
+					daher Konflikt mit $8!
+		- $a ": "					 nicht zusammen mit $9
+		
+		!04045956X!Physik
+		$9		   $8
+		:z Geschichte
+		 $a
+		-
+		$d
+		!04045956X!Physik;
+		$9		   $8	 $a
+		-:z Geschichte
+		$d$a
+		nicht erlaubt:
+		!04045956X!;:z Geschichte (Wäre $9 $c $a)
+		aa (wäre $c ?)		
+		
+		
+	C. Konsequenz:
+		- Die Klasse Indicator enthält das Präfix und das Postfix.
+		- In der Klasse Tag wird vermerkt, welcher Indikator am Anfang steht.
+		- Trotzdem ist zu vermuten, dass mit RDA das Konzept der GND fortgeführt 
+			werden wird, dass also verstärkt auf $-Zeichen gesetzt wird. Man
+			sollte daher beim Parsen zunächst keine Änderungen machen.
+		- wenn es trotzdem beim bisherigen Konzept bleibt, gibt es mehrere
+			Möglichkeiten:
+			a. Den bisherigen Parsevorgang erweitern: die Indikatoren sind
+				starr in ihrer Reihenfolge (Linked Hashmap); die Zerteilung
+				des Strings erfolgt anhand der $ UND der Deskriptionszeichen, 
+				die fehlenden $-Zeichen werden danach ergänzt.
+			b. Norm- und Titeldaten unterscheiden
+			c. In Sonderfällen einer Unterklasse von Line das Zerteilen 
+				überlassen - vielleicht der einfachste Weg!
+	
+		
+I. Unterfelder der GND können sein:
+	1. eigene ($P in 100, ist $t in 700 eigenes oder ein modifiziertes $a?)
+	2. ererbte (700 erbt von 100, 130 und 7XX)
+	3. geborgte / relationierte ($P in 500)
+
+II. Parsen	
+	1. 	Das Unterfeldtrennzeichen feststellen (z.Z. ƒ oder $).
+	2. 	IF pica3 THEN
+			a. (!..!) durch $9..$8.. ersetzen. $8 kann dabei leer sein.				
+			b. evtl. "-ohne-"-Zeichen an den Anfang setzen. Hier gibt es nur eines.
+			c. Deskriptionszeichen ersetzen. 
+				Deskriptionszeichen sind eine Menge, da z.B.
+		 		"-T1--" = $f,  "-T2--" = $g in Feld 5403 erlaubt sind.	
+			c'. Für Tags 100 , 400, 500 und 700 Sonderbehandlung.
+		FI
+	3. IF Liegt Link vor ($9)THEN 
+			a. in Variable festhalten
+			b. zerlegen nach eigenen + ererbten Feldern
+		ELSE
+			c. zerlegen nach allen = eigene + ererbte + geborgte Feldern.
+		FI
+		Zerlegte in Liste einfügen, dabei leere übergehen.
+		IF doppelte (NR) THEN
+			Ausnahme werfen
+		FI
+		
+	
+			
+III. Verarbeiten
+
+IV. Ausgeben
+	A. pica+
+		WHILE Feld hat Unterfelder
+		DO
+			IF expansion OR indikator <> $8 THEN
+				UF ausgeben
+			FI
+		OD
+	B. pica3
+		WHILE Feld hat Unterfelder
+		DO
+			IF expansion OR indikator <> $8 THEN
+				IF erstes unterfeld AND "-ohne-"-Feld THEN 
+					1. ausgeben ohne indikator 
+				ELSE IF deskriptionszeichen THEN 
+					2. ausgeben mit deskriptionszeichen 
+				ELSE IF $9 THEN
+					3. ausgeben mit ! vorne und hinten
+				ELSE
+					4. ausgeben mit indikator
+				FI
+			FI
+		OD
+		
+IVa	Tags 100 , 400, 500 und 700 ausgeben:
+	A. pica+
+		$d, $c, $a ausgeben
+		Restliche Felder anhängen.
+	B. pica3
+		$a $d $c ausgeben ($d mit ", ")
+		Restliche Felder anhängen.
+		
+V. Anforderungen an Schnittstelle
+	1. getSubfield(indicator ind ) für IV.B.2
+			sub = this.subs.get(ind)
+			IF sub <> null THEN return sub
+			FOR EACH feld IN ererbte DO
+				IF sub = feld.getSubfield(ind) <> null THEN return sub FI
+			ROF
+			return geborgte.getSubfield(ind)
+	2. Set<Subfield> getDescriptionsSigns() für II.1
+			ds = this.descSign
+			FOR EACH feld IN ererbte DO
+				ds.addAll(feld.getDescriptionsSigns())
+			ROF
+			return ds.addAll(geborgte.getDescriptionsSigns()
+	3. Subfield getOhne() für II.3
+			sub = this.ohne
+			IF sub <> null THEN return sub
+			FOR EACH feld IN ererbte DO
+				IF sub = feld.getOhne() <> null THEN return sub FI
+			ROF
+			return geborgte.getOhne()
+	4. getOwnFields() = eigene und ererbte für II.4.b
+			f = this.fields
+			FOR EACH feld IN ererbte DO
+				f.addAll(feld.getOwnFields())
+			ROF
+			return f
+	5. getAllFields() für II.4.c
+			return getOwnFields().addAll(geborgte.getAllFields())
+			
+			
+			

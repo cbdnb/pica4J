@@ -1,0 +1,374 @@
+newTag.addIndicator(new Indicator(Quelle und Datum der Ersterfassung", ', "", U, ""));
+newTag.addIndicator(new Indicator(null, '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Quelle und Datum der letzten Änderung", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Quelle und Datum der letzten Statusvergabe", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Satzart", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("GND--Identifier", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Entitätencodierung", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Änderungscodierung", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Teilbestandskennzeichen", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Nutzungskennzeichen", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("SWD-Nr. im GKD-Satz", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Sonstige Standardnummern", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("GKD-Nr. im SWD-Satz", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Geografische Koordinaten", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("GND-Nummer", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Alte Normnummer", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Ländercode nach ISO 3166", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("GND-Systematik", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("DDC-Notation", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Veraltete DDC-Notation", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Person – Bevorzugter Name", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Körperschaft – Bevorzugter Name", '', "", U, ""));
+newTag.addIndicator(new Indicator(null, '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Kongress – Bevorzugter Name", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Einheitstitel – Bevorzugter Name", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Sachbegriff – Bevorzugte Benennung", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Geografikum – Bevorzugter Name", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Markierung für das Match-und-Merge- Verfahren", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Zu verknüpfende Schlagwörter in", '', "", U, ""));
+newTag.addIndicator(new Indicator("Hinweissätzen", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Inhaltstyp", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Medientyp", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Datenträgertyp", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Tätigkeitsbereich", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Geschlechtsangabe", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Sprachencode nach ISO 639-2/B", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Form des Werks", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Besetzung im Musikbereich", '(R)', "", U, ""));
+newTag.addIndicator(new Indicator("„!...!“", '9', "Verknüpfungsnummer", NR, ""));
+
+newTag.addIndicator(new Indicator("Numerische Kennzeichnung eines", '', "", U, ""));
+newTag.addIndicator(new Indicator("Musikwerks", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Tonart", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Person – Abweichender Name", '(R)', "", U, ""));
+newTag.addIndicator(new Indicator(null, 'P', "Persönlicher Name", NR, ""));
+newTag.addIndicator(new Indicator("-ohne-", 'a', "Nachname", NR, ""));
+newTag.addIndicator(new Indicator("„,_“", 'd', "Vorname", NR, ""));
+newTag.addIndicator(new Indicator(null, 'c', "Nachgestelltes Präfix", NR, ""));
+newTag.addIndicator(new Indicator(null, 'n', "Zählung", NR, ""));
+newTag.addIndicator(new Indicator(null, 'l', "Beiname, Gattungsname, Territorium, Titulatur", NR, ""));
+newTag.addIndicator(new Indicator(null, 'x', "Allgemeine Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'g', "Zusatz", R, ""));
+
+newTag.addIndicator(new Indicator(null, 'v', "Bemerkungen, Regelwerk", R, ""));
+
+newTag.addIndicator(new Indicator("Körperschaft – Abweichender Name", '', "", U, ""));
+newTag.addIndicator(new Indicator(null, '(R)', "", U, ""));
+newTag.addIndicator(new Indicator("-ohne-", 'a', "Hauptkörperschaft", NR, ""));
+newTag.addIndicator(new Indicator(null, 'b', "Untergeordnete Körperschaft", R, ""));
+newTag.addIndicator(new Indicator(null, 'n', "Zählung", R, ""));
+newTag.addIndicator(new Indicator(null, 'x', "Allgemeine Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'g', "Zusatz", R, ""));
+newTag.addIndicator(new Indicator(null, '4', "GND-Code für Beziehungen", NR, ""));
+newTag.addIndicator(new Indicator(null, '5', "Institution (=ISIL), die Feld in besonderer Art verwendet", R, ""));
+newTag.addIndicator(new Indicator(null, 'v', "Bemerkungen, Regelwerk", R, ""));
+newTag.addIndicator(new Indicator(null, 'L', "Sprachcode bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'T', "Feldzuordnung bei nicht- lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'U', "Schriftcode bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator("Kongress – Abweichender Name", '(R)', "", U, ""));
+newTag.addIndicator(new Indicator("-ohne-", 'a', "Kongress", NR, ""));
+newTag.addIndicator(new Indicator(null, 'b', "Untergeordnete Einheit", R, ""));
+newTag.addIndicator(new Indicator(null, 'n', "Zählung", R, ""));
+newTag.addIndicator(new Indicator(null, 'd', "Datum", NR, ""));
+newTag.addIndicator(new Indicator(null, 'c', "Ort", NR, ""));
+newTag.addIndicator(new Indicator(null, 'x', "Allgemeine Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'g', "Zusatz", R, ""));
+newTag.addIndicator(new Indicator(null, '4', "GND-Code für Beziehungen", NR, ""));
+newTag.addIndicator(new Indicator(null, '5', "Institution (=ISIL), die Feld in besonderer Art verwendet", R, ""));
+newTag.addIndicator(new Indicator(null, 'v', "Bemerkungen, Regelwerk", R, ""));
+newTag.addIndicator(new Indicator(null, 'L', "Sprachcode bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'T', "Feldzuordnung bei nicht- lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'U', "Schriftcode bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator("Titel – Abweichender Name", '(R)', "", U, ""));
+newTag.addIndicator(new Indicator("-ohne-", 'a', "Titel eines Werks", NR, ""));
+newTag.addIndicator(new Indicator(null, 'f', "Entstehungsjahr eines Werks", NR, ""));
+newTag.addIndicator(new Indicator(null, 'm', "Besetzung im Musikbereich", R, ""));
+newTag.addIndicator(new Indicator(null, 'n', "Zählung eines Werks, des Teils/der Abteilung eines Werks", R, ""));
+newTag.addIndicator(new Indicator(null, 'o', "Angabe des Musikarrangements", NR, ""));
+newTag.addIndicator(new Indicator(null, 'p', "Titel eines Teils/einer Abteilung eines Werkes", R, ""));
+newTag.addIndicator(new Indicator(null, 'r', "Tonart", NR, ""));
+newTag.addIndicator(new Indicator(null, 's', "Version", NR, ""));
+newTag.addIndicator(new Indicator(null, 'x', "Allgemeine Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'g', "Zusatz", R, ""));
+newTag.addIndicator(new Indicator(null, '4', "GND-Code für Beziehungen", NR, ""));
+newTag.addIndicator(new Indicator(null, '5', "Institution (=ISIL), die Feld in besonderer Art verwendet", R, ""));
+newTag.addIndicator(new Indicator(null, 'v', "Bemerkungen, Regelwerk", R, ""));
+newTag.addIndicator(new Indicator(null, 'L', "Sprachcode bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'T', "Feldzuordnung bei nicht- lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'U', "Schriftcode bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator("Sachbegriff – Abweichende", '', "", U, ""));
+newTag.addIndicator(new Indicator("Benennung", '(R)', "", U, ""));
+newTag.addIndicator(new Indicator("-ohne-", 'a', "Sachbegriff", NR, ""));
+newTag.addIndicator(new Indicator(null, 'x', "Allgemeine Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'g', "Zusatz", R, ""));
+newTag.addIndicator(new Indicator(null, '4', "GND-Code für Beziehungen", NR, ""));
+newTag.addIndicator(new Indicator(null, '5', "Institution (=ISIL), die Feld in besonderer Art verwendet", R, ""));
+newTag.addIndicator(new Indicator(null, 'v', "Bemerkungen, Regelwerk", R, ""));
+newTag.addIndicator(new Indicator(null, 'L', "Sprache bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'T', "Zuordnung bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'U', "Schrift bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator("Geografikum – Abweichender Name", '', "", U, ""));
+newTag.addIndicator(new Indicator(null, '(R)', "", U, ""));
+newTag.addIndicator(new Indicator("-ohne-", 'a', "Geografikum", NR, ""));
+newTag.addIndicator(new Indicator(null, 'x', "Allgemeine Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'z', "Geografische Untergliederung", R, ""));
+newTag.addIndicator(new Indicator(null, 'g', "Zusatz", R, ""));
+newTag.addIndicator(new Indicator(null, '4', "GND-Code für Beziehungen", NR, ""));
+newTag.addIndicator(new Indicator(null, '5', "Institution (=ISIL), die Feld in besonderer Art verwendet", R, ""));
+newTag.addIndicator(new Indicator(null, 'v', "Bemerkungen, Regelwerk", R, ""));
+newTag.addIndicator(new Indicator(null, 'L', "Sprachcode bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'T', "Feldzuordnung bei nicht- lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'U', "Schriftcode bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator("Person – Beziehung", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator(null, 'P', "Persönlicher Name", NR, ""));
+newTag.addIndicator(new Indicator("-ohne-", 'a', "Nachname", NR, ""));
+newTag.addIndicator(new Indicator("„,_“", 'd', "Vorname", NR, ""));
+newTag.addIndicator(new Indicator(null, 'c', "Nachgestelltes Präfix", NR, ""));
+newTag.addIndicator(new Indicator(null, 'n', "Zählung", NR, ""));
+newTag.addIndicator(new Indicator(null, 'l', "Beiname, Gattungsname, Territorium, Titulatur", NR, ""));
+newTag.addIndicator(new Indicator(null, 'x', "Allgemeine Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'g', "Zusatz", R, ""));
+
+newTag.addIndicator(new Indicator("Körperschaft – Beziehung", '(R)', "", U, ""));
+newTag.addIndicator(new Indicator("„!...!“", '9', "Verknüpfungsnummer", NR, ""));
+newTag.addIndicator(new Indicator("-ohne-", 'a', "Hauptkörperschaft", NR, ""));
+newTag.addIndicator(new Indicator(null, 'b', "Untergeordnete Körperschaft", R, ""));
+newTag.addIndicator(new Indicator(null, 'n', "Zählung", R, ""));
+newTag.addIndicator(new Indicator(null, 'x', "Allgemeine Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'g', "Zusatz", R, ""));
+newTag.addIndicator(new Indicator(null, '4', "GND-Code für Beziehungen", NR, ""));
+newTag.addIndicator(new Indicator(null, '5', "Institution (=ISIL), die Feld in besonderer Art verwendet", R, ""));
+newTag.addIndicator(new Indicator(null, 'v', "Bemerkungen, Regelwerk", R, ""));
+newTag.addIndicator(new Indicator(null, 'X', "Anzeige-Relevanz", NR, ""));
+newTag.addIndicator(new Indicator(null, 'Y', "MO-Relevanz", R, ""));
+newTag.addIndicator(new Indicator(null, 'Z', "Zeitliche Gültigkeit", NR, ""));
+newTag.addIndicator(new Indicator("Kongress – Beziehung", '(R)', "", U, ""));
+newTag.addIndicator(new Indicator("„!...!“", '9', "Verknüpfungsnummer", NR, ""));
+newTag.addIndicator(new Indicator("-ohne-", 'a', "Hauptkongress", NR, ""));
+newTag.addIndicator(new Indicator(null, 'b', "Untergeordnete Einheit", R, ""));
+newTag.addIndicator(new Indicator(null, 'n', "Zählung", R, ""));
+newTag.addIndicator(new Indicator(null, 'd', "Datum", NR, ""));
+newTag.addIndicator(new Indicator(null, 'c', "Ort", NR, ""));
+newTag.addIndicator(new Indicator(null, 'x', "Allgemeine Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'g', "Zusatz", R, ""));
+newTag.addIndicator(new Indicator(null, '4', "GND-Code für Beziehungen", NR, ""));
+newTag.addIndicator(new Indicator(null, '5', "Institution (=ISIL), die Feld in besonderer Art verwendet", R, ""));
+newTag.addIndicator(new Indicator(null, 'v', "Bemerkungen, Regelwerk", R, ""));
+newTag.addIndicator(new Indicator(null, 'X', "Anzeige-Relevanz", NR, ""));
+newTag.addIndicator(new Indicator(null, 'Y', "MO-Relevanz", R, ""));
+newTag.addIndicator(new Indicator(null, 'Z', "Zeitliche Gültigkeit", NR, ""));
+newTag.addIndicator(new Indicator("Einheitstitel – Beziehung", '(R)', "", U, ""));
+newTag.addIndicator(new Indicator("„!...!“", '9', "Verknüpfungsnummer", NR, ""));
+newTag.addIndicator(new Indicator("-ohne-", 'a', "Titel eines Werks", NR, ""));
+newTag.addIndicator(new Indicator(null, 'f', "Entstehungsjahr eines Werks", NR, ""));
+newTag.addIndicator(new Indicator(null, 'm', "Besetzung im Musikbereich", R, ""));
+newTag.addIndicator(new Indicator(null, 'n', "Zählung eines Werks, des Teils/der Abteilung eines Werks", R, ""));
+newTag.addIndicator(new Indicator(null, 'o', "Angabe des Musikarrangements", NR, ""));
+newTag.addIndicator(new Indicator(null, 'p', "Titel des Teils/der Abteilung eines Werkes", R, ""));
+newTag.addIndicator(new Indicator(null, 'r', "Tonart", NR, ""));
+newTag.addIndicator(new Indicator(null, 's', "Version", NR, ""));
+newTag.addIndicator(new Indicator(null, 'x', "Allgemeine Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'g', "Zusatz", R, ""));
+newTag.addIndicator(new Indicator(null, '4', "GND-Code für Beziehungen", NR, ""));
+newTag.addIndicator(new Indicator(null, '5', "Institution (=ISIL), die Feld in besonderer Art verwendet", R, ""));
+newTag.addIndicator(new Indicator(null, 'v', "Bemerkungen, Regelwerk", R, ""));
+newTag.addIndicator(new Indicator(null, 'X', "Anzeige-Relevanz", NR, ""));
+newTag.addIndicator(new Indicator(null, 'Y', "MO-Relevanz", R, ""));
+newTag.addIndicator(new Indicator(null, 'Z', "Zeitliche Gültigkeit", NR, ""));
+newTag.addIndicator(new Indicator("Zeit – Beziehung", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator(null, '4', "GND-Code für Beziehungen", NR, ""));
+newTag.addIndicator(new Indicator(null, '5', "Institution (=ISIL), die Feld in besonderer Art verwendet", R, ""));
+newTag.addIndicator(new Indicator(null, 'v', "Bemerkungen, Regelwerk", R, ""));
+newTag.addIndicator(new Indicator(null, 'X', "Anzeige-Relevanz", NR, ""));
+newTag.addIndicator(new Indicator(null, 'Y', "MO-Relevanz", R, ""));
+newTag.addIndicator(new Indicator(null, 'Z', "Zeitliche Gültigkeit", NR, ""));
+newTag.addIndicator(new Indicator("Sachbegriff – Beziehung", '(R)', "", U, ""));
+newTag.addIndicator(new Indicator("„!...!“", '9', "Verknüpfungsnummer", NR, ""));
+newTag.addIndicator(new Indicator("-ohne-", 'a', "Sachbegriff", NR, ""));
+newTag.addIndicator(new Indicator(null, 'x', "Allgemeine Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'g', "Zusatz", R, ""));
+newTag.addIndicator(new Indicator(null, '4', "GND-Code für Beziehungen", NR, ""));
+newTag.addIndicator(new Indicator(null, '5', "Institution (=ISIL), die Feld in besonderer Art verwendet", R, ""));
+newTag.addIndicator(new Indicator(null, 'v', "Bemerkungen, Regelwerk", R, ""));
+newTag.addIndicator(new Indicator(null, 'X', "Anzeige-Relevanz", NR, ""));
+newTag.addIndicator(new Indicator(null, 'Y', "MO-Relevanz", R, ""));
+newTag.addIndicator(new Indicator(null, 'Z', "Zeitliche Gültigkeit", NR, ""));
+newTag.addIndicator(new Indicator("Geografikum – Beziehung", '(R)', "", U, ""));
+newTag.addIndicator(new Indicator("„!...!“", '9', "Verknüpfungsnummer", NR, ""));
+newTag.addIndicator(new Indicator("-ohne-", 'a', "Geografikum", NR, ""));
+newTag.addIndicator(new Indicator(null, 'x', "Allgemeine Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'z', "geografische Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'g', "Zusatz", R, ""));
+newTag.addIndicator(new Indicator(null, '4', "GND-Code für Beziehungen", NR, ""));
+newTag.addIndicator(new Indicator(null, '5', "Institution (=ISIL), die Feld in besonderer Art verwendet", R, ""));
+newTag.addIndicator(new Indicator(null, 'v', "Bemerkungen, Regelwerk", R, ""));
+newTag.addIndicator(new Indicator(null, 'X', "Anzeige-Relevanz", NR, ""));
+newTag.addIndicator(new Indicator(null, 'Y', "MO-Relevanz", R, ""));
+newTag.addIndicator(new Indicator(null, 'Z', "Zeitliche Gültigkeit", NR, ""));
+newTag.addIndicator(new Indicator("Redaktionelle Bemerkungen", '(R)', "", U, ""));
+newTag.addIndicator(new Indicator("Quellenangaben", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Negativ eingesehene Quellen", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Biografische/historische Angaben", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Definitionen", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Benutzungshinweise", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Nummer und bevorzugter Name bzw.", '', "", U, ""));
+newTag.addIndicator(new Indicator("bevorzugte Benennung des Zielsatzes", '', "", U, ""));
+newTag.addIndicator(new Indicator("bei Umlenkung von Datensätzen", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Nummer und bevorzugter Name bzw.", '', "", U, ""));
+newTag.addIndicator(new Indicator("bevorzugte Benennung des Zielsatzes", '', "", U, ""));
+newTag.addIndicator(new Indicator("bei Aufspaltung von Datensätzen", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Titelangaben", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Person – Bevorzugter Name in einem", '', "", U, ""));
+newTag.addIndicator(new Indicator("anderen Datenbestand", '(R)', "", U, ""));
+newTag.addIndicator(new Indicator(null, 'P', "Persönlicher Name", NR, ""));
+newTag.addIndicator(new Indicator("-ohne-", 'a', "Nachname", NR, ""));
+newTag.addIndicator(new Indicator("„,_“", 'd', "Vorname", NR, ""));
+newTag.addIndicator(new Indicator(null, 'c', "Nachgestelltes Präfix", NR, ""));
+newTag.addIndicator(new Indicator(null, 'n', "Zählung", NR, ""));
+newTag.addIndicator(new Indicator(null, 'l', "Beiname, Gattungsname, Territorium, Titulatur", NR, ""));
+
+newTag.addIndicator(new Indicator(null, 'x', "Allgemeine Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'u', "URI", R, ""));
+newTag.addIndicator(new Indicator(null, 'S', "ISIL der Referenz-Normdatei", NR, ""));
+newTag.addIndicator(new Indicator(null, '0', "Identifikationsnummer", NR, ""));
+newTag.addIndicator(new Indicator(null, '2', "Code der Quelle", NR, ""));
+newTag.addIndicator(new Indicator(null, '5', "Institution (=ISIL), die Feld in besonderer Art verwendet", R, ""));
+newTag.addIndicator(new Indicator(null, 'v', "Bemerkungen, Regelwerk", R, ""));
+newTag.addIndicator(new Indicator(null, 'L', "Sprachcode bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'T', "Feldzuordnung bei nicht- lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'U', "Schriftcode bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator("Körperschaft – Bevorzugter Name in", '', "", U, ""));
+newTag.addIndicator(new Indicator("einem anderen Datenbestand", '(R)', "", U, ""));
+newTag.addIndicator(new Indicator("-ohne-", 'a', "Hauptkörperschaft", NR, ""));
+newTag.addIndicator(new Indicator(null, 'b', "Untergeordnete Körperschaft", R, ""));
+newTag.addIndicator(new Indicator(null, 'n', "Zählung", R, ""));
+newTag.addIndicator(new Indicator(null, 't', "Titel", NR, ""));
+newTag.addIndicator(new Indicator(null, 'x', "Allgemeine Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'u', "URI", R, ""));
+newTag.addIndicator(new Indicator(null, 'S', "ISIL der Referenz-Normdatei", NR, ""));
+newTag.addIndicator(new Indicator(null, '0', "Identifikationsnummer", NR, ""));
+newTag.addIndicator(new Indicator(null, '2', "Code der Quelle", NR, ""));
+newTag.addIndicator(new Indicator(null, '5', "Institution (=ISIL), die Feld in besonderer Art verwendet", R, ""));
+newTag.addIndicator(new Indicator(null, 'v', "Bemerkungen, Regelwerk", R, ""));
+newTag.addIndicator(new Indicator(null, 'L', "Sprachcode bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'T', "Feldzuordnung bei nicht- lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'U', "Schriftcode bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator("Kongress – Bevorzugter Name in", '', "", U, ""));
+newTag.addIndicator(new Indicator("einem anderen Datenbestand", '(R)', "", U, ""));
+newTag.addIndicator(new Indicator("-ohne-", 'a', "Hauptkongress", NR, ""));
+newTag.addIndicator(new Indicator(null, 'b', "Untergeordnete Einheit", R, ""));
+newTag.addIndicator(new Indicator(null, 'n', "Zählung", R, ""));
+newTag.addIndicator(new Indicator(null, 'd', "Datum", NR, ""));
+newTag.addIndicator(new Indicator(null, 'c', "Ort", NR, ""));
+newTag.addIndicator(new Indicator(null, 't', "Titel", NR, ""));
+newTag.addIndicator(new Indicator(null, 'x', "Allgemeine Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'u', "URI", R, ""));
+newTag.addIndicator(new Indicator(null, 'S', "ISIL der Referenz-Normdatei", NR, ""));
+newTag.addIndicator(new Indicator(null, '0', "Identifikationsnummer", NR, ""));
+newTag.addIndicator(new Indicator(null, '2', "Code der Quelle", NR, ""));
+newTag.addIndicator(new Indicator(null, '5', "Institution (=ISIL), die Feld in besonderer Art verwendet", R, ""));
+newTag.addIndicator(new Indicator(null, 'v', "Bemerkungen, Regelwerk", R, ""));
+newTag.addIndicator(new Indicator(null, 'L', "Sprachcode bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'T', "Feldzuordnung bei nicht- lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'U', "Schriftcode bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator("Einheitstitel – Bevorzugter Name in", '', "", U, ""));
+newTag.addIndicator(new Indicator("einem anderen Datenbestand", '(R)', "", U, ""));
+newTag.addIndicator(new Indicator("-ohne -", 'a', "Titel eines Werks", NR, ""));
+newTag.addIndicator(new Indicator(null, 'f', "Entstehungsjahr eines Werks", NR, ""));
+newTag.addIndicator(new Indicator(null, 'm', "Besetzung im Musikbereich", R, ""));
+newTag.addIndicator(new Indicator(null, 'n', "Zählung eines Werks, des Teils/der Abteilung eines Werks", R, ""));
+newTag.addIndicator(new Indicator(null, 'o', "Angabe des Musikarrangements", NR, ""));
+newTag.addIndicator(new Indicator(null, 'p', "Titel des Teils/der Abteilung eines Werks", R, ""));
+newTag.addIndicator(new Indicator(null, 'r', "Tonart", NR, ""));
+newTag.addIndicator(new Indicator(null, 's', "Version", NR, ""));
+newTag.addIndicator(new Indicator(null, 'x', "Allgemeine Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'u', "URI", R, ""));
+newTag.addIndicator(new Indicator(null, 'S', "ISIL der Referenz-Normdatei", NR, ""));
+newTag.addIndicator(new Indicator(null, '0', "Identifikationsnummer", NR, ""));
+newTag.addIndicator(new Indicator(null, '2', "Code der Quelle", NR, ""));
+newTag.addIndicator(new Indicator(null, '5', "Institution (=ISIL), die Feld in besonderer Art verwendet", R, ""));
+newTag.addIndicator(new Indicator(null, 'v', "Bemerkungen, Regelwerk", R, ""));
+newTag.addIndicator(new Indicator(null, 'L', "Sprachcode bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'T', "Feldzuordnung bei nicht- lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'U', "Schriftcode bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator("Sachbegriff – Bevorzugte Benennung", '', "", U, ""));
+newTag.addIndicator(new Indicator("in einem anderen Datenbestand", '(R)', "", U, ""));
+newTag.addIndicator(new Indicator("-ohne-", 'a', "Sachbegriff", NR, ""));
+newTag.addIndicator(new Indicator(null, 'g', "Zusatz", R, ""));
+newTag.addIndicator(new Indicator(null, 'x', "Allgemeine Unterteilung", R, ""));
+
+newTag.addIndicator(new Indicator("Geografikum – Bevorzugter Name in", '', "", U, ""));
+newTag.addIndicator(new Indicator("einem anderen Datenbestand", '(R)', "", U, ""));
+newTag.addIndicator(new Indicator("-ohne -", 'a', "Geografikum", NR, ""));
+newTag.addIndicator(new Indicator(null, 'x', "Allgemeine Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'z', "Geografische Unterteilung", R, ""));
+newTag.addIndicator(new Indicator(null, 'g', "Zusatz", R, ""));
+newTag.addIndicator(new Indicator(null, 'u', "URI", R, ""));
+newTag.addIndicator(new Indicator(null, 'S', "ISIL der Referenz-Normdatei", NR, ""));
+newTag.addIndicator(new Indicator(null, '0', "Identifikationsnummer", NR, ""));
+newTag.addIndicator(new Indicator(null, '2', "Code der Quelle", NR, ""));
+newTag.addIndicator(new Indicator(null, '5', "Institution (=ISIL), die Feld in besonderer Art verwendet", R, ""));
+newTag.addIndicator(new Indicator(null, 'v', "Bemerkungen, Regelwerk", R, ""));
+newTag.addIndicator(new Indicator(null, 'L', "Sprachcode bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'T', "Feldzuordnung bei nicht- lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator(null, 'U', "Schriftcode bei nicht-lateinischen Schriftzeichen", NR, ""));
+newTag.addIndicator(new Indicator("Interne Identifikationsnummer", '', "", U, ""));
+
+newTag.addIndicator(new Indicator("Mailbox", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Katalogisierende Institution", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Alte Ansetzungsform", '(R)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Sortiername im Deutschen", '', "", U, ""));
+newTag.addIndicator(new Indicator("Exilarchiv", '(NR)', "", U, ""));
+
+newTag.addIndicator(new Indicator("Fehlermeldungen", '(NR)', "", U, ""));
+

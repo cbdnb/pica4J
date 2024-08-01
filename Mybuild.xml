@@ -1,0 +1,155 @@
+<?eclipse.ant.import?>
+<project basedir="." default="build" name="GND">
+
+	<!-- Properties -->
+	<property environment="env" />
+	<property name="ECLIPSE_HOME" value="../../" />
+
+	<property name="junit.output.dir" value="junit" />
+	<property name="source.dir" location="src" />
+	<property name="testsource.dir" location="test" />
+	<property name="build.dir" location="bin" />
+	<property name="release.dir" location="rel" />
+	<property name="lib.dir" value="lib" />
+	<property name="doc.dir" value="doc" />
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.8" />
+	<property name="source" value="1.8" />
+
+	<!-- Pfade -->
+	<path id="JUnit 4.libraryclasspath">
+		<pathelement location="${ECLIPSE_HOME}/plugins/org.junit_4.8.2.v4_8_2_v20110321-1705/junit.jar" />
+		<pathelement location="${ECLIPSE_HOME}/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar" />
+		<pathelement location="log4j-1.2.6.jar" />
+	</path>
+
+	<path id="GND.classpath">
+		<pathelement location="${build.dir}" />
+		<pathelement location="../zmarc/bin" />
+		<path refid="JUnit 4.libraryclasspath" />
+	</path>
+
+	<!-- Targets -->
+	<target name="init">
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${release.dir}" />
+		<copy includeemptydirs="false" todir="${build.dir}">
+			<fileset dir="${source.dir}">
+				<exclude name="**/*.uad" />
+				<exclude name="**/*.ucd" />
+				<exclude name="**/*.uld" />
+				<exclude name="**/*.upd" />
+				<exclude name="**/*.cop" />
+				<exclude name="**/*.udd" />
+				<exclude name="**/*.uod" />
+				<exclude name="**/*.usd" />
+				<exclude name="**/*.utd" />
+				<exclude name="**/*.uud" />
+				<exclude name="**/*.ame" />
+				<exclude name="**/*.odd" />
+				<exclude name="**/*.ead" />
+				<exclude name="**/*.ecd" />
+				<exclude name="**/*.eld" />
+				<exclude name="**/*.epd" />
+				<exclude name="**/*.edd" />
+				<exclude name="**/*.eod" />
+				<exclude name="**/*.esd" />
+				<exclude name="**/*.etd" />
+				<exclude name="**/*.eud" />
+				<exclude name="**/*.eame" />
+				<exclude name="**/*.urd*.uml" />
+				<exclude name="**/*.ecore" />
+				<exclude name="**/*.urd" />
+				<exclude name="**/*.uml" />
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+		<copy includeemptydirs="false" todir="${build.dir}">
+			<fileset dir="${testsource.dir}">
+				<exclude name="**/*.uad" />
+				<exclude name="**/*.ucd" />
+				<exclude name="**/*.uld" />
+				<exclude name="**/*.upd" />
+				<exclude name="**/*.cop" />
+				<exclude name="**/*.udd" />
+				<exclude name="**/*.uod" />
+				<exclude name="**/*.usd" />
+				<exclude name="**/*.utd" />
+				<exclude name="**/*.uud" />
+				<exclude name="**/*.ame" />
+				<exclude name="**/*.odd" />
+				<exclude name="**/*.ead" />
+				<exclude name="**/*.ecd" />
+				<exclude name="**/*.eld" />
+				<exclude name="**/*.epd" />
+				<exclude name="**/*.edd" />
+				<exclude name="**/*.eod" />
+				<exclude name="**/*.esd" />
+				<exclude name="**/*.etd" />
+				<exclude name="**/*.eud" />
+				<exclude name="**/*.eame" />
+				<exclude name="**/*.urd*.uml" />
+				<exclude name="**/*.ecore" />
+				<exclude name="**/*.urd" />
+				<exclude name="**/*.uml" />
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="clean">
+		<delete dir="${build.dir}" />
+		<delete dir="${release.dir}" />
+	</target>
+
+	<target name="cleanall" depends="clean" />
+
+	<target name="build" depends="build-project" />
+
+	<target name="build-project" depends="init">
+		<echo message="${ant.project.name}: ${ant.file}" />
+		<javac debug="true" debuglevel="${debuglevel}" destdir="${build.dir}" source="${source}" target="${target}" includeantruntime="true" encoding="UTF-8">
+			<src path="${source.dir}" />
+			<classpath refid="GND.classpath" />
+		</javac>
+	</target>
+
+	<target name="dist" depends="build" description="Verpackt ausführbare Klassen in Archive">
+		<jar destfile="${release.dir}/GND.jar">
+			<fileset dir="${build.dir}" excludes="**/*Test.class, **/Test*.class" />
+		</jar>
+		<jar destfile="${release.dir}/BASICS.jar">
+			<fileset dir="${build.dir}" includes="**/basics/" excludes="**/*Test.class, **/Test*.class" />
+		</jar>
+	</target>
+
+	<target name="dist-doc" depends="doc" description="Verpackt Dokumentation">
+		<jar destfile="${release.dir}/GND_doc.jar">
+			<fileset dir="${doc.dir}" />
+		</jar>
+	</target>
+
+	<target name="-allTests" depends="build">
+		<mkdir dir="${junit.output.dir}" />
+		<junit fork="yes" printsummary="withOutAndErr">
+			<formatter type="xml" />
+			<test name="de.dnb.GND.AllTests" todir="${junit.output.dir}" />
+			<classpath refid="GND.classpath" />
+		</junit>
+	</target>
+
+	<target name="junitreport" depends="-allTests">
+		<junitreport todir="${junit.output.dir}">
+			<fileset dir="${junit.output.dir}">
+				<include name="TEST-*.xml" />
+			</fileset>
+			<report format="frames" todir="${junit.output.dir}" />
+		</junitreport>
+	</target>
+
+	<!-- Generate javadocs for current project into ${doc.dir} -->
+	<target name="doc" depends="init" description="generate documentation">
+		<javadoc sourcepath="${source.dir}" destdir="${doc.dir}" encoding="UTF-8" charset="UTF-8" docencoding="UTF-8" />
+	</target>
+
+</project>

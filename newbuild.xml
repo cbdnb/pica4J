@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="GND">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../eclipse/"/>
+    <property name="Analysen.location" value="../Analysen"/>
+    <property name="SEUtils.location" value="../SEUtils"/>
+    <property name="div.location" value="../div"/>
+    <property name="musicExperim.location" value="../musicExperim"/>
+    <property name="scrap.location" value="../scrap"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <import file="Mybuild.xml"/>
+    <import file="newbuild2.xml"/>
+    <path id="JUnit 4.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}plugins/org.junit_4.13.2.v20211018-1956.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+    </path>
+    <path id="GND.classpath">
+        <pathelement location="bin"/>
+        <path refid="JUnit 4.libraryclasspath"/>
+        <pathelement location="log4j-1.2.6.jar"/>
+        <pathelement location="lib/marc4j-2.6.0.jar"/>
+        <pathelement location="lib/commons-collections4-4.1.jar"/>
+        <pathelement location="lib/poi-3.15.jar"/>
+        <pathelement location="lib/poi-ooxml-3.15.jar"/>
+        <pathelement location="lib/poi-ooxml-schemas-3.15.jar"/>
+        <pathelement location="lib/poi-scratchpad-3.15.jar"/>
+        <pathelement location="lib/xmlbeans-2.6.0.jar"/>
+        <pathelement location="lib/json-20190722.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="test">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <src path="test"/>
+            <classpath refid="GND.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects">
+        <ant antfile="newbuild.xml" dir="${Analysen.location}" inheritAll="false" target="clean"/>
+        <ant antfile="newbuild.xml" dir="${Analysen.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="newbuild.xml" dir="${SEUtils.location}" inheritAll="false" target="clean"/>
+        <ant antfile="newbuild.xml" dir="${SEUtils.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="newbuild.xml" dir="${div.location}" inheritAll="false" target="clean"/>
+        <ant antfile="newbuild.xml" dir="${div.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="newbuild.xml" dir="${musicExperim.location}" inheritAll="false" target="clean"/>
+        <ant antfile="newbuild.xml" dir="${musicExperim.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="newbuild.xml" dir="${scrap.location}" inheritAll="false" target="clean"/>
+        <ant antfile="newbuild.xml" dir="${scrap.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+    </target>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="AllTests">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="de.dnb.gnd.AllTests" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="GND.classpath"/>
+        </junit>
+    </target>
+    <target name="BibLineFactoryTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="de.dnb.gnd.parser.line.BibLineFactoryTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="GND.classpath"/>
+        </junit>
+    </target>
+    <target name="BibRecUtils">
+        <java classname="de.dnb.gnd.utils.BibRecUtils" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="BibTagDB">
+        <java classname="de.dnb.gnd.parser.tag.BibTagDB" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="BiMap">
+        <java classname="de.dnb.basics.collections.BiMap" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="BiMapVisitor">
+        <java classname="de.dnb.basics.collections.BiMapVisitor" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="BiMultimap">
+        <java classname="de.dnb.basics.collections.BiMultimap" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="BoundedPriorityQueue">
+        <java classname="de.dnb.basics.applicationComponents.BoundedPriorityQueue" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="CartesianIterator">
+        <java classname="de.dnb.basics.collections.CartesianIterator" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="CartesianProducts">
+        <java classname="de.dnb.basics.collections.CartesianProducts" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="CollectionUtils">
+        <java classname="de.dnb.basics.collections.CollectionUtils" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="GNDTagDB">
+        <java classname="de.dnb.gnd.parser.tag.GNDTagDB" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="GNDUtils">
+        <java classname="de.dnb.gnd.utils.GNDUtils" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="HTMLUtils">
+        <java classname="de.dnb.basics.utils.HTMLUtils" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="IdnSet">
+        <java classname="de.dnb.gnd.utils.IdnSet" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="IDNUtils">
+        <java classname="de.dnb.gnd.utils.IDNUtils" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="Komprimierer">
+        <java classname="de.dnb.gnd.utils.Komprimierer" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="ListMultimap">
+        <java classname="de.dnb.basics.collections.ListMultimap" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="ListUtils">
+        <java classname="de.dnb.basics.applicationComponents.ListUtils" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="LogiParserTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="de.dnb.basics.applicationComponents.LogiParserTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="GND.classpath"/>
+        </junit>
+    </target>
+    <target name="Multimap">
+        <java classname="de.dnb.basics.collections.Multimap" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="Pica3Formatter">
+        <java classname="de.dnb.gnd.utils.formatter.Pica3Formatter" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="RDAFormatter">
+        <java classname="de.dnb.gnd.utils.formatter.RDAFormatter" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="RecordUtils">
+        <java classname="de.dnb.gnd.utils.RecordUtils" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="SetMultimap">
+        <java classname="de.dnb.basics.collections.SetMultimap" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="StatisticUtils">
+        <java classname="de.dnb.basics.collections.StatisticUtils" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="StringUtils">
+        <java classname="de.dnb.basics.applicationComponents.StringUtils" failonerror="true" fork="yes">
+            <classpath refid="GND.classpath"/>
+        </java>
+    </target>
+    <target name="StringUtilsTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="de.dnb.basics.applicationComponents.StringUtilsTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="GND.classpath"/>
+        </junit>
+    </target>
+    <target name="TimeUtilsTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="de.dnb.basics.utils.TimeUtilsTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="GND.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>
