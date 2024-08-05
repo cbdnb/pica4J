@@ -1,0 +1,646 @@
+0001	Berlin SBB	DE-1		DE-1	Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Haus Unter den Linden
+0003	Halle ULB	DE-3	FE	DE-601	Universitäts- und Landesbibliothek Sachsen-Anhalt / Zentrale
+0003	Halle ULB	DE-3	SPRACH	DE-601	Universitäts- und Landesbibliothek Sachsen-Anhalt / Zentrale
+0003	Halle ULB	DE-3		DE-1	Universitäts- und Landesbibliothek Sachsen-Anhalt / Zentrale
+0003	Halle ULB	DE-3	FE-VD-17	DE-12	Universitäts- und Landesbibliothek Sachsen-Anhalt / Zentrale
+0004	Marburg UB	DE-4		DE-603	Universität Marburg, Universitätsbibliothek
+0004	Marburg UB	DE-4	FE	DE-4	Universität Marburg, Universitätsbibliothek
+0007	Goettingen SUB	DE-7	FE-VD-17	DE-12	Niedersächsische Staats- und Universitätsbibliothek Göttingen
+0007	Goettingen SUB	DE-7		DE-601	Niedersächsische Staats- und Universitätsbibliothek Göttingen
+0007	GOETTINGEN MATH. INST.	DE-7-003		DE-601	Universität Göttingen, Mathematisches Institut, Bibliothek
+0007	Goettingen UB Bibl. d. Jur. Sem.	DE-7-037		DE-601	Universität Göttingen, Zentralbibliotheken der Juristischen Fakultät
+0007	Goettingen Sem. Dt. Phil.	DE-7-052		DE-601	Universität Göttingen, Seminar für Deutsche Philologie, Bibliothek
+0008	Kiel UB	DE-8	SPRACH	DE-8	Universitätsbibliothek Kiel, Zentralbibliothek
+0008	Kiel UB	DE-8	FE-VD-17	DE-12	Universitätsbibliothek Kiel, Zentralbibliothek
+0008	Kiel UB	DE-8		DE-601	Universitätsbibliothek Kiel, Zentralbibliothek
+0009	Greifswald UB	DE-9		DE-601	Universitätsbibliothek Greifswald
+0012	Muenchen BSB	DE-12		DE-12	Bayerische Staatsbibliothek
+0014	Dresden SLUB	DE-14		DE-576	Sächsische Landesbibliothek - Staats- und Universitätsbibliothek Dresden
+0015	Leipzig UB	DE-15		DE-576	Universitätsbibliothek Leipzig
+0016	Heidelberg UB	DE-16		DE-576	Universitätsbibliothek Heidelberg
+0016	Heidelberg HSbibliographie	DE-16-250		DE-576	HeiBIB - Die Heidelberger Universitätsbibliographie
+0016	Heidelberg UB, SAI, SE	DE-16-77		DE-576	Centre for Asian and Transcultural Studies (CATS), Abteilung Südasien
+0017	Darmstadt ULB	DE-17		DE-603	TU Darmstadt, Universitäts- und Landesbibliothek - Stadtmitte
+0017	Darmstadt ULB	DE-17	FE	DE-17	TU Darmstadt, Universitäts- und Landesbibliothek - Stadtmitte
+0018	Hamburg SUB	DE-18	SE	DE-601	Staats- und Universitätsbibliothek Hamburg Carl von Ossietzky
+0018	Hamburg SUB	DE-18	FE	DE-601	Staats- und Universitätsbibliothek Hamburg Carl von Ossietzky
+0018	Hamburg SUB	DE-18	SPRACH	DE-18	Staats- und Universitätsbibliothek Hamburg Carl von Ossietzky
+0018	Hamburg SUB	DE-18	FE-VD-17	DE-12	Staats- und Universitätsbibliothek Hamburg Carl von Ossietzky
+0018	Hamburg HAW	DE-18-302		DE-601	Hochschule für Angewandte Wissenschaften Hamburg, Hochschulinformations- und Bibliotheksservice (HIBS), Fachbibliothek Technik, Wirtschaft, Informatik
+0018	Hamburg SUB Zentr. Normd.	DE-18-312		DE-18	Zentrale Stelle für Normdaten der Fachbibliotheken der Universität Hamburg
+0018	Hamburg UKE	DE-18-64		DE-18	Universitätsklinikum Hamburg-Eppendorf, Ärztliche Zentralbibliothek
+0019	Muenchen UB	DE-19		DE-19	Universitätsbibliothek der LMU München
+0020	Wuerzburg UB	DE-20		DE-20	Universitätsbibliothek Würzburg
+0021	Tuebingen UB	DE-21		DE-576	Universitätsbibliothek der Eberhard Karls Universität
+0023	Wolfenbuettel HAB	DE-23	FE	DE-601	Herzog August Bibliothek Wolfenbüttel
+0023	Wolfenbuettel HAB	DE-23		DE-12	Herzog August Bibliothek Wolfenbüttel
+0024	Stuttgart Wuertt. LB	DE-24		DE-576	Württembergische Landesbibliothek
+0025	Freiburg UB	DE-25		DE-576	Universitätsbibliothek Freiburg
+0026	Giessen UB	DE-26		DE-603	Universitätsbibliothek Gießen
+0026	Giessen UB	DE-26	FE	DE-26	Universitätsbibliothek Gießen
+0027	Jena THULB	DE-27		DE-601	Thüringer Universitäts- und Landesbibliothek
+0028	Rostock UB	DE-28	FE	DE-28	Universitätsbibliothek Rostock
+0028	Rostock UB	DE-28		DE-601	Universitätsbibliothek Rostock
+0029	Erlangen UB	DE-29		DE-29	Universitätsbibliothek Erlangen-Nürnberg, Hauptbibliothek
+0030	Frankfurt/M StuUB	DE-30		DE-603	Universitätsbibliothek J. C. Senckenberg, Zentralbibliothek (ZB)
+0030	Frankfurt/M StuUB	DE-30	FE	DE-30	Universitätsbibliothek J. C. Senckenberg, Zentralbibliothek (ZB)
+0031	Karlsruhe BLB	DE-31		DE-576	Badische Landesbibliothek
+0032	Weimar HAAB	DE-32		DE-601	Klassik Stiftung Weimar / Herzogin Anna Amalia Bibliothek
+0033	Schwerin LBMV	DE-33		DE-601	Landesbibliothek Mecklenburg-Vorpommern Günther Uecker im Landesamt für Kultur und Denkmalpflege
+0034	Kassel GHB	DE-34		DE-603	Universitätsbibliothek Kassel, Landesbibliothek und Murhardsche Bibliothek der Stadt Kassel
+0034	Kassel GHB	DE-34	FE	DE-34	Universitätsbibliothek Kassel, Landesbibliothek und Murhardsche Bibliothek der Stadt Kassel
+0035	Hannover NLB	DE-35	FE	DE-601	Gottfried Wilhelm Leibniz Bibliothek - Niedersächsische Landesbibliothek
+0035	Hannover NLB	DE-35	FE-VD-17	DE-12	Gottfried Wilhelm Leibniz Bibliothek - Niedersächsische Landesbibliothek
+0036	Mainz StBi	DE-36		DE-603	Wissenschaftliche Stadtbibliothek
+0036	Mainz StBi	DE-36	FE	DE-36	Wissenschaftliche Stadtbibliothek
+0038	Köln UuSTB	DE-38		DE-605	Universitäts- und Stadtbibliothek Köln, Hauptabteilung
+0043	Wiesbaden LB	DE-43		DE-603	Hochschul- und Landesbibliothek RheinMain, Rheinstraße
+0043	Wiesbaden LB	DE-43	FE	DE-43	Hochschul- und Landesbibliothek RheinMain, Rheinstraße
+0045	Oldenburg LB	DE-45		DE-601	Landesbibliothek Oldenburg
+0046	Bremen SuUB	DE-46		DE-601	Staats- und Universitätsbibliothek Bremen
+0048	Luebeck StB	DE-48		DE-601	Bibliothek der Hansestadt Lübeck
+0056	Braunschweig StBi	DE-56	FE-VD-17	DE-12	Stadtbibliothek Braunschweig
+0056	Braunschweig StBi	DE-56		DE-601	Stadtbibliothek Braunschweig
+0059	Chemnitz STB	DE-59		DE-576	Stadt Chemnitz, Kulturbetrieb, Stadtbibliothek
+0066	Fulda HLB	DE-66		DE-603	Hochschul- und Landesbibliothek Fulda, Standort Heinrich-von-Bibra-Platz
+0066	Fulda HLB	DE-66	FE	DE-66	Hochschul- und Landesbibliothek Fulda, Standort Heinrich-von-Bibra-Platz
+0068	Kiel LB	DE-68		DE-601	Schleswig-Holsteinische Landesbibliothek
+0075	Nuernberg StB	DE-75		DE-12	Stadtbibliothek im Bildungscampus Nürnberg
+0077	Mainz UB	DE-77		DE-603	Universität Mainz, Zentralbibliothek
+0077	Mainz UB	DE-77	FE	DE-77	Universität Mainz, Zentralbibliothek
+0083	Berlin, UB TU	DE-83	SE	DE-188	TU Berlin, Universitätsbibliothek
+0083	Berlin, UB TU	DE-83	FE	DE-384	TU Berlin, Universitätsbibliothek
+0083	Berlin, UB TU	DE-83		DE-83	TU Berlin, Universitätsbibliothek
+0084	Braunschweig UB TU	DE-84		DE-601	Universitätsbibliothek Braunschweig
+0089	Hannover TIB/UB	DE-89		DE-601	Technische Informationsbibliothek (TIB) / Leibniz-Informationszentrum Technik und Naturwissenschaften und Universitätsbibliothek
+0090	Karlsruhe UB (KIT)	DE-90		DE-576	Karlsruher Institut für Technologie, KIT-Bibliothek
+0091	Muenchen TU	DE-91		DE-91	Technische Universität München, Universitätsbibliothek
+0093	Stuttgart UB	DE-93		DE-576	Universitätsbibliothek Stuttgart
+0095	Hannover TierHS	DE-95		DE-601	Stiftung Tierärztliche Hochschule Hannover, Bibliothek
+0100	Stuttgart-Hoh. KIM	DE-100		DE-576	Kommunikations-, Informations- und Medienzentrum der Universität Hohenheim
+0103	SBB / ZKA	DE-611		DE-611	Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Kalliope-Verbund
+0104	Clausthal-Z. UB	DE-104		DE-600	Universitätsbibliothek Clausthal
+0105	Freiberg TU BA	DE-105		DE-576	Technische Universität Bergakademie Freiberg, Bibliothek 'Georgius Agricola'
+0125	Zwickau RSB	DE-125		DE-576	Ratsschulbibliothek, Wissenschaftliche Bibliothek
+0180	Mannheim UB	DE-180		DE-576	Universitätsbibliothek Mannheim
+0188	Berlin UB FU	DE-188		DE-602	Freie Universität Berlin, Universitätsbibliothek
+0204	Berlin IAI	DE-204		DE-204	Ibero-Amerikanisches Institut Preußischer Kulturbesitz, Bibliothek
+0206	Kiel ZBW	DE-206		DE-601	ZBW - Leibniz-Informationszentrum Wirtschaft, Standort Kiel
+0208	Karlsruhe BGH	DE-208		DE-576	Bibliothek des Bundesgerichtshofs
+0212	Stuttgart Inst. Auslandsbez	DE-212		DE-576	Institut für Auslandsbeziehungen, Bibliothek
+0253	Braunschweig FAL	DE-253		DE-601	Thünen-Institut, Bundesforschungsinstitut für Ländliche Räume, Wald und Fischerei, Zentrum für Informationsmanagement
+0255	Muenchen ZIKG	DE-255		DE-612	Zentralinstitut für Kunstgeschichte, Bibliothek
+0255	Rom Bibl. Hertziana	DE-Y2		DE-612	Bibliotheca Hertziana - Max-Planck-Institut für Kunstgeschichte
+0255	Florenz KHI	DE-Y3		DE-612	Kunsthistorisches Institut in Florenz, Max-Planck-Institut, Bibliothek
+0255	Paris DFK	DE-Y7		DE-612	Deutsches Forum für Kunstgeschichte, Bibliothek
+0281	Berlin Bundestag Bibliothek	DE-281		DE-281	Deutscher Bundestag, Bibliothek
+0289	Ulm UB (KIZ)	DE-289		DE-576	Universität Ulm, Kommunikations- und Informationszentrum, Bibliotheksservices
+0291	Saarbruecken UuLB	DE-291		DE-576	Saarländische Universitäts- und Landesbibliothek
+0296	Singen Hegau-B	DE-296		DE-576	Hegau-Bibliothek
+0352	Konstanz UB	DE-352		DE-576	Universität Konstanz, Kommunikations-, Informations-, Medienzentrum (KIM)
+0354	Hannover Med. HS	DE-354		DE-601	Medizinische Hochschule Hannover, Bibliothek
+0355	Regensburg UB	DE-355		DE-355	Universitätsbibliothek Regensburg
+0384	Augsburg UB	DE-384		DE-384	Universitätsbibliothek Augsburg
+0460	Darmstadt Staatsarchiv	DE-460		DE-603	Hessisches Staatsarchiv Darmstadt, Bibliothek
+0468	Wuppertal UB	DE-468		DE-605	Universitätsbibliothek Wuppertal
+0473	Bamberg UB	DE-473		DE-473	Universitätsbibliothek Bamberg
+0500	HBZ	DE-605		DE-605	hbz - Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen
+0517	Potsdam UB	DE-517		DE-601	Universität Potsdam, Universitätsbibliothek
+0521	Frankfurt/O UB	DE-521		DE-521	Europa-Universität Viadrina, Universitätsbibliothek
+0522	Brandenburg FH	DE-522		DE-521	Technische Hochschule Brandenburg, Hochschulbibliothek
+0523	Berlin HTW	DE-523		DE-521	Hochschule für Technik und Wirtschaft Berlin, Hochschulbibliothek
+0526	Wildau TH	DE-526		DE-521	Technische Hochschule Wildau [FH], Hochschulbibliothek
+0540	Dresden HfBK FE	DE-540		DE-576	Hochschule für Bildende Künste Dresden, Bibliothek
+0547	Erfurt UB	DE-547		DE-601	Universitätsbibliothek Erfurt / Forschungsbibliothek Gotha, Universitätsbibliothek Erfurt
+0547	Erfurt/Gotha UFB	DE-547	FE-VD-17	DE-12	Universitätsbibliothek Erfurt / Forschungsbibliothek Gotha, Universitätsbibliothek Erfurt
+0563	Rostock HS Musik	DE-563		DE-601	Hochschule für Musik und Theater Rostock, Bibliothek
+0600	HeBIS	DE-603		DE-603	Hessisches BibliotheksInformationsSystem HeBIS
+0614	Muenster Int.Port.Westf.Gesch	DE-614		DE-614	Internet-Portal \"Westfälische Geschichte\"
+0631	Stuttgart LABI BAW	DE-631		DE-576	Landesbibliographie Baden-Württemberg, Zentralredaktion
+0700	Osnabrueck UB	DE-700		DE-700	Universitätsbibliothek Osnabrück
+0703	Bayreuth UB	DE-703		DE-703	Universitätsbibliothek Bayreuth
+0705	Hamburg UniBW (HSU)	DE-705		DE-601	Helmut-Schmidt-Universität, Universität der Bundeswehr Hamburg, Universitätsbibliothek
+0706	Muenchen UniBW	DE-706		DE-706	Universität der Bundeswehr München, Universitätsbibliothek
+0715	Oldenburg BIS	DE-715		DE-601	Bibliotheks-und Informationssystem der Carl von Ossietzky Universität Oldenburg (BIS)
+0739	Passau UB	DE-739		DE-739	Universitätsbibliothek Passau
+0747	Weingarten HSB	DE-747		DE-576	Hochschulbibliothek Weingarten
+0755	Emden/Leer FH	DE-755		DE-601	Hochschule Emden/Leer, Hochschulbibliothek
+0824	Eichstaett UB	DE-824		DE-824	Universitätsbibliothek Eichstätt-Ingolstadt
+0830	Hamburg UB TU	DE-830		DE-601	Technische Universität Hamburg, Universitätsbibliothek
+0832	Koeln FHB, SE	DE-832		DE-832	Technische Hochschule Köln, Hochschulbibliothek
+0834	Braunschweig HBK	DE-834		DE-601	Hochschule für Bildende Künste Braunschweig, Bibliothek
+0839	WHV Jade Hochschule	DE-839		DE-601	Jade Hochschule Wilhelmshaven/Oldenburg/Elsfleth, Campus Wilhelmshaven, Bibliothek
+0897	Oldenburg Jade-Hochschule	DE-897		DE-601	Jade Hochschule Wilhelmshaven/Oldenburg/Elsfleth, Campus Oldenburg, Bibliothek
+0897	Elsfleth Jade HS	DE-897-1		DE-601	Jade Hochschule Wilhelmshaven/Oldenburg/Elsfleth, Campus Elsfleth, Bibliothek
+0916	Wolfenbuettel FH	DE-916		DE-601	Ostfalia Hochschule für angewandte Wissenschaften, Bibliothek
+0929	Koblenz LB	DE-929		DE-605	Landesbibliothekszentrum Rheinland-Pfalz / Rheinische Landesbibliothek
+0955	Rottenburg HS Forstw	DE-955		DE-576	Hochschule für Forstwirtschaft Rottenburg, Bibliothek
+0960	Hannover FHB	DE-960		DE-601	Bibliothek der Hochschule Hannover
+0969	Wiesbaden FHB	DE-969		DE-603	Wiesbaden FHB
+0974	Giessen-Friedberg FHB	DE-974		DE-603	Technische Hochschule Mittelhessen, Hochschulbibliothek Gießen
+0984	Schwäbisch Gmünd HS Gestalt.	DE-984		DE-576	Hochschule für Gestaltung Schwäbisch Gmünd, Bibliothek
+0996	Hannover HMTM/FMG	DE-996	FE	DE-1	Hochschule für Musik, Theater und Medien Hannover, Bibliothek
+0996	Hannover HMTM/FMG	DE-996	GKD	DE-601	Hochschule für Musik, Theater und Medien Hannover, Bibliothek
+1015	Darmstadt Ev. HS	DE-1015		DE-603	Evangelische Hochschule Darmstadt, Bibliothek
+1031	Berlin SBB	DE-1	FE	DE-601	Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Haus Unter den Linden
+1158	Guestrow FH oeff. Verw.	DE-1158		DE-601	Fachhochschule für öffentliche Verwaltung, Polizei und Rechtspflege des Landes Mecklenburg-Vorpommern, Bibliothek
+1402	OENDV	AT-NOeLB		AT-NOELB	Niederösterreichische Landesbibliothek
+1500	SWB	DE-576		DE-576	Bibliotheksservice-Zentrum Baden-Württemberg (BSZ)
+1510	BSZ Baden-Wuerttemberg - PND	DE-576-2		DE-576	früher: Konstanz; Bibliotheksservice-Zentrum Baden-Württemberg, Autorenredaktion
+1520	Reutlingen EKZ	DE-Rt5		DE-576	ekz.bibliotheksservice GmbH
+1600	Bern NB	CH-000001-5		CH-000001-5	Schweizerische Nationalbibliothek
+1610	IDS-SE	CH-IDSGNDS		CH-IDSGNDS	IDS-SE
+1702	Neuendetttelsau VThK (THB)	DE-613		DE-613	Virtueller Katalog Theologie und Kirche
+1703	Bremen Stiftung FLF / DaSinD	DE-Bre15		DE-Bre15	Stiftung Frauen-Literatur-Forschung e.V.
+1704	Bonn GESIS	DE-587b		DE-587b	früher: GESIS  - Leibniz-Institut für Sozialwissenschaften,  Bibliothek Bonn
+1705	Koblenz Bundesarchiv	DE-1958		DE-604	Bundesarchiv
+1706	Braunschweig PTB	DE-Bs68		DE-601	Physikalisch-Technische Bundesanstalt, Bibliothek
+1707	Braunschweig GEI	DE-Bs78		DE-601	Georg-Eckert-Institut - Leibniz-Institut für internationale Schulbuchforschung, Bibliothek
+1711	Berlin DZA	DE-B1562		DE-601	Deutsches Zentrum für Altersfragen e.V. (DZA), Bibliothek
+1712	Gatersleben IPK	DE-Gat1		DE-Gat1	Leibniz-Institut für Pflanzengenetik und Kulturpflanzenforschung (IPK), Wissenschaftliche Bibliothek / Dokumentation
+1713	Kiel FH	DE-Ki95		DE-601	Fachhochschule Kiel, Zentralbibliothek
+1714	Hamburg MKG	DE-H22		DE-601	Gerd Bucerius Bibliothek im Museum für Kunst und Gewerbe
+1715	Berlin Stiftung Aufarbeitung	DE-B1548		DE-B1548	Stiftung zur Aufarbeitung der SED-Diktatur, Bibliothek
+1716	Frankfurt DIF	DE-Wi17FP		DE-101	DFF - Deutsches Filminstitut & Filmmuseum / filmportal.de
+1717	Hildesheim Dombibliothek	DE-Hil6		DE-601	Dombibliothek Hildesheim
+1718	Berlin BfR	DE-B12		DE-B12	Bundesinstitut für Risikobewertung, Bibliothek
+1719	Hannover LT Nie	DE-Hv14		DE-601	Niedersächsischer Landtag, Bibliothek
+1720	Karlsruhe BFI	DE-Ka51		DE-Ka51	Max Rubner-Institut, Bundesforschungsinstitut für Ernährung und Lebensmittel, Standort Karlsruhe, Bibliothek, Information und Dokumentation
+1721	Jena FLI	DE-J120		DE-J120	Friedrich-Loeffler-Institut, Bundesforschungsinstitut für Tiergesundheit, Bibliothek Jena
+1722	Weimar HS Musik	DE-Wim8		DE-601	Hochschule für Musik Franz Liszt, Hochschulbibliothek
+1723	Berlin Hertie School	DE-B1570		DE-601	Hertie School, Library and Information Services
+1724	Hildesheim Nieders. LRH	DE-Hil5		DE-601	Niedersächsischer Landesrechnungshof, Bibliothek und Informationsdienste
+1725	Wismar FH	DE-Wis1		DE-601	Hochschule Wismar, University of Applied Sciences: Technology, Business and Design, Hochschulbibliothek
+1727	Berlin Dt. Inst.f.Menschenr.,FE	DE-B1547		DE-601	Deutsches Institut für Menschenrechte, Bibliothek
+1728	Marburg Hess Landesamt	DE-Mb107		DE-Mb107	Hessisches Landesamt für geschichtliche Landeskunde, Landesgeschichtliches Informationssystem Hessen
+1729	Emden JALB	DE-Em2		DE-601	Johannes a Lasco Bibliothek Große Kirche Emden
+1730	Goettingen GWDG	DE-Goe168		DE-601	Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen (GWDG), Bibliothek
+1732	Hamburg Bucerius Law School	DE-H360		DE-601	Bucerius Law School, Hochschule für Rechtswissenschaft, \"Hengeler Mueller\"-Bibliothek
+1733	Ilmenau UB	DE-Ilm1		DE-601	Universitätsbibliothek Ilmenau
+1734	Jena FH	DE-J59		DE-601	Ernst-Abbe-Hochschule Jena, Wissenschaftliche Bibliothek
+1735	Jena Thuering. OLG	DE-J153		DE-601	Justizzentrum Jena, Bibliothek
+1736	Magdeburg UB	DE-Ma9		DE-601	Otto-von-Guericke-Universität, Universitätsbibliothek
+1737	Oldenburg Ev.Luth. Oberk.	DE-Old3		DE-601	Evangelisch-Lutherischer Oberkirchenrat, Bibliothek
+1738	Schmalkalden FH	DE-Shm2		DE-601	Hochschule  Schmalkalden, Cellarius Bibliothek
+1739	Vechta UB	DE-Va1		DE-601	Universitätsbibliothek Vechta
+1740	Weimar UB	DE-Wim2		DE-601	UB Weimar
+1742	Chemnitz UB	DE-Ch1		DE-576	Technische Universität Chemnitz, Universitätsbibliothek
+1745	Bremen La.ki.Bibl.	DE-Bre4		DE-601	Landeskirchliche Bibliothek Bremen
+1746	Goettingen Otto-Hahn-Bibl.	DE-Goe116		DE-601	Otto-Hahn-Bibliothek des Max-Planck-Instituts für biophysikalische Chemie
+1748	Berlin PTB	DE-B108		DE-601	Physikalisch-Technische Bundesanstalt, Institut Berlin, Bibliothek
+1749	Osnabrueck FH Teilb. Musik	DE-959-2		DE-601	früher: Hochschule Osnabrück, Bibliothek, Teilbibliothek Musik
+1750	Marburg FSt Personalschriften FE	DE-Mb108		DE-Mb108	Forschungsstelle für Personalschriften an der Philipps-Universität Marburg
+1751	Dresden ISGV SAEBI	DE-D174a		DE-D174a	Institut für Sächsische Geschichte und Volkskunde, Projekt \"Sächsische Biografie\"
+1752	Marburg Ev. HS Tabor	DE-Mb109		DE-Mb109	Evangelische Hochschule Tabor, Bibliothek
+1753	Berlin UdK	DE-B170	SE	DE-188	Universität der Künste Berlin, Universitätsbibliothek
+1753	Berlin UdK	DE-B170	FE	DE-384	Universität der Künste Berlin, Universitätsbibliothek
+1756	Gotha Schlossmuseum	DE-G16		DE-601	Stiftung Schloss Friedenstein Gotha, Bibliothek
+1757	Kiel IFM-GEOMAR	DE-Ki109		DE-601	Helmholtz-Zentrum für Ozeanforschung Kiel (GEOMAR), Bibliothek Westufer
+1758	Brandenburgische Technische Universität Cottbus - Senftenberg	DE-634		DE-521	Brandenburgische Technische Universität Cottbus - Senftenberg, Universitätsbibliothek
+1758	Cottbus BTU, SE	DE-Co1		DE-188	Cottbus BTU
+1759	Eberswalde FH	DE-Eb1		DE-521	Hochschule für nachhaltige Entwicklung Eberswalde, Hochschulbibliothek
+1762	Potsdam TFA	DE-Po84		DE-101	Theodor-Fontane-Archiv Universität Potsdam
+1763	Halle Franckesche Stiftungen	DE-Ha33		DE-601	Franckesche Stiftungen, Studienzentrum August Hermann Francke, Archiv und Bibliothek
+1764	Marbach DLA	DE-Mar1		DE-576	Deutsches Literaturarchiv Marbach, Bibliothek
+1765	Marburg DFG-Projekt Thenom	DE-Mb111		DE-Mb111	DFG-Projekt Thenom (Thesaurus Nominum Auctorum et Mortuorum) an der Philipps-Universität Marburg, FB 06, Sozial- u. Wirtschaftsgeschichte
+1766	Marburg Foto	DE-Mb112		DE-Mb112	Deutsches Dokumentationszentrum für Kunstgeschichte - Bildarchiv Foto Marburg
+1767	Bad Koesen Landesschule Pforte	DE-Pf1		DE-Pf1	Landesschule Pforte, Archiv und Bibliothek
+1768	Halle/S Marienbibliothek	DE-Ha32		DE-601	Marienbibliothek
+1769	Bern HLS Schweiz	CH-001499-7		CH-000001-5	Historisches Lexikon der Schweiz (HLS), Zentralredaktion
+1770	Bern DoDIS	CH-001661-0		CH-000001-5	Bern DoDIS
+1771	Bern Foto CH	CH-001651-4		CH-000001-5	Bern Foto CH
+1772	Muenchen BMLO	DE-M512		DE-12	Bayerisches Musiker-Lexikon Online
+1773	Goettingen Germ. Sacra	DE-Goe172		DE-601	Akademie der Wissenschaften zu Göttingen, Germania Sacra
+1774	Goettingen Sanskrit Woerterbuch	DE-7-911		DE-601	Akademie der Wissenschaften zu Göttingen, Sanskrit-Wörterbuch, Bibliothek
+1775	Zuerich SIK	CH-000479-X		CH-000006-1	Zuerich SIK
+1776	Lokalredaktion UB Basel, f 	CH-BaUGNF		CH-BaUGNF	Basel UB Portraitsammlung
+XXXX	Lokalredaktion UB Basel, s	CH-BaUGNS		CH-BaUGNS	Basel UB Portraitsammlung
+XXXX	Lokalredaktion UB Basel Verbund	CH-BaUGNV		CH-BaUGNV	Basel UB Portraitsammlung
+XXXX	Lokalredaktion HAN	CH-BaUGNH		CH-BaUGNH	Basel UB Portraitsammlung
+1777	Berlin Wikimedia Deutschland	DE-B1592		DE-B1592	Wikimedia Deutschland e.V., Bibliothek
+1778	Beirut Orient-Institut	DE-Y9		DE-601	Orient-Institut Beirut
+1779	Bremen Forschungsst. Osteuropa	DE-Bre12		DE-601	Forschungsstelle Osteuropa an der Universität Bremen - Bibliothek
+1780	Wiesbaden Hess. Hauptstaatsarch.	DE-Wi1		DE-603	Hessisches Hauptstaatsarchiv, Bibliothek
+1781	Muencheberg Senckenberg DEI	DE-B15		DE-603	Senckenberg Deutsches Entomologisches Institut, Entomologische Bibliothek
+1782	Frankfurt Staedel Museum	DE-F10		DE-603	Städel Museum, Bibliothek
+1783	Bad Homburg Stadtarchiv	DE-Hog1		DE-603	Stadtarchiv Bad Homburg vor der Höhe, Bibliothek
+1784	Mainz NHM Naturhistor. Museum	DE-Mz119		DE-603	Naturhistorisches Museum und Landessammlung für Naturkunde Mainz, Bibliothek
+1785	Mittweida HS	DE-Mit1		DE-576	Hochschule Mittweida (FH), Hochschulbibliothek
+1786	Zwickau HS	DE-Zwi2		DE-576	Westsächsische Hochschule Zwickau, Bibliothek
+1787	Dreseden LFA Sachsen	DE-D115		DE-576	Landesamt für Archäologie Sachsen, Bibliothek
+1788	Dresden HFM	DE-D117		DE-576	Hochschule für Musik 'Carl Maria von Weber', Hochschulbibliothek
+1789	Dresden SKD	DE-D13		DE-576	Staatliche Kunstsammlungen Dresden, Kunstbibliothek
+1790	Freiburg MFO	DE-Frei3c		DE-576	Mathematisches Forschungsinstitut Oberwolfach gGmbH, Bibliothek
+1791	Freiburg Caritas Bibl.	DE-Frei26		DE-576	Deutscher Caritasverband e.V., Bibliothek
+1792	Freiburg MPI CC	DE-Frei85		DE-576	Max-Planck-Institut für ausländisches und internationales Strafrecht, Bibliothek
+1793	Freiburg DVA	DE-Frei99		DE-576	Freiburg DVA
+1794	Freiburg ABI	DE-Frei119		DE-576	Arnold-Bergstraesser-Institut für kulturwissenschaftliche Forschung, Bibliothek
+1795	Freiburg Augustiner-Museum	DE-Frei123		DE-576	Städtische Museen Freiburg, Augustinermuseum/Museum für Neue Kunst, Bibliothek
+1796	Kehl HS	DE-Kh1		DE-576	Hochschule für öffentliche Verwaltung Kehl, Bibliothek
+1797	Offenburg HS	DE-Ofb1		DE-576	Hochschule Offenburg, University of Applied Sciences, Bibliothek Campus Offenburg
+1798	Heidelberg PH	DE-He76		DE-576	Bibliothek der Pädagogischen Hochschule Heidelberg
+1799	Heidelberg MPIL	DE-B208		DE-576	Max-Planck-Institut für ausländisches öffentliches Recht und Völkerrecht, Bibliothek
+1801	Karlsruhe BVerfG	DE-Ka26		DE-576	Bundesverfassungsgericht, Bibliothek
+1802	Karlsruhe HfM	DE-Ka84		DE-576	Hochschule für Musik Karlsruhe, Bibliothek
+1803	Karlsruhe ZKM	DE-Ka88		DE-576	Zentrum für Kunst und Medien Karlsruhe / Staatliche Hochschule für Gestaltung, Bibliothek
+1804	Karlsruhe Kunsthalle	DE-Ka23		DE-576	Staatliche Kunsthalle, Bibliothek
+1805	Leipzig Bach-Archiv	DE-L326		DE-576	Bach-Archiv, Bibliothek
+1806	Leipzig BVerwG	DE-B791		DE-576	Bundesverwaltungsgericht, Bibliothek
+1807	Leipzig HTWK	DE-L189		DE-576	Hochschule für Technik, Wirtschaft und Kultur, Hochschulbibliothek
+1808	Leipzig HMT	DE-L152		DE-576	Hochschule für Musik und Theater 'Felix Mendelssohn Bartholdy', Hochschulbibliothek
+1809	Mannheim MUHO	DE-Mh31		DE-576	Staatliche Hochschule für Musik und Darstellende Kunst Mannheim, Bibliothek
+1810	Mannheim TECHNOSEUM	DE-Mh34		DE-576	TECHNOSEUM Landesmuseum für Technik und Arbeit, Bibliothek
+1811	Stuttgart LKZB	DE-Stg117		DE-576	Landeskirchliche Zentralbibliothek - Bibliothek des Evangelischen Oberkirchenrats
+1812	Stuttgart Haus Birkach	DE-Stg257		DE-576	Evangelisches Bildungszentrum Haus Birkach, Bibliothek
+1813	Stuttgart HDG	DE-Stg269		DE-576	Haus der Geschichte Baden-Württemberg, Bibliothek
+1814	Stuttgart MH	DE-Stg111		DE-576	Staatliche Hochschule für Musik und Darstellende Kunst Stuttgart, Bibliothek
+1815	Stuttgart Stadtarchiv	DE-Stg277		DE-576	Stadtarchiv Stuttgart, Bibliothek
+1816	Trossingen MH	DE-Trs1		DE-576	Staatliche Hochschule für Musik Trossingen, Hochschulbibliothek
+1817	Stuttgart WABW	DE-Stg256		DE-576	Wirtschaftsarchiv Baden-Württemberg, Bibliothek
+1818	Ludwigsburg DFI	DE-Lg3		DE-576	Deutsch-Französisches Institut, Frankreich-Bibliothek
+1819	Rottenburg DioezesanB	DE-Rot2		DE-576	Diözesanbibliothek Rottenburg
+1820	Sigmaringen STA	DE-Sig1		DE-576	Landesarchiv Baden-Württemberg, Abteilung Staatsarchiv Sigmaringen, Bibliothek
+1821	Tuebingen JS	DE-21-24		DE-576	Juristisches Seminar, Bibliothek
+1822	München Goethe-Zentr.	DE-M504		DE-576	Goethe-Institut e. V. Zentrale, Bibliothek
+1823	Hamburg MPI Priv.	DE-B212		DE-576	Max-Planck-Institut für ausländisches und internationales Privatrecht, Bibliothek
+1824	Kassel documenta Archiv	DE-Ks17		DE-576	documenta archiv, Bibliothek
+1825	Nuernberg GNM	DE-N1		DE-576	Germanisches Nationalmuseum, Bibliothek
+1826	Speyer DHV	DE-Sp3		DE-576	Deutsche Universität für Verwaltungswissenschaften Speyer, Universitätsbibliothek
+1827	Hannover Ev.Luth.Landesk.	DE-Hv111		DE-601	Evangelisch-Lutherisches Landeskirchenamt, Bibliothek
+1828	Berlin GSTA	DE-B41	FE	DE-601	Geheimes Staatsarchiv Preußischer Kulturbesitz, Bibliothek
+1828	Berlin GSTA	DE-B41	SE	DE-1	Geheimes Staatsarchiv Preußischer Kulturbesitz, Bibliothek
+1829	Berlin SIM	DE-B763	FE	DE-601	Staatliches Institut für Musikforschung - Preußischer Kulturbesitz, Bibliothek
+1829	Berlin SIM	DE-B763	SE	DE-1	Staatliches Institut für Musikforschung - Preußischer Kulturbesitz, Bibliothek
+1830	Berlin KB	DE-B11	FE	DE-601	Staatliche Museen zu Berlin, Preußischer Kulturbesitz, Kunstbibliothek
+1830	Berlin KB	DE-B11	SE	DE-1	Staatliche Museen zu Berlin, Preußischer Kulturbesitz, Kunstbibliothek
+1831	Darmstadt HLM	DE-Ds82		DE-603	Hessisches Landesmuseum Darmstadt, Bibliothek
+1832	Tübingen Brechtbau-Bib	DE-21-108		DE-576	Brechtbau-Bibliothek
+1833	Reutlingen HSB	DE-Rt2		DE-576	Hochschulbibliothek Reutlingen (Lernzentrum)
+1834	Mannheim MZES	DE-180-4-2		DE-576	Mannheimer Zentrum für Europäische Sozialforschung, Bibliothek
+1835	Goerlitz OLB	DE-Gl2		DE-576	Oberlausitzische Bibliothek der Wissenschaften bei den Görlitzer Sammlungen
+1836	Dresden HAIT	DE-D264		DE-576	Hannah-Arendt-Institut für Totalitarismusforschung e.V., Bibliothek
+1837	Esslingen Stadtarchiv	DE-Ess4		DE-576	Stadtarchiv Esslingen, Bibliothek
+1838	Hamburg HS Musik	DE-18-258		DE-601	Hochschule für Musik und Theater, Bibliothek
+1839	Hildesheim UB	DE-Hil2		DE-601	Universitätsbibliothek Hildesheim
+1840	Erfurt TFM	DE-Ef32		DE-601	Thüringer Finanzministerium, Bibliothek
+1841	Stuttgart Lindenmuseum	DE-Stg5		DE-576	Linden-Museum Stuttgart, Bibliothek
+1842	Zittau/Goerlitz HS	DE-Zi4		DE-576	Hochschule Zittau / Görlitz, Hochschulbibliothek
+1843	Weimar TLDA	DE-Wim7		DE-601	Landesamt für Denkmalpflege und Archäologie, Dienststelle Weimar mit Museum für Ur- und Frühgeschichte Thüringens, Bibliothek
+1844	Aurich LandschaftsB	DE-Au3		DE-601	Landschaftsbibliothek Aurich
+1845	Berlin AdW B	DE-B4		DE-601	Berlin-Brandenburgische Akademie der Wissenschaften, Akademiebibliothek
+1846	Berlin AdW GRA	DE-B4-556		DE-601	Berlin, Berlin-Brandenburgische Akademie der Wissenschaften, Akademiebibliothek, Teilbibliothek Griechisch-römische Altertumskunde
+1847	MPI Bildungsforsch.	DE-B1532		DE-601	Max-Planck-Institut für Bildungsforschung, Bibliothek und wissenschaftliche Information
+1848	Center for World Music	DE-Hil8		DE-601	Center for World Music, Bibliothek
+1849	Hamburger Kunsthalle	DE-H13		DE-601	Hamburger Kunsthalle, Bibliothek
+1850	Hamburg Ärztl. Verein	DE-H20		DE-601	Ärztekammer Hamburg, Bibliothek des Ärztlichen Vereins
+1851	Museum Arbeit Hamburg	DE-H353		DE-601	Stiftung Historische Museen Hamburg, Museum der Arbeit, Bibliothek
+1852	Mus. Hamburg. Geschichte	DE-H77		DE-601	Stiftung Historische Museen Hamburg, Museum für Hamburgische Geschichte, Bibliothek
+1853	Rostock Inst.Ostseefor.	DE-Wa1		DE-601	Leibniz-Institut für Ostseeforschung Warnemünde, Bibliothek
+1854	Dummerstorf Inst Nutztierbiol.	DE-R48		DE-601	Leibniz-Institut für Nutztierbiologie, Bibliothek
+1855	Hamburg, Bibliothek Geowiss.	DE-H144		DE-601	Behörde für Stadtentwicklung und Wohnen / Behörde für Umwelt und Energie - Bibliothek Stadtentwicklung, Umwelt und Geologie: Sondersammlung des Geologischen Landesamtes (GLA)
+1856	Hamburg Mus. Völkerkunde	DE-H16		DE-601	Museum am Rothenbaum, Bibliothek
+1857	Kassel MHK	DE-Ks14		DE-603	Museumslandschaft Hessen Kassel, Bibliothek
+1858	Tuebingen IxTheo	DE-Tue135		DE-576	Index theologicus der Universitätsbibliothek Tübingen
+1859	Mannheim IDS WGL	DE-Mh39		DE-576	Leibniz-Institut für Deutsche Sprache (IDS), Bibliothek
+1860	Stuttgart Landesmuseum	DE-Stg266		DE-576	Landesmuseum Württemberg, Bibliothek
+1861	Loerrach Duale Hochschule BW	DE-Loer2		DE-576	Duale Hochschule Baden-Württemberg Lörrach, Zentralbibliothek
+1862	Bremerhaven A.-Wegener-Inst.	DE-Bv2		DE-601	Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung, (AWI), Bibliothek
+1863	Hamburg Nordkirchenbibliothek	DE-H99		DE-601	Nordkirchenbibliothek im Bibliotheks- und Medienzentrum der Nordkirche
+1864	Freiburg HS Musik Bibl.	DE-Frei50		DE-576	Hochschule für Musik Freiburg, Bibliothek
+1865	Saarbruecken Stift. Kulturbesitz	DE-Sa27		DE-576	Stiftung Saarländischer Kulturbesitz, Bibliothek
+1866	Bochum HSG	DE-1866		DE-576	Hochschule für Gesundheit, Hochschulbibliothek
+1867	Weimar Hauptstaatsarchiv	DE-Wim6		DE-601	Hauptstaatsarchiv Weimar, Bibliothek
+1868	Zuerich, GTA	CH-001803-8		CH-000006-1	Zuerich, GTA
+1869	Nuertingen HKT-Bibl.	DE-1869		DE-576	Hochschule für Wirtschaft und Umwelt Nürtingen-Geislingen, Bibliothek Campus Hauber
+1870	Frankfurt/M HFMDK	DE-F78		DE-603	Hochschule für Musik und Darstellende Kunst, Bibliothek
+1871	Hamm ZfW	DE-1871		DE-576	Zentrum für Wissensmanagement, Bibliothek Hamm
+1873	Fulda Priesterseminar	DE-Ful2		DE-603	Bibliothek des Bischöflichen Priesterseminars
+1874	Luebeck MusikHS	DE-Lue12		DE-601	Musikhochschule Lübeck, Bibliothek
+1875	FFM Frau und Musik	DE-Ks15		DE-576	Archiv Frau und Musik
+1876	FFM Stadtgeschichte	DE-F186		DE-576	Institut für Stadtgeschichte Frankfurt, Bibliothek
+1877	FFM FDH/FGM	DE-F25		DE-576	Freies Deutsches Hochstift / Frankfurter Goethe-Museum, Bibliothek
+1878	FFM ARCHAEOL. MUS.	DE-F225		DE-576	Archäologisches Museum Frankfurt, Bibliothek
+1879	FFM Kunsthandwerksmus.	DE-F146		DE-576	Museum für Angewandte Kunst, Bibliothek
+1880	FFM DIF	DE-Wi17		DE-576	DFF - Deutsches Filminstitut & Filmmuseum, Bibliothek
+1881	FFM DAM	DE-F219		DE-576	Deutsches Architekturmuseum, Bibliothek
+1882	OF Klingspor-Mus.	DE-Of2		DE-576	Klingspor-Museum, Bibliothek und Archiv
+1883	FFM Hist. Mus.	DE-F207		DE-576	Historisches Museum, Bibliothek
+1884	FFM Rat f. Formgebung	DE-Ds108		DE-576	Rat für Formgebung - German Design Council, Bibliothek
+1885	Schweizer NB	CH-001821-6		CH-001821-6	Schweizer NB
+1923	DNB	DE-101		DE-101	Deutsche Nationalbibliothek
+1926	Lippstadt ZfW	DE-1926		DE-576	Zentrum für Wissensmanagement, Bibliothek Lippstadt
+1971	FFM Weltkulturen Mus.	DE-1971		DE-576	Weltkulturen Museum, Bibliothek
+1973	FFM STAEDELSCHULE	DE-1973		DE-576	Staatliche Hochschule für Bildende Künste, Städelschule, Bibliothek
+1975	FFM MUS. MOD. KUNST	DE-1975		DE-576	Museum für Moderne Kunst, Bibliothek
+1978	FFM MUS. KOMMUNIKATION	DE-1978		DE-576	Museum für Kommunikation Frankfurt, Bibliothek
+1979	FFM JUED. MUS.	DE-1979		DE-576	Jüdisches Museum der Stadt Frankfurt am Main, Bibliothek
+1995	ZDB	DE-600		DE-600	Zeitschriftendatenbank (ZDB)
+1999	Berlin BGK	DE-109		DE-609	Zentral- und Landesbibliothek Berlin, Haus Amerika-Gedenkbibliothek und Haus Berliner Stadtbibliothek sowie: Senatsbibliothek Berlin
+2008	Bonn FIZ Bundeswehr	DE-1073		DE-605	Fachinformationszentrum der Bundeswehr (FIZBw) - Ausleihservice Hardthöhe
+2100	HG Kreisarchiv	DE-1962		DE-603	Kreisarchiv des Hochtaunuskreises
+2101	MPI Aesthetik	DE-2177		DE-603	Max-Planck-Institut für empirische Ästhetik, Bibliothek
+2102	Thurgau Kantonsbibl.	CH-000086-2		CH-000001-5	Kantonsbibliothek Thurgau
+2103	Eisenbibliothek Schlatt	CH-000728-7		DE-576	Eisenbibliothek - Stiftung der Georg Fischer AG
+2104	NB, e-codices	CH-001667-5		CH-000001-5	NB, e-codices
+2105	ExLibris	DE-632		DE-632	Ex Libris (Deutschland) GmbH
+2106	Berlin Bundesrat	DE-Bo151		DE-576	Bundesrat, Bibliothek
+2107	Graz Steiermaerk. LB	AT-LBST		AT-NOELB	Steiermärkische Landesbibliothek
+2108	OBVSG	AT-OBVSG		AT-OBV	OBVSG
+2109	Karlsruhe Badisches Landesmus.	DE-Ka23a		DE-576	Badisches Landesmuseum, Bibliothek
+2110	Mannheim Stadtarchiv	DE-Mh40		DE-576	MARCHIVUM
+2111	Gotha Schlossmuseum	DE-G16	FE	DE-576	Stiftung Schloss Friedenstein Gotha, Bibliothek
+2112	Frankfurt/M CIBEDO	DE-2287		DE-603	Christlich-Islamische Begegnungs- und Dokumentationsstelle, Bibliothek
+2113	Weil/Rhein vdmb	DE-Wlr1		DE-576	Vitra Design Museum, Bibliothek
+2114	Berlin AA	DE-B19		DE-576	Auswärtiges Amt, Referat 116, Bibliothek, Informationsvermittlung
+2115	Freiburg Staatsarchiv	DE-Frei145		DE-576	Landesarchiv Baden-Württemberg, Abteilung Staatsarchiv Freiburg, Bibliothek
+2116	Salem KrsB	DE-Sam1		DE-576	Landratsamt Bodenseekreis, Kulturamt, Kreisbibliothek
+2117	Hamburg ZB Behoerden	DE-H216		DE-601	Zentrale Bibliothek Behörden Hamburger Straße
+2118	Wernigerode Harzbuecherei	DE-We21		DE-601	Harzbücherei Wernigerode
+2119	Halle/S Dt Akad Naturfor	DE-Ha2		DE-601	Deutsche Akademie der Naturforscher Leopoldina, Bibliothek
+2120	Bremen Seeverkehrswirtschaft	DE-Bre2		DE-601	Institut für Seeverkehrswirtschaft und Logistik, ISL InfoCenter/Bibliothek
+2123	Bremen StB	DE-478		DE-601	Stadtbibliothek Bremen, Zentralbibliothek
+2124	Bremen Ueberseemuseum	DE-Bre3		DE-601	Übersee-Museum, Bibliothek
+2125	Konstanz BSZ/MusIS	DE-576-3		DE-576-3	Bibliotheksservice-Zentrum Baden-Württemberg (BSZ) / MusIS
+2130	Hamburg HfBK	DE-18-26		DE-601	Hochschule für Bildende Künste, Bibliothek
+2133	Mainz Stadtarchiv Bibliothek	DE-2397		DE-603	Stadtarchiv Mainz, Bibliothek
+2134	Koethen HSB HSA	DE-Kt1		DE-601	Hochschule Anhalt , Hochschulbibliothek
+2135	Bremen ZMT	DE-Bre14		DE-601	Leibniz-Zentrum für Marine Tropenforschung (ZMT) GmbH, Bibliothek
+2138	HSC	DE-2489		DE-603	Handschriftencensus (HSC) - Kompetenzzentrum Deutschsprachige Handschriften des Mittelalters
+2139	Duesseldorf ArchBiblEvKirche	DE-Due72		DE-576	Archiv der Evangelischen Kirche im Rheinland, Bibliothek
+2140	Leipzig Museum Voelkerkunde	DE-L228		DE-576	Staatliche Kunstsammlungen Dresden, Museum für Völkerkunde Leipzig, Bibliothek
+2141	Boppard Ev. Archivstelle	DE-Bpd1		DE-576	Evangelische Archivstelle Boppard
+2142	Berlin DGAP	DE-F131		DE-576	Informationszentrum der Deutschen Gesellschaft für Auswärtige Politik e.V.
+2143	Berlin SWP	DE-B1567		DE-576	Stiftung Wissenschaft und Politik (SWP), Bibliothek
+2144	Bonn BICC	DE-2421		DE-576	Internationales Konversionszentrum Bonn (BICC), Bibliothek
+2145	Bonn DIE	DE-B1503		DE-576	Deutsches Institut für Entwicklungspolitik, Bibliothek
+2146	Frankfurt HSFK	DE-F197		DE-576	Hessische Stiftung Friedens- und Konfliktforschung, Bibliothek
+2147	Hamburg GIGA	DE-H221		DE-576	GIGA German Institute of Global and Area Studies; Informationszentrum - Fachbibliotheken Afrika, Nahost und Lateinamerika
+2148	Hamburg IFSH	DE-18-226		DE-576	Institut für Friedensforschung und Sicherheitspolitik an der Universität Hamburg, Bibliothek
+2150	Stuttgart Landesarchiv A1u2	DE-Stg285		DE-576	Landesarchiv Baden-Württemberg - Abteilungen 1 und 2, Bibliothek
+2151	StadtALB	DE-Lg4		DE-576	Stadtarchiv Ludwigsburg
+2152	DHI Rom	DE-2491		DE-576	Deutsches Historisches Institut in Rom, Bibliothek
+2153	Bautzen Sorbisches Inst.	DE-Bn1		DE-576	Sorbisches Institut e. V., Serbski institut z. t., Sorbische Zentralbibliothek, Serbska centralna biblioteka
+2154	Hamburg Zeitgeschichte	DE-H250		DE-601	Forschungsstelle für Zeitgeschichte in Hamburg, Bibliothek
+2155	Bad Oldesloe Kreisarchiv	DE-2410		DE-601	Kreisarchiv Stormarn
+2164	Mainz Martinus-Bibl.	DE-Mz2		DE-603	Martinus-Bibliothek, Wissenschaftliche Diözesanbibliothek
+2165	Frankfurt/M Fritz Bauer Inst.	DE-2508		DE-603	Bibliothek des Fritz Bauer Instituts zur Geschichte und Wirkung des Holocaust
+2166	Rottweil Kreisarchiv	DE-2156		DE-576	Landratsamt Rottweil, Stabsbereich Archiv, Kultur, Tourismus
+2167	Karlsruhe HSB	DE-751		DE-576	Hochschulbibliothek Karlsruhe (PH)
+2168	Freiburg PH	DE-Frei129		DE-576	Bibliothek der Pädagogischen Hochschule Freiburg/Breisgau
+2170	Berlin MPI Wiss.-Gesch.	DE-B2226		DE-601	Max-Planck-Institut für Wissenschaftsgeschichte, Bibliothek
+2171	Clausthal-Z. UB	DE-104	FE	DE-601	Universitätsbibliothek Clausthal
+2172	Stade Landsch.-Verb.	DE-Sta5		DE-601	Landschaftsverband der ehemaligen Herzogtümer Bremen und Verden, Bibliothek
+2173	Halle/S IWH	DE-2173		DE-601	Leibniz-Institut für Wirtschaftsforschung Halle, Bibliothek
+2174	Berlin VöBB	DE-609		DE-609	Verbund der  Öffentlichen Bibliotheken Berlins - VÖBB
+2175	Leipzig IFL GZB	DE-185		DE-576	Leibniz-Institut für Länderkunde, Geographische Zentralbibliothek
+3032	Berlin BBF/DIPF	DE-B478		DE-576	BBF | Bibliothek für Bildungsgeschichtliche Forschung in Berlin
+3032	Frankfurt/M DIPF	DE-F43		DE-576	DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation, Bibliothek
+3110	Lueneburg UB	DE-Luen4		DE-601	Leuphana Universität Lüneburg, Medien- und Informationszentrum, Universitätsbibliothek
+4025	Koeln HBZ Elektron. Zsn	DE-WWW2		DE-605	früher: Köln; Elektronische Zeitschriften Nordrhein-Westfalens und aus Teilen von Rheinland-Pfalz
+4046	Hamburg Bamt Seeschifffahrt	DE-H2		DE-601	Bundesamt für Seeschifffahrt und Hydrographie, Bibliothek
+4048	Witzenhausen Arch Jugendbew	DE-2355		DE-603	Archiv der deutschen Jugendbewegung
+7777	GBV	DE-601		DE-601	Verbundzentrale des GBV (VZG)
+41359	UB Bern	CH-BeUB		CH-BeUB	Universitätsbibliothek Bern
+8478	Luzern ZHB	CH-LnZHB		CH-LnZHB	Zentral- und Hochschulbibliothek Luzern
+41405	UB St. Gallen	CH-SgUB		CH-SgUB	Universität St. Gallen, Bibliothek
+41421	Lokalredaktion ZB Zürich, f	CH-ZuZBF		CH-ZuZBF	Zentralbibliothek Zürich, Formalerschliessung
+41432	Lokalredaktion Uni Zürich, f	CH-ZuUH		CH-ZuUH	Universität Zürich, Hauptbibliothek
+41411	Lokalredaktion ETH Zürich, f	CH-ZuETHB		CH-ZuETHB	ETH Zürich, ETH-Bibliothek, Redaktion Normdatei
+41417	Lokalredaktion NEBIS VZ, f	CH-ZuETHN		CH-ZuETHN	ETH-Bibliothek, NEBIS-Verbundzentrale
+41456	ZB Zürich, s	CH-ZuZBS		CH-ZuZBS	Zentralbibliothek Zürich, Sacherschliessung
+9002	Berlin SBB	DE-1	GKD	DE-600	Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Haus Unter den Linden
+9003	GKD-Redaktion DDB Frankfurt	DE-101	GKD	DE-600	Deutsche Nationalbibliothek
+9004	GKD-Redaktion BSB	DE-12	GKD	DE-604	Bayerische Staatsbibliothek
+9005	ÖBV	AT-OBV		AT-OBV	Österreichischer Bibliothekenverbund
+XXXX	BVB	DE-604		DE-604	Bibliotheksverbund Bayern
+XXXX	KOBV	DE-602		DE-602	Kooperativer Bibliotheksverbund Berlin-Brandenburg
+41679	Kantonsbibliothek Vadiana	CH-SgKBLR		CH-SgKBLR	Kantonsbibliothek Vadiana. GND Lokalredaktion
+41680	Kantonsbibliothek Graubünden	CH-ChKBLR		CH-ChKBLR	Kantonsbibliothek Graubünden. GND-Lokalredaktion
+35433	Aargauer Kantonsbibliothek	CH-AaAKBLR		CH-AaAKBLR	Aargauer Kantonsbibliothek. GND-Lokalredaktion
+39245	Liechtensteinische Landesbibliothek	LI-VaLIL		LI-VaLIL FLLB	Liechtensteinische Landesbibliothek
+XXXX	spio	spio		spio	Spitzen, Exekutiv- und Informationsorgane
+XXXX	pseu	pseu		pseu	Aufspaltung von Pseudonymen
+
+XXX	Stadtarchiv Attnang-Puchheim	AT-41703AR		AT-OBV	Stadtarchiv Attnang-Puchheim
+XXX	Stadtarchiv Schwaz	AT-70926AR		AT-OBV	Stadtarchiv Schwaz
+XXX	Stadtbücherei Dornbirn	AT-80301001BUE		AT-OBV	Stadtbücherei Dornbirn
+XXX	Amt der Stadt Feldkirch Stadtbib.	AT-80404STB		AT-OBV	Amt der Stadt Feldkirch Stadtbibliothek
+XXX	Bücherei Sulz-Röthis	AT-80420001BUE		AT-OBV	Bücherei Sulz-Röthis
+XXX	Öster. Provinz der Gesellschaft Jesu Archiv	AT-AASI-AR		AT-OBV	Österreichische Provinz der Gesellschaft Jesu Archiv
+XXX	BA für Agrarwirtschaft Bib.	AT-AGWI		AT-OBV	Bundesanstalt für Agrarwirtschaft Bibliothek
+XXX	Kammer für Arbeiter und Angestellte für Wien AK Bib. Wien für Sozialwissenschaften	AT-AKW		AT-OBV	Kammer für Arbeiter und Angestellte für Wien AK Bibliothek Wien für Sozialwissenschaften
+XXX	Diözese Gurk Archiv der Diözese Gurk	AT-ARCHDZSGURK		AT-OBV	Diözese Gurk Archiv der Diözese Gurk
+XXX	Bib. der Verlage	AT-BDV		AT-OBV	Bibliothek der Verlage
+XXX	Bundesinstitut für Erwachsenenbildung St. Wolfgang Bib.	AT-BIFEB		AT-OBV	Bundesinstitut für Erwachsenenbildung St. Wolfgang Bibliothek
+XXX	Bundeskanzleramt Administrative Bib. des Bundes	AT-BKA		AT-OBV	Bundeskanzleramt Administrative Bibliothek des Bundes
+XXX	Burgenländisches L-Arch.	AT-BLA		AT-OBV	Burgenländisches Landesarchiv
+XXX	BM für Europa, Integration und Äusseres Aussenpolitische Bib.	AT-BMA		AT-OBV	Bundesministerium für Europa, Integration und Äusseres Aussenpolitische Bibliothek (Amtsbibliothek
+XXX	BM für Bildung und Frauen Schulbuch- und Schulschriftensammlung	AT-BMUK		AT-OBV	Bundesministerium für Bildung und Frauen Schulbuch- und Schulschriftensammlung
+XXX	Compass-Verlag GmbH Compass-Archiv	AT-COMPASS		AT-OBV	Compass-Verlag GmbH Compass-Archiv
+XXX	Diözese Gurk Diözesanbib.	AT-DBGK		AT-OBV	Diözese Gurk Diözesanbibliothek
+XXX	Erzdiözese Salzburg Diözesanbib.	AT-DBSBG		AT-OBV	Erzdiözese Salzburg Diözesanbibliothek
+XXX	Don Juan Archiv Wien	AT-DJARCH		AT-OBV	Don Juan Archiv Wien
+XXX	Diözese Linz Private Päd. HS Bib.	AT-DLIHS-B		AT-OBV	Diözese Linz Private Pädagogische Hochschule Bibliothek
+XXX	Donau-Uni Krems Bib.	AT-DUK-B		AT-OBV	Donau-Universität Krems Bibliothek
+XXX	Diözese St. Pölten Diözesanarchiv	AT-DZSASTP		AT-OBV	Diözese St. Pölten Diözesanarchiv
+XXX	Erzdiözese Wien Kirchliche Päd. HS Wien/Krems Campus-Bibliotheken Bib.	AT-EDW-PH		AT-OBV	Erzdiözese Wien Kirchliche Pädagogische Hochschule Wien/Krems Campus-Bibliotheken Bibliothek
+XXX	Tiroler Landesmuseum Ferdinandeum Bib.	AT-FERD		AT-OBV	Tiroler Landesmuseum Ferdinandeum Bibliothek
+XXX	FH Burgenland GmbH Bib.	AT-FHB		AT-OBV	Fachhochschule Burgenland GmbH Bibliothek
+XXX	FH Burgenland GmbH | StO Eisenstadt Bib.	AT-FHB-E		AT-OBV	Fachhochschule Burgenland GmbH | Standort Eisenstadt Bibliothek
+XXX	FH des BFI Wien Bib.	AT-FHBFIW		AT-OBV	Fachhochschule des BFI Wien Bibliothek
+XXX	FH Burgenland GmbH | StO Pinkafeld Bib.	AT-FHB-P		AT-OBV	Fachhochschule Burgenland GmbH | Standort Pinkafeld Bibliothek
+XXX	FH Campus Wien Bib. und Mediathek	AT-FHCW		AT-OBV	Fachhochschule Campus Wien Bibliothek und Mediathek
+XXX	FH Joanneum GmbH Bib.	AT-FHJ		AT-OBV	Fachhochschule Joanneum GmbH Bibliothek
+XXX	FH Joanneum GmbH Bib. StO Bad Gleichenberg	AT-FHJ-BG		AT-OBV	Fachhochschule Joanneum GmbH Bibliothek Standort Bad Gleichenberg
+XXX	FH Joanneum GmbH Bib. StO Graz	AT-FHJ-G		AT-OBV	Fachhochschule Joanneum GmbH Bibliothek Standort Graz
+XXX	FH Joanneum GmbH Bib. StO Graz-Ost	AT-FHJ-GO		AT-OBV	Fachhochschule Joanneum GmbH Bibliothek Standort Graz-Ost
+XXX	FH Joanneum GmbH Bib. StO Kapfenberg	AT-FHJ-K		AT-OBV	Fachhochschule Joanneum GmbH Bibliothek Standort Kapfenberg
+XXX	FH Kärnten FH-Bib.	AT-FHK		AT-OBV	Fachhochschule Kärnten Fachhochschulbibliothek
+XXX	FH Kärnten FH-Bib. StO Feldkirchen i. K.	AT-FHK-FE		AT-OBV	Fachhochschule Kärnten Fachhochschulbibliothek Standort Feldkirchen i. K.
+XXX	FH Kärnten FH-Bib. StO Klagenfurt	AT-FHK-KL		AT-OBV	Fachhochschule Kärnten Fachhochschulbibliothek Standort Klagenfurt
+XXX	FH Kärnten FH-Bib. StO Spittal a. d. Drau	AT-FHK-SP		AT-OBV	Fachhochschule Kärnten Fachhochschulbibliothek Standort Spittal a. d. Drau
+XXX	FH Kärnten FH-Bib. StO Villach - St. Magdalen	AT-FHK-VI		AT-OBV	Fachhochschule Kärnten Fachhochschulbibliothek Standort Villach - St. Magdalen
+XXX	FH Salzburg Bib.	AT-FHS		AT-OBV	Fachhochschule Salzburg Bibliothek
+XXX	FH Salzburg | StO Kuchl Bib.	AT-FHS-K		AT-OBV	Fachhochschule Salzburg | Standort Kuchl Bibliothek
+XXX	FH St. Pölten Bib.	AT-FHSTP		AT-OBV	Fachhochschule St. Pölten Bibliothek
+XXX	FH Salzburg | StO Urstein Bib.	AT-FHS-U		AT-OBV	Fachhochschule Salzburg | Standort Urstein Bibliothek
+XXX	FH Vorarlberg Bib.	AT-FHV		AT-OBV	Fachhochschule Vorarlberg Bibliothek
+XXX	CAMPUS 02 FH der Wirtschaft Bib.	AT-FHWG		AT-OBV	CAMPUS 02 Fachhochschule der Wirtschaft Bibliothek
+XXX	Frauensolidarität - Bib. und Dokumentationsstelle Frauen und "Dritte Welt"	AT-FRSO		AT-OBV	Frauensolidarität - Bibliothek und Dokumentationsstelle Frauen und "Dritte Welt"
+XXX	Gesellschaft der Ärzte in Wien Bib.	AT-GDAeW		AT-OBV	Gesellschaft der Ärzte in Wien Bibliothek
+XXX	Geologische BA Bib.	AT-GEOL		AT-OBV	Geologische Bundesanstalt Bibliothek
+XXX	Grüne Bildungswerkstatt Grünes Archiv Österreich	AT-GRUeARCH		AT-OBV	Grüne Bildungswerkstatt Grünes Archiv Österreich
+XXX	Albertina Bib.	AT-GSA		AT-OBV	Albertina Bibliothek
+XXX	Katholische Privatuni Linz Bib.	AT-HBTL		AT-OBV	Katholische Privatuniversität Linz Bibliothek
+XXX	Heeresgeschichtliches Mus Bib.	AT-HGMW		AT-OBV	Heeresgeschichtliches Museum Bibliothek
+XXX	Inst. für Höhere Studien Bib.	AT-IHS		AT-OBV	Institut für Höhere Studien Bibliothek
+XXX	Max Perutz Library	AT-IMP		AT-OBV	Max Perutz Library
+XXX	Uni Wien Fachbereichsbib. Öster. Geschichtsfor	AT-IOeGF		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Österreichische Geschichtsfor
+XXX	Institute of Science and Technology Austria Bib.	AT-ISTA		AT-OBV	Institute of Science and Technology Austria Bibliothek
+XXX	Jüdisches Mus der Stadt Wien Bib.	AT-JMW		AT-OBV	Jüdisches Museum der Stadt Wien Bibliothek
+XXX	KDZ - Zentrum für Verwaltungsforschung Bib.	AT-KDZ		AT-OBV	KDZ - Zentrum für Verwaltungsforschung Bibliothek
+XXX	Kunsthist. Mus Bib.	AT-KHMW-BIB		AT-OBV	Kunsthistorisches Museum Bibliothek
+XXX	Kunsthist. Mus Münzkabinett	AT-KHMW-MK		AT-OBV	Kunsthistorisches Museum Münzkabinett
+XXX	Kärntner L-Arch.	AT-KLA		AT-OBV	Kärntner Landesarchiv
+XXX	Musik und Kunst - Privatuni der Stadt Wien Bib.	AT-KWPU		AT-OBV	Musik und Kunst - Privatuniversität der Stadt Wien Bibliothek
+XXX	Burgenländische Landesbib.	AT-LBB		AT-OBV	Burgenländische Landesbibliothek
+XXX	Landeskonservatorium für Vorarlberg	AT-LKONSV		AT-OBV	Landeskonservatorium für Vorarlberg
+XXX	Landesmuseum für Kärnten Bib.	AT-LMK		AT-OBV	Landesmuseum für Kärnten Bibliothek
+XXX	Oberöster. Landesmuseen Bib.	AT-LMO-BIB		AT-OBV	Oberösterreichische Landesmuseen Bibliothek
+XXX	Landesschulrat für Kärnten Amtsbib.	AT-LSRK		AT-OBV	Landesschulrat für Kärnten Amtsbibliothek
+XXX	Öster. Mus für angewandte Kunst Bib.	AT-MAKW		AT-OBV	Österreichisches Museum für angewandte Kunst Bibliothek
+XXX	Internationale Stiftung Mozarteum Bibliotheca Mozartiana	AT-MOZ		AT-OBV	Internationale Stiftung Mozarteum Bibliotheca Mozartiana
+XXX	Naturhistorisches Mus Wien	AT-NMW		AT-OBV	Naturhistorisches Museum Wien
+XXX	Naturhistorisches Mus Wien Zoologische Hauptbib.	AT-NMW-Z		AT-OBV	Naturhistorisches Museum Wien Zoologische Hauptbibliothek
+XXX	Amt der Niederösterreichischen Landesreg. Abt. NÖ L-Arch. und NÖ Inst. für Landesku	AT-NOeLA		AT-OBV	Amt der Niederösterreichischen Landesregierung Abt. NÖ Landesarchiv und NÖ Institut für Landesku
+XXX	Öster. Archäologisches Inst. Bib. Wien	AT-OeAI		AT-OBV	Österreichisches Archäologisches Institut Bibliothek Wien
+XXX	Öster. Akad. der Wissenschaften	AT-OeAW		AT-OBV	Österreichische Akademie der Wissenschaften
+XXX	Öster. Akad. der Wissenschaften Bib., Archiv, Sammlungen: Information & Service (	AT-OeAW-BA		AT-OBV	Österreichische Akademie der Wissenschaften Bibliothek, Archiv, Sammlungen: Information & Service (
+XXX	Öster. Nationalbib.	AT-OeNB		AT-OBV	Österreichische Nationalbibliothek
+XXX	Öster. Nationalbib. Sammlung für Plansprachen und Esperanto-Mus	AT-OeNB-ESP		AT-OBV	Österreichische Nationalbibliothek Sammlung für Plansprachen und Esperanto-Museum
+XXX	Öster. Nationalbib. Sammlung von Handschriften und alten Drucken	AT-OeNB-HSAD		AT-OBV	Österreichische Nationalbibliothek Sammlung von Handschriften und alten Drucken
+XXX	Öster. Nationalbib. Literaturarchiv	AT-OeNB-LIT		AT-OBV	Österreichische Nationalbibliothek Literaturarchiv
+XXX	Öster. Staatsarchiv	AT-OeSTA		AT-OBV	Österreichisches Staatsarchiv
+XXX	Öster. Staatsarchiv Bib.	AT-OeSTA-BIB		AT-OBV	Österreichisches Staatsarchiv Bibliothek
+XXX	Österreichischer Verbundkatalog für Nachlässe, Autographen, Handschriften	AT-OeVKNAH		AT-OBV	Österreichischer Verbundkatalog für Nachlässe, Autographen, Handschriften
+XXX	Oberöster. L-Arch.	AT-OOeLA		AT-OBV	Oberösterreichisches Landesarchiv
+XXX	Oberöster. L-Arch. Bib.	AT-OOeLA-B		AT-OBV	Oberösterreichisches Landesarchiv Bibliothek
+XXX	Oberöster. Landesbib.	AT-OOeLB		AT-OBV	Oberösterreichische Landesbibliothek
+XXX	Parlamentsdirektion Parlamentsbib.	AT-PARL		AT-OBV	Parlamentsdirektion Parlamentsbibliothek
+XXX	Landesschulrat für Niederösterreich Bundesstaatliche päd. Bib.	AT-PBN		AT-OBV	Landesschulrat für Niederösterreich Bundesstaatliche pädagogische Bibliothek
+XXX	Päd. HS Kärnten Bib.	AT-PHK		AT-OBV	Pädagogische Hochschule Kärnten Bibliothek
+XXX	Päd. HS Niederösterreich Bib.	AT-PHNOe		AT-OBV	Pädagogische Hochschule Niederösterreich Bibliothek
+XXX	Päd. HS Oberösterreich Bib.	AT-PHOOe		AT-OBV	Pädagogische Hochschule Oberösterreich Bibliothek
+XXX	Päd. HS Salzburg Bib.	AT-PHS		AT-OBV	Pädagogische Hochschule Salzburg Bibliothek
+XXX	Päd. HS Steiermark Studienbib.	AT-PHST		AT-OBV	Pädagogische Hochschule Steiermark Studienbibliothek
+XXX	Päd. HS Tirol Bib.	AT-PHT		AT-OBV	Pädagogische Hochschule Tirol Bibliothek
+XXX	Päd. HS Vorarlberg Bib.	AT-PHV		AT-OBV	Pädagogische Hochschule Vorarlberg Bibliothek
+XXX	Päd. HS Wien Bib.	AT-PHW		AT-OBV	Pädagogische Hochschule Wien Bibliothek
+XXX	Paracelsus Med. Privatuni Bib.	AT-PMUS		AT-OBV	Paracelsus Medizinische Privatuniversität Bibliothek
+XXX	Schottenstift - Benediktinerabtei Unserer Lieben Frau zu den Schotten Bib., Archiv, Sammlungen	AT-SCHOTTEN		AT-OBV	Schottenstift - Benediktinerabtei Unserer Lieben Frau zu den Schotten Bibliothek, Archiv, Sammlungen
+XXX	Sigmund Freud Privatuni Wien Bib.	AT-SFU		AT-OBV	Sigmund Freud Privatuniversität Wien Bibliothek
+XXX	Salzburger L-Arch.	AT-SLA		AT-OBV	Salzburger Landesarchiv
+XXX	Stadtgemeinde Amstetten Stadtarchiv	AT-STAAMST		AT-OBV	Stadtgemeinde Amstetten Stadtarchiv
+XXX	Stadtarchiv Graz	AT-STARG		AT-OBV	Stadtarchiv Graz
+XXX	Stadtarchiv Salzburg	AT-STARSBG		AT-OBV	Stadtarchiv Salzburg
+XXX	Benediktinerstift Admont Bib.	AT-STFTADMONT		AT-OBV	Benediktinerstift Admont Bibliothek
+XXX	Zisterzienserstift Heiligenkreuz Bib.	AT-STFTHLGKR-BIB		AT-OBV	Zisterzienserstift Heiligenkreuz Bibliothek
+XXX	Stichwort: Archiv der Frauen- und Lesbenbewegung, Bib. - Dokumentation - Multimedia	AT-STICHWORT		AT-OBV	Stichwort: Archiv der Frauen- und Lesbenbewegung, Bibliothek - Dokumentation - Multimedia
+XXX	Steiermärkisches L-Arch.	AT-STLA		AT-OBV	Steiermärkisches Landesarchiv
+XXX	Steiermärkisches L-Arch. Bib.	AT-STLA-B		AT-OBV	Steiermärkisches Landesarchiv Bibliothek
+XXX	Benediktiner Erzabtei St. Peter in Salzburg Bib., Archiv und Musikalienarchiv	AT-STPET		AT-OBV	Benediktiner Erzabtei St. Peter in Salzburg Bibliothek, Archiv und Musikalienarchiv
+XXX	Amt der Tiroler Landesreg. Landesamtsbib.	AT-TAB		AT-OBV	Amt der Tiroler Landesregierung Landesamtsbibliothek
+XXX	Tiroler L-Arch.	AT-TLA		AT-OBV	Tiroler Landesarchiv
+XXX	Techn. Mus Wien	AT-TMW		AT-OBV	Technisches Museum Wien
+XXX	Techn. Mus Wien Archiv	AT-TMW-AR		AT-OBV	Technisches Museum Wien Archiv
+XXX	Techn. Mus Wien Bib.	AT-TMW-BIB		AT-OBV	Technisches Museum Wien Bibliothek
+XXX	Techn. Mus Wien Öster. Mediathek	AT-TMW-OeMTH		AT-OBV	Technisches Museum Wien Österreichische Mediathek
+XXX	TU Graz Archiv und Dokumentation	AT-TUG-AR		AT-OBV	Technische Universität Graz Archiv und Dokumentation
+XXX	Uni für MuK Graz Universitätsarchiv	AT-UAKUG		AT-OBV	Universität für Musik und darstellende Kunst Graz Universitätsarchiv
+XXX	Akad. der bildenden Künste Wien Universitätsbib.	AT-UBABW		AT-OBV	Akademie der bildenden Künste Wien Universitätsbibliothek
+XXX	Uni für angewandte Kunst Wien Universitätsbib.	AT-UBAW		AT-OBV	Universität für angewandte Kunst Wien Universitätsbibliothek
+XXX	Uni für Bodenkultur Universitätsbib.	AT-UBBW		AT-OBV	Universität für Bodenkultur Universitätsbibliothek
+XXX	Uni für Bodenkultur Universitätsbib. Fachbib. für Lebensmittel- und Biotechn	AT-UBBW-BIO		AT-OBV	Universität für Bodenkultur Universitätsbibliothek Fachbibliothek für Lebensmittel- und Biotechn
+XXX	Uni für Bodenkultur Universitätsbib. Hauptbib.	AT-UBBW-HB		AT-OBV	Universität für Bodenkultur Universitätsbibliothek Hauptbibliothek
+XXX	Uni für Bodenkultur Universitätsbib. Fachbib. SOWIRE	AT-UBBW-WIR		AT-OBV	Universität für Bodenkultur Universitätsbibliothek Fachbibliothek SOWIRE
+XXX	Uni für Bodenkultur Universitätsbib. Fachbib. für Wald, Natur und Technik	AT-UBBW-WNT		AT-OBV	Universität für Bodenkultur Universitätsbibliothek Fachbibliothek für Wald, Natur und Technik
+XXX	Uni Graz Universitätsbib.	AT-UBG		AT-OBV	Universität Graz Universitätsbibliothek
+XXX	Uni Graz Universitätsbib. Depotbib.	AT-UBG-DEPO		AT-OBV	Universität Graz Universitätsbibliothek Depotbibliothek
+XXX	Uni Graz Universitätsbib. Hauptbib.	AT-UBG-HB		AT-OBV	Universität Graz Universitätsbibliothek Hauptbibliothek
+XXX	Kunstuni Linz. Uni für künstlerische und industrielle Gestaltung Universitätsbi	AT-UBGL		AT-OBV	Kunstuniversität Linz. Universität für künstlerische und industrielle Gestaltung Universitätsbi
+XXX	Uni Graz Universitätsbib. Fachbib. für Mathematik	AT-UBG-SH		AT-OBV	Universität Graz Universitätsbibliothek Fachbibliothek für Mathematik
+XXX	Uni Innsbruck Universitätsbib.	AT-UBI		AT-OBV	Universität Innsbruck Universitätsbibliothek
+XXX	Uni Innsbruck Universitäts- und Landesbib. Tirol Hauptbib.	AT-UBI-HB		AT-OBV	Universität Innsbruck Universitäts- und Landesbibliothek Tirol Hauptbibliothek
+XXX	Uni Klagenfurt Universitätsbib.	AT-UBK		AT-OBV	Universität Klagenfurt Universitätsbibliothek
+XXX	Uni Linz Universitätsbib.	AT-UBL		AT-OBV	Universität Linz Universitätsbibliothek
+XXX	Uni Linz Universitätsbib. Hauptbib.	AT-UBL-HB		AT-OBV	Universität Linz Universitätsbibliothek Hauptbibliothek
+XXX	Uni für MuK Graz Universitätsbib.	AT-UBMG		AT-OBV	Universität für Musik und darstellende Kunst Graz Universitätsbibliothek
+XXX	Uni für MuK Graz Universitätsbib.	AT-UBMG-HB		AT-OBV	Universität für Musik und darstellende Kunst Graz Universitätsbibliothek
+XXX	Uni Mozarteum Salzburg Universitätsbib.	AT-UBMS		AT-OBV	Universität Mozarteum Salzburg Universitätsbibliothek
+XXX	Uni Mozarteum Salzburg Universitätsbib. Hauptbib.	AT-UBMS-HB		AT-OBV	Universität Mozarteum Salzburg Universitätsbibliothek Hauptbibliothek
+XXX	Uni Mozarteum Salzburg Universitätsbib. Abt. Musikerziehung	AT-UBMS-MUS		AT-OBV	Universität Mozarteum Salzburg Universitätsbibliothek Abt. Musikerziehung
+XXX	Uni Mozarteum Salzburg Orff-Inst.	AT-UBMS-ORFF		AT-OBV	Universität Mozarteum Salzburg Orff-Institut
+XXX	Med. Uni Graz Bib.	AT-UBMUG		AT-OBV	Medizinische Universität Graz Bibliothek
+XXX	Montanuni Leoben Universitätsbib.	AT-UBMUL		AT-OBV	Montanuniversität Leoben Universitätsbibliothek
+XXX	Montanuni Leoben Universitätsbib. Fachbib. für Geowissenschaften	AT-UBMUL-FBG		AT-OBV	Montanuniversität Leoben Universitätsbibliothek Fachbibliothek für Geowissenschaften
+XXX	Montanuni Leoben Universitätsbib. Hauptbib.	AT-UBMUL-HB		AT-OBV	Montanuniversität Leoben Universitätsbibliothek Hauptbibliothek
+XXX	Montanuni Leoben Universitätsbib. Rohstoff- und Werkstoffzentrum - Bib.	AT-UBMUL-RWZ		AT-OBV	Montanuniversität Leoben Universitätsbibliothek Rohstoff- und Werkstoffzentrum - Bibliothek
+XXX	Med. Uni Wien Universitätsbib.	AT-UBMUW		AT-OBV	Medizinische Universität Wien Universitätsbibliothek
+XXX	Med. Uni Wien Universitätsbib. Wissenschaftliche Bib. im Allgemeinen K	AT-UBMUW-100		AT-OBV	Medizinische Universität Wien Universitätsbibliothek Wissenschaftliche Bibliothek im Allgemeinen K
+XXX	Med. Uni Wien Universitätsbib. Zweigbib. Zahnmedizin	AT-UBMUW-360		AT-OBV	Medizinische Universität Wien Universitätsbibliothek Zweigbibliothek Zahnmedizin
+XXX	Med. Uni Wien Universitätsbib. Zweigbib. Krebsforschung	AT-UBMUW-400		AT-OBV	Medizinische Universität Wien Universitätsbibliothek Zweigbibliothek Krebsforschung
+XXX	Med. Uni Wien Universitätsbib. Zweigbib. Hirnforschung	AT-UBMUW-500		AT-OBV	Medizinische Universität Wien Universitätsbibliothek Zweigbibliothek Hirnforschung
+XXX	Med. Uni Wien Universitätsbib. Zweigbib. Geschichte der Medizin	AT-UBMUW-900		AT-OBV	Medizinische Universität Wien Universitätsbibliothek Zweigbibliothek Geschichte der Medizin
+XXX	Uni für MuK Wien Universitätsbib.	AT-UBMW		AT-OBV	Universität für Musik und darstellende Kunst Wien Universitätsbibliothek
+XXX	Uni Salzburg Universitätsbib.	AT-UBS		AT-OBV	Universität Salzburg Universitätsbibliothek
+XXX	TU Graz Universitätsbib.	AT-UBTUG		AT-OBV	Technische Universität Graz Universitätsbibliothek
+XXX	TU Graz Universitätsbib. Fachbib. für Chemie I	AT-UBTUG-FBCH1		AT-OBV	Technische Universität Graz Universitätsbibliothek Fachbibliothek für Chemie I
+XXX	TU Graz Universitätsbib. Fachbib. für Geodäsie und Mathematik	AT-UBTUG-FBGM		AT-OBV	Technische Universität Graz Universitätsbibliothek Fachbibliothek für Geodäsie und Mathematik
+XXX	TU Graz Universitätsbib. Hauptbib.	AT-UBTUG-HB		AT-OBV	Technische Universität Graz Universitätsbibliothek Hauptbibliothek
+XXX	TU Wien Universitätsbib.	AT-UBTUW		AT-OBV	Technische Universität Wien Universitätsbibliothek
+XXX	TU Wien Universitätsbib. Fachbib. Chemie und Maschinenbau CheMaB	AT-UBTUW-CH		AT-OBV	Technische Universität Wien Universitätsbibliothek Fachbibliothek Chemie und Maschinenbau CheMaB
+XXX	TU Wien Universitätsbib. Hauptbib.	AT-UBTUW-HB		AT-OBV	Technische Universität Wien Universitätsbibliothek Hauptbibliothek
+XXX	TU Wien Universitätsbib. Fachbib. für Mathematik und Physik	AT-UBTUW-MATH		AT-OBV	Technische Universität Wien Universitätsbibliothek Fachbibliothek für Mathematik und Physik
+XXX	Veterinärmed. Uni Wien Universitätsbib.	AT-UBVUW		AT-OBV	Veterinärmedizinische Universität Wien Universitätsbibliothek
+XXX	Veterinärmed. Uni Wien Universitätsbib. Hauptbib.	AT-UBVUW-UB		AT-OBV	Veterinärmedizinische Universität Wien Universitätsbibliothek Hauptbibliothek
+XXX	Uni Wien	AT-UBW		AT-OBV	Universität Wien Bibliotheks- und Archivwesen
+XXX	Uni Wien Fachbereichsbib. Katholische und Evangelische T	AT-UBW-001		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Katholische und Evangelische T
+XXX	Uni Wien Hauptbib.	AT-UBW-002		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Hauptbibliothek
+XXX	Uni Wien Fachbereichsbib. Rechtswissenschaften	AT-UBW-005		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Rechtswissenschaften
+XXX	Uni Wien Fachbereichsbib. Soziologie und Politikwissensc	AT-UBW-007		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Soziologie und Politikwissensc
+XXX	Uni Wien Fachbereichsbib. Wirtschaftswissenschaften und	AT-UBW-008		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Wirtschaftswissenschaften und
+XXX	Uni Wien Öster. Zentralbib. für Physik & Fach	AT-UBW-071		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Österreichische Zentralbibliothek für Physik & Fach
+XXX	Uni Wien Fachbereichsbib. Botanik	AT-UBW-073		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Botanik
+XXX	Uni Wien Fachbereichsbib. Anglistik und Amerikanistik	AT-UBW-074		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Anglistik und Amerikanistik
+XXX	Uni Wien Fachbereichsbib. Geographie und Regionalforschu	AT-UBW-075		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Geographie und Regionalforschu
+XXX	Uni Wien Fachbereichsbib. Geschichtswissenschaften	AT-UBW-078		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Geschichtswissenschaften
+XXX	Uni Wien Fachbereichsbib. Südasien-, Tibet- und Buddhis	AT-UBW-079		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Südasien-, Tibet- und Buddhis
+XXX	Uni Wien Fachbereichsbib. Alte Geschichte	AT-UBW-081		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Alte Geschichte
+XXX	Uni Wien Fachbereichsbib. Byzantinistik und Neogräzist	AT-UBW-085		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Byzantinistik und Neogräzist
+XXX	Uni Wien Fachbereichsbib. Translationswissenschaft	AT-UBW-086		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Translationswissenschaft
+XXX	Uni Wien Fachbereichsbib. Biologie	AT-UBW-087		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Biologie
+XXX	Uni Wien Fachbereichsbib. Ostasienwissenschaften	AT-UBW-088		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Ostasienwissenschaften
+XXX	Uni Wien Fachbereichsbib. Judaistik	AT-UBW-089		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Judaistik
+XXX	Uni Wien Fachbereichsbib. Klassische Philologie, Mittel-	AT-UBW-090		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Klassische Philologie, Mittel-
+XXX	Uni Wien Fachbereichsbib. Osteuropäische Geschichte und	AT-UBW-097		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Osteuropäische Geschichte und
+XXX	Uni Wien Fachbereichsbib. Bildungswissenschaft, Sprachwi	AT-UBW-098		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Bildungswissenschaft, Sprachwi
+XXX	Uni Wien Fachbereichsbib. Publizistik- und Kommunikation	AT-UBW-100		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Publizistik- und Kommunikation
+XXX	Uni Wien Fachbereichsbib. Romanistik	AT-UBW-102		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Romanistik
+XXX	Uni Wien Fachbereichsbib. Theater-, Film- und Medienwiss	AT-UBW-106		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Theater-, Film- und Medienwiss
+XXX	Uni Wien Fachbereichsbib. Astronomie	AT-UBW-107		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Astronomie
+XXX	Uni Wien Fachbereichsbib. Kultur- und Sozialanthropologi	AT-UBW-113		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Kultur- und Sozialanthropologi
+XXX	Uni Wien Fachbereichsbib. Europäische Ethnologie	AT-UBW-114		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Europäische Ethnologie
+XXX	Uni Wien Fachbereichsbib. Zeitgeschichte	AT-UBW-116		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Zeitgeschichte
+XXX	Uni Wien Fachbereichsbib. Kunstgeschichte	AT-UBW-117		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Kunstgeschichte
+XXX	Uni Wien Universitätsbib. Fachbib. für Mathematik, Statistik und Informatik	AT-UBW-118		AT-OBV	Universität Wien Universitätsbibliothek Fachbibliothek für Mathematik, Statistik und Informatik
+XXX	Uni Wien Fachbereichsbib. Musikwissenschaft	AT-UBW-120		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Musikwissenschaft
+XXX	Uni Wien Fachbereichsbib. Philosophie	AT-UBW-128		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Philosophie
+XXX	Uni Wien Fachbereichsbib. Psychologie	AT-UBW-132		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Psychologie
+XXX	Uni Wien Fachbereichsbib. Sportwissenschaft	AT-UBW-134		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Sportwissenschaft
+XXX	Uni Wien Fachbereichsbib. Finno-Ugristik	AT-UBW-137		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Finno-Ugristik
+XXX	Uni Wien Fachbereichsbib. Germanistik, Nederlandistik un	AT-UBW-145		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Germanistik, Nederlandistik un
+XXX	Uni Wien Fachbereichsbib. Afrikawissenschaften und Orien	AT-UBW-146		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Afrikawissenschaften und Orien
+XXX	Uni Wien Fachbereichsbib. Archäologien und Numismatik	AT-UBW-155		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Archäologien und Numismatik
+XXX	Uni Wien Fachbereichsbib. Erdwissenschaften und Meteorol	AT-UBW-160		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Erdwissenschaften und Meteorol
+XXX	Uni Wien Fachbereichsbib. Pharmazie und Ernährungswisse	AT-UBW-161		AT-OBV	Universität Wien Bibliotheks- und Archivwesen Fachbereichsbibliothek Pharmazie und Ernährungswisse
+XXX	Wirtschaftsuni Wien Universitätsbib.	AT-UBWW		AT-OBV	Wirtschaftsuniversität Wien Universitätsbibliothek
+XXX	Uni für Bodenkultur Universitätsbib. Fachbereich Landschaftsplanung	AT-UBWW-874		AT-OBV	Universität für Bodenkultur Universitätsbibliothek Fachbereich Landschaftsplanung
+XXX	Wirtschaftsuni Wien Universitätsbib. Hauptbib.	AT-UBWW-HB		AT-OBV	Wirtschaftsuniversität Wien Universitätsbibliothek Hauptbibliothek
+XXX	Verbund für Bildung und Kultur	AT-VBK		AT-OBV	Verbund für Bildung und Kultur
+XXX	Verein zur Förderung der Informationswissenschaft	AT-VFI		AT-OBV	Verein zur Förderung der Informationswissenschaft
+XXX	Öster. Mus für Volkskunde Bib.	AT-VKW		AT-OBV	Österreichisches Museum für Volkskunde Bibliothek
+XXX	Vorarlberger L-Arch.	AT-VLA		AT-OBV	Vorarlberger Landesarchiv
+XXX	Amt der Vorarlberger Landesreg. Amtsbib.	AT-VLAB		AT-OBV	Amt der Vorarlberger Landesregierung Amtsbibliothek
+XXX	Vorarlberger Landesbib.	AT-VLB		AT-OBV	Vorarlberger Landesbibliothek
+XXX	Franz Michael Felder-Archiv	AT-VLB-FMFA		AT-OBV	Franz Michael Felder-Archiv
+XXX	Mus für Völkerkunde Wien Bib.	AT-VMW		AT-OBV	Museum für Völkerkunde Wien Bibliothek
+XXX	Wiener Wiesenthal Inst. für Holocaust-Studien (VWI) Bib.	AT-VWIHS		AT-OBV	Wiener Wiesenthal Institut für Holocaust-Studien (VWI) Bibliothek
+XXX	Wienbib. im Rathaus	AT-WBR		AT-OBV	Wienbibliothek im Rathaus
+XXX	Dr.-Wilfried-Haslauer-Bib. (Forschungsinstitut für Politisch-Historische Studien)	AT-WHBIB		AT-OBV	Dr.-Wilfried-Haslauer-Bibliothek (Forschungsinstitut für Politisch-Historische Studien)
+XXX	Wirtschaftskammer Wien Bib.	AT-WHK		AT-OBV	Wirtschaftskammer Wien Bibliothek
+XXX	Zisterzienserstift Wilhering Musikarchiv	AT-WIL-ARM		AT-OBV	Zisterzienserstift Wilhering Musikarchiv
+XXX	Wiener Stadt- und L-Arch.	AT-WSTLA		AT-OBV	Wiener Stadt- und Landesarchiv
+XXX	Wiener Stadt- und L-Arch. Archivbib.	AT-WSTLA-B		AT-OBV	Wiener Stadt- und Landesarchiv Archivbibliothek
+XXX	Wirtschaftsuni Wien Universitätsarchiv	AT-WUW-AR		AT-OBV	Wirtschaftsuniversität Wien Universitätsarchiv
+XXX	Zentrum für Erinnerungskultur und Geschichtsforschung (ZEG) Archiv	AT-ZEG		AT-OBV	Zentrum für Erinnerungskultur und Geschichtsforschung (ZEG) Archiv
+
