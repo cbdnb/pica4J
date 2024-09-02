@@ -33,13 +33,13 @@ import de.dnb.basics.filtering.RangeCheckUtils;
  *
  * Copyright 2011 by Michael Inden
  */
-public final class FileUtils {
+public final class MyFileUtils {
   public static final String XML_ENDING = ".xml";
   public static final String PDF_ENDING = ".pdf";
   public static final String BMP_ENDING = ".bmp";
   public static final String ZIP_ENDING = ".zip";
 
-  private FileUtils() {
+  private MyFileUtils() {
     // no ctor
   }
 
@@ -578,7 +578,7 @@ public final class FileUtils {
    *          Verzeichnis der .class-Datei!
    */
   public static String getExecutionDirectory() {
-    return getExecutionDirectory(FileUtils.class);
+    return getExecutionDirectory(MyFileUtils.class);
 
   }
 

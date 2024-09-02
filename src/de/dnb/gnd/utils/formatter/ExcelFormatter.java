@@ -14,7 +14,7 @@ import java.util.Set;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
 
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 import de.dnb.basics.applicationComponents.Streams;
 import de.dnb.basics.applicationComponents.strings.StringUtils;
 import de.dnb.basics.collections.CollectionUtils;
@@ -151,7 +151,7 @@ public class ExcelFormatter {
   public static void main(final String[] args) throws IOException {
     final RecordReader reader = RecordReader.getMatchingReader("D:/Analysen/jahns/professoren.dow");
     final List<Record> records = reader.stream().collect(Collectors.toList());
-    final PrintWriter out = FileUtils.oeffneAusgabeDatei("D:/Analysen/jahns/professoren.tab", false);
+    final PrintWriter out = MyFileUtils.oeffneAusgabeDatei("D:/Analysen/jahns/professoren.tab", false);
     final String format = format(records, true);
     //    System.err.println(format);
     out.println(format);

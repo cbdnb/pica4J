@@ -7,7 +7,7 @@ import java.io.ObjectInputStream;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 
 /**
  * Multimap, deren Index eine Kombination mehrerer Merkmale ist.
@@ -65,7 +65,7 @@ public class CrossProductMultimap<V> extends ListMultimap<Collection<? extends O
     @SuppressWarnings("unchecked")
     final CrossProductMultimap<V> readObject = (CrossProductMultimap<V>) objectin.readObject();
 
-    FileUtils.safeClose(objectin);
+    MyFileUtils.safeClose(objectin);
     addAll(readObject);
   }
 

@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
 import javax.naming.OperationNotSupportedException;
 
 import de.dnb.basics.Constants;
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 import de.dnb.basics.applicationComponents.StreamUtils;
 import de.dnb.basics.applicationComponents.Streams;
 import de.dnb.basics.applicationComponents.strings.StringUtils;
@@ -662,7 +662,7 @@ public final class RecordUtils {
 			log = new PrintStream(logOS);
 			log.print(message);
 			log.println();
-			FileUtils.safeClose(log);
+			MyFileUtils.safeClose(log);
 		} catch (final Exception e1) {
 			// Gefährlich, aber wohl sinnvoll, da nur ein Logversuch
 			// in nicht allzu wichtigen Situationen.
@@ -1287,7 +1287,7 @@ public final class RecordUtils {
 		recordReader.setDefaultTagDB(tagDB);
 		recordReader.setIgnoreMARC(ignoreMARC);
 		final Record next = recordReader.next();
-		FileUtils.safeClose(recordReader);
+		MyFileUtils.safeClose(recordReader);
 		return next;
 	}
 

@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.Objects;
 import java.util.function.Consumer;
 
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 import de.dnb.basics.tries.TST;
 import de.dnb.basics.tries.Trie;
 
@@ -130,7 +130,7 @@ public class TrieFrequency extends Frequency<String> {
     final ObjectInputStream objectin = new ObjectInputStream(fileInp);
     final TrieFrequency readObject = (TrieFrequency) objectin.readObject();
     final TrieFrequency freq = readObject;
-    FileUtils.safeClose(objectin);
+    MyFileUtils.safeClose(objectin);
     addAll(freq);
   }
 

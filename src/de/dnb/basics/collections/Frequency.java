@@ -27,7 +27,7 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 import de.dnb.basics.applicationComponents.tuples.Pair;
 import de.dnb.basics.filtering.Equals;
 import de.dnb.basics.filtering.Greater;
@@ -362,7 +362,7 @@ public class Frequency<V> implements Iterable<V>, Serializable, Map<V, Long> {
   public final void safe(final String fileName) throws FileNotFoundException, IOException {
     final ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(fileName));
     out.writeObject(this);
-    FileUtils.safeClose(out);
+    MyFileUtils.safeClose(out);
   }
 
   @SuppressWarnings("unchecked")
@@ -383,7 +383,7 @@ public class Frequency<V> implements Iterable<V>, Serializable, Map<V, Long> {
     final InputStream fileInp = new FileInputStream(fileName);
     final ObjectInputStream objectin = new ObjectInputStream(fileInp);
     final Frequency<V> freq = (Frequency<V>) objectin.readObject();
-    FileUtils.safeClose(objectin);
+    MyFileUtils.safeClose(objectin);
     return freq;
   }
 
@@ -419,7 +419,7 @@ public class Frequency<V> implements Iterable<V>, Serializable, Map<V, Long> {
     @SuppressWarnings("unchecked")
     final Frequency<V> readObject = (Frequency<V>) objectin.readObject();
     final Frequency<V> freq = readObject;
-    FileUtils.safeClose(objectin);
+    MyFileUtils.safeClose(objectin);
     addAll(freq);
   }
 
@@ -484,9 +484,9 @@ public class Frequency<V> implements Iterable<V>, Serializable, Map<V, Long> {
   }
 
   public void write2File(final String filename) throws IOException {
-    final PrintWriter pw = FileUtils.oeffneAusgabeDatei(filename, false);
+    final PrintWriter pw = MyFileUtils.oeffneAusgabeDatei(filename, false);
     pw.print(toString());
-    FileUtils.safeClose(pw);
+    MyFileUtils.safeClose(pw);
   }
 
 }

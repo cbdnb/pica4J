@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 
 /**
  * Implementation of Multimap that uses an LinkedList to store the values for a
@@ -60,7 +60,7 @@ public class ListMultimap<K, V> extends Multimap<K, V> implements Serializable {
         ListMultimap<K, V> readObject =
             (ListMultimap<K, V>) objectin.readObject();
 
-        FileUtils.safeClose(objectin);
+        MyFileUtils.safeClose(objectin);
         addAll(readObject);
     }
 

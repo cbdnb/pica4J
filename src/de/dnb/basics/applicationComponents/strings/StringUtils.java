@@ -41,7 +41,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 import de.dnb.basics.Constants;
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 import de.dnb.basics.applicationComponents.StreamUtils;
 import de.dnb.basics.applicationComponents.tuples.Quadruplett;
 import de.dnb.basics.filtering.AcceptEverything;
@@ -644,7 +644,7 @@ public class StringUtils {
   public static String readConsole() {
     final Scanner scanner = new Scanner(System.in);
     final String s = scanner.nextLine();
-    FileUtils.safeClose(scanner);
+    MyFileUtils.safeClose(scanner);
     return s;
   }
 

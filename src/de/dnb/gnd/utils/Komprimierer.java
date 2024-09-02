@@ -8,7 +8,7 @@ import java.io.PrintStream;
 import java.util.Objects;
 
 import de.dnb.basics.Constants;
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 import de.dnb.gnd.parser.Format;
 import de.dnb.gnd.parser.Record;
 
@@ -46,9 +46,9 @@ public class Komprimierer extends DownloadWorker {
     final Komprimierer komprimierer = new Komprimierer();
     komprimierer.setInputFolder(inputFolder);
     komprimierer.setFilePrefix(filePrefix);
-    komprimierer.out = FileUtils.getGZipPrintStream(gzipFileName);
+    komprimierer.out = MyFileUtils.getGZipPrintStream(gzipFileName);
     komprimierer.processAllFiles();
-    FileUtils.safeClose(komprimierer.out);
+    MyFileUtils.safeClose(komprimierer.out);
 
   }
 

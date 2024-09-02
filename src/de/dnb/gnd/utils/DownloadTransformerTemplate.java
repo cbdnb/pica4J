@@ -7,7 +7,7 @@ import java.io.UnsupportedEncodingException;
 
 import javax.naming.OperationNotSupportedException;
 
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 import de.dnb.basics.filtering.RangeCheckUtils;
 import de.dnb.gnd.exceptions.IllFormattedLineException;
 import de.dnb.gnd.parser.Format;
@@ -187,7 +187,7 @@ public abstract class DownloadTransformerTemplate extends DownloadWorker {
 
 	@Override
 	protected void finalize() throws Throwable {
-		FileUtils.safeClose(outputStream);
+		MyFileUtils.safeClose(outputStream);
 		// als nicht mehr benutzbar markieren:
 		outputStream = null;
 		super.finalize();

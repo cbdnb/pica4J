@@ -5,7 +5,7 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 import de.dnb.basics.applicationComponents.strings.StringUtils;
 import de.dnb.basics.utils.OutputWindow;
 
@@ -48,18 +48,18 @@ public abstract class Server {
                 PrintWriter out = new PrintWriter(socket.getOutputStream());
                 out.println(transformed);
                 out.flush();
-                FileUtils.safeClose(socket);
+                MyFileUtils.safeClose(socket);
             }
         } catch (IOException e) {
-            FileUtils.safeClose(socket);
+            MyFileUtils.safeClose(socket);
             e.printStackTrace();
         }
     }
 
     @Override
     protected void finalize() throws Throwable {
-        FileUtils.safeClose(socket);
-        FileUtils.safeClose(serverSocket);
+        MyFileUtils.safeClose(socket);
+        MyFileUtils.safeClose(serverSocket);
     };
 
     public abstract String transform(String s);

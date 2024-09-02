@@ -12,7 +12,7 @@ import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 
 /**
  * Implementation of Multimap that uses an LinkedHashSet to store the values for a
@@ -59,7 +59,7 @@ public class SetMultimap<K, V> extends Multimap<K, V> implements Serializable {
     final ObjectInputStream objectin = new ObjectInputStream(fileInp);
     @SuppressWarnings("unchecked")
     final SetMultimap<K, V> readObject = (SetMultimap<K, V>) objectin.readObject();
-    FileUtils.safeClose(objectin);
+    MyFileUtils.safeClose(objectin);
     addAll(readObject);
   }
 

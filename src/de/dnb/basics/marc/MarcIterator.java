@@ -16,7 +16,7 @@ import org.marc4j.MarcXmlParserThread;
 import org.marc4j.MarcXmlReader;
 import org.marc4j.marc.Record;
 
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 import de.dnb.basics.applicationComponents.Streams;
 
 /**
@@ -87,7 +87,7 @@ public class MarcIterator
     public static MarcIterator getFromMarcFile(final String filename)
         throws IOException {
         Objects.requireNonNull(filename);
-        final InputStream input = FileUtils.getMatchingInputStream(filename);
+        final InputStream input = MyFileUtils.getMatchingInputStream(filename);
         final MarcReader marcReader = new MarcStreamReader(input);
         final MarcIterator iterator = new MarcIterator(marcReader);
 
@@ -107,7 +107,7 @@ public class MarcIterator
     public static MarcIterator getFromXML(final String filename)
         throws IOException {
         Objects.requireNonNull(filename);
-        final InputStream input = FileUtils.getMatchingInputStream(filename);
+        final InputStream input = MyFileUtils.getMatchingInputStream(filename);
         final MarcReader marcReader = new MarcXmlReader(input);
         final MarcIterator iterator = new MarcIterator(marcReader);
 

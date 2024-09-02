@@ -23,7 +23,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 
 /**
  * @author baumann
@@ -53,7 +53,7 @@ public class CollectionUtils {
     final FileOutputStream fos = new FileOutputStream(fileName);
     final ObjectOutputStream oos = new ObjectOutputStream(fos);
     oos.writeObject(collection);
-    FileUtils.safeClose(oos);
+    MyFileUtils.safeClose(oos);
   }
 
   /**
@@ -72,7 +72,7 @@ public class CollectionUtils {
     final ObjectInputStream objectin = new ObjectInputStream(fileInp);
     @SuppressWarnings("unchecked")
     final BiMultimap<K, V> readObject = (BiMultimap<K, V>) objectin.readObject();
-    FileUtils.safeClose(objectin);
+    MyFileUtils.safeClose(objectin);
     System.err.println("Fertig mit Laden: " + fileName);
     return readObject;
   }
@@ -93,7 +93,7 @@ public class CollectionUtils {
     final ObjectInputStream objectin = new ObjectInputStream(fileInp);
     @SuppressWarnings("unchecked")
     final BiMap<K, V> readObject = (BiMap<K, V>) objectin.readObject();
-    FileUtils.safeClose(objectin);
+    MyFileUtils.safeClose(objectin);
     System.err.println("Fertig mit Laden: " + fileName);
     return readObject;
   }
@@ -105,7 +105,7 @@ public class CollectionUtils {
     final ObjectInputStream objectin = new ObjectInputStream(fileInp);
     @SuppressWarnings("unchecked")
     final HashMap<K, V> readObject = (HashMap<K, V>) objectin.readObject();
-    FileUtils.safeClose(objectin);
+    MyFileUtils.safeClose(objectin);
     System.err.println("Fertig mit Laden: " + fileName);
     return readObject;
   }
@@ -117,7 +117,7 @@ public class CollectionUtils {
     final ObjectInputStream objectin = new ObjectInputStream(fileInp);
     @SuppressWarnings("unchecked")
     final LinkedHashMap<K, V> readObject = (LinkedHashMap<K, V>) objectin.readObject();
-    FileUtils.safeClose(objectin);
+    MyFileUtils.safeClose(objectin);
     System.err.println("Fertig mit Laden: " + fileName);
     return readObject;
   }
@@ -129,7 +129,7 @@ public class CollectionUtils {
     final ObjectInputStream objectin = new ObjectInputStream(fileInp);
     @SuppressWarnings("unchecked")
     final TreeMap<K, V> readObject = (TreeMap<K, V>) objectin.readObject();
-    FileUtils.safeClose(objectin);
+    MyFileUtils.safeClose(objectin);
     System.err.println("Fertig mit Laden: " + fileName);
     return readObject;
   }
@@ -150,7 +150,7 @@ public class CollectionUtils {
     final ObjectInputStream objectin = new ObjectInputStream(fileInp);
     @SuppressWarnings("unchecked")
     final ListMultimap<K, V> readObject = (ListMultimap<K, V>) objectin.readObject();
-    FileUtils.safeClose(objectin);
+    MyFileUtils.safeClose(objectin);
     System.err.println("Fertig mit Laden: " + fileName);
     return readObject;
   }
@@ -163,7 +163,7 @@ public class CollectionUtils {
     final ObjectInputStream objectin = new ObjectInputStream(fileInp);
     @SuppressWarnings("unchecked")
     final TreeMultimap<K, V> readObject = (TreeMultimap<K, V>) objectin.readObject();
-    FileUtils.safeClose(objectin);
+    MyFileUtils.safeClose(objectin);
     System.err.println("Fertig mit Laden: " + fileName);
     return readObject;
   }
@@ -176,7 +176,7 @@ public class CollectionUtils {
     final ObjectInputStream objectin = new ObjectInputStream(fileInp);
     @SuppressWarnings("unchecked")
     final HashSet<T> readObject = (HashSet<T>) objectin.readObject();
-    FileUtils.safeClose(objectin);
+    MyFileUtils.safeClose(objectin);
     System.err.println("Fertig mit Laden: " + fileName);
     return readObject;
   }
@@ -188,7 +188,7 @@ public class CollectionUtils {
     final ObjectInputStream objectin = new ObjectInputStream(fileInp);
     @SuppressWarnings("unchecked")
     final LinkedHashSet<T> readObject = (LinkedHashSet<T>) objectin.readObject();
-    FileUtils.safeClose(objectin);
+    MyFileUtils.safeClose(objectin);
     System.err.println("Fertig mit Laden: " + fileName);
     return readObject;
   }
@@ -213,7 +213,7 @@ public class CollectionUtils {
     final ObjectInputStream objectin = new ObjectInputStream(fileInp);
     @SuppressWarnings("unchecked")
     final TreeSet<T> readObject = (TreeSet<T>) objectin.readObject();
-    FileUtils.safeClose(objectin);
+    MyFileUtils.safeClose(objectin);
     System.err.println("Fertig mit Laden: " + fileName);
     return readObject;
   }

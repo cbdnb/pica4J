@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.net.Socket;
 
 import de.dnb.basics.Constants;
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 import de.dnb.basics.applicationComponents.strings.StringUtils;
 import de.dnb.basics.utils.OutputWindow;
 
@@ -91,7 +91,7 @@ public class Client {
   private void startServer() throws IOException {
     final Runtime proc = Runtime.getRuntime();
     String exString = "javaw ";
-    final String exeDir = FileUtils.getExecutionDirectory();
+    final String exeDir = MyFileUtils.getExecutionDirectory();
     if (server.endsWith(".jar")) {
       exString += "-jar ";
     } else {

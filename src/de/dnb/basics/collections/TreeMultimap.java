@@ -14,7 +14,7 @@ import java.util.NavigableSet;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 
 /**
  * Implementation of Multimap that uses an TreeSet to store the values for a
@@ -67,7 +67,7 @@ public class TreeMultimap<K extends Comparable<K>, V extends Comparable<V>> exte
     final ObjectInputStream objectin = new ObjectInputStream(fileInp);
     @SuppressWarnings("unchecked")
     final TreeMultimap<K, V> readObject = (TreeMultimap<K, V>) objectin.readObject();
-    FileUtils.safeClose(objectin);
+    MyFileUtils.safeClose(objectin);
     addAll(readObject);
   }
 

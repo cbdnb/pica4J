@@ -8,7 +8,7 @@ import java.io.PrintStream;
 import java.util.function.Predicate;
 
 import de.dnb.basics.Constants;
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 import de.dnb.basics.filtering.RangeCheckUtils;
 import de.dnb.basics.filtering.RejectEmptyStrings;
 import de.dnb.gnd.exceptions.ExceptionHandler;
@@ -247,7 +247,7 @@ public abstract class DownloadWorker {
   public final void processFile(final File file) throws IOException {
     RangeCheckUtils.assertReferenceParamNotNull("file", file);
     System.err.println("Bearbeite Datei: " + file.getName());
-    processInputStream(FileUtils.getMatchingInputStream(file));
+    processInputStream(MyFileUtils.getMatchingInputStream(file));
   }
 
   /**
@@ -405,7 +405,7 @@ public abstract class DownloadWorker {
   public final void processGZipFile(final String filename) throws IOException {
     RangeCheckUtils.assertReferenceParamNotNull("filename", filename);
     gzipSettings();
-    processInputStream(FileUtils.getGZipInputStream(filename));
+    processInputStream(MyFileUtils.getGZipInputStream(filename));
   }
 
   /**
@@ -419,7 +419,7 @@ public abstract class DownloadWorker {
    */
   public final void processGZipFile(final File file) throws IOException {
     gzipSettings();
-    processInputStream(FileUtils.getGZipInputStream(file));
+    processInputStream(MyFileUtils.getGZipInputStream(file));
   }
 
   /**
@@ -491,7 +491,7 @@ public abstract class DownloadWorker {
 
   @Override
   protected void finalize() throws Throwable {
-    FileUtils.safeClose(outputStream);
+    MyFileUtils.safeClose(outputStream);
     super.finalize();
   }
 

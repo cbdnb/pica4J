@@ -17,7 +17,7 @@ import java.util.stream.Stream;
 import java.util.zip.GZIPInputStream;
 
 import de.dnb.basics.Constants;
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 import de.dnb.basics.applicationComponents.Streams;
 import de.dnb.basics.applicationComponents.strings.StringUtils;
 import de.dnb.basics.filtering.RangeCheckUtils;
@@ -456,7 +456,7 @@ public class RecordReader implements Iterable<Record>, Iterator<Record>, Closeab
 
   @Override
   protected void finalize() throws Throwable {
-    FileUtils.safeClose(scanner);
+    MyFileUtils.safeClose(scanner);
     super.finalize();
   }
 
@@ -514,7 +514,7 @@ public class RecordReader implements Iterable<Record>, Iterator<Record>, Closeab
    */
   public static RecordReader gzipReader(final String filename) throws IOException {
     final RecordReader reader = new RecordReader();
-    final GZIPInputStream in = FileUtils.getGZipInputStream(filename);
+    final GZIPInputStream in = MyFileUtils.getGZipInputStream(filename);
     reader.setSource(in);
     reader.gzipSettings();
     return reader;
@@ -529,10 +529,10 @@ public class RecordReader implements Iterable<Record>, Iterator<Record>, Closeab
    */
   public static RecordReader getMatchingReader(final String filename) throws IOException {
     final RecordReader reader = new RecordReader(filename);
-    if (FileUtils.isGZipped(filename)) {
+    if (MyFileUtils.isGZipped(filename)) {
       reader.gzipSettings();
     }
-    final InputStream inputStream = FileUtils.getMatchingInputStream(filename);
+    final InputStream inputStream = MyFileUtils.getMatchingInputStream(filename);
     reader.setSource(inputStream);
     return reader;
   }
@@ -550,7 +550,7 @@ public class RecordReader implements Iterable<Record>, Iterator<Record>, Closeab
    */
   @Override
   public void close() throws IOException {
-    FileUtils.safeClose(scanner);
+    MyFileUtils.safeClose(scanner);
 
   }
 

@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import de.dnb.basics.Constants;
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 import de.dnb.basics.applicationComponents.strings.StringInputStream;
 import de.dnb.gnd.utils.RecordUtils;
 
@@ -40,7 +40,7 @@ public class RecordReaderTest {
     {
       assertTrue(RecordUtils.containsField(rec, "0200"));
     });
-    FileUtils.safeClose(recordReader);
+    MyFileUtils.safeClose(recordReader);
   }
 
 }

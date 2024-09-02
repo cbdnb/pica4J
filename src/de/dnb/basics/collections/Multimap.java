@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 
-import de.dnb.basics.applicationComponents.FileUtils;
+import de.dnb.basics.applicationComponents.MyFileUtils;
 import de.dnb.basics.applicationComponents.NullIterator;
 import de.dnb.basics.applicationComponents.strings.StringUtils;
 
@@ -352,7 +352,7 @@ public abstract class Multimap<K, V> implements Iterable<K>, Serializable, IMult
   public final void safe(final String fileName) throws FileNotFoundException, IOException {
     final ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(fileName));
     out.writeObject(this);
-    FileUtils.safeClose(out);
+    MyFileUtils.safeClose(out);
   }
 
   /**
