@@ -1684,7 +1684,7 @@ public final class GNDUtils {
 	 * @return alle idns von Körperschaften, die mit record als Vorgänger und
 	 *         Nachfolger verbunden sind.
 	 */
-	public static Collection<Integer> getPrePostIDs(Record record) {
+	public static Collection<Integer> getVorgNachf(Record record) {
 		Collection<Line> lines = getPrePostLines(record);
 		return RecordUtils.extractIDNints(lines);
 	}

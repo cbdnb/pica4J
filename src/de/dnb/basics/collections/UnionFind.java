@@ -53,21 +53,41 @@ public class UnionFind<T> {
 		uf.union(2, 5);
 		uf.debug();
 
+		System.out.println(uf.getElements());
+
 	}
 
+	/**
+	 * child -> parent. Die Teilansicht eines Knotens im Baum (nach oben)
+	 */
 	private final Map<T, T> parentMap;
+
+	/**
+	 * element -> Größe des zugehöringen Unterbaums.
+	 */
 	private final Map<T, Integer> sizeMap;
+
+	/**
+	 * parent -> children. Die Teilansicht eines Knotens im Baum (nach unten)
+	 */
 	private final Map<T, Set<T>> childrenMap;
+
+	/**
+	 * Repräsentanten der Cluster (Partitionen).
+	 */
 	private final Set<T> roots;
 
-	public int getNumberOfClusters() {
-		return numberOfClusters;
-	}
-
+	/**
+	 * 
+	 * @return Repräsentanten der Cluster (Partitionen).
+	 */
 	public Set<T> getRoots() {
 		return roots;
 	}
 
+	/**
+	 * Zahl der Cluster (Partitionen)
+	 */
 	private int numberOfClusters; // number of nonequivalent components
 
 	/**
@@ -91,7 +111,8 @@ public class UnionFind<T> {
 	/**
 	 * Adds a new element to the data structure in its own set.
 	 *
-	 * @param element The element to add. Auch null, dann geschieht nichts.
+	 * @param element The element to add. Wenn null oder schon enthalten, geschieht
+	 *                nichts.
 	 */
 	public void addElement(T element) {
 		if (element == null || parentMap.containsKey(element))
@@ -101,7 +122,7 @@ public class UnionFind<T> {
 
 	/**
 	 * 
-	 * @param element
+	 * @param element darf nur aufgerufen werden, wenn noch nicht vorhanden!
 	 */
 	private void add(T element) {
 		parentMap.put(element, element);
@@ -248,7 +269,7 @@ public class UnionFind<T> {
 	 * 
 	 * @return the number of sets
 	 */
-	public int numberOfClusters() {
+	public int getNumberOfClusters() {
 		assert numberOfClusters >= 1 && numberOfClusters <= parentMap.keySet().size();
 		return numberOfClusters;
 	}
@@ -260,6 +281,14 @@ public class UnionFind<T> {
 	 */
 	public int size() {
 		return parentMap.size();
+	}
+
+	/**
+	 * 
+	 * @return Alle Elemente in der Datenstruktur
+	 */
+	public Set<T> getElements() {
+		return parentMap.keySet();
 	}
 
 	/**
@@ -283,6 +312,12 @@ public class UnionFind<T> {
 		return result;
 	}
 
+	/**
+	 * Tiefensuche nach allen Kindern.
+	 * 
+	 * @param root   aktuell betrachtete Wurzel
+	 * @param result Menge der Kinder
+	 */
 	private void depthFirst(T root, Set<T> result) {
 		result.add(root);
 		for (T child : childrenMap.get(root)) {
