@@ -268,7 +268,7 @@ public class CollectionUtils {
    * @param coll2 auch null oder leer -> false
    * @return      coll1 enthält irgend ein Element von coll2
    */
-  public static <T> boolean containsAny(final Collection<T> coll1, final Collection<T> coll2) {
+  public static <T> boolean intersects(final Collection<T> coll1, final Collection<T> coll2) {
     if (coll2 == null || coll2.isEmpty() || coll1 == null || coll1.isEmpty())
       return false;
     // coll1/coll2 kann nicht mehr null sein:
