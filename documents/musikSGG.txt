@@ -1,0 +1,101 @@
+Musik allgemein	780
+Unterrichtswerke	780.7
+Musik allgemein mit zeitlichem, regionalem oder biografischem	Bezug 780.9
+Musik nach Gattungen	781
+Hintergrund- und Stimmungsmusik	781.54
+Filmmusik	781.542
+Ballettmusik	781.556
+Volksmusik	781.62
+Unterhaltungsmusik	781.64
+Countrymusik	781.642 1
+Blues und Soul	781.643 2
+Reggae	781.646 3
+Electronica	781.648 4
+Rap	781.649 5
+Jazz	781.65
+Rockmusik	781.66 6
+Klassische Musik	781.68 7
+Vokalmusik	782
+Musikalische Bühnenwerke	782.1
+Geistliche Vokalmusik	782.22
+Geistliche Lieder	782.25
+Weltliche Vokalmusik	782.4
+Chormusik für gemischte Stimmen	782.5
+Chormusik für Frauenstimmen	782.6
+Chormusik für Kinder- und Jugendstimmen	782.7
+Chormusik für Männerstimmen	782.8
+Vokalmusik für Einzelstimmen	783
+Orchestermusik	784
+Orchester mit Soloinstrument(en)	784.23
+Blasorchester	784.8
+Kammermusik	785
+Duos	785.12
+Trios	785.13
+Quartette	785.14
+Quintette und mehr	785.15
+Tasten- und Schlaginstrumente, mechanische und elektronische Instrumente	786
+Klavier	786.2
+Cembalo	786.4
+Orgel	786.5
+mechanische Instrumente	786.6
+elektronische Instrumente	786.7
+Schlaginstrumente	786.8
+Saiteninstrumente	787
+Violine	787.2
+Viola	787.3
+Violoncello	787.4
+Kontrabass	787.5
+andere Streichinstrumente	787.6
+Zupfinstrumente	787.8
+Laute	787.83 8
+Mandoline	787.84 9
+Gitarre	787.87 10
+Harfe	787.9
+Chormusik für gemischte Stimmen	782.5
+Chormusik für Frauenstimmen	782.6
+Chormusik für Kinder- und Jugendstimmen	782.7
+Chormusik für Männerstimmen	782.8
+Vokalmusik für Einzelstimmen	783
+Orchestermusik	784
+Orchester mit Soloinstrument(en)	784.23
+Blasorchester	784.8
+Kammermusik	785
+Duos	785.12
+Trios	785.13
+Quartette	785.14
+Quintette und mehr	785.15
+Tasten- und Schlaginstrumente, mechanische und elektronische Instrumente	786
+Klavier	786.2
+Cembalo	786.4
+Orgel	786.5
+mechanische Instrumente	786.6
+elektronische Instrumente	786.7
+Schlaginstrumente	786.8
+Saiteninstrumente	787
+Violine	787.2
+Viola	787.3
+Violoncello	787.4
+Kontrabass	787.5
+andere Streichinstrumente	787.6
+Zupfinstrumente	787.8
+Laute	787.83 8
+Mandoline	787.84 9
+Gitarre	787.87 10
+Harfe	787.9
+Blasinstrumente	788
+Flöten	788.3
+Querflöte	788.32 11
+Blockflöte	788.36 12
+Rohrblattinstrumente	788.4
+Oboe	788.52 13
+Fagott	788.58 14
+Klarinette	788.62 15
+Saxophon	788.7 16
+Akkordeon, Mundharmonika	788.8
+Trompete	788.92
+Posaune	788.93
+Horn	788.94
+Kornett	788.96
+Flügelhorn	788.97
+Tuba	788.98
+andere Blechblasinstrumente	788.99
