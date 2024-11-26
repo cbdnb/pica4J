@@ -303,6 +303,12 @@ public class UnionFind<T> {
 		numberOfClusters = parentMap.size();
 	}
 
+	/**
+	 * 
+	 * @param elem auch null
+	 * @return alle Kindelemente von elem. Sinnvollerweise wird eine der roots als
+	 *         elem gewählt.
+	 */
 	public Set<T> getCluster(T elem) {
 		if (!parentMap.containsKey(elem))
 			return Collections.emptySet();
