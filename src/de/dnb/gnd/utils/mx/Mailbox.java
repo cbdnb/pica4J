@@ -151,6 +151,22 @@ public class Mailbox implements Comparable<Mailbox> {
 	}
 
 	/**
+	 * 
+	 * @return Ist ein Pseudonym, erkennbar an einer fiktiven Mx-Adresse e-pseu
+	 */
+	public boolean containsPseu() {
+		return getAllAdresses().stream().map(MXAddress::getLibrary).anyMatch(Library.PSEU::equals);
+	}
+
+	/**
+	 * 
+	 * @return Ist ein Spitzenorgan, erkennbar an einer fiktiven Mx-Adresse e-spio
+	 */
+	public boolean containsSpio() {
+		return getAllAdresses().stream().map(MXAddress::getLibrary).anyMatch(Library.SPIO::equals);
+	}
+
+	/**
 	 *
 	 * @param beteiligter wenn null oder schon vorhanden, keine Aktion. Kein
 	 *                    Absender!
@@ -356,27 +372,32 @@ public class Mailbox implements Comparable<Mailbox> {
 		return SubfieldUtils.getContentOfFirstSubfield(mxLine, 'z');
 	}
 
+	/**
+	 * 
+	 * @param record nicht null
+	 * @return Datum der ersten mx
+	 */
 	public static Optional<Date> getFirstDate(final Record record) {
 		final ArrayList<Line> mxx = GNDUtils.getMXLines(record);
-
 		return mxx.stream().map(Mailbox::getDate).filter(Objects::nonNull).min((o1, o2) -> o1.compareTo(o2));
-//		Date first = null;
-//		for (final Line mxLine : mxx) {
-//			final Date current = getDate(mxLine);
-//			if (current == null)
-//				continue;
-//			else if (first == null)
-//				first = current;
-//			else if (first.compareTo(current) > 0)
-//				first = current;
-//		}
-//		return first;
 	}
 
+	/**
+	 * 
+	 * @param record nicht null
+	 * @return Datum der letzten mx
+	 */
 	public static Optional<Date> getLastDate(final Record record) {
 		final ArrayList<Line> mxx = GNDUtils.getMXLines(record);
-
 		return mxx.stream().map(Mailbox::getDate).filter(Objects::nonNull).max((o1, o2) -> o1.compareTo(o2));
+	}
+
+	public static boolean containsSpio(Record record) {
+		return GNDUtils.getMXLines(record).stream().map(line -> parse(line)).anyMatch(Mailbox::containsSpio);
+	}
+
+	public static boolean containsPseu(Record record) {
+		return GNDUtils.getMXLines(record).stream().map(line -> parse(line)).anyMatch(Mailbox::containsPseu);
 	}
 
 	/**
@@ -493,15 +514,12 @@ public class Mailbox implements Comparable<Mailbox> {
 			adresses.addAll(mxads);
 		});
 		return adresses;
-
 	}
 
 	public static void main(final String[] args) throws ParseException, IllFormattedLineException {
-
 		Record record = RecordUtils.readFromClip();
-		System.out.println(getLastDate(record));
-		System.out.println(getFirstDate(record));
-
+		System.out.println(containsPseu(record));
+		System.out.println(containsSpio(record));
 	}
 
 	@Override

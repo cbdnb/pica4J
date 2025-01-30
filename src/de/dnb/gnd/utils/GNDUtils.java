@@ -1665,6 +1665,11 @@ public final class GNDUtils {
 		return RecordUtils.getContentOfSubfield(record, "153", 'j');
 	}
 
+	/**
+	 * 
+	 * @param record nicht null
+	 * @return Ts1, Tc, Tu1e ....
+	 */
 	public static String getBBG(final Record record) {
 		return RecordUtils.getDatatype(record);
 	}
