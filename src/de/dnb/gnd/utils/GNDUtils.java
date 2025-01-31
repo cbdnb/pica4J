@@ -1078,7 +1078,7 @@ public final class GNDUtils {
 	}
 
 	/**
-	 * Gibt die Redaktionellen Bemerkungen.
+	 * Gibt die Redaktionellen Bemerkungen aus 667.
 	 * 
 	 * @param record nicht null.
 	 *
@@ -1148,7 +1148,7 @@ public final class GNDUtils {
 	}
 
 	/**
-	 * Gibt die Benutzungshinweise.
+	 * Gibt die Benutzungshinweise aus 680.
 	 * 
 	 * @param record nicht null.
 	 *
@@ -1199,7 +1199,7 @@ public final class GNDUtils {
 	}
 
 	/**
-	 * Gibt die Definitionen.
+	 * Gibt die Definitionen aus 677.
 	 * 
 	 * @param record nicht null.
 	 *
@@ -1621,6 +1621,20 @@ public final class GNDUtils {
 		RangeCheckUtils.assertReferenceParamNotNull("record", record);
 		final List<Line> obb = RecordUtils.getLines(record, "550");
 		final List<Line> linesOB = getLinesWithDollar4(obb, "obin");
+		return linesOB;
+	}
+
+	/**
+	 * Gibt alle instantiellen Sach-Oberbegriffe, also alle 550-Zeilen, deren $4
+	 * "obin" lautet.
+	 *
+	 * @param record nicht null
+	 * @return nicht null, modifizierbar.
+	 */
+	public static List<Line> getGenerischeSachOBB(final Record record) {
+		RangeCheckUtils.assertReferenceParamNotNull("record", record);
+		final List<Line> obb = RecordUtils.getLines(record, "550");
+		final List<Line> linesOB = getLinesWithDollar4(obb, "obge");
 		return linesOB;
 	}
 

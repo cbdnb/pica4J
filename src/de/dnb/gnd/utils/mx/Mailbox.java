@@ -14,6 +14,7 @@ import java.util.TreeSet;
 
 import de.dnb.basics.applicationComponents.strings.StringUtils;
 import de.dnb.basics.collections.ListUtils;
+import de.dnb.basics.filtering.FilterUtils;
 import de.dnb.basics.utils.TimeUtils;
 import de.dnb.gnd.exceptions.IllFormattedLineException;
 import de.dnb.gnd.parser.Format;
@@ -104,6 +105,18 @@ public class Mailbox implements Comparable<Mailbox> {
 	 * Datum.
 	 */
 	private Date date;
+
+	private String rawDate;
+
+	public String getRawDate() {
+		return rawDate;
+	}
+
+	public String getRawAdresses() {
+		return rawAdresses;
+	}
+
+	private String rawAdresses;
 
 	/**
 	 * @return the absender
@@ -242,14 +255,15 @@ public class Mailbox implements Comparable<Mailbox> {
 	 * @param mxLine    nicht null
 	 * @param ausnahmen Strings wie "FLLB", die keine gültige Adressierung
 	 *                  darstellen
-	 * @return alle Mailboxen
+	 * @return die Mailbox != null
 	 */
 	public static Mailbox parse(final Line mxLine, final String... ausnahmen) {
 		final Mailbox mailbox = new Mailbox();
 		mailbox.date = getDate(mxLine);
+		mailbox.rawDate = getRawDate(mxLine);
 		mailbox.text = getMessage(mxLine);
-		final String addStr = getAddressField(mxLine);
-		final List<String> rawAddresses = getRawAddresses(addStr);
+		mailbox.rawAdresses = getAddressField(mxLine);
+		final List<String> rawAddresses = getRawAddresses(mailbox.rawAdresses);
 		boolean found = false;
 		for (final String rawAdd : rawAddresses) {
 			if (Arrays.asList(ausnahmen).contains(rawAdd)) {
@@ -274,7 +288,7 @@ public class Mailbox implements Comparable<Mailbox> {
 		final String datumStr = TimeUtils.toDDMMYYYY(getDate());
 		mx2string += "\n\tDatum: " + datumStr;
 		mx2string += "\n\tAbsender:\n";
-		mx2string += absender.toString(2);
+		mx2string += absender != null ? absender.toString(2) : MXAddress.getNullAddress().toString(2);
 		mx2string += "\n\tWeitere Beteiligte:";
 		String beteiligteStr = "";
 		for (final MXAddress bet : beteiligte) {
@@ -373,23 +387,58 @@ public class Mailbox implements Comparable<Mailbox> {
 	}
 
 	/**
-	 * 
-	 * @param record nicht null
-	 * @return Datum der ersten mx
+	 *
+	 * @param record    nicht null
+	 * @param ausnahmen Strings wie "FLLB", die keine gültige Adressierung
+	 *                  darstellen
+	 * @return erste Mx oder null, wenn keine Mx vorhanden oder kein Datum in $z
 	 */
-	public static Optional<Date> getFirstDate(final Record record) {
-		final ArrayList<Line> mxx = GNDUtils.getMXLines(record);
-		return mxx.stream().map(Mailbox::getDate).filter(Objects::nonNull).min((o1, o2) -> o1.compareTo(o2));
+	public static Mailbox getFirstMx(final Record record, final String... ausnahmen) {
+		Collection<Mailbox> mxx = parse(record, ausnahmen);
+		Mailbox firstMx = null;
+		Date firstD = null;
+		for (Mailbox mailbox : mxx) {
+			Date dat = mailbox.date;
+			if ((firstD == null && dat != null) || (dat != null && dat.compareTo(firstD) < 0)) {
+				firstD = dat;
+				firstMx = mailbox;
+			}
+		}
+		return firstMx;
 	}
 
 	/**
-	 * 
-	 * @param record nicht null
-	 * @return Datum der letzten mx
+	 *
+	 * @param record    nicht null
+	 * @param ausnahmen Strings wie "FLLB", die keine gültige Adressierung
+	 *                  darstellen *
+	 * @return Mailboxen, die kein oder ein ungültiges Datum haben
 	 */
-	public static Optional<Date> getLastDate(final Record record) {
-		final ArrayList<Line> mxx = GNDUtils.getMXLines(record);
-		return mxx.stream().map(Mailbox::getDate).filter(Objects::nonNull).max((o1, o2) -> o1.compareTo(o2));
+	public static Collection<Mailbox> getNullMx(final Record record, final String... ausnahmen) {
+		Collection<Mailbox> mxx = parse(record, ausnahmen);
+		FilterUtils.filter(mxx, mx -> mx.date == null);
+		return mxx;
+	}
+
+	/**
+	 *
+	 * @param record    nicht null
+	 * @param ausnahmen Strings wie "FLLB", die keine gültige Adressierung
+	 *                  darstellen
+	 * @return letzte Mx oder null, wenn keine Mx vorhanden oder kein Datum in $z
+	 */
+	public static Mailbox getLastMx(final Record record, final String... ausnahmen) {
+		Collection<Mailbox> mxx = parse(record, ausnahmen);
+		Mailbox lastMx = null;
+		Date lastD = null;
+		for (Mailbox mailbox : mxx) {
+			Date dat = mailbox.date;
+			if ((lastD == null && dat != null) || (dat != null && dat.compareTo(lastD) > 0)) {
+				lastD = dat;
+				lastMx = mailbox;
+			}
+		}
+		return lastMx;
 	}
 
 	public static boolean containsSpio(Record record) {
@@ -441,14 +490,16 @@ public class Mailbox implements Comparable<Mailbox> {
 
 	/**
 	 * @param mxL nicht null
-	 * @return Empfänger ohne e-
+	 * @return Empfänger mit a-
 	 */
+	@Deprecated
 	public static List<String> getRawSenders(final Line mxL) {
 		final List<String> rawAdresses = getRawAddresses(getAddressField(mxL));
 		final List<String> rawRecipients = getRawSenders(rawAdresses);
 		return rawRecipients;
 	}
 
+	@Deprecated
 	public static List<String> getRawSenders(final List<String> rawAdresses) {
 		final ArrayList<String> senders = new ArrayList<>();
 		rawAdresses.forEach(raw -> {
@@ -463,6 +514,7 @@ public class Mailbox implements Comparable<Mailbox> {
 	 * @param mxL nicht null
 	 * @return Empfänger ohne e-
 	 */
+	@Deprecated
 	public static List<String> getRawRecipients(final Line mxL) {
 		final List<String> rawAdresses = getRawAddresses(getAddressField(mxL));
 		final List<String> rawRecipients = getRawRecipients(rawAdresses);
@@ -472,8 +524,9 @@ public class Mailbox implements Comparable<Mailbox> {
 	/**
 	 *
 	 * @param rawAdresses nicht null
-	 * @return Empfänger ohne e-
+	 * @return Empfänger mit e-
 	 */
+	@Deprecated
 	public static List<String> getRawRecipients(final List<String> rawAdresses) {
 		final ArrayList<String> recipients = new ArrayList<>();
 		rawAdresses.forEach(raw -> {
@@ -518,8 +571,9 @@ public class Mailbox implements Comparable<Mailbox> {
 
 	public static void main(final String[] args) throws ParseException, IllFormattedLineException {
 		Record record = RecordUtils.readFromClip();
-		System.out.println(containsPseu(record));
-		System.out.println(containsSpio(record));
+		System.out.println(getFirstMx(record));
+		System.out.println(getLastMx(record));
+		System.out.println(getNullMx(record));
 	}
 
 	@Override

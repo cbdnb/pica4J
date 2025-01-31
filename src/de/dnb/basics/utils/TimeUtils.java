@@ -753,49 +753,59 @@ public final class TimeUtils {
 	}
 
 	/**
-	 * @param date nicht null
+	 * @param date auch null
 	 * @return Datum in der Form yyyy-MM-dd
 	 */
 	public static String toYYYYMMDD(final Date date) {
+		if (date == null)
+			return "????-??-??";
 		final String dateStr = MX_DATE_FORMAT.format(date);
 		return dateStr;
 	}
 
 	/**
-	 * @param calendar nicht null
+	 * @param calendar auch null
 	 * @return Datum in der Form yy-MM-dd (Status)
 	 */
 	public static String toYYYYMMDD(final Calendar calendar) {
+		if (calendar == null)
+			return "??-??-??";
 		final SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 		final String dateStr = formatter.format(calendar.getTime());
 		return dateStr;
 	}
 
 	/**
-	 * @param calendar nicht null
+	 * @param calendar auch null
 	 * @return Datum in der Form yy-MM-dd (Status)
 	 */
 	public static String toYYMMDD(final Calendar calendar) {
+		if (calendar == null)
+			return "??-??-????";
 		final SimpleDateFormat formatter = new SimpleDateFormat("yy-MM-dd");
 		final String dateStr = formatter.format(calendar.getTime());
 		return dateStr;
 	}
 
 	/**
-	 * @param date nicht null
+	 * @param date auch null
 	 * @return Datum in der Form yyyy-MM
 	 */
 	public static String toYYYYMM(final Date date) {
+		if (date == null)
+			return "????-??";
 		final SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM");
 		final String dateStr = formatter.format(date);
 		return dateStr;
 	}
 
 	/**
-	 * @param date nicht null
+	 * @param date auch null
 	 * @return Datum in der Form tt.mm.jjjj
 	 */
 	public static String toDDMMYYYY(final Date date) {
+		if (date == null)
+			return "??.??.????";
 		final SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
 		final String dateStr = formatter.format(date);
 		return dateStr;
