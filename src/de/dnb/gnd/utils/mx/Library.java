@@ -19,13 +19,29 @@ import java.util.Map;
  */
 public class Library implements Comparable<Library> {
 
-	public final static Library SPIO = LibraryDB.parseDB("spio").first;
+	public static final Library NULL_LIBRARY;
 
-	public final static Library PSEU = LibraryDB.parseDB("pseu").first;
+	public final static Library SPIO;
+
+	public final static Library PSEU;
+
+	static {
+		NULL_LIBRARY = new Library("9999", "null", "9999", "la");
+		SPIO = new Library("XXXX", "spio", "spio", "Spitzen, Exekutiv- und Informationsorgane");
+		SPIO.addRedaktion(RedaktionsTyp.DEFAULT, "spio");
+		PSEU = new Library("XXXX", "pseu", "pseu", "Aufspaltung von Pseudonymen");
+		PSEU.addRedaktion(RedaktionsTyp.DEFAULT, "pseu");
+		
+	}
 
 	public static void main(final String... strings) {
 		System.out.println(SPIO.toStringLang());
 		System.out.println(PSEU.toStringLang());
+		System.out.println(NULL_LIBRARY);
+		Library bibliothek;
+		bibliothek = new Library("XXX", "Stadtarchiv Attnang-Puchheim", "AT-41703AR", "Stadtarchiv Attnang-Puchheim");
+		System.out.println(bibliothek);
+
 	}
 
 	/**
@@ -33,7 +49,7 @@ public class Library implements Comparable<Library> {
 	 * @return Library mit von null verschiedenen Feldern
 	 */
 	public static Library getNullLibrary() {
-		return new Library("9999", "null", "9999", "la");
+		return NULL_LIBRARY;
 	}
 
 	@Override

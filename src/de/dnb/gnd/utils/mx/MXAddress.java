@@ -24,6 +24,9 @@ import de.dnb.basics.filtering.FilterUtils;
  */
 public class MXAddress implements Comparable<MXAddress> {
 
+	private static final MXAddress NULL_ADDRESS = new MXAddress(Adressierung.UNBESTIMMT, false,
+			Library.getNullLibrary(), RedaktionsTyp.DEFAULT, "", "");
+
 	/**
 	 *
 	 * @return Die Empfänger, die standardmäßig (per Skript) von der DNB aus
@@ -49,7 +52,7 @@ public class MXAddress implements Comparable<MXAddress> {
 	 * @return Null-Adresse.
 	 */
 	public static MXAddress getNullAddress() {
-		return new MXAddress(Adressierung.UNBESTIMMT, false, Library.getNullLibrary(), RedaktionsTyp.DEFAULT, "", "");
+		return NULL_ADDRESS;
 	}
 
 	/**

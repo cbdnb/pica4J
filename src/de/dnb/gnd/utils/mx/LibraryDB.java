@@ -33,9 +33,11 @@ import de.dnb.gnd.parser.Record;
  */
 public class LibraryDB {
 
-	private static final Map<String, Library> ISIL_2_LIB = new TreeMap<>();
+	public static final Pair<Library, String> NULL_PAIR;
 
-	private static final Map<String, Library> KURZ_2_LIB = new HashMap<>();
+	private static final Map<String, Library> ISIL_2_LIB;
+
+	private static final Map<String, Library> KURZ_2_LIB;
 
 	/**
 	 * Enthält die ISIL + '-':
@@ -49,6 +51,9 @@ public class LibraryDB {
 	private static Trie<Library> ISIL_2_LIBRARY_TRIE = new TST<>();
 
 	static {
+		NULL_PAIR = new Pair<>(Library.NULL_LIBRARY, "");
+		ISIL_2_LIB = new TreeMap<>();
+		KURZ_2_LIB = new HashMap<>();
 		loadLibraries();
 	}
 
@@ -56,11 +61,11 @@ public class LibraryDB {
 	 * Sucht die längste passende ISIL.
 	 *
 	 * @param mx etwa in der Form DE-603-FE (der erste '-' darf fehlen)
-	 * @return etwas wie (HeBIS, FE) oder null
+	 * @return etwas wie (HeBIS, FE) oder {@link Pair#getNullPair()}
 	 */
 	public static Pair<Library, String> parseByISILAgency(final String mx) {
 		if (StringUtils.isNullOrEmpty(mx)) {
-			return null;
+			return NULL_PAIR;
 		}
 
 		final List<String> list = Mailbox.splitRawAddress(mx);
@@ -75,14 +80,13 @@ public class LibraryDB {
 				return new Pair<Library, String>(library, rest);
 			}
 		}
-		return null;
+		return NULL_PAIR;
 	}
 
 	static LFUCachedFunction<String, Library> queryAgencyLFU = new LFUCachedFunction<String, Library>(50) {
 
 		@Override
 		protected Library calculate(final String isil) {
-
 			return queryAgency(isil);
 		}
 	};
@@ -92,14 +96,15 @@ public class LibraryDB {
 	 * https://sigel.staatsbibliothek-berlin.de/startseite/</a>.
 	 *
 	 * @param isil auch null, eventuell fehlerhaft (fehlender '-')
-	 * @return Bibliothek oder null. Die zugehörige Verbundbibliothek wird als
-	 *         DEFAULT angenommen. Wenn im Json-Datensatz keine ISIL erkannt wird,
-	 *         wird eine Library mit normalisierter isil zurückgegeben
+	 * @return Bibliothek oder {@link Library#getNullLibrary()} Die zugehörige
+	 *         Verbundbibliothek wird als DEFAULT angenommen. Wenn im Json-Datensatz
+	 *         keine ISIL erkannt wird, wird eine Library mit normalisierter isil
+	 *         zurückgegeben
 	 */
 	private static Library queryAgency(String isil) {
 		isil = normalize(isil);
 		if (isil == null) {
-			return null;
+			return Library.getNullLibrary();
 		}
 
 		final String query = "https://sigel.staatsbibliothek-berlin.de/api/org/" + isil + ".jsonld";
@@ -109,13 +114,13 @@ public class LibraryDB {
 		try {
 			jsonObject = new JSONObject(jsonS);
 		} catch (final Exception e) {
-			return null;
+			return Library.getNullLibrary();
 		}
 
 		final Record record = LibraryUtils.parse(jsonObject);
 
 		if (record == null)
-			return null;
+			return Library.getNullLibrary();
 		final String longN = LibraryUtils.getLongName(record);
 		String isilKorr = LibraryUtils.getIsil(record);
 		if (isilKorr == null)
@@ -145,7 +150,7 @@ public class LibraryDB {
 	 * erkannt und gegebenenfalls korrigiert.
 	 *
 	 * @param mxAdress beliebig, aber getrimmt
-	 * @return Versuchsweise korrigierte ISIL
+	 * @return Versuchsweise korrigierte ISIL oder <code>null</code>
 	 */
 	private static String normalize(String mxAdress) {
 		if (mxAdress == null) {
@@ -180,17 +185,17 @@ public class LibraryDB {
 
 	}
 
-	public static void main1(final String... args) throws IOException {
+	public static void main(final String... args) throws IOException {
 
-		// loadLibrariesExtern();
+		loadLibrariesExtern();
 		System.out.println(serialize());
 
-		final Pair<Library, String> lib1 = parseDB("CH-ZuSLS");
-		System.out.println(lib1.first.nameLang);
+//		final Pair<Library, String> lib1 = parseDB("CH-ZuSLS");
+//		System.out.println(lib1.first.nameLang);
 
 	}
 
-	public static void main(final String... args) throws IOException {
+	public static void main1(final String... args) throws IOException {
 		Pair<Library, String> db = parseDB("spio");
 		System.out.println(db.first.toStringLang());
 	}
@@ -238,13 +243,13 @@ public class LibraryDB {
 	 *
 	 * @param isilPlusRest auch null, auch Kleinbuchstaben werden akzeptiert. Kann
 	 *                     ungetrimmt sein.
-	 * @return (bibliothek, Rest). null, wenn nichts gefunden oder ein Fehler beim
-	 *         Rest aufgetreten ist.
+	 * @return (bibliothek, Rest). {@link Pair#getNullPair()} wenn nichts gefunden
+	 *         oder ein Fehler beim Rest aufgetreten ist.
 	 */
 	public static Pair<Library, String> parse(String isilPlusRest) {
 
 		if (isilPlusRest == null)
-			return null;
+			return NULL_PAIR;
 		isilPlusRest = isilPlusRest.trim();
 		final Pair<Library, String> pair = parseDB(isilPlusRest);
 
@@ -260,20 +265,20 @@ public class LibraryDB {
 	 * sucht nach nach der ISIL. Der String muss aus der ISIL allein oder aus ISIL +
 	 * "-" + Rest bestehen. Das irrtümliche Fehlen des Rests wird akzeptiert. <br>
 	 * Sonderfälle sind spio und pseu. <br>
-	 * Ansonsten wird null zurückgegeben.
+	 * Ansonsten wird {@link this#NULL_PAIR} zurückgegeben.
 	 *
 	 *
 	 * @param isilPlusRest auch null, auch Kleinbuchstaben werden akzeptiert. Muss
 	 *                     dann aber getrimmt sein.
-	 * @return (bibliothek, Rest). null, wenn nichts gefunden oder ein Fehler beim
-	 *         Rest aufgetreten ist.
+	 * @return (bibliothek, Rest). {@link this#NULL_PAIR} wenn nichts gefunden oder
+	 *         ein Fehler beim Rest aufgetreten ist.
 	 */
 	public static Pair<Library, String> parseDB(final String isilPlusRest) {
 
 		final Library lib = getLibOfLongestPrefix(isilPlusRest);
 
-		if (lib == null) {
-			return null;
+		if (lib == Library.NULL_LIBRARY) {
+			return NULL_PAIR;
 		}
 
 		final String isil = lib.isil;
@@ -290,13 +295,14 @@ public class LibraryDB {
 	 *
 	 * @param mx auch null, auch Kleinbuchstaben oder fehlerhafte ISILs (DE1 anstatt
 	 *           DE-1) werden akzeptiert
-	 * @return Typ oder null
+	 * @return Typ oder {@link Library#getNullLibrary()}
 	 */
 	public static Library getLibOfLongestPrefix(String mx) {
 		mx = normalize(mx);
 		if (mx == null)
-			return null;
-		return ISIL_2_LIBRARY_TRIE.getValueOfLongestPrefix(mx.toUpperCase() + "-");
+			return Library.getNullLibrary();
+		Library valueOfLongestPrefix = ISIL_2_LIBRARY_TRIE.getValueOfLongestPrefix(mx.toUpperCase() + "-");
+		return valueOfLongestPrefix == null ? Library.NULL_LIBRARY : valueOfLongestPrefix;
 	}
 
 	/**
@@ -4439,14 +4445,12 @@ public class LibraryDB {
 		KURZ_2_LIB.put(bibliothek.nameKurz, bibliothek);
 		ISIL_2_LIBRARY_TRIE.put(bibliothek.isil.toUpperCase() + "-", bibliothek);
 
-		bibliothek = new Library("XXXX", "pseu", "pseu", "Aufspaltung von Pseudonymen");
-		bibliothek.addRedaktion(RedaktionsTyp.DEFAULT, "pseu");
+		bibliothek = Library.PSEU;
 		ISIL_2_LIB.put(bibliothek.isil, bibliothek);
 		KURZ_2_LIB.put(bibliothek.nameKurz, bibliothek);
 		ISIL_2_LIBRARY_TRIE.put(bibliothek.isil.toUpperCase() + "-", bibliothek);
 
-		bibliothek = new Library("XXXX", "spio", "spio", "Spitzen, Exekutiv- und Informationsorgane");
-		bibliothek.addRedaktion(RedaktionsTyp.DEFAULT, "spio");
+		bibliothek = Library.SPIO;
 		ISIL_2_LIB.put(bibliothek.isil, bibliothek);
 		KURZ_2_LIB.put(bibliothek.nameKurz, bibliothek);
 		ISIL_2_LIBRARY_TRIE.put(bibliothek.isil.toUpperCase() + "-", bibliothek);
@@ -4517,8 +4521,8 @@ public class LibraryDB {
 	}
 
 	/**
-	 * @param string
-	 * @return
+	 * @param isil auch null
+	 * @return {@link Library} oder {@link Library#getNullLibrary()}
 	 */
 	public static Library queryISILAgency(final String isil) {
 		return queryAgencyLFU.apply(isil);

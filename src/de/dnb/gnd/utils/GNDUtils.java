@@ -1539,7 +1539,7 @@ public final class GNDUtils {
 	public static void main(final String[] args)
 			throws IllFormattedLineException, OperationNotSupportedException, IOException {
 		final Record record = RecordUtils.readFromClip();
-		System.out.println(geoNameFuerUnterfeld(record));
+		System.out.println(getVerbund(record));
 	}
 
 	/**
