@@ -914,9 +914,7 @@ public final class BibRecUtils {
 	 */
 	public static void main(final String[] args) {
 		final Record record = RecordUtils.readFromClip(TAG_DB, new IgnoringHandler(), false);
-
-		System.out.println(getAlleKoerperschaftIDsDerFE(record));
-
+		System.out.println(istHochschulschrift(record, true));
 	}
 
 	/**
@@ -934,14 +932,23 @@ public final class BibRecUtils {
 		}).collect(Collectors.joining(" / "));
 	}
 
+	public static final List<String> charaktereDerHochschulschrift = Arrays.asList("Bachelorarbeit", "Diplomarbeit",
+			"Dissertation", "Habilitationsschrift", "Lizenziatsarbeit", "Magisterarbeit", "Masterarbeit");
+	public static final List<String> dissHabil =
+			Arrays.asList(			
+			"Dissertation",
+			"Habilitationsschrift"
+			);
+
 	/**
 	 * Unterschucht die Position 3 in 0500 auf 'd' oder 'g', die Codes in 0600 auf
 	 * "rh" und "di" und auf das Vorhandensein der Felder 2215 oder 4204.
 	 *
-	 * @param record nicht null
+	 * @param record       nicht null
+	 * @param nurDissHabil TODO
 	 * @return ob Hochschulschrift (Diss. oder Habilschr.)
 	 */
-	public static boolean istHochschulschrift(final Record record) {
+	public static boolean istHochschulschrift(final Record record, boolean nurDissHabil) {
 		Objects.requireNonNull(record);
 		if (RecordUtils.isAuthority(record))
 			return false;
@@ -963,8 +970,13 @@ public final class BibRecUtils {
 
 		if (RecordUtils.containsField(record, "2215"))
 			return true;
-		if (RecordUtils.containsField(record, "4204"))
-			return true;
+		String charakter = RecordUtils.getContentOfSubfield(record, "4204", 'd');
+
+		if (charakter != null) {
+			List<String> erlaubteBegriffe = nurDissHabil ? dissHabil : charaktereDerHochschulschrift;
+			if(erlaubteBegriffe.contains(charakter))
+				return true;
+		}
 
 		return false;
 	}
