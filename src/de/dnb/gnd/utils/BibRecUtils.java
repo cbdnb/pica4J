@@ -945,7 +945,7 @@ public final class BibRecUtils {
 	 * "rh" und "di" und auf das Vorhandensein der Felder 2215 oder 4204.
 	 *
 	 * @param record       nicht null
-	 * @param nurDissHabil TODO
+	 * @param nurDissHabil wenn true
 	 * @return ob Hochschulschrift (Diss. oder Habilschr.)
 	 */
 	public static boolean istHochschulschrift(final Record record, boolean nurDissHabil) {
@@ -970,8 +970,8 @@ public final class BibRecUtils {
 
 		if (RecordUtils.containsField(record, "2215"))
 			return true;
+		
 		String charakter = RecordUtils.getContentOfSubfield(record, "4204", 'd');
-
 		if (charakter != null) {
 			List<String> erlaubteBegriffe = nurDissHabil ? dissHabil : charaktereDerHochschulschrift;
 			if(erlaubteBegriffe.contains(charakter))
