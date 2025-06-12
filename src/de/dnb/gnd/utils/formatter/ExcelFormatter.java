@@ -37,6 +37,12 @@ import de.dnb.gnd.utils.RecordUtils;
 public class ExcelFormatter {
 
   /**
+   * Extrahiert aus einem Datensatz alle Tags, die im Konstruktor 
+   * {@link ExcelFormatter#ExcelFormatter(TagDB, Collection)} oder 
+   * {@link ExcelFormatter#ExcelFormatter(TagDB, Tag...)} festgelegt wurden. 
+   * <br><br>
+   * Die Inhalte eines Tags werden, wenn wiederholbar, im Pica3-Format untereinander in eine 
+   * Excel-Zelle geschrieben.
    *
    * @param record  nicht null, beliebig.
    * @return  Einen String, den man in eine Excel-Tabelle kopieren kann.
@@ -69,11 +75,14 @@ public class ExcelFormatter {
       .collect(Collectors.joining("\t"));
   }
 
+  /**
+   * Eine nichtleere Liste der extrahierten Tags. Wird im Konstruktor festgelegt.
+   */
   private final Collection<Tag> tags;
 
   /**
    * @param tagDB Datenbank
-   * @param tags  Tags, wenn null oder leer, werden alle Tags der Datenbank
+   * @param tags  berücksichtigte Tags; wenn null oder leer, werden alle Tags der Datenbank
    *              berücksichtigt.
    */
   public ExcelFormatter(final TagDB tagDB, Collection<Tag> tags) {
@@ -107,8 +116,8 @@ public class ExcelFormatter {
 
   /**
    * @param tagDB Datenbank
-   * @param tags  Tags, leer, werden alle Tags der Datenbank
-   *              berücksichtigt.
+   * @param tags  für die Extraktion berücksichtigte Tags; wenn leer, werden alle Tags der 
+   * 			Datenbank berücksichtigt.
    */
   public ExcelFormatter(final TagDB tagDB, final Tag... tags) {
     super();
@@ -116,17 +125,20 @@ public class ExcelFormatter {
   }
 
   /**
-   *
+   * Hilfsfunktion. Berücksichtigt in der Liste <code>records</code> nur die Tags, die auch 
+   * wirklich in mindestens einem Datensatz vorkommen - außer: 001., 042@ und 003@
    * @param records nicht null, nicht leer
-   * @param verbose Tags werden verbal aufgelöst, wenn true
+   * @param verbose Tags in der Überschrift werden verbal aufgelöst, wenn true
    * @return        Eine vollständige Exceltabelle als String
    */
   @SuppressWarnings("null")
   public static String format(final Collection<Record> records, final boolean verbose) {
     RangeCheckUtils.assertCollectionParamNotNullOrEmpty("records", records);
 
+    // Wird mit dem ersten Datensatz aus records gesetzt:
     TagDB db = null;
 
+    // Erst mal die relevanten Tags suchen:
     final Set<Tag> tags = new TreeSet<>();
     for (final Record record : records) {
       final LinkedHashSet<Tag> recordsTags = record.getTags();
@@ -137,6 +149,7 @@ public class ExcelFormatter {
     final Set<Tag> unerwuenschte = db.findTagPattern("001.|042@|003@");
     tags.removeAll(unerwuenschte);
 
+    
     final ExcelFormatter formatter = new ExcelFormatter(db, tags);
     final String ret = formatter.makeHeadline(verbose);
 
