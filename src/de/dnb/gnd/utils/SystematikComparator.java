@@ -10,8 +10,8 @@ import java.util.List;
 import de.dnb.basics.applicationComponents.tuples.Pair;
 
 /**
- * Ein Comparator für Systematiknummern. Die lexikographische Sortierung
- * funktioniert nicht, da zum Beispiel 1 -> 2.1 -> 10.4
+ * Ein Comparator für Systematiknummern, wobei auch null und ungültige Strings erlaubt sind.
+ * Die lexikographische Sortierung funktioniert nicht, da zum Beispiel 1 -> 2.1 -> 10.4
  *
  * @author baumann
  */
@@ -45,7 +45,9 @@ public class SystematikComparator implements Comparator<String> {
   /**
    *
    * @param sys auch null
-   * @return    eine Liste mit genau 3 Elementen. Für "10.2ab" ist das <"10", "02", "ab">
+   * @return    eine Liste mit genau 3 Elementen. Für "10.2ab" ist das <"10", "02", "ab">.
+   * <br>		Für Ungültige, also etwa "", ".12" oder "11.22.33" ist das <"yy", "yy", "yy">
+   * <br>		Für null <"zz", "zz", "zz">
    */
   private List<String> split(final String sys) {
     final List<String> vorNachL = new LinkedList<>();
@@ -68,7 +70,6 @@ public class SystematikComparator implements Comparator<String> {
         if (vor.length() == 1) {
           vor = "0" + vor;
         }
-
         if (len == 2) {
           final Pair<String, String> nachPair = splitNach(vorNachArr[1]);
           nachZiffer = nachPair.first;
@@ -77,8 +78,8 @@ public class SystematikComparator implements Comparator<String> {
           nachZiffer = "";
           nachBuchst = "";
         }
-
-        if (vor.length() == 0) {
+        
+        if (vor.length() == 0) {// ungültig
           vor = "yy";
           nachZiffer = "yy";
           nachBuchst = "yy";
