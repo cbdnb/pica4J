@@ -1,5 +1,6 @@
 package de.dnb.gnd.parser.line;
 
+import java.io.Serializable;
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
@@ -23,8 +24,12 @@ import de.dnb.gnd.utils.RecordUtils;
  * @author Baumann
  *
  */
-public abstract class Line {
+public abstract class Line implements Serializable {
 
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 2819729305190175375L;
   protected Tag tag;
 
   /**

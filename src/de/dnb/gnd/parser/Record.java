@@ -1,5 +1,6 @@
 package de.dnb.gnd.parser;
 
+import java.io.Serializable;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
@@ -28,7 +29,12 @@ import de.dnb.gnd.utils.RecordUtils;
  * @author Christian
  *
  */
-public final class Record implements Iterable<Line>, Cloneable {
+public final class Record implements Iterable<Line>, Cloneable, Serializable {
+
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7690277804131571405L;
 
   /*private*/Map<Tag, Field> fieldMap = new TreeMap<>();
 

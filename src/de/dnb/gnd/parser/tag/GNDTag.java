@@ -1,5 +1,6 @@
 package de.dnb.gnd.parser.tag;
 
+import java.io.Serializable;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -22,7 +23,12 @@ import de.dnb.gnd.parser.line.GNDLineFactory;
  * @author baumann
  *
  */
-public abstract class GNDTag extends Tag {
+public abstract class GNDTag extends Tag implements Serializable {
+
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = -155058690598669824L;
 
   /**
    *  Tags, von denen Unterfelder übernommen werden.

@@ -1,5 +1,6 @@
 package de.dnb.gnd.parser.tag;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
@@ -21,8 +22,12 @@ import de.dnb.gnd.parser.Indicator;
 import de.dnb.gnd.parser.Pica3Comparator;
 import de.dnb.gnd.parser.Repeatability;
 
-public abstract class TagDB {
+public abstract class TagDB implements Serializable {
 
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = -183474747845840910L;
   public static final Repeatability R = Repeatability.REPEATABLE;
   public static final Repeatability NR = Repeatability.NON_REPEATABLE;
   public static final Repeatability U = Repeatability.UNKNOWN;

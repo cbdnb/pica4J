@@ -1,5 +1,6 @@
 package de.dnb.gnd.parser.tag;
 
+import java.io.Serializable;
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
@@ -33,8 +34,12 @@ import de.dnb.gnd.parser.line.LineFactory;
  * @author baumann
  *
  */
-public abstract class Tag implements Comparable<Tag> {
+public abstract class Tag implements Comparable<Tag>, Serializable {
 
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 7948028653921503332L;
   /**
    *
    */

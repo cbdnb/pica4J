@@ -1,5 +1,6 @@
 package de.dnb.gnd.parser.line;
 
+import java.io.Serializable;
 import java.util.Collection;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
@@ -19,7 +20,12 @@ import de.dnb.gnd.parser.tag.GNDTagDB;
  * @author baumann
  *
  */
-public class EnumeratingLine extends Line {
+public class EnumeratingLine extends Line implements Serializable {
+
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 7287777109956721472L;
 
   public EnumeratingLine(final EnumeratingTag aTag, final Collection<Subfield> subfieldColl) {
     //@formatter:off

@@ -22,7 +22,12 @@ import de.dnb.gnd.parser.tag.Tag;
  *
  * Veränderlich, daher clone().
  */
-public final class Field implements Iterable<Line>, Cloneable {
+public final class Field implements Iterable<Line>, Cloneable, Serializable {
+
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 8697661081915527873L;
 
   public final Tag tag;
 

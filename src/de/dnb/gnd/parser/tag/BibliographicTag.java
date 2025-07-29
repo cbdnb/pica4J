@@ -1,5 +1,6 @@
 package de.dnb.gnd.parser.tag;
 
+import java.io.Serializable;
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
@@ -11,7 +12,12 @@ import de.dnb.gnd.parser.Indicator;
 import de.dnb.gnd.parser.Repeatability;
 import de.dnb.gnd.parser.line.BibLineFactory;
 
-public class BibliographicTag extends Tag {
+public class BibliographicTag extends Tag implements Serializable{
+
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = -1937195096403029965L;
 
   //@formatter:off
 	/**

@@ -1,5 +1,7 @@
 package de.dnb.gnd.parser;
 
+import java.io.Serializable;
+
 import de.dnb.basics.filtering.RangeCheckUtils;
 import de.dnb.gnd.exceptions.IllFormattedLineException;
 import de.dnb.gnd.parser.tag.BibTagDB;
@@ -10,7 +12,12 @@ import de.dnb.gnd.parser.tag.Tag;
  * @author Christian
  *
  */
-public class Subfield {
+public class Subfield implements Serializable{
+
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2133053633841984938L;
 
   private final String content;
 

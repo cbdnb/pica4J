@@ -10,6 +10,7 @@ import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.lang.reflect.Array;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -24,6 +25,8 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 import de.dnb.basics.applicationComponents.MyFileUtils;
+import de.dnb.gnd.parser.Record;
+import de.dnb.gnd.utils.RecordUtils;
 
 /**
  * @author baumann
@@ -33,14 +36,12 @@ public class CollectionUtils {
 
 	/**
 	 * @param args
+	 * @throws IOException 
 	 */
-	public static void main(final String[] args) {
-		final List<Integer> list1 = Arrays.asList(1, 2);
-		final List<Integer> list2 = Arrays.asList(2, 3);
-		System.out.println(intersection(list1, list2));
-		System.out.println(intersection(list1, list2));
-		System.out.println(list1);
-		System.out.println(list2);
+	public static void main(final String[] args) throws IOException {
+		Record record = RecordUtils.readFromClip();
+		
+		save(record, "D:/Analysen/schlicht/record");
 	}
 
 	/**

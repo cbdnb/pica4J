@@ -1,5 +1,6 @@
 package de.dnb.gnd.parser.line;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.LinkedList;
@@ -15,7 +16,12 @@ import de.dnb.gnd.parser.tag.DefaultGNDTag;
 import de.dnb.gnd.parser.tag.GNDTag;
 import de.dnb.gnd.parser.tag.GNDTagDB;
 
-public final class DefaultGNDLine extends Line {
+public final class DefaultGNDLine extends Line implements Serializable {
+
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 3869492408231534272L;
 
   protected DefaultGNDLine(final GNDTag aTag) {
     super(aTag);

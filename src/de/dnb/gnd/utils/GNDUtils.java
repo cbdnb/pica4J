@@ -273,6 +273,17 @@ public final class GNDUtils {
 		return getOBB(record).stream().map(line -> SubfieldUtils.getContentOfFirstSubfield(line, '9'))
 				.filter(IDNUtils::isKorrektePPN).map(IDNUtils::ppn2int).collect(Collectors.toList());
 	}
+	
+	/**
+	 * Gibt alle IDNs der relationierten Begriffe, also der 5XX-Zeilen.
+	 *
+	 * @param record nicht null
+	 * @return nicht null
+	 */
+	public static List<Integer> getRelIdns(final Record record) {
+		return getRelatedLines5XX(record).stream().map(line -> SubfieldUtils.getContentOfFirstSubfield(line, '9'))
+				.filter(IDNUtils::isKorrektePPN).map(IDNUtils::ppn2int).collect(Collectors.toList());
+	}
 
 	/**
 	 * Gibt die alte(n) Normdatei(en) eines Datensatzes (z.Z. swd, gkd, pnd, est).
@@ -1539,7 +1550,7 @@ public final class GNDUtils {
 	public static void main(final String[] args)
 			throws IllFormattedLineException, OperationNotSupportedException, IOException {
 		final Record record = RecordUtils.readFromClip();
-		System.out.println(getVerbund(record));
+		System.out.println(getRelIdns(record));
 	}
 
 	/**

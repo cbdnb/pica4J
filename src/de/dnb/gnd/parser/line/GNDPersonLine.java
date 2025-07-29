@@ -1,5 +1,6 @@
 package de.dnb.gnd.parser.line;
 
+import java.io.Serializable;
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
@@ -20,8 +21,12 @@ import de.dnb.gnd.parser.tag.GNDTagDB;
 import de.dnb.gnd.utils.RecordUtils;
 import de.dnb.gnd.utils.formatter.RDAFormatter;
 
-public class GNDPersonLine extends Line {
+public class GNDPersonLine extends Line implements Serializable {
 
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 869238384380402819L;
   /**
    * $a, Nachname
    */

@@ -1,8 +1,15 @@
 package de.dnb.gnd.parser;
 
+import java.io.Serializable;
+
 import de.dnb.basics.filtering.RangeCheckUtils;
 
-public class Indicator {
+public class Indicator implements Serializable{
+
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 4670749175214061131L;
 
   /**
    * zusammen mit postfix null oder nicht null.
