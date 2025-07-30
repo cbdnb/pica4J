@@ -874,7 +874,7 @@ public final class RecordUtils {
 	 *                          gewünscht ist.
 	 * @param lineSeparator     in der Regel \r\n
 	 * @param subfieldSeparator in der Regel $
-	 * @return nicht null.
+	 * @return nicht null. Unicode-Composition.
 	 */
 	public static String toPica(final Collection<Line> lines, final Format format, final boolean expanded,
 			final String lineSeparator, final char subfieldSeparator) {
@@ -900,7 +900,7 @@ public final class RecordUtils {
 	 * @param format            pica3 oder pica+
 	 * @param expanded          mit Expansionen ausgeben.
 	 * @param subfieldSeparator TODO
-	 * @return eine Zeile als String oder ""
+	 * @return eine Zeile als String oder "". Unicode-Composition.
 	 */
 	public static String toPica(final Line line, final Format format, final boolean expanded,
 			final char subfieldSeparator) {
@@ -921,7 +921,7 @@ public final class RecordUtils {
 	 * @param format            pica3 oder pica+
 	 * @param expanded          mit Expansionen ausgeben.
 	 * @param subfieldSeparator In der Regel $
-	 * @return eine Zeile als String oder ""
+	 * @return eine Zeile als String oder "", Unicode-Composition.
 	 */
 	public static String toPicaWithoutTag(final Line line, final Format format, final boolean expanded,
 			final char subfieldSeparator) {
@@ -941,7 +941,7 @@ public final class RecordUtils {
 	 * @param line auch null.
 	 *
 	 * @return eine Zeile als String (pica3, mit Expansionen, $); oder "", wenn null
-	 *         übergeben worde
+	 *         übergeben worde. Unicode-Composition.
 	 */
 	public static String toPicaWithoutTag(final Line line) {
 		if (line == null) {
@@ -956,7 +956,8 @@ public final class RecordUtils {
 	 *
 	 * @param record nicht null.
 	 *
-	 * @return pica3, expandiert, lineSeparator = \r\n subfieldSeparator = $
+	 * @return pica3, expandiert, lineSeparator = \r\n subfieldSeparator = $,
+	 *         Unicode-Composition.
 	 */
 	public static String toPica(final Record record) {
 		RangeCheckUtils.assertReferenceParamNotNull("record", record);
@@ -972,7 +973,7 @@ public final class RecordUtils {
 	 *                          gewünscht ist.
 	 * @param lineSeparator     wenn null, dann "\r\n"
 	 * @param subfieldSeparator wenn '0' dann '$'
-	 * @return nicht null.
+	 * @return nicht null. Unicode-Composition.
 	 */
 	public static String toPica(final Record record, final Format format, final boolean expanded, String lineSeparator,
 			char subfieldSeparator) {
@@ -1016,7 +1017,7 @@ public final class RecordUtils {
 	 * @param expanded          true, wenn Expansion der relationierten Felder
 	 *                          gewünscht ist.
 	 * @param subfieldSeparator TODO
-	 * @return nicht null.
+	 * @return nicht null. Unicode-Composition.
 	 */
 	public static String toPica(final Tag tag, final Collection<Subfield> subfields, final Format format,
 			final boolean expanded, final char subfieldSeparator) {
@@ -1043,7 +1044,7 @@ public final class RecordUtils {
 	 * @param expanded          true, wenn Expansion der relationierten Felder
 	 *                          gewünscht ist.
 	 * @param subfieldSeparator Unterfeldtrenner, in der Regel '$' bei Pica3
-	 * @return nicht null.
+	 * @return nicht null, Unicode-Composition.
 	 */
 	public static String toPicaWithoutTag(final Tag tag, final Collection<Subfield> subfields, final Format format,
 			final boolean expanded, final char subfieldSeparator) {
@@ -1101,7 +1102,7 @@ public final class RecordUtils {
 				isFirst = false;
 			}
 		}
-		return s;
+		return StringUtils.unicodeComposition(s);
 
 	}
 
@@ -1111,7 +1112,7 @@ public final class RecordUtils {
 	 *
 	 * @param tag       nicht null.
 	 * @param subfields nicht null oder leer
-	 * @return nicht null.
+	 * @return nicht null. Unicode-Composition.
 	 */
 	public static String toPicaWithoutTag(final Tag tag, final Collection<Subfield> subfields) {
 		RangeCheckUtils.assertReferenceParamNotNull("tag", tag);
@@ -1730,8 +1731,8 @@ public final class RecordUtils {
 	 */
 	public static void main(final String[] args)
 			throws IllFormattedLineException, OperationNotSupportedException, IOException {
-		final String nu = null;
-		System.out.println(getStandort(nu));
+		Record record = RecordUtils.readFromClip();
+		System.out.println(isAuthority(record));
 	}
 
 	/**

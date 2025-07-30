@@ -63,7 +63,7 @@ public class Komprimierer extends DownloadWorker {
 
   /**
    * @param record  nicht null
-   * @return        Datensatz im GZip-Format
+   * @return        Datensatz im GZip-Format, Unicode-Composition!
    */
   public static String toGZip(final Record record) {
     Objects.requireNonNull(record);

@@ -320,7 +320,7 @@ public final class BibRecUtils {
 	/**
 	 *
 	 * @param record nicht null
-	 * @return Teil Titel (aus Feld 4004) oder null
+	 * @return Teil Titel (aus Feld 4004) oder null. Unicode-Composition.
 	 */
 	public static String getTitelDesTeils(final Record record) {
 		final Line titleLine = RecordUtils.getTheOnlyLine(record, "4004");
@@ -335,7 +335,7 @@ public final class BibRecUtils {
 	 *
 	 * @param record nicht null
 	 * @return Titel aus 4000 + Titel des Teils aus 4004, durch '. ' getrennt oder
-	 *         null
+	 *         null. Unicode-Composition.
 	 */
 	public static String getVollstaendigenTitel(final Record record) {
 		final String haupt = getMainTitle(record);

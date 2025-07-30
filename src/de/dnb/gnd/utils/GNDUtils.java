@@ -91,10 +91,9 @@ public final class GNDUtils {
 	 *
 	 * @param record nicht null.
 	 * @return Hauptansetzung
-	 * @throws IllegalStateException wenn Zahl der 1xx != 1
+	 * @throws IllegalStateException wenn Zahl der 1xx != 1. Auch bei Titeldaten.
 	 */
 	public static Line getHeading(final Record record) {
-		assertGNDRecord(record);
 		final List<Line> lines = getLines1XX(record);
 		if (lines.size() == 1)
 			return lines.get(0);
@@ -106,10 +105,9 @@ public final class GNDUtils {
 	 * Liefert die 1xx-Felder.
 	 *
 	 * @param record nicht null.
-	 * @return nicht null, modifizierbar.
+	 * @return nicht null, modifizierbar. Leer auch bei Titeldaten.
 	 */
 	public static ArrayList<Line> getLines1XX(final Record record) {
-		assertGNDRecord(record);
 		final Collection<Tag> gNDTags = TAG_DB.getTag1XX();
 		return getLines(record, gNDTags);
 	}
@@ -118,10 +116,9 @@ public final class GNDUtils {
 	 * Liefert die 4xx-Felder.
 	 *
 	 * @param record nicht null, GND
-	 * @return nicht null, modifizierbar.
+	 * @return nicht null, modifizierbar. Leer auch bei Titeldaten.
 	 */
 	public static ArrayList<Line> getLines4XX(final Record record) {
-		assertGNDRecord(record);
 		final Collection<Tag> gNDTags = TAG_DB.getTag4XX();
 		return getLines(record, gNDTags);
 	}
@@ -139,10 +136,9 @@ public final class GNDUtils {
 	 * Liefert alle 5xx-Felder.
 	 *
 	 * @param record nicht null.
-	 * @return nicht null.
+	 * @return nicht null. Leer auch bei Titeldaten.
 	 */
 	public static ArrayList<Line> getLines5XX(final Record record) {
-		assertGNDRecord(record);
 		final Collection<Tag> gNDTags = GNDTagDB.getDB().getTag5XX();
 		return getLines(record, gNDTags);
 	}
@@ -151,10 +147,9 @@ public final class GNDUtils {
 	 * Liefert die 7xx-Felder.
 	 *
 	 * @param record nicht null.
-	 * @return nicht null.
+	 * @return nicht null. Leer auch bei Titeldaten.
 	 */
 	public static ArrayList<Line> getLines7XX(final Record record) {
-		assertGNDRecord(record);
 		final Collection<Tag> gNDTags = GNDTagDB.getDB().getTag7XX();
 		return getLines(record, gNDTags);
 	}
@@ -163,10 +158,9 @@ public final class GNDUtils {
 	 * Liefert die 5xx-Felder, außer 548, da das nicht relationiert ist.
 	 *
 	 * @param record nicht null.
-	 * @return nicht null.
+	 * @return nicht null. Leer auch bei Titeldaten.
 	 */
 	public static ArrayList<Line> getRelatedLines5XX(final Record record) {
-		assertGNDRecord(record);
 		final Collection<Tag> gNDTags = GNDTagDB.getDB().getRelatedTag5XX();
 		return getLines(record, gNDTags);
 	}
@@ -289,10 +283,9 @@ public final class GNDUtils {
 	 * Gibt die alte(n) Normdatei(en) eines Datensatzes (z.Z. swd, gkd, pnd, est).
 	 *
 	 * @param record nicht null.
-	 * @return Liste, eventuell leer, modifizierbar.
+	 * @return Liste, eventuell leer, modifizierbar. Leer auch bei Titeldaten.
 	 */
 	public static List<String> getOriginalAuthorityFiles(final Record record) {
-		assertGNDRecord(record);
 		final ArrayList<Line> lines = getOriginalHeadingLines(record);
 		return SubfieldUtils.getContentsOfFirstSubfields(lines, 'S');
 	}
@@ -301,10 +294,9 @@ public final class GNDUtils {
 	 * Gibt die alte(n) Ansetzungen eines Datensatzes aus 913 $a.
 	 *
 	 * @param record nicht null.
-	 * @return Liste, eventuell leer, modifizierbar.
+	 * @return Liste, eventuell leer, modifizierbar. Leer auch bei Titeldaten.
 	 */
 	public static List<String> getOriginalHeadings(final Record record) {
-		assertGNDRecord(record);
 		final ArrayList<Line> lines = getOriginalHeadingLines(record);
 		return SubfieldUtils.getContentsOfFirstSubfields(lines, 'a');
 	}
@@ -313,10 +305,9 @@ public final class GNDUtils {
 	 * Gibt die Mailbox-Zeilen, die in der 901 enthalten sind.
 	 *
 	 * @param record nicht null.
-	 * @return Liste, eventuell leer.
+	 * @return Liste, eventuell leer. Leer auch bei Titeldaten.
 	 */
 	public static ArrayList<Line> getMXLines(final Record record) {
-		assertGNDRecord(record);
 		final Field field901 = RecordUtils.getFieldGivenAsString(record, "901");
 		if (field901 != null)
 			return new ArrayList<Line>(field901.getLines());
@@ -332,10 +323,9 @@ public final class GNDUtils {
 	 * Gibt die 913-Zeilen, die die alten Ansetzungen (nebst anderem) enthalten.
 	 *
 	 * @param record nicht null.
-	 * @return Liste, eventuell leer.
+	 * @return Liste, eventuell leer. Leer auch bei Titeldaten.
 	 */
 	public static ArrayList<Line> getOriginalHeadingLines(final Record record) {
-		assertGNDRecord(record);
 		final Field field913 = RecordUtils.getFieldGivenAsString(record, "913");
 		if (field913 != null)
 			return new ArrayList<Line>(field913.getLines());
@@ -347,10 +337,9 @@ public final class GNDUtils {
 	 * Gibt die 083-Zeilen, die die gültigen DDC-Nummern enthalten.
 	 *
 	 * @param record nicht null.
-	 * @return Liste, eventuell leer.
+	 * @return Liste, eventuell leer. Leer auch bei Titeldaten.
 	 */
 	public static ArrayList<Line> getValidDDCLines(final Record record) {
-		assertGNDRecord(record);
 		final Field field083 = RecordUtils.getFieldGivenAsString(record, "083");
 		if (field083 != null)
 			return new ArrayList<Line>(field083.getLines());
@@ -362,10 +351,9 @@ public final class GNDUtils {
 	 * Gibt die 089-Zeilen, die die veralteten DDC-Nummern enthalten.
 	 *
 	 * @param record nicht null.
-	 * @return Liste, eventuell leer.
+	 * @return Liste, eventuell leer. Leer auch bei Titeldaten.
 	 */
 	public static ArrayList<Line> getDeprecatedDDCLines(final Record record) {
-		assertGNDRecord(record);
 		final Field field089 = RecordUtils.getFieldGivenAsString(record, "089");
 		if (field089 != null)
 			return new ArrayList<Line>(field089.getLines());
@@ -377,10 +365,9 @@ public final class GNDUtils {
 	 * Gibt alle DDC-Nummern (gültig oder ungültig).
 	 *
 	 * @param record nicht null.
-	 * @return Liste, eventuell leer.
+	 * @return Liste, eventuell leer. Leer auch bei Titeldaten.
 	 */
 	public static ArrayList<Line> getAllDDCLines(final Record record) {
-		assertGNDRecord(record);
 		final ArrayList<Line> lines = getValidDDCLines(record);
 		lines.addAll(getDeprecatedDDCLines(record));
 		return lines;
@@ -390,10 +377,9 @@ public final class GNDUtils {
 	 * Gibt die gültigen DDC-Nummern eines GND-Datensatzes.
 	 *
 	 * @param record nicht null.
-	 * @return Liste, eventuell leer, modifizierbar.
+	 * @return Liste, eventuell leer, modifizierbar. Leer auch bei Titeldaten.
 	 */
 	public static List<String> getValidDDCNumbers(final Record record) {
-		assertGNDRecord(record);
 		final ArrayList<Line> lines = getValidDDCLines(record);
 		return SubfieldUtils.getContentsOfFirstSubfields(lines, 'c');
 	}
@@ -554,10 +540,9 @@ public final class GNDUtils {
 	 * <li>"c" - Crisscross
 	 * 
 	 * @param record nicht null
-	 * @return Satztyp oder 0, wenn nicht enthalten.
+	 * @return Satztyp oder 0, wenn nicht enthalten. 0 auch bei Titeldaten.
 	 */
 	public static char getRecordType(final Record record) {
-		assertGNDRecord(record);
 		return RecordUtils.getDatatypeCharacterAt(record, 1);
 	}
 
@@ -631,10 +616,9 @@ public final class GNDUtils {
 	 * Gibt die Entitätencodierung(en).
 	 * 
 	 * @param record nicht null. *
-	 * @return nicht null.
+	 * @return nicht null. Eventuell leer, wenn Titeldaten.
 	 */
 	public static List<String> getEntityTypes(final Record record) {
-		assertGNDRecord(record);
 		return RecordUtils.getContentsOfSubfields(record, "008");
 	}
 
@@ -642,10 +626,9 @@ public final class GNDUtils {
 	 * Enthält der Datensatz überhaupt Entitätencodierungen?
 	 * 
 	 * @param record nicht null
-	 * @return
+	 * @return	false, wenn keine vorhanden, was aber auch an Titeldaten liegen kann.
 	 */
 	public static boolean containsEntityTypes(final Record record) {
-		assertGNDRecord(record);
 		return !getEntityTypes(record).isEmpty();
 	}
 
@@ -653,10 +636,9 @@ public final class GNDUtils {
 	 *
 	 * @param record     nicht null
 	 * @param entityCode
-	 * @return Enthält der Datensatz Entitätencodierung entityCode?
+	 * @return Enthält der Datensatz Entitätencodierung entityCode? false auch bei Titeldaten.
 	 */
 	public static boolean containsEntityType(final Record record, final String entityCode) {
-		assertGNDRecord(record);
 		final List<String> ents = getEntityTypes(record);
 		return ents.contains(entityCode);
 	}
@@ -666,10 +648,9 @@ public final class GNDUtils {
 	 * 
 	 * @param record nicht null.
 	 *
-	 * @return nicht null.
+	 * @return nicht null. Leer auch bei Titeldaten.
 	 */
 	public static List<String> getURIs(final Record record) {
-		assertGNDRecord(record);
 		return RecordUtils.getContentsOfSubfields(record, "006");
 	}
 
@@ -706,7 +687,7 @@ public final class GNDUtils {
 	 * geworfen.
 	 *
 	 * @param line nicht null
-	 * @return Name oder null
+	 * @return Name oder null. Unicode-Composition.
 	 */
 	public static String getNameOfRelatedRecord(final Line line) {
 		Objects.requireNonNull(line);
@@ -730,7 +711,7 @@ public final class GNDUtils {
 	 * wenn z.B. mehrere 1XX-Zeilen.
 	 *
 	 * @param record nicht null
-	 * @return nicht name oder ""
+	 * @return nicht name oder "", Unicode-Composition.
 	 */
 	public static String getNameOfRecord(final Record record) {
 		RangeCheckUtils.assertReferenceParamNotNull("record", record);
@@ -754,10 +735,9 @@ public final class GNDUtils {
 	 * 
 	 * @param record nicht null.
 	 *
-	 * @return nicht null.
+	 * @return nicht null. Leer auch bei Titeldaten.
 	 */
 	public static List<String> getTbs(final Record record) {
-		assertGNDRecord(record);
 		return RecordUtils.getContentsOfSubfields(record, "011");
 	}
 
@@ -775,10 +755,9 @@ public final class GNDUtils {
 	 * 
 	 * @param record nicht null.
 	 *
-	 * @return nicht null.
+	 * @return nicht null. Leer auch bei Titeldaten.
 	 */
 	public static List<String> getNutzungskennzeichen(final Record record) {
-		assertGNDRecord(record);
 		return RecordUtils.getContentsOfSubfields(record, "012");
 	}
 
@@ -975,20 +954,18 @@ public final class GNDUtils {
 	 * Liefert die Zeile mit der GND-Systematik.
 	 *
 	 * @param record nicht null.
-	 * @return Zeile mit Systematik oder null.
+	 * @return Zeile mit Systematik oder null. null auch bei Titeldaten.
 	 */
 	public static Line getGNDClassificationLine(final Record record) {
-		assertGNDRecord(record);
 		return RecordUtils.getTheOnlyLine(record, "065");
 	}
 
 	/**
 	 *
 	 * @param record nicht null
-	 * @return enthält GND-Systematik?
+	 * @return enthält GND-Systematik? False auch bei Titeldaten.
 	 */
 	public static boolean containsGNDClassification(final Record record) {
-		assertGNDRecord(record);
 		return getGNDClassificationLine(record) != null;
 	}
 
@@ -997,10 +974,9 @@ public final class GNDUtils {
 	 * 
 	 * @param record nicht null.
 	 *
-	 * @return nicht null.
+	 * @return nicht null. Leer auch bei Titeldaten.
 	 */
 	public static List<String> getGNDClassifications(final Record record) {
-		assertGNDRecord(record);
 		return RecordUtils.getContentsOfSubfields(record, "065");
 	}
 
@@ -1010,7 +986,6 @@ public final class GNDUtils {
 	 * @return erste Systematik oder null
 	 */
 	public static String getFirstGNDClassification(final Record record) {
-		assertGNDRecord(record);
 		final List<String> classif = getGNDClassifications(record);
 		return ListUtils.getFirst(classif);
 	}
@@ -1021,10 +996,9 @@ public final class GNDUtils {
 	 * @param record         nicht null.
 	 * @param classification beleibig.
 	 * @return true, wenn eine der Systematiknummern mit classification
-	 *         übereinstimmt.
+	 *         übereinstimmt. false auch bei Titeldaten.
 	 */
 	public static boolean containsGNDClassification(final Record record, final String classification) {
-		assertGNDRecord(record);
 		final List<String> gndClasses = getGNDClassifications(record);
 		return gndClasses.contains(classification);
 	}
@@ -1035,10 +1009,9 @@ public final class GNDUtils {
 	 * @param record          nicht null.
 	 * @param classifications beliebig.
 	 * @return true, wenn eine der Systematiknummern des Datensatzes mit einer der
-	 *         classifications übereinstimmt.
+	 *         classifications übereinstimmt. False auch bei Titeldaten.
 	 */
 	public static boolean containsGNDClassifications(final Record record, final String... classifications) {
-		assertGNDRecord(record);
 		for (final String classification : classifications) {
 			if (containsGNDClassification(record, classification))
 				return true;
@@ -1052,10 +1025,9 @@ public final class GNDUtils {
 	 * @param record          nicht null.
 	 * @param classifications nicht null.
 	 * @return true, wenn eine der Systematiknummern mit einer der classifications
-	 *         beginnt.
+	 *         beginnt. false auch bei Titeldaten.
 	 */
 	public static boolean containsGNDClassificationsTrunk(final Record record, final String... classifications) {
-		assertGNDRecord(record);
 		final List<String> gndClasses = getGNDClassifications(record);
 		return Arrays.asList(classifications).stream()
 				.anyMatch(classification -> StringUtils.containsPrefix(gndClasses, classification));
@@ -1066,25 +1038,27 @@ public final class GNDUtils {
 	 * 
 	 * @param record nicht null.
 	 *
-	 * @return nicht null.
+	 * @return nicht null. Leer auch bei Titeldaten.
 	 */
 	public static List<String> getCountryCodes(final Record record) {
-		assertGNDRecord(record);
 		return RecordUtils.getContentsOfSubfields(record, "043");
 	}
 
+	/**
+	 * 
+	 * @param record nicht null
+	 * @return	Ländercode enthalten? false auch bei Titeldaten.
+	 */
 	public static boolean containsCountryCode(final Record record) {
-		assertGNDRecord(record);
 		return !getCountryCodes(record).isEmpty();
 	}
 
 	/**
 	 *
 	 * @param record nicht null, GND-Datensatz
-	 * @return Enthält Feld 010 (Änderungscodierung)
+	 * @return Enthält Feld 010 (Änderungscodierung). false auch bei Titeldaten.
 	 */
 	public static boolean containsChangeCode(final Record record) {
-		assertGNDRecord(record);
 		return RecordUtils.containsField(record, "010");
 	}
 
@@ -1093,10 +1067,9 @@ public final class GNDUtils {
 	 * 
 	 * @param record nicht null.
 	 *
-	 * @return nicht null.
+	 * @return nicht null. Leer auch bei Titeldaten.
 	 */
 	public static List<String> getNonpublicGeneralNotes(final Record record) {
-		assertGNDRecord(record);
 		return RecordUtils.getContentsOfFirstSubfields(record, "667", 'a');
 	}
 
@@ -1163,10 +1136,9 @@ public final class GNDUtils {
 	 * 
 	 * @param record nicht null.
 	 *
-	 * @return nicht null.
+	 * @return nicht null. Leer auch bei Titeldaten.
 	 */
 	public static List<String> getPublicGeneralNotes(final Record record) {
-		assertGNDRecord(record);
 		return RecordUtils.getContentsOfFirstSubfields(record, "680", 'a');
 	}
 
@@ -1174,10 +1146,9 @@ public final class GNDUtils {
 	 * Gibt die Quellenangaben aus 670 ohne erläuternde Texte und URIs.
 	 *
 	 * @param record nicht null.
-	 * @return nicht null.
+	 * @return nicht null. Leer auch bei Titeldaten.
 	 */
 	public static List<String> getSourcesDataFound(final Record record) {
-		assertGNDRecord(record);
 		return RecordUtils.getContentsOfFirstSubfields(record, "670", 'a');
 	}
 
@@ -1185,15 +1156,18 @@ public final class GNDUtils {
 	 * Gibt die Quellenangaben in Feld 670.
 	 *
 	 * @param record nicht null. *
-	 * @return nicht null.
+	 * @return nicht null. Leer auch bei Titeldaten.
 	 */
-	public static List<Line> getSourceLines(final Record record) {
-		assertGNDRecord(record);
+	public static List<Line> getSourceLines(final Record record) {		
 		return RecordUtils.getLines(record, "670");
 	}
 
+	/**
+	 * 
+	 * @param record nicht null
+	 * @return	Quellenangaben? false auch bei Titeldaten.
+	 */
 	public static boolean containsSource(final Record record) {
-		assertGNDRecord(record);
 		return !getSourceLines(record).isEmpty();
 	}
 
@@ -1202,10 +1176,9 @@ public final class GNDUtils {
 	 * 
 	 * @param record nicht null.
 	 *
-	 * @return nicht null.
+	 * @return nicht null. Leer auch bei Titeldaten.
 	 */
 	public static List<String> getSourceDataNotFound(final Record record) {
-		assertGNDRecord(record);
 		return RecordUtils.getContentsOfSubfields(record, "675");
 	}
 
@@ -1214,10 +1187,9 @@ public final class GNDUtils {
 	 * 
 	 * @param record nicht null.
 	 *
-	 * @return nicht null.
+	 * @return nicht null. Leer auch bei Titeldaten.
 	 */
 	public static List<String> getDefinitions(final Record record) {
-		assertGNDRecord(record);
 		return RecordUtils.getContentsOfFirstSubfields(record, "677", 'a');
 	}
 
@@ -1226,10 +1198,9 @@ public final class GNDUtils {
 	 * 
 	 * @param record nicht null.
 	 *
-	 * @return nicht null.
+	 * @return nicht null. Leer auch bei Titeldaten.
 	 */
 	public static List<Line> getBemerkungsFelder(final Record record) {
-		assertGNDRecord(record);
 		return RecordUtils.getLines(record, "667", "670", "672", "675", "677", "678", "680");
 	}
 

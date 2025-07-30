@@ -464,7 +464,7 @@ public final class SubjectUtils {
 	/**
 	 *
 	 * @param record nicht null
-	 * @return Eine Liste der Inhalte der RSWK-Folgen
+	 * @return Eine Liste der Inhalte der RSWK-Folgen. Unicode-Composition.
 	 */
 	public static List<List<String>> getRswkSequencesOfContent(final Record record) {
 		Objects.requireNonNull(record);

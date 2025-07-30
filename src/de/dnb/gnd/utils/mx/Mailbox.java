@@ -360,6 +360,10 @@ public class Mailbox implements Comparable<Mailbox> {
 		}
 	}
 
+	/**
+	 * 
+	 * @return Die mx, so, wie sie in Pica3 dargestellt würde, Unicode-Composition:
+	 */
 	public String asMxString() {
 		final Line line = toLine();
 		return RecordUtils.toPica(line, Format.PICA3, true, '$');

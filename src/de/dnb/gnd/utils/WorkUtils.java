@@ -87,7 +87,7 @@ public final class WorkUtils {
    *
    * @param record	nicht null.
    * @return			Den Titel. Wenn keiner vorhanden wird eine
-   * 					IllegalStateException geworfen.
+   * 					IllegalStateException geworfen. Unicode-Composition.
    */
   public static String getNormedTitle(final Record record) {
     final Line titleLine = getTitleLine(record);
@@ -101,7 +101,7 @@ public final class WorkUtils {
    * @param record	nicht null.
    * @return			Den Titel. Wenn keiner vorhanden ist oder mehrere
    * 					erste Autoren vorhanden sind, wird eine
-   * 					{@link IllegalStateException} geworfen.
+   * 					{@link IllegalStateException} geworfen. Unicode-Composition.
    */
   public static String getExpansionTitle(final Record record) {
     String title = getNormedTitle(record);
@@ -119,7 +119,7 @@ public final class WorkUtils {
    * Gibt den Titel als String ohne störende Unterfelder $4, $5, $v.
    *
    * @param line	nicht null, als GNDTag nur 130 und 430 zugelassen.
-   * @return		Titel im Pica3-Format. Kann $-Zeichen enthalten.
+   * @return		Titel im Pica3-Format. Kann $-Zeichen enthalten. Unicode-Composition.
    */
   public static String normalizeTitelLine(final Line line) {
     final List<Subfield> subfields = SubfieldUtils.getNamingRelevantSubfields(line);
