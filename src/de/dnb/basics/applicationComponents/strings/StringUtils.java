@@ -1287,11 +1287,27 @@ public class StringUtils {
     return s;
   }
 
+  /**
+   * 
+   * @param objects	Sammlung von Objekten. Werden mittels #{@link #toString()} umgewandelt. 
+   * 					Ausnahme: Wenn eines der Objekte selbst wieder eine Collection ist.
+   * @return	tsv-Zeile, die in Excel eingefügt werden kann. Ist eines der Objekte eine Collection,
+   * 			so wird es mittels {@link #makeExcelCellFromCollection(Collection)} in einen String
+   * 			mit Zeilenumbrüchen umgewandelt.
+   */
   public static String makeExcelLine(final Object... objects) {
     final Collection<Object> collection = Arrays.asList(objects);
     return concatenate("\t", collection, StringUtils::makeExcelCell);
   }
 
+  /**
+   * 
+   * @param collection	Sammlung von Objekten. Werden mittels #{@link #toString()} umgewandelt. 
+   * 					Ausnahme: Wenn eines der Objekte selbst wieder eine Collection ist.
+   * @return	tsv-Zeile, die in Excel eingefügt werden kann. Ist eines der Objekte eine Collection,
+   * 			so wird es mittels {@link #makeExcelCellFromCollection(Collection)} in einen String
+   * 			mit Zeilenumbrüchen umgewandelt.
+   */
   public static String makeExcelLine(final Collection<?> collection) {
     return concatenate("\t", collection, StringUtils::makeExcelCell);
   }
