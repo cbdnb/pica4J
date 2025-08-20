@@ -509,6 +509,11 @@ public final class WorkUtils {
     return getLines(record, "382");
   }
 
+  /**
+   * 
+   * @param record	nicht null
+   * @return		Tonart in 384
+   */
   public static String getKey(final Record record) {
     return RecordUtils.getContentOfSubfield(record, "384", 'a');
   }

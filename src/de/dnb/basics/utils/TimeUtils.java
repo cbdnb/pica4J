@@ -765,7 +765,7 @@ public final class TimeUtils {
 
 	/**
 	 * @param calendar auch null
-	 * @return Datum in der Form yy-MM-dd (Status)
+	 * @return Datum in der Form yyyy-MM-dd (Status)
 	 */
 	public static String toYYYYMMDD(final Calendar calendar) {
 		if (calendar == null)
@@ -808,6 +808,18 @@ public final class TimeUtils {
 			return "??.??.????";
 		final SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
 		final String dateStr = formatter.format(date);
+		return dateStr;
+	}
+	
+	/**
+	 * @param calendar auch null
+	 * @return Datum in der Form tt.mm.jjjj (Status)
+	 */
+	public static String toDDMMYYYY(final Calendar calendar) {
+		if (calendar == null)
+			return "??.??.????";
+		final SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
+		final String dateStr = formatter.format(calendar.getTime());
 		return dateStr;
 	}
 
