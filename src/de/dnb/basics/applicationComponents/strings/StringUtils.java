@@ -237,7 +237,12 @@ public class StringUtils {
     return ein + s.replaceAll(Constants.LINE_SEPARATOR, einrueckung);
   }
 
-  public static String ersterBuchstabeGross(final String string) {
+  /**
+   * 
+   * @param string	auch null
+   * @return		Den ersten Buchstaben des ersten Wortes groß. Wird nicht getrimmt!
+   */
+  public static String capitalize(final String string) {
     if (string == null || string.length() == 0)
       return string;
 
