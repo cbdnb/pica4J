@@ -28,6 +28,7 @@ import de.dnb.gnd.exceptions.WrappingHandler;
 import de.dnb.gnd.parser.Indicator;
 import de.dnb.gnd.parser.ItemParser;
 import de.dnb.gnd.parser.Record;
+import de.dnb.gnd.parser.Subfield;
 import de.dnb.gnd.parser.line.Line;
 import de.dnb.gnd.parser.tag.BibTagDB;
 import de.dnb.gnd.parser.tag.Tag;
@@ -320,7 +321,7 @@ public final class BibRecUtils {
 	/**
 	 *
 	 * @param record nicht null
-	 * @return Teil Titel (aus Feld 4004) oder null. Unicode-Composition.
+	 * @return Teil-Titel (aus Feld 4004) oder null. Unicode-Composition.
 	 */
 	public static String getTitelDesTeils(final Record record) {
 		final Line titleLine = RecordUtils.getTheOnlyLine(record, "4004");
@@ -559,7 +560,7 @@ public final class BibRecUtils {
 			}
 			creator = creator.replace("$c", " ");
 			title = creator + " : " + title;
-			// hier darf man @ entfernen, da der Autor (hoffentlich) keine
+			// hier darf man @ entfernen, da der Autor (hoffentlich) keinen
 			// Artikel ... enthält und an erster Stelle steht:
 			title = title.replace("@", "");
 		}
@@ -914,7 +915,7 @@ public final class BibRecUtils {
 	 */
 	public static void main(final String[] args) {
 		final Record record = RecordUtils.readFromClip(TAG_DB, new IgnoringHandler(), false);
-		System.out.println(istHochschulschrift(record, true));
+		
 	}
 
 	/**
@@ -934,11 +935,7 @@ public final class BibRecUtils {
 
 	public static final List<String> charaktereDerHochschulschrift = Arrays.asList("Bachelorarbeit", "Diplomarbeit",
 			"Dissertation", "Habilitationsschrift", "Lizenziatsarbeit", "Magisterarbeit", "Masterarbeit");
-	public static final List<String> dissHabil =
-			Arrays.asList(			
-			"Dissertation",
-			"Habilitationsschrift"
-			);
+	public static final List<String> dissHabil = Arrays.asList("Dissertation", "Habilitationsschrift");
 
 	/**
 	 * Unterschucht die Position 3 in 0500 auf 'd' oder 'g', die Codes in 0600 auf
@@ -970,11 +967,11 @@ public final class BibRecUtils {
 
 		if (RecordUtils.containsField(record, "2215"))
 			return true;
-		
+
 		String charakter = RecordUtils.getContentOfSubfield(record, "4204", 'd');
 		if (charakter != null) {
 			List<String> erlaubteBegriffe = nurDissHabil ? dissHabil : charaktereDerHochschulschrift;
-			if(erlaubteBegriffe.contains(charakter))
+			if (erlaubteBegriffe.contains(charakter))
 				return true;
 		}
 
@@ -1338,5 +1335,20 @@ public final class BibRecUtils {
 	public static Collection<String> getAlleKoerperschaftIDsDerFE(Record record) {
 		return RecordUtils.getContents(record, "31[01].", '9');
 	}
+
+	public static boolean isAutorenwerk(Record record) {
+		return RecordUtils.containsField(record, "3000");
+	}
+
+//	public static String getEinheitssachtitel(Record record) {
+//		String titel =
+//		RecordUtils.getContentOfSubfield(record, "3210", 'a');
+//		if(titel!=null)
+//			return titel;
+//		titel = RecordUtils.getContentOfSubfield(record, "3210", '8');
+//		if(titel==null)
+//			return titel;
+//		return
+//	}
 
 }

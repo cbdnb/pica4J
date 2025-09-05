@@ -1107,7 +1107,7 @@ public final class RecordUtils {
 	}
 
 	/**
-	 * Liefert eine pica3- oder pica+ Repräsentation. tag muss nicht zu subfields
+	 * Liefert eine pica3-Repräsentation. tag muss nicht zu subfields
 	 * passen!
 	 *
 	 * @param tag       nicht null.
