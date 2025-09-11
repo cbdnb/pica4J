@@ -196,7 +196,7 @@ public final class RecordUtils {
 	}
 
 	/**
-	 * Liefert zu einem Tag und Indikator den Inhalt des Unterfeldes. Zum Tag
+	 * Liefert zu einem Tag und Indikator den Inhalt des ersten Unterfeldes. Zum Tag
 	 * muss exakt eine Zeile gehören, sonst wird null geliefert.
 	 *
 	 * @param record	nicht null

@@ -1,4 +1,4 @@
-package de.dnb.gnd.utils.formatter;
+package de.dnb.gnd.utils.isbd;
 
 import java.util.List;
 import java.util.regex.Matcher;
@@ -9,12 +9,12 @@ import de.dnb.gnd.parser.Record;
 import de.dnb.gnd.parser.Subfield;
 import de.dnb.gnd.parser.line.Line;
 import de.dnb.gnd.parser.tag.BibTagDB;
-import de.dnb.gnd.parser.tag.Tag;
 import de.dnb.gnd.utils.BibRecUtils;
 import de.dnb.gnd.utils.RecordUtils;
 import de.dnb.gnd.utils.SubfieldUtils;
 
-public class ISBDFormatter {
+public class Util {
+	// ToDo: @ aus Endergebnis entfernen.
 
 	private BibTagDB tagDB;
 
@@ -32,25 +32,25 @@ public class ISBDFormatter {
 		koerperschaft = normalisiereKoeVeranst(koerperschaft);
 		return koerperschaft;
 	}
-	
+
 	private static String normalisiereKoeVeranst(String creator) {
 		creator = StringUtils.unicodeComposition(creator);
 		creator = entferneTxx(creator);
-		// Unterfelder durch Deskriptionszeichen ersetzen:
+		// Unterfeld $b durch Deskriptionszeichen ". " ersetzen:
 		creator = creator.replace("$b", ". ");
-		// Anfang der Klammer suchen:
+		// Anfang der Klammer suchen, die Klammer umschließt alles Weitere bis zum Schluss:
 		Pattern pattern = Pattern.compile("\\$[dgn]");
 		Matcher matcher = pattern.matcher(creator);
-		if(matcher.find()) {
+		if (matcher.find()) {
 			int start = matcher.start();
 			int end = matcher.end();
 			String first = creator.substring(0, start);
 			String second = creator.substring(end);
 			creator = first + " (" + second + ")";
 		}
-		
+
+		// Alle weitere $x... werden durch ", " ersetzt:
 		creator = creator.replaceAll("\\$.", ", ");
-		
 		return creator;
 	}
 
@@ -68,8 +68,6 @@ public class ISBDFormatter {
 		creator = normalisierePerson(creator);
 		return creator;
 	}
-	
-	
 
 	private static String normalisierePerson(String creator) {
 		creator = StringUtils.unicodeComposition(creator);
@@ -87,7 +85,7 @@ public class ISBDFormatter {
 		Line line4000 = BibRecUtils.getMainTitleLine(record);
 		if (line4000 == null)
 			return null;
-		List<Subfield> subs = SubfieldUtils.retainSubfields(line4000, 'a', 'd', 'f', 'h');
+		List<Subfield> subs = SubfieldUtils.retainSubfields(line4000, 'a', 'd', 'f');
 		if (subs.isEmpty())
 			return null;
 		return RecordUtils.toPicaWithoutTag(line4000.getTag(), subs);
@@ -101,7 +99,7 @@ public class ISBDFormatter {
 	/**
 	 * 
 	 */
-	public ISBDFormatter() {
+	public Util() {
 		tagDB = BibTagDB.getDB();
 	}
 

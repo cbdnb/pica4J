@@ -53,7 +53,7 @@ public final class MarcBibUtils {
    */
   public static String getSachgruppe(final Record record) {
     final String sg = MarcUtils.getContent(record, "082", 'a');
-    final DDC_SG ddc = SGUtils.getSG(sg);
+    final DDC_SG ddc = SGUtils.ddc2sg(sg);
     if (ddc == null)
       return null;
     return ddc.getDDCString();
