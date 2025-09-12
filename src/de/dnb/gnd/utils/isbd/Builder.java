@@ -31,8 +31,15 @@ public class Builder {
 		}
 		isbd.neNr = RecordUtils.getContentOfSubfield(record, "2100", '0');
 		
+		isbd.schoepfer = Util.getAutor(record);
+		if(isbd.schoepfer==null)
+			isbd.schoepfer=Util.getKoerperschaftVeranstaltung(record);
+		
+		isbd.est = Util.getEST(record);
 		isbd.titel = Util.getTitel(record);
 		isbd.verantwortlichkeit = RecordUtils.getContentOfSubfield(record, "4000", 'h');
+		isbd.zaehlung = RecordUtils.getContentOfSubfield(record, "4025", 'a'); 
+		
 
 		return isbd;
 	}

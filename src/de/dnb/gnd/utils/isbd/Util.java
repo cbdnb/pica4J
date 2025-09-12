@@ -1,5 +1,7 @@
 package de.dnb.gnd.utils.isbd;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -14,10 +16,12 @@ import de.dnb.gnd.utils.RecordUtils;
 import de.dnb.gnd.utils.SubfieldUtils;
 
 public class Util {
-	// ToDo: @ aus Endergebnis entfernen.
 
-	private BibTagDB tagDB;
-
+	/**
+	 * 
+	 * @param record nicht null
+	 * @return Körperschaft oder Veranstaltung(!) aus $8 oder Unterfeldern oder null
+	 */
 	public static String getKoerperschaftVeranstaltung(Record record) {
 		Line line3100 = RecordUtils.getTheOnlyLine(record, "3100");
 		if (line3100 == null)
@@ -38,7 +42,8 @@ public class Util {
 		creator = entferneTxx(creator);
 		// Unterfeld $b durch Deskriptionszeichen ". " ersetzen:
 		creator = creator.replace("$b", ". ");
-		// Anfang der Klammer suchen, die Klammer umschließt alles Weitere bis zum Schluss:
+		// Anfang der Klammer suchen, die Klammer umschließt alles Weitere bis zum
+		// Schluss:
 		Pattern pattern = Pattern.compile("\\$[dgn]");
 		Matcher matcher = pattern.matcher(creator);
 		if (matcher.find()) {
@@ -54,6 +59,11 @@ public class Util {
 		return creator;
 	}
 
+	/**
+	 * 
+	 * @param record nicht null
+	 * @return Autor aus $8 oder Unterfeldern oder null
+	 */
 	public static String getAutor(Record record) {
 		Line line3000 = RecordUtils.getTheOnlyLine(record, "3000");
 		if (line3000 == null)
@@ -69,6 +79,79 @@ public class Util {
 		return creator;
 	}
 
+	/**
+	 * 
+	 * @param record nicht null
+	 * @return Einheitssachtitel aus 3210/3220, $8 oder Unterfeldern oder null
+	 */
+	public static String getEST(Record record) {
+		// Einfachster Fall
+		String est = RecordUtils.getContentOfSubfield(record, "3220", 'a');
+		if (est != null)
+			return est;
+
+		Line line3210 = RecordUtils.getTheOnlyLine(record, "3210");
+		if (line3210 == null)
+			return null;
+		est = SubfieldUtils.getContentOfFirstSubfield(line3210, '8');
+		if (est != null) {
+			// Autor entfernen:
+			int pos = est.indexOf("$a");
+			if (pos != -1)
+				est = est.substring(pos + 2);
+			// jetzt noch $k und $o anhängen:
+			List<Subfield> subs = SubfieldUtils.retainSubfields(line3210, 'k', 'o');
+			for (Subfield subfield : subs) {
+				est += "$" + subfield.getIndicator().indicatorChar + subfield.getContent();
+			}
+		} else {
+			List<Subfield> subs = SubfieldUtils.retainSubfields(line3210, 'a', 'f', 'g', 'm', 'n', 'p', 's', 'k', 'r',
+					'o');
+			if (subs.isEmpty())
+				return null;
+			est = RecordUtils.toPicaWithoutTag(line3210.getTag(), subs);
+		}
+		est = normalisiereEST(est);
+		return est;
+	}
+
+	private static String normalisiereEST(String est) {		
+		est = entferneTxx(est);		
+		String[] split = est.split("\\$");
+		est = split[0];
+		for (int i = 1; i < split.length; i++) {
+			String frac = split[i];
+			char first = StringUtils.charAt(frac, 0);
+			String second = frac.substring(1);
+			switch (first) {
+			case 'a':
+				est += second;
+				break;
+			case 'p':
+			case 'k':
+				est += ". " + second;
+				break;
+			case 'g':
+			case 'r':
+			case 'f':
+				est += " (" + second + ")";
+				break;
+			case 'o':
+			case 's':
+				est += " / " + second;
+				break;
+			case 'm':
+			case 'n':
+				est += ", " + second;
+				break;
+			default:
+				break;
+			}			
+		}
+		
+		return est;
+	}
+
 	private static String normalisierePerson(String creator) {
 		creator = StringUtils.unicodeComposition(creator);
 		creator = entferneTxx(creator);
@@ -81,6 +164,13 @@ public class Util {
 		return creator;
 	}
 
+	/**
+	 * Titel aus 4000.
+	 * 
+	 * @param record nicht null
+	 * @return Titel. Die @ werden nicht entfernt, damit eine Sortierung möglich
+	 *         ist.
+	 */
 	public static String getTitel(final Record record) {
 		Line line4000 = BibRecUtils.getMainTitleLine(record);
 		if (line4000 == null)
@@ -96,16 +186,9 @@ public class Util {
 		return dollar8;
 	}
 
-	/**
-	 * 
-	 */
-	public Util() {
-		tagDB = BibTagDB.getDB();
-	}
-
 	public static void main(String[] args) {
 		Record record = RecordUtils.readFromClip();
-		System.out.println(getKoerperschaftVeranstaltung(record));
+		System.out.println(getTitel(record));
 
 	}
 

@@ -1729,10 +1729,8 @@ public final class BibTagDB extends TagDB {
 		addTag(newBibTag);
 		newBibTag.add(DOLLAR_T);
 		newBibTag.add(DOLLAR_U_GR);
-		// newBibTag.add(new Indicator("|", "|", " |", false, 'S',
-		// "Funktionscode für NE unter dem Hauptsachtitel (bei
-		// Zeitschriften/Schriftenreihen verwendet bis 01.03.2007)",
-		// R, ""));
+		newBibTag.add(new Indicator("|", "|", " |", false, 'S', "Funktionscode für NE unter dem Hauptsachtitel (bei"
+				+ "Zeitschriften/Schriftenreihen verwendet bis 01.03.2007)", R, ""));
 		newBibTag.add(new Indicator("", "", 'a', "Hauptsachtitel (@{)", NR, ""));
 		newBibTag.add(
 				new Indicator(" // ", "", 'e', "Körperschaftl. Ergänzung bzw. Nachstellung zum Hauptsachtitel", R, ""));

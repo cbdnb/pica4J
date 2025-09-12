@@ -257,6 +257,14 @@ public class StringUtils {
     return new StringBuffer(string.length()).append(Character.toLowerCase(string.charAt(0)))
       .append(string.substring(1)).toString();
   }
+  
+  public static String ersterBuchstabeGross(final String string) {
+	    if (string == null || string.length() == 0)
+	      return string;
+
+	    return new StringBuffer(string.length()).append(Character.toUpperCase(string.charAt(0)))
+	      .append(string.substring(1)).toString();
+	  }
 
   static final Pattern patYear = Pattern.compile("\\d\\d\\d\\d");
 
