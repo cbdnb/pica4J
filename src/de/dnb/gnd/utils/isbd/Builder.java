@@ -1,8 +1,8 @@
 package de.dnb.gnd.utils.isbd;
 
 import java.net.URL;
+import java.util.stream.Collectors;
 
-import de.dnb.basics.Misc;
 import de.dnb.basics.utils.DDC_Utils;
 import de.dnb.basics.utils.PortalUtils;
 import de.dnb.gnd.parser.Record;
@@ -23,29 +23,31 @@ public class Builder {
 
 		isbd.zumKatalog = null;
 		String uri = "http://d-nb.info/" + record.getId();
-		if (checkUri(uri)) {
-			Link link = new Link();
-			link.adresse = uri;
-			link.text = uri;
-			isbd.zumKatalog = link;
-		}
+		isbd.zumKatalog = Link.getLink(uri, uri);
+
 		isbd.neNr = RecordUtils.getContentOfSubfield(record, "2100", '0');
-		
+
 		isbd.schoepfer = Util.getAutor(record);
-		if(isbd.schoepfer==null)
-			isbd.schoepfer=Util.getKoerperschaftVeranstaltung(record);
-		
+		if (isbd.schoepfer == null)
+			isbd.schoepfer = Util.getKoerperschaftVeranstaltung(record);
+
 		isbd.est = Util.getEST(record);
 		isbd.titel = Util.getTitel(record);
 		isbd.verantwortlichkeit = RecordUtils.getContentOfSubfield(record, "4000", 'h');
-		isbd.zaehlung = RecordUtils.getContentOfSubfield(record, "4025", 'a'); 
-		
+		isbd.zaehlung = RecordUtils.getContentOfSubfield(record, "4025", 'a');
+
+		isbd.ausgabebezeichnung = Util.ausgabebezeichung(record);
+		isbd.veroeffentlichungsangaben = RecordUtils.getLines(record, "4030").stream()
+				.map(Util::veroeffentlichungsAngabe).collect(Collectors.joining(" ; "));
+		isbd.datum = Util.datum(record);
+		isbd.weitereVeroeffAng = RecordUtils.getLines(record, "4034", "4035").stream()
+				.map(Util::veroeffentlichungsAngabe).collect(Collectors.joining(" ; "));
+		isbd.fruehereHaupttitel = RecordUtils.getLines(record, "4213").stream().map(Util::fruehererHaupttitel)
+				.collect(Collectors.joining(". "));
+		isbd.repro = RecordUtils.getContentOfSubfield(record, "4216", 'a');
+		isbd.issn = RecordUtils.getContentOfSubfield(record, "2010", '0');
 
 		return isbd;
-	}
-
-	static public boolean checkUri(String uri) {
-		return Misc.getWebsite(uri) != null;
 	}
 
 	public static void main(String[] args) {

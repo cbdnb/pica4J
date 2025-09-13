@@ -1,16 +1,20 @@
 package de.dnb.gnd.utils.isbd;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import de.dnb.basics.applicationComponents.strings.StringUtils;
+import de.dnb.basics.applicationComponents.tuples.Pair;
+import de.dnb.gnd.parser.Field;
 import de.dnb.gnd.parser.Record;
 import de.dnb.gnd.parser.Subfield;
 import de.dnb.gnd.parser.line.Line;
 import de.dnb.gnd.parser.tag.BibTagDB;
+import de.dnb.gnd.parser.tag.Tag;
 import de.dnb.gnd.utils.BibRecUtils;
 import de.dnb.gnd.utils.RecordUtils;
 import de.dnb.gnd.utils.SubfieldUtils;
@@ -115,8 +119,8 @@ public class Util {
 		return est;
 	}
 
-	private static String normalisiereEST(String est) {		
-		est = entferneTxx(est);		
+	private static String normalisiereEST(String est) {
+		est = entferneTxx(est);
 		String[] split = est.split("\\$");
 		est = split[0];
 		for (int i = 1; i < split.length; i++) {
@@ -146,9 +150,9 @@ public class Util {
 				break;
 			default:
 				break;
-			}			
+			}
 		}
-		
+
 		return est;
 	}
 
@@ -186,9 +190,61 @@ public class Util {
 		return dollar8;
 	}
 
+	public static String veroeffentlichungsAngabe(Line line403X) {
+		List<Subfield> subs = SubfieldUtils.getSubfields(line403X, Arrays.asList('p', 'n'));
+		String angabe = RecordUtils.toPicaWithoutTag(line403X.getTag(), subs);
+		// jetzt noch Sonderformatierung für $h
+		String dollarH = SubfieldUtils.getContentOfFirstSubfield(line403X, 'h');
+		if (dollarH != null)
+			angabe += " [" + dollarH + "]";
+		return angabe;
+	}
+	
+	public static String fruehererHaupttitel(Line line4213) {
+		List<Subfield> subs = SubfieldUtils.getSubfields(line4213, Arrays.asList('b', 'a'));
+		String titel = RecordUtils.toPicaWithoutTag(line4213.getTag(), subs);		
+		return titel;
+	}
+
+	/**
+	 * Titel aus 4000.
+	 * 
+	 * @param record nicht null
+	 * @return Titel. Die @ werden nicht entfernt, damit eine Sortierung möglich
+	 *         ist.
+	 */
+	public static String ausgabebezeichung(final Record record) {
+		// nach aller Erfahrung nur das erste Feld:
+		Pair<Line, Integer> pair = RecordUtils.getFirstLineTagGivenAsString(record, "4020");
+		if (pair.second == 0)
+			return null;
+		Line line4020 = pair.first;
+		List<Subfield> subs = SubfieldUtils.retainSubfields(line4020, 'a', 'c');
+		if (subs.isEmpty())
+			return null;
+		return RecordUtils.toPicaWithoutTag(line4020.getTag(), subs);
+	}
+
+	public static String datum(Record record) {
+		Line line1100 = RecordUtils.getTheOnlyLine(record, "1100");
+		if (line1100 == null)
+			return null;
+		if (SubfieldUtils.containsIndicator(line1100, 'n'))
+			return SubfieldUtils.getContentOfFirstSubfield(line1100, 'n');
+		if (SubfieldUtils.containsIndicator(line1100, 'a')) {
+			if (SubfieldUtils.containsIndicator(line1100, 'b'))
+				return SubfieldUtils.getContentOfFirstSubfield(line1100, 'a') + "-"
+						+ SubfieldUtils.getContentOfFirstSubfield(line1100, 'b');
+			else
+				return SubfieldUtils.getContentOfFirstSubfield(line1100, 'a');
+		}
+		return null;
+
+	}
+
 	public static void main(String[] args) {
 		Record record = RecordUtils.readFromClip();
-		System.out.println(getTitel(record));
+		System.out.println(ausgabebezeichung(record));
 
 	}
 

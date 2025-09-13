@@ -1,5 +1,6 @@
 package de.dnb.gnd.utils.isbd;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
@@ -32,16 +33,18 @@ public class ISBD implements Comparable<ISBD> {
 
 	// Zeile 5
 	String ausgabebezeichnung;
-	String veroeffentlichungsangabe;
+	String veroeffentlichungsangaben;
 	String datum;
+	String weitereVeroeffAng;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
+	// Zeile 6
+	String fruehereHaupttitel;
+	String repro; // Reproduktionsvermerk, 4216
+	String issn;
 
 	@Override
 	public String toString() {
+		List<String> zeilen = new ArrayList<>();
 		String zeile1 = "<" + dhs.getDDCString();
 		for (SG sg : dns) {
 			zeile1 += ";" + sg.getDDCString();
@@ -49,14 +52,31 @@ public class ISBD implements Comparable<ISBD> {
 		zeile1 += ">";
 		if (lc != null)
 			zeile1 += "\t" + lc;
+		zeilen.add(zeile1);
 		String zeile2 = zumKatalog.adresse;
 		if (neNr != null)
 			zeile2 += "\t" + neNr;
-		String zeile3 = schoepfer + ":";
+		zeilen.add(zeile2);
+		if (schoepfer != null)
+			zeilen.add(schoepfer + ":");
 		String zeile4 = (est != null ? "[" + est + "] " : "") + titel + " / " + verantwortlichkeit;
 		if (zaehlung != null)
 			zeile4 += " - " + zaehlung;
-		return StringUtils.concatenate("\n", zeile1, zeile2, zeile3, zeile4);
+		zeilen.add(zeile4);
+		String zeile5 = (ausgabebezeichnung != null ? ausgabebezeichnung + " - " : "") + veroeffentlichungsangaben
+				+ (datum != null ? ", " + datum : "");
+		if (weitereVeroeffAng != null)
+			zeile5 += ". - " + weitereVeroeffAng;
+		zeilen.add(zeile5);
+
+		String zeile6 = fruehereHaupttitel != null ? fruehereHaupttitel : "";
+		if (repro != null)
+			zeile6 += " . - " + repro;
+		if(issn!=null)
+			zeile6 += " - ISSN der Vorlage " + issn;
+		zeilen.add(zeile6);
+
+		return StringUtils.concatenate("\n", zeilen);
 	}
 
 	Comparator<SG> myComparator = SGUtils.getSGcomparator();
