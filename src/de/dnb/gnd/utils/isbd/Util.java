@@ -199,10 +199,10 @@ public class Util {
 			angabe += " [" + dollarH + "]";
 		return angabe;
 	}
-	
+
 	public static String fruehererHaupttitel(Line line4213) {
 		List<Subfield> subs = SubfieldUtils.getSubfields(line4213, Arrays.asList('b', 'a'));
-		String titel = RecordUtils.toPicaWithoutTag(line4213.getTag(), subs);		
+		String titel = RecordUtils.toPicaWithoutTag(line4213.getTag(), subs);
 		return titel;
 	}
 
@@ -239,12 +239,39 @@ public class Util {
 				return SubfieldUtils.getContentOfFirstSubfield(line1100, 'a');
 		}
 		return null;
+	}
 
+	public static String umfang(Record record) {
+		
+		String umf = RecordUtils.getContentOfSubfield(record, "4060", 'a');
+		
+		String sonstige = RecordUtils.getContentOfSubfield(record, "4061", 'a');
+		if (sonstige != null) {
+			if (umf != null)
+				umf += " : " + sonstige;
+			else
+				umf = sonstige;
+		}
+		String format = RecordUtils.getContentOfSubfield(record, "4062", 'a');
+		if (format != null) {
+			if (umf != null)
+				umf += " ; " + format;
+			else
+				umf = format;
+		}
+		String begleit = RecordUtils.getContentOfSubfield(record, "4063", 'a');
+		if (begleit != null) {
+			if (umf != null)
+				umf += " + " + begleit;
+			else
+				umf = begleit;
+		}
+		return umf;
 	}
 
 	public static void main(String[] args) {
 		Record record = RecordUtils.readFromClip();
-		System.out.println(ausgabebezeichung(record));
+		System.out.println(umfang(record));
 
 	}
 

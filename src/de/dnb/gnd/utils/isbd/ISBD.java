@@ -13,6 +13,8 @@ import de.dnb.gnd.utils.SGUtils;
 public class ISBD implements Comparable<ISBD> {
 	// Aufgelistet in der Reihenfolge der Nationalbibliografie:
 
+	// ISBD 0 (Medienart/Medientyp) wäre Feld 0502. Wird in der NaBi nicht wiedergegeben.
+	
 	// Zeile 1
 	SG dhs;
 	List<SG> dns;
@@ -25,13 +27,13 @@ public class ISBD implements Comparable<ISBD> {
 	// Zeile 3
 	String schoepfer;
 
-	// Zeile 4
+	// Zeile 4 - ISBD 1
 	String est;
 	String titel;
 	String verantwortlichkeit;
 	String zaehlung;
 
-	// Zeile 5
+	// Zeile 5 - ISBD 4
 	String ausgabebezeichnung;
 	String veroeffentlichungsangaben;
 	String datum;
@@ -41,6 +43,9 @@ public class ISBD implements Comparable<ISBD> {
 	String fruehereHaupttitel;
 	String repro; // Reproduktionsvermerk, 4216
 	String issn;
+	
+	// Zeile 7 - ISBD 5
+	String umfang;
 
 	@Override
 	public String toString() {
@@ -75,6 +80,9 @@ public class ISBD implements Comparable<ISBD> {
 		if(issn!=null)
 			zeile6 += " - ISSN der Vorlage " + issn;
 		zeilen.add(zeile6);
+		
+		if(umfang!=null)
+			zeilen.add(umfang);
 
 		return StringUtils.concatenate("\n", zeilen);
 	}
