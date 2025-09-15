@@ -242,9 +242,9 @@ public class Util {
 	}
 
 	public static String umfang(Record record) {
-		
+
 		String umf = RecordUtils.getContentOfSubfield(record, "4060", 'a');
-		
+
 		String sonstige = RecordUtils.getContentOfSubfield(record, "4061", 'a');
 		if (sonstige != null) {
 			if (umf != null)
@@ -269,9 +269,24 @@ public class Util {
 		return umf;
 	}
 
+	public static Link link(Line line4715, String idn) {
+		String url = SubfieldUtils.getContentOfFirstSubfield(line4715, 'u');		
+		if (url == null)
+			return null;
+		// Entscheiden, ob Inhaltsverzeichnis:
+		String dollarc = SubfieldUtils.getContentOfFirstSubfield(line4715, 'c');
+		if (dollarc == null)
+			return Link.getLink("Inhaltstext", url);
+		if (url.equals("$") && dollarc.equals("04"))
+			return Link.getLink("Inhaltsverzeichnis", "http://d-nb.info/" + idn + "/04");
+		return Link.getLink("Inhaltstext", url);
+
+	}
+
 	public static void main(String[] args) {
 		Record record = RecordUtils.readFromClip();
-		System.out.println(umfang(record));
+
+		RecordUtils.getLines(record, "4715").forEach(line -> System.out.println(link(line, record.getId())));
 
 	}
 

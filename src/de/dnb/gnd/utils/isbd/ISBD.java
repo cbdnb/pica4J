@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 
 import de.dnb.basics.applicationComponents.strings.StringUtils;
+import de.dnb.basics.collections.ListUtils;
 import de.dnb.basics.filtering.FilterUtils;
 import de.dnb.gnd.utils.DDC_SG;
 import de.dnb.gnd.utils.SG;
@@ -13,8 +14,9 @@ import de.dnb.gnd.utils.SGUtils;
 public class ISBD implements Comparable<ISBD> {
 	// Aufgelistet in der Reihenfolge der Nationalbibliografie:
 
-	// ISBD 0 (Medienart/Medientyp) wäre Feld 0502. Wird in der NaBi nicht wiedergegeben.
-	
+	// ISBD 0 (Medienart/Medientyp) wäre Feld 0502. Wird in der NaBi nicht
+	// wiedergegeben.
+
 	// Zeile 1
 	SG dhs;
 	List<SG> dns;
@@ -43,9 +45,12 @@ public class ISBD implements Comparable<ISBD> {
 	String fruehereHaupttitel;
 	String repro; // Reproduktionsvermerk, 4216
 	String issn;
-	
+
 	// Zeile 7 - ISBD 5
 	String umfang;
+
+	// Zeile 8
+	List<Link> links;
 
 	@Override
 	public String toString() {
@@ -58,7 +63,7 @@ public class ISBD implements Comparable<ISBD> {
 		if (lc != null)
 			zeile1 += "\t" + lc;
 		zeilen.add(zeile1);
-		String zeile2 = zumKatalog.adresse;
+		String zeile2 = zumKatalog.url;
 		if (neNr != null)
 			zeile2 += "\t" + neNr;
 		zeilen.add(zeile2);
@@ -77,12 +82,16 @@ public class ISBD implements Comparable<ISBD> {
 		String zeile6 = fruehereHaupttitel != null ? fruehereHaupttitel : "";
 		if (repro != null)
 			zeile6 += " . - " + repro;
-		if(issn!=null)
+		if (issn != null)
 			zeile6 += " - ISSN der Vorlage " + issn;
-		zeilen.add(zeile6);
-		
-		if(umfang!=null)
+		if (!StringUtils.isNullOrWhitespace(zeile6))
+			zeilen.add(zeile6);
+
+		if (umfang != null)
 			zeilen.add(umfang);
+
+		if (links != null && !links.isEmpty())
+			zeilen.add(StringUtils.concatenate(" . - ", FilterUtils.mapNullFiltered(links, Link::toString)));
 
 		return StringUtils.concatenate("\n", zeilen);
 	}

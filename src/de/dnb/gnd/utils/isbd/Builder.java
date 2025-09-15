@@ -1,6 +1,8 @@
 package de.dnb.gnd.utils.isbd;
 
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.Collectors;
 
 import de.dnb.basics.utils.DDC_Utils;
@@ -46,6 +48,9 @@ public class Builder {
 				.collect(Collectors.joining(". "));
 		isbd.repro = RecordUtils.getContentOfSubfield(record, "4216", 'a');
 		isbd.issn = RecordUtils.getContentOfSubfield(record, "2010", '0');
+
+		isbd.links = new ArrayList<>();
+		RecordUtils.getLines(record, "4715").forEach(line -> isbd.links.add(Util.link(line, record.getId())));
 
 		return isbd;
 	}
