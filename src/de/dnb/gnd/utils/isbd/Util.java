@@ -6,6 +6,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import de.dnb.basics.applicationComponents.strings.StringUtils;
 import de.dnb.basics.applicationComponents.tuples.Pair;
@@ -229,8 +231,12 @@ public class Util {
 		Line line1100 = RecordUtils.getTheOnlyLine(record, "1100");
 		if (line1100 == null)
 			return null;
-		if (SubfieldUtils.containsIndicator(line1100, 'n'))
-			return SubfieldUtils.getContentOfFirstSubfield(line1100, 'n');
+		if (SubfieldUtils.containsIndicator(line1100, 'n')) {
+			String datum = SubfieldUtils.getContentOfFirstSubfield(line1100, 'n');
+			if(datum.endsWith("-"))
+				datum += "...";
+			return datum;
+		}
 		if (SubfieldUtils.containsIndicator(line1100, 'a')) {
 			if (SubfieldUtils.containsIndicator(line1100, 'b'))
 				return SubfieldUtils.getContentOfFirstSubfield(line1100, 'a') + "-"
@@ -270,24 +276,109 @@ public class Util {
 	}
 
 	public static Link link(Line line4715, String idn) {
-		String url = SubfieldUtils.getContentOfFirstSubfield(line4715, 'u');		
+		String url = SubfieldUtils.getContentOfFirstSubfield(line4715, 'u');
 		if (url == null)
 			return null;
-		// Entscheiden, ob Inhaltsverzeichnis:
+		// Entscheiden, ob Inhaltsverzeichnis oder Repository:
 		String dollarc = SubfieldUtils.getContentOfFirstSubfield(line4715, 'c');
-		if (dollarc == null)
-			return Link.getLink("Inhaltstext", url);
 		if (url.equals("$") && dollarc.equals("04"))
 			return Link.getLink("Inhaltsverzeichnis", "http://d-nb.info/" + idn + "/04");
-		return Link.getLink("Inhaltstext", url);
-
+		else if (url.contains("deposit.dnb.de"))
+			return Link.getLink("Inhaltstext", url);
+		else
+			return Link.getLink("Angaben zum Inhalt", url);
 	}
 
-	public static void main(String[] args) {
-		Record record = RecordUtils.readFromClip();
-
-		RecordUtils.getLines(record, "4715").forEach(line -> System.out.println(link(line, record.getId())));
-
+	public static String entferneKlammeraffe(String s) {
+		if (StringUtils.isNullOrWhitespace(s))
+			return s;
+		return s.replaceAll("\\@", "");
 	}
+
+	public static String gesamttitel(Record record) {
+		String gesamt = RecordUtils.getContentOfSubfield(record, "4180", '8');
+		if (gesamt == null)
+			gesamt = RecordUtils.getContentOfSubfield(record, "4180", 'a');
+		if (gesamt == null)
+			gesamt = RecordUtils.getContentOfSubfield(record, "4190", 'a');
+		if (gesamt == null)
+			return null;
+		String dollarl = RecordUtils.getContentOfSubfield(record, "4180", 'l');
+		if (dollarl != null)
+			gesamt += " ; " + dollarl;
+		String dollare = RecordUtils.getContentOfSubfield(record, "4180", 'e');
+		if (dollare != null)
+			gesamt += " : " + dollare;
+		gesamt = gesamt.replaceAll("[\\[\\]]",	"");
+		gesamt = "(" + gesamt + ")";
+		gesamt = entferneKlammeraffe(gesamt);
+		
+		return gesamt;
+	}
+
+	public static String isbn(Record record) {
+		List<String> nummern = new ArrayList<>();
+		ArrayList<Line> lines = RecordUtils.getLines(record, "2000");
+		if (lines.isEmpty())
+			return null;
+		for (Line line : lines) {
+			String isbn = SubfieldUtils.getContentOfFirstSubfield(line, '0');
+			if (isbn != null) {
+				isbn = "ISBN " + isbn;
+				String infos = SubfieldUtils.getContentOfFirstSubfield(line, 'f');
+				if (infos != null)
+					isbn += " " + infos;
+				nummern.add(isbn);
+			}
+		}
+
+		ArrayList<Line> lines2040 = RecordUtils.getLines(record, "2040");
+		if (lines.isEmpty())
+			return null;
+		for (Line line : lines2040) {
+			String isbn = SubfieldUtils.getContentOfFirstSubfield(line, '0');
+			if (isbn != null) {
+				isbn = "EAN " + isbn;
+				String infos = SubfieldUtils.getContentOfFirstSubfield(line, 'f');
+				if (infos != null)
+					isbn += " " + infos;
+				nummern.add(isbn);
+			}
+		}
+		return StringUtils.concatenate(" - ", nummern);
+	}
+
+	public static String hsVermerk(Record record) {
+		ArrayList<Line> lines = RecordUtils.getLines(record, "4204");
+		if (lines.isEmpty())
+			return null;
+		List<String> hsVermerke = new ArrayList<>();// Mehrere?
+		lines.forEach(line -> {
+			hsVermerke.add(line.getSubfields().stream().map(Subfield::getContent).collect(Collectors.joining(", ")));
+		});
+		return StringUtils.concatenate("; ", hsVermerke);
+	}
+
+	public static String issn(Record record) {
+		String issn = RecordUtils.getContentOfSubfield(record, "2005", '0');
+		if(issn!=null)
+			return "ISSN (autorisiert) " + issn;
+		issn = RecordUtils.getContentOfSubfield(record, "2010", '0');
+		if(issn!=null)
+			return "ISSN der Vorlage " + issn;
+		return null;
+	}
+	
+	public static String anmerkung(Record record) {
+		List<String> subs = RecordUtils.getContentsOfFirstSubfield(record, 'a', "4201");
+		if(subs.isEmpty())
+			return null;
+		return StringUtils.concatenate(". - ", subs);
+	}
+
+//	public static void main(String[] args) {
+//		Record record = RecordUtils.readFromClip();
+//		System.out.println(isbn(record));
+//	}
 
 }

@@ -47,10 +47,21 @@ public class Builder {
 		isbd.fruehereHaupttitel = RecordUtils.getLines(record, "4213").stream().map(Util::fruehererHaupttitel)
 				.collect(Collectors.joining(". "));
 		isbd.repro = RecordUtils.getContentOfSubfield(record, "4216", 'a');
-		isbd.issn = RecordUtils.getContentOfSubfield(record, "2010", '0');
+		isbd.issn = Util.issn(record); 
+				
 
 		isbd.links = new ArrayList<>();
-		RecordUtils.getLines(record, "4715").forEach(line -> isbd.links.add(Util.link(line, record.getId())));
+		RecordUtils.getLines(record, "4715").forEach(line -> {			
+			Link link = Util.link(line, record.getId());
+			isbd.links.add(link);
+		});
+
+		isbd.umfang = Util.umfang(record);
+		isbd.gesamt = Util.gesamttitel(record);
+		isbd.anmerkung = Util.anmerkung(record);
+
+		isbd.hsVermerk = Util.hsVermerk(record);
+		isbd.isbnEAN = Util.isbn(record);
 
 		return isbd;
 	}

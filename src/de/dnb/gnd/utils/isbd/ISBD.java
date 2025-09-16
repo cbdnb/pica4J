@@ -3,6 +3,7 @@ package de.dnb.gnd.utils.isbd;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import de.dnb.basics.applicationComponents.strings.StringUtils;
 import de.dnb.basics.collections.ListUtils;
@@ -49,8 +50,18 @@ public class ISBD implements Comparable<ISBD> {
 	// Zeile 7 - ISBD 5
 	String umfang;
 
+	// Zeile 8 ISBD 6
+	String gesamt;
+
 	// Zeile 8
 	List<Link> links;
+
+	// Zeile 9 - ISBD 7
+	String anmerkung;
+
+	// Zeile 10 - ISBD 8
+	String hsVermerk;
+	String isbnEAN;
 
 	@Override
 	public String toString() {
@@ -63,37 +74,62 @@ public class ISBD implements Comparable<ISBD> {
 		if (lc != null)
 			zeile1 += "\t" + lc;
 		zeilen.add(zeile1);
-		String zeile2 = zumKatalog.url;
+
+		String zeile2 = zumKatalog != null ? zumKatalog.url : "";
 		if (neNr != null)
 			zeile2 += "\t" + neNr;
 		zeilen.add(zeile2);
+		
 		if (schoepfer != null)
 			zeilen.add(schoepfer + ":");
-		String zeile4 = (est != null ? "[" + est + "] " : "") + titel + " / " + verantwortlichkeit;
+		
+		String zeile4 = (est != null ? "[" + est + "] " : "") + titel;
+		if (verantwortlichkeit != null)
+			zeile4 += " / " + verantwortlichkeit;
 		if (zaehlung != null)
 			zeile4 += " - " + zaehlung;
 		zeilen.add(zeile4);
+		
 		String zeile5 = (ausgabebezeichnung != null ? ausgabebezeichnung + " - " : "") + veroeffentlichungsangaben
 				+ (datum != null ? ", " + datum : "");
-		if (weitereVeroeffAng != null)
+		if (!StringUtils.isNullOrWhitespace(weitereVeroeffAng))
 			zeile5 += ". - " + weitereVeroeffAng;
 		zeilen.add(zeile5);
 
 		String zeile6 = fruehereHaupttitel != null ? fruehereHaupttitel : "";
 		if (repro != null)
 			zeile6 += " . - " + repro;
-		if (issn != null)
-			zeile6 += " - ISSN der Vorlage " + issn;
 		if (!StringUtils.isNullOrWhitespace(zeile6))
 			zeilen.add(zeile6);
 
+		List<String> umfetc = new ArrayList<>();
 		if (umfang != null)
-			zeilen.add(umfang);
+			umfetc.add(umfang);
+		if (issn != null)
+			umfetc.add(issn);
+		zeilen.add(StringUtils.concatenate(" - ", umfetc));
+
+		if (gesamt != null)
+			zeilen.add(gesamt);
 
 		if (links != null && !links.isEmpty())
 			zeilen.add(StringUtils.concatenate(" . - ", FilterUtils.mapNullFiltered(links, Link::toString)));
+		
+		if(anmerkung!=null)
+			zeilen.add(anmerkung);
 
-		return StringUtils.concatenate("\n", zeilen);
+		String zeile9 = hsVermerk;
+		if (isbnEAN != null) {
+			if (zeile9 != null)
+				zeile9 += " - " + isbnEAN;
+			else
+				zeile9 = isbnEAN;
+		}
+		if (zeile9 != null)
+			zeilen.add(zeile9);
+
+		return Util.entferneKlammeraffe(zeilen.stream().map(s -> ">" + s).collect(Collectors.joining("\n")));
+
 	}
 
 	Comparator<SG> myComparator = SGUtils.getSGcomparator();
