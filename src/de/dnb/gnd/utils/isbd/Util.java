@@ -233,7 +233,7 @@ public class Util {
 			return null;
 		if (SubfieldUtils.containsIndicator(line1100, 'n')) {
 			String datum = SubfieldUtils.getContentOfFirstSubfield(line1100, 'n');
-			if(datum.endsWith("-"))
+			if (datum.endsWith("-"))
 				datum += "...";
 			return datum;
 		}
@@ -309,10 +309,10 @@ public class Util {
 		String dollare = RecordUtils.getContentOfSubfield(record, "4180", 'e');
 		if (dollare != null)
 			gesamt += " : " + dollare;
-		gesamt = gesamt.replaceAll("[\\[\\]]",	"");
+		gesamt = gesamt.replaceAll("[\\[\\]]", "");
 		gesamt = "(" + gesamt + ")";
 		gesamt = entferneKlammeraffe(gesamt);
-		
+
 		return gesamt;
 	}
 
@@ -361,19 +361,26 @@ public class Util {
 
 	public static String issn(Record record) {
 		String issn = RecordUtils.getContentOfSubfield(record, "2005", '0');
-		if(issn!=null)
+		if (issn != null)
 			return "ISSN (autorisiert) " + issn;
 		issn = RecordUtils.getContentOfSubfield(record, "2010", '0');
-		if(issn!=null)
+		if (issn != null)
 			return "ISSN der Vorlage " + issn;
 		return null;
 	}
-	
+
 	public static String anmerkung(Record record) {
 		List<String> subs = RecordUtils.getContentsOfFirstSubfield(record, 'a', "4201");
-		if(subs.isEmpty())
+		if (subs.isEmpty())
 			return null;
-		return StringUtils.concatenate(". - ", subs);
+		return StringUtils.concatenate(" . - ", subs);
+	}
+
+	public static String anmerkungFortlaufend(Record record) {
+		List<String> subs = RecordUtils.getContentsOfFirstSubfield(record, 'a', "4225", "4226");
+		if (subs.isEmpty())
+			return null;
+		return StringUtils.concatenate(" . - ", subs);
 	}
 
 //	public static void main(String[] args) {

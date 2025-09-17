@@ -46,6 +46,7 @@ public class ISBD implements Comparable<ISBD> {
 	String fruehereHaupttitel;
 	String repro; // Reproduktionsvermerk, 4216
 	String issn;
+	String anmerkungFortlaufend;
 
 	// Zeile 7 - ISBD 5
 	String umfang;
@@ -73,40 +74,46 @@ public class ISBD implements Comparable<ISBD> {
 		zeile1 += ">";
 		if (lc != null)
 			zeile1 += "\t" + lc;
-		zeilen.add(zeile1);
+		zeilen.add("z1> "+zeile1);
 
 		String zeile2 = zumKatalog != null ? zumKatalog.url : "";
 		if (neNr != null)
 			zeile2 += "\t" + neNr;
-		zeilen.add(zeile2);
-		
+		zeilen.add("z2> "+zeile2);
+
 		if (schoepfer != null)
-			zeilen.add(schoepfer + ":");
-		
+			zeilen.add("Schöpfer> "+schoepfer + ":");
+
 		String zeile4 = (est != null ? "[" + est + "] " : "") + titel;
 		if (verantwortlichkeit != null)
 			zeile4 += " / " + verantwortlichkeit;
 		if (zaehlung != null)
 			zeile4 += " - " + zaehlung;
-		zeilen.add(zeile4);
-		
+		zeilen.add("z4> "+zeile4);
+
 		String zeile5 = (ausgabebezeichnung != null ? ausgabebezeichnung + " - " : "") + veroeffentlichungsangaben
 				+ (datum != null ? ", " + datum : "");
 		if (!StringUtils.isNullOrWhitespace(weitereVeroeffAng))
 			zeile5 += ". - " + weitereVeroeffAng;
-		zeilen.add(zeile5);
+		zeilen.add("z5> "+zeile5);
+
+		if (anmerkung != null)
+			zeilen.add("Anmerkung> "+anmerkung);
 
 		String zeile6 = fruehereHaupttitel != null ? fruehereHaupttitel : "";
 		if (repro != null)
 			zeile6 += " . - " + repro;
 		if (!StringUtils.isNullOrWhitespace(zeile6))
-			zeilen.add(zeile6);
+			zeilen.add("z6> "+zeile6);
+		
+		if(anmerkungFortlaufend!=null)
+			zeilen.add("Anm. forlaufend> "+anmerkungFortlaufend);
 
 		List<String> umfetc = new ArrayList<>();
 		if (umfang != null)
-			umfetc.add(umfang);
+			umfetc.add("Umfang> "+umfang);
 		if (issn != null)
-			umfetc.add(issn);
+			umfetc.add("ISSN> "+issn);
 		zeilen.add(StringUtils.concatenate(" - ", umfetc));
 
 		if (gesamt != null)
@@ -114,9 +121,6 @@ public class ISBD implements Comparable<ISBD> {
 
 		if (links != null && !links.isEmpty())
 			zeilen.add(StringUtils.concatenate(" . - ", FilterUtils.mapNullFiltered(links, Link::toString)));
-		
-		if(anmerkung!=null)
-			zeilen.add(anmerkung);
 
 		String zeile9 = hsVermerk;
 		if (isbnEAN != null) {
@@ -128,7 +132,7 @@ public class ISBD implements Comparable<ISBD> {
 		if (zeile9 != null)
 			zeilen.add(zeile9);
 
-		return Util.entferneKlammeraffe(zeilen.stream().map(s -> ">" + s).collect(Collectors.joining("\n")));
+		return Util.entferneKlammeraffe(zeilen.stream().collect(Collectors.joining("\n")));
 
 	}
 
