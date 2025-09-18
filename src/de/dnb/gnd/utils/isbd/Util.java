@@ -383,6 +383,17 @@ public class Util {
 		return StringUtils.concatenate(" . - ", subs);
 	}
 
+	public static String listeNSW(Record record) {		
+		Line lineNSW = RecordUtils.getTheOnlyLine(record, "0604");		
+		if (lineNSW == null)
+			return null;
+		String dollara = SubfieldUtils.getContentOfFirstSubfield(lineNSW, 'a');		
+		dollara = dollara != null ? dollara + ": " : "";
+		String rest = SubfieldUtils.removeSubfields(lineNSW, 'a').stream().map(Subfield::getContent)
+				.collect(Collectors.joining(" "));
+		return dollara + rest;
+	}
+
 //	public static void main(String[] args) {
 //		Record record = RecordUtils.readFromClip();
 //		System.out.println(isbn(record));

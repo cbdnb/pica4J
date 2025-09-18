@@ -35,6 +35,8 @@ public class RDAFormatter {
 
 	protected TagDB tagDB;
 
+	protected boolean useBio = false;
+
 	public final Pair<String, String> SLASH = new Pair<String, String>(" / ", "");
 
 	public final Pair<String, String> KOMMA = new Pair<String, String>(", ", "");
@@ -54,13 +56,22 @@ public class RDAFormatter {
 	public final Pair<String, String> TABLE = new Pair<String, String>("T", "--");
 
 	public void setRecord(final Record record) {
-		RangeCheckUtils.assertReferenceParamNotNull("record", record);
+//		RangeCheckUtils.assertReferenceParamNotNull("record", record);
 		actualRecord = record;
-		tagDB = record.tagDB;
+		tagDB = record != null ? record.tagDB : GNDTagDB.getDB();
 	}
 
 	public RDAFormatter(final Record record) {
 		setRecord(record);
+	}
+
+	/**
+	 * Sollen nach Personennamen die Lebensdaten ausgegeben werden?
+	 *
+	 * @param b ja/nein
+	 */
+	public void useBioData(final boolean b) {
+		useBio = b;
 	}
 
 	/**
@@ -69,79 +80,148 @@ public class RDAFormatter {
 	 * @return null, wenn Standardverhalten
 	 */
 	public final Pair<String, String> getPreAndPost(final Indicator indicator) {
-		if (indicator == GNDTagDB.INDICATOR_100_A)
+		if (indicator == GNDTagDB.INDICATOR_100_A) {
 			return NOTHING;
-		if (indicator == GNDTagDB.INDICATOR_100_C)
+		}
+		if (indicator == GNDTagDB.INDICATOR_100_C) {
 			return BLANK;
-		if (indicator == GNDTagDB.INDICATOR_100_D)
+		}
+		if (indicator == GNDTagDB.INDICATOR_100_D) {
 			return KOMMA;
-		if (indicator == GNDTagDB.INDICATOR_100_L)
+		}
+		if (indicator == GNDTagDB.INDICATOR_100_L) {
 			return KOMMA;
-		if (indicator == GNDTagDB.INDICATOR_100_N)
+		}
+		if (indicator == GNDTagDB.INDICATOR_100_N) {
 			return BLANK;
-		if (indicator == GNDTagDB.INDICATOR_100_P)
+		}
+		if (indicator == GNDTagDB.INDICATOR_100_P) {
 			return NOTHING;
+		}
 
-		if (indicator == GNDTagDB.INDICATOR_110_A)
+		if (indicator == GNDTagDB.INDICATOR_110_A) {
 			return NOTHING;
-		if (indicator == GNDTagDB.INDICATOR_110_B)
+		}
+		if (indicator == GNDTagDB.INDICATOR_110_B) {
 			return DOT;
-		if (indicator == GNDTagDB.INDICATOR_110_N)
+		}
+		if (indicator == GNDTagDB.INDICATOR_110_N) {
 			return BRACKETS;
+		}
 
-		if (indicator == GNDTagDB.INDICATOR_111_A)
+		if (indicator == GNDTagDB.INDICATOR_111_A) {
 			return NOTHING;
-		if (indicator == GNDTagDB.INDICATOR_111_B)
+		}
+		if (indicator == GNDTagDB.INDICATOR_111_B) {
 			return SLASH;
-		if (indicator == GNDTagDB.INDICATOR_111_C)
+		}
+		if (indicator == GNDTagDB.INDICATOR_111_C) {
 			return BLANK;
+		}
 
-		if (indicator == GNDTagDB.INDICATOR_130_A)
+		if (indicator == GNDTagDB.INDICATOR_130_A) {
 			return NOTHING;
-		if (indicator == GNDTagDB.INDICATOR_130_F)
+		}
+		if (indicator == GNDTagDB.INDICATOR_130_F) {
 			return BRACKETS;
+		}
 
-		if (indicator == GNDTagDB.INDICATOR_130_M)
+		if (indicator == GNDTagDB.INDICATOR_130_M) {
 			return KOMMA;
-		if (indicator == GNDTagDB.INDICATOR_130_N)
+		}
+		if (indicator == GNDTagDB.INDICATOR_130_N) {
 			return KOMMA;
-		if (indicator == GNDTagDB.INDICATOR_130_O)
+		}
+		if (indicator == GNDTagDB.INDICATOR_130_O) {
 			return KOMMA;
-		if (indicator == GNDTagDB.INDICATOR_130_P)
+		}
+		if (indicator == GNDTagDB.INDICATOR_130_P) {
 			return DOT;
-		if (indicator == GNDTagDB.INDICATOR_130_R)
+		}
+		if (indicator == GNDTagDB.INDICATOR_130_R) {
 			return KOMMA;
-		if (indicator == GNDTagDB.INDICATOR_130_S)
+		}
+		if (indicator == GNDTagDB.INDICATOR_130_S) {
 			return KOMMA;
+		}
 
-		if (indicator == GNDTagDB.INDICATOR_150_A)
+		if (indicator == GNDTagDB.INDICATOR_150_A) {
 			return NOTHING;
+		}
 
-		if (indicator == GNDTagDB.INDICATOR_151_A)
+		if (indicator == GNDTagDB.INDICATOR_151_A) {
 			return NOTHING;
+		}
 
-		if (indicator == GNDTagDB.INDICATOR_548_C)
+		if (indicator == GNDTagDB.INDICATOR_548_C) {
 			return NOTHING;
-		if (indicator == GNDTagDB.INDICATOR_548_D)
+		}
+		if (indicator == GNDTagDB.INDICATOR_548_D) {
 			return CA;
+		}
 
 		// Vorsicht bei 151:
-		if (indicator == GNDTagDB.DOLLAR_G)
+		if (indicator == GNDTagDB.DOLLAR_G) {
 			return BRACKETS;
-		if (indicator == GNDTagDB.DOLLAR_X)
+		}
+		if (indicator == GNDTagDB.DOLLAR_X) {
 			return SLASH;
-		if (indicator == GNDTagDB.DOLLAR_V_NR)
+		}
+		if (indicator == GNDTagDB.DOLLAR_V_NR) {
 			return KOMMENT;
-		if (indicator == GNDTagDB.DOLLAR_V_R)
+		}
+		if (indicator == GNDTagDB.DOLLAR_V_R) {
 			return KOMMENT;
-		if (indicator == GNDTagDB.INDICATOR_153_A)
+		}
+		if (indicator == GNDTagDB.INDICATOR_153_A) {
 			return NOTHING;
-		if (indicator == GNDTagDB.INDICATOR_153_B)
+		}
+		if (indicator == GNDTagDB.INDICATOR_153_B) {
 			return TABLE;
-		if (indicator == GNDTagDB.INDICATOR_153_J)
+		}
+		if (indicator == GNDTagDB.INDICATOR_153_J) {
 			return SLASH;
+		}
 
 		return null;
+	}
+
+	/**
+	 *
+	 * @param expansion auch null
+	 * @return Aus Expansion in $8 gewonnene RDA-gerechte Darstellung.
+	 */
+	public static String formatExpansion(final String expansion) {
+		final RDAFormatter formatter = new RDAFormatter(null);
+		formatter.useBioData(false);
+		return formatter.format(expansion);
+	}
+
+	/**
+	 *
+	 * @param dollar8 auch null
+	 * @return Aus Expansion in $8 gewonnene RDA-gerechte Darstellung.
+	 */
+	public String format(final String dollar8) {
+		final Pair<Line, Line> pair = GNDUtils.dollar8toline(dollar8);
+		if (pair == null) {
+			return null;
+		}
+		final Line schoepfer = pair.first;
+		String s;
+		try {
+			s = schoepfer != null ? format(schoepfer) + ". " : "";
+		} catch (final IllFormattedLineException e) {
+			s = "";
+		}
+		String rest;
+		try {
+			rest = format(pair.second);
+		} catch (final IllFormattedLineException e) {
+			return null;
+		}
+		return s + rest;
+
 	}
 
 	/**
@@ -155,16 +235,21 @@ public class RDAFormatter {
 		RangeCheckUtils.assertReferenceParamNotNull("line", line);
 
 		final Tag tag = line.getTag();
-		if (tag == GNDTagDB.TAG_100 || tag == GNDTagDB.TAG_400)
+		if (tag == GNDTagDB.TAG_100 || tag == GNDTagDB.TAG_400) {
 			return StringUtils.unicodeComposition(format100(line));
-		if (tag == GNDTagDB.TAG_111 || tag == GNDTagDB.TAG_411)
+		}
+		if (tag == GNDTagDB.TAG_111 || tag == GNDTagDB.TAG_411) {
 			return StringUtils.unicodeComposition(format111(line));
-		if (tag == GNDTagDB.TAG_130 || tag == GNDTagDB.TAG_430)
+		}
+		if (tag == GNDTagDB.TAG_130 || tag == GNDTagDB.TAG_430) {
 			return StringUtils.unicodeComposition(format130(line));
-		if (tag == GNDTagDB.TAG_151 || tag == GNDTagDB.TAG_451)
+		}
+		if (tag == GNDTagDB.TAG_151 || tag == GNDTagDB.TAG_451) {
 			return StringUtils.unicodeComposition(format151(line));
-		if (tag == GNDTagDB.TAG_548)
+		}
+		if (tag == GNDTagDB.TAG_548) {
 			return StringUtils.unicodeComposition(format548(line));
+		}
 
 		if (tag == GNDTagDB.TAG_110 || tag == GNDTagDB.TAG_410 || tag == GNDTagDB.TAG_150 || tag == GNDTagDB.TAG_450
 				|| tag == GNDTagDB.TAG_153) {
@@ -186,28 +271,31 @@ public class RDAFormatter {
 		for (final Subfield subfield : subs) {
 			final Indicator indicator = subfield.getIndicator();
 			if (excIndSet.contains(indicator)) {
-				if (inBracket == false)
+				if (inBracket == false) {
 					s += " (";
-				else
+				} else {
 					s += " : ";
+				}
 				inBracket = true;
 				final String content = getContentWithoutBrackets(subfield);
 				s += content;
 			} else {
-				if (inBracket == true)
+				if (inBracket == true) {
 					s += ")";
+				}
 				inBracket = false;
 				s += formatStandard(subfield);
 			}
 		}
-		if (inBracket == true)
+		if (inBracket == true) {
 			s += ")";
+		}
 		return s;
 	}
 
 	private String format130(final Line line) throws IllFormattedLineException {
 		final String s = formatSubfields(line.getSubfields());
-		final String idn = WorkUtils.getAuthorID(actualRecord);
+		final String idn = actualRecord != null ? WorkUtils.getAuthorID(actualRecord) : null;
 		String p = "";
 		if (idn != null) {
 			final Record personRecord = RecordUtils.readFromPortal(idn);
@@ -227,14 +315,17 @@ public class RDAFormatter {
 
 	private String format100(final Line line) {
 		final String p = formatSubfields(line.getSubfields());
-		Line line548 = null;
-		try {
-			line548 = PersonUtils.getDatlLine(actualRecord);
-		} catch (IllegalStateException e) {// nix
-		}
 		String d = "";
-		if (line548 != null) {
-			d = ", " + format548(line548);
+		if (useBio) {
+			Line line548 = null;
+			try {
+				line548 = PersonUtils.getDatlLine(actualRecord);
+			} catch (final IllegalStateException e) {// nix
+			}
+
+			if (line548 != null) {
+				d = ", " + format548(line548);
+			}
 		}
 		return p + d;
 	}
@@ -248,15 +339,17 @@ public class RDAFormatter {
 		final Pair<List<Subfield>, List<Subfield>> lists = FilterUtils.divide(subs,
 				isInIndicatorList(GNDTagDB.INDICATOR_548_A, GNDTagDB.INDICATOR_548_B));
 		final List<Subfield> ab = lists.first;
-		if (ab.isEmpty())
+		if (ab.isEmpty()) {
 			return formatSubfields(lists.second);
+		}
 
 		String span = "-";
 		for (final Subfield subfield : ab) {
-			if (subfield.getIndicator() == GNDTagDB.INDICATOR_548_A)
+			if (subfield.getIndicator() == GNDTagDB.INDICATOR_548_A) {
 				span = subfield.getContent() + "-";
-			else
+			} else {
 				span += subfield.getContent();
+			}
 		}
 		return span;
 	}
@@ -280,9 +373,9 @@ public class RDAFormatter {
 	public final String formatStandard(final Subfield subfield) {
 		final Indicator indicator = subfield.getIndicator();
 		final Pair<String, String> pair = getPreAndPost(indicator);
-		if (pair == null)
+		if (pair == null) {
 			return "";
-		else {
+		} else {
 			final String content = getContentWithoutBrackets(subfield);
 			return pair.first + content + pair.second;
 		}
@@ -298,11 +391,12 @@ public class RDAFormatter {
 	public String getContentWithoutBrackets(final Subfield subfield) {
 		String content = subfield.getContent();
 		final Indicator indicator = subfield.getIndicator();
-		if (REMOVE_BRACKETS)
+		if (REMOVE_BRACKETS) {
 			if (indicator == GNDTagDB.DOLLAR_G) {
 				content = content.replace(" (", ", ");
 				content = content.replace(")", "");
 			}
+		}
 		return content;
 	}
 
@@ -349,8 +443,9 @@ public class RDAFormatter {
 		try {
 			Line line = GNDUtils.getHeading(record);
 			line = SubfieldUtils.getNewLineRemovingSubfields(line, 'v');
-			if (line == null)
+			if (line == null) {
 				return null;
+			}
 			final RDAFormatter rdaFormatter = new RDAFormatter(record);
 			return rdaFormatter.format(line);
 		} catch (final Exception e) {
@@ -396,8 +491,9 @@ public class RDAFormatter {
 		lines.forEach(line -> {
 			try {
 				line = SubfieldUtils.getNewLineRemovingSubfields(line, 'T', 'U', 'L', '4', '5', 'v');
-				if (line == null)
+				if (line == null) {
 					return;
+				}
 				final String verweis = rdaFormatter.format(line);
 				verweise.add(verweis);
 			} catch (final Exception e) {
@@ -411,8 +507,6 @@ public class RDAFormatter {
 	public static void main(final String[] args) throws IllFormattedLineException {
 		final Record record = RecordUtils.readFromClip();
 		System.out.println(getPureRDAHeading(record));
-		System.out.println(getRDAHeading(record));
-		System.out.println(getReineRDAVerweise(record));
 	}
 
 }

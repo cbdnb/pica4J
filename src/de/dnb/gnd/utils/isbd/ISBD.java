@@ -64,57 +64,65 @@ public class ISBD implements Comparable<ISBD> {
 	String hsVermerk;
 	String isbnEAN;
 
+	// NSW
+	String listeNSW;
+
 	@Override
 	public String toString() {
 		List<String> zeilen = new ArrayList<>();
-		String zeile1 = "<" + dhs.getDDCString();
-		for (SG sg : dns) {
-			zeile1 += ";" + sg.getDDCString();
+
+		String zeile1 = "";
+		if (dhs != null) {
+			zeile1 = "<" + dhs.getDDCString();
+			for (SG sg : dns) {
+				zeile1 += ";" + sg.getDDCString();
+			}
+			zeile1 += ">";
 		}
-		zeile1 += ">";
 		if (lc != null)
 			zeile1 += "\t" + lc;
-		zeilen.add("z1> "+zeile1);
+		if (!StringUtils.isNullOrEmpty(zeile1))
+			zeilen.add("z1> " + zeile1);
 
 		String zeile2 = zumKatalog != null ? zumKatalog.url : "";
 		if (neNr != null)
 			zeile2 += "\t" + neNr;
-		zeilen.add("z2> "+zeile2);
+		zeilen.add("z2> " + zeile2);
 
 		if (schoepfer != null)
-			zeilen.add("Schöpfer> "+schoepfer + ":");
+			zeilen.add("Schöpfer> " + schoepfer + ":");
 
 		String zeile4 = (est != null ? "[" + est + "] " : "") + titel;
 		if (verantwortlichkeit != null)
 			zeile4 += " / " + verantwortlichkeit;
 		if (zaehlung != null)
 			zeile4 += " - " + zaehlung;
-		zeilen.add("z4> "+zeile4);
+		zeilen.add("z4> " + zeile4);
 
 		String zeile5 = (ausgabebezeichnung != null ? ausgabebezeichnung + " - " : "") + veroeffentlichungsangaben
 				+ (datum != null ? ", " + datum : "");
 		if (!StringUtils.isNullOrWhitespace(weitereVeroeffAng))
 			zeile5 += ". - " + weitereVeroeffAng;
-		zeilen.add("z5> "+zeile5);
-
-		if (anmerkung != null)
-			zeilen.add("Anmerkung> "+anmerkung);
+		zeilen.add("z5> " + zeile5);
 
 		String zeile6 = fruehereHaupttitel != null ? fruehereHaupttitel : "";
 		if (repro != null)
 			zeile6 += " . - " + repro;
 		if (!StringUtils.isNullOrWhitespace(zeile6))
-			zeilen.add("z6> "+zeile6);
-		
-		if(anmerkungFortlaufend!=null)
-			zeilen.add("Anm. forlaufend> "+anmerkungFortlaufend);
+			zeilen.add("z6> " + zeile6);
+
+		if (anmerkungFortlaufend != null)
+			zeilen.add("Anm. forlaufend> " + anmerkungFortlaufend);
 
 		List<String> umfetc = new ArrayList<>();
 		if (umfang != null)
-			umfetc.add("Umfang> "+umfang);
+			umfetc.add("Umfang> " + umfang);
 		if (issn != null)
-			umfetc.add("ISSN> "+issn);
+			umfetc.add("ISSN> " + issn);
 		zeilen.add(StringUtils.concatenate(" - ", umfetc));
+
+		if (anmerkung != null)
+			zeilen.add("Anmerkung> " + anmerkung);
 
 		if (gesamt != null)
 			zeilen.add(gesamt);
@@ -130,7 +138,10 @@ public class ISBD implements Comparable<ISBD> {
 				zeile9 = isbnEAN;
 		}
 		if (zeile9 != null)
-			zeilen.add(zeile9);
+			zeilen.add("ISBN> " + zeile9);
+
+		if (listeNSW != null)
+			zeilen.add("NSW> " + listeNSW);
 
 		return Util.entferneKlammeraffe(zeilen.stream().collect(Collectors.joining("\n")));
 

@@ -62,6 +62,8 @@ public class Builder {
 
 		isbd.hsVermerk = Util.hsVermerk(record);
 		isbd.isbnEAN = Util.isbn(record);
+		
+		isbd.listeNSW = Util.listeNSW(record);
 
 		return isbd;
 	}

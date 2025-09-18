@@ -39,6 +39,7 @@ import de.dnb.gnd.parser.Record;
 import de.dnb.gnd.parser.RecordReader;
 import de.dnb.gnd.parser.Subfield;
 import de.dnb.gnd.parser.line.Line;
+import de.dnb.gnd.parser.line.LineFactory;
 import de.dnb.gnd.parser.line.LineParser;
 import de.dnb.gnd.parser.tag.GNDTagDB;
 import de.dnb.gnd.parser.tag.Tag;
@@ -95,10 +96,11 @@ public final class GNDUtils {
 	 */
 	public static Line getHeading(final Record record) {
 		final List<Line> lines = getLines1XX(record);
-		if (lines.size() == 1)
+		if (lines.size() == 1) {
 			return lines.get(0);
-		else
+		} else {
 			throw new IllegalStateException("Anzahl der 1XX ungleich 1");
+		}
 	}
 
 	/**
@@ -231,7 +233,7 @@ public final class GNDUtils {
 
 	/**
 	 * Gibt alle Zeilen, deren $4 mit prefix anfängt.
-	 * 
+	 *
 	 * @param lines  nicht null
 	 * @param prefix nicht null
 	 * @return nicht null
@@ -267,7 +269,7 @@ public final class GNDUtils {
 		return getOBB(record).stream().map(line -> SubfieldUtils.getContentOfFirstSubfield(line, '9'))
 				.filter(IDNUtils::isKorrektePPN).map(IDNUtils::ppn2int).collect(Collectors.toList());
 	}
-	
+
 	/**
 	 * Gibt alle IDNs der relationierten Begriffe, also der 5XX-Zeilen.
 	 *
@@ -309,10 +311,11 @@ public final class GNDUtils {
 	 */
 	public static ArrayList<Line> getMXLines(final Record record) {
 		final Field field901 = RecordUtils.getFieldGivenAsString(record, "901");
-		if (field901 != null)
+		if (field901 != null) {
 			return new ArrayList<Line>(field901.getLines());
-		else
+		} else {
 			return new ArrayList<Line>();
+		}
 	}
 
 	public static boolean containsMX(final Record record) {
@@ -327,10 +330,11 @@ public final class GNDUtils {
 	 */
 	public static ArrayList<Line> getOriginalHeadingLines(final Record record) {
 		final Field field913 = RecordUtils.getFieldGivenAsString(record, "913");
-		if (field913 != null)
+		if (field913 != null) {
 			return new ArrayList<Line>(field913.getLines());
-		else
+		} else {
 			return new ArrayList<Line>();
+		}
 	}
 
 	/**
@@ -341,10 +345,11 @@ public final class GNDUtils {
 	 */
 	public static ArrayList<Line> getValidDDCLines(final Record record) {
 		final Field field083 = RecordUtils.getFieldGivenAsString(record, "083");
-		if (field083 != null)
+		if (field083 != null) {
 			return new ArrayList<Line>(field083.getLines());
-		else
+		} else {
 			return new ArrayList<Line>();
+		}
 	}
 
 	/**
@@ -355,10 +360,11 @@ public final class GNDUtils {
 	 */
 	public static ArrayList<Line> getDeprecatedDDCLines(final Record record) {
 		final Field field089 = RecordUtils.getFieldGivenAsString(record, "089");
-		if (field089 != null)
+		if (field089 != null) {
 			return new ArrayList<Line>(field089.getLines());
-		else
+		} else {
 			return new ArrayList<Line>();
+		}
 	}
 
 	/**
@@ -445,7 +451,7 @@ public final class GNDUtils {
 
 	/**
 	 * splitted Feldinhalt in Information + Kommentar.
-	 * 
+	 *
 	 * @param line nicht null.
 	 * @return Paar aus a) Information(en) und b) Kommentar(en) als Strings.
 	 */
@@ -458,7 +464,7 @@ public final class GNDUtils {
 
 	/**
 	 * splitted Feldinhalt in Information + Kommentar.
-	 * 
+	 *
 	 * @param line nicht null.
 	 * @return Paar aus a) Information(en) und b) Kommentar(en).
 	 */
@@ -470,7 +476,7 @@ public final class GNDUtils {
 
 	/**
 	 * Liefert den ersten Kommentar.
-	 * 
+	 *
 	 * @param line nicht null
 	 * @return ersten Kommentar oder null.
 	 */
@@ -538,7 +544,7 @@ public final class GNDUtils {
 	 * <li>"g" - Geografikum
 	 * <li>"s" - Sachbegriff
 	 * <li>"c" - Crisscross
-	 * 
+	 *
 	 * @param record nicht null
 	 * @return Satztyp oder 0, wenn nicht enthalten. 0 auch bei Titeldaten.
 	 */
@@ -565,18 +571,20 @@ public final class GNDUtils {
 
 	/**
 	 * Gibt Pos.3: Katalogisierungslevel von Feld 005.
-	 * 
+	 *
 	 * @param record nicht null
 	 * @return 1-7, 0 für 'z'; -48, wenn nicht enthalten
 	 */
 	public static int getLevel(final Record record) {
 		final char levelChar = RecordUtils.getDatatypeCharacterAt(record, 2);
-		if (levelChar == 'z')
+		if (levelChar == 'z') {
 			return 0;
+		}
 		int level = levelChar - ('0');
 		// wenn getDatatype ... den Wert 0 liefert, wird level -'0' = -48:
-		if (level < 0)
+		if (level < 0) {
 			level = -level;
+		}
 		return level;
 	}
 
@@ -614,7 +622,7 @@ public final class GNDUtils {
 
 	/**
 	 * Gibt die Entitätencodierung(en).
-	 * 
+	 *
 	 * @param record nicht null. *
 	 * @return nicht null. Eventuell leer, wenn Titeldaten.
 	 */
@@ -624,9 +632,9 @@ public final class GNDUtils {
 
 	/**
 	 * Enthält der Datensatz überhaupt Entitätencodierungen?
-	 * 
+	 *
 	 * @param record nicht null
-	 * @return	false, wenn keine vorhanden, was aber auch an Titeldaten liegen kann.
+	 * @return false, wenn keine vorhanden, was aber auch an Titeldaten liegen kann.
 	 */
 	public static boolean containsEntityTypes(final Record record) {
 		return !getEntityTypes(record).isEmpty();
@@ -636,7 +644,8 @@ public final class GNDUtils {
 	 *
 	 * @param record     nicht null
 	 * @param entityCode
-	 * @return Enthält der Datensatz Entitätencodierung entityCode? false auch bei Titeldaten.
+	 * @return Enthält der Datensatz Entitätencodierung entityCode? false auch bei
+	 *         Titeldaten.
 	 */
 	public static boolean containsEntityType(final Record record, final String entityCode) {
 		final List<String> ents = getEntityTypes(record);
@@ -645,7 +654,7 @@ public final class GNDUtils {
 
 	/**
 	 * Gibt die GND-URI(s).
-	 * 
+	 *
 	 * @param record nicht null.
 	 *
 	 * @return nicht null. Leer auch bei Titeldaten.
@@ -669,7 +678,7 @@ public final class GNDUtils {
 
 	/**
 	 * Liefert zu einem Tag den Grundtag (z.B. 500 -> 100).
-	 * 
+	 *
 	 * @param tag nicht null
 	 * @return auch null, wenn nichts vorhanden
 	 */
@@ -697,10 +706,12 @@ public final class GNDUtils {
 			// Vielleicht ist die Quelle der Datenabzug:
 			final List<Subfield> subfields = SubfieldUtils.getNamingRelevantSubfields(line);
 			final Tag tag = getNamingRelevantTag(line.getTag());
-			if (tag == null)
+			if (tag == null) {
 				throw new IllegalArgumentException("Zeile hat kein korrespondierendes 1XX");
-			if (!subfields.isEmpty())
+			}
+			if (!subfields.isEmpty()) {
 				name = RecordUtils.toPicaWithoutTag(tag, subfields);
+			}
 		}
 		return name;
 	}
@@ -716,23 +727,24 @@ public final class GNDUtils {
 	public static String getNameOfRecord(final Record record) {
 		RangeCheckUtils.assertReferenceParamNotNull("record", record);
 		String name;
-		if (WorkUtils.isWork(record))
+		if (WorkUtils.isWork(record)) {
 			name = WorkUtils.getExpansionTitle(record);
-		else {
+		} else {
 			final Line line1XX = getHeading(record);
 			final List<Subfield> subs = line1XX.getSubfields();
 			final List<Subfield> relevant = SubfieldUtils.getRelevanteUnterfelder(subs);
 			name = RecordUtils.toPicaWithoutTag(line1XX.getTag(), relevant, Format.PICA3, false, '$');
 		}
 		// Führendes $ entfernen:
-		if (name.startsWith("" + Constants.DOLLAR) || name.startsWith("" + Constants.FLORIN))
+		if (name.startsWith("" + Constants.DOLLAR) || name.startsWith("" + Constants.FLORIN)) {
 			name = name.substring(2);
+		}
 		return name;
 	}
 
 	/**
 	 * Gibt die Teilbestandskennzeichen (011).
-	 * 
+	 *
 	 * @param record nicht null.
 	 *
 	 * @return nicht null. Leer auch bei Titeldaten.
@@ -752,7 +764,7 @@ public final class GNDUtils {
 
 	/**
 	 * Gibt die Nutzungskennzeichen (012).
-	 * 
+	 *
 	 * @param record nicht null.
 	 *
 	 * @return nicht null. Leer auch bei Titeldaten.
@@ -830,8 +842,9 @@ public final class GNDUtils {
 			} else {
 				// 1. Versuch: im Datensatz selbst suchen:
 				final Point2D koo = getCenterPointCoordinates(record);
-				if (koo != null)
+				if (koo != null) {
 					return koo;
+				}
 				// 2. Versuch: Vorgänger und Nachfolger durchsuchen, hintendran Oberbegriffe.
 				final List<Line> lines = RecordUtils.getLinesWithSubfield(record, "551", '4', "vorg|nach");
 				lines.addAll(RecordUtils.getLinesWithSubfield(record, "551", '4', "obpa"));
@@ -859,15 +872,17 @@ public final class GNDUtils {
 	 */
 	public static Point2D getCenterPointCoordinates(final Record record) {
 		boolean isDecimal = true;
-		if (getRecordType(record) != 'g')
+		if (getRecordType(record) != 'g') {
 			return null;
+		}
 		List<Line> lines = RecordUtils.getLinesWithSubfield(record, "034", 'A', "d..");
 		if (lines.isEmpty()) {
 			lines = RecordUtils.getLinesWithSubfield(record, "034", 'A', "a..");
 			isDecimal = false;
 		}
-		if (lines.isEmpty())
+		if (lines.isEmpty()) {
 			return null;
+		}
 		// Hoffentlich nur eine:
 		final Line line = lines.get(0);
 		final String x1s = SubfieldUtils.getContentOfFirstSubfield(line, 'd');
@@ -879,8 +894,9 @@ public final class GNDUtils {
 		final Double y1 = isDecimal ? parseDecimal(y1s) : analog2decimal(y1s);
 		final Double y2 = isDecimal ? parseDecimal(y2s) : analog2decimal(y2s);
 		// Shortcut, könnte man natürlich noch genauer analysieren:
-		if (x1 == null || x2 == null || y1 == null || y2 == null)
+		if (x1 == null || x2 == null || y1 == null || y2 == null) {
 			return null;
+		}
 
 		final double x = (x1 + x2) / 2.0;
 		final double y = (y1 + y2) / 2.0;
@@ -934,16 +950,18 @@ public final class GNDUtils {
 			anfangUnsicher = StringUtils.contains(subAnf, "X", true);
 			endeUnsicher = StringUtils.contains(subEnd, "X", true);
 			if (datAnf != null) {
-				if (datEnd != null)
+				if (datEnd != null) {
 					daten = Between.getOrdered(datAnf, datEnd);
-				else
+				} else {
 					daten = new Between<LocalDate>(datAnf, LocalDate.MAX);
+				}
 			} else {// data = null
 				datAnf = LocalDate.MIN;
-				if (datEnd != null)
+				if (datEnd != null) {
 					daten = new Between<LocalDate>(datAnf, datEnd);
-				else
+				} else {
 					daten = new Between<LocalDate>(datAnf, LocalDate.MAX);
+				}
 			}
 		}
 		return new Triplett<Between<LocalDate>, Boolean, Boolean>(daten, anfangUnsicher, endeUnsicher);
@@ -971,7 +989,7 @@ public final class GNDUtils {
 
 	/**
 	 * Gibt die GND-Systematik-Nummern.
-	 * 
+	 *
 	 * @param record nicht null.
 	 *
 	 * @return nicht null. Leer auch bei Titeldaten.
@@ -992,7 +1010,7 @@ public final class GNDUtils {
 
 	/**
 	 * Enthält der Datensatz die Systematiknummer?
-	 * 
+	 *
 	 * @param record         nicht null.
 	 * @param classification beleibig.
 	 * @return true, wenn eine der Systematiknummern mit classification
@@ -1005,7 +1023,7 @@ public final class GNDUtils {
 
 	/**
 	 * Enthält der Datensatz eine der Systematiknummern?
-	 * 
+	 *
 	 * @param record          nicht null.
 	 * @param classifications beliebig.
 	 * @return true, wenn eine der Systematiknummern des Datensatzes mit einer der
@@ -1013,15 +1031,16 @@ public final class GNDUtils {
 	 */
 	public static boolean containsGNDClassifications(final Record record, final String... classifications) {
 		for (final String classification : classifications) {
-			if (containsGNDClassification(record, classification))
+			if (containsGNDClassification(record, classification)) {
 				return true;
+			}
 		}
 		return false;
 	}
 
 	/**
 	 * Enthält der Datensatz die Systematiknummer trunkiert?
-	 * 
+	 *
 	 * @param record          nicht null.
 	 * @param classifications nicht null.
 	 * @return true, wenn eine der Systematiknummern mit einer der classifications
@@ -1035,7 +1054,7 @@ public final class GNDUtils {
 
 	/**
 	 * Gibt die Ländercodes.
-	 * 
+	 *
 	 * @param record nicht null.
 	 *
 	 * @return nicht null. Leer auch bei Titeldaten.
@@ -1045,9 +1064,9 @@ public final class GNDUtils {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param record nicht null
-	 * @return	Ländercode enthalten? false auch bei Titeldaten.
+	 * @return Ländercode enthalten? false auch bei Titeldaten.
 	 */
 	public static boolean containsCountryCode(final Record record) {
 		return !getCountryCodes(record).isEmpty();
@@ -1064,7 +1083,7 @@ public final class GNDUtils {
 
 	/**
 	 * Gibt die Redaktionellen Bemerkungen aus 667.
-	 * 
+	 *
 	 * @param record nicht null.
 	 *
 	 * @return nicht null. Leer auch bei Titeldaten.
@@ -1080,10 +1099,11 @@ public final class GNDUtils {
 	 */
 	public static String getIsilUrheber(final Record record) {
 		final List<String> list = RecordUtils.getContentsOfFirstSubfields(record, "903", 'e');
-		if (list.isEmpty())
+		if (list.isEmpty()) {
 			return null;
-		else
+		} else {
 			return list.get(0);
+		}
 	}
 
 	/**
@@ -1093,13 +1113,15 @@ public final class GNDUtils {
 	 */
 	public static Library getUrheber(final Record record) {
 		final String isil = getIsilUrheber(record);
-		if (isil == null)
+		if (isil == null) {
 			return null;
+		}
 		final Library library = LibraryDB.getLibraryByISIL(isil);
-		if (library != null)
+		if (library != null) {
 			return library;
-		else
+		} else {
 			return new Library("?", "?", isil, "?");
+		}
 	}
 
 	/**
@@ -1109,10 +1131,11 @@ public final class GNDUtils {
 	 */
 	public static String getIsilVerbund(final Record record) {
 		final List<String> list = RecordUtils.getContentsOfFirstSubfields(record, "903", 'r');
-		if (list.isEmpty())
+		if (list.isEmpty()) {
 			return null;
-		else
+		} else {
 			return list.get(0);
+		}
 	}
 
 	/**
@@ -1122,18 +1145,20 @@ public final class GNDUtils {
 	 */
 	public static Library getVerbund(final Record record) {
 		final String isil = getIsilVerbund(record);
-		if (isil == null)
+		if (isil == null) {
 			return null;
+		}
 		final Library library = LibraryDB.getLibraryByISIL(isil);
-		if (library != null)
+		if (library != null) {
 			return library;
-		else
+		} else {
 			return new Library("?", "?", isil, "?");
+		}
 	}
 
 	/**
 	 * Gibt die Benutzungshinweise aus 680.
-	 * 
+	 *
 	 * @param record nicht null.
 	 *
 	 * @return nicht null. Leer auch bei Titeldaten.
@@ -1158,14 +1183,14 @@ public final class GNDUtils {
 	 * @param record nicht null. *
 	 * @return nicht null. Leer auch bei Titeldaten.
 	 */
-	public static List<Line> getSourceLines(final Record record) {		
+	public static List<Line> getSourceLines(final Record record) {
 		return RecordUtils.getLines(record, "670");
 	}
 
 	/**
-	 * 
+	 *
 	 * @param record nicht null
-	 * @return	Quellenangaben? false auch bei Titeldaten.
+	 * @return Quellenangaben? false auch bei Titeldaten.
 	 */
 	public static boolean containsSource(final Record record) {
 		return !getSourceLines(record).isEmpty();
@@ -1173,7 +1198,7 @@ public final class GNDUtils {
 
 	/**
 	 * Gibt die Negativ eingesehene Quellen.
-	 * 
+	 *
 	 * @param record nicht null.
 	 *
 	 * @return nicht null. Leer auch bei Titeldaten.
@@ -1184,7 +1209,7 @@ public final class GNDUtils {
 
 	/**
 	 * Gibt die Definitionen aus 677.
-	 * 
+	 *
 	 * @param record nicht null.
 	 *
 	 * @return nicht null. Leer auch bei Titeldaten.
@@ -1195,7 +1220,7 @@ public final class GNDUtils {
 
 	/**
 	 * Gibt die Bemerkungen aus 667, 670, 672, 675, 677, 678 und 680.
-	 * 
+	 *
 	 * @param record nicht null.
 	 *
 	 * @return nicht null. Leer auch bei Titeldaten.
@@ -1287,18 +1312,21 @@ public final class GNDUtils {
 	public static String toAleph(final char indicator, final String subContent, final String subfieldDescription,
 			final boolean explicit) {
 		String s;
-		if (explicit)
+		if (explicit) {
 			s = explicitSubfieldSep;
-		else
+		} else {
 			s = alephSubfieldSep;
+		}
 		s += indicator;
-		if (explicit)
+		if (explicit) {
 			s += explicitIndicatorContentSep;
-		else
+		} else {
 			s += alephIndicatorContentSep;
+		}
 		s += subContent;
-		if (explicit)
+		if (explicit) {
 			s += "\t\t" + subfieldDescription;
+		}
 		return s;
 	}
 
@@ -1337,7 +1365,7 @@ public final class GNDUtils {
 	 *
 	 * Default-Aleph-Darstellung eines relationierten Feldes. Das Feld muss
 	 * relationierte idn und Expansion enthalten.
-	 * 
+	 *
 	 * @param line     nicht null
 	 * @param finder   wenn null, dann wird die idn als GND-Nummer verwendet.
 	 * @param explicit TODO
@@ -1359,7 +1387,7 @@ public final class GNDUtils {
 	 *
 	 * Default-Aleph-Darstellung eines relationierten Feldes. Das Feld muss
 	 * relationierte idn und Expansion enthalten.
-	 * 
+	 *
 	 * @param tag       nicht null
 	 * @param subfields nicht null
 	 * @param finder    wenn null, dann wird die idn als GND-Nummer verwendet.
@@ -1372,10 +1400,12 @@ public final class GNDUtils {
 		RangeCheckUtils.assertReferenceParamNotNull("subfields", subfields);
 		final Subfield dollar8 = SubfieldUtils.getFirstSubfield(subfields, '8');
 		final Subfield dollar9 = SubfieldUtils.getFirstSubfield(subfields, '9');
-		if (dollar9 == null)
+		if (dollar9 == null) {
 			return "";
-		if (finder == null)
+		}
+		if (finder == null) {
 			finder = defaultFinder;
+		}
 		final List<Subfield> subList = SubfieldUtils.removeSubfieldsFromCollection(subfields, '8', '9');
 
 		String s = toAlephPrefix(tag.aleph, getAlephTagDescription(tag), explicit);
@@ -1403,10 +1433,11 @@ public final class GNDUtils {
 	 */
 	private static String toAlephPrefix(final String alephTag, final String description, final boolean explicit) {
 		String s = alephTag;
-		if (explicit)
+		if (explicit) {
 			s += description;
-		else
+		} else {
 			s += alephTagSubfieldSep;
+		}
 		return s;
 	}
 
@@ -1419,34 +1450,37 @@ public final class GNDUtils {
 	public static char getAlephIndicator(final String alephTag) {
 		RangeCheckUtils.assertReferenceParamNotNull("alephTag", alephTag);
 		char indChar;
-		if (alephTag.equals("500"))
+		if (alephTag.equals("500")) {
 			indChar = 'p';
-		else if (alephTag.equals("510"))
+		} else if (alephTag.equals("510")) {
 			indChar = 'k';
-		else if (alephTag.equals("511"))
+		} else if (alephTag.equals("511")) {
 			indChar = 'e';
-		else if (alephTag.equals("530"))
+		} else if (alephTag.equals("530")) {
 			indChar = 't';
-		else if (alephTag.equals("550"))
+		} else if (alephTag.equals("550")) {
 			indChar = 's';
-		else if (alephTag.equals("551"))
+		} else if (alephTag.equals("551")) {
 			indChar = 'g';
-		else
+		} else {
 			indChar = 'a';
+		}
 		return indChar;
 	}
 
 	public static String toAleph(final Record record, final GNDNumberFinder finder, final boolean explicit) {
 		assertGNDRecord(record);
-		if (record.tagDB != TAG_DB)
+		if (record.tagDB != TAG_DB) {
 			throw new IllegalArgumentException("Kein GND-Datensatz");
+		}
 
 		final Line authorLine = WorkUtils.getAuthorLine(record);
 		String authorName = null;
 		if (authorLine != null) {
 			authorName = SubfieldUtils.getContentOfFirstSubfield(authorLine, '8');
-			if (authorName == null) // keine Expansion dabei
+			if (authorName == null) { // keine Expansion dabei
 				authorName = "-Name nicht ermittelbar-";
+			}
 		}
 
 		final List<String> lines = new LinkedList<String>();
@@ -1493,7 +1527,7 @@ public final class GNDUtils {
 
 	/**
 	 * Liest einen Datensatz aus der Zwischenablage. Fehler werden ignoriert.
-	 * 
+	 *
 	 * @return neuen Datensatz oder null, wenn Clipboard nicht in String
 	 *         konvertierbar.
 	 */
@@ -1513,15 +1547,16 @@ public final class GNDUtils {
 		reader.forEach(record -> {
 			final List<Line> lines = RecordUtils.getLinesWithSubfield(record, "034", 'A', "d..");
 			lines.addAll(RecordUtils.getLinesWithSubfield(record, "034", 'A', "a.."));
-			if (lines.size() == 1 || lines.size() > 2)
+			if (lines.size() == 1 || lines.size() > 2) {
 				System.out.println(record.getId());
+			}
 		});
 	}
 
 	public static void main(final String[] args)
 			throws IllFormattedLineException, OperationNotSupportedException, IOException {
-		final Record record = RecordUtils.readFromClip();
-		System.out.println(getRelIdns(record));
+		final String s = StringUtils.readClipboard();
+		System.out.println(dollar8toline(s));
 	}
 
 	/**
@@ -1546,15 +1581,17 @@ public final class GNDUtils {
 	public static Double analog2decimal(String analog) {
 		analog = analog.trim();
 		final Matcher matcher = ANALOG_PAT.matcher(analog);
-		if (!matcher.matches())
+		if (!matcher.matches()) {
 			return null;
+		}
 		final String sign = matcher.group(1);
 		final int deg = Integer.parseInt(matcher.group(2));
 		final int min = Integer.parseInt(matcher.group(3));
 		final int sec = Integer.parseInt(matcher.group(4));
 		double decimal = toDecimal(deg, min, sec);
-		if (sign.equals("W") || sign.equals("S"))
+		if (sign.equals("W") || sign.equals("S")) {
 			decimal = -decimal;
+		}
 		return decimal;
 	}
 
@@ -1568,13 +1605,15 @@ public final class GNDUtils {
 	public static Double parseDecimal(String analog) {
 		analog = analog.trim();
 		final Matcher matcher = DECIMAL_PAT.matcher(analog);
-		if (!matcher.matches())
+		if (!matcher.matches()) {
 			return null;
+		}
 		final String sign = matcher.group(1);
 
 		double value = Double.parseDouble(matcher.group(2));
-		if (sign.equals("W") || sign.equals("S"))
+		if (sign.equals("W") || sign.equals("S")) {
 			value = -value;
+		}
 		return value;
 	}
 
@@ -1588,8 +1627,9 @@ public final class GNDUtils {
 			final Subfield subfield4 = SubfieldUtils.getFirstSubfield(line, '4');
 			final String subCont = subfield4.getContent();
 			return subCont.equals(dollar4);
-		} else
+		} else {
 			return false;
+		}
 	}
 
 	/**
@@ -1662,7 +1702,7 @@ public final class GNDUtils {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param record nicht null
 	 * @return Ts1, Tc, Tu1e ....
 	 */
@@ -1671,22 +1711,22 @@ public final class GNDUtils {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param record nicht null
 	 * @return Alle Vorgänger und Nachfolger (vorg|nach) im Feld 510.
 	 */
-	public static Collection<Line> getPrePostLines(Record record) {
+	public static Collection<Line> getPrePostLines(final Record record) {
 		return RecordUtils.getLinesWithSubfield(record, "510", '4', "vorg|nach");
 	}
 
 	/**
-	 * 
+	 *
 	 * @param record nicht null
 	 * @return alle idns von Körperschaften, die mit record als Vorgänger und
 	 *         Nachfolger verbunden sind.
 	 */
-	public static Collection<Integer> getVorgNachf(Record record) {
-		Collection<Line> lines = getPrePostLines(record);
+	public static Collection<Integer> getVorgNachf(final Record record) {
+		final Collection<Line> lines = getPrePostLines(record);
 		return RecordUtils.extractIDNints(lines);
 	}
 
@@ -1695,7 +1735,7 @@ public final class GNDUtils {
 	 * Biel$gBern", so darf nicht "Bezirk Biel (Bern)" eingesetzt werden, sondern es
 	 * muss heißen: "Bezirk Biel, Bern". Allerdings werden zunächst nur $a und $g
 	 * berücksichtigt. $x nicht!
-	 * 
+	 *
 	 * @param record nicht null
 	 * @return Name eines Geogrfikums, der in ein Unterfeld eingesetzt werden kann.
 	 */
@@ -1704,9 +1744,92 @@ public final class GNDUtils {
 		final Line headingline = getHeading(record);
 		name = SubfieldUtils.getContentOfFirstSubfield(headingline, 'a');
 		final String dollarg = SubfieldUtils.getContentOfFirstSubfield(headingline, 'g');
-		if (dollarg != null)
+		if (dollarg != null) {
 			name += ", " + dollarg;
+		}
 		return StringUtils.unicodeComposition(name);
-
 	}
+
+	/**
+	 *
+	 * @param s nicht null, von der Art: "Herzogenberg, Heinrich$cvon
+	 *          [Tp1]$aDie @Geburt Christi [Tu1]"
+	 * @return (typ, rest), hier also ("u", "Herzogenberg, Heinrich$cvon
+	 *         [Tp1]$aDie @Geburt Christi")
+	 */
+	private static Pair<String, String> breakExpansion(final String s) {
+		final Pattern pattern = Pattern.compile("(.+) \\[T(.)[z1-9]\\]");
+		final Matcher matcher = pattern.matcher(s);
+		if (matcher.matches()) {
+			final String swString = matcher.group(1);
+			final String typ = matcher.group(2);
+			return new Pair<String, String>(typ, swString);
+		}
+		return null;
+	}
+
+	/**
+	 *
+	 * @param dollar8 expansion, auch null
+	 * @return (Schöpfer/null, GND-Begriff/Werk) oder null im Nichterfolgsfall
+	 */
+	public static Pair<Line, Line> dollar8toline(final String dollar8) {
+		if (dollar8 == null) {
+			return null;
+		}
+		final Pair<String, String> pair = breakExpansion(dollar8);
+		if (pair == null) {
+			return null;
+		}
+		Tag tag;
+		String expansion = pair.second;
+		final String typ = pair.first;
+		Line schoepfer = null;
+		switch (typ) {
+		case "b":
+			tag = GNDTagDB.TAG_110;
+			break;
+		case "f":
+			tag = GNDTagDB.TAG_111;
+			break;
+		case "g":
+			tag = GNDTagDB.TAG_151;
+			break;
+		case "p":
+			tag = GNDTagDB.TAG_100;
+			break;
+		case "s":
+			tag = GNDTagDB.TAG_150;
+			break;
+		case "u":
+			tag = GNDTagDB.TAG_130;
+			// Nach Schöpfer suchen:
+			final int pos = expansion.indexOf("$a");
+			if (pos == -1) {
+				break;
+			}
+			final String schoepStr = expansion.substring(0, pos);
+			expansion = expansion.substring(pos + 2);
+			if (StringUtils.isNullOrEmpty(schoepStr)) {
+				break;
+			}
+			final Pair<Line, Line> schoepfPair = dollar8toline(schoepStr);
+			if (schoepfPair == null) {
+				break;
+			}
+			schoepfer = schoepfPair.second;
+			break;
+		default:
+			return null;
+		}
+		try {
+			final LineFactory factory = tag.getLineFactory();
+			factory.load(expansion);
+			final Line line = factory.createLine();
+			return new Pair<Line, Line>(schoepfer, line);
+		} catch (final IllFormattedLineException e) {
+			return null;
+		}
+	}
+
 }

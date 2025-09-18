@@ -250,18 +250,18 @@ public final class SubfieldUtils {
   }
 
   /**
-   * Liefert zu einer Zeile und einem Indikator alle
-   * Unterfelder mit diesem Indikator. Ergebnis kann als gefilterte Zeile
+   * Liefert zu einer Zeile und den Indikatoren alle
+   * Unterfelder mit diesen Indikatoren. Ergebnis kann als gefilterte Zeile
    * einer Tabelle aufgefasst werden.
    *
    * @param line		nicht null.
-   * @param indicator	beliebig.
+   * @param indicators	beliebig.
    *
    * @return			Neue Liste, nicht null, modifizierbar.
    */
-  public static List<Subfield> getSubfields(final Line line, final char indicator) {
-    RangeCheckUtils.assertReferenceParamNotNull("line", line);
-    return SubfieldUtils.getSubfieldsFromCollection(line.getSubfields(), indicator);
+  public static List<Subfield> getSubfields(final Line line, final Character... indicators) {
+    RangeCheckUtils.assertReferenceParamNotNull("line", line);    
+    return SubfieldUtils.getSubfields(line, Arrays.asList(indicators));
   }
 
   /**
