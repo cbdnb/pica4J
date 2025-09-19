@@ -56,7 +56,7 @@ public class Builder {
 		});
 
 		isbd.umfang = Util.umfang(record);
-		isbd.gesamt = Util.gesamttitel(record);
+		isbd.gesamttitel = Util.gesamttitel(record);
 		isbd.anmerkung = Util.anmerkung(record);
 		isbd.anmerkungFortlaufend = Util.anmerkungFortlaufend(record);
 
