@@ -62,6 +62,10 @@ public class ISBD implements Comparable<ISBD> {
 	String hsVermerk;
 	String isbnEAN;
 
+	// RSWK, DDC
+	String rswk;
+	String ddc;
+
 	// NSW
 	String listeNSW;
 
@@ -154,6 +158,14 @@ public class ISBD implements Comparable<ISBD> {
 		}
 		if (zeile9 != null) {
 			zeilen.add("ISBN> " + zeile9);
+		}
+
+		if (rswk != null) {
+			zeilen.add("RSWK> " + rswk);
+		}
+
+		if (ddc != null) {
+			zeilen.add("DDC> " + ddc);
 		}
 
 		if (listeNSW != null) {

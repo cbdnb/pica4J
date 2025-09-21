@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
 
 import de.dnb.basics.applicationComponents.strings.StringUtils;
 import de.dnb.basics.applicationComponents.tuples.Pair;
+import de.dnb.basics.filtering.FilterUtils;
 import de.dnb.gnd.exceptions.IllFormattedLineException;
 import de.dnb.gnd.parser.Indicator;
 import de.dnb.gnd.parser.Record;
@@ -18,6 +19,7 @@ import de.dnb.gnd.parser.tag.GNDTagDB;
 import de.dnb.gnd.utils.BibRecUtils;
 import de.dnb.gnd.utils.RecordUtils;
 import de.dnb.gnd.utils.SubfieldUtils;
+import de.dnb.gnd.utils.SubjectUtils;
 import de.dnb.gnd.utils.formatter.RDAFormatter;
 
 public class Util {
@@ -482,9 +484,46 @@ public class Util {
 		return dollara + rest;
 	}
 
-//	public static void main(String[] args) {
-//		Record record = RecordUtils.readFromClip();
-//		System.out.println(isbn(record));
-//	}
+	/**
+	 *
+	 * @param rswkLine
+	 * @return RDA-gerechte Darstellung aus $8 (dann wird der Typ ausgewertet) oder
+	 *         $a.
+	 */
+	private static String toSw(final Line rswkLine) {
+		final String dollar8 = SubfieldUtils.getContentOfFirstSubfield(rswkLine, '8');
+		if (dollar8 != null) {
+			return RDAFormatter.formatExpansion(dollar8);
+		} else {
+			final String dollara = SubfieldUtils.getContentOfFirstSubfield(rswkLine, 'a');
+			System.err.println(dollara);
+			if (dollara == null) {
+				return null;
+			} else {
+				return dollara.replaceAll("^[zf] ", "");
+			}
+		}
+
+	}
+
+	public static String rswk(final Record record) {
+		final List<String> seqsStr = new ArrayList<>();
+		final List<List<Line>> secs = SubjectUtils.getRSWKSequences(record);
+		secs.forEach(seq -> {
+			final List<String> sww = FilterUtils.mapNullFiltered(seq, Util::toSw);
+			if (!sww.isEmpty()) {
+				seqsStr.add(StringUtils.concatenate(" ; ", sww));
+			}
+		});
+		if (seqsStr.isEmpty()) {
+			return null;
+		}
+		return StringUtils.concatenate(" ◊ ", seqsStr);
+	}
+
+	public static void main(final String[] args) {
+		final Record record = RecordUtils.readFromClip();
+		System.out.println(rswk(record));
+	}
 
 }
