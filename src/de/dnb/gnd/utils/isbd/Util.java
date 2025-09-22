@@ -78,7 +78,15 @@ public class Util {
 		return koerperschaft;
 	}
 
-	private static String normalisiereKoeVeranst(String creator) {
+	/**
+	 *
+	 * @param creator nicht null
+	 * @return Ersetzt $b durch ". ", klammert alles ab $dgn bis zum Ende ein und
+	 *         ersetzt die restlichen $. durch ", ". Das ist so nicht mehr
+	 *         RDA-gerecht.
+	 */
+	@Deprecated
+	public static String normalisiereKoeVeranst(String creator) {
 		creator = StringUtils.unicodeComposition(creator);
 		creator = entferneTxx(creator);
 		// Unterfeld $b durch Deskriptionszeichen ". " ersetzen:
@@ -145,7 +153,8 @@ public class Util {
 	/**
 	 *
 	 * @param record nicht null
-	 * @return Einheitssachtitel aus 3210/3220, $8 oder Unterfeldern oder null
+	 * @return Einheitssachtitel aus 3210/3220, $8 oder Unterfeldern oder null. Man
+	 *         könnte (sollte?) auch hier den RDAFormatter benutzen - mal sehen!
 	 */
 	public static String getEST(final Record record) {
 		// Einfachster Fall
@@ -219,7 +228,8 @@ public class Util {
 		return est;
 	}
 
-	private static String normalisierePerson(String creator) {
+	@Deprecated
+	public static String normalisierePerson(String creator) {
 		creator = StringUtils.unicodeComposition(creator);
 		creator = entferneTxx(creator);
 		// Unterfelder durch Deskriptionszeichen ersetzen:
@@ -347,6 +357,13 @@ public class Util {
 		return umf;
 	}
 
+	/**
+	 *
+	 * @param line4715 nicht null
+	 * @param idn      nicht null
+	 * @return auch null, wenn Link ins Leere führt. Links auf die DNB werden als
+	 *         korrekt angesehen, um eventuelle Ausfälle des Portals zu umgehen.
+	 */
 	public static Link link(final Line line4715, final String idn) {
 		final String url = SubfieldUtils.getContentOfFirstSubfield(line4715, 'u');
 		if (url == null) {
@@ -355,9 +372,9 @@ public class Util {
 		// Entscheiden, ob Inhaltsverzeichnis oder Repository:
 		final String dollarc = SubfieldUtils.getContentOfFirstSubfield(line4715, 'c');
 		if (url.equals("$") && dollarc.equals("04")) {
-			return Link.getLink("Inhaltsverzeichnis", "http://d-nb.info/" + idn + "/04");
+			return new Link("Inhaltsverzeichnis", "https://d-nb.info/" + idn + "/04");
 		} else if (url.contains("deposit.dnb.de")) {
-			return Link.getLink("Inhaltstext", url);
+			return new Link("Inhaltstext", url);
 		} else {
 			return Link.getLink("Angaben zum Inhalt", url);
 		}
@@ -496,7 +513,6 @@ public class Util {
 			return RDAFormatter.formatExpansion(dollar8);
 		} else {
 			final String dollara = SubfieldUtils.getContentOfFirstSubfield(rswkLine, 'a');
-			System.err.println(dollara);
 			if (dollara == null) {
 				return null;
 			} else {

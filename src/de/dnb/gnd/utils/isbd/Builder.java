@@ -20,9 +20,10 @@ public class Builder {
 		isbd.dns = SGUtils.getDNS(record);
 		isbd.lc = RecordUtils.getContentOfSubfield(record, "1700", 'a'); // 1. Ländercode
 
-		isbd.zumKatalog = null;
 		final String uri = "http://d-nb.info/" + record.getId();
-		isbd.zumKatalog = Link.getLink(uri, uri);
+		// Wir nehmen an, dass der Katalogeintrag immer existiert, um
+		// stundenlanges erfolgloses Wrten zu vermeiden:
+		isbd.zumKatalog = new Link(uri, uri);
 
 		isbd.neNr = RecordUtils.getContentOfSubfield(record, "2100", '0');
 
@@ -50,7 +51,9 @@ public class Builder {
 		isbd.links = new ArrayList<>();
 		RecordUtils.getLines(record, "4715").forEach(line -> {
 			final Link link = Util.link(line, record.getId());
-			isbd.links.add(link);
+			if (link != null) {
+				isbd.links.add(link);
+			}
 		});
 
 		isbd.umfang = Util.umfang(record);

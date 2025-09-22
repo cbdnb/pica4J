@@ -1,8 +1,5 @@
 package de.dnb.gnd.utils.isbd;
 
-import java.awt.print.PrinterException;
-import java.io.IOException;
-
 import de.dnb.basics.Misc;
 import de.dnb.basics.applicationComponents.strings.StringUtils;
 
@@ -14,13 +11,13 @@ public class Link {
 	 * @param text
 	 * @param url
 	 */
-	public Link(String text, String url) {
+	public Link(final String text, final String url) {
 		this.text = text;
 		this.url = url;
 	}
 
 	/**
-	 * 
+	 *
 	 * @return Link ohne Formatierung: &gt;a href="url"&lt;link text&gt;/a&lt;
 	 */
 	String toHTML() {
@@ -28,14 +25,15 @@ public class Link {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param text text
 	 * @param url  url
 	 * @return gültigen Link oder null
 	 */
-	public static Link getLink(String text, String url) {
-		if (checkUri(url))
+	public static Link getLink(final String text, final String url) {
+		if (Misc.isUrlAccessible(url)) {
 			return new Link(text, url);
+		}
 		return null;
 	}
 
@@ -47,12 +45,12 @@ public class Link {
 	public static void main(final String[] args) {
 		final String s = StringUtils.readClipboard();
 		System.err.println(s);
-		System.out.println(checkUri(s));
+		System.out.println(Misc.isUrlAccessible(s));
 	}
 
-	static public boolean checkUri(String url) {	
+	static public boolean checkUri(final String url) {
 //		System.err.println(url);
-		String website = Misc.getWebsite(url);
+		final String website = Misc.getWebsite(url);
 		return website != null;
 	}
 }

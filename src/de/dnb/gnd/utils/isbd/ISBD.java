@@ -73,14 +73,7 @@ public class ISBD implements Comparable<ISBD> {
 	public String toString() {
 		final List<String> zeilen = new ArrayList<>();
 
-		String zeile1 = "";
-		if (dhs != null) {
-			zeile1 = "<" + dhs.getDDCString();
-			for (final SG sg : dns) {
-				zeile1 += ";" + sg.getDDCString();
-			}
-			zeile1 += ">";
-		}
+		String zeile1 = sgg();
 		if (lc != null) {
 			zeile1 += "\t" + lc;
 		}
@@ -174,6 +167,18 @@ public class ISBD implements Comparable<ISBD> {
 
 		return Util.entferneKlammeraffe(zeilen.stream().collect(Collectors.joining("\n")));
 
+	}
+
+	public String sgg() {
+		String zeile1 = "";
+		if (dhs != null) {
+			zeile1 = "<" + dhs.getDDCString();
+			for (final SG sg : dns) {
+				zeile1 += ";" + sg.getDDCString();
+			}
+			zeile1 += ">";
+		}
+		return zeile1;
 	}
 
 	Comparator<SG> myComparator = SGUtils.getSGcomparator();
