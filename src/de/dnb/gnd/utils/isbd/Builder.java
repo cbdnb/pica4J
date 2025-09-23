@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 
 import de.dnb.basics.applicationComponents.strings.StringUtils;
 import de.dnb.gnd.parser.Record;
+import de.dnb.gnd.utils.BibRecUtils;
 import de.dnb.gnd.utils.RecordUtils;
 import de.dnb.gnd.utils.SGUtils;
 import de.dnb.gnd.utils.SubjectUtils;
@@ -33,7 +34,8 @@ public class Builder {
 		}
 
 		isbd.est = Util.getEST(record);
-		isbd.titel = Util.getTitel(record);
+		isbd.titel = BibRecUtils.getMainTitle(record);
+		isbd.titelzusatz = Util.getTitelzusatz(record);
 		isbd.verantwortlichkeit = RecordUtils.getContentOfSubfield(record, "4000", 'h');
 		isbd.zaehlung = RecordUtils.getContentOfSubfield(record, "4025", 'a');
 
@@ -43,8 +45,8 @@ public class Builder {
 		isbd.datum = Util.datum(record);
 		isbd.weitereVeroeffAng = RecordUtils.getLines(record, "4034", "4035").stream()
 				.map(Util::veroeffentlichungsAngabe).collect(Collectors.joining(" ; "));
-		isbd.fruehereHaupttitel = RecordUtils.getLines(record, "4213", "4215").stream().map(Util::fruehererHaupttitel)
-				.collect(Collectors.joining(" . - "));
+		isbd.fruehereHaupttitel = RecordUtils.getLines(record, "4212", "4213", "4215").stream()
+				.map(Util::fruehererHaupttitel).collect(Collectors.joining(" . - "));
 		isbd.repro = RecordUtils.getContentOfSubfield(record, "4216", 'a');
 		isbd.issn = Util.issn(record);
 
@@ -77,7 +79,7 @@ public class Builder {
 		final Record record = RecordUtils.readFromClip();
 		final Builder builder = new Builder();
 		final ISBD isbd = builder.build(record);
-		System.out.println(isbd);
+		System.out.println(isbd.getSchoepferOderTitelOhneKlammeraffe());
 
 	}
 

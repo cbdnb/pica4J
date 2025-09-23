@@ -248,12 +248,12 @@ public class Util {
 	 * @return Titel. Die @ werden nicht entfernt, damit eine Sortierung möglich
 	 *         ist.
 	 */
-	public static String getTitel(final Record record) {
+	public static String getTitelzusatz(final Record record) {
 		final Line line4000 = BibRecUtils.getMainTitleLine(record);
 		if (line4000 == null) {
 			return null;
 		}
-		final List<Subfield> subs = SubfieldUtils.retainSubfields(line4000, 'a', 'd', 'f');
+		final List<Subfield> subs = SubfieldUtils.retainSubfields(line4000, 'd', 'f');
 		if (subs.isEmpty()) {
 			return null;
 		}
@@ -423,12 +423,16 @@ public class Util {
 			String isbn = SubfieldUtils.getContentOfFirstSubfield(line, '0');
 			if (isbn != null) {
 				isbn = "ISBN " + isbn;
-				final String infos = SubfieldUtils.getContentOfFirstSubfield(line, 'f');
-				if (infos != null) {
-					isbn += " " + infos;
-				}
-				nummern.add(isbn);
 			}
+			final String infos = SubfieldUtils.getContentOfFirstSubfield(line, 'f');
+			if (infos != null) {
+				if (isbn != null) {
+					isbn += " " + infos;
+				} else {
+					isbn = infos;
+				}
+			}
+			nummern.add(isbn);
 		}
 
 		final ArrayList<Line> lines2040 = RecordUtils.getLines(record, "2040");
