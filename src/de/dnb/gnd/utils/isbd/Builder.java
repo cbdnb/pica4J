@@ -17,6 +17,7 @@ public class Builder {
 
 	public ISBD build(final Record record) {
 		isbd = new ISBD();
+		isbd.idnUebergeordnet = RecordUtils.getContentOfSubfield(record, "4000", '9');
 		isbd.dhs = SGUtils.getDHS(record);
 		isbd.dns = SGUtils.getDNS(record);
 		isbd.lc = RecordUtils.getContentOfSubfield(record, "1700", 'a'); // 1. Ländercode
@@ -38,6 +39,7 @@ public class Builder {
 		isbd.titelzusatz = Util.getTitelzusatz(record);
 		isbd.verantwortlichkeit = RecordUtils.getContentOfSubfield(record, "4000", 'h');
 		isbd.zaehlung = RecordUtils.getContentOfSubfield(record, "4025", 'a');
+		isbd.abhaengigerTitel = Util.abhaengigerTitel(record);
 
 		isbd.ausgabebezeichnung = Util.ausgabebezeichung(record);
 		isbd.veroeffentlichungsangaben = RecordUtils.getLines(record, "4030").stream()
@@ -79,7 +81,7 @@ public class Builder {
 		final Record record = RecordUtils.readFromClip();
 		final Builder builder = new Builder();
 		final ISBD isbd = builder.build(record);
-		System.out.println(isbd.getSchoepferOderTitelOhneKlammeraffe());
+		System.out.println(isbd);
 
 	}
 

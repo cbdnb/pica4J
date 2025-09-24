@@ -9,11 +9,16 @@ import de.dnb.basics.applicationComponents.MyFileUtils;
 import de.dnb.basics.applicationComponents.strings.StringUtils;
 import de.dnb.basics.filtering.FilterUtils;
 import de.dnb.basics.utils.HTMLEntities;
+import de.dnb.basics.utils.OutputUtils;
 import de.dnb.gnd.parser.Record;
 import de.dnb.gnd.utils.RecordUtils;
 
 public class HTMLformatter {
 
+	private static final String ZEILE_ENDE = "</td></tr>\n";
+	private static final String SE_ZEILE_ENDE = "</i></td></tr>\n";
+	private static final String SE_ZEILE_ANFANG = "\t<tr style=\"font-size:9px;\" colspan=\"2\"><td><i>";
+	private static final String TITEL_ZEILE = "\t<tr style=\"font-size:9px;\">";
 	private ISBD isbd;
 
 	/**
@@ -27,33 +32,65 @@ public class HTMLformatter {
 		this.isbd = isbd;
 	}
 
+	private String getHaupteintragung() {
+		if (isbd.abhaengigerTitel == null) {
+			return "<b>" + isbd.getHaupteintragung() + " </b>";
+		} else {
+			return HANGING_PRE + isbd.abhaengigerTitel;
+		}
+	}
+
 	public String format() {
 		// @formatter:off
 		String html =
 				"<table>\n"+
-					"\t<tr style=\"font-size:9px;\">" +
+					TITEL_ZEILE +
 						"<td>" + HTMLEntities.htmlAngleBrackets(isbd.sgg()) + "</td>" +
 						"<td style=\"text-align:right;\">" +
-							(isbd.lc!=null?isbd.lc:"") + "</td></tr>\n";
-		html += "\t<tr style=\"font-size:9px;\">" +
+							(isbd.lc!=null?isbd.lc:"")
+					+ ZEILE_ENDE;
+		html += TITEL_ZEILE +
 					"<td >" + isbd.zumKatalog.toHTML() + "</td>" +
 					"<td style=\"text-align:right;\">" +
-						(isbd.neNr!=null?isbd.neNr:"") + "</td></tr>\n";
+						(isbd.neNr!=null?isbd.neNr:"")
+				+ ZEILE_ENDE;
 		html += "\t<tr style=\"font-size:12px;\">" +
 					"<td colspan=\"2\">" +
-						"<b>" + isbd.getHaupteintragung() + " </b>" +
-						getRest() + "</td></tr>\n";
+						getHaupteintragung() +
+						getRest()
+				+ ZEILE_ENDE;
 		if(isbd.rswk!=null) {
-			html += "\t<tr style=\"font-size:9px;\" colspan=\"2\"><td>"
-					+ "<i>SW: " + isbd.rswk + "</i></td></tr>\n";
+			html += SE_ZEILE_ANFANG
+					+ "SW: " + isbd.rswk
+					+ SE_ZEILE_ENDE;
 		}
 		if(isbd.ddc!=null) {
-			html += "\t<tr style=\"font-size:9px;\" colspan=\"2\"><td>"
-					+ "<i>DDC: " + isbd.ddc + "</i></td></tr>\n";
+			html += SE_ZEILE_ANFANG
+					+ "DDC: " + isbd.ddc
+					+ SE_ZEILE_ENDE;
+		}
+		if(isbd.listeNSW!=null) {
+			html += SE_ZEILE_ANFANG
+					+ isbd.listeNSW
+					+ SE_ZEILE_ENDE;
 		}
 		html += "</table>";
 		return html;
 	}
+
+	public static String PRE_DOCUMENT =
+		"<style>\r\n"
+		+ "blockquote {\r\n"
+		+ "  margin-left: 1rem;\r\n"
+		+ "}\r\n"
+		+ "p {\r\n"
+		+ "   text-indent: -1rem;\r\n"
+		+ "}\r\n"
+		+ "</style>\n";
+
+
+	public static final String HANGING_PRE = "<blockquote><p>";
+	public static final String HANGING_POST = "</p></blockquote>";
 
 	protected String getRest() {
 		// @formatter:on
@@ -127,7 +164,11 @@ public class HTMLformatter {
 		if (hsVermerkPlusISBN != null) {
 			teile.add(hsVermerkPlusISBN);
 		}
-		return Util.entferneKlammeraffe(StringUtils.concatenate(". - \n", teile));
+		String ergebnis = Util.entferneKlammeraffe(StringUtils.concatenate(". - \n", teile));
+		if (isbd.abhaengigerTitel != null) {
+			ergebnis += HANGING_POST;
+		}
+		return ergebnis;
 	}
 
 	public static void main(final String[] args) throws IOException {
@@ -136,7 +177,10 @@ public class HTMLformatter {
 		final ISBD isbd = builder.build(record);
 		final HTMLformatter formatter = new HTMLformatter(isbd);
 		final PrintWriter out = MyFileUtils.outputFile("D:/Analysen/karg/NSW/test.html", false);
-		out.println(formatter.format());
+		final String formatted = PRE_DOCUMENT + formatter.format();
+		OutputUtils.show(formatted);
+		out.println(formatted);
+		System.out.println(formatted);
 
 	}
 

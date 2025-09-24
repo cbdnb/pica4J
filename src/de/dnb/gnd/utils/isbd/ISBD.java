@@ -11,6 +11,7 @@ public class ISBD implements Comparable<ISBD> {
 
 	// ISBD 0 (Medienart/Medientyp) wäre Feld 0502. Wird in der NaBi nicht
 	// wiedergegeben.
+	String idnUebergeordnet;
 
 	// Zeile 1
 	SG dhs;
@@ -30,6 +31,7 @@ public class ISBD implements Comparable<ISBD> {
 	String titelzusatz;
 	String verantwortlichkeit;
 	String zaehlung;
+	String abhaengigerTitel;
 
 	// Zeile 5 - ISBD 4
 	String ausgabebezeichnung;
@@ -150,15 +152,37 @@ public class ISBD implements Comparable<ISBD> {
 
 	@Override
 	public String toString() {
-		return "dhs=" + dhs + "\ndns = " + dns + "\nlc = " + lc + "\nzumKatalog = " + zumKatalog + "\nneNr = " + neNr
-				+ "\nschoepfer = " + schoepfer + "\nest = " + est + "\ntitel = " + titel + "\ntitelzusatz = "
-				+ titelzusatz + "\nverantwortlichkeit = " + verantwortlichkeit + "\nzaehlung = " + zaehlung
-				+ "\nausgabebezeichnung = " + ausgabebezeichnung + "\nveroeffentlichungsangaben = "
-				+ veroeffentlichungsangaben + "\ndatum = " + datum + "\nweitereVeroeffAng = " + weitereVeroeffAng
-				+ "\nfruehereHaupttitel = " + fruehereHaupttitel + "\nrepro = " + repro + "\nissn = " + issn
-				+ "\nanmerkungFortlaufend = " + anmerkungFortlaufend + "\numfang = " + umfang + "\ngesamttitel = "
-				+ gesamttitel + "\nlinks = " + links + "\nanmerkung = " + anmerkung + "\nhsVermerk = " + hsVermerk
-				+ "\nisbnEAN = " + isbnEAN + "\nrswk = " + rswk + "\nddc = " + ddc + "\nlisteNSW = " + listeNSW;
+		// @formatter:off
+		return  "idn übergeordnet = " + idnUebergeordnet +
+				"\ndhs = " + dhs +
+				"\ndns = " + dns +
+				"\nlc = " + lc +
+				"\nzumKatalog = " + zumKatalog +
+				"\nneNr = " + neNr +
+				"\nschoepfer = " + schoepfer +
+				"\nest = " + est +
+				"\ntitel = " + titel +
+				"\ntitelzusatz = " + titelzusatz +
+				"\nverantwortlichkeit = " + verantwortlichkeit +
+				"\nzaehlung = " + zaehlung +
+				"\nAbhängiger Titel = " + abhaengigerTitel +
+				"\nAusgabebezeichnung = " + ausgabebezeichnung +
+				"\nVeroeffentlichungsangaben = " + veroeffentlichungsangaben +
+				"\nDatum = " + datum +
+				"\nWeitereVeroeffAng = " + weitereVeroeffAng +
+				"\nFruehere Haupttitel = " + fruehereHaupttitel +
+				"\nRepro = " + repro +
+				"\nISSN = " + issn +
+				"\nAnmerkungFortlaufend = " + anmerkungFortlaufend +
+				"\nUmfang = " + umfang +
+				"\nGesamttitel = " + gesamttitel +
+				"\nLinks = " + links +
+				"\nAnmerkung = " + anmerkung +
+				"\nHSVermerk = " + hsVermerk +
+				"\nISBN/EAN = " + isbnEAN +
+				"\nRSWK = " + rswk +
+				"\nDDC = " + ddc +
+				"\nListe NSW = " + listeNSW;
 	}
 
 }

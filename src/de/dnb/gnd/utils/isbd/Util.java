@@ -242,7 +242,7 @@ public class Util {
 	}
 
 	/**
-	 * Titel aus 4000.
+	 * Titelzusatz und Paralleltitel aus 4000.
 	 *
 	 * @param record nicht null
 	 * @return Titel. Die @ werden nicht entfernt, damit eine Sortierung möglich
@@ -283,7 +283,7 @@ public class Util {
 	}
 
 	/**
-	 * Titel aus 4000.
+	 * Ausgabebezeichnung aus 4020.
 	 *
 	 * @param record nicht null
 	 * @return Titel. Die @ werden nicht entfernt, damit eine Sortierung möglich
@@ -544,6 +544,21 @@ public class Util {
 	public static void main(final String[] args) {
 		final Record record = RecordUtils.readFromClip();
 		System.out.println(rswk(record));
+	}
+
+	public static String abhaengigerTitel(final Record record) {
+		final Pair<Line, Integer> pair = RecordUtils.getFirstLineTagGivenAsString(record, "4004");
+		if (pair.second == 0) {
+			return null;
+		}
+		final Line line4004 = pair.first;
+		final List<Subfield> subs4004 = SubfieldUtils.retainSubfields(line4004, 'a', 'd', 'f', 'h');
+		String titel = subs4004.isEmpty() ? "" : RecordUtils.toPicaWithoutTag(line4004.getTag(), subs4004);
+		final String dollarl = SubfieldUtils.getContentOfFirstSubfield(line4004, 'l');
+		if (dollarl != null) {
+			titel = dollarl + ", " + titel;
+		}
+		return titel;
 	}
 
 }

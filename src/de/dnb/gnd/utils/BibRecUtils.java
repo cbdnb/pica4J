@@ -9,7 +9,6 @@ import java.util.Date;
 import java.util.EnumSet;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
@@ -28,7 +27,6 @@ import de.dnb.gnd.exceptions.WrappingHandler;
 import de.dnb.gnd.parser.Indicator;
 import de.dnb.gnd.parser.ItemParser;
 import de.dnb.gnd.parser.Record;
-import de.dnb.gnd.parser.Subfield;
 import de.dnb.gnd.parser.line.Line;
 import de.dnb.gnd.parser.tag.BibTagDB;
 import de.dnb.gnd.parser.tag.Tag;
@@ -71,7 +69,7 @@ public final class BibRecUtils {
 
 	/**
 	 * Liest einen Datensatz aus der Zwischenablage. Fehler werden ignoriert.
-	 * 
+	 *
 	 * @return neuen Datensatz oder null.
 	 */
 	public static Record readFromClipIgnoring() {
@@ -80,7 +78,7 @@ public final class BibRecUtils {
 
 	/**
 	 * Liest einen Datensatz aus der Zwischenablage. Fehler werden ignoriert.
-	 * 
+	 *
 	 * @param fileName nicht null, nicht leer
 	 * @return neuen Datensatz oder null.
 	 * @throws FileNotFoundException wenn nicht da
@@ -91,7 +89,7 @@ public final class BibRecUtils {
 
 	/**
 	 * Liest einen Datensatz aus der Zwischenablage. Gibt Fehler aus.
-	 * 
+	 *
 	 * @return neuen Datensatz oder null.
 	 */
 	public static Record readFromClip() {
@@ -100,7 +98,7 @@ public final class BibRecUtils {
 
 	/**
 	 * Liest einen Datensatz aus der Zwischenablage.
-	 * 
+	 *
 	 * @param handler beliebig
 	 * @return neuen Datensatz oder null.
 	 */
@@ -122,11 +120,13 @@ public final class BibRecUtils {
 		assertBibRecord(record);
 		for (final Line line : record) {
 			final Tag tag = line.getTag();
-			if (!tag.hasIgnorableIndicator())
+			if (!tag.hasIgnorableIndicator()) {
 				continue;
+			}
 			final Indicator indicator = tag.getIgnorableIndicator();
-			if (SubfieldUtils.containsIndicator(line, indicator))
+			if (SubfieldUtils.containsIndicator(line, indicator)) {
 				return true;
+			}
 		}
 		return false;
 	}
@@ -292,11 +292,13 @@ public final class BibRecUtils {
 	 */
 	public static String getMainTitle(final Record record) {
 		final Line titleLine = getMainTitleLine(record);
-		if (titleLine == null)
+		if (titleLine == null) {
 			return null;
+		}
 		final String dollarA = SubfieldUtils.getContentOfFirstSubfield(titleLine, 'a');
-		if (dollarA != null)
+		if (dollarA != null) {
 			return dollarA;
+		}
 		return SubfieldUtils.getContentOfFirstSubfield(titleLine, '8');
 	}
 
@@ -308,11 +310,13 @@ public final class BibRecUtils {
 	 */
 	public static String getHaupttitelUndZusatz(final Record record) {
 		final Line titleLine = getMainTitleLine(record);
-		if (titleLine == null)
+		if (titleLine == null) {
 			return null;
+		}
 		final String dollarA = SubfieldUtils.getContentOfFirstSubfield(titleLine, 'a');
-		if (dollarA == null)
+		if (dollarA == null) {
 			return null;
+		}
 		final List<String> zusaetze = SubfieldUtils.getContentsOfSubfields(titleLine, 'd');
 		zusaetze.add(0, dollarA);
 		return StringUtils.concatenate(" : ", zusaetze);
@@ -325,9 +329,9 @@ public final class BibRecUtils {
 	 */
 	public static String getTitelDesTeils(final Record record) {
 		final Line titleLine = RecordUtils.getTheOnlyLine(record, "4004");
-		if (titleLine == null)
+		if (titleLine == null) {
 			return null;
-		else {
+		} else {
 			return RecordUtils.toPicaWithoutTag(titleLine);
 		}
 	}
@@ -340,13 +344,15 @@ public final class BibRecUtils {
 	 */
 	public static String getVollstaendigenTitel(final Record record) {
 		final String haupt = getMainTitle(record);
-		if (haupt == null)
+		if (haupt == null) {
 			return null;
+		}
 		final String neben = getTitelDesTeils(record);
-		if (neben == null)
+		if (neben == null) {
 			return haupt;
-		else
+		} else {
 			return haupt + ". " + neben;
+		}
 	}
 
 	/**
@@ -356,18 +362,21 @@ public final class BibRecUtils {
 	 */
 	public static String getResponsibilityAndTitle(final Record record) {
 		final Line titleLine = getMainTitleLine(record);
-		if (titleLine == null)
+		if (titleLine == null) {
 			return null;
-		else {
+		} else {
 			String title = SubfieldUtils.getContentOfFirstSubfield(titleLine, 'a');
-			if (title == null)
+			if (title == null) {
 				title = SubfieldUtils.getContentOfFirstSubfield(titleLine, '8');
-			if (title == null)
+			}
+			if (title == null) {
 				return null;
+			}
 
 			final String auth = SubfieldUtils.getContentOfFirstSubfield(titleLine, 'h');
-			if (auth != null)
+			if (auth != null) {
 				title += " / " + auth;
+			}
 
 			return title;
 		}
@@ -401,8 +410,9 @@ public final class BibRecUtils {
 	 */
 	public static List<Character> getStatuses(final Record record) {
 		final List<Line> lines0599 = getStatusLines(record);
-		if (lines0599.isEmpty())
+		if (lines0599.isEmpty()) {
 			return Arrays.asList((char) 0);
+		}
 		return FilterUtils.mapNullFiltered(lines0599,
 				line -> StringUtils.charAt(SubfieldUtils.getContentOfFirstSubfield(line, 'b'), 0));
 	}
@@ -425,10 +435,11 @@ public final class BibRecUtils {
 	 */
 	public static List<String> getCodes(final Record record) {
 		final Line line = getCodeLine(record);
-		if (line == null)
+		if (line == null) {
 			return new ArrayList<>();
-		else
+		} else {
 			return SubfieldUtils.getContentsOfSubfields(line, 'a');
+		}
 	}
 
 	/**
@@ -476,7 +487,7 @@ public final class BibRecUtils {
 	public enum REIHE {
 		A("Reihe A"), B("Reihe B"), H("Reihe H"), O("Reihe O");
 
-		private String myName;
+		private final String myName;
 
 		private REIHE(final String name) {
 			myName = name;
@@ -484,7 +495,7 @@ public final class BibRecUtils {
 
 		/*
 		 * (non-Javadoc)
-		 * 
+		 *
 		 * @see java.lang.Enum#toString()
 		 */
 		@Override
@@ -508,14 +519,18 @@ public final class BibRecUtils {
 	 * @return Die Reihe A, B, H, O (in genau dieser Reihenfolge) oder null aus 0600
 	 */
 	public static REIHE getReihe(final Record record) {
-		if (isRA(record))
+		if (isRA(record)) {
 			return REIHE.A;
-		if (isRB(record))
+		}
+		if (isRB(record)) {
 			return REIHE.B;
-		if (isRH(record))
+		}
+		if (isRH(record)) {
 			return REIHE.H;
-		if (isRO(record))
+		}
+		if (isRO(record)) {
 			return REIHE.O;
+		}
 		return null;
 	}
 
@@ -536,27 +551,33 @@ public final class BibRecUtils {
 			final String unselbständig = RecordUtils.getContentOfSubfield(record, "4004", 'a');
 			title = RecordUtils.getContentOfSubfield(record, "4000", '8');
 			if (title != null) {
-				if (unselbständig != null)
+				if (unselbständig != null) {
 					title = title + "; " + unselbständig;
-			} else
+				}
+			} else {
 				// titel immer noch null, daher letzte Rettung
 				title = unselbständig;
+			}
 		}
 
 		creator = RecordUtils.getContentOfSubfield(record, "3000", '8');
-		if (creator == null)
+		if (creator == null) {
 			creator = RecordUtils.getContentOfSubfield(record, "3100", '8');
+		}
 		if (creator != null) {
-			if (creator.contains("$l"))
+			if (creator.contains("$l")) {
 				creator = creator.replace("$l", " <") + ">";
-			if (creator.contains("$g"))
+			}
+			if (creator.contains("$g")) {
 				creator = creator.replace("$g", " <") + ">";
+			}
 			if (creator.contains("$b")) {
 				// $gKiel$bBibliothek -> <Kiel, Bibliothek>:
-				if (creator.contains("<"))
+				if (creator.contains("<")) {
 					creator = creator.replace("$b", ", ");
-				else
+				} else {
 					creator = creator.replace("$b", " <") + ">";
+				}
 			}
 			creator = creator.replace("$c", " ");
 			title = creator + " : " + title;
@@ -581,10 +602,11 @@ public final class BibRecUtils {
 	public static List<String> getLanguagesOfText(final Record record) {
 		RangeCheckUtils.assertReferenceParamNotNull("record", record);
 		final Line line = RecordUtils.getTheOnlyLine(record, "1500");
-		if (line == null)
+		if (line == null) {
 			return Collections.emptyList();
-		else
+		} else {
 			return SubfieldUtils.getContentsOfSubfields(line, 'a');
+		}
 	}
 
 	/**
@@ -595,10 +617,11 @@ public final class BibRecUtils {
 	public static String getYearOfPublicationString(final Record record) {
 		RangeCheckUtils.assertReferenceParamNotNull("record", record);
 		final Line line = RecordUtils.getTheOnlyLine(record, "1100");
-		if (line == null)
+		if (line == null) {
 			return null;
-		else
+		} else {
 			return SubfieldUtils.getContentOfFirstSubfield(line, 'a');
+		}
 	}
 
 	/**
@@ -609,8 +632,9 @@ public final class BibRecUtils {
 	public static Integer getYearOfPublication(final Record record) {
 		RangeCheckUtils.assertReferenceParamNotNull("record", record);
 		final String yearStr = getYearOfPublicationString(record);
-		if (yearStr == null)
+		if (yearStr == null) {
 			return null;
+		}
 		try {
 			return Integer.parseInt(yearStr);
 		} catch (final NumberFormatException e) {
@@ -707,7 +731,7 @@ public final class BibRecUtils {
 	 * Liste die relevante ist - es kann natürlich auch die Leipziger Signatur sein.
 	 * Daher muss durch geeignete Massnahmen (etwa Kommando "s d") sichergestellt
 	 * sein, dass nur die gewünschte Signatur im Datensatz enthalten ist.
-	 * 
+	 *
 	 * @param record nicht null
 	 * @return null, wenn keine gefunden
 	 */
@@ -718,8 +742,9 @@ public final class BibRecUtils {
 		final Iterator<String> iterator = shMarks.iterator();
 		if (iterator.hasNext()) {
 			return iterator.next();
-		} else
+		} else {
 			return null;
+		}
 
 	}
 
@@ -734,8 +759,9 @@ public final class BibRecUtils {
 	 * @return ist Druckschrift (0500 beginnt mit 'A')
 	 */
 	public static boolean isPrintedPublication(final Record record) {
-		if (RecordUtils.isAuthority(record))
+		if (RecordUtils.isAuthority(record)) {
 			return false;
+		}
 		return getPhysikalischeForm(record) == 'A';
 	}
 
@@ -841,12 +867,14 @@ public final class BibRecUtils {
 	 */
 	public static String getBestISBN(final Record record) {
 		final List<String> list = getValidISBNs(record);
-		if (list.isEmpty())
+		if (list.isEmpty()) {
 			return null;
+		}
 		String bestisb = "";
 		for (final String isb : list) {
-			if (isb.length() > bestisb.length())
+			if (isb.length() > bestisb.length()) {
 				bestisb = isb;
+			}
 		}
 		return bestisb;
 	}
@@ -868,8 +896,9 @@ public final class BibRecUtils {
 	 */
 	public static String getNameOfFirstProducer(final Record record) {
 		final List<String> prods = getNamesOfProducers(record);
-		if (prods.isEmpty())
+		if (prods.isEmpty()) {
 			return null;
+		}
 		return prods.get(0);
 	}
 
@@ -898,14 +927,15 @@ public final class BibRecUtils {
 	 * @return ISBN ohne Bindestriche - oder null
 	 */
 	public static String makeRawISBN(final String isbn) {
-		if (isbn == null)
+		if (isbn == null) {
 			return null;
-		else {
+		} else {
 			final String replaced = isbn.replace("-", "").trim();
-			if (replaced.isEmpty())
+			if (replaced.isEmpty()) {
 				return null;
-			else
+			} else {
 				return replaced;
+			}
 		}
 	}
 
@@ -915,7 +945,8 @@ public final class BibRecUtils {
 	 */
 	public static void main(final String[] args) {
 		final Record record = RecordUtils.readFromClip(TAG_DB, new IgnoringHandler(), false);
-		
+		System.out.println(getMainTitle(record));
+
 	}
 
 	/**
@@ -945,34 +976,41 @@ public final class BibRecUtils {
 	 * @param nurDissHabil wenn true
 	 * @return ob Hochschulschrift (Diss. oder Habilschr.)
 	 */
-	public static boolean istHochschulschrift(final Record record, boolean nurDissHabil) {
+	public static boolean istHochschulschrift(final Record record, final boolean nurDissHabil) {
 		Objects.requireNonNull(record);
-		if (RecordUtils.isAuthority(record))
+		if (RecordUtils.isAuthority(record)) {
 			return false;
+		}
 		final List<String> ids1131 = getNatureOfContentIDs(record);
 		if (ids1131.contains("041139372")) {
 			return true;
 		}
 		final char char3 = getStatusderBeschreibung(record);
-		if (char3 == 'd')
+		if (char3 == 'd') {
 			return true;
-		if (char3 == 'g')
+		}
+		if (char3 == 'g') {
 			return true;
+		}
 
 		final List<String> codes = getCodes(record);
-		if (codes.contains("rh"))
+		if (codes.contains("rh")) {
 			return true;
-		if (codes.contains("di"))
+		}
+		if (codes.contains("di")) {
 			return true;
+		}
 
-		if (RecordUtils.containsField(record, "2215"))
+		if (RecordUtils.containsField(record, "2215")) {
 			return true;
+		}
 
-		String charakter = RecordUtils.getContentOfSubfield(record, "4204", 'd');
+		final String charakter = RecordUtils.getContentOfSubfield(record, "4204", 'd');
 		if (charakter != null) {
-			List<String> erlaubteBegriffe = nurDissHabil ? dissHabil : charaktereDerHochschulschrift;
-			if (erlaubteBegriffe.contains(charakter))
+			final List<String> erlaubteBegriffe = nurDissHabil ? dissHabil : charaktereDerHochschulschrift;
+			if (erlaubteBegriffe.contains(charakter)) {
 				return true;
+			}
 		}
 
 		return false;
@@ -988,8 +1026,9 @@ public final class BibRecUtils {
 	 */
 	public static boolean istBelletristik(final Record record) {
 		Objects.requireNonNull(record);
-		if (RecordUtils.isAuthority(record))
+		if (RecordUtils.isAuthority(record)) {
 			return false;
+		}
 		if (!SubjectUtils.containsDHS(record)) {
 			final String tag = "1131";
 			final char indicator = '9';
@@ -1012,10 +1051,12 @@ public final class BibRecUtils {
 	 */
 	public static boolean istKinderbuch(final Record record) {
 		Objects.requireNonNull(record);
-		if (RecordUtils.isAuthority(record))
+		if (RecordUtils.isAuthority(record)) {
 			return false;
-		if (!SubjectUtils.containsDHS(record))
+		}
+		if (!SubjectUtils.containsDHS(record)) {
 			return false;
+		}
 		final Line line = SGUtils.getDHSLine(record);
 		final List<String> conts = SubfieldUtils.getContentsOfSubfields(line);
 		return conts.contains("K");
@@ -1241,8 +1282,9 @@ public final class BibRecUtils {
 	 *         angefasst hat oder null
 	 */
 	public static Date getDateFromStatLines(final Collection<Line> statLines) {
-		if (statLines == null || statLines.isEmpty())
+		if (statLines == null || statLines.isEmpty()) {
 			return null;
+		}
 		final ArrayList<Date> mapNullFiltered = FilterUtils.mapNullFiltered(statLines,
 				SubfieldUtils::getDateAusDollarD);
 		return mapNullFiltered.isEmpty() ? null : Collections.min(mapNullFiltered);
@@ -1253,8 +1295,9 @@ public final class BibRecUtils {
 	 * @return die erste Nutzerkennung in der Liste statLines oder null
 	 */
 	public static String getNutzerkennungFromStatLines(final Collection<Line> statLines) {
-		if (statLines == null || statLines.isEmpty())
+		if (statLines == null || statLines.isEmpty()) {
 			return null;
+		}
 		final ArrayList<String> mapNullFiltered = FilterUtils.mapNullFiltered(statLines,
 				SubfieldUtils::getNutzerkennung);
 		return mapNullFiltered.isEmpty() ? null : mapNullFiltered.get(0);
@@ -1317,26 +1360,28 @@ public final class BibRecUtils {
 	public static boolean isKarte(final Record record) {
 		Objects.requireNonNull(record);
 		// Standardfall:
-		if (getPhysikalischeForm(record) == 'K')
+		if (getPhysikalischeForm(record) == 'K') {
 			return true;
+		}
 		final List<String> codes = getCodes(record);
 		// Es gibt auch Reihen (Advz) mit kt/rc in 0600:
-		if (!CollectionUtils.intersection(codes, Arrays.asList("kt", "rc")).isEmpty())
+		if (!CollectionUtils.intersection(codes, Arrays.asList("kt", "rc")).isEmpty()) {
 			return true;
+		}
 		// letzter Versuch, 040297837 (Karte) in 1131:
 		return getNatureOfContentIDs(record).contains("040297837");
 	}
 
 	/**
-	 * 
+	 *
 	 * @param record nicht null
 	 * @return Die IDNs der Körperschaften in den Feldern 3100, 3110 und 3119
 	 */
-	public static Collection<String> getAlleKoerperschaftIDsDerFE(Record record) {
+	public static Collection<String> getAlleKoerperschaftIDsDerFE(final Record record) {
 		return RecordUtils.getContents(record, "31[01].", '9');
 	}
 
-	public static boolean isAutorenwerk(Record record) {
+	public static boolean isAutorenwerk(final Record record) {
 		return RecordUtils.containsField(record, "3000");
 	}
 
