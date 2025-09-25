@@ -561,4 +561,18 @@ public class Util {
 		return titel;
 	}
 
+	/**
+	 *
+	 * @param record am besten im Pica+-Format
+	 * @return eine verkürzte Kurztitelaufnahme: Autor + Titel
+	 */
+	public static String uebergeordneterTitel(final Record record) {
+		final String dollar8 = RecordUtils.getContentOfSubfield(record, "4000", '8');
+		// Wenns mehrere 4000er sind, wird die Auswertung schwer:
+		if (abhaengigerTitel(record) != null && dollar8 != null) {
+			// $8 auswerten, das geht am besten, wenn die Daten im Pica+-Format vorliegen:
+		}
+		return null;
+	}
+
 }

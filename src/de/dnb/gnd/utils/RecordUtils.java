@@ -144,8 +144,9 @@ public final class RecordUtils {
         RangeCheckUtils.assertReferenceParamNotNull("record", record);
         RangeCheckUtils.assertReferenceParamNotNull("tag", tags);
         for (final String tag : tags) {
-            if(containsField(record, tag))
-                return true;
+            if(containsField(record, tag)) {
+				return true;
+			}
         }
         return false;
     }
@@ -168,8 +169,9 @@ public final class RecordUtils {
 		RangeCheckUtils.assertReferenceParamNotNull("record", record);
 		RangeCheckUtils.assertStringParamNotNullOrEmpty("tag", tag);
 		final Field field = getFieldGivenAsString(record, tag);
-		if (field == null)
+		if (field == null) {
 			return Collections.emptyList();
+		}
 
 		return SubfieldUtils.getContentsOfFirstSubfields(field, indicator);
 	}
@@ -190,8 +192,9 @@ public final class RecordUtils {
 		RangeCheckUtils.assertReferenceParamNotNull("record", record);
 		RangeCheckUtils.assertReferenceParamNotNull("tag", tag);
 		final Line line = getTheOnlyLine(record, tag);
-		if (line == null)
+		if (line == null) {
 			return null;
+		}
 		return SubfieldUtils.getContentOfFirstSubfield(line, indicator);
 	}
 
@@ -211,8 +214,9 @@ public final class RecordUtils {
 		RangeCheckUtils.assertReferenceParamNotNull("record", record);
 		RangeCheckUtils.assertReferenceParamNotNull("tagStr", tagStr);
 		final Tag tag = record.tagDB.findTag(tagStr);
-		if(tag==null)
-		  return null;
+		if(tag==null) {
+			return null;
+		}
 		return getContentOfSubfield(record, tag, indicator);
 	}
 
@@ -231,9 +235,9 @@ public final class RecordUtils {
 		RangeCheckUtils.assertReferenceParamNotNull("record", record);
 		RangeCheckUtils.assertStringParamNotNullOrEmpty("tag", tag);
 		final Line line = getTheOnlyLine(record, tag);
-		if (line == null)
+		if (line == null) {
 			return Collections.emptyList();
-		else {
+		} else {
 			final Collection<Subfield> subfields = line.getSubfields();
 			return SubfieldUtils.getContentsOfSubfields(subfields);
 		}
@@ -257,9 +261,9 @@ public final class RecordUtils {
 		RangeCheckUtils.assertReferenceParamNotNull("record", record);
 		RangeCheckUtils.assertStringParamNotNullOrEmpty("tag", tag);
 		final Line line = getTheOnlyLine(record, tag);
-		if (line == null)
+		if (line == null) {
 			return Collections.emptyList();
-		else {
+		} else {
 			return SubfieldUtils.getContentsOfSubfields(line, ind);
 		}
 	}
@@ -377,10 +381,11 @@ public final class RecordUtils {
 	public static Line getTheOnlyLine(final Record record, final String aTag) {
 		RangeCheckUtils.assertStringParamNotNullOrWhitespace("aTag", aTag);
 		final Tag tag = record.tagDB.findTag(aTag);
-		if (tag == null)
+		if (tag == null) {
 			return null;
-		else
+		} else {
 			return getTheOnlyLine(record, tag);
+		}
 	}
 
 	/**
@@ -395,10 +400,11 @@ public final class RecordUtils {
 		RangeCheckUtils.assertReferenceParamNotNull("record", record);
 		RangeCheckUtils.assertReferenceParamNotNull("tag", tag);
 		final Pair<Line, Integer> pair = getFirstLine(record, tag);
-		if (pair.second == 1)
+		if (pair.second == 1) {
 			return pair.first;
-		else
+		} else {
 			return null;
+		}
 	}
 
 	//@formatter:on
@@ -481,8 +487,9 @@ public final class RecordUtils {
 	public static List<Line> getLinesWithSubfield(final Record record, final String tag, final char indicator,
 			final Predicate<String> subfieldPredicate) {
 		final Tag tag2 = record.tagDB.findTag(tag);
-		if (tag2 == null)
+		if (tag2 == null) {
 			return Collections.emptyList();
+		}
 		final Predicate<Line> linepred = new Predicate<Line>() {
 			@Override
 			public boolean test(final Line line) {
@@ -532,7 +539,7 @@ public final class RecordUtils {
 	/**
 	 * Gibt eine Teilmenge der Tags, die zwischen from (einschließlich) und to
 	 * (einschließlich) liegen.
-	 * 
+	 *
 	 * @param record nicht null
 	 * @param from   nicht null, nicht leer.
 	 * @param to     nicht null, nicht leer.
@@ -618,7 +625,7 @@ public final class RecordUtils {
 
 	/**
 	 * Gibt eine neue Liste, deren Zeilen predicate erfüllen.
-	 * 
+	 *
 	 * @param lines     nicht null
 	 * @param predicate nicht null
 	 * @return nicht null
@@ -643,7 +650,7 @@ public final class RecordUtils {
 
 	/**
 	 * Logt message in die Datei "log/logfileDatensatz.txt".
-	 * 
+	 *
 	 * @param message beliebig.
 	 */
 	public static void logError(final String message) {
@@ -777,8 +784,9 @@ public final class RecordUtils {
 		final LinkedHashSet<Tag> tags = record.getTags();
 		final Between<String> between = new Between<String>(first, last);
 		tags.forEach(tag -> {
-			if (between.test(tag.pica3))
+			if (between.test(tag.pica3)) {
 				record.removeField(tag);
+			}
 		});
 	}
 
@@ -793,8 +801,9 @@ public final class RecordUtils {
 		RangeCheckUtils.assertReferenceParamNotNull("tags", tags);
 		final Collection<Tag> tagsOfRecord = record.getTags();
 		for (final Tag tag : tagsOfRecord) {
-			if (!tags.contains(tag))
+			if (!tags.contains(tag)) {
 				record.removeField(tag);
+			}
 		}
 	}
 
@@ -983,10 +992,12 @@ public final class RecordUtils {
 		 */
 		RangeCheckUtils.assertReferenceParamNotNull("record", record);
 		RangeCheckUtils.assertReferenceParamNotNull("format", format);
-		if (lineSeparator == null)
+		if (lineSeparator == null) {
 			lineSeparator = Constants.LINE_SEPARATOR;
-		if (subfieldSeparator == '0')
+		}
+		if (subfieldSeparator == '0') {
 			subfieldSeparator = Constants.DOLLAR;
+		}
 		String s = "";
 		Iterator<Line> iterator;
 		if (format == Format.PICA3) {
@@ -1060,8 +1071,9 @@ public final class RecordUtils {
 		} else {
 			adjusted = removeExpansion(subfields);
 		}
-		if (format == Format.PICA3)
+		if (format == Format.PICA3) {
 			adjusted = getRelevantSubfields(tag, adjusted);
+		}
 		boolean isFirst = true;
 		boolean isFirstAttaching = true;
 		String s = "";
@@ -1071,8 +1083,9 @@ public final class RecordUtils {
 			String content = subfield.getContent();
 
 			// für "k p" wieder Dollars maskieren:
-			if (format == Format.PICA_PLUS && subfieldSeparator == Constants.DOLLAR)
+			if (format == Format.PICA_PLUS && subfieldSeparator == Constants.DOLLAR) {
 				content = content.replace("$", "$$");
+			}
 
 			if (format == Format.PICA_PLUS) {
 				s += subfieldSeparatorStr + indChar + content;
@@ -1084,15 +1097,16 @@ public final class RecordUtils {
 					// Alternatives Präfix wird benutzt,
 					// wenn Indikator nicht an erster Stelle und
 					// nicht anschliessend ist:
-					if (!isFirst && indicator.prefixAlt != null && !indicator.isAttaching)
+					if (!isFirst && indicator.prefixAlt != null && !indicator.isAttaching) {
 						prefix = indicator.prefixAlt;
-					else if (isFirstAttaching && indicator.prefixAlt != null) {
+					} else if (isFirstAttaching && indicator.prefixAlt != null) {
 						prefix = indicator.prefix;
 						isFirstAttaching = false;
 					} else if (!isFirstAttaching && indicator.prefixAlt != null) {
 						prefix = indicator.prefixAlt;
-					} else
+					} else {
 						prefix = indicator.prefix;
+					}
 					// postfix != null
 					s += prefix + content + indicator.postfix;
 				} else {
@@ -1107,8 +1121,7 @@ public final class RecordUtils {
 	}
 
 	/**
-	 * Liefert eine pica3-Repräsentation. tag muss nicht zu subfields
-	 * passen!
+	 * Liefert eine pica3-Repräsentation. tag muss nicht zu subfields passen!
 	 *
 	 * @param tag       nicht null.
 	 * @param subfields nicht null oder leer
@@ -1158,7 +1171,7 @@ public final class RecordUtils {
 	 * subfield an der passenden Position eingefügt. Die Standardreihenfolge der
 	 * Indikatoren wird von tag vorgegeben. Ist schon ein Unterfeld zu gleichem
 	 * Indikator vorhanden, so wird nach diesem eingefügt.
-	 * 
+	 *
 	 * @param subfield     einzufügendes Unterfeld, nicht null
 	 * @param subfieldList Liste, in die eingefügt werden soll.
 	 * @param tag          nicht null
@@ -1192,7 +1205,7 @@ public final class RecordUtils {
 
 	/**
 	 * Gibt eine normierte, nicht regelgerechte Darstellung einer Zeile.
-	 * 
+	 *
 	 * @param line nicht null.
 	 * @return nicht null.
 	 */
@@ -1221,7 +1234,7 @@ public final class RecordUtils {
 
 	/**
 	 * Liest einen Datensatz von der Standardeingabe. Fehler werden ignoriert.
-	 * 
+	 *
 	 * @param tagDB nicht null
 	 * @return neuen Datensatz.
 	 */
@@ -1239,8 +1252,9 @@ public final class RecordUtils {
 	public static Record readFromPortal(final String idn) {
 		RangeCheckUtils.assertReferenceParamNotNull("", idn);
 		final org.marc4j.marc.Record marcRecord = PortalUtils.getMarcRecord(idn);
-		if (marcRecord == null)
+		if (marcRecord == null) {
 			return null;
+		}
 		try {
 			final MarcParser parser = new MarcParser();
 			final Record record = parser.parse(marcRecord);
@@ -1252,7 +1266,7 @@ public final class RecordUtils {
 
 	/**
 	 * Liest einen Datensatz von der Standardeingabe.
-	 * 
+	 *
 	 * @param tagDB   nicht null
 	 * @param handler beliebig
 	 * @return neuen Datensatz.
@@ -1269,7 +1283,7 @@ public final class RecordUtils {
 
 	/**
 	 * Liest einen Datensatz aus einer Datei.
-	 * 
+	 *
 	 * @param fileName   micht null, nicht leer
 	 * @param tagDB      nicht null
 	 * @param handler    beliebig
@@ -1301,15 +1315,16 @@ public final class RecordUtils {
 	 */
 	public static Record readFromClip() {
 		final String string = StringUtils.readClipboard();
-		if (string == null)
+		if (string == null) {
 			return null;
+		}
 		final RecordParser parser = new RecordParser();
 		return parser.parse(string);
 	}
 
 	/**
 	 * Liest einen Datensatz aus der Zwischenablage.
-	 * 
+	 *
 	 * @param tagDB      nicht null
 	 * @param handler    beliebig
 	 * @param ignoreMARC Überlese beim Parsen von Pica+-Daten die Felder, die in
@@ -1320,8 +1335,9 @@ public final class RecordUtils {
 	public static Record readFromClip(final TagDB tagDB, final ExceptionHandler handler, final boolean ignoreMARC) {
 		RangeCheckUtils.assertReferenceParamNotNull("tagDB", tagDB);
 		final String string = StringUtils.readClipboard();
-		if (string == null)
+		if (string == null) {
 			return null;
+		}
 		final RecordParser parser = new RecordParser();
 		parser.setHandler(handler);
 		parser.setDefaultTagDB(tagDB);
@@ -1331,7 +1347,7 @@ public final class RecordUtils {
 
 	/**
 	 * Liest einen Datensatz aus der Zwischenablage. Fehler werden ignoriert.
-	 * 
+	 *
 	 * @param tagDB nicht null
 	 * @return neuen Datensatz oder null, wenn Clipboard nicht in String
 	 *         konvertierbar.
@@ -1367,14 +1383,15 @@ public final class RecordUtils {
 	/**
 	 * Liefert die Satzart. Etwa Tp1 aus 005 bei Normdaten oder "Abvz" aus 0500 bei
 	 * Titeldaten.
-	 * 
+	 *
 	 * @param record nicht null
 	 * @return Titeldaten oder null, wenn nicht gefunden.
 	 */
 	public static String getDatatype(final Record record) {
 		final Line line = getTheOnlyLine(record, "002@");
-		if (line == null)
+		if (line == null) {
 			return "";
+		}
 		return SubfieldUtils.getContentOfFirstSubfield(line, '0');
 	}
 
@@ -1477,11 +1494,13 @@ public final class RecordUtils {
 	public static boolean isAuthority(final CharSequence recStr) {
 		RangeCheckUtils.assertReferenceParamNotNull("recStr", recStr);
 		Matcher matcher = PAT_PICA_AUTH.matcher(recStr);
-		if (matcher.find())
+		if (matcher.find()) {
 			return true;
+		}
 		matcher = PAT_PICA_P_AUTH.matcher(recStr);
-		if (matcher.find())
+		if (matcher.find()) {
 			return true;
+		}
 		return false;
 	}
 
@@ -1494,11 +1513,13 @@ public final class RecordUtils {
 	public static boolean isSWD(final CharSequence recStr) {
 		RangeCheckUtils.assertReferenceParamNotNull("recStr", recStr);
 		Matcher matcher = PAT_PICA_SWD.matcher(recStr);
-		if (matcher.find())
+		if (matcher.find()) {
 			return true;
+		}
 		matcher = PAT_PICA_P_SWD.matcher(recStr);
-		if (matcher.find())
+		if (matcher.find()) {
 			return true;
+		}
 		return false;
 	}
 
@@ -1510,11 +1531,13 @@ public final class RecordUtils {
 	 */
 	public static boolean containsRecordType(final CharSequence recStr) {
 		Matcher matcher = PAT_TYPE_PICA.matcher(recStr);
-		if (matcher.find())
+		if (matcher.find()) {
 			return true;
+		}
 		matcher = PAT_TYPE_PICA_P.matcher(recStr);
-		if (matcher.find())
+		if (matcher.find()) {
 			return true;
+		}
 		return false;
 	}
 
@@ -1538,8 +1561,9 @@ public final class RecordUtils {
 	public static final Function<Line, String> LINE_TO_TAG = new Function<Line, String>() {
 		@Override
 		public String apply(final Line x) {
-			if (x == null)
+			if (x == null) {
 				return null;
+			}
 			return x.getTag().pica3;
 		}
 	};
@@ -1581,11 +1605,13 @@ public final class RecordUtils {
 	 */
 	public static Pair<String, String> getSourceAndDateEntered(final Record record) {
 		final Line line = getSourceAndDateEnteredLine(record);
-		if (line == null)
+		if (line == null) {
 			return null;
+		}
 		final String sd = SubfieldUtils.getSourceAndDateStr(line);
-		if (sd == null)
+		if (sd == null) {
 			return null;
+		}
 		return SubfieldUtils.getSourceAndDateP(sd);
 	}
 
@@ -1597,15 +1623,16 @@ public final class RecordUtils {
 	 */
 	public static String getSourceEntered(final Record record) {
 		final Pair<String, String> sd = getSourceAndDateEntered(record);
-		if (sd == null)
+		if (sd == null) {
 			return null;
-		else
+		} else {
 			return sd.first;
+		}
 	}
 
 	/**
 	 * Standort (Frankfurt, Leipzig, DMA, anderer)
-	 * 
+	 *
 	 * @author baumann
 	 *
 	 */
@@ -1644,16 +1671,21 @@ public final class RecordUtils {
 	 * @return F, L, U (anderer Standort) oder null
 	 */
 	public static STANDORT_DNB getStandort(final String nutzerkennung) {
-		if (nutzerkennung == null)
+		if (nutzerkennung == null) {
 			return STANDORT_DNB.U;
-		if (nutzerkennung.length() != 4)
+		}
+		if (nutzerkennung.length() != 4) {
 			return STANDORT_DNB.U;
-		if (nutzerkennung.startsWith("11"))
+		}
+		if (nutzerkennung.startsWith("11")) {
 			return STANDORT_DNB.L;
-		if (nutzerkennung.startsWith("12"))
+		}
+		if (nutzerkennung.startsWith("12")) {
 			return STANDORT_DNB.F;
-		if (nutzerkennung.startsWith("13"))
+		}
+		if (nutzerkennung.startsWith("13")) {
 			return STANDORT_DNB.M;
+		}
 		return STANDORT_DNB.U;
 	}
 
@@ -1664,10 +1696,11 @@ public final class RecordUtils {
 	 */
 	public static String getSourceLatestTransaction(final Record record) {
 		final Pair<String, String> sd = getLatestTransaction(record);
-		if (sd == null)
+		if (sd == null) {
 			return null;
-		else
+		} else {
 			return sd.first;
+		}
 	}
 
 	/**
@@ -1731,8 +1764,8 @@ public final class RecordUtils {
 	 */
 	public static void main(final String[] args)
 			throws IllFormattedLineException, OperationNotSupportedException, IOException {
-		Record record = RecordUtils.readFromClip();
-		System.out.println(isAuthority(record));
+		final String idn = StringUtils.readClipboard();
+		System.out.println(readFromPortal(idn));
 	}
 
 	/**
@@ -1743,8 +1776,9 @@ public final class RecordUtils {
 	 */
 	public static Date getDateEntered(final Record record) {
 		final Line line = getSourceAndDateEnteredLine(record);
-		if (line == null)
+		if (line == null) {
 			return null;
+		}
 		return SubfieldUtils.getDate(line);
 	}
 
@@ -1754,8 +1788,9 @@ public final class RecordUtils {
 	 */
 	public static Date getDateLatestTransaction(final Record record) {
 		final Line line = getLatestTransactionLine(record);
-		if (line == null)
+		if (line == null) {
 			return null;
+		}
 		final Date d = SubfieldUtils.getDate(line);
 		return d;
 	}
@@ -1770,8 +1805,9 @@ public final class RecordUtils {
 		String title = "";
 		if (isBibliographic(record)) {
 			title = BibRecUtils.getResponsibilityAndTitle(record);
-			if (title == null)
+			if (title == null) {
 				title = "";
+			}
 		} else {
 			try {
 				title = RDAFormatter.getRDAHeading(record);
@@ -1837,8 +1873,9 @@ public final class RecordUtils {
 	 * @return Die Idns, eventuell mehrfach, da kein Set!
 	 */
 	public static List<String> extractIdns(final Collection<Line> lines) {
-		if (lines == null)
+		if (lines == null) {
 			return Collections.emptyList();
+		}
 		return lines.stream().map(Line::getIdnRelated).filter(idn -> idn != null).collect(Collectors.toList());
 	}
 
@@ -1847,8 +1884,9 @@ public final class RecordUtils {
 	 * @return Die Idns ohne Prüfziffer, eventuell mehrfach, da kein Set!
 	 */
 	public static List<Integer> extractIDNints(final Iterable<Line> lines) {
-		if (lines == null)
+		if (lines == null) {
 			return Collections.emptyList();
+		}
 		return Streams.getStreamFromIterable(lines).map(Line::getIdnRelated).filter(idn -> idn != null)
 				.map(IDNUtils::ppn2int).collect(Collectors.toList());
 	}

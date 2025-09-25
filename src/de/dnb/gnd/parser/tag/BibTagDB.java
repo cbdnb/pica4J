@@ -1075,11 +1075,13 @@ public final class BibTagDB extends TagDB {
 		addTag(newBibTag);
 		newBibTag.add(new Indicator("/1", "", 'a', "Erscheinungsland", R, ""));
 
-		newBibTag = new BibliographicTag("2000", "004A", "Erste und weitere richtige ISBN", R, "", "");
+		newBibTag = new BibliographicTag("2000", "004A", "Erste und weitere richtige ISBN", R, "020", "");
 		addTag(newBibTag);
-		newBibTag.add(new Indicator("", "*", '0', "ISBN (mit Bindestrichen); ohne die Zeichenfolge \"ISBN¬\"", NR, ""));
+		newBibTag.add(
+				new Indicator("", "*", '0', '9', "ISBN (mit Bindestrichen); ohne die Zeichenfolge \"ISBN¬\"", NR, ""));
 		newBibTag.add(new Indicator("(", ")", 'c', "Kommentar zur ISBN", NR, ""));
-		newBibTag.add(new Indicator("", "", 'f', "Einbandart, Lieferbedingungen und/oder Preis, Sonstiges", NR, ""));
+		newBibTag.add(
+				new Indicator("", "", 'f', 'c', "Einbandart, Lieferbedingungen und/oder Preis, Sonstiges", NR, ""));
 
 		newBibTag = new BibliographicTag("2005", "005I", "Autorisierte ISSN des nationalen ISSN-Zentrums der DNB", R,
 				"", "");
@@ -1872,7 +1874,7 @@ public final class BibTagDB extends TagDB {
 		newBibTag.add(new Indicator("$v", "", 'v', "Bemerkungen", NR, ""));
 		newBibTag.add(new Indicator("$3", "", '3', "Koordinaten-Spezifikation", NR, ""));
 
-		newBibTag = new BibliographicTag("4030", "033A", "Veröffentlichungsangabe", R, "260",
+		newBibTag = new BibliographicTag("4030", "033A", "Veröffentlichungsangabe", R, "264",
 				"PUBLICATION, DISTRIBUTION, ETC. (IMPRINT)");
 		addTag(newBibTag);
 		newBibTag.add(DOLLAR_T);
@@ -1880,7 +1882,7 @@ public final class BibTagDB extends TagDB {
 		newBibTag.add(new Indicator("", "", " ; ", true, 'p', 'a',
 				"Verlagsort (@{) weitere Verlagsorte werden mit \" ; \" angeschlossen", R, ""));
 		newBibTag.add(new Indicator(" : ", "", 'n', 'b', "Verlagsname(@{)", NR, ""));
-		newBibTag.add(new Indicator("$h", "", 'h', "Datierung", NR, ""));
+		newBibTag.add(new Indicator("$h", "", 'h', 'c', "Datierung", NR, ""));
 		newBibTag.add(DOLLAR_Z_ZEIT);
 		newBibTag.add(new Indicator(" ***", "", '5', "Identifikationsnummer des Lieferanten", NR, ""));
 		newBibTag.add(new Indicator(" %", "", 'm', "Relevanz für die Mahnpräsentation", NR, ""));
@@ -1889,7 +1891,7 @@ public final class BibTagDB extends TagDB {
 		newBibTag.addAlternative(DOLLAR_9);
 		newBibTag.addAlternative(DOLLAR_8);
 		// auch diese?
-		newBibTag.addAlternative(new Indicator("$h", "", 'h', "Datierung", NR, ""));
+		newBibTag.addAlternative(new Indicator("$h", "", 'h', 'c', "Datierung", NR, ""));
 		newBibTag.addAlternative(DOLLAR_Z_ZEIT);
 		newBibTag.addAlternative(new Indicator(" ***", "", '5', "VLB-Identifikationsnummer des Verlags", NR, ""));
 		newBibTag.addAlternative(new Indicator(" %", "", 'm', "Relevanz für die Mahnpräsentation", NR, ""));
@@ -1970,11 +1972,11 @@ public final class BibTagDB extends TagDB {
 		newBibTag.add(
 				new Indicator("", "", 'a', "Sonstige physische und technische Angaben, Illustrationsangabe", NR, ""));
 
-		newBibTag = new BibliographicTag("4062", "034I", "Format, Maßangaben und dgl.", R, "", "");
+		newBibTag = new BibliographicTag("4062", "034I", "Format, Maßangaben und dgl.", R, "300", "");
 		addTag(newBibTag);
 		newBibTag.add(DOLLAR_T);
 		newBibTag.add(DOLLAR_U_GR);
-		newBibTag.add(new Indicator("", "", 'a', "Format, Maßangaben und dgl.", NR, ""));
+		newBibTag.add(new Indicator("", "", 'a', 'c', "Format, Maßangaben und dgl.", NR, ""));
 		newBibTag.add(new Indicator("$b", "", 'b', "Breite", NR, ""));
 		newBibTag.add(new Indicator("$d", "", 'd', "Durchmesser", NR, ""));
 		newBibTag.add(new Indicator("$g", "", 'g', "Teilgewicht", NR, ""));
@@ -2698,9 +2700,10 @@ public final class BibTagDB extends TagDB {
 		newBibTag.add(new Indicator("[", "]", '2', "Herkunftsfeldname", NR, ""));
 		newBibTag.add(new Indicator("", "", 'a', "Inhalt des Herkunftsfeldes", NR, ""));
 
-		newBibTag = new BibliographicTag("5050", "045E", "Sachgruppen der Deutschen Nationalbibliografie", R, "", "");
+		newBibTag = new BibliographicTag("5050", "045E", "Sachgruppen der Deutschen Nationalbibliografie", R, "082",
+				"");
 		addTag(newBibTag);
-		newBibTag.add(new Indicator("", "", 'e', "DDC-Haupt-Sachgruppe", NR, ""));
+		newBibTag.add(new Indicator("", "", 'e', 'a', "DDC-Haupt-Sachgruppe", NR, ""));
 		newBibTag.add(new Indicator(";", "", 'f', "DDC-Neben-Sachgruppe", R, ""));
 		newBibTag.add(new Indicator("%", "", 'a', "Hauptsachgruppe ab 1982", NR, ""));
 		newBibTag.add(new Indicator("&", "", 'd', "Nebensachgruppe ab 1982", R, ""));
@@ -3151,10 +3154,11 @@ public final class BibTagDB extends TagDB {
 		bibBasis = getPica3("7001");
 		for (int i = 2; i <= 99; i++) {
 			String s;
-			if (i < 10)
+			if (i < 10) {
 				s = "0" + i;
-			else
+			} else {
 				s = "" + i;
+			}
 			newBibTag = new BibliographicTag("70" + s, "208@/" + s, i
 					+ ". Exemplar eines Standorts (Pflichtexemplar): Datum und exemplarspezifischer Selektionsschlüssel (m, wenn 0701 vorhanden)",
 					R, "", "");
@@ -3571,7 +3575,7 @@ public final class BibTagDB extends TagDB {
 
 	/**
 	 * Alles, was am Anfang steht.
-	 * 
+	 *
 	 * @return
 	 */
 	public Collection<Tag> getHeaders() {
@@ -3580,7 +3584,7 @@ public final class BibTagDB extends TagDB {
 
 	/**
 	 * Segment Personennamen: 30XX.
-	 * 
+	 *
 	 * @return
 	 */
 	public Collection<Tag> getPersonalNameSegment() {
@@ -3589,7 +3593,7 @@ public final class BibTagDB extends TagDB {
 
 	/**
 	 * Segment Körperschaftsnamen.
-	 * 
+	 *
 	 * @return
 	 */
 	public Collection<Tag> getCoporateNameSegment() {
@@ -3598,7 +3602,7 @@ public final class BibTagDB extends TagDB {
 
 	/**
 	 * Segment Sachtitel.
-	 * 
+	 *
 	 * @return
 	 */
 	public Collection<Tag> getTitleSegment() {
@@ -3607,7 +3611,7 @@ public final class BibTagDB extends TagDB {
 
 	/**
 	 * Segment Segment Veröff.-Vermerk, Umfang, Beilagen.
-	 * 
+	 *
 	 * @return
 	 */
 	public Collection<Tag> getEditionSegment() {
@@ -3616,7 +3620,7 @@ public final class BibTagDB extends TagDB {
 
 	/**
 	 * Segment Übergeordnete Gesamtheiten / Sekundärausgaben.
-	 * 
+	 *
 	 * @return
 	 */
 	public Collection<Tag> getSeriesStatementSegment() {
@@ -3625,7 +3629,7 @@ public final class BibTagDB extends TagDB {
 
 	/**
 	 * Segment Fußnoten.
-	 * 
+	 *
 	 * @return
 	 */
 	public Collection<Tag> getNoteSegment() {
@@ -3634,7 +3638,7 @@ public final class BibTagDB extends TagDB {
 
 	/**
 	 * Segment Titelverknüpfungen.
-	 * 
+	 *
 	 * @return
 	 */
 	public Collection<Tag> getTitleLinkSegment() {
@@ -3643,7 +3647,7 @@ public final class BibTagDB extends TagDB {
 
 	/**
 	 * Segment Feldgruppen für Nicht-Standard-NEE.
-	 * 
+	 *
 	 * @return
 	 */
 	public Collection<Tag> getAddedEntryFieldsSegment() {
@@ -3652,7 +3656,7 @@ public final class BibTagDB extends TagDB {
 
 	/**
 	 * Segment Sonstige Angaben.
-	 * 
+	 *
 	 * @return
 	 */
 	public Collection<Tag> getOtherInformationSegment() {
@@ -3661,7 +3665,7 @@ public final class BibTagDB extends TagDB {
 
 	/**
 	 * Segment Bearbeiterzeichen.
-	 * 
+	 *
 	 * @return
 	 */
 	public Collection<Tag> getResponsibilitySegment() {
@@ -3670,7 +3674,7 @@ public final class BibTagDB extends TagDB {
 
 	/**
 	 * Segment Sacherschließung (1131, 1133, 5050 - 5599).
-	 * 
+	 *
 	 * @return nicht null, modifizierbar
 	 */
 	public Collection<Tag> getSubjectAccessSegment() {
@@ -3683,7 +3687,7 @@ public final class BibTagDB extends TagDB {
 
 	/**
 	 * Segment Exemplardaten.
-	 * 
+	 *
 	 * @return
 	 */
 	public Collection<Tag> getHoldingsSegment() {

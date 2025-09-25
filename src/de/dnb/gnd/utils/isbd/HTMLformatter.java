@@ -172,7 +172,8 @@ public class HTMLformatter {
 	}
 
 	public static void main(final String[] args) throws IOException {
-		final Record record = RecordUtils.readFromClip();
+		final String idn = StringUtils.readClipboard();
+		final Record record = RecordUtils.readFromPortal(idn);
 		final Builder builder = new Builder();
 		final ISBD isbd = builder.build(record);
 		final HTMLformatter formatter = new HTMLformatter(isbd);

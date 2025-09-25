@@ -17,6 +17,7 @@ public class Builder {
 
 	public ISBD build(final Record record) {
 		isbd = new ISBD();
+		// Wenn's mehrere 4000er sind, wird es schwer, daher:
 		isbd.idnUebergeordnet = RecordUtils.getContentOfSubfield(record, "4000", '9');
 		isbd.dhs = SGUtils.getDHS(record);
 		isbd.dns = SGUtils.getDNS(record);

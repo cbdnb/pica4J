@@ -32,6 +32,7 @@ public class ISBD implements Comparable<ISBD> {
 	String verantwortlichkeit;
 	String zaehlung;
 	String abhaengigerTitel;
+	String uebergeordnetertitel;
 
 	// Zeile 5 - ISBD 4
 	String ausgabebezeichnung;
@@ -166,6 +167,7 @@ public class ISBD implements Comparable<ISBD> {
 				"\nverantwortlichkeit = " + verantwortlichkeit +
 				"\nzaehlung = " + zaehlung +
 				"\nAbhängiger Titel = " + abhaengigerTitel +
+				"\nÜbergeordneter Titel = " + uebergeordnetertitel +
 				"\nAusgabebezeichnung = " + ausgabebezeichnung +
 				"\nVeroeffentlichungsangaben = " + veroeffentlichungsangaben +
 				"\nDatum = " + datum +
