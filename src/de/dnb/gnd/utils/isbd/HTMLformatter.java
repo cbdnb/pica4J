@@ -36,7 +36,7 @@ public class HTMLformatter {
 		if (isbd.abhaengigerTitel == null) {
 			return "<b>" + isbd.getHaupteintragung() + " </b>";
 		} else {
-			return HANGING_PRE + isbd.abhaengigerTitel;
+			return HANGING_PRE + isbd.abhaengigerTitel.replaceFirst(", ", "<br>");
 		}
 	}
 
@@ -95,7 +95,10 @@ public class HTMLformatter {
 	protected String getRest() {
 		// @formatter:on
 		final List<String> teile = new ArrayList<>();
-		teile.add(isbd.getTitelnachHaupteintragung());
+
+		if (isbd.getTitelnachHaupteintragung() != null) {
+			teile.add(isbd.getTitelnachHaupteintragung());
+		}
 
 		String ausgabeBezBisWeiterVeroff = "";
 		if (isbd.ausgabebezeichnung != null) {

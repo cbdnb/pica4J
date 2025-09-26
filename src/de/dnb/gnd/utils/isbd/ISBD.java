@@ -1,8 +1,12 @@
 package de.dnb.gnd.utils.isbd;
 
+import java.io.IOException;
 import java.util.Comparator;
 import java.util.List;
 
+import de.dnb.basics.utils.OutputUtils;
+import de.dnb.gnd.parser.Record;
+import de.dnb.gnd.utils.RecordUtils;
 import de.dnb.gnd.utils.SG;
 import de.dnb.gnd.utils.SGUtils;
 
@@ -128,6 +132,9 @@ public class ISBD implements Comparable<ISBD> {
 
 	public String getTitelnachHaupteintragung() {
 		String nachHE = schoepfer != null ? getHaupttitel() : "";
+		if (nachHE != null) {
+			nachHE = "";
+		}
 		if (titelzusatz != null) {
 			nachHE += titelzusatz;
 		}
@@ -185,6 +192,19 @@ public class ISBD implements Comparable<ISBD> {
 				"\nRSWK = " + rswk +
 				"\nDDC = " + ddc +
 				"\nListe NSW = " + listeNSW;
+	}
+
+	public static void main(final String[] args) throws IOException {
+
+		final Record record = RecordUtils.readFromClip();
+		final Builder builder = new Builder();
+		final ISBD isbd = builder.build(record);
+		final HTMLformatter formatter = new HTMLformatter(isbd);
+
+		final String formatted = HTMLformatter.PRE_DOCUMENT + formatter.format();
+		OutputUtils.show(formatted);
+		System.out.println(formatted);
+
 	}
 
 }

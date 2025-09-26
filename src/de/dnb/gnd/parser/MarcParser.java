@@ -243,6 +243,14 @@ public class MarcParser {
 		if (actualTag == null) {
 			return;
 		}
+		// Sonderbehandlung für 245 bei Titeldaten:
+		if (actualMarcTag.equals("245") && typeOfMarcRecord == 'a') {
+			if (marcRecord.getVariableField("773") == null) {
+				actualTag = db.findTag("4000");
+			} else {
+				actualTag = db.findTag("4004");
+			}
+		}
 		picaSubfields = new LinkedList<>();
 		if (containsLink()) {
 			isRelated = true;
@@ -621,8 +629,13 @@ public class MarcParser {
 	}
 
 	protected char searchPicaIndicator(final char marcIndicator) {
-		final Collection<Indicator> indicators = splittingIndicators.values();
+		final Collection<Indicator> indicators = // actualTag.getAllIndicators();
+				splittingIndicators.values();
+//		System.out.println();
+//		System.out.println(indicators);
 		for (final Indicator indicator : indicators) {
+//			System.out.println(actualMarcTag + "/" + marcIndicator + "/" + indicator.marcIndicator + "/"
+//					+ indicator.indicatorChar);
 			if (indicator.marcIndicator == marcIndicator) {
 				return indicator.indicatorChar;
 			}

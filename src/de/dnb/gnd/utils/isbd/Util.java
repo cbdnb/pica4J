@@ -392,25 +392,29 @@ public class Util {
 		if (gesamt == null) {
 			gesamt = RecordUtils.getContentOfSubfield(record, "4180", 'a');
 		}
-		if (gesamt == null) {
-			gesamt = RecordUtils.getContentOfSubfield(record, "4190", 'a');
-		}
-		if (gesamt == null) {
-			return null;
-		}
-		final String dollarl = RecordUtils.getContentOfSubfield(record, "4180", 'l');
-		if (dollarl != null) {
-			gesamt += " ; " + dollarl;
-		}
-		final String dollare = RecordUtils.getContentOfSubfield(record, "4180", 'e');
-		if (dollare != null) {
-			gesamt += " : " + dollare;
-		}
-		gesamt = gesamt.replaceAll("[\\[\\]]", "");
-		gesamt = "(" + gesamt + ")";
-		gesamt = entferneKlammeraffe(gesamt);
+		if (gesamt != null) {
 
-		return gesamt;
+			final String dollarl = RecordUtils.getContentOfSubfield(record, "4180", 'l');
+			if (dollarl != null) {
+				gesamt += " ; " + dollarl;
+			}
+			final String dollare = RecordUtils.getContentOfSubfield(record, "4180", 'e');
+			if (dollare != null) {
+				gesamt += " : " + dollare;
+			}
+			gesamt = gesamt.replaceAll("[\\[\\]]", "");
+			gesamt = "(" + gesamt + ")";
+			gesamt = entferneKlammeraffe(gesamt);
+		} else {
+			gesamt = "";
+		}
+
+		final List<String> felder4190 = RecordUtils.getContents(record, "4190", 'a');
+		for (final String feld4190 : felder4190) {
+			gesamt += " (" + feld4190 + ")";
+		}
+
+		return gesamt.isBlank() ? null : gesamt.trim();
 	}
 
 	public static String isbn(final Record record) {
@@ -543,22 +547,25 @@ public class Util {
 
 	public static void main(final String[] args) {
 		final Record record = RecordUtils.readFromClip();
-		System.out.println(rswk(record));
+		System.out.println(abhaengigerTitel(record));
 	}
 
 	public static String abhaengigerTitel(final Record record) {
-		final Pair<Line, Integer> pair = RecordUtils.getFirstLineTagGivenAsString(record, "4004");
-		if (pair.second == 0) {
+		final ArrayList<Line> lines4004 = RecordUtils.getLines(record, "4004");
+		if (lines4004.isEmpty()) {
 			return null;
 		}
-		final Line line4004 = pair.first;
-		final List<Subfield> subs4004 = SubfieldUtils.retainSubfields(line4004, 'a', 'd', 'f', 'h');
-		String titel = subs4004.isEmpty() ? "" : RecordUtils.toPicaWithoutTag(line4004.getTag(), subs4004);
-		final String dollarl = SubfieldUtils.getContentOfFirstSubfield(line4004, 'l');
-		if (dollarl != null) {
-			titel = dollarl + ", " + titel;
+		String abhaengigertitel = "";
+		for (final Line line4004 : lines4004) {
+			final List<Subfield> subs4004 = SubfieldUtils.retainSubfields(line4004, 'a', 'd', 'f', 'h');
+			String titel = subs4004.isEmpty() ? "" : RecordUtils.toPicaWithoutTag(line4004.getTag(), subs4004);
+			final String dollarl = SubfieldUtils.getContentOfFirstSubfield(line4004, 'l');
+			if (dollarl != null) {
+				titel = dollarl + ", " + titel;
+			}
+			abhaengigertitel += titel;
 		}
-		return titel;
+		return abhaengigertitel;
 	}
 
 	/**

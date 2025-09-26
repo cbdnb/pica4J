@@ -6,7 +6,6 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import de.dnb.gnd.exceptions.IllFormattedLineException;
 import de.dnb.gnd.parser.Indicator;
@@ -377,7 +376,7 @@ public final class BibTagDB extends TagDB {
 		newGndTag.add(new Indicator("$z", "", 'z', "Geografische  Unterteilung", R, ""));
 		newGndTag.add(TagDB.DOLLAR_2);
 
-		newBibTag = new BibliographicTag("1131", "013D", "Inhaltstyp", R, "", "");
+		newBibTag = new BibliographicTag("1131", "013D", "Inhaltstyp", R, "655", "Genre/Form");
 		addTag(newBibTag);
 		newBibTag.add(DOLLAR_9);
 		newBibTag.add(DOLLAR_8);
@@ -1757,10 +1756,10 @@ public final class BibTagDB extends TagDB {
 		newBibTag.addAlternative(new Indicator("$", "", 'S', "Hauptsachgruppe des übergeordneten Titels", NR, ""));
 		newBibTag.addAlternative(new Indicator("$", "", 'B', "Nebensachgruppe des übergeordneten Titels", R, ""));
 
-		newBibTag = new BibliographicTag("4004", "021B", "Zählung und Titel eines unselbständigen Teils", R, "", "");
+		newBibTag = new BibliographicTag("4004", "021B", "Zählung und Titel eines unselbständigen Teils", R, "245", "");
 		addTag(newBibTag);
-		newBibTag.add(new Indicator("*", "*", 'l', "Bandbezeichnung und/oder Zählung in Vorlageform", NR, ""));
-		newBibTag.add(new Indicator("", "", 'a', "Titel des Bandes (@{)", NR, ""));
+		newBibTag.add(new Indicator("*", "*", 'l', 'n', "Bandbezeichnung und/oder Zählung in Vorlageform", R, ""));
+		newBibTag.add(new Indicator("", "", 'a', 'p', "Titel des Bandes (@{)", NR, ""));
 		newBibTag.add(new Indicator(" : ", "", 'd', "Zusatz zum Bandtitel", R, ""));
 		newBibTag.add(new Indicator(" = ", "", 'f', "1.-4. Parallelsachtitel (Vorlageform) (@)", R, ""));
 		newBibTag.add(new Indicator(" / ", "", 'h', "Verfasserangabe zum Bandtitel", NR, ""));
@@ -2160,7 +2159,8 @@ public final class BibTagDB extends TagDB {
 		inheritedTag = getPica3("4180");
 		newBibTag.addInherited(inheritedTag);
 
-		newBibTag = new BibliographicTag("4190", "036G", "1. - 3. ungezählte Schriftenreihe (VF)", R, "", "");
+		newBibTag = new BibliographicTag("4190", "036G", "1. - 3. ungezählte Schriftenreihe (VF)", R, "490",
+				"Series Statement");
 		addTag(newBibTag);
 		newBibTag.add(DOLLAR_T);
 		newBibTag.add(DOLLAR_U_GR);
@@ -3710,9 +3710,12 @@ public final class BibTagDB extends TagDB {
 	 * @throws IllFormattedLineException
 	 */
 	public static void main(final String[] args) throws IllFormattedLineException {
-		final String s = "51.[^89]";
-		final Set<Tag> patt = getDB().findTagPattern(s);
-		patt.forEach(System.out::println);
+		final Tag tag = BibTagDB.getDB().findTag("4000");
+		tag.getAllIndicators().forEach(ind -> {
+			System.out.println(ind);
+			System.out.println(ind.marcIndicator);
+			System.out.println();
+		});
 	}
 
 }
