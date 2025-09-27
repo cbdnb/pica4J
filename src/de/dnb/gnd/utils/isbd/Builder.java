@@ -70,6 +70,8 @@ public class Builder {
 		isbd.isbnEAN = Util.isbn(record);
 
 		isbd.rswk = Util.rswk(record);
+		isbd.formSW = Util.formSW(record);
+		isbd.zielgruppe = Util.zielgruppe(record);
 
 		final List<String> completeDDCNotations = SubjectUtils.getCompleteDDCNotations(record);
 		isbd.ddc = completeDDCNotations.isEmpty() ? null : StringUtils.concatenate(" ◊ ", completeDDCNotations);
@@ -81,8 +83,9 @@ public class Builder {
 	public static void main(final String[] args) {
 		final Record record = RecordUtils.readFromClip();
 		final Builder builder = new Builder();
-		final ISBD isbd = builder.build(record);
-		System.out.println(isbd);
+		final ISBD isbd1 = builder.build(record);
+		final ISBD isbd2 = builder.build(record);
+		System.out.println(isbd1.equals(isbd2));
 
 	}
 

@@ -545,6 +545,22 @@ public class Util {
 		return StringUtils.concatenate(" ◊ ", seqsStr);
 	}
 
+	public static String formSW(final Record record) {
+		final List<Line> lines = RecordUtils.getLines(record, "1131");
+		if (lines.isEmpty()) {
+			return null;
+		}
+		return StringUtils.concatenate(" ◊ ", FilterUtils.mapNullFiltered(lines, Util::toSw));
+	}
+
+	public static String zielgruppe(final Record record) {
+		final List<Line> lines = RecordUtils.getLines(record, "1133");
+		if (lines.isEmpty()) {
+			return null;
+		}
+		return StringUtils.concatenate(" ◊ ", FilterUtils.mapNullFiltered(lines, Util::toSw));
+	}
+
 	public static void main(final String[] args) {
 		final Record record = RecordUtils.readFromClip();
 		System.out.println(abhaengigerTitel(record));

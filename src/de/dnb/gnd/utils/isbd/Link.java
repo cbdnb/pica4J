@@ -1,9 +1,31 @@
 package de.dnb.gnd.utils.isbd;
 
+import java.util.Objects;
+
 import de.dnb.basics.Misc;
 import de.dnb.basics.applicationComponents.strings.StringUtils;
 
 public class Link {
+	@Override
+	public int hashCode() {
+		return Objects.hash(text, url);
+	}
+
+	@Override
+	public boolean equals(final Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+		final Link other = (Link) obj;
+		return Objects.equals(text, other.text) && Objects.equals(url, other.url);
+	}
+
 	public final String text;
 	public final String url;
 

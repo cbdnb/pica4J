@@ -34,9 +34,14 @@ public class HTMLformatter {
 
 	private String getHaupteintragung() {
 		if (isbd.abhaengigerTitel == null) {
-			return "<b>" + isbd.getHaupteintragung() + " </b>";
+			final String haupteintragung = "<b>" + isbd.getHaupteintragung();
+			if (haupteintragung.contains("]")) {
+				return haupteintragung.replace("]", "] </b>");
+			} else {
+				return haupteintragung + " </b>";
+			}
 		} else {
-			return HANGING_PRE + isbd.abhaengigerTitel.replaceFirst(", ", "<br>");
+			return HANGING_PRE + isbd.abhaengigerTitel;// .replaceFirst(", ", "<br>");
 		}
 	}
 
@@ -69,12 +74,26 @@ public class HTMLformatter {
 					+ "DDC: " + isbd.ddc
 					+ SE_ZEILE_ENDE;
 		}
+		if(isbd.formSW!=null) {
+			html += SE_ZEILE_ANFANG
+					+ "FSW: " + isbd.formSW
+					+ SE_ZEILE_ENDE;
+		}
+		if(isbd.zielgruppe!=null) {
+			html += SE_ZEILE_ANFANG
+					+ "Zielgruppe: "+isbd.zielgruppe
+					+ SE_ZEILE_ENDE;
+		}
 		if(isbd.listeNSW!=null) {
 			html += SE_ZEILE_ANFANG
 					+ isbd.listeNSW
 					+ SE_ZEILE_ENDE;
 		}
 		html += "</table>";
+		// Wenn man vom Portal lädt, kann das auftreten:
+		html = html.replace("[[", "[");
+		html = html.replace("]]", "]");
+		html = Util.entferneKlammeraffe(html);
 		return html;
 	}
 

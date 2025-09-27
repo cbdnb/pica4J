@@ -408,7 +408,7 @@ public final class BibTagDB extends TagDB {
 		newGndTag.add(DOLLAR_8);
 		newGndTag.add(TagDB.DOLLAR_2);
 
-		newGndTag = new DefaultGNDTag("1133", "013F", "Zielgruppe", R, "", "");
+		newGndTag = new DefaultGNDTag("1133", "013F", "Zielgruppe", R, "385", "");
 		addTag(newGndTag);
 		newGndTag.addDefaultFirst(new Indicator(";", "", 'a', "Term; weitere Terme werden mit \";\" angefügt", R, ""));
 		newGndTag.add(DOLLAR_9);
@@ -709,7 +709,7 @@ public final class BibTagDB extends TagDB {
 		newBibTag.add(new Indicator("", "", 'a', "Stichwörter in abweichender Orthographie (@)", NR, ""));
 		newBibTag.add(new Indicator("**", "", 'b', "indexierungsrelevante Titel bzw.Begriffe (@)", NR, ""));
 
-		newGndTag = new DefaultGNDTag("4201", "037A", "Unaufgegliederte Fußnoten", R, "", "");
+		newGndTag = new DefaultGNDTag("4201", "037A", "Unaufgegliederte Fußnoten", R, "500", "");
 		addTag(newGndTag);
 		newGndTag.addDefaultFirst(new Indicator('a',
 				"- ohne Unterfeldaufgliederung - Mehrere Fußnoten werden durch \".  -  \" voneinander getrennt.", NR,
@@ -1078,7 +1078,7 @@ public final class BibTagDB extends TagDB {
 		addTag(newBibTag);
 		newBibTag.add(
 				new Indicator("", "*", '0', '9', "ISBN (mit Bindestrichen); ohne die Zeichenfolge \"ISBN¬\"", NR, ""));
-		newBibTag.add(new Indicator("(", ")", 'c', "Kommentar zur ISBN", NR, ""));
+		newBibTag.add(new Indicator("(", ")", 'c', '^', "Kommentar zur ISBN", NR, ""));
 		newBibTag.add(
 				new Indicator("", "", 'f', 'c', "Einbandart, Lieferbedingungen und/oder Preis, Sonstiges", NR, ""));
 
@@ -1799,7 +1799,7 @@ public final class BibTagDB extends TagDB {
 
 		newBibTag = new BibliographicTag("4020", "032@",
 				"Ausgabebezeichnung, Tausender-Angabe (bei Zeitschriften/Schriftenreihen verwendet bis 01.03.2007)", NR,
-				"", "");
+				"250", "");
 		addTag(newBibTag);
 		newBibTag.add(new Indicator("#", "#", 'g', "Ausgabebezeichnung in Sortierform (m)", NR, ""));
 		newBibTag.add(new Indicator("", "", 'a', "Ausgabebezeichnung, Tsd.-Angabe", NR, ""));
@@ -2700,8 +2700,7 @@ public final class BibTagDB extends TagDB {
 		newBibTag.add(new Indicator("[", "]", '2', "Herkunftsfeldname", NR, ""));
 		newBibTag.add(new Indicator("", "", 'a', "Inhalt des Herkunftsfeldes", NR, ""));
 
-		newBibTag = new BibliographicTag("5050", "045E", "Sachgruppen der Deutschen Nationalbibliografie", R, "082",
-				"");
+		newBibTag = new BibliographicTag("5050", "045E", "Sachgruppen der Deutschen Nationalbibliografie", R, "", "");
 		addTag(newBibTag);
 		newBibTag.add(new Indicator("", "", 'e', 'a', "DDC-Haupt-Sachgruppe", NR, ""));
 		newBibTag.add(new Indicator(";", "", 'f', "DDC-Neben-Sachgruppe", R, ""));

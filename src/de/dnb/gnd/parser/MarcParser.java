@@ -15,6 +15,7 @@ import org.marc4j.marc.Subfield;
 import org.marc4j.marc.VariableField;
 
 import de.dnb.basics.applicationComponents.strings.StringUtils;
+import de.dnb.basics.filtering.FilterUtils;
 import de.dnb.basics.filtering.RangeCheckUtils;
 import de.dnb.basics.utils.PortalUtils;
 import de.dnb.gnd.exceptions.IllFormattedLineException;
@@ -232,10 +233,12 @@ public class MarcParser {
 			}
 
 		} else if (typeOfMarcRecord == 'a') {
-			switch (actualMarcTag) {
-			case "084":
-				processSGG();
-				return;
+			if (actualMarcTag.equals("082") || actualMarcTag.equals("083")) {
+				final Subfield dollar2 = actualDataField.getSubfield('2');
+				if (dollar2 != null && dollar2.getData().contains("sdnb")) {
+					processSGG();
+					return;
+				}
 			}
 		}
 
@@ -389,20 +392,12 @@ public class MarcParser {
 			return;
 		}
 		String sgg = "5050 ";
-		for (final Iterator<Subfield> iterator = marcSubs.iterator(); iterator.hasNext();) {
-			final Subfield subfield = iterator.next();
-			sgg += subfield.getData();
-			if (iterator.hasNext()) {
-				sgg += ';';
-			}
-		}
+		sgg += StringUtils.concatenate(";", FilterUtils.mapNullFiltered(marcSubs, Subfield::getData));
 		try {
 			final Line lineSGG = LineParser.parse(sgg, db, false);
 			picaRecord.add(lineSGG);
 		} catch (IllFormattedLineException | OperationNotSupportedException e) {
-
 		}
-
 	}
 
 	protected boolean containsLink() {
@@ -634,7 +629,7 @@ public class MarcParser {
 //		System.out.println();
 //		System.out.println(indicators);
 		for (final Indicator indicator : indicators) {
-//			System.out.println(actualMarcTag + "/" + marcIndicator + "/" + indicator.marcIndicator + "/"
+//			System.out.println(actualMarcTag + "|search:" + marcIndicator + "/actual:" + indicator.marcIndicator + "|"
 //					+ indicator.indicatorChar);
 			if (indicator.marcIndicator == marcIndicator) {
 				return indicator.indicatorChar;

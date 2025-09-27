@@ -50,13 +50,13 @@ public abstract class TagDB implements Serializable {
 	 * Einziger Indikator für $8 (Expansion eines gefundenen Datensatzes). In MARC
 	 * gibt es das nicht!
 	 */
-	public static final Indicator DOLLAR_8 = new Indicator("", "", '8', "Expansion eines gefundenen Datensatzes", NR,
-			"");
+	public static final Indicator DOLLAR_8 = new Indicator("", "", '8', '^', "Expansion eines gefundenen Datensatzes",
+			NR, "");
 
 	/**
 	 * Einziger Indikator für $9 (Verknüpfungsnummer).
 	 */
-	public static final Indicator DOLLAR_9 = new Indicator("!", "!", '9', "Verknüpfungsnummer", NR, "");
+	public static final Indicator DOLLAR_9 = new Indicator("!", "!", '9', '^', "Verknüpfungsnummer", NR, "");
 
 	/**
 	 * Mindestens 3 Nicht-Whitespace gefolgt von einem Blank.

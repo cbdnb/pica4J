@@ -9,7 +9,11 @@
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="lib" path="lib/commons-collections4-4.1.jar"/>
 	<classpathentry kind="lib" path="lib/json-20190722.jar"/>
-	<classpathentry kind="lib" path="lib/marc4j-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/marc4j-2.6.0.jar" sourcepath="lib/marc4jsource.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/Workspace-2019/zmarc/build/apidoc/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="lib/marc4jsource.jar"/>
 	<classpathentry kind="lib" path="lib/poi-3.15.jar"/>
 	<classpathentry kind="lib" path="lib/poi-ooxml-3.15.jar"/>

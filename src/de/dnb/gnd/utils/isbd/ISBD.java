@@ -1,9 +1,12 @@
 package de.dnb.gnd.utils.isbd;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Objects;
 
+import de.dnb.basics.applicationComponents.MyFileUtils;
 import de.dnb.basics.utils.OutputUtils;
 import de.dnb.gnd.parser.Record;
 import de.dnb.gnd.utils.RecordUtils;
@@ -20,6 +23,7 @@ public class ISBD implements Comparable<ISBD> {
 	// Zeile 1
 	SG dhs;
 	List<SG> dns;
+
 	String lc;
 
 	// Zeile 2
@@ -69,6 +73,8 @@ public class ISBD implements Comparable<ISBD> {
 	// RSWK, DDC
 	String rswk;
 	String ddc;
+	String formSW;
+	String zielgruppe;
 
 	// NSW
 	String listeNSW;
@@ -98,24 +104,24 @@ public class ISBD implements Comparable<ISBD> {
 	/**
 	 * Nur für Vergleichszwecke!
 	 *
-	 * @return Schöpfer/EST/Titel
+	 * @return Schöpfer/Titel. Es wird nicht nach dem EST sortiert!
 	 */
 	String getSchoepferOderTitelOhneKlammeraffe() {
-		if (titel == null) {
-			return "";
-		}
+		String sortiermerkmal;
 		if (schoepfer != null) {
-			return schoepfer;
+			sortiermerkmal = schoepfer;
+		} else {
+			sortiermerkmal = titel;
 		}
-		String tit = est;
-		if (tit == null) {
-			tit = titel;
+		if (sortiermerkmal == null) {
+			return null;
 		}
-		final int pos = tit.indexOf('@');
+		final int pos = sortiermerkmal.indexOf('@');
 		if (pos == -1) {
-			return tit;
+			return sortiermerkmal;
+		} else {
+			return sortiermerkmal.substring(pos + 1);
 		}
-		return tit.substring(pos + 1);
 	}
 
 	/**
@@ -191,7 +197,50 @@ public class ISBD implements Comparable<ISBD> {
 				"\nISBN/EAN = " + isbnEAN +
 				"\nRSWK = " + rswk +
 				"\nDDC = " + ddc +
+				"\nForm-SW = " + formSW +
+				"\nZielgruppe = " + zielgruppe +
 				"\nListe NSW = " + listeNSW;
+	}
+
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(abhaengigerTitel, anmerkung, anmerkungFortlaufend, ausgabebezeichnung, datum, ddc, dhs, dns,
+				est, formSW, fruehereHaupttitel, gesamttitel, hsVermerk, idnUebergeordnet, isbnEAN, issn, lc, links,
+				listeNSW, neNr, repro, rswk, schoepfer, titel, titelzusatz, uebergeordnetertitel, umfang,
+				verantwortlichkeit, veroeffentlichungsangaben, weitereVeroeffAng, zaehlung, zumKatalog, zielgruppe);
+	}
+
+	@Override
+	public boolean equals(final Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+		final ISBD other = (ISBD) obj;
+		return Objects.equals(abhaengigerTitel, other.abhaengigerTitel) && Objects.equals(anmerkung, other.anmerkung)
+				&& Objects.equals(anmerkungFortlaufend, other.anmerkungFortlaufend)
+				&& Objects.equals(ausgabebezeichnung, other.ausgabebezeichnung) && Objects.equals(datum, other.datum)
+				&& Objects.equals(ddc, other.ddc) && Objects.equals(dhs, other.dhs) && Objects.equals(dns, other.dns)
+				&& Objects.equals(est, other.est) && Objects.equals(formSW, other.formSW)
+				&& Objects.equals(fruehereHaupttitel, other.fruehereHaupttitel)
+				&& Objects.equals(gesamttitel, other.gesamttitel) && Objects.equals(hsVermerk, other.hsVermerk)
+				&& Objects.equals(idnUebergeordnet, other.idnUebergeordnet) && Objects.equals(isbnEAN, other.isbnEAN)
+				&& Objects.equals(issn, other.issn) && Objects.equals(lc, other.lc)
+				&& Objects.equals(links, other.links) && Objects.equals(listeNSW, other.listeNSW)
+				&& Objects.equals(neNr, other.neNr) && Objects.equals(repro, other.repro)
+				&& Objects.equals(rswk, other.rswk) && Objects.equals(schoepfer, other.schoepfer)
+				&& Objects.equals(titel, other.titel) && Objects.equals(titelzusatz, other.titelzusatz)
+				&& Objects.equals(uebergeordnetertitel, other.uebergeordnetertitel)
+				&& Objects.equals(umfang, other.umfang) && Objects.equals(verantwortlichkeit, other.verantwortlichkeit)
+				&& Objects.equals(veroeffentlichungsangaben, other.veroeffentlichungsangaben)
+				&& Objects.equals(weitereVeroeffAng, other.weitereVeroeffAng)
+				&& Objects.equals(zaehlung, other.zaehlung) && Objects.equals(zumKatalog, other.zumKatalog) &&  Objects.equals(zielgruppe, other.zielgruppe);
 	}
 
 	public static void main(final String[] args) throws IOException {
@@ -200,10 +249,11 @@ public class ISBD implements Comparable<ISBD> {
 		final Builder builder = new Builder();
 		final ISBD isbd = builder.build(record);
 		final HTMLformatter formatter = new HTMLformatter(isbd);
-
+		final PrintWriter out = MyFileUtils.outputFile("D:/Analysen/karg/NSW/test.html", false);
 		final String formatted = HTMLformatter.PRE_DOCUMENT + formatter.format();
 		OutputUtils.show(formatted);
 		System.out.println(formatted);
+		out.println(formatted);
 
 	}
 
