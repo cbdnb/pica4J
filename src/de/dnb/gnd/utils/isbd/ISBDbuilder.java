@@ -11,7 +11,7 @@ import de.dnb.gnd.utils.RecordUtils;
 import de.dnb.gnd.utils.SGUtils;
 import de.dnb.gnd.utils.SubjectUtils;
 
-public class Builder {
+public class ISBDbuilder {
 
 	private ISBD isbd;
 
@@ -82,7 +82,7 @@ public class Builder {
 
 	public static void main(final String[] args) {
 		final Record record = RecordUtils.readFromClip();
-		final Builder builder = new Builder();
+		final ISBDbuilder builder = new ISBDbuilder();
 		final ISBD isbd1 = builder.build(record);
 		final ISBD isbd2 = builder.build(record);
 		System.out.println(isbd1.equals(isbd2));

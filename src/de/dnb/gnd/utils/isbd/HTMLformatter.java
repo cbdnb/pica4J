@@ -196,7 +196,7 @@ public class HTMLformatter {
 	public static void main(final String[] args) throws IOException {
 		final String idn = StringUtils.readClipboard();
 		final Record record = RecordUtils.readFromPortal(idn);
-		final Builder builder = new Builder();
+		final ISBDbuilder builder = new ISBDbuilder();
 		final ISBD isbd = builder.build(record);
 		final HTMLformatter formatter = new HTMLformatter(isbd);
 		final PrintWriter out = MyFileUtils.outputFile("D:/Analysen/karg/NSW/test.html", false);

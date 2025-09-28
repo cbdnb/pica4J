@@ -104,11 +104,14 @@ public class ISBD implements Comparable<ISBD> {
 	/**
 	 * Nur für Vergleichszwecke!
 	 *
-	 * @return Schöpfer/Titel. Es wird nicht nach dem EST sortiert!
+	 * @return Abhängiger Titel (Da diese untereinander nach Nummer sortiert
+	 *         werden)/Schöpfer/Titel. Es wird nicht nach dem EST sortiert!
 	 */
-	String getSchoepferOderTitelOhneKlammeraffe() {
+	String getSortiermerkmal() {
 		String sortiermerkmal;
-		if (schoepfer != null) {
+		if (abhaengigerTitel != null) {
+			sortiermerkmal = abhaengigerTitel;
+		} else if (schoepfer != null) {
 			sortiermerkmal = schoepfer;
 		} else {
 			sortiermerkmal = titel;
@@ -161,7 +164,7 @@ public class ISBD implements Comparable<ISBD> {
 			return comp;
 		}
 		// SGG sind gleich, jetzt alphabetische Sortierung:
-		return getSchoepferOderTitelOhneKlammeraffe().compareToIgnoreCase(o.getSchoepferOderTitelOhneKlammeraffe());
+		return getSortiermerkmal().compareToIgnoreCase(o.getSortiermerkmal());
 	}
 
 	@Override
@@ -243,10 +246,14 @@ public class ISBD implements Comparable<ISBD> {
 				&& Objects.equals(zaehlung, other.zaehlung) && Objects.equals(zumKatalog, other.zumKatalog) &&  Objects.equals(zielgruppe, other.zielgruppe);
 	}
 
+	public boolean isAbhaengig() {
+		return idnUebergeordnet != null;
+	}
+
 	public static void main(final String[] args) throws IOException {
 
 		final Record record = RecordUtils.readFromClip();
-		final Builder builder = new Builder();
+		final ISBDbuilder builder = new ISBDbuilder();
 		final ISBD isbd = builder.build(record);
 		final HTMLformatter formatter = new HTMLformatter(isbd);
 		final PrintWriter out = MyFileUtils.outputFile("D:/Analysen/karg/NSW/test.html", false);
