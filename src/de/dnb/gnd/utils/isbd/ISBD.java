@@ -18,6 +18,7 @@ public class ISBD implements Comparable<ISBD> {
 
 	// ISBD 0 (Medienart/Medientyp) wäre Feld 0502. Wird in der NaBi nicht
 	// wiedergegeben.
+	String idn;
 	String idnUebergeordnet;
 
 	// Zeile 1
@@ -109,15 +110,13 @@ public class ISBD implements Comparable<ISBD> {
 	 */
 	String getSortiermerkmal() {
 		String sortiermerkmal;
+		final String id = " (" + idn + ")";
 		if (abhaengigerTitel != null) {
-			sortiermerkmal = abhaengigerTitel;
+			sortiermerkmal = abhaengigerTitel + id;
 		} else if (schoepfer != null) {
-			sortiermerkmal = schoepfer;
+			sortiermerkmal = schoepfer + ": " + titel + (titelzusatz != null ? " " + titelzusatz : "") + id;
 		} else {
-			sortiermerkmal = titel;
-		}
-		if (sortiermerkmal == null) {
-			return null;
+			sortiermerkmal = titel + (titelzusatz != null ? " " + titelzusatz : "") + id;
 		}
 		final int pos = sortiermerkmal.indexOf('@');
 		if (pos == -1) {
@@ -163,14 +162,16 @@ public class ISBD implements Comparable<ISBD> {
 		if (comp != 0) {
 			return comp;
 		}
-		// SGG sind gleich, jetzt alphabetische Sortierung:
+		// SGG sind gleich, jetzt alphabetische Sortierung (+ idn, um Eindeutigkeit zu
+		// erreichen):
 		return getSortiermerkmal().compareToIgnoreCase(o.getSortiermerkmal());
 	}
 
 	@Override
 	public String toString() {
 		// @formatter:off
-		return  "idn übergeordnet = " + idnUebergeordnet +
+		return  "idn = " + idn +
+				"idn übergeordnet = " + idnUebergeordnet +
 				"\ndhs = " + dhs +
 				"\ndns = " + dns +
 				"\nlc = " + lc +
@@ -226,24 +227,7 @@ public class ISBD implements Comparable<ISBD> {
 			return false;
 		}
 		final ISBD other = (ISBD) obj;
-		return Objects.equals(abhaengigerTitel, other.abhaengigerTitel) && Objects.equals(anmerkung, other.anmerkung)
-				&& Objects.equals(anmerkungFortlaufend, other.anmerkungFortlaufend)
-				&& Objects.equals(ausgabebezeichnung, other.ausgabebezeichnung) && Objects.equals(datum, other.datum)
-				&& Objects.equals(ddc, other.ddc) && Objects.equals(dhs, other.dhs) && Objects.equals(dns, other.dns)
-				&& Objects.equals(est, other.est) && Objects.equals(formSW, other.formSW)
-				&& Objects.equals(fruehereHaupttitel, other.fruehereHaupttitel)
-				&& Objects.equals(gesamttitel, other.gesamttitel) && Objects.equals(hsVermerk, other.hsVermerk)
-				&& Objects.equals(idnUebergeordnet, other.idnUebergeordnet) && Objects.equals(isbnEAN, other.isbnEAN)
-				&& Objects.equals(issn, other.issn) && Objects.equals(lc, other.lc)
-				&& Objects.equals(links, other.links) && Objects.equals(listeNSW, other.listeNSW)
-				&& Objects.equals(neNr, other.neNr) && Objects.equals(repro, other.repro)
-				&& Objects.equals(rswk, other.rswk) && Objects.equals(schoepfer, other.schoepfer)
-				&& Objects.equals(titel, other.titel) && Objects.equals(titelzusatz, other.titelzusatz)
-				&& Objects.equals(uebergeordnetertitel, other.uebergeordnetertitel)
-				&& Objects.equals(umfang, other.umfang) && Objects.equals(verantwortlichkeit, other.verantwortlichkeit)
-				&& Objects.equals(veroeffentlichungsangaben, other.veroeffentlichungsangaben)
-				&& Objects.equals(weitereVeroeffAng, other.weitereVeroeffAng)
-				&& Objects.equals(zaehlung, other.zaehlung) && Objects.equals(zumKatalog, other.zumKatalog) &&  Objects.equals(zielgruppe, other.zielgruppe);
+		return Objects.equals(idn, other.idn) ;
 	}
 
 	public boolean isAbhaengig() {

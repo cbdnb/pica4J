@@ -1,11 +1,9 @@
 package de.dnb.gnd.utils.isbd;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 import java.util.TreeSet;
 
 import de.dnb.basics.utils.PortalUtils;
@@ -16,52 +14,32 @@ import de.dnb.gnd.utils.SG;
 
 public class WV {
 
-	List<ISBD> wvRaw = new ArrayList<>();
+	private final Map<String, ISBD> idn2isbdRaw = new HashMap<>();
 
-	final ISBDbuilder builder = new ISBDbuilder();
+	private final ISBDbuilder builder = new ISBDbuilder();
 
 	public void loadRaw(final String file) throws IOException {
 		RecordReader.getMatchingReader(file).forEach(rec -> {
 			final ISBD isbd = builder.build(rec);
-			wvRaw.add(isbd);
+			idn2isbdRaw.put(rec.getId(), isbd);
 		});
 	}
 
-	Map<String, ISBD> idn2Uebergeordnet = new HashMap<>();
+	private final Map<String, Eintrag> idn2Uebergeordnet = new HashMap<>();
 
-	public void loadIDN2uebergeordnet(final String file) throws IOException {
-		RecordReader.getMatchingReader(file).forEach(rec -> {
-			final ISBD isbd = builder.build(rec);
-			idn2Uebergeordnet.put(rec.getId(), isbd);
-		});
-	}
-
-	public static class Eintrag implements Comparable<Eintrag> {
-		ISBD isbd;
-		TreeSet<ISBD> untergeordnete = new TreeSet<>();
-
-		@Override
-		public boolean equals(final Object obj) {
-			if (this == obj) {
-				return true;
-			}
-			if (obj == null) {
-				return false;
-			}
-			if (getClass() != obj.getClass()) {
-				return false;
-			}
-			final Eintrag other = (Eintrag) obj;
-			return Objects.equals(isbd, other.isbd);
-		}
-
-		@Override
-		public int compareTo(final Eintrag o) {
-			return isbd.compareTo(o.isbd);
+	public void ladeUebergeordnete(final String file) {
+		try {
+			RecordReader.getMatchingReader(file).forEach(rec -> {
+				final ISBD isbd = builder.build(rec);
+				final Eintrag eintrag = new Eintrag(isbd);
+				idn2Uebergeordnet.put(rec.getId(), eintrag);
+			});
+		} catch (final IOException e) {
+			// nix
 		}
 	}
 
-	MarcParser marcParser = new MarcParser();
+	private final MarcParser marcParser = new MarcParser();
 
 	/**
 	 * Wenn der übergeordnete Datensatz benötigt wird, aber noch nicht vorhenden
@@ -71,7 +49,7 @@ public class WV {
 	 * @return DHS des Datensatzes oder die des übergeordneten Datensatzes. Die kann
 	 *         auch null sein.
 	 */
-	public SG getDHS(final ISBD isbd) {
+	private SG getDHS(final ISBD isbd) {
 		// alter Code, in der Annahme, dass die eigene DHS sticht:
 //		if (isbd.dhs != null) {
 //			// Kann auch im Widerspruch zur DHS des übergeordneten Titels stehen:
@@ -82,68 +60,104 @@ public class WV {
 		}
 		// Ab jetzt: Ist abhängig.
 		final String idnUebergeordnet = isbd.idnUebergeordnet;
-		final ISBD uebergeordnet = idn2Uebergeordnet.get(idnUebergeordnet);
-		if (uebergeordnet != null) {
-			return uebergeordnet.dhs;
+		final boolean mapContains = idn2Uebergeordnet.containsKey(idnUebergeordnet);
+		Eintrag uebergeordnet = null;
+		if (mapContains) {
+			uebergeordnet = idn2Uebergeordnet.get(idnUebergeordnet);
+		} else {
+			// Denkbar, dass der übergeordnete mit den anderen zusammen geladen wurde:
+			final ISBD raw = idn2isbdRaw.get(idnUebergeordnet);
+			if (raw != null) {
+				uebergeordnet = new Eintrag(raw);
+			}
 		}
-		// Unangenehmster Fall: Müssen aus Portal holen, da nicht in idn2Uebergeordnet.
-		final org.marc4j.marc.Record marcRecord = PortalUtils.getMarcRecord(idnUebergeordnet);
-		final Record record = marcParser.parse(marcRecord);
-		if (record == null) {
-			return null;
+		if (uebergeordnet == null) {
+			// Unangenehmster Fall: Müssen aus Portal holen, da nicht in geladen.
+			final org.marc4j.marc.Record marcRecord = PortalUtils.getMarcRecord(idnUebergeordnet);
+			final Record record = marcParser.parse(marcRecord);
+			if (record == null) {
+				return null;
+			}
+			final ISBD raw = builder.build(record);
+			uebergeordnet = new Eintrag(raw);
 		}
-		final ISBD isbdUebergeornet = builder.build(record);
-		idn2Uebergeordnet.put(idnUebergeordnet, isbdUebergeornet);
-		return isbdUebergeornet.dhs;
+		if (!mapContains) {
+			idn2Uebergeordnet.put(idnUebergeordnet, uebergeordnet);
+		}
+		return uebergeordnet.getSG();
 	}
 
-	Map<SG, TreeSet<Eintrag>> sg2eintraege = new HashMap<>();
+	private final Map<SG, Eintragsliste> sg2eintragsliste = new HashMap<>();
 
 	public void verarbeiteRaw() {
-		wvRaw.forEach(isbd -> {
+		idn2isbdRaw.forEach((idn, isbd) -> {
 			final SG dhs = getDHS(isbd);
-			// ab jetzt sollte auch ein übergeordneter Datensatz vorhanden sein. Was wenn
-			// nicht?
+			// Ab jetzt sollte auch ein übergeordneter Datensatz vorhanden sein, da das
+			// getDHS() zumindest versucht. Was wenn nicht erfolgreich?
 			if (!isbd.isAbhaengig()) {
-				final Eintrag eintrag = new Eintrag();
-				eintrag.isbd = isbd;
-				final TreeSet<Eintrag> eintraege = sg2eintraege.getOrDefault(dhs, new TreeSet<>());
-				eintraege.add(eintrag);
-				if (!sg2eintraege.containsKey(dhs)) {
-					sg2eintraege.put(dhs, eintraege);// nötig?
+				final Eintrag eintrag = new Eintrag(isbd);
+				final Eintragsliste eintragsliste = sg2eintragsliste.getOrDefault(dhs, new Eintragsliste(dhs));
+				eintragsliste.add(eintrag);
+				if (!sg2eintragsliste.containsKey(dhs)) {
+					sg2eintragsliste.put(dhs, eintragsliste);
 				}
 				return;
 			}
+
 			// ab jetzt abhaengig:
 			final String idnUebergeordnet = isbd.idnUebergeordnet;
-			final ISBD uebergeordnet = idn2Uebergeordnet.get(idnUebergeordnet);
-			if (uebergeordnet == null) {
+			final ISBD isbdUebergeordnet = idn2Uebergeordnet.get(idnUebergeordnet).isbd;
+			if (isbdUebergeordnet == null) {
 				return; // Kannste machen nix!
 			}
-			// Übergeordnet existiert, ist aber schon eine Eintragsliste vorhanden?
-			final TreeSet<Eintrag> eintraege = sg2eintraege.getOrDefault(dhs, new TreeSet<>());
-			if (!sg2eintraege.containsKey(dhs)) {
-				sg2eintraege.put(dhs, eintraege);// nötig?
+			// Übergeordnet existiert, ist aber schon eine Eintragsliste vorhanden zur SG?
+			final Eintragsliste eintragslisteUeber = sg2eintragsliste.getOrDefault(dhs, new Eintragsliste(dhs));
+			if (!sg2eintragsliste.containsKey(dhs)) {
+				sg2eintragsliste.put(dhs, eintragslisteUeber);
 			}
+			// Ist den schon ein Eintrag in dieser Liste vorhanden?
 			Eintrag eintragUebergeordnet = null;
-			for (final Eintrag actualEintrag : eintraege) {
-				if (actualEintrag.isbd.equals(isbd)) {
-					eintragUebergeordnet = actualEintrag;
+			// Schlichte Suche:
+			for (final Eintrag actualEintragUeber : eintragslisteUeber.getEintraege()) {
+//				System.err.println(actualEintrag + " / " + isbd.getSortiermerkmal());
+				if (actualEintragUeber.isbd.equals(isbdUebergeordnet)) {
+					eintragUebergeordnet = actualEintragUeber;
 					break;
 				}
 			}
 			if (eintragUebergeordnet == null) {
-				eintragUebergeordnet = new Eintrag();
-				eintragUebergeordnet.isbd = isbd;
-				eintraege.add(eintragUebergeordnet);
+				eintragUebergeordnet = new Eintrag(isbdUebergeordnet);
+				eintragslisteUeber.add(eintragUebergeordnet);
 			}
-			eintragUebergeordnet.untergeordnete.add(isbd);
+
+			eintragUebergeordnet.addUntergeordnet(isbd);
 		});
 	};
 
-	public static void main(final String[] args) {
-		// TODO Auto-generated method stub
+	public Eintragsliste getEintragsliste(final SG dhs) {
+		return sg2eintragsliste.get(dhs);
+	}
 
+	public Collection<Eintragsliste> getEintragslisten() {
+		return new TreeSet<>(sg2eintragsliste.values());
+	}
+
+	public static void main(final String[] args) throws IOException {
+		final WV wv = new WV();
+		wv.loadRaw("D:/Analysen/karg/NSW/WVtest.txt");
+		wv.ladeUebergeordnete("");
+		wv.verarbeiteRaw();
+
+		System.out.println(wv);
+	}
+
+	@Override
+	public String toString() {
+		String s = "";
+		for (final Eintragsliste eintragsliste : getEintragslisten()) {
+			s += "\n\n" + eintragsliste;
+		}
+		return "WV:" + s;
 	}
 
 }
