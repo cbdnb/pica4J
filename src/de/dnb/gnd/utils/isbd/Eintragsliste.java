@@ -33,7 +33,8 @@ public class Eintragsliste implements Comparable<Eintragsliste> {
 		for (final Eintrag eintrag : eintraegeZurSG) {
 			s += "\n" + eintrag;
 		}
-		return dhs.getDDCString() + s;
+		final String ddcString = dhs == null ? null : dhs.getDDCString();
+		return ddcString + s;
 	}
 
 	@Override

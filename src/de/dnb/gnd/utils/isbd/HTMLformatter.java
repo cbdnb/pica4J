@@ -3,15 +3,16 @@ package de.dnb.gnd.utils.isbd;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import de.dnb.basics.applicationComponents.MyFileUtils;
 import de.dnb.basics.applicationComponents.strings.StringUtils;
 import de.dnb.basics.filtering.FilterUtils;
 import de.dnb.basics.utils.HTMLEntities;
+import de.dnb.basics.utils.HTMLUtils;
 import de.dnb.basics.utils.OutputUtils;
-import de.dnb.gnd.parser.Record;
-import de.dnb.gnd.utils.RecordUtils;
+import de.dnb.gnd.utils.SG;
 
 public class HTMLformatter {
 
@@ -26,6 +27,10 @@ public class HTMLformatter {
 	 */
 	public HTMLformatter(final ISBD isbd) {
 		this.isbd = isbd;
+	}
+
+	public HTMLformatter() {
+		this.isbd = null;
 	}
 
 	public void setISBD(final ISBD isbd) {
@@ -43,6 +48,50 @@ public class HTMLformatter {
 		} else {
 			return HANGING_PRE + isbd.abhaengigerTitel;// .replaceFirst(", ", "<br>");
 		}
+	}
+
+	public String format(final WV wv) {
+		String s = PRE_DOCUMENT;
+		final Collection<Eintragsliste> listen = wv.getEintragslisten();
+		for (final Eintragsliste liste : listen) {
+			s += "\n" + format(liste);
+		}
+		return s;
+	}
+
+	public String format(final Eintragsliste liste) {
+		String s = "";
+		final SG dhs = liste.dhs;
+		String dhsStr;
+		if (dhs == null) {
+			dhsStr = "Keine Hauptsachgruppe vergeben";
+		} else {
+			dhsStr = dhs.getDDCString() + " " + dhs.getDescription();
+		}
+		s += "\n<br>" + HTMLUtils.heading(dhsStr, 4);
+		final Collection<Eintrag> eintraege = liste.getEintraege();
+		for (final Eintrag eintrag : eintraege) {
+			s += "\n<br>" + format(eintrag);
+		}
+		return s;
+	}
+
+	public String format(final Eintrag eintrag) {
+		String s = "";
+		s += "\n" + format(eintrag.isbd);
+		final Collection<ISBD> untergeordnete = eintrag.getUntergeordnete();
+		for (final ISBD isbd : untergeordnete) {
+			s += "\n" + format(isbd);
+		}
+		return s;
+	}
+
+	public String format(final ISBD isbd) {
+		if (isbd == null) {
+			return null;
+		}
+		setISBD(isbd);
+		return format();
 	}
 
 	public String format() {
@@ -98,13 +147,19 @@ public class HTMLformatter {
 	}
 
 	public static String PRE_DOCUMENT =
+		"<div class=\"mehrspaltig\">"+
 		"<style>\r\n"
 		+ "blockquote {\r\n"
 		+ "  margin-left: 1rem;\r\n"
-		+ "}\r\n"
-		+ "p {\r\n"
-		+ "   text-indent: -1rem;\r\n"
-		+ "}\r\n"
+		+ "}\r\n" +
+//		+ "p {\r\n"
+//		+ "   text-indent: -1rem;\r\n"
+//		+ "}\r\n"
+		".mehrspaltig {\r\n"
+		+ "	columns: 3 16em;\r\n"
+		+ "	hyphens: auto;\r\n"
+		+ "	orphans: 3;\r\n"
+		+ "}"
 		+ "</style>\n";
 
 
@@ -194,16 +249,15 @@ public class HTMLformatter {
 	}
 
 	public static void main(final String[] args) throws IOException {
-		final String idn = StringUtils.readClipboard();
-		final Record record = RecordUtils.readFromPortal(idn);
-		final ISBDbuilder builder = new ISBDbuilder();
-		final ISBD isbd = builder.build(record);
-		final HTMLformatter formatter = new HTMLformatter(isbd);
-		final PrintWriter out = MyFileUtils.outputFile("D:/Analysen/karg/NSW/test.html", false);
-		final String formatted = PRE_DOCUMENT + formatter.format();
-		OutputUtils.show(formatted);
-		out.println(formatted);
-		System.out.println(formatted);
+		final WV wv = WV.createWV("D:/Analysen/karg/NSW/nsw.txt", null);
+		final HTMLformatter formatter = new HTMLformatter();
+		final String html = formatter.format(wv);
+
+		final PrintWriter out = MyFileUtils.outputFile("D:/Analysen/karg/NSW/NSW-test.html", false);
+//		final String formatted = PRE_DOCUMENT + formatter.format();
+		OutputUtils.show(html);
+		out.println(html);
+		System.out.println(html);
 
 	}
 

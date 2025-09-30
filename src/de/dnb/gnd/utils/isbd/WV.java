@@ -12,22 +12,38 @@ import de.dnb.gnd.parser.Record;
 import de.dnb.gnd.parser.RecordReader;
 import de.dnb.gnd.utils.SG;
 
+/**
+ * Repräsentiert ein nach Sachgruppen sortiertes WV. Innerhalb der Sachgruppen
+ * wird alphabetisch sortiert. Die einzelnen Sachgruppen bekommt man mit
+ * {@link #getEintragsliste(SG)}, alle SGG mit {@link #getEintragslisten()}.
+ */
 public class WV {
 
 	private final Map<String, ISBD> idn2isbdRaw = new HashMap<>();
 
 	private final ISBDbuilder builder = new ISBDbuilder();
 
-	public void loadRaw(final String file) throws IOException {
+	private void loadRaw(final String file) throws IOException {
 		RecordReader.getMatchingReader(file).forEach(rec -> {
 			final ISBD isbd = builder.build(rec);
 			idn2isbdRaw.put(rec.getId(), isbd);
 		});
 	}
 
+	/**
+	 *
+	 */
+	private WV() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	private final Map<String, Eintrag> idn2Uebergeordnet = new HashMap<>();
 
-	public void ladeUebergeordnete(final String file) {
+	private void ladeUebergeordnete(final String file) {
+		if (file == null) {
+			return;
+		}
 		try {
 			RecordReader.getMatchingReader(file).forEach(rec -> {
 				final ISBD isbd = builder.build(rec);
@@ -142,12 +158,27 @@ public class WV {
 		return new TreeSet<>(sg2eintragsliste.values());
 	}
 
-	public static void main(final String[] args) throws IOException {
+	/**
+	 *
+	 * @param downloadFile hier liegt das WV, am besten im Pica+-Format. Es geht
+	 *                     aber auch gzip.
+	 * @param broaderFile  Hier liegen die übergeordneten Titel. Diese können über
+	 *                     eine IDN-Liste ermittelt werden. ersatzweise werden sie
+	 *                     von Portal geholt - was mit Darstellungseinschränkungen
+	 *                     verbunden sein kann.
+	 * @return Ein WV.
+	 * @throws IOException downloadFile nicht existiert.
+	 */
+	public static WV createWV(final String downloadFile, final String broaderFile) throws IOException {
 		final WV wv = new WV();
-		wv.loadRaw("D:/Analysen/karg/NSW/WVtest.txt");
-		wv.ladeUebergeordnete("");
+		wv.loadRaw(downloadFile);
+		wv.ladeUebergeordnete(broaderFile);
 		wv.verarbeiteRaw();
+		return wv;
+	}
 
+	public static void main(final String[] args) throws IOException {
+		final WV wv = createWV("D:/Analysen/karg/NSW/WVtest.txt", null);
 		System.out.println(wv);
 	}
 

@@ -413,6 +413,7 @@ public class Util {
 		for (final String feld4190 : felder4190) {
 			gesamt += " (" + feld4190 + ")";
 		}
+		gesamt = gesamt.replaceAll("\\(.+\\$BVerfasser: ", "(");
 
 		return gesamt.isBlank() ? null : gesamt.trim();
 	}
