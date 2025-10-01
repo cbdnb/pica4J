@@ -165,11 +165,47 @@ public class HTMLformatter {
 
 	public static final String HANGING_PRE = "<blockquote><p>";
 	public static final String HANGING_POST = "</p></blockquote>";
+	private List<String> teile;
 
 	protected String getRest() {
-		// @formatter:on
-		final List<String> teile = new ArrayList<>();
+		final List<String> teile = restVorLinks();
+		if (isbd.links != null && !isbd.links.isEmpty()) {
+			teile.add(getLinks());
+		}
+		teile.addAll(restNachLinks());
+		String ergebnis = Util.entferneKlammeraffe(StringUtils.concatenate(". - \n", teile));
+		if (isbd.abhaengigerTitel != null) {
+			ergebnis += HANGING_POST;
+		}
+		return ergebnis;
+	}
 
+	public String getLinks() {
+		return StringUtils.concatenate(" . - ", FilterUtils.mapNullFiltered(isbd.links, Link::toHTML));
+	}
+
+	public List<String> restNachLinks() {
+		final ArrayList<String>teile = new ArrayList<>();
+		if (isbd.anmerkung != null) {
+			teile.add(isbd.anmerkung);
+		}
+
+		String hsVermerkPlusISBN = isbd.hsVermerk;
+		if (isbd.isbnEAN != null) {
+			if (hsVermerkPlusISBN != null) {
+				hsVermerkPlusISBN += " - " + isbd.isbnEAN;
+			} else {
+				hsVermerkPlusISBN = isbd.isbnEAN;
+			}
+		}
+		if (hsVermerkPlusISBN != null) {
+			teile.add(hsVermerkPlusISBN);
+		}
+		return teile;
+	}
+
+	public List<String> restVorLinks() {
+		final ArrayList<String> teile = new ArrayList<>();
 		if (isbd.getTitelnachHaupteintragung() != null) {
 			teile.add(isbd.getTitelnachHaupteintragung());
 		}
@@ -221,31 +257,7 @@ public class HTMLformatter {
 		if (isbd.gesamttitel != null) {
 			teile.add(isbd.gesamttitel);
 		}
-
-		if (isbd.links != null && !isbd.links.isEmpty()) {
-			teile.add(StringUtils.concatenate(" . - ", FilterUtils.mapNullFiltered(isbd.links, Link::toHTML)));
-		}
-
-		if (isbd.anmerkung != null) {
-			teile.add(isbd.anmerkung);
-		}
-
-		String hsVermerkPlusISBN = isbd.hsVermerk;
-		if (isbd.isbnEAN != null) {
-			if (hsVermerkPlusISBN != null) {
-				hsVermerkPlusISBN += " - " + isbd.isbnEAN;
-			} else {
-				hsVermerkPlusISBN = isbd.isbnEAN;
-			}
-		}
-		if (hsVermerkPlusISBN != null) {
-			teile.add(hsVermerkPlusISBN);
-		}
-		String ergebnis = Util.entferneKlammeraffe(StringUtils.concatenate(". - \n", teile));
-		if (isbd.abhaengigerTitel != null) {
-			ergebnis += HANGING_POST;
-		}
-		return ergebnis;
+		return teile;
 	}
 
 	public static void main(final String[] args) throws IOException {

@@ -6,6 +6,11 @@ import java.util.TreeSet;
 
 import de.dnb.gnd.utils.SG;
 
+/**
+ * Die Liste der zu einer SG ({@link #dhs} gehörigen WV-Einträge. Diese bekommt
+ * man mit {@link #getEintraege()}. Listen sind vergleichbar über ihre
+ * Sachgruppe. Innerhalb der Liste sind die Einträge alphabetisch sortiert.
+ */
 public class Eintragsliste implements Comparable<Eintragsliste> {
 
 	private final TreeSet<Eintrag> eintraegeZurSG = new TreeSet<>();
