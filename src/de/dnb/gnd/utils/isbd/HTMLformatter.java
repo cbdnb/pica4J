@@ -261,7 +261,7 @@ public class HTMLformatter {
 	}
 
 	public static void main(final String[] args) throws IOException {
-		final WV wv = WV.createWV("D:/Analysen/karg/NSW/nsw.txt", null);
+		final WV wv = WV.createWV("D:/Analysen/karg/NSW/nsw.txt", "D:/Analysen/karg/NSW/nswUeber.txt");
 		final HTMLformatter formatter = new HTMLformatter();
 		final String html = formatter.format(wv);
 

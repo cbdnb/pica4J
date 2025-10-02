@@ -594,9 +594,19 @@ public class Util {
 		final String dollar8 = RecordUtils.getContentOfSubfield(record, "4000", '8');
 		// Wenns mehrere 4000er sind, wird die Auswertung schwer:
 		if (abhaengigerTitel(record) != null && dollar8 != null) {
+			// TODO:
 			// $8 auswerten, das geht am besten, wenn die Daten im Pica+-Format vorliegen:
 		}
 		return null;
+	}
+
+	/**
+	 *
+	 * @param record nicht null
+	 * @return IDN in 4000 oder null.
+	 */
+	public static String getIDNuebergeordnet(final Record record) {
+		return RecordUtils.getContentOfSubfield(record, "4000", '9');
 	}
 
 }

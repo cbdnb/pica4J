@@ -19,7 +19,7 @@ public class ISBDbuilder {
 		isbd = new ISBD();
 		isbd.idn = record.getId();
 		// Wenn's mehrere 4000er sind, wird es schwer, daher:
-		isbd.idnUebergeordnet = RecordUtils.getContentOfSubfield(record, "4000", '9');
+		isbd.idnUebergeordnet = Util.getIDNuebergeordnet(record);
 		isbd.dhs = SGUtils.getDHS(record);
 		isbd.dns = SGUtils.getDNS(record);
 		isbd.lc = RecordUtils.getContentOfSubfield(record, "1700", 'a'); // 1. Ländercode

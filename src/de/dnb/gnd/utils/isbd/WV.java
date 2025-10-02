@@ -178,7 +178,7 @@ public class WV {
 	}
 
 	public static void main(final String[] args) throws IOException {
-		final WV wv = createWV("D:/Analysen/karg/NSW/WVtest.txt", null);
+		final WV wv = createWV("D:/Analysen/karg/NSW/WVtest.txt", "D:/Analysen/karg/NSW/nswUeber.txt");
 		System.out.println(wv);
 	}
 
