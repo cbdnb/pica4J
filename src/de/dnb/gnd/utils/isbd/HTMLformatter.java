@@ -18,26 +18,10 @@ public class HTMLformatter {
 
 	private static final String ZEILE_ENDE = "</td></tr>\n";
 	private static final String SE_ZEILE_ENDE = "</i></td></tr>\n";
-	private static final String SE_ZEILE_ANFANG = "\t<tr style=\"font-size:9px;\" colspan=\"2\"><td><i>";
+	private static final String SE_ZEILE_ANFANG = "\t<tr style=\"font-size:9px;\"><td colspan=\"2\"><i>";
 	private static final String TITEL_ZEILE = "\t<tr style=\"font-size:9px;\">";
-	private ISBD isbd;
 
-	/**
-	 * @param isbd
-	 */
-	public HTMLformatter(final ISBD isbd) {
-		this.isbd = isbd;
-	}
-
-	public HTMLformatter() {
-		this.isbd = null;
-	}
-
-	public void setISBD(final ISBD isbd) {
-		this.isbd = isbd;
-	}
-
-	private String getHaupteintragung() {
+	private String getHaupteintragung(final ISBD isbd) {
 		if (isbd.abhaengigerTitel == null) {
 			final String haupteintragung = "<b>" + isbd.getHaupteintragung();
 			if (haupteintragung.contains("]")) {
@@ -90,14 +74,11 @@ public class HTMLformatter {
 		if (isbd == null) {
 			return null;
 		}
-		setISBD(isbd);
-		return format();
-	}
-
-	public String format() {
 		// @formatter:off
 		String html =
-				"<table>\n"+
+				"<table"
+//				+ " border=\"\" + 2 + \"\""
+				+ ">\n"+
 					TITEL_ZEILE +
 						"<td>" + HTMLEntities.htmlAngleBrackets(isbd.sgg()) + "</td>" +
 						"<td style=\"text-align:right;\">" +
@@ -110,8 +91,8 @@ public class HTMLformatter {
 				+ ZEILE_ENDE;
 		html += "\t<tr style=\"font-size:12px;\">" +
 					"<td colspan=\"2\">" +
-						getHaupteintragung() +
-						getRest()
+						getHaupteintragung(isbd) +
+						getRest(isbd)
 				+ ZEILE_ENDE;
 		if(isbd.rswk!=null) {
 			html += SE_ZEILE_ANFANG
@@ -167,12 +148,12 @@ public class HTMLformatter {
 	public static final String HANGING_POST = "</p></blockquote>";
 	private List<String> teile;
 
-	protected String getRest() {
-		final List<String> teile = restVorLinks();
+	protected String getRest(final ISBD isbd) {
+		final List<String> teile = restVorLinks(isbd);
 		if (isbd.links != null && !isbd.links.isEmpty()) {
-			teile.add(getLinks());
+			teile.add(getLinks(isbd));
 		}
-		teile.addAll(restNachLinks());
+		teile.addAll(restNachLinks(isbd));
 		String ergebnis = Util.entferneKlammeraffe(StringUtils.concatenate(". - \n", teile));
 		if (isbd.abhaengigerTitel != null) {
 			ergebnis += HANGING_POST;
@@ -180,11 +161,11 @@ public class HTMLformatter {
 		return ergebnis;
 	}
 
-	public String getLinks() {
+	public String getLinks(final ISBD isbd) {
 		return StringUtils.concatenate(" . - ", FilterUtils.mapNullFiltered(isbd.links, Link::toHTML));
 	}
 
-	public List<String> restNachLinks() {
+	public List<String> restNachLinks(final ISBD isbd) {
 		final ArrayList<String>teile = new ArrayList<>();
 		if (isbd.anmerkung != null) {
 			teile.add(isbd.anmerkung);
@@ -204,7 +185,7 @@ public class HTMLformatter {
 		return teile;
 	}
 
-	public List<String> restVorLinks() {
+	public List<String> restVorLinks(final ISBD isbd) {
 		final ArrayList<String> teile = new ArrayList<>();
 		if (isbd.getTitelnachHaupteintragung() != null) {
 			teile.add(isbd.getTitelnachHaupteintragung());
@@ -266,7 +247,6 @@ public class HTMLformatter {
 		final String html = formatter.format(wv);
 
 		final PrintWriter out = MyFileUtils.outputFile("D:/Analysen/karg/NSW/NSW-test.html", false);
-//		final String formatted = PRE_DOCUMENT + formatter.format();
 		OutputUtils.show(html);
 		out.println(html);
 		System.out.println(html);
