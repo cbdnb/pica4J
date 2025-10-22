@@ -573,7 +573,7 @@ public final class GNDUtils {
 	 * Gibt Pos.3: Katalogisierungslevel von Feld 005.
 	 *
 	 * @param record nicht null
-	 * @return 1-7, 0 für 'z'; -48, wenn nicht enthalten
+	 * @return 1-7, 0 für 'z'; +48, wenn nicht enthalten
 	 */
 	public static int getLevel(final Record record) {
 		final char levelChar = RecordUtils.getDatatypeCharacterAt(record, 2);
@@ -1555,8 +1555,8 @@ public final class GNDUtils {
 
 	public static void main(final String[] args)
 			throws IllFormattedLineException, OperationNotSupportedException, IOException {
-		final String s = StringUtils.readClipboard();
-		System.out.println(dollar8toline(s));
+		final Record record = readFromClip();
+		System.out.println(getLevel(record));
 	}
 
 	/**
