@@ -2996,8 +2996,7 @@ public final class BibTagDB extends TagDB {
 		newBibTag.add(DOLLAR_8);
 		newBibTag.add(new Indicator(" *", "", 'p', "Bemerkungen", NR, ""));
 
-		newBibTag = new BibliographicTag("5590", "044P/00", "1. Gestaltungsmerkmal auf bibliografischer Ebene", R, "",
-				"");
+		newBibTag = new BibliographicTag("5590", "044P", "1. Gestaltungsmerkmal auf bibliografischer Ebene", R, "", "");
 		addTag(newBibTag);
 		newBibTag.add(new Indicator("[", "]", 'b', "Label", NR, ""));
 		newBibTag.add(DOLLAR_9);
