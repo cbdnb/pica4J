@@ -127,6 +127,34 @@ public final class GNDUtils {
 
 	/**
 	 *
+	 * @param record nicht null
+	 * @return Set der Verweisungen im Pica3-Format mit Deskriptionszeichen, ohne
+	 *         $T, $U, $L, $4, $5, $v, Unicode-composed. Kann verändert werden.
+	 *
+	 */
+	public static Set<String> getVerweise(final Record record) {
+		RangeCheckUtils.assertReferenceParamNotNull("record", record);
+		final Set<String> verweise = new LinkedHashSet<>();
+		final List<Line> lines = GNDUtils.getLines4XX(record);
+
+		lines.forEach(line -> {
+			try {
+				line = SubfieldUtils.getNewLineRemovingSubfields(line, 'T', 'U', 'L', '4', '5', 'v');
+				if (line == null) {
+					return;
+				}
+				final String verweis = RecordUtils.toPicaWithoutTag(line);
+				verweise.add(verweis);
+			} catch (final Exception e) {
+				// nix
+			}
+		});
+
+		return verweise;
+	}
+
+	/**
+	 *
 	 * @param record nicht null, GND
 	 * @return enthält Verweisungen
 	 */

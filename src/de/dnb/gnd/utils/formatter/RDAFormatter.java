@@ -479,8 +479,8 @@ public class RDAFormatter {
 	/**
 	 *
 	 * @param record nicht null
-	 * @return RDA-Ansetzungen der Verweisungen mit Deskriptionszeichen, ohne $T,
-	 *         $U, $L, $4, $5, $v, Unicode-composed
+	 * @return Set der RDA-Ansetzungen der Verweisungen mit Deskriptionszeichen,
+	 *         ohne $T, $U, $L, $4, $5, $v, Unicode-composed. Kann verändert werden.
 	 *
 	 */
 	public static Set<String> getReineRDAVerweise(final Record record) {
