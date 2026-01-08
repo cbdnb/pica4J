@@ -38,7 +38,6 @@
 	<classpathentry kind="lib" path="lib/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="lib" path="log4j-1.2.6.jar"/>
 	<classpathentry kind="lib" path="rel/BASICS.jar"/>
-	<classpathentry kind="lib" path="rel/GND.jar"/>
 	<classpathentry kind="lib" path="lib/hamcrest-all-1.3.jar"/>
 	<classpathentry kind="lib" path="lib/junit-4.13.2.jar"/>
 	<classpathentry kind="lib" path="lib/junit-4.13.2-javadoc.jar"/>

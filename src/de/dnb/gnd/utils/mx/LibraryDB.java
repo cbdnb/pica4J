@@ -16,6 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+
 import org.json.JSONObject;
 
 import de.dnb.basics.Misc;
@@ -119,12 +120,14 @@ public class LibraryDB {
 
 		final Record record = LibraryUtils.parse(jsonObject);
 
-		if (record == null)
+		if (record == null) {
 			return Library.getNullLibrary();
+		}
 		final String longN = LibraryUtils.getLongName(record);
 		String isilKorr = LibraryUtils.getIsil(record);
-		if (isilKorr == null)
+		if (isilKorr == null) {
 			isilKorr = isil;
+		}
 		final String shortN = LibraryUtils.getBestShortName(record);
 		final String verbund = LibraryUtils.getVerbund(record);
 
@@ -187,16 +190,16 @@ public class LibraryDB {
 
 	public static void main(final String... args) throws IOException {
 
-		loadLibrariesExtern();
-		System.out.println(serialize());
+//		loadLibrariesExtern();
+//		System.out.println(serialize());
 
-//		final Pair<Library, String> lib1 = parseDB("CH-ZuSLS");
-//		System.out.println(lib1.first.nameLang);
+		final Library lib1 = ISIL_2_LIB.get("DE-101c");
+		System.out.println(lib1.toStringLang());
 
 	}
 
 	public static void main1(final String... args) throws IOException {
-		Pair<Library, String> db = parseDB("spio");
+		final Pair<Library, String> db = parseDB("spio");
 		System.out.println(db.first.toStringLang());
 	}
 
@@ -248,15 +251,17 @@ public class LibraryDB {
 	 */
 	public static Pair<Library, String> parse(String isilPlusRest) {
 
-		if (isilPlusRest == null)
+		if (isilPlusRest == null) {
 			return NULL_PAIR;
+		}
 		isilPlusRest = isilPlusRest.trim();
 		final Pair<Library, String> pair = parseDB(isilPlusRest);
 
-		if (pair != null)
+		if (pair != null) {
 			return pair;
-		else
+		} else {
 			return parseByISILAgency(isilPlusRest);
+		}
 
 	}
 
@@ -285,8 +290,9 @@ public class LibraryDB {
 		final int beginIndex = isil.length() - normalizationDelta;
 		String rest = isilPlusRest.substring(beginIndex);
 
-		if (!rest.isEmpty())
+		if (!rest.isEmpty()) {
 			rest = rest.substring(1);
+		}
 
 		return new Pair<Library, String>(lib, rest);
 	}
@@ -299,9 +305,10 @@ public class LibraryDB {
 	 */
 	public static Library getLibOfLongestPrefix(String mx) {
 		mx = normalize(mx);
-		if (mx == null)
+		if (mx == null) {
 			return Library.getNullLibrary();
-		Library valueOfLongestPrefix = ISIL_2_LIBRARY_TRIE.getValueOfLongestPrefix(mx.toUpperCase() + "-");
+		}
+		final Library valueOfLongestPrefix = ISIL_2_LIBRARY_TRIE.getValueOfLongestPrefix(mx.toUpperCase() + "-");
 		return valueOfLongestPrefix == null ? Library.NULL_LIBRARY : valueOfLongestPrefix;
 	}
 
@@ -4461,6 +4468,12 @@ public class LibraryDB {
 		KURZ_2_LIB.put(bibliothek.nameKurz, bibliothek);
 		ISIL_2_LIBRARY_TRIE.put(bibliothek.isil.toUpperCase() + "-", bibliothek);
 
+		bibliothek = new Library("XXXX", "DMA", "DE-101c", "Deutsche Nationalbibliothek, Deutsches Musikarchiv");
+		bibliothek.addRedaktion(RedaktionsTyp.DEFAULT, "DE-101");
+		ISIL_2_LIB.put(bibliothek.isil, bibliothek);
+		KURZ_2_LIB.put(bibliothek.nameKurz, bibliothek);
+		ISIL_2_LIBRARY_TRIE.put(bibliothek.isil.toUpperCase() + "-", bibliothek);
+
 	}
 
 	/**
@@ -4474,7 +4487,7 @@ public class LibraryDB {
 
 	/**
 	 * Zum Laden aus Liste.txt, wenn sich was geändert hat.
-	 * 
+	 *
 	 * @throws IOException
 	 */
 	static void loadLibrariesExtern() throws IOException {
@@ -4493,8 +4506,9 @@ public class LibraryDB {
 		final int ISIL_VERB = 04;
 		final int NAM_LA = 05;
 		for (final String line : lines) {
-			if (line.isEmpty())
+			if (line.isEmpty()) {
 				continue;
+			}
 			final String[] lineArr = line.split("\t");
 			final String urheberk = StringUtils.getArrayElement(lineArr, URH);
 			final String naKu = StringUtils.getArrayElement(lineArr, NAM_KU);
@@ -4512,8 +4526,9 @@ public class LibraryDB {
 			}
 			RedaktionsTyp typ;
 			typ = RedaktionsTyp.getTyp(redTyp);
-			if (typ == null)
+			if (typ == null) {
 				throw new NullPointerException("Typ unbekannt: " + redTyp + ", ISIL:" + isilBiB);
+			}
 			bibliothek.addRedaktion(typ, isilVerb);
 
 		}

@@ -16,6 +16,7 @@ import java.io.StringWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.text.SimpleDateFormat;
@@ -127,18 +128,22 @@ public class Misc {
 		URL url = null;
 		HttpURLConnection conn;
 		try {
-			url = new URL(uri);
+			url = new URI(uri).toURL();
+			// URL(uri);
 			conn = (HttpURLConnection) url.openConnection();
 			if (isHttpError(conn.getResponseCode())) {
 				uri = "http://dispatch.opac.d-nb.de/" + "DB=1.1/SET=4/TTL=1/"
 						+ "CMD?ACT=SRCHA&IKT=8509&SRT=LST_ty&TRM=idn+" + idn;
-				url = new URL(uri);
+				url = new URI(uri).toURL();
+				// URL(uri);
 				conn = (HttpURLConnection) url.openConnection();
 				if (conn.getResponseCode() != HttpURLConnection.HTTP_OK) {
 					return null;
 				}
 			}
 		} catch (final IOException e) {
+			return null;
+		} catch (final URISyntaxException e) {
 			return null;
 		}
 		return uri;
@@ -215,8 +220,9 @@ public class Misc {
 			return null;
 		}
 		try {
-			url = new URL(location);
-		} catch (final MalformedURLException e) {
+			url = new URI(location).toURL();
+			// URL(location);
+		} catch (final MalformedURLException | URISyntaxException e) {
 			return null;
 		}
 		return openConnection(url, repeat - 1);
@@ -233,7 +239,8 @@ public class Misc {
 		String website = "";
 		InputStream urlStream = null;
 		try {
-			final URL url = new URL(uri);
+			final URL url = new URI(uri).toURL();
+			// new URL(uri);
 			final URLConnection conn = openConnection(url, 4);
 
 			urlStream = conn.getInputStream();
@@ -246,6 +253,8 @@ public class Misc {
 			}
 		} catch (final IOException e) {
 			StreamUtils.safeClose(urlStream);
+			return null;
+		} catch (final URISyntaxException e) {
 			return null;
 		} finally {
 			StreamUtils.safeClose(urlStream);

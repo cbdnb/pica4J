@@ -643,4 +643,6 @@ XXX	Wiener Stadt- und L-Arch.	AT-WSTLA		AT-OBV	Wiener Stadt- und Landesarchiv
 XXX	Wiener Stadt- und L-Arch. Archivbib.	AT-WSTLA-B		AT-OBV	Wiener Stadt- und Landesarchiv Archivbibliothek
 XXX	Wirtschaftsuni Wien Universitätsarchiv	AT-WUW-AR		AT-OBV	Wirtschaftsuniversität Wien Universitätsarchiv
 XXX	Zentrum für Erinnerungskultur und Geschichtsforschung (ZEG) Archiv	AT-ZEG		AT-OBV	Zentrum für Erinnerungskultur und Geschichtsforschung (ZEG) Archiv
+XXX	Leipzig DNB Musikarchiv	DE-101c		DE-101	Deutsche Nationalbibliothek, Deutsches Musikarchiv
+
 
