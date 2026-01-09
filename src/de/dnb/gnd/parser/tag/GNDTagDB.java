@@ -10,51 +10,47 @@ import de.dnb.gnd.utils.RecordUtils;
 
 public final class GNDTagDB extends TagDB {
 
-  /**
-   * Relationierte Notation.
-   */
-  public static final DefaultGNDTag TAG_553 =
-    new DefaultGNDTag("553", "045C", "Relationierte Notation", R, "553", "Valid Number Tracing");
+	/**
+	 * Relationierte Notation.
+	 */
+	public static final DefaultGNDTag TAG_553 = new DefaultGNDTag("553", "045C", "Relationierte Notation", R, "553",
+			"Valid Number Tracing");
 
-  /**
-   * Allgemeine Kommentare in einer Klassifikation.
-   */
-  public static final DefaultGNDTag TAG_900 =
-    new DefaultGNDTag("900", "047A", "Allgemeine Kommentare", R, "", "");
+	/**
+	 * Allgemeine Kommentare in einer Klassifikation.
+	 */
+	public static final DefaultGNDTag TAG_900 = new DefaultGNDTag("900", "047A", "Allgemeine Kommentare", R, "", "");
 
-  /**
-   * Synonyme Umschreibung für die Notation.
-   */
-  public static final DefaultGNDTag TAG_453 =
-    new DefaultGNDTag("453", "044F", "Synonyme Umschreibung für die Notation", R, "453", "");
+	/**
+	 * Synonyme Umschreibung für die Notation.
+	 */
+	public static final DefaultGNDTag TAG_453 = new DefaultGNDTag("453", "044F",
+			"Synonyme Umschreibung für die Notation", R, "453", "");
 
-  /**
-   * Zeitliche Gültigkeit.
-   */
-  public static final Indicator INDICATOR_Z = new Indicator('Z', "Zeitliche Gültigkeit", NR, "");
+	/**
+	 * Zeitliche Gültigkeit.
+	 */
+	public static final Indicator INDICATOR_Z = new Indicator('Z', "Zeitliche Gültigkeit", NR, "");
 
-  /**
-   *
-   */
-  public static final Indicator DOLLAR_b = new Indicator('b', "Code", NR, "Content type code");
+	/**
+	 *
+	 */
+	public static final Indicator DOLLAR_b = new Indicator('b', "Code", NR, "Content type code");
 
-  public static final Indicator INDICATOR_153_J =
-    new Indicator('j', "Umschreibung für die Notation, Klassenbenennung", NR, "Caption");
+	public static final Indicator INDICATOR_153_J = new Indicator('j',
+			"Umschreibung für die Notation, Klassenbenennung", NR, "Caption");
 
-  public static final Indicator INDICATOR_153_B =
-    new Indicator('b', "Hilfstafelnummer", R, "Table identification");
+	public static final Indicator INDICATOR_153_B = new Indicator('b', "Hilfstafelnummer", R, "Table identification");
 
-  public static final Indicator INDICATOR_153_A =
-    new Indicator('a', "Notation", NR, "Classification Number");
+	public static final Indicator INDICATOR_153_A = new Indicator('a', "Notation", NR, "Classification Number");
 
-  public static final DefaultGNDTag TAG_153 =
-    new DefaultGNDTag("153", "045A", "Notation von Klassifikation oder Bestandsgliederung", NR,
-      "153", "Heading - Classification Number");
+	public static final DefaultGNDTag TAG_153 = new DefaultGNDTag("153", "045A",
+			"Notation von Klassifikation oder Bestandsgliederung", NR, "153", "Heading - Classification Number");
 
-  /*
-   * Indikatoren, die überall gleich auftauchen:
-   */
-  //@formatter:off
+	/*
+	 * Indikatoren, die überall gleich auftauchen:
+	 */
+	//@formatter:off
 	/**
 	 *  Einziger Indikator für $4 (GND-Code für Beziehungen).
 	 */
@@ -282,8 +278,9 @@ public final class GNDTagDB extends TagDB {
 		"See Also From Tracing - Chronological Term");
 
 	public static GNDTagDB getDB() {
-		if(gndTagDB == null)
+		if(gndTagDB == null) {
 			gndTagDB = new GNDTagDB();
+		}
 		return gndTagDB;
 	}
 
@@ -297,15 +294,15 @@ public final class GNDTagDB extends TagDB {
 
 	//@formatter:on
 
-  /**
-   * Hilfsgröße, in der die (Relations-)Tags zwischen 500 und 600
-   * gespeichert sind.
-   */
-  private final HashSet<Tag> tagsRelated = new LinkedHashSet<>();
+	/**
+	 * Hilfsgröße, in der die (Relations-)Tags zwischen 500 und 600 gespeichert
+	 * sind.
+	 */
+	private final HashSet<Tag> tagsRelated = new LinkedHashSet<>();
 
-  private GNDTagDB() {
-    GNDTag newTag;
-    //@formatter:off
+	private GNDTagDB() {
+		GNDTag newTag;
+	//@formatter:off
 
 		newTag =
 			new DefaultGNDTag(
@@ -836,9 +833,12 @@ public final class GNDTagDB extends TagDB {
 		newTag.add(TagDB.DOLLAR_9);
 		newTag.add(TagDB.DOLLAR_8);
 		newTag.addDefaultFirst(new Indicator('a', "Darstellungsmedium (Term)", NR, "Medium of performance"));
+		newTag.add(new Indicator('e', "Anzahl der Ensembles vom gleichen Typ", NR, "Number of ensembles of the same type"));
 		newTag.add(new Indicator('n', "Besetzungsstärke", NR, "Number of performers of the same medium"));
-		newTag.add(new Indicator('p', "Alternative Besetzung", NR, "Alternative medium of performance"));
+		newTag.add(new Indicator('p', "Alternative Besetzung oder Doubling "
+				+ "instruments oder Ad-libitum-Besetzungen ", NR, "Alternative medium of performance"));
 		newTag.add(new Indicator('s', "Gesamtbesetzungsstärke", NR, "Total number of performers"));
+		newTag.add(new Indicator('t', "Gesamtanzahl der Ensembles", NR, "Total number of ensembles"));
 		newTag.add(DOLLAR_V_NR);
 		newTag.add(DOLLAR_5);
 
@@ -1662,19 +1662,19 @@ public final class GNDTagDB extends TagDB {
 
 	//@formatter:on
 
-  @Override
-  public Collection<Tag> getUnmodifiables() {
-    if (unmodifiables == null) {
-      unmodifiables = new HashSet<Tag>();
-      unmodifiables.add(findTag("001"));
-      unmodifiables.add(findTag("002"));
-      unmodifiables.add(findTag("003"));
-      unmodifiables.add(findTag("006"));
-      unmodifiables.add(findTag("035"));
-      unmodifiables.add(findTag("039"));
-      unmodifiables.add(findTag("913"));
-    }
-    return unmodifiables;
-  }
+	@Override
+	public Collection<Tag> getUnmodifiables() {
+		if (unmodifiables == null) {
+			unmodifiables = new HashSet<Tag>();
+			unmodifiables.add(findTag("001"));
+			unmodifiables.add(findTag("002"));
+			unmodifiables.add(findTag("003"));
+			unmodifiables.add(findTag("006"));
+			unmodifiables.add(findTag("035"));
+			unmodifiables.add(findTag("039"));
+			unmodifiables.add(findTag("913"));
+		}
+		return unmodifiables;
+	}
 
 }
