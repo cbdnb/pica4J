@@ -8,6 +8,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -678,6 +679,19 @@ public final class GNDUtils {
 	public static boolean containsEntityType(final Record record, final String entityCode) {
 		final List<String> ents = getEntityTypes(record);
 		return ents.contains(entityCode);
+	}
+
+	/**
+	 *
+	 * @param record      nicht null
+	 * @param entityTypes beliebig
+	 * @return Enthält der Datensatz genau die Entitätencodierungen entityTypes?
+	 *         false auch bei Titeldaten.
+	 */
+	public static boolean hasEntityTypes(final Record record, final String... entityTypes) {
+		final Set<String> ents = new HashSet<>(getEntityTypes(record));
+		final Set<String> entsReq = new HashSet<>(Arrays.asList(entityTypes));
+		return ents.equals(entsReq);
 	}
 
 	/**
@@ -1584,7 +1598,7 @@ public final class GNDUtils {
 	public static void main(final String[] args)
 			throws IllFormattedLineException, OperationNotSupportedException, IOException {
 		final Record record = readFromClip();
-		System.out.println(getLevel(record));
+		System.out.println(hasEntityTypes(record));
 	}
 
 	/**
