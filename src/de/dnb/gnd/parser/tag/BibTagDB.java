@@ -3142,23 +3142,29 @@ public final class BibTagDB extends TagDB {
 			newBibTag.addInherited(bibBasis);
 		}
 
-		newBibTag = new BibliographicTag("7001", "208@/01",
-				"1. Exemplar eines Standorts (Pflichtexemplar): Datum und exemplarspezifischer Selektionsschlüssel (m, wenn 0701 vorhanden)",
-				R, "", "");
+		newBibTag = new BibliographicTag("E001", "208@/01",
+				"1. Exemplar eines Standorts (Pflichtexemplar): Datum und exemplarspezifischer Selektionsschlüssel", R,
+				"", "");
 		addTag(newBibTag);
 		newBibTag.add(new Indicator("", " : ", 'a', "Datum TT-MM-JJ (m)", NR, ""));
 		newBibTag.add(new Indicator("", "", 'b', "Selektionsschlüssel", NR, ""));
 
-		bibBasis = getPica3("7001");
-		for (int i = 2; i <= 99; i++) {
-			String s;
+		bibBasis = getPica3("E001");
+		for (int i = 2; i <= 999; i++) {
+			String numberPica;
+			final String numberPicaPlus;
 			if (i < 10) {
-				s = "0" + i;
+				numberPica = "00" + i;
+				numberPicaPlus = "0" + i;
+			} else if (i < 99) {
+				numberPica = "0" + i;
+				numberPicaPlus = "" + i;
 			} else {
-				s = "" + i;
+				numberPica = "" + i;
+				numberPicaPlus = "" + i;
 			}
-			newBibTag = new BibliographicTag("70" + s, "208@/" + s, i
-					+ ". Exemplar eines Standorts (Pflichtexemplar): Datum und exemplarspezifischer Selektionsschlüssel (m, wenn 0701 vorhanden)",
+			newBibTag = new BibliographicTag("E" + numberPica, "208@/" + numberPicaPlus, i
+					+ ". Exemplar eines Standorts (Pflichtexemplar): Datum und exemplarspezifischer Selektionsschlüssel",
 					R, "", "");
 			addTag(newBibTag);
 			newBibTag.addInherited(bibBasis);
