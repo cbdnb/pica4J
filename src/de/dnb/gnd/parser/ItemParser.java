@@ -28,17 +28,31 @@ import de.dnb.gnd.utils.RecordUtils;
 import de.dnb.gnd.utils.StatusAndCodeFilter;
 
 /**
- * Erstellt eine Abbildung <blockquote> Bibliothek -> (Exemplar1, Exemplar2,
- * ...) </blockquote> Die Bibliothek ist durch ihre ILN repräsentiert. Werden
- * Pica3-Daten geparst, die die ELN in der Form <blockquote>[0101 ] leipzig dnb
- * [101a]</blockquote> an erster Stelle enthalten so wird die ILN aufgrund einer
- * Konkordanz ermittelt. <br>
+ * Erstellt eine Abbildung
+ *
+ * <blockquote> Bibliothek -> (Exemplar1, Exemplar2, ...) </blockquote>
+ *
+ * Die Bibliothek ist in Pica+ durch ihre ILN repräsentiert. Werden Pica3-Daten
+ * geparst, die ILN und ELN in der Form
+ *
+ * <blockquote>[ILN: 1 ELN: 0101] Leipzig DNB [101a]</blockquote>
+ *
+ * enthalten, ist nichts zu tun. <br>
  * <br>
  * Die Exemplardaten hängen unten am Datensatz. Eingeleitet werden sie mit einem
- * Marker für die Bibliothek. Entweder in Pica3 <blockquote>[0101 ] leipzig dnb
- * [101a]</blockquote> oder in Pica+ <blockquote>101@ ƒa1</blockquote> Die
- * einzelnen Exemplardatensätze der Bibliothek werden eingeleiten von
- * <code>7001</code> in Pica3 oder von <code>208@/01</code> in Pica+ . <br>
+ * Marker für die Bibliothek. Entweder in Pica3
+ *
+ * <blockquote>[ILN: 1 ELN: 0101] Leipzig DNB [101a]</blockquote>
+ *
+ * oder in Pica+
+ *
+ * <blockquote>101@ ƒa1</blockquote>
+ *
+ * Die einzelnen Exemplardatensätze der Bibliothek werden eingeleiten von
+ *
+ * <li><code>E001-E999</code> in Pica3 oder von
+ *
+ * <li><code>208@/01-208@/999</code> in Pica+ . <br>
  * <br>
  *
  * @author baumann
@@ -56,7 +70,7 @@ public class ItemParser {
 	private static final TagDB THE_TAG_DB = BibTagDB.getDB();
 	// [ILN: 12 ELN: 0003] Halle UuLB Sachsen-Anh. [3]
 	private static final Pattern NEW_LIB_PAT = Pattern
-			.compile("^\\[ILN: (\\d+) ELN: (\\d\\d\\d\\d)\\] " + "(.+)" + "(\\[\\d+\\])?$");
+			.compile("^\\[ILN: (\\d+) ELN: (\\d\\d\\d\\d)\\] " + "(.+)" + "(\\[.+\\])?$");
 	private static final Pattern PAT_NEW_LINE = Pattern.compile("\n");
 
 	private Record actualItem;
@@ -113,7 +127,6 @@ public class ItemParser {
 				if (actualItem != null) {
 					lib2Items.add(actualLibrary, actualItem);
 				} else { // Erste Bibliothek mit Exemplardaten entdeckt:
-					// Erste Bibliothek mit Exemplardaten entdeckt:
 					actualItem = new Record(idnManifestation, THE_TAG_DB);
 				}
 				setNewLibrary(zeile);
@@ -192,12 +205,13 @@ public class ItemParser {
 			final String eln = newLibMatcher.group(2).trim();
 			final String name = newLibMatcher.group(3).trim();
 			final String iln = newLibMatcher.group(1).trim();
-			// ELN2ILN.get(eln);
-			actualLibrary = iln == null ? name : iln;
+			actualLibrary = iln == null ? name : StringUtils.leftPadding(iln, 4, '0');
+			// Wenn noch nicht in der Liste:
+			ILN2NAME.put(actualLibrary, name);
 		}
 	}
 
-	public static void main(final String[] args) {
+	public static void main1(final String[] args) {
 		final Record record = RecordUtils.readFromClip();
 		final ItemParser parser = new ItemParser("1234");
 		System.out.println(parser.parseItems(record.getRawData()));
@@ -211,10 +225,9 @@ public class ItemParser {
 	 * @param args
 	 * @throws IOException
 	 */
-	public static void main1(final String[] args) throws IOException {
+	public static void main(final String[] args) throws IOException {
 		final ItemParser parser = new ItemParser("1234");
-		final RecordReader reader = RecordReader
-				.getMatchingReader("U:/pica-0.15.0-x86_64-pc-windows-gnu/samples.dat.gz");
+		final RecordReader reader = RecordReader.getMatchingReader("D:/Analysen/baumann/exemplarP3.txt");
 		reader.forEach(record -> {
 			System.out.println("++++++++++++++++++++++++++");
 			System.out.println("Datensatz: " + record.getId());
@@ -228,12 +241,13 @@ public class ItemParser {
 	/**
 	 * Gibt die Datenstruktur aus.
 	 *
-	 * @param bib2Items nicht null
+	 * @param iln2Items nicht null
 	 */
-	public static void log(final Multimap<String, Record> bib2Items) {
-		new TreeSet<>(bib2Items.getKeySet()).forEach(bib -> {
-			System.out.println("Bibliothek: " + bib);
-			final Collection<Record> items = bib2Items.get(bib);
+	public static void log(final Multimap<String, Record> iln2Items) {
+		new TreeSet<>(iln2Items.getKeySet()).forEach(iln -> {
+			final String bibName = ILN2NAME.get(StringUtils.leftPadding(iln, 4, '0'));
+			System.out.println("Bibliothek: ILN " + iln + ", " + bibName);
+			final Collection<Record> items = iln2Items.get(iln);
 			int i = 1;
 			for (final Record item : items) {
 				System.out.println("Item " + i);
