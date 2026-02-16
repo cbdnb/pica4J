@@ -5,6 +5,8 @@
 package de.dnb.gnd.parser;
 
 import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
@@ -16,6 +18,7 @@ import java.util.regex.Pattern;
 
 import javax.naming.OperationNotSupportedException;
 
+import de.dnb.basics.applicationComponents.MyFileUtils;
 import de.dnb.basics.applicationComponents.strings.StringUtils;
 import de.dnb.basics.collections.ListMultimap;
 import de.dnb.basics.collections.Multimap;
@@ -32,22 +35,16 @@ import de.dnb.gnd.utils.StatusAndCodeFilter;
  *
  * <blockquote> Bibliothek -> (Exemplar1, Exemplar2, ...) </blockquote>
  *
- * Die Bibliothek ist in Pica+ durch ihre ILN repräsentiert. Werden Pica3-Daten
- * geparst, die ILN und ELN in der Form
- *
- * <blockquote>[ILN: 1 ELN: 0101] Leipzig DNB [101a]</blockquote>
- *
- * enthalten, ist nichts zu tun. <br>
- * <br>
  * Die Exemplardaten hängen unten am Datensatz. Eingeleitet werden sie mit einem
- * Marker für die Bibliothek. Entweder in Pica3
+ * Marker für die Bibliothek. Die Bibliothek ist in Pica+ durch ihre ILN
+ * (Internal Library Number), repräsentiert: <blockquote>101@ ƒa1</blockquote>
+ * Diese ILN ist -cum grano salis - eindeutig. Daraus werden vermutlich die
+ * Pica3-Daten erzeugt, die in der Form
  *
  * <blockquote>[ILN: 1 ELN: 0101] Leipzig DNB [101a]</blockquote>
  *
- * oder in Pica+
- *
- * <blockquote>101@ ƒa1</blockquote>
- *
+ * vorliegen.<br>
+ * <br>
  * Die einzelnen Exemplardatensätze der Bibliothek werden eingeleiten von
  *
  * <li><code>E001-E999</code> in Pica3 oder von
@@ -61,6 +58,14 @@ import de.dnb.gnd.utils.StatusAndCodeFilter;
 public class ItemParser {
 
 	/**
+	 * Klammer rechts
+	 */
+	private static final String KR = "\\]";
+	/**
+	 * Klammer links
+	 */
+	private static final String KL = "\\[";
+	/**
 	 * Für schnelle Überprüfungen.
 	 */
 	private static ItemParser parser = new ItemParser("");
@@ -68,9 +73,10 @@ public class ItemParser {
 
 	private static final String PICA_PLUS_NEW_LIB = "101@ ";
 	private static final TagDB THE_TAG_DB = BibTagDB.getDB();
-	// [ILN: 12 ELN: 0003] Halle UuLB Sachsen-Anh. [3]
-	private static final Pattern NEW_LIB_PAT = Pattern
-			.compile("^\\[ILN: (\\d+) ELN: (\\d\\d\\d\\d)\\] " + "(.+)" + "(\\[.+\\])?$");
+	// z.B. [ILN: 12 ELN: 0003] Halle UuLB Sachsen-Anh. [3]
+	// +? = reluctant, damit auch der Rest, [3], erfasst wird
+	private static final Pattern PICA_NEW_LIB = Pattern
+			.compile("^" + KL + "ILN: (\\d+) ELN: (\\d\\d\\d\\d)" + KR + " (.+?)" + "( " + KL + "(.+)" + KR + ")?$");
 	private static final Pattern PAT_NEW_LINE = Pattern.compile("\n");
 
 	private Record actualItem;
@@ -186,7 +192,7 @@ public class ItemParser {
 			isPicaPlus = true;
 			return true;
 		}
-		newLibMatcher = NEW_LIB_PAT.matcher(zeile);
+		newLibMatcher = PICA_NEW_LIB.matcher(zeile);
 		if (newLibMatcher.matches()) {
 			isPicaPlus = false;
 			return true;
@@ -206,18 +212,25 @@ public class ItemParser {
 			final String name = newLibMatcher.group(3).trim();
 			final String iln = newLibMatcher.group(1).trim();
 			actualLibrary = iln == null ? name : StringUtils.leftPadding(iln, 4, '0');
+			if (!ILN2NAME.containsKey(actualLibrary)) {
+				System.err.println(StringUtils.concatenateTab(eln, actualLibrary, name));
+			}
 			// Wenn noch nicht in der Liste:
 			ILN2NAME.put(actualLibrary, name);
 		}
 	}
 
-	public static void main1(final String[] args) {
-		final Record record = RecordUtils.readFromClip();
-		final ItemParser parser = new ItemParser("1234");
-		System.out.println(parser.parseItems(record.getRawData()));
+	public static void main2(final String[] args) {
+		final String s = "[ILN: 1 ELN: 0101] Leipzig DNB [101a]";
+		final Matcher mat = PICA_NEW_LIB.matcher(s);
+		if (mat.matches()) {
+			for (int i = 0; i <= mat.groupCount(); i++) {
+				System.out.println(mat.group(i));
+			}
+		}
 	}
 
-	public static void main2(final String[] args) {
+	public static void main1(final String[] args) {
 		System.out.println(dbString);
 	}
 
@@ -227,35 +240,44 @@ public class ItemParser {
 	 */
 	public static void main(final String[] args) throws IOException {
 		final ItemParser parser = new ItemParser("1234");
-		final RecordReader reader = RecordReader.getMatchingReader("D:/Analysen/baumann/exemplarP3.txt");
-		reader.forEach(record -> {
-			System.out.println("++++++++++++++++++++++++++");
-			System.out.println("Datensatz: " + record.getId());
-
-			final Multimap<String, Record> bib2Items = parser.parseItems(record);
-			log(bib2Items);
-		});
-
+		final PrintWriter out = MyFileUtils.outputFile("D:/Analysen/baumann/out.txt", false);
+		final Record record = RecordUtils.readFromClip();
+		out.println("++++++++++++++++++++++++++");
+		out.println("Datensatz: " + record.getId());
+		final Multimap<String, Record> bib2Items = parser.parseItems(record);
+		log(out, bib2Items);
 	}
 
 	/**
 	 * Gibt die Datenstruktur aus.
 	 *
-	 * @param iln2Items nicht null
+	 * @param printStream nicht null
+	 * @param iln2Items   nicht null
 	 */
-	public static void log(final Multimap<String, Record> iln2Items) {
+	public static void log(final PrintWriter out, final Multimap<String, Record> iln2Items) {
 		new TreeSet<>(iln2Items.getKeySet()).forEach(iln -> {
 			final String bibName = ILN2NAME.get(StringUtils.leftPadding(iln, 4, '0'));
-			System.out.println("Bibliothek: ILN " + iln + ", " + bibName);
+			out.println("Bibliothek: ILN " + iln + ", " + bibName);
 			final Collection<Record> items = iln2Items.get(iln);
 			int i = 1;
 			for (final Record item : items) {
-				System.out.println("Item " + i);
-				System.out.println(item);
-				System.out.println("------");
+				out.println("Item " + i);
+				out.println(item);
+				out.println("------");
 				i++;
 			}
 		});
+	}
+
+	/**
+	 * Gibt die Datenstruktur aus.
+	 *
+	 * @param printStream nicht null
+	 * @param iln2Items   nicht null
+	 */
+	public static void log(final OutputStream out, final Multimap<String, Record> iln2Items) {
+		final PrintWriter writer = new PrintWriter(out);
+		log(writer, iln2Items);
 	}
 
 	/**
@@ -418,7 +440,44 @@ public class ItemParser {
 			+ "9025\t0010\tBerlin Systembetreuung\t\t\n" + "2034\t0337\tMittweida HS\t\t\n"
 			+ "2053\t0359\tStadtbibliothek Chemnitz\t\t\n" + "2014\t0314\tKoblenz-Landau UB\t\t\n"
 			+ "2043\t0349\tSächsisches Sandesamt ULG\t\t\n" + "2042\t0348\tUmweltbundesamt\t\t\n"
-			+ "9026\t0010\tKonstanz BSZ, Sacherschl. SWB\t\t";
+			+ "9026\t0010\tKonstanz BSZ, Sacherschl. SWB\t\t\n" + "4045\t0189\tHannover HS\t\t\n"
+			+ "8501\t0196\tWien UB\t\t\n" + "8502\t0197\tGraz UB\t\t\n" + "8503\t0198\tSalzburg UB\t\t\n"
+			+ "8504\t0199\tInnsbruck UB\t\t\n" + "8505\t0200\tKlagenfurt UB\t\t\n"
+			+ "8507\t0202\tLinz Oberöster. Landesbiblioth\t\t\n" + "4063\t0217\tBerlin Akademie der Künste\t\t\n"
+			+ "4067\t0221\tDHI Rom\t\t\n" + "4068\t0222\tZwickau RSB\t\t\n"
+			+ "2030\t0331\tWeitere Bibliotheken 12\t\t\n" + "2036\t0342\tLeipzig HS Musik und Theater\t\t\n"
+			+ "2047\t0353\tLeipzig StB\t\t\n" + "2061\t0367\tMFA Mikrofilmarchiv\t\t\n"
+			+ "4999\t0386\tStuttgart BWZ-Zentrale I-Z\t\t\n" + "2088\t0391\tAurich LandschaftsB\t\t\n"
+			+ "2098\t0401\tGotha FB\t\t\n" + "2099\t0402\tWeitere Bibliotheken 15\t\t\n"
+			+ "3003\t0405\tKiel ZBW Leitb.\t\t\n" + "3023\t0421\tStadtbibliothek Duisburg\t\t\n"
+			+ "2111\t0438\tMünchen Inst.Volkskunde\t\t\n" + "4048\t0213\tWitzenh. Archiv Jugendbewegung\t\t\n"
+			+ "2023\t0324\tWeitere Bibliotheken 10\t\t\n" + "2038\t0344\tAlice Salomon HS Berlin\t\t\n"
+			+ "2044\t0350\tDIE-Bibliothek\t\t\n" + "2086\t0389\tVECHTA UB\t\t\n" + "2021\t0321\tFrankfurt VFMB\t\t\n"
+			+ "2089\t0392\tBraunschweig\t\t\n" + "2011\t0311\tWeitere Bibliotheken 8\t\t\n"
+			+ "2062\t0368\tHelios Zentralbibliothek\t\t\n" + "8506\t0201\tGraz TU\t\t\n"
+			+ "2039\t0345\tMünchen DPMA\t\t\n" + "2084\t0387\tHamburg DESY\t\t\n"
+			+ "3008\t0407\tPotsdam Astrophysik\t\t\n" + "2065\t0371\tHelmholtz-Zentrum UFZ\t\t\n"
+			+ "3009\t0408\tBerlin Weierstraß-Inst.\t\t\n" + "4064\t0218\tBremerhaven A.-Wegener-Inst.\t\t\n"
+			+ "4066\t0220\tSWP Berlin\t\t\n" + "2013\t0313\tWeitere Bibliotheken 7\t\t\n"
+			+ "2041\t0347\tWeitere Bibliotheken 14\t\t\n" + "2073\t0376\tZittau/Görlitz HS\t\t\n"
+			+ "2081\t0383\tFH Dortmund\t\t\n" + "2087\t0390\tHTWK LEIPZIG\t\t\n" + "2090\t0393\tKiel FH\t\t\n"
+			+ "2091\t0394\tZwickau HS\t\t\n" + "3019\t0417\tOSTFALIA HOCHSCHULE\t\t\n"
+			+ "2020\t0320\tWeitere Bibliotheken 9\t\t\n" + "4047\t0212\tWildau TFH\t\t\n"
+			+ "4051\t0215\tKöln DLR Bibliothek\t\t\n" + "2018\t0318\tBerlin BGK Web 3\t\t\n"
+			+ "2029\t0330\tGeisenheim HS\t\t\n" + "2035\t0340\tLIV-Bibliotheken\t\t\n" + "2059\t0365\tKoblenz HS\t\t\n"
+			+ "7997\t0188\tLandesarchive BAW\t\t\n" + "4061\t0194\tEv. Kirche im Rheinland\t\t\n"
+			+ "2066\t0372\tKunstbibliothek SKD\t\t\n" + "3014\t0413\tSACHSEN DENKMALPFLEGE\t\t\n"
+			+ "4044\t0187\tMainz FH\t\t\n" + "8896\t0223\tStaatsarchive Bayern\t\t\n"
+			+ "2009\t0309\tKarlsruhe Bverfassungsgericht\t\t\n" + "2015\t0315\tBerlin DHM u. SFVV\t\t\n"
+			+ "2016\t0316\tBerlin HS Wirtschaft u. Recht\t\t\n" + "2017\t0317\tBerliner BGK Web 2\t\t\n"
+			+ "2024\t0325\tStuttgart Duale HS Horb\t\t\n" + "2025\t0326\tMannheim Duale HS BAW\t\t\n"
+			+ "2026\t0327\tWeitere Bibliotheken 11\t\t\n" + "2031\t0334\tFrankfurt/M DeutscheBundesbank\t\t\n"
+			+ "2040\t0346\tPotsdam ZMSBw\t\t\n" + "2052\t0358\tZentrum Inf.arbeit Bundeswehr\t\t\n"
+			+ "2056\t0362\tBM Justiz Verbraucherschutz\t\t\n" + "2057\t0363\tLandesdirektion Sachsen\t\t\n"
+			+ "2071\t0375\tKreisbibliothek Bodenseekreis\t\t\n" + "2076\t0379\tMünster DHPol\t\t\n"
+			+ "2085\t0388\tLEIPZIG BVERWG\t\t\n" + "2094\t0397\tZZF Potsdam\t\t\n"
+			+ "3012\t0411\tBremen Staatsarchiv\t\t\n" + "3013\t0412\tHannover Landtag\t\t\n"
+			+ "3029\t0427\tWashington DHI\t\t\n" + "2049\t0355\tBerlin BGK Web 4\t\t";
 
 	static {
 		final String[] lines = dbString.split("\n");
