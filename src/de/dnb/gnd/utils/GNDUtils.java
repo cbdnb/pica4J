@@ -1604,7 +1604,7 @@ public final class GNDUtils {
 	/**
 	 * @param record nicht null
 	 * @return 1XX ohne irrelevante Unterfelder im Pica-Format und
-	 *         Unicode-normalisiert (Unlaute zusammengezogen)
+	 *         Unicode-normalisiert (Unlaute zusammengezogen), nicht null
 	 */
 	public static String getSimpleName(final Record record) {
 		final Line line = getHeading(record);
