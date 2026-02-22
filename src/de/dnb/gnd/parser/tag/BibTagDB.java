@@ -13,6 +13,62 @@ import de.dnb.gnd.parser.Indicator;
 public final class BibTagDB extends TagDB {
 
 	/**
+	 *
+	 */
+	private static final long serialVersionUID = 5226970103737207678L;
+
+	/**
+	 * Diese Felder sind im Gesamtdatenabzug (oder per Anzeige mittels "s g")
+	 * enthalten. Um das Parsen aus Der Anzeige in der WinIBW zu verhindern wurde
+	 * der Feldbeginn mittel "$$" codiert.
+	 */
+	public static final Indicator DOLLAR_B_51XX = new Indicator("$$b", "", 'b',
+			"Untergeordnete Körperschaft versteckt im Gesamtdatenabzug", R, "");
+
+	public static final Indicator DOLLAR_D_51XX = new Indicator("$$d", "", 'd', "Datum versteckt im Gesamtdatenabzug",
+			R, "");
+
+	public static final Indicator DOLLAR_C_51XX = new Indicator("$$c", "", 'c', "Ort versteckt im Gesamtdatenabzug", R,
+			"");
+
+	public static final Indicator DOLLAR_G_51XX = new Indicator("$$g", "", 'g', "Zusatz versteckt im Gesamtdatenabzug",
+			R, "");
+
+	public static final Indicator DOLLAR_P_51XX = new Indicator("$$p", "", 'p',
+			"Werkteil versteckt im Gesamtdatenabzug", R, "");
+
+	public static final Indicator DOLLAR_F_51XX = new Indicator("$$f", "", 'f', "Datum versteckt im Gesamtdatenabzug",
+			R, "");
+
+	public static final Indicator DOLLAR_R_51XX = new Indicator("$$r", "", 'r', "Tonart versteckt im Gesamtdatenabzug",
+			R, "");
+
+	public static final Indicator DOLLAR_N_51XX = new Indicator("$$n", "", 'n', "Zählung versteckt im Gesamtdatenabzug",
+			R, "");
+
+	public static final Indicator DOLLAR_M_51XX = new Indicator("$$m", "", 'm',
+			"Instrument versteckt im Gesamtdatenabzug", R, "");
+
+	public static final Indicator DOLLAR_T_51XX = new Indicator("$t", "", 't',
+			"Werktitel versteckt im Gesamtdatenabzug", R, "");
+
+	private static final Indicator DOLLAR_0_51XX = new Indicator("$$0", "", '0',
+			"GND-Nr. versteckt im Gesamtdatenabzug", R, "");
+
+	public static final Indicator DOLLAR_GR_A_51XX = new Indicator("$$A", "", 'A',
+			"Zugehörigkeit versteckt im Gesamtdatenabzug", R, "");
+
+	public static final Indicator DOLLAR_GR_V_51XX = new Indicator("$$V", "", 'V',
+			"Entitätencode versteckt im Gesamtdatenabzug", R, "");
+
+	public static final Indicator DOLLAR_7_51XX = new Indicator("$$7", "", '7', "Typ versteckt im Gesamtdatenabzug", R,
+			"");
+
+	public static final Indicator DOLLAR_A_51XX = new Indicator(":", "", 'a',
+			"ggf. Indikator und Blank Schlagworttext (@{) ggf. Blank und Operator und Schlagwortelemente, die sich grundsätzlich nicht in der SWD befinden Für die Volltextspeicherung gilt die Datenstruktur der „oder“-Variante.",
+			NR, "");
+
+	/**
 	 * Zeitliche Gültigkeit.
 	 */
 	public static final Indicator DOLLAR_Z_ZEIT = new Indicator("$z", "", 'z', "Zeitliche Gültigkeit", NR, "");
@@ -2730,14 +2786,35 @@ public final class BibTagDB extends TagDB {
 		newBibTag.add(DOLLAR_H);
 		newBibTag.add(DOLLAR_K);
 		newBibTag.add(DOLLAR_D_DATUM);
-		newBibTag.addAlternative(new Indicator(":", "", 'a',
-				"ggf. Indikator und Blank Schlagworttext (@{) ggf. Blank und Operator und Schlagwortelemente, die sich grundsätzlich nicht in der SWD befinden Für die Volltextspeicherung gilt die Datenstruktur der „oder“-Variante.",
-				NR, ""));
+		// Ein paar Felder, die nur versteckt im Gesamtdatenabzug sind:
+		newBibTag.add(DOLLAR_7_51XX);
+		newBibTag.add(DOLLAR_GR_V_51XX);
+		newBibTag.add(DOLLAR_GR_A_51XX);
+		newBibTag.add(DOLLAR_0_51XX);
+		newBibTag.add(DOLLAR_A_51XX);
+		newBibTag.add(DOLLAR_T_51XX);
+		newBibTag.add(DOLLAR_M_51XX);
+		newBibTag.add(DOLLAR_N_51XX);
+		newBibTag.add(DOLLAR_R_51XX);
+		newBibTag.add(DOLLAR_F_51XX);
+		newBibTag.add(DOLLAR_G_51XX);
+		newBibTag.add(DOLLAR_P_51XX);
+		newBibTag.add(DOLLAR_B_51XX);
+		newBibTag.add(DOLLAR_D_51XX);
+		newBibTag.add(DOLLAR_C_51XX);
+		// Altern:
+		newBibTag.addAlternative(DOLLAR_A_51XX);
 		newBibTag.addAlternative(new Indicator("{", "}", '6', "GND-IDN (temporär bei maschineller Übernahme)", NR, ""));
 		newBibTag.addAlternative(DOLLAR_E);
 		newBibTag.addAlternative(DOLLAR_H);
 		newBibTag.addAlternative(DOLLAR_K);
 		newBibTag.addAlternative(DOLLAR_D_DATUM);
+		// Ein paar Felder, die nur versteckt im Gesamtdatenabzug sind:
+		newBibTag.addAlternative(DOLLAR_7_51XX);
+		newBibTag.addAlternative(DOLLAR_GR_V_51XX);
+		newBibTag.addAlternative(DOLLAR_GR_A_51XX);
+		newBibTag.addAlternative(DOLLAR_0_51XX);
+		newBibTag.addAlternative(DOLLAR_A_51XX);
 
 		newBibTag = new BibliographicTag("5101", "041A/01", "2. Element der 1. Schlagwortfolge", NR, "689", '0', '1',
 				"");
@@ -2748,14 +2825,35 @@ public final class BibTagDB extends TagDB {
 		newBibTag.add(DOLLAR_H);
 		newBibTag.add(DOLLAR_K);
 		newBibTag.add(DOLLAR_D_DATUM);
-		newBibTag.addAlternative(new Indicator(":", "", 'a',
-				"ggf. Indikator und Blank Schlagworttext (@{) ggf. Blank und Operator und Schlagwortelemente, die sich grundsätzlich nicht in der SWD befinden Für die Volltextspeicherung gilt die Datenstruktur der „oder“-Variante.",
-				NR, ""));
+		// Ein paar Felder, die nur versteckt im Gesamtdatenabzug sind:
+		newBibTag.add(DOLLAR_7_51XX);
+		newBibTag.add(DOLLAR_GR_V_51XX);
+		newBibTag.add(DOLLAR_GR_A_51XX);
+		newBibTag.add(DOLLAR_0_51XX);
+		newBibTag.add(DOLLAR_A_51XX);
+		newBibTag.add(DOLLAR_T_51XX);
+		newBibTag.add(DOLLAR_M_51XX);
+		newBibTag.add(DOLLAR_N_51XX);
+		newBibTag.add(DOLLAR_R_51XX);
+		newBibTag.add(DOLLAR_F_51XX);
+		newBibTag.add(DOLLAR_G_51XX);
+		newBibTag.add(DOLLAR_P_51XX);
+		newBibTag.add(DOLLAR_B_51XX);
+		newBibTag.add(DOLLAR_D_51XX);
+		newBibTag.add(DOLLAR_C_51XX);
+		// Alternat:
+		newBibTag.addAlternative(DOLLAR_A_51XX);
 		newBibTag.addAlternative(new Indicator("{", "}", '6', "GND-IDN (temporär bei maschineller Übernahme)", NR, ""));
 		newBibTag.addAlternative(DOLLAR_E);
 		newBibTag.addAlternative(DOLLAR_H);
 		newBibTag.addAlternative(DOLLAR_K);
 		newBibTag.addAlternative(DOLLAR_D_DATUM);
+		// Ein paar Felder, die nur versteckt im Gesamtdatenabzug sind:
+		newBibTag.addAlternative(DOLLAR_7_51XX);
+		newBibTag.addAlternative(DOLLAR_GR_V_51XX);
+		newBibTag.addAlternative(DOLLAR_GR_A_51XX);
+		newBibTag.addAlternative(DOLLAR_0_51XX);
+		newBibTag.addAlternative(DOLLAR_A_51XX);
 
 		bibBasis = getPica3("5101");
 		newBibTag = new BibliographicTag("5105", "041A/05", "6.-10. Element der 1. Schlagwortfolge", R, "689", '0', '5',
