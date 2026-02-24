@@ -246,7 +246,7 @@ public class BibLineFactoryTest {
 		assertEquals("5111  |$9|:101886508X |$8|:Theon$lSmyrnaeus$aDe utilitate mathematicae", line.toString());
 
 		line = LineParser.parse("041A/11 $9101886508X$8Theon$lSmyrnaeus$aDe utilitate mathematicae", TAG_DB, false);
-		assertEquals("5111  |$9|:101886508X |$8|:Theon$lSmyrnaeus |$a|:De utilitate mathematicae", line.toString());
+		assertEquals("5111  |$9|:101886508X |$8|:Theon |$l|:Smyrnaeus |$a|:De utilitate mathematicae", line.toString());
 
 		line = LineParser.parse("5540 [GND]!041263936!Profil$gAerodynamik$K0,031$D2013-10-14", TAG_DB, false);
 		assertEquals("5540  |$b|:GND |$9|:041263936 |$8|:Profil$gAerodynamik |$K|:0,031 |$D|:2013-10-14",

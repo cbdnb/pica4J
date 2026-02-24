@@ -25,11 +25,11 @@ public final class BibTagDB extends TagDB {
 	public static final Indicator DOLLAR_B_51XX = new Indicator("$$b", "", 'b',
 			"Untergeordnete Körperschaft versteckt im Gesamtdatenabzug", R, "");
 
-	public static final Indicator DOLLAR_D_51XX = new Indicator("$$d", "", 'd', "Datum versteckt im Gesamtdatenabzug",
-			R, "");
+	public static final Indicator DOLLAR_D_51XX = new Indicator("$$d", "", 'd',
+			"Datum/Vorname versteckt im Gesamtdatenabzug", R, "");
 
-	public static final Indicator DOLLAR_C_51XX = new Indicator("$$c", "", 'c', "Ort versteckt im Gesamtdatenabzug", R,
-			"");
+	public static final Indicator DOLLAR_C_51XX = new Indicator("$$c", "", 'c',
+			"Ort/Namenspräfix versteckt im Gesamtdatenabzug", R, "");
 
 	public static final Indicator DOLLAR_G_51XX = new Indicator("$$g", "", 'g', "Zusatz versteckt im Gesamtdatenabzug",
 			R, "");
@@ -48,6 +48,15 @@ public final class BibTagDB extends TagDB {
 
 	public static final Indicator DOLLAR_M_51XX = new Indicator("$$m", "", 'm',
 			"Instrument versteckt im Gesamtdatenabzug", R, "");
+
+	public static final Indicator DOLLAR_P_GR_51XX = new Indicator("$$P", "", 'P',
+			"Persönlicher Name versteckt im Gesamtdatenabzug", R, "");
+
+	public static final Indicator DOLLAR_L_51XX = new Indicator("$$l", "", 'l', "Beiname versteckt im Gesamtdatenabzug",
+			R, "");
+
+	public static final Indicator DOLLAR_X_51XX = new Indicator("$$x", "", 'x',
+			"Unterteilung versteckt im Gesamtdatenabzug", R, "");
 
 	public static final Indicator DOLLAR_T_51XX = new Indicator("$t", "", 't',
 			"Werktitel versteckt im Gesamtdatenabzug", R, "");
@@ -2802,6 +2811,9 @@ public final class BibTagDB extends TagDB {
 		newBibTag.add(DOLLAR_B_51XX);
 		newBibTag.add(DOLLAR_D_51XX);
 		newBibTag.add(DOLLAR_C_51XX);
+		newBibTag.add(DOLLAR_P_GR_51XX);
+		newBibTag.add(DOLLAR_L_51XX);
+		newBibTag.add(DOLLAR_X_51XX);
 		// Altern:
 		newBibTag.addAlternative(DOLLAR_A_51XX);
 		newBibTag.addAlternative(new Indicator("{", "}", '6', "GND-IDN (temporär bei maschineller Übernahme)", NR, ""));
@@ -2841,6 +2853,9 @@ public final class BibTagDB extends TagDB {
 		newBibTag.add(DOLLAR_B_51XX);
 		newBibTag.add(DOLLAR_D_51XX);
 		newBibTag.add(DOLLAR_C_51XX);
+		newBibTag.add(DOLLAR_P_GR_51XX);
+		newBibTag.add(DOLLAR_L_51XX);
+		newBibTag.add(DOLLAR_X_51XX);
 		// Alternat:
 		newBibTag.addAlternative(DOLLAR_A_51XX);
 		newBibTag.addAlternative(new Indicator("{", "}", '6', "GND-IDN (temporär bei maschineller Übernahme)", NR, ""));
