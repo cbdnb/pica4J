@@ -250,7 +250,7 @@ public class HTMLformatter {
 		OutputUtils.show(html);
 		out.println(html);
 		System.out.println(html);
-
+		MyFileUtils.safeClose(out);
 	}
 
 }
