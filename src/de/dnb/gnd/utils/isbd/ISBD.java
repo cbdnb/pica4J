@@ -10,12 +10,23 @@ import de.dnb.gnd.utils.RecordUtils;
 import de.dnb.gnd.utils.SG;
 import de.dnb.gnd.utils.SGUtils;
 
+/**
+ * Ein bibliothekarischer Datensatz im ISBD-Format
+ * {@link https://de.wikipedia.org/wiki/International_Standard_Bibliographic_Description}.
+ * Der Datensatz kann selbständig oder unselbstständig (Af) sein. Ein
+ * unselbstständiger Datensatz hat einen übergeordneten Datensatz
+ * {@link ISBD#idnUebergeordnet}. Die ISBD-Datensätze sind nach Sachgruppe und
+ * dann alphabetisch sortiert.
+ */
 public class ISBD implements Comparable<ISBD> {
 	// Aufgelistet in der Reihenfolge der Nationalbibliografie:
 
 	// ISBD 0 (Medienart/Medientyp) wäre Feld 0502. Wird in der NaBi nicht
 	// wiedergegeben.
 	String idn;
+	/**
+	 * Idn des übergeordneten Datensatzes. Null, wenn es keinen übergeordneten gibt.
+	 */
 	String idnUebergeordnet;
 
 	// Zeile 1

@@ -96,27 +96,37 @@ public class HTMLformatter {
 				+ ZEILE_ENDE;
 		if(isbd.rswk!=null) {
 			html += SE_ZEILE_ANFANG
+					+ (isbd.abhaengigerTitel != null ? HANGING_PRE : "")
 					+ "SW: " + isbd.rswk
+					+ (isbd.abhaengigerTitel != null ? HANGING_POST : "")
 					+ SE_ZEILE_ENDE;
 		}
 		if(isbd.ddc!=null) {
 			html += SE_ZEILE_ANFANG
+					+ (isbd.abhaengigerTitel != null ? HANGING_PRE : "")
 					+ "DDC: " + isbd.ddc
+					+ (isbd.abhaengigerTitel != null ? HANGING_POST : "")
 					+ SE_ZEILE_ENDE;
 		}
 		if(isbd.formSW!=null) {
 			html += SE_ZEILE_ANFANG
+					+ (isbd.abhaengigerTitel != null ? HANGING_PRE : "")
 					+ "FSW: " + isbd.formSW
+					+ (isbd.abhaengigerTitel != null ? HANGING_POST : "")
 					+ SE_ZEILE_ENDE;
 		}
 		if(isbd.zielgruppe!=null) {
 			html += SE_ZEILE_ANFANG
+					+ (isbd.abhaengigerTitel != null ? HANGING_PRE : "")
 					+ "Zielgruppe: "+isbd.zielgruppe
+					+ (isbd.abhaengigerTitel != null ? HANGING_POST : "")
 					+ SE_ZEILE_ENDE;
 		}
 		if(isbd.listeNSW!=null) {
 			html += SE_ZEILE_ANFANG
+					+ (isbd.abhaengigerTitel != null ? HANGING_PRE : "")
 					+ isbd.listeNSW
+					+ (isbd.abhaengigerTitel != null ? HANGING_POST : "")
 					+ SE_ZEILE_ENDE;
 		}
 		html += "</table>";
@@ -144,10 +154,8 @@ public class HTMLformatter {
 		+ "</style>\n";
 
 
-	public static final String HANGING_PRE = "<blockquote><p>";
-	public static final String HANGING_POST = "</p></blockquote>";
-	private List<String> teile;
-
+	public static final String HANGING_PRE = "<ul><p>";
+	public static final String HANGING_POST = "</p></ul>";
 	protected String getRest(final ISBD isbd) {
 		final List<String> teile = restVorLinks(isbd);
 		if (isbd.links != null && !isbd.links.isEmpty()) {

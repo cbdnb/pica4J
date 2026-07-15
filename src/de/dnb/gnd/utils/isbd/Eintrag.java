@@ -7,6 +7,11 @@ import java.util.TreeSet;
 
 import de.dnb.gnd.utils.SG;
 
+/**
+ * Ein Eintrag im WV. Ein Eintrag besteht aus einem {@link ISBD}-Datensatz und
+ * einer Liste ({@link Eintrag#untergeordnete}) von untergeorneten Datensätzen.
+ * Diese sind alphabetisch sortiert.
+ */
 public class Eintrag implements Comparable<Eintrag> {
 
 	@Override
@@ -29,6 +34,11 @@ public class Eintrag implements Comparable<Eintrag> {
 
 	private final TreeSet<ISBD> untergeordnete = new TreeSet<>();
 
+	/**
+	 *
+	 * @return die untergeordneten Datensätze (z.B. Af), sortiert nach dem
+	 *         Sortiermerkmal
+	 */
 	public Collection<ISBD> getUntergeordnete() {
 		return new ArrayList<>(untergeordnete);
 	}
