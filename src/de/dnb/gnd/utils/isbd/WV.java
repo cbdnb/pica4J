@@ -90,6 +90,9 @@ public class WV {
 		if (uebergeordnet == null) {
 			// Unangenehmster Fall: Müssen aus Portal holen, da nicht in geladen.
 			final org.marc4j.marc.Record marcRecord = PortalUtils.getMarcRecord(idnUebergeordnet);
+			if (marcRecord == null) {
+				return null;
+			}
 			final Record record = marcParser.parse(marcRecord);
 			if (record == null) {
 				return null;
