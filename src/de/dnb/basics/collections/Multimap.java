@@ -7,6 +7,7 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Map;
@@ -320,6 +321,14 @@ public abstract class Multimap<K, V> implements Iterable<K>, Serializable, IMult
 			c += getNullSafe(key).size();
 		}
 		return c;
+	}
+
+	public Set<V> getValueSet() {
+		final Set<V> values = new HashSet<>();
+		for (final K key : getKeySet()) {
+			values.addAll(get(key));
+		}
+		return values;
 	}
 
 	@Override
