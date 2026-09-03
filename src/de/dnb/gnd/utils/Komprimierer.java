@@ -8,10 +8,14 @@ import java.io.PrintStream;
 import java.util.Collection;
 import java.util.Objects;
 
+import javax.naming.OperationNotSupportedException;
+
 import de.dnb.basics.Constants;
 import de.dnb.basics.applicationComponents.MyFileUtils;
+import de.dnb.gnd.exceptions.IllFormattedLineException;
 import de.dnb.gnd.parser.Format;
 import de.dnb.gnd.parser.Record;
+import de.dnb.gnd.parser.line.LineParser;
 
 /**
  * @author baumann
@@ -61,10 +65,38 @@ public class Komprimierer extends DownloadWorker {
 	 */
 	public static String toGZip(final Record record) {
 		Objects.requireNonNull(record);
+		try {
+			record.add(LineParser.parse("001U ƒ0utf8", record.tagDB, false));
+
+		} catch (OperationNotSupportedException | IllegalArgumentException | IllFormattedLineException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			record.add(LineParser.parse("001X ƒ00", record.tagDB, false));
+		} catch (OperationNotSupportedException | IllegalArgumentException | IllFormattedLineException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			record.add(LineParser.parse("003@ ƒ0" + record.getId(), record.tagDB, false));
+		} catch (OperationNotSupportedException | IllegalArgumentException | IllFormattedLineException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return RecordUtils.toPica(record, Format.PICA_PLUS, true, Constants.RS, Constants.MARC_SUB_SEP);
 	}
 
-	public static void toGZip(final Collection<Record> records, final String gzipFileName) throws IOException {
+	/**
+	 *
+	 * @param records      nicht null
+	 * @param gzipFileName nicht null, wird ggf. um ".dat.gz" ergänzt
+	 * @throws IOException wenn die Datei nicht geschrieben werden kann
+	 */
+	public static void toGZip(final Collection<Record> records, String gzipFileName) throws IOException {
+		if (!gzipFileName.endsWith(".dat.gz")) {
+			gzipFileName += ".dat.gz";
+		}
 		final PrintStream outFile = MyFileUtils.getGZipPrintStream(gzipFileName);
 		records.forEach(record -> {
 			final String recS = toGZip(record);
