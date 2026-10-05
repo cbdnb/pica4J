@@ -41,9 +41,10 @@ public class Pica3Formatter extends AbstractFormatter {
 			}
 			s += subfieldPost;
 			return s;
-		} else
+		} else { // Standardverhalten für GND, also $<indikator>:
 			// Standardverhalten für GND, also $<indikator>:
 			return super.format(subfield);
+		}
 	}
 
 	/**
@@ -65,7 +66,7 @@ public class Pica3Formatter extends AbstractFormatter {
 		String txt = formatter.format(record);
 		txt = HTMLEntities.allCharacters(txt);
 
-		txt = txt.replaceAll("\\d{3,4} ", "<b>$0</b>");
+		txt = txt.replaceAll("\\d{3,4} ", "<b>$0 </b>");
 		if (RecordUtils.isAuthority(record)) {
 			txt = txt.replaceAll("1\\d\\d .+", "<b>$0</b>");
 		}
@@ -76,13 +77,13 @@ public class Pica3Formatter extends AbstractFormatter {
 	}
 
 	/**
-	 * 
-	 * @param records	nicht null
-	 * @param heading	Überschrift und Fenstertitel in einem.
-	 * @return	html-Darstellung der Datensätze
+	 *
+	 * @param records nicht null
+	 * @param heading Überschrift und Fenstertitel in einem.
+	 * @return html-Darstellung der Datensätze
 	 */
-	public static String toHTML(Collection<Record> records, String heading) {
-		StringBuffer buffer = new StringBuffer();
+	public static String toHTML(final Collection<Record> records, final String heading) {
+		final StringBuffer buffer = new StringBuffer();
 		buffer.append("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">");
 		buffer.append("\n");
 		buffer.append("<head>");

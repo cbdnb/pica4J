@@ -21,7 +21,6 @@ import de.dnb.basics.utils.TimeUtils;
 import de.dnb.gnd.exceptions.IllFormattedLineException;
 import de.dnb.gnd.parser.Format;
 import de.dnb.gnd.parser.Indicator;
-import de.dnb.gnd.parser.Record;
 import de.dnb.gnd.parser.Subfield;
 import de.dnb.gnd.parser.line.Line;
 import de.dnb.gnd.parser.line.LineFactory;
@@ -707,10 +706,10 @@ public final class SubfieldUtils {
 	 */
 	public static void main(final String[] args)
 			throws IllFormattedLineException, OperationNotSupportedException, IOException {
-		final Record record = RecordUtils.readFromClip();
-		final ArrayList<Line> lines = RecordUtils.getLines(record, "5050");
-		final boolean notEHD = lines.stream().anyMatch(line -> !SubfieldUtils.containsIndicators(line, 'E', 'H', 'D'));
-		System.out.println(notEHD);
+		final Line line = LineParser.parseGND("510 !945864590!Bibliothèque Nationale de France [Tb1]$4adue");
+		final Subfield falseSubfield = new Subfield(GNDTagDB.DOLLAR_4, "adue");
+		final Subfield trueSubfield = new Subfield(GNDTagDB.DOLLAR_4, "rela");
+		System.out.println(replaceAll(line, falseSubfield, trueSubfield));
 	}
 
 	/**
