@@ -908,7 +908,7 @@ public final class RecordUtils {
 	 * @param line              auch null.
 	 * @param format            pica3 oder pica+
 	 * @param expanded          mit Expansionen ausgeben.
-	 * @param subfieldSeparator TODO
+	 * @param subfieldSeparator Unterfeldtrenner, in der Regel '$' bei Pica3
 	 * @return eine Zeile als String oder "". Unicode-Composition.
 	 */
 	public static String toPica(final Line line, final Format format, final boolean expanded,
@@ -1027,7 +1027,7 @@ public final class RecordUtils {
 	 * @param format            pica3 oder pica+
 	 * @param expanded          true, wenn Expansion der relationierten Felder
 	 *                          gewünscht ist.
-	 * @param subfieldSeparator TODO
+	 * @param subfieldSeparator Unterfeldtrenner, in der Regel '$' bei Pica3
 	 * @return nicht null. Unicode-Composition.
 	 */
 	public static String toPica(final Tag tag, final Collection<Subfield> subfields, final Format format,
