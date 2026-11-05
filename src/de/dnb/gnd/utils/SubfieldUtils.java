@@ -427,6 +427,45 @@ public final class SubfieldUtils {
 		} else {
 			return line;
 		}
+	}
+
+	/**
+	 * Gibt eine Zeile mit ersetzten Unterfeldern oder null. Für die Ersetzung der
+	 * Unterfelder ist die equals()-Relation massgeblich.
+	 *
+	 * @param line        auch null, dann wird null zurückgegeben
+	 * @param ind         beliebig. Wenn ind nicht zum Indikatorset von line gehört,
+	 *                    wird line zurückgegeben
+	 * @param original    auch null, ann wird line zurückgegeben
+	 * @param replacement auch null, ann wird line zurückgegeben
+	 * @return Neue Zeile oder die alte, wenn nichts ersetzt wurde
+	 *
+	 */
+	public static Line replaceAll(final Line line, final char ind, final String original, final String replacement) {
+		if (line == null) {
+			return null;
+		}
+		if (original == null || replacement == null) {
+			return line;
+		}
+		if (original.equals(replacement)) {
+			return line;
+		}
+		final Indicator indicator = line.getTag().getIndicator(ind);
+		if (indicator == null) {
+			return line;
+		}
+		// ab jetzt echte Ersetzung
+		Subfield subOriginal;
+		try {
+			subOriginal = new Subfield(indicator, original);
+			final Subfield subReplacement = new Subfield(indicator, replacement);
+			return replaceAll(line, subOriginal, subReplacement);
+		} catch (final IllFormattedLineException e) {
+			// Kann eigentlich nicht aufgerufen werden:
+			e.printStackTrace();
+			return line;
+		}
 
 	}
 
@@ -707,9 +746,8 @@ public final class SubfieldUtils {
 	public static void main(final String[] args)
 			throws IllFormattedLineException, OperationNotSupportedException, IOException {
 		final Line line = LineParser.parseGND("510 !945864590!Bibliothèque Nationale de France [Tb1]$4adue");
-		final Subfield falseSubfield = new Subfield(GNDTagDB.DOLLAR_4, "adue");
-		final Subfield trueSubfield = new Subfield(GNDTagDB.DOLLAR_4, "rela");
-		System.out.println(replaceAll(line, falseSubfield, trueSubfield));
+
+		System.out.println(replaceAll(line, '4', "adue", "lllll"));
 	}
 
 	/**
